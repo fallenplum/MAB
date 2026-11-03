@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "experiment_id": "idea2_v1",
+  "created": "2026-10-30",
+  "status": "E0_LOCKED_REAL_MEMBERS_AND_RUNTIME_PASS",
+  "source_priority": [
+    "protocol/Idea2_LLM_Routing_Research_Plan_Formatted.txt",
+    "protocol/Idea2_LLM_Routing_Research_Plan.txt",
+    "protocol/ACL研究报告_有限评测预算下的模型组合路由.txt"
+  ],
+  "decision_provenance": {
+    "literal_requirements": "N6/K3, GSM8K+BBH, real frozen aggregation, E0→E1→E2→E3→E4→E5, task/question separation",
+    "engineering_choices": "Specific split counts, numerical thresholds, seeds, caps and ridge/bootstrap defaults are execution choices; not teacher-given values or expected results."
+  },
+  "tasks": [
+    "gsm8k",
+    "bbh"
+  ],
+  "n_models": 6,
+  "k": 3,
+  "combination_search": "complete_lexicographic_enumeration_20",
+  "pool": {
+    "model_ids": [
+      "Qwen/Qwen3-8B",
+      "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "ibm-granite/granite-3.3-8b-instruct",
+      "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+      "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "deepcogito/cogito-v1-preview-llama-8B"
+    ],
+    "model_revisions": [
+      "b968826d9c46dd6066d109eabc6255188de91218",
+      "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+      "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "53d902c7dcfa4c749a3b455149064f82af2e2549",
+      "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+      "64c42369b3f322fbffb277bfff146551dd2823cc"
+    ],
+    "cache_revision": "local_frozen_generation_v1",
+    "selection_rule": "Six publicly accessible candidate aliases fixed from cache coverage and model-family diversity before E1; both tasks regenerated with exact pinned revisions and common NF4 protocol; historical cache only audit."
+  },
+  "aggregator": {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "temperature": 0.0,
+    "do_sample": false,
+    "max_new_tokens": 256,
+    "answer_order": "question_id_seed_deterministic_anonymous_permutation",
+    "real_llm_required": true,
+    "majority_vote_substitution_forbidden": true,
+    "prompt_revision": "anonymous_final_answer_head_tail_v2",
+    "quantization": "bitsandbytes_NF4_4bit_frozen",
+    "qualification_status": "PASS_TECHNICAL_RUNTIME",
+    "candidate_answer_token_cap": 512,
+    "candidate_compression": "anonymous_deterministic_head_tail_same_for_all_strategies",
+    "compression_is_engineering_control_not_method_contribution": true
+  },
+  "split": {
+    "deduplication": "Canonical NFKC normalized question/context/options hash plus source IDs; global disjointness across E1 selection/evaluation, router calibration, online and final holdout.",
+    "e1_development": {
+      "total": 300,
+      "per_task": {
+        "gsm8k": 150,
+        "bbh": 150
+      },
+      "selection_calibration_per_task": 50,
+      "diagnostic_evaluation_per_task": 100,
+      "all_300_questions_require_all_20_real_aggregations": true,
+      "no_e1_questions_labels_or_embeddings_in_online_pca_or_final": true
+    },
+    "router_calibration_total": 200,
+    "online_total": 600,
+    "final_holdout_total": 200,
+    "later_split_counts": "balanced tasks; candidate execution choice subject to E0 common coverage; never silently shrink E1 or replace a task",
+    "split_manifest_sha256": "172619f6486d818efa35fd5e6c51add404cd49afe1db92efb126f2b3f1df566d",
+    "question_split_seed": 20261030,
+    "bbh_stratification": "Deterministic near-balanced allocation across audited common subtask coverage; exact subtask counts locked in E0 manifest."
+  },
+  "stages": {
+    "E0": {
+      "required": [
+        "raw answers and gold mapping",
+        "6-model common coverage on both tasks",
+        "scorer/schema audit",
+        "frozen aggregator operational",
+        "logical/physical/feedback cost ledger",
+        "split and version lock"
+      ],
+      "failure": "BLOCKED_E0_OR_PARTIAL; no fake combination reward"
+    },
+    "E1": {
+      "requires": "E0_PASS_AND_LOCK",
+      "total_questions": 300,
+      "selection_questions": 100,
+      "evaluation_questions": 200,
+      "allow_one_fixed_generation_cache": true,
+      "required_controls": [
+        "calibration_best_fixed",
+        "calibration_independent_topk",
+        "strongest_single",
+        "frozen_aggregator_alone",
+        "strongest_single_k_independent_samples_then_same_real_aggregator"
+      ],
+      "engineering_gate": {
+        "min_observed_oracle_headroom": 0.01,
+        "paired_question_ci_low_must_exceed": 0,
+        "scope": "diagnostic opportunity only, oracle is not deployable performance",
+        "missing_control_or_cost_or_real_output": "PARTIAL",
+        "weak_opportunity": "STOP_E1"
+      },
+      "no_automatic_advance_without_passing_gate": true
+    },
+    "E2": {
+      "requires": "E1_PASS",
+      "methods": [
+        "fixed_combination",
+        "independent_contextual_topk",
+        "shared_second_order_ridge",
+        "second_order_linucb",
+        "second_order_thompson"
+      ]
+    },
+    "E3": {
+      "requires": "E2_RELIABLE_BASELINES",
+      "methods": [
+        "no_audit",
+        "random_audit",
+        "periodic_or_fixed_budget",
+        "maximum_uncertainty",
+        "decision_information_only",
+        "decision_information_per_incremental_cost"
+      ],
+      "same_predictor_and_service_policy": true
+    },
+    "E4": {
+      "requires": "E3_SAME_BUDGET_MECHANISM_EVIDENCE",
+      "mandatory_neighbors": [
+        "CES",
+        "C2MAB-V"
+      ],
+      "coverage_reference": "FlexRouter with original/controlled permissions separately identified"
+    },
+    "E5": {
+      "requires": "E4_COMPLETE",
+      "ablations": [
+        "random_combo_warmup_vs_paid_member_prior_plus_combo_warmup",
+        "second_frozen_aggregator",
+        "remove_decision_direction",
+        "remove_cost_normalization",
+        "delay_and_task_shift"
+      ],
+      "overall_finish": "All required controls, seeds, costs, artifacts and claims verified; otherwise PARTIAL."
+    }
+  },
+  "features": {
+    "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "frozen": true,
+    "pca_dimensions": 16,
+    "append_constant": true,
+    "fit_scope": "router_calibration_only_no_E1_no_online_future_no_final",
+    "pooling": "attention_mask_mean_then_L2",
+    "device": "cpu"
+  },
+  "regression": {
+    "ridge_lambda": 1.0,
+    "working_noise_variance": 1.0,
+    "raw_labels_once": true,
+    "difference_is_not_extra_label": true,
+    "bootstrap_question_blocks": true,
+    "bootstrap_replicates": 200,
+    "bootstrap_min_arrived_labels": 32
+  },
+  "acquisition": {
+    "competitor_kappa": 2.0,
+    "competitor_weights": "uniform",
+    "max_backup_per_question": 1,
+    "minimum_information_per_cost": 0.0,
+    "tie_break": "lexicographic",
+    "cost_prediction": "Only past/development records; no future lengths",
+    "service_and_backup_frozen_before_current_outputs_or_labels": true
+  },
+  "warmup": {
+    "primary": "shared_random_combination_final_scores",
+    "max_labels": 32,
+    "max_fraction_of_total_feedback_budget": 0.2,
+    "free_member_prior": false,
+    "member_prior": "paid ablation only; equal total information/cost"
+  },
+  "feedback": {
+    "final_score_budget_per_100_questions": [
+      10,
+      25,
+      50,
+      100
+    ],
+    "mode": "verifiable_reference_revealed_at_authorized_event",
+    "main_feedback_naturally_arrives": false,
+    "pair_without_natural_main_uses_labels": 2,
+    "member_feedback_available_when_same_verifier_revealed": true,
+    "delays": [
+      0,
+      5,
+      20
+    ],
+    "same_schedule_for_all_methods": true
+  },
+  "budget": {
+    "execution_hard_cap_unit": "logical_total_input_output_tokens_plus_call_caps",
+    "total_execution_budget": {
+      "executions": 3128,
+      "tokens": 19457024
+    },
+    "cost_weights": {
+      "executions": 1.0,
+      "labels": 1.0,
+      "tokens": 0.001
+    },
+    "require_remaining_normal_service_reservation": true,
+    "member_max_output_tokens": 2048,
+    "aggregator_max_output_tokens": 256,
+    "input_cap_tokens": 4096,
+    "failure_and_retry_costs_included": true,
+    "offline_cache_generation_not_free_logical_serving": true,
+    "actual_diagnostic_cost_separate_from_hypothetical_combo_service_costs": true,
+    "aggregator_input_cap_tokens": 6144,
+    "member_call_cap": 1,
+    "aggregator_call_cap": 1,
+    "resource_cap_derivation": "600 normal services + at most32 paid warmup services + at most300 one-replacement audits; worstcase percall input/output caps; label-budget further restricts audits",
+    "scalar_cost_interpretation": "engineering resource units: one call + one feedback label + 0.001 logical input/output tokens; not USD; physical GPU seconds reported separately"
+  },
+  "statistics": {
+    "algorithm_stream_seeds": [
+      42,
+      137,
+      2024,
+      2025,
+      2026
+    ],
+    "five_seeds_required_for": [
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "e1_bootstrap_replicates": 2000,
+    "e1_bootstrap_seed": 20261030,
+    "confidence": 0.95,
+    "unit": "question, paired across combinations; equal task macro and per-task reports",
+    "bootstrap_is_not_an_experimental_seed": true
+  },
+  "scoring": {
+    "version": "safe_exact_v1_1",
+    "gsm8k": "exact safe numeric literal after ####/explicit final/boxed or literal-only",
+    "bbh": "explicit 27-subtask evaluator; no generic substring/CoT last-number matching",
+    "unparseable_prediction": 0,
+    "invalid_reference_or_unknown_subtask": "STOP_DATA_AUDIT",
+    "eval_generated_text": false
+  },
+  "pending_locks": [],
+  "runtime_boundary": "No paid API/remote model runs by this config. Root task separately handles authorized resource discovery and execution readiness.",
+  "resource_decision": {
+    "authorized_by_user": "local_first_keep_original_scale",
+    "gpu": "RTX4060 8GB",
+    "system_ram_gb": 32,
+    "currently_available_ram_gb_approx": 6,
+    "status": "LOCAL_RUNTIME_QUALIFIED",
+    "paid_api": false,
+    "remote_experiment": false,
+    "gsm_missing_cache_policy": "same_locked_pool_real_generation_only_never_replace_with_MATH"
+  },
+  "member_generation": {
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_input_tokens": 4096,
+    "max_new_tokens": 2048,
+    "enable_thinking": false,
+    "prompt": "independent_user_only_brief_final_v2",
+    "generation_cache_seed": 42,
+    "strong_control": "same settings, three distinct fresh seeds, no reused main sample",
+    "pre_E0_amendment": "protocol/LOCAL_MODEL_PROTOCOL.md",
+    "no_E1_results_used_for_amendment": true
+  }
+}

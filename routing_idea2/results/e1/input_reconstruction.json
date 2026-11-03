@@ -1,0 +1,31 @@
+{
+  "schema": "e1_input_content_reconstruction_v1",
+  "created_at_unix": 1793703001.2628958,
+  "new_model_calls": 0,
+  "counts": {
+    "aggregations_jobs": 6000,
+    "aggregations_exact_reconstructed_messages": 6000,
+    "aggregations_correct_candidate_exposures": 7460,
+    "aggregations_correct_candidate_final_retained": 7460,
+    "strong_aggregations_jobs": 200,
+    "strong_aggregations_correct_candidate_exposures": 482,
+    "strong_aggregations_correct_candidate_final_retained": 482,
+    "strong_aggregations_exact_reconstructed_messages": 200,
+    "aggregator_alone_jobs": 200,
+    "aggregator_alone_exact_reconstructed_messages": 200,
+    "ordinary_raw_output_question_hash_bound": 1800,
+    "strong_samples_raw_output_question_hash_bound": 600
+  },
+  "input_leakage_audit_scope": "Stored member/aggregation job messages reconstructed exactly from official question and real generated candidate text, with pinned formatting and tokenizer compression. Does not establish absence of pretraining/posttraining contamination.",
+  "raw_gsm_train_test_exact_question_overlap": 0,
+  "correct_candidate_final_not_retained": [],
+  "bound_file_sha256": {
+    "data\\jobs\\e1\\aggregations.jsonl": "7ab64266fc19ed0e093e13f480af1c6dc687bc3febeb6a08ab6646bd054427cc",
+    "results\\raw\\e1\\aggregations.jsonl": "56fd4f0e5c3b920728615399e7106e4361533fb748afba72b590eb8078120325",
+    "data\\jobs\\e1\\strong_aggregations.jsonl": "439e2b64bcf5b875815db111835ba7fe65f6e78451192636a2ad0bf606c5ca3a",
+    "results\\raw\\e1\\strong_aggregations.jsonl": "5b23fd51dbfdf39882df732c132c3377eb564291b51dddd85f0f3235df1d4d67",
+    "data\\jobs\\e1\\aggregator_alone.jsonl": "74c849f4fd782cafef15c1cfecd1d608ab1252d48ee0399f1b0f11e25a18be2e",
+    "results\\raw\\e1\\aggregator_alone.jsonl": "2b86ef5046f99482b2534c0f969755919cd9fb8855556c71807e8c6dac7fdfaa"
+  },
+  "audit_script_sha256": "0030272a83fcdf897bbb5b1a576348065fba1572243bb4833b7ef3e0dc92b554"
+}

@@ -1,0 +1,61 @@
+{
+  "status": "CANDIDATE_PENDING_E0_QUALIFICATION",
+  "models": [
+    {
+      "index": 0,
+      "alias": "Qwen3-8B",
+      "config": "configs/member_qwen3-8b.json",
+      "model_id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "fingerprint": "e78d70a2c0caafae89f5580114bf3bb7f6e4b78a70cb1c7d832b56f7869dc810",
+      "historical_cache_alias": "Qwen3-8B"
+    },
+    {
+      "index": 1,
+      "alias": "Qwen2.5-Coder-7B-Instruct",
+      "config": "configs/member_qwen2.5-coder-7b-instruct.json",
+      "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+      "fingerprint": "c66e9ef85bbb7808c69aaa09306c82f8593a3377bed118c909ecbb5348f9befc",
+      "historical_cache_alias": "Qwen2.5-Coder-7B-Instruct"
+    },
+    {
+      "index": 2,
+      "alias": "Granite-3.3-8b-instruct",
+      "config": "configs/member_granite-3.3-8b-instruct.json",
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "fingerprint": "cb06ac0c53f33dc59b4ee8e377d8aef3b633fa44caaeaeff8677b4243aaef375",
+      "historical_cache_alias": "granite-3.3-8b-instruct"
+    },
+    {
+      "index": 3,
+      "alias": "DeepHermes-3-Llama-3-8B-Preview",
+      "config": "configs/member_deephermes-3-llama-3-8b-preview.json",
+      "model_id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+      "revision": "53d902c7dcfa4c749a3b455149064f82af2e2549",
+      "fingerprint": "75a62ba67d0d49e6445bc0e170ff418f2102b089ef0876a86bc5566132f17ab7",
+      "historical_cache_alias": "DeepHermes-3-Llama-3-8B-Preview"
+    },
+    {
+      "index": 4,
+      "alias": "DeepSeek-R1-Distill-Qwen-7B",
+      "config": "configs/member_deepseek-r1-distill-qwen-7b.json",
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+      "fingerprint": "c1a76815711b87995b6c1a17e521d40b36861787ba1e29fc41ad95d0030afdc5",
+      "historical_cache_alias": "DeepSeek-R1-Distill-Qwen-7B"
+    },
+    {
+      "index": 5,
+      "alias": "Cogito-v1-preview-llama-8B",
+      "config": "configs/member_cogito-v1-preview-llama-8b.json",
+      "model_id": "deepcogito/cogito-v1-preview-llama-8B",
+      "revision": "64c42369b3f322fbffb277bfff146551dd2823cc",
+      "fingerprint": "8217f92d567675f66a6e47a6832737691501db6e3e5822347eb369e264122022",
+      "historical_cache_alias": "cogito-v1-preview-llama-8B"
+    }
+  ],
+  "formal_answer_source": "BOTH_TASKS_REGENERATED_USING_THESE_PINNED_MODELS_NF4",
+  "historical_cache": "Audit only. Unknown original checkpoint revisions are not assigned current model revisions."
+}

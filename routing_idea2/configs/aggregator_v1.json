@@ -1,0 +1,13 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "backend": "transformers",
+  "model_path": "E:\\语言模型组合路由\\models\\Qwen--Qwen2.5-7B-Instruct",
+  "device": "cuda",
+  "dtype": "float16",
+  "max_input_tokens": 6144,
+  "max_new_tokens": 256,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "quantization": "nf4"
+}

@@ -1,0 +1,401 @@
+{
+  "schema": "read_only_posthoc_e1_failure_audit_v2",
+  "created_at_unix": 1793702781.652203,
+  "new_model_calls": 0,
+  "official_protocol_or_scores_modified": false,
+  "source_matches": {
+    "bbh_official_exact_question_and_target_match": 150,
+    "bbh_official_question_and_semantic_target_match": 150,
+    "gsm_exact_question_match": 150,
+    "gsm_exact_reference_match": 0,
+    "gsm_official_final_answer_numeric_match": 150
+  },
+  "source_split_counts": {
+    "gsm8k/train": 100,
+    "bbh/test": 100
+  },
+  "prompt_audit": {
+    "ordinary_member_jobs": 1800,
+    "ordinary_exact_question_only_messages": 1800,
+    "resample_jobs": 600,
+    "resample_exact_question_only_messages": 600
+  },
+  "strongest_model": "Qwen3-8B",
+  "fixed_team": [
+    "DeepHermes-3-Llama-3-8B-Preview",
+    "Qwen2.5-Coder-7B-Instruct",
+    "Qwen3-8B"
+  ],
+  "independent_topk_team": [
+    "DeepSeek-R1-Distill-Qwen-7B",
+    "Qwen2.5-Coder-7B-Instruct",
+    "Qwen3-8B"
+  ],
+  "single_by_task": {
+    "gsm8k": {
+      "n": 100,
+      "correct": 95.0,
+      "parse_failures": 0,
+      "output_cap_hits": 0,
+      "total_tokens": 28608,
+      "mean_tokens": 286.08
+    },
+    "bbh": {
+      "n": 100,
+      "correct": 64.0,
+      "parse_failures": 7,
+      "output_cap_hits": 0,
+      "total_tokens": 32730,
+      "mean_tokens": 327.3
+    }
+  },
+  "gsm_independent_strict_score_mismatches": [],
+  "fixed_transitions": {
+    "questions": 200,
+    "candidate_coverage": 170,
+    "final_correct": 139.0,
+    "correct_candidate_to_wrong": 33,
+    "no_correct_candidate_to_correct": 2,
+    "all_three_correct": 61,
+    "all_three_correct_to_wrong": 0,
+    "parse_failures": 22,
+    "cap_hits": 12,
+    "lost_without_output_cap": 22,
+    "lost_with_output_cap": 11,
+    "lost_with_any_candidate_truncation": 4
+  },
+  "fixed_transitions_by_task": {
+    "gsm8k": {
+      "questions": 100,
+      "candidate_coverage": 96,
+      "final_correct": 87.0,
+      "correct_candidate_to_wrong": 9,
+      "no_correct_candidate_to_correct": 0,
+      "all_three_correct": 43,
+      "all_three_correct_to_wrong": 0,
+      "parse_failures": 4,
+      "cap_hits": 4,
+      "lost_without_output_cap": 5,
+      "lost_with_output_cap": 4,
+      "lost_with_any_candidate_truncation": 0
+    },
+    "bbh": {
+      "questions": 100,
+      "candidate_coverage": 74,
+      "final_correct": 52.0,
+      "correct_candidate_to_wrong": 24,
+      "no_correct_candidate_to_correct": 2,
+      "all_three_correct": 18,
+      "all_three_correct_to_wrong": 0,
+      "parse_failures": 18,
+      "cap_hits": 8,
+      "lost_without_output_cap": 17,
+      "lost_with_output_cap": 7,
+      "lost_with_any_candidate_truncation": 4
+    }
+  },
+  "strong_three_sample": {
+    "questions": 200,
+    "coverage": 171,
+    "vote_correct": 165.0,
+    "fused_correct": 153.0,
+    "vote_correct_fuser_wrong": 13,
+    "vote_wrong_fuser_correct": 1,
+    "unanimous_correct": 147,
+    "unanimous_correct_fuser_wrong": 4,
+    "fuser_cap_hits": 7,
+    "fuser_parse_failures": 19,
+    "vote_ties": 4
+  },
+  "strong_sample_individual_scores": [
+    {
+      "overall": 0.795,
+      "by_task": {
+        "gsm8k": 0.92,
+        "bbh": 0.67
+      }
+    },
+    {
+      "overall": 0.8,
+      "by_task": {
+        "gsm8k": 0.93,
+        "bbh": 0.67
+      }
+    },
+    {
+      "overall": 0.815,
+      "by_task": {
+        "gsm8k": 0.93,
+        "bbh": 0.7
+      }
+    }
+  ],
+  "three_sample_vote": {
+    "overall": 0.825,
+    "by_task": {
+      "gsm8k": 0.93,
+      "bbh": 0.72
+    }
+  },
+  "three_sample_fuser": {
+    "overall": 0.765,
+    "by_task": {
+      "gsm8k": 0.93,
+      "bbh": 0.6
+    }
+  },
+  "single": {
+    "overall": 0.795,
+    "by_task": {
+      "gsm8k": 0.95,
+      "bbh": 0.64
+    }
+  },
+  "three_sample_fuser_minus_single": {
+    "difference": -0.03,
+    "paired_question_stratified_95_interval": [
+      -0.08,
+      0.015000000000000001
+    ],
+    "conditioning": "fixed observed generations; not independent new model replications"
+  },
+  "three_sample_vote_minus_single": {
+    "difference": 0.03,
+    "paired_question_stratified_95_interval": [
+      -0.005000000000000001,
+      0.06999999999999999
+    ],
+    "conditioning": "fixed observed generations; not independent new model replications"
+  },
+  "three_sample_vote_minus_fuser": {
+    "difference": 0.06,
+    "paired_question_stratified_95_interval": [
+      0.03,
+      0.095
+    ],
+    "conditioning": "fixed observed generations; not independent new model replications"
+  },
+  "all_eval_aggregate_outputs": {
+    "n": 4000,
+    "correct": 2950.0,
+    "parse_failures": 461,
+    "output_cap_hits": 212,
+    "total_tokens": 3325417,
+    "mean_tokens": 831.35425
+  },
+  "aggregator_alone_by_task": {
+    "gsm8k": {
+      "n": 100,
+      "correct": 69.0,
+      "parse_failures": 27,
+      "output_cap_hits": 32,
+      "total_tokens": 38863,
+      "mean_tokens": 388.63
+    },
+    "bbh": {
+      "n": 100,
+      "correct": 42.0,
+      "parse_failures": 39,
+      "output_cap_hits": 35,
+      "total_tokens": 40517,
+      "mean_tokens": 405.17
+    }
+  },
+  "all_20_fixed_teams": [
+    {
+      "members": [
+        "Granite-3.3-8b-instruct",
+        "Qwen2.5-Coder-7B-Instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.79,
+      "evaluation_accuracy": 0.76
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Qwen2.5-Coder-7B-Instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.85,
+      "evaluation_accuracy": 0.695
+    },
+    {
+      "members": [
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Qwen2.5-Coder-7B-Instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.77,
+      "evaluation_accuracy": 0.76
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "Qwen2.5-Coder-7B-Instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.8,
+      "evaluation_accuracy": 0.745
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Granite-3.3-8b-instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.82,
+      "evaluation_accuracy": 0.745
+    },
+    {
+      "members": [
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Granite-3.3-8b-instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.77,
+      "evaluation_accuracy": 0.77
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "Granite-3.3-8b-instruct",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.79,
+      "evaluation_accuracy": 0.77
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.78,
+      "evaluation_accuracy": 0.755
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.77,
+      "evaluation_accuracy": 0.75
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Qwen3-8B"
+      ],
+      "calibration_accuracy": 0.77,
+      "evaluation_accuracy": 0.78
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Granite-3.3-8b-instruct",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.73,
+      "evaluation_accuracy": 0.67
+    },
+    {
+      "members": [
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Granite-3.3-8b-instruct",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.69,
+      "evaluation_accuracy": 0.735
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "Granite-3.3-8b-instruct",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.77,
+      "evaluation_accuracy": 0.755
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.69,
+      "evaluation_accuracy": 0.72
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.74,
+      "evaluation_accuracy": 0.665
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Qwen2.5-Coder-7B-Instruct"
+      ],
+      "calibration_accuracy": 0.73,
+      "evaluation_accuracy": 0.75
+    },
+    {
+      "members": [
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Granite-3.3-8b-instruct"
+      ],
+      "calibration_accuracy": 0.67,
+      "evaluation_accuracy": 0.745
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "Granite-3.3-8b-instruct"
+      ],
+      "calibration_accuracy": 0.81,
+      "evaluation_accuracy": 0.68
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepSeek-R1-Distill-Qwen-7B",
+        "Granite-3.3-8b-instruct"
+      ],
+      "calibration_accuracy": 0.74,
+      "evaluation_accuracy": 0.765
+    },
+    {
+      "members": [
+        "Cogito-v1-preview-llama-8B",
+        "DeepHermes-3-Llama-3-8B-Preview",
+        "DeepSeek-R1-Distill-Qwen-7B"
+      ],
+      "calibration_accuracy": 0.68,
+      "evaluation_accuracy": 0.735
+    }
+  ],
+  "posthoc_eval_best_team": {
+    "members": [
+      "Cogito-v1-preview-llama-8B",
+      "DeepSeek-R1-Distill-Qwen-7B",
+      "Qwen3-8B"
+    ],
+    "calibration_accuracy": 0.77,
+    "evaluation_accuracy": 0.78
+  },
+  "vote_rule": "Majority of parsed answers; tie breaks by smallest original sample_index, never gold; posthoc diagnostic only.",
+  "public_derivation": {
+    "omitted": "private per-question raw-output examples",
+    "source_artifact_sha256": "b65f873f4d35fcb917f10a2db2f7a7c6a451bf4828de09c5885145a621ff13f8",
+    "scientific_metrics_changed": false
+  }
+}

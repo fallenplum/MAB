@@ -1,0 +1,208 @@
+{
+  "schema": "complete_isolated_E1_causal_600_diagnostic_v1",
+  "status": "ALL_600_REQUEST_RESPONSE_COMMIT_PAIRS_RECONCILED_AND_SCORED",
+  "created_at_unix": 1793706916.3050766,
+  "new_model_calls_by_this_auditor": 0,
+  "additional_actual_diagnostic_model_calls": 600,
+  "original_E1_model_calls": 8800,
+  "combined_E1_and_posthoc_calls_excluding_E0": 9400,
+  "unknown_cost_rows": 0,
+  "plan_sha256": "6a94b1ec663997a959655478e6fc160094c48d808c5888ff519a2825007409f3",
+  "conditions": {
+    "qwen25_long": {
+      "n": 200,
+      "correct": 157,
+      "accuracy": 0.785,
+      "per_task": {
+        "gsm8k": {
+          "n": 100,
+          "correct": 93,
+          "accuracy": 0.93
+        },
+        "bbh": {
+          "n": 100,
+          "correct": 64,
+          "accuracy": 0.64
+        }
+      },
+      "parse_failures": 13,
+      "output_cap_hits": 0,
+      "actual_usage": {
+        "prompt_tokens": 128849,
+        "completion_tokens": 14705
+      },
+      "model_call_wall_seconds_sum": 707.8404026246862,
+      "mean_call_tokens": 717.77,
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "logical_total_tokens_per_question": 1649.4650000000001
+    },
+    "qwen3_long_fuse": {
+      "n": 200,
+      "correct": 166,
+      "accuracy": 0.83,
+      "per_task": {
+        "gsm8k": {
+          "n": 100,
+          "correct": 94,
+          "accuracy": 0.94
+        },
+        "bbh": {
+          "n": 100,
+          "correct": 72,
+          "accuracy": 0.72
+        }
+      },
+      "parse_failures": 8,
+      "output_cap_hits": 0,
+      "actual_usage": {
+        "prompt_tokens": 129649,
+        "completion_tokens": 20775
+      },
+      "model_call_wall_seconds_sum": 1381.182683074614,
+      "mean_call_tokens": 752.12,
+      "model_id": "Qwen/Qwen3-8B",
+      "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "logical_total_tokens_per_question": 1683.815
+    },
+    "qwen3_long_alone": {
+      "n": 200,
+      "correct": 159,
+      "accuracy": 0.795,
+      "per_task": {
+        "gsm8k": {
+          "n": 100,
+          "correct": 91,
+          "accuracy": 0.91
+        },
+        "bbh": {
+          "n": 100,
+          "correct": 68,
+          "accuracy": 0.68
+        }
+      },
+      "parse_failures": 17,
+      "output_cap_hits": 0,
+      "actual_usage": {
+        "prompt_tokens": 40616,
+        "completion_tokens": 31498
+      },
+      "model_call_wall_seconds_sum": 1938.091127605061,
+      "mean_call_tokens": 360.57,
+      "model_id": "Qwen/Qwen3-8B",
+      "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "logical_total_tokens_per_question": 360.57
+    }
+  },
+  "contrasts": {
+    "qwen25_2048_minus_original_256": {
+      "difference": 0.02,
+      "paired_task_stratified_95_interval": [
+        0.005,
+        0.04
+      ],
+      "per_task": {
+        "gsm8k": 0.0,
+        "bbh": 0.04
+      }
+    },
+    "qwen3_fuse_minus_qwen25_long": {
+      "difference": 0.045,
+      "paired_task_stratified_95_interval": [
+        0.01,
+        0.08
+      ],
+      "per_task": {
+        "gsm8k": 0.01,
+        "bbh": 0.08
+      }
+    },
+    "qwen3_fuse_minus_qwen3_alone": {
+      "difference": 0.035,
+      "paired_task_stratified_95_interval": [
+        -0.005000000000000001,
+        0.07500000000000001
+      ],
+      "per_task": {
+        "gsm8k": 0.03,
+        "bbh": 0.04
+      }
+    },
+    "qwen3_fuse_minus_existing_majority_vote": {
+      "difference": 0.005,
+      "paired_task_stratified_95_interval": [
+        -0.02,
+        0.030000000000000002
+      ],
+      "per_task": {
+        "gsm8k": 0.01,
+        "bbh": 0.0
+      }
+    }
+  },
+  "same_weak_model_greedy_prefix_check": {
+    "original_noncap_n": 193,
+    "noncap_exact_output_matches": 193,
+    "original_cap_n": 7,
+    "cap_original_text_prefix_of_new_text": 7
+  },
+  "actual_incremental_usage": {
+    "prompt_tokens": 299114,
+    "completion_tokens": 66978
+  },
+  "actual_incremental_total_tokens": 366092,
+  "archive_proof": {
+    "qwen25_long": {
+      "archive_sha256": "47aec8b2e07e80e46b1c71dfbd6ad084618773e89c2babf6d044027091a9810a",
+      "raw_output_sha256": "db3a6a461fff240630c9963c5555ef5709b7f34f1d86d7cfda845c9134838743",
+      "jobs_sha256": "06d84fa654cae047039a314a41075e84591add6f96682dc41ab7247aa1e10769",
+      "journal_snapshot_sha256": "a02f09391a7a9d8a01d0b4aa228340e96807d00605931a8857ea9b7f0fc86005",
+      "matched_requests_responses_and_commits": 200
+    },
+    "qwen3_long_fuse": {
+      "archive_sha256": "d4dcbc6e3ff5cad32d2e9544ea8528e2ace88b066648f05af5ca11a2b4a606e8",
+      "raw_output_sha256": "c824a81a65facbe55756cc6fc703708386f9d64e6860395ea0f28f9d27d786ba",
+      "jobs_sha256": "9d86038b52b054a0ab390230d78c92a602bd333d3ca701b8fade1717c926bfa2",
+      "journal_snapshot_sha256": "759e850fff6e92d7bcc121d85f069b4935b3827a55b71d2890af80ca3649d2bc",
+      "matched_requests_responses_and_commits": 200
+    },
+    "qwen3_long_alone": {
+      "archive_sha256": "dddc3abc24fa5e3690ad68722c8a0d4b4e3b63ed1c5127a84965784e6d0d8d87",
+      "raw_output_sha256": "ef4f5ec2fcb4d63546d4f1c12982fb13ee0ab7b1ce20b34eb575b0b7fc129878",
+      "jobs_sha256": "b2a4701f88978e6c662fed5a09c5745775c9ee6ba9b7d79a66fee069035d4695",
+      "journal_snapshot_sha256": "ef00c9d4ff1282b106723f92186708e09e861247c3e02f6b5fef8dcdcc8d7ecf",
+      "matched_requests_responses_and_commits": 200
+    }
+  },
+  "scorer_version": "safe_exact_v1_1",
+  "analysis_status": "EXPLORATORY_POSTHOC_DEVELOPMENT_DIAGNOSIS_NOT_NEW_TEST_OR_NEW_GENERATION_REPLICATION",
+  "ci_conditioning": "5000 task-stratified paired question bootstraps conditional on existing outputs; no multiplicity-adjusted confirmatory claim",
+  "scope_limits": [
+    "Same 200 E1 development questions, including official GSM8K train. Does not settle contamination.",
+    "Fused candidates are three new samples of Qwen3, not heterogeneous three-model combinations; cannot establish heterogeneous routing benefit.",
+    "Model-specific chat templates differ even when message strings match.",
+    "Logical token cost is a proxy, not USD or normalized GPU time.",
+    "Original E0/E1 results, sealed evaluation and online 12000 aggregation hold unchanged."
+  ],
+  "existing_majority_vote": {
+    "correct": 165,
+    "n": 200,
+    "accuracy": 0.825,
+    "per_task": {
+      "gsm8k": 0.93,
+      "bbh": 0.72
+    },
+    "logical_total_tokens_per_question": 931.695,
+    "new_model_calls": 0,
+    "tie_rule": "lowest original sample_index among equally frequent parsed answers; no gold used in vote"
+  },
+  "report_interpretation": {
+    "observed_output_cap_contribution": "Original 193 non-cap outputs exactly reproduced; all seven cap-limited texts are prefixes of longer generations; four extra BBH answers scored correct.",
+    "strong_model_vs_weak_model": "Same message strings at max2048 yield 83.0% versus 78.5%; exploratory development evidence.",
+    "learned_heterogeneous_routing_benefit_established": false,
+    "candidate_benefit_above_same_model_alone_established_by_current_paired_interval": false,
+    "strong_fusion_improvement_over_vote_established_by_current_paired_interval": false,
+    "original_e1_results_modified": false
+  },
+  "summary_before_vote_comparison_sha256": "c7223a32e25fe2e2c84c4637840b40925aab775e29facd2fe61c0130f08ca657"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "posthoc_option_text_diagnostic_v1",
+  "created_at_unix": 1793702973.9315073,
+  "new_model_calls": 0,
+  "official_scores_modified": false,
+  "mapping_rule": "Unique exact normalized final text to original question option text; option mapping uses no gold. Diagnostic only, not a replacement for frozen letter-format score.",
+  "results": {
+    "fixed": {
+      "counts": {
+        "n": 200,
+        "original_correct": 139.0,
+        "unparsed": 22,
+        "unique_exact_option_text_mapping": 5,
+        "exact_mapped_correct": 3
+      }
+    },
+    "strong_aggregations": {
+      "counts": {
+        "n": 200,
+        "original_correct": 153.0,
+        "unparsed": 19,
+        "unique_exact_option_text_mapping": 5,
+        "exact_mapped_correct": 5
+      }
+    },
+    "aggregator_alone": {
+      "counts": {
+        "n": 200,
+        "original_correct": 111.0,
+        "unparsed": 66,
+        "unique_exact_option_text_mapping": 2,
+        "exact_mapped_correct": 1
+      }
+    }
+  },
+  "public_derivation": {
+    "omitted": "per-question examples",
+    "source_artifact_sha256": "c5a9fdf52c4e64383ae890ce9f2c0ca1834f01b7a36b4edef921b946f61eb27b",
+    "scientific_metrics_changed": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "file": "members_qwen3-8b.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 47228,
+      "completion_tokens": 44376,
+      "wall_seconds_sum": 21093.917511501815,
+      "first_started_beijing": "2026-10-31T00:50:44.971504+08:00",
+      "last_call_ended_estimated_beijing": "2026-10-31T07:06:49.849376+08:00",
+      "source_sha256": "21891e2bea1a7d457ee51283582503327b4d699704e136be81471be67c4572e2"
+    },
+    {
+      "file": "members_cogito-v1-preview-llama-8b.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 45817,
+      "completion_tokens": 25341,
+      "wall_seconds_sum": 6268.746711700223,
+      "first_started_beijing": "2026-11-01T05:34:53.669752+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-01T07:21:04.327790+08:00",
+      "source_sha256": "eebfea18885642cee32ab5e580e5157580521bdbcd934438f416c995aefc60b0"
+    },
+    {
+      "file": "members_qwen2.5-coder-7b-instruct.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 52328,
+      "completion_tokens": 53844,
+      "wall_seconds_sum": 12427.374306998216,
+      "first_started_beijing": "2026-10-31T07:26:31.216560+08:00",
+      "last_call_ended_estimated_beijing": "2026-10-31T10:55:12.497708+08:00",
+      "source_sha256": "a282d14d02052c79e7f947633c531d03211816e9abfe6e44b5d0e9b80801e5bd"
+    },
+    {
+      "file": "members_granite-3.3-8b-instruct.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 65963,
+      "completion_tokens": 62971,
+      "wall_seconds_sum": 19300.4437227,
+      "first_started_beijing": "2026-10-31T11:16:16.532324+08:00",
+      "last_call_ended_estimated_beijing": "2026-10-31T16:39:15.886045+08:00",
+      "source_sha256": "afab2a3b70161a0bb39a1ab6555a9d034e2c3760518f788551de3217798919da"
+    },
+    {
+      "file": "members_deephermes-3-llama-3-8b-preview.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 45817,
+      "completion_tokens": 27969,
+      "wall_seconds_sum": 6912.397813399322,
+      "first_started_beijing": "2026-10-31T17:03:16.102693+08:00",
+      "last_call_ended_estimated_beijing": "2026-10-31T18:59:45.810177+08:00",
+      "source_sha256": "dab6f4266779c3cec6f6600905f84f9f67af2c55274325836e814405056f6829"
+    },
+    {
+      "file": "members_deepseek-r1-distill-qwen-7b.jsonl",
+      "rows": 300,
+      "failed_rows": 0,
+      "prompt_tokens": 45128,
+      "completion_tokens": 163131,
+      "wall_seconds_sum": 35560.58216849924,
+      "first_started_beijing": "2026-10-31T19:19:23.104049+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-01T05:14:33.470057+08:00",
+      "source_sha256": "c9145689430a112547afb51af183dfa0bbe56d4078df71b235cfc178d3d156fe"
+    },
+    {
+      "file": "aggregations.jsonl",
+      "rows": 6000,
+      "failed_rows": 0,
+      "prompt_tokens": 4406726,
+      "completion_tokens": 580136,
+      "wall_seconds_sum": 108839.07232140284,
+      "first_started_beijing": "2026-11-01T09:59:37.328602+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-02T20:55:22.959501+08:00",
+      "source_sha256": "56fd4f0e5c3b920728615399e7106e4361533fb748afba72b590eb8078120325"
+    },
+    {
+      "file": "aggregator_alone.jsonl",
+      "rows": 200,
+      "failed_rows": 0,
+      "prompt_tokens": 39816,
+      "completion_tokens": 39564,
+      "wall_seconds_sum": 8535.325760398759,
+      "first_started_beijing": "2026-11-02T21:15:37.560531+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-02T23:38:40.397485+08:00",
+      "source_sha256": "2b86ef5046f99482b2534c0f969755919cd9fb8855556c71807e8c6dac7fdfaa"
+    },
+    {
+      "file": "strong_samples.jsonl",
+      "rows": 600,
+      "failed_rows": 0,
+      "prompt_tokens": 94602,
+      "completion_tokens": 91737,
+      "wall_seconds_sum": 30617.484990799334,
+      "first_started_beijing": "2026-11-02T23:59:11.742824+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-03T08:33:18.478224+08:00",
+      "source_sha256": "f662bb050e7ee126f40ddf7db935a619a92f4591f43f9b08388bae6845e0a37f"
+    },
+    {
+      "file": "strong_aggregations.jsonl",
+      "rows": 200,
+      "failed_rows": 0,
+      "prompt_tokens": 128849,
+      "completion_tokens": 14120,
+      "wall_seconds_sum": 584.6606588208815,
+      "first_started_beijing": "2026-11-03T08:54:08.791205+08:00",
+      "last_call_ended_estimated_beijing": "2026-11-03T09:16:26.270316+08:00",
+      "source_sha256": "5b23fd51dbfdf39882df732c132c3377eb564291b51dddd85f0f3235df1d4d67"
+    }
+  ],
+  "new_model_calls": 0,
+  "calls": 8800,
+  "source": "original raw E1 successful records only; private mirrors excluded; estimated call-end uses started_at+reported wall duration"
+}

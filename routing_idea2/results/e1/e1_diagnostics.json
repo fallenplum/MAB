@@ -1,0 +1,461 @@
+{
+  "stage": "E1",
+  "status": "PASS",
+  "overall_research_status": "PARTIAL_UNTIL_E2_E5",
+  "missing_requirements": [],
+  "evaluation_scope": "motivation diagnosis only; no online/PCA training labels",
+  "n_questions": 200,
+  "n_selection_calibration": 100,
+  "n_total_e1": 300,
+  "n_combinations": 20,
+  "n_models": 6,
+  "k": 3,
+  "experimental_seed_count": 1,
+  "generation_cache_replicates": 1,
+  "experimental_seeds": [
+    42
+  ],
+  "robustness_not_yet_checked": true,
+  "ci_conditioning": "Question-stratified paired bootstrap conditional on the pinned cache and aggregator; resampling seeds are not new LLM generations.",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261030,
+  "task_aggregation": "equal-weight task macro; paired question resampling within gsm8k/bbh",
+  "selected_on_calibration": {
+    "best_fixed_indices": [
+      1
+    ],
+    "independent_topk_indices": [
+      2
+    ],
+    "strongest_single_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "best_fixed_calibration": {
+      "mean": 0.6950000000000001,
+      "confidence": 0.95,
+      "low": 0.635,
+      "high": 0.75,
+      "per_experiment_seed": [
+        0.6950000000000001
+      ],
+      "per_task": {
+        "bbh": 0.52,
+        "gsm8k": 0.87
+      }
+    },
+    "independent_topk_calibration": {
+      "mean": 0.76,
+      "confidence": 0.95,
+      "low": 0.7,
+      "high": 0.815,
+      "per_experiment_seed": [
+        0.76
+      ],
+      "per_task": {
+        "bbh": 0.64,
+        "gsm8k": 0.88
+      }
+    },
+    "strongest_single_calibration": {
+      "mean": 0.7949999999999999,
+      "confidence": 0.95,
+      "low": 0.74,
+      "high": 0.845,
+      "per_experiment_seed": [
+        0.7949999999999999
+      ],
+      "per_task": {
+        "bbh": 0.64,
+        "gsm8k": 0.95
+      }
+    },
+    "diagnostic_oracle_upper_reference": {
+      "mean": 0.925,
+      "confidence": 0.95,
+      "low": 0.885,
+      "high": 0.96,
+      "per_experiment_seed": [
+        0.925
+      ],
+      "per_task": {
+        "bbh": 0.87,
+        "gsm8k": 0.98
+      }
+    },
+    "independent_topk_by_task_calibration": {
+      "mean": 0.77,
+      "confidence": 0.95,
+      "low": 0.715,
+      "high": 0.825,
+      "per_experiment_seed": [
+        0.77
+      ],
+      "per_task": {
+        "bbh": 0.66,
+        "gsm8k": 0.88
+      }
+    },
+    "best_fixed_by_task_calibration": {
+      "mean": 0.6950000000000001,
+      "confidence": 0.95,
+      "low": 0.635,
+      "high": 0.75,
+      "per_experiment_seed": [
+        0.6950000000000001
+      ],
+      "per_task": {
+        "bbh": 0.52,
+        "gsm8k": 0.87
+      }
+    },
+    "aggregator_alone": {
+      "mean": 0.5549999999999999,
+      "confidence": 0.95,
+      "low": 0.485,
+      "high": 0.62,
+      "per_experiment_seed": [
+        0.5549999999999999
+      ],
+      "per_task": {
+        "bbh": 0.42,
+        "gsm8k": 0.69
+      }
+    },
+    "strong_model_resample": {
+      "mean": 0.765,
+      "confidence": 0.95,
+      "low": 0.71,
+      "high": 0.815,
+      "per_experiment_seed": [
+        0.765
+      ],
+      "per_task": {
+        "bbh": 0.6,
+        "gsm8k": 0.93
+      }
+    }
+  },
+  "paired_differences": {
+    "oracle_minus_best_fixed_calibration": {
+      "mean": 0.22999999999999998,
+      "confidence": 0.95,
+      "low": 0.18,
+      "high": 0.28500000000000003,
+      "per_experiment_seed": [
+        0.22999999999999998
+      ],
+      "per_task": {
+        "bbh": 0.35,
+        "gsm8k": 0.11
+      }
+    },
+    "oracle_minus_independent_topk_calibration": {
+      "mean": 0.165,
+      "confidence": 0.95,
+      "low": 0.115,
+      "high": 0.22,
+      "per_experiment_seed": [
+        0.165
+      ],
+      "per_task": {
+        "bbh": 0.23,
+        "gsm8k": 0.1
+      }
+    },
+    "oracle_minus_strongest_single_calibration": {
+      "mean": 0.13,
+      "confidence": 0.95,
+      "low": 0.09,
+      "high": 0.18,
+      "per_experiment_seed": [
+        0.13
+      ],
+      "per_task": {
+        "bbh": 0.23,
+        "gsm8k": 0.03
+      }
+    },
+    "oracle_minus_independent_topk_by_task_calibration": {
+      "mean": 0.155,
+      "confidence": 0.95,
+      "low": 0.10500000000000001,
+      "high": 0.2,
+      "per_experiment_seed": [
+        0.155
+      ],
+      "per_task": {
+        "bbh": 0.21,
+        "gsm8k": 0.1
+      }
+    },
+    "oracle_minus_best_fixed_by_task_calibration": {
+      "mean": 0.22999999999999998,
+      "confidence": 0.95,
+      "low": 0.18,
+      "high": 0.28500000000000003,
+      "per_experiment_seed": [
+        0.22999999999999998
+      ],
+      "per_task": {
+        "bbh": 0.35,
+        "gsm8k": 0.11
+      }
+    },
+    "oracle_minus_aggregator_alone": {
+      "mean": 0.37,
+      "confidence": 0.95,
+      "low": 0.305,
+      "high": 0.44,
+      "per_experiment_seed": [
+        0.37
+      ],
+      "per_task": {
+        "bbh": 0.45,
+        "gsm8k": 0.29
+      }
+    },
+    "oracle_minus_strong_model_resample": {
+      "mean": 0.16,
+      "confidence": 0.95,
+      "low": 0.11,
+      "high": 0.215,
+      "per_experiment_seed": [
+        0.16
+      ],
+      "per_task": {
+        "bbh": 0.27,
+        "gsm8k": 0.05
+      }
+    },
+    "fixed_minus_independent_topk": {
+      "mean": -0.065,
+      "confidence": 0.95,
+      "low": -0.125,
+      "high": -0.005000000000000001,
+      "per_experiment_seed": [
+        -0.065
+      ],
+      "per_task": {
+        "bbh": -0.12,
+        "gsm8k": -0.01
+      }
+    }
+  },
+  "coverage_and_aggregation": {
+    "all_pool_candidate_coverage": 0.8999999999999999,
+    "best_fixed_candidate_coverage": 0.85,
+    "best_fixed_aggregate_quality": 0.6950000000000001,
+    "best_fixed_coverage_minus_aggregate": 0.155,
+    "oracle_selected_candidate_coverage": 0.885,
+    "fraction_combo_outputs_correct_when_any_member_correct": 0.8372832369942197,
+    "fraction_combo_outputs_correct_when_no_member_correct": 0.09814814814814815,
+    "note": "Coverage is auxiliary; signed coverage-minus-aggregate may be negative when aggregator solves independently."
+  },
+  "costs": {
+    "best_fixed_calibration": 1628.805,
+    "independent_topk_calibration": 2347.195,
+    "oracle_selected_diagnostic_only": 1894.27,
+    "sum_standalone_combo_service_costs_not_diagnostic_actual": 7840657.0,
+    "note": "Matrix entries are complete standalone logical service costs; their sum overcounts shared diagnostic member generation and is not diagnostic actual cost.",
+    "full_actual_E1_diagnostic_cost": 6075463.0,
+    "aggregator_alone": 396.9,
+    "strong_model_resample": 1646.54,
+    "strongest_single_calibration": 306.69
+  },
+  "evidence": {
+    "e0_lock_sha256": "da9429b2359e283cb4ea187a7198d827082a4f38d8c143e80917c3b39d8198a8",
+    "cache_revision": "local_frozen_generation_v1",
+    "aggregator_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "aggregator_fingerprint": "64895faa3b6c711cb4ef2c3f871b7e18938d4c37d4a628bdcac4c7047f76c3c6",
+    "aggregator_config_sha256": "4d5b420058636d9bf1db35bf6d7d2fc3c20dce0e1156e230cdc070144306c85b",
+    "pool_config_sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf",
+    "model_config_sha256": {
+      "Qwen3-8B": "d27164da9a82dfb15b83babdbc8846e714258dd712f8a2fddff36e9e7ad15244",
+      "Qwen2.5-Coder-7B-Instruct": "be22329d445848da8e625dc46f6945da3c53b3de523b33248ecaf8c3de5cd4f4",
+      "Granite-3.3-8b-instruct": "533fdb0ccfbdd4ce1f17591b04b32cdc558894da43e16282a7850804cbe2f0ab",
+      "DeepHermes-3-Llama-3-8B-Preview": "3fba4c1a6f02dd15f845c5ae6105e7c298bd170c5bed72f0aae2696afeb24736",
+      "DeepSeek-R1-Distill-Qwen-7B": "f95fe507ac463767dbcb5f596dc0aa883723940dfb813546d2a26004bf3b6a98",
+      "Cogito-v1-preview-llama-8B": "dc695c9eba14e5d6741e5efeec8f17d25cacb31e565bb07ac5bdee516e0c6308"
+    },
+    "qualification_receipts": [
+      {
+        "sha256": "252d2f15f5b09c31dc3dc11b0a9a0b780c27ff8a7dd85dd7f22b5a956ce1329c",
+        "model_fingerprint": "e78d70a2c0caafae89f5580114bf3bb7f6e4b78a70cb1c7d832b56f7869dc810"
+      },
+      {
+        "sha256": "8f31884097f67626fea703c98dd5b657f06332fca8e40d65e750e50f31270b3a",
+        "model_fingerprint": "c66e9ef85bbb7808c69aaa09306c82f8593a3377bed118c909ecbb5348f9befc"
+      },
+      {
+        "sha256": "3f20631c6d3ef7f781f2cc0738b6a7ce068425f31c7033eaf18f4bf21f0a8a46",
+        "model_fingerprint": "cb06ac0c53f33dc59b4ee8e377d8aef3b633fa44caaeaeff8677b4243aaef375"
+      },
+      {
+        "sha256": "6029bcc9596bff4c25eb1d7d4be2ba6b6ea9647aaf58474fbbd4cd1e5f9d92c9",
+        "model_fingerprint": "75a62ba67d0d49e6445bc0e170ff418f2102b089ef0876a86bc5566132f17ab7"
+      },
+      {
+        "sha256": "6321627aefcf0dec75b1dfb8dd327ea4945f3fd0668466f8a75608cf1e5daa77",
+        "model_fingerprint": "c1a76815711b87995b6c1a17e521d40b36861787ba1e29fc41ad95d0030afdc5"
+      },
+      {
+        "sha256": "a3602d40e3f64c164dae9019ccd7ad083626c250b121df2d67db5057936c5ebf",
+        "model_fingerprint": "8217f92d567675f66a6e47a6832737691501db6e3e5822347eb369e264122022"
+      },
+      {
+        "sha256": "4069c8ff4309f534eca9fbd7afff85d0ee06863ba2deb2c1b352ce6be25fb52b",
+        "model_fingerprint": "64895faa3b6c711cb4ef2c3f871b7e18938d4c37d4a628bdcac4c7047f76c3c6"
+      }
+    ],
+    "raw_aggregate_artifact_sha256": "3202b83879dd4912af43add7741444b02398d45a11288453a114f899f0a90cde",
+    "raw_baseline_artifact_sha256": "480f8b9227437a40c27f824e80ff9c03b3b4b92844e9b56327d71ed171406430",
+    "raw_output_sources": [
+      {
+        "name": "members_qwen3-8b.jsonl",
+        "sha256": "21891e2bea1a7d457ee51283582503327b4d699704e136be81471be67c4572e2"
+      },
+      {
+        "name": "members_qwen2.5-coder-7b-instruct.jsonl",
+        "sha256": "a282d14d02052c79e7f947633c531d03211816e9abfe6e44b5d0e9b80801e5bd"
+      },
+      {
+        "name": "members_granite-3.3-8b-instruct.jsonl",
+        "sha256": "afab2a3b70161a0bb39a1ab6555a9d034e2c3760518f788551de3217798919da"
+      },
+      {
+        "name": "members_deephermes-3-llama-3-8b-preview.jsonl",
+        "sha256": "dab6f4266779c3cec6f6600905f84f9f67af2c55274325836e814405056f6829"
+      },
+      {
+        "name": "members_deepseek-r1-distill-qwen-7b.jsonl",
+        "sha256": "c9145689430a112547afb51af183dfa0bbe56d4078df71b235cfc178d3d156fe"
+      },
+      {
+        "name": "members_cogito-v1-preview-llama-8b.jsonl",
+        "sha256": "eebfea18885642cee32ab5e580e5157580521bdbcd934438f416c995aefc60b0"
+      },
+      {
+        "name": "aggregations.jsonl",
+        "sha256": "56fd4f0e5c3b920728615399e7106e4361533fb748afba72b590eb8078120325"
+      },
+      {
+        "name": "aggregator_alone.jsonl",
+        "sha256": "2b86ef5046f99482b2534c0f969755919cd9fb8855556c71807e8c6dac7fdfaa"
+      },
+      {
+        "name": "strong_samples.jsonl",
+        "sha256": "f662bb050e7ee126f40ddf7db935a619a92f4591f43f9b08388bae6845e0a37f"
+      },
+      {
+        "name": "strong_aggregations.jsonl",
+        "sha256": "5b23fd51dbfdf39882df732c132c3377eb564291b51dddd85f0f3235df1d4d67"
+      }
+    ],
+    "reference_sources": [
+      "00fb6dc933808da90c5c922e36161f68f9b5ba403208ed51103704e98fd0c51a",
+      "8e02e28cc8a43d4b80c899362e977ce5bef149a1048cfeaed1992cc36991e3d7"
+    ],
+    "split_manifest_sha256": "172619f6486d818efa35fd5e6c51add404cd49afe1db92efb126f2b3f1df566d",
+    "scorer_version": "safe_exact_v1_1",
+    "scorer_source_sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d",
+    "cost_unit": "logical_total_input_output_tokens; calls and summed per-call seconds separately reported",
+    "real_frozen_llm_aggregation": true,
+    "all_combinations_executed": true,
+    "budget_matched_controls": true,
+    "e1_isolated_from_online_and_pca": true,
+    "software_test_only": false
+  },
+  "gate": {
+    "kind": "engineering_choice_not_teacher_number_or_expected_result",
+    "minimum_observed_oracle_headroom": 0.01,
+    "requires_positive_paired_ci_low": true,
+    "reference": "strongest_single_calibration",
+    "observed_headroom": {
+      "mean": 0.13,
+      "confidence": 0.95,
+      "low": 0.09,
+      "high": 0.18,
+      "per_experiment_seed": [
+        0.13
+      ],
+      "per_task": {
+        "bbh": 0.23,
+        "gsm8k": 0.03
+      }
+    },
+    "passed_statistical_opportunity_check": true,
+    "limitation": "Oracle uses current evaluation labels; PASS licenses E2 feasibility work only and is never deployable accuracy or proof of learnability/cost benefit."
+  },
+  "physical_diagnostic_cost": {
+    "unique_calls": 8800,
+    "known_prompt_tokens": 4972274,
+    "known_completion_tokens": 1103189,
+    "known_call_wall_time_sum_s": 250140.00596622063,
+    "unknown_usage_calls": 0,
+    "unknown_wall_time_calls": 0,
+    "total_tokens": 6075463,
+    "all_costs_reconciled": true,
+    "ignored_non_E1_store_rows": 0,
+    "by_kind": {
+      "ordinary_members": {
+        "unique_calls": 1800,
+        "known_prompt_tokens": 302281,
+        "known_completion_tokens": 377632,
+        "known_call_wall_time_sum_s": 101563.46223479882,
+        "total_tokens": 679913,
+        "all_costs_reconciled": true
+      },
+      "ordinary_aggregations": {
+        "unique_calls": 6000,
+        "known_prompt_tokens": 4406726,
+        "known_completion_tokens": 580136,
+        "known_call_wall_time_sum_s": 108839.07232140284,
+        "total_tokens": 4986862,
+        "all_costs_reconciled": true
+      },
+      "aggregator_alone": {
+        "unique_calls": 200,
+        "known_prompt_tokens": 39816,
+        "known_completion_tokens": 39564,
+        "known_call_wall_time_sum_s": 8535.325760398759,
+        "total_tokens": 79380,
+        "all_costs_reconciled": true
+      },
+      "strong_samples": {
+        "unique_calls": 600,
+        "known_prompt_tokens": 94602,
+        "known_completion_tokens": 91737,
+        "known_call_wall_time_sum_s": 30617.484990799334,
+        "total_tokens": 186339,
+        "all_costs_reconciled": true
+      },
+      "strong_aggregations": {
+        "unique_calls": 200,
+        "known_prompt_tokens": 128849,
+        "known_completion_tokens": 14120,
+        "known_call_wall_time_sum_s": 584.6606588208815,
+        "total_tokens": 142969,
+        "all_costs_reconciled": true
+      }
+    }
+  },
+  "logical_standalone_service_cost": {
+    "unit": "total_input_output_tokens",
+    "sum_tokens": 11785992.0,
+    "sum_calls": 24000.0,
+    "sum_call_wall_time_s": 1124473.694669391,
+    "warning": "sum over all combinations duplicates shared member generation; not physical diagnostic total"
+  },
+  "coverage": {
+    "required_questions": 300,
+    "required_members": 1800,
+    "required_aggregates": 6000,
+    "missing_members": 0,
+    "missing_aggregates": 0,
+    "missing_aggregator_alone": 0,
+    "missing_strong_resample": 0
+  },
+  "research_complete": false
+}

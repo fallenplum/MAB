@@ -1,0 +1,21 @@
+﻿members,calibration_accuracy,evaluation_accuracy
+"['Granite-3.3-8b-instruct', 'Qwen2.5-Coder-7B-Instruct', 'Qwen3-8B']",0.79,0.76
+"['DeepHermes-3-Llama-3-8B-Preview', 'Qwen2.5-Coder-7B-Instruct', 'Qwen3-8B']",0.85,0.695
+"['DeepSeek-R1-Distill-Qwen-7B', 'Qwen2.5-Coder-7B-Instruct', 'Qwen3-8B']",0.77,0.76
+"['Cogito-v1-preview-llama-8B', 'Qwen2.5-Coder-7B-Instruct', 'Qwen3-8B']",0.8,0.745
+"['DeepHermes-3-Llama-3-8B-Preview', 'Granite-3.3-8b-instruct', 'Qwen3-8B']",0.82,0.745
+"['DeepSeek-R1-Distill-Qwen-7B', 'Granite-3.3-8b-instruct', 'Qwen3-8B']",0.77,0.77
+"['Cogito-v1-preview-llama-8B', 'Granite-3.3-8b-instruct', 'Qwen3-8B']",0.79,0.77
+"['DeepHermes-3-Llama-3-8B-Preview', 'DeepSeek-R1-Distill-Qwen-7B', 'Qwen3-8B']",0.78,0.755
+"['Cogito-v1-preview-llama-8B', 'DeepHermes-3-Llama-3-8B-Preview', 'Qwen3-8B']",0.77,0.75
+"['Cogito-v1-preview-llama-8B', 'DeepSeek-R1-Distill-Qwen-7B', 'Qwen3-8B']",0.77,0.78
+"['DeepHermes-3-Llama-3-8B-Preview', 'Granite-3.3-8b-instruct', 'Qwen2.5-Coder-7B-Instruct']",0.73,0.67
+"['DeepSeek-R1-Distill-Qwen-7B', 'Granite-3.3-8b-instruct', 'Qwen2.5-Coder-7B-Instruct']",0.69,0.735
+"['Cogito-v1-preview-llama-8B', 'Granite-3.3-8b-instruct', 'Qwen2.5-Coder-7B-Instruct']",0.77,0.755
+"['DeepHermes-3-Llama-3-8B-Preview', 'DeepSeek-R1-Distill-Qwen-7B', 'Qwen2.5-Coder-7B-Instruct']",0.69,0.72
+"['Cogito-v1-preview-llama-8B', 'DeepHermes-3-Llama-3-8B-Preview', 'Qwen2.5-Coder-7B-Instruct']",0.74,0.665
+"['Cogito-v1-preview-llama-8B', 'DeepSeek-R1-Distill-Qwen-7B', 'Qwen2.5-Coder-7B-Instruct']",0.73,0.75
+"['DeepHermes-3-Llama-3-8B-Preview', 'DeepSeek-R1-Distill-Qwen-7B', 'Granite-3.3-8b-instruct']",0.67,0.745
+"['Cogito-v1-preview-llama-8B', 'DeepHermes-3-Llama-3-8B-Preview', 'Granite-3.3-8b-instruct']",0.81,0.68
+"['Cogito-v1-preview-llama-8B', 'DeepSeek-R1-Distill-Qwen-7B', 'Granite-3.3-8b-instruct']",0.74,0.765
+"['Cogito-v1-preview-llama-8B', 'DeepHermes-3-Llama-3-8B-Preview', 'DeepSeek-R1-Distill-Qwen-7B']",0.68,0.735
