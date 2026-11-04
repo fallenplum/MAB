@@ -1,0 +1,52 @@
+固定K=3组合路由新版开发实验协议
+
+本轮问题
+给定题目输入，在生成答案和获得标准答案前选择三个模型。研究目标是在有限标准答案揭示、成员生成、聚合及评价资源下学会选择。固定组合准确率不能单独判定逐题路由能否学会。E1已有事后逐题Oracle，仍需未参与选择器训练的问题上的前瞻验证。
+
+历史结果的用途
+原69.5%是校准选定的固定异构组合在200道开发诊断题上的质量。78.5%是同一强模型三采样经Qwen2.5长输出聚合的后验对照。92.5%是同一生成缓存上的逐题事后Oracle。原E2主排序诊断51.16%，题级95%区间49.987%至52.277%，只反映旧稀疏反馈、特征和聚合协议。它没有检验充分反馈上限。旧标签单位为组合评分条数，本轮改为每题首次gold揭示，历史结果继续保留原口径。
+
+第一步
+先对候选Qwen3-8B聚合器做原8道资格题的真实运行，检查输入匿名化、身份、token、结束状态和评分接口。然后在100道聚合开发校准题上检查并冻结完整算子。保留6选3与全部20组合，生成种子预设42、137、2024。对既有200道开发诊断题记录每个重复的全20组合真实聚合质量、事后上界、跨生成重复的选队迁移，以及全局固定、任务固定、最强单模型、同模型三采样和聚合器独答对照。不同流种子与生成重复分别记录。
+
+第二步
+旧online600改作充分反馈训练集，旧cal200用于选择器开发验证。另从未选候选中预先选择400道平衡开发留出，BBH覆盖27个子任务。所有1308个原锁定ID与规范化题目hash，以及新增人工审阅记录均在排除边界内。旧PCA曾用cal200拟合，新版PCA和标准化只用train600拟合。
+
+先使用共享二阶ridge和同一套题目特征，在充分组合评分下预测全部团队得分。全局、任务、BBH子任务固定路由只用训练集确定，缺少子任务时按任务及全局回退。质量评价在预测和选队冻结后进行。主要比较逐题选择相对任务/子任务固定路由的配对增量，并报告同任务、同子任务内的效果。若预先记录的可学习性门未通过，检查组合、特征和支持数，停止扩大在线采集实验。
+
+第三步
+使用同一个选择器、特征、更新、主服务、初始权限和候选动作生成器，比较随机、边界不确定性、参数信息增益和决策价值采集。只改变下一次评测的选择规则。参考输入分布仅来自训练题输入。下一次观测的价值由假想更新后未来参考题的最佳组合预测价值增量计算。gold首次到达还会解锁同题已生成输出，采集算子的观测矩阵应包含整个真实新增反馈bundle。
+
+成本与复用
+每个canonical question和reference version在每次独立策略运行中只计一次gold揭示，待到达状态也去重。同题新增组合和生成重复继续复用该gold。合法生成后的确定性判分、成员反馈及聚合反馈按统一权限使用。成员、聚合器和judge模型的每次真实调用及失败用量分别记录，确定性判分次数与CPU时间另列。规划与更新的CPU和wall时间继续计入。候选筛选需要生成回答时，同样支付生成成本。
+
+公开基准的reference已随数据下载，本轮使用受控揭示来测量训练信息需求。真实新标注采购调用、逻辑gold揭示、全信息预计算和受限策略执行等价成本分别报告。开发留出评价所需的标准答案和推理也作为共同评价开销另列。
+
+论文主张
+先检验充分反馈下逐题选择在独立开发问题上的可学习性，再检验相同预算下质量或达到同一质量所需成本。应用价值同时查看代表性任务的组合质量—成本前沿。E3式同预测器采集消融支持组件归因，CES等完整策略比较需单列其预测器与服务政策差异。
+
+KG、误差缩减和面向最优动作的信息获取已有成熟前史，不能把“评测能改变未来选择”本身当作新颖性。参数IG只是明确的一种基线。真实二值奖励、一步近似、训练参考分布和规划成本都可能使KG-inspired采集无优势，实验保留这些结果。
+
+封存边界
+本轮已有问题均用于开发。新400道留出在评价后也进入开发谱系。原sealed200仅使用排除元数据，保留到模型、聚合器、采集规则和全部参数确定后的最终评价。
+
+重要入口
+configs/decision_feedback_v2/aggregator_qwen3_8b_candidate_v1.json
+scripts/v2/prepare_aggregator_qualification.py
+scripts/v2/audit_gold_reuse.py
+scripts/v2/audit_query_operator.py
+src/budget_router_v2/feedback.py
+src/budget_router_v2/acquisition.py
+artifacts/private/routing_redesign_20261104/FEEDBACK_COST_V2_AUDIT_20261104.json
+artifacts/private/routing_redesign_20261104/ASSET_SPLIT_READINESS_AUDIT_v1.json
+artifacts/private/routing_redesign_20261104/PARTITION_PROPOSAL_v2.json
+
+原始文献
+Frazier等，2009，The Knowledge-Gradient Policy for Correlated Normal Beliefs
+https://people.orie.cornell.edu/pfrazier/pub/CorrelatedKG.pdf
+Roy与McCallum，2001，Toward Optimal Active Learning through Monte Carlo Estimation of Error Reduction
+https://groups.csail.mit.edu/rrg/papers/icml01.pdf
+Hennig与Schuler，2012，Entropy Search for Information-Efficient Global Optimization
+https://jmlr.org/papers/v13/hennig12a.html
+Russo与Van Roy，Learning to Optimize via Information-Directed Sampling
+https://arxiv.org/pdf/1403.5556

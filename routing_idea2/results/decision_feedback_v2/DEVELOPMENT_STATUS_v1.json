@@ -1,0 +1,38 @@
+{
+  "schema": "decision_feedback_v2_development_status_v1",
+  "created_at_unix": 1793784951.9483953,
+  "K": 3,
+  "research_complete": false,
+  "stage1_aggregator_technical_qualification": "PASS_SERVER_PROFILE",
+  "stage1_full_heterogeneous_multigeneration": "PENDING",
+  "stage2_full_feedback_learnability": "PENDING",
+  "stage3_acquisition_comparison": "CONDITIONAL_ON_STAGE2",
+  "new_physical_model_calls": 8,
+  "qualification_usage": {
+    "prompt_tokens": 5313,
+    "completion_tokens": 829
+  },
+  "qualification_correct": 7,
+  "qualification_questions": 8,
+  "software_regression_tests": 45,
+  "feedback_ledger_scope": "persistent accounting, reuse and permissions; live execution claims and hard-budget admission await stage3 runtime integration",
+  "query_operator_scope": "KG-informed working-model implementation and software tests; empirical comparison planned",
+  "fresh_dev_test_status": "400_QUESTION_PROPOSAL_NOT_SELECTED",
+  "features_fit_domain": "selector_train600_only",
+  "v1_source_closure_unchanged": 76,
+  "reference_access": {
+    "source_byte_stream_scanned": true,
+    "qualification_payloads_parsed": 8,
+    "sealed_payloads_parsed": 0,
+    "sealed_references_scored": 0
+  },
+  "execution_incident": {
+    "first_launch": "raw configuration default-fields comparison rejected before backend/model calls",
+    "first_launch_model_calls": 0,
+    "repair": "compare normalized ModelSpec values and add model-free input preflight",
+    "repair_preflight": "PASS",
+    "subsequent_actual_calls": 8
+  },
+  "protocol": "protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json",
+  "qualification_review": "results/decision_feedback_v2/s1_qualification/QUALIFICATION_REVIEW_v1.json"
+}

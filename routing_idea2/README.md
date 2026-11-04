@@ -35,3 +35,18 @@
 ## Word报告构建
 
 artifacts/audit/build_e1_teacher_report_v1.py 从本地完整证据构建报告；另需python-docx 1.2.0及lxml 6.0.2。发布的Word已用Microsoft Word实际渲染并逐页检查，不依赖读者重新构建。
+
+## v2开发协议
+
+新的三步顺序已记录为开发协议，生成重复暂设3组。训练角色为旧online600，选择器验证角色为旧cal200，新400题开发留出尚待按排除名单抽取。PCA与标准化仅用训练600拟合，原封存200保留到方案确定后的最终评价。
+
+计费接口区分题级gold揭示、实际输出执行和评分观测，生成种子或组合变化可复用同题gold。公开基准的gold揭示是受控信息用量，真实新标注采购调用另计。当前SQLite接口承担权限、核算和去重，实时硬预算预约与外部执行领取在正式采集循环接入验证。
+
+已通过12项账本回归和33项采集算子回归。候选Qwen3聚合器已在匹配Linux/A6000环境完成8次真实资格调用，成绩7/8，无输出截断。初次启动遇到配置默认字段比较问题，在模型加载前被拒绝；标准化ModelSpec检查与零调用输入预检已修正该问题。资格真值采用流式字节扫描及8题白名单投影，审计记录封存题语义解析/评分均为0。
+
+参数IG和KG-informed一步决策价值已实现，批量候选共享后验准备并记录规划CPU/wall。机制归因比较共享选择器、特征、更新和主服务，CES等完整策略另列。
+
+- [设计说明](protocol/decision_feedback_v2/EXPERIMENT_DESIGN_v2.txt)
+- [机器协议](protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json)
+- [重要文件索引](results/decision_feedback_v2/FILE_INDEX_v1.json)
+- [技术资格摘要](results/decision_feedback_v2/s1_qualification/QUALIFICATION_SUMMARY_v1.json)

@@ -1,0 +1,33 @@
+{
+  "schema": "v2_implementation_public_verification_v1",
+  "scope": "development_software_and_qualification",
+  "software_tests": {
+    "feedback": 12,
+    "operator": 33,
+    "total": 45,
+    "failures": 0
+  },
+  "question_gold_reuse_real_record_audit": {
+    "gold_reveals": 1,
+    "member_calls": 6,
+    "aggregator_calls": 20,
+    "judge_calls": 0,
+    "scoring_ops": 26,
+    "restart_new_charges": 0,
+    "new_physical_model_calls": 0
+  },
+  "operator_audit": "KG-informed common-shift counterexample and general observation bundles",
+  "operator_dimension_audit": {
+    "parameter_dim": 374,
+    "reference_inputs": 64,
+    "actions": 20,
+    "fantasies": 32,
+    "scope": "local software fixture"
+  },
+  "v1_scientific_source_files_unchanged": 76,
+  "source_verifications_sha256": {
+    "feedback": "6f8657f163ad965488146f7c4557672995266312394911513ff5fe493e9a9b17",
+    "operator": "b9fbec1fefa4430ce9d7a87f9fdbf9fb894843681a880847a12ab394ce625eeb"
+  },
+  "research_complete": false
+}

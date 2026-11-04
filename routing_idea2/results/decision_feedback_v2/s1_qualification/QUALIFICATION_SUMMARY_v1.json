@@ -1,0 +1,44 @@
+{
+  "schema": "v2_aggregator_qualification_public_summary_v1",
+  "status": "PASS",
+  "scope": "eight_question_server_technical_qualification",
+  "model_id": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "temperature": 0.0,
+  "max_new_tokens": 2048,
+  "successful_calls": 8,
+  "correct": 7,
+  "questions": 8,
+  "by_task": {
+    "gsm8k": {
+      "questions": 4,
+      "correct": 4.0,
+      "parsed": 4
+    },
+    "bbh": {
+      "questions": 4,
+      "correct": 3.0,
+      "parsed": 4
+    }
+  },
+  "completion_cap_hits": 0,
+  "finish_reason_counts": {
+    "model_stopped": 8
+  },
+  "actual_usage": {
+    "prompt_tokens": 5313,
+    "completion_tokens": 829
+  },
+  "model_call_wall_seconds_sum": 47.30366786906961,
+  "full_stage1_completion": false,
+  "source_review_sha256": "7a942e5a13e354f0e51b886192df671a86071801a1862df92212929a6428a7ed",
+  "source_archive_sha256": "f26468547582b3cf0cbcc178f7bfa52a1dcbfa689003ea955ccd74fda1fabacd",
+  "source_worker_sha256": "26fb8f8a1ee8bb3b214e61d1344e5b39a55b36f0d54b906938f7e183088e55b2",
+  "configuration_preflight_repair": "Normalized ModelSpec defaults after a zero-model-call input rejection",
+  "reference_projection": {
+    "physical_source_stream_scan": true,
+    "qualification_payloads_parsed": 8,
+    "sealed_payloads_parsed": 0,
+    "sealed_references_scored": 0
+  }
+}
