@@ -1,0 +1,80 @@
+{
+  "schema": "completed_E2_aggregate_delivery_manifest_v1",
+  "stage_scope": "E2_ONLY",
+  "research_complete": false,
+  "technical_status": "E2_PASS",
+  "scientific_learnability_conclusion": "INCONCLUSIVE",
+  "run_identity_sha256": "2eb9e98505dcd88aadcbbc590cf200125c77340f6741b09df314d9c3bd829c96",
+  "primary_diagnostic": {
+    "strategy": "none",
+    "label_rate": 25,
+    "feedback_delay": 0,
+    "metric": "question_mean_pairwise_accuracy_over_supported_combinations_on_unseen_online_questions",
+    "null_accuracy": 0.5,
+    "confidence": 0.95,
+    "minimum_rankable_questions_per_task": 20
+  },
+  "primary_interval": {
+    "mean": 0.51157277656002,
+    "interval": [
+      0.49987067348317815,
+      0.522770450295764
+    ],
+    "question_support": 317,
+    "adequate_support": true,
+    "confidence": 0.95,
+    "bootstrap_replicates": 2000,
+    "per_task_support": {
+      "bbh": 203,
+      "gsm8k": 114
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "episodes": 300,
+    "csv_rows": 300,
+    "csv_columns": 45,
+    "source_closure_files_unchanged": 76,
+    "e2_gate_sha256": "195b4b91e5649ecb8022fe41bc21af86b792d9d376675a5c35558d5df6c00fb1",
+    "original_e0_sha256": "da9429b2359e283cb4ea187a7198d827082a4f38d8c143e80917c3b39d8198a8",
+    "exporter_sha256": "b4eeb212c7be939db82f95a6ac0e99d6e63d262857b45b38138ce1489d8b4cba",
+    "privacy_allowlist_checks": "PASS",
+    "new_model_calls_during_CPU_E2_or_export": 0
+  },
+  "project_prefix_in_MAB": "routing_idea2",
+  "index_interpretation": "E2_FILE_INDEX uses experiment-root-relative source paths. This manifest lists the newly published files.",
+  "self_hash_excluded": true,
+  "files": [
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json",
+      "bytes": 714413,
+      "sha256": "246ceeb8b52503d45c968a81026e401fb89ac279bf157a2576912354c14c8845",
+      "git_blob_sha1": "07e533aa0c6f1006054a8e2985ab435bb49e3064"
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv",
+      "bytes": 116024,
+      "sha256": "49eb294862bf6e10ea46e5dd535215ae95204927f69abbca0655506b9760d8fa",
+      "git_blob_sha1": "63d2f2d65e54bcea5761d987c1c9f79aa7c60279"
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_FILE_INDEX.json",
+      "bytes": 207831,
+      "sha256": "cf4707b6a1d8588903fb4cae28f6bbd4e9a349e1a9507807dface9b3ce9b24fb",
+      "git_blob_sha1": "a1fd5636462dc1f156da6cf3734127f1bf700b57"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3006,
+      "sha256": "305af6029178291c7d72bc3e200492e779e8b74dad5741960c3dc6b97937dc9e",
+      "git_blob_sha1": "08f00132fdb68b78acfac17af947b0cdf450b50a"
+    },
+    {
+      "path": "routing_idea2/README.md",
+      "bytes": 3836,
+      "sha256": "19348aa0182a25f561ab82f0f5ce730921e9f59199b657b16fd6b67c82ca573b",
+      "git_blob_sha1": "f2cf9f6c61d9c8c1075caceafc38b184cc666a71"
+    }
+  ],
+  "prepared_at_unix": 1793766953.239918
+}
