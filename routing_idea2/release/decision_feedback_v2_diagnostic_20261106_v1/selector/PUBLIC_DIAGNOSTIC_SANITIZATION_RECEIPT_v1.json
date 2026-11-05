@@ -1,0 +1,30 @@
+{
+  "schema": "aggregate_only_public_diagnostic_sanitization_v1",
+  "public_files": [
+    {
+      "name": "PUBLIC_SELECTOR_DIAGNOSTIC_v1.json",
+      "sha256": "5f6f859ec90b91a7f1b9a18e14084fbe85ecc6b11d9a8cbb4845f88f104bad1b",
+      "bytes": 216735
+    },
+    {
+      "name": "PUBLIC_DIAGNOSTIC_BRIEF_zh.md",
+      "sha256": "a67a2d8021a93a26238073c76f05381da0d07c7ba35d6b78e1643dc766e9806e",
+      "bytes": 3212
+    },
+    {
+      "name": "PUBLIC_FILE_INDEX_zh.md",
+      "sha256": "94f8f42e291b1797a1f08005ce049d6da914352f1d9269bb846af723f94820ba",
+      "bytes": 1441
+    }
+  ],
+  "source_private_report_sha256": "79a47eadca1cd8fda7bdd401f2528ad4f15dcd3ac72d54b124ad54829265a2ef",
+  "private_report_unchanged": true,
+  "training_validation_identifiers_checked": 1600,
+  "identifier_hits": 0,
+  "machine_location_hits": 0,
+  "ip_address_hits": 0,
+  "private_row_arrays_published": false,
+  "question_standard_answers_or_raw_outputs_published": false,
+  "new_llm_calls": 0,
+  "scan_scope": "Whitelisted three public text files; exact comparison against all 800 training/validation qids and 800 canonical hashes, machine path and IPv4 pattern checks. No fresh outcome or answer opened."
+}

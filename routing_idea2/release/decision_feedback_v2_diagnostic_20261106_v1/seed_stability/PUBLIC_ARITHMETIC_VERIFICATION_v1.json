@@ -1,0 +1,108 @@
+{
+  "schema": "routing_v2_public_seed_stability_arithmetic_verification_v1",
+  "status": "PASS",
+  "source_full_diagnostic_sha256": "8f752f6b861ae18e20b7e6abd5529f52da8498bcf270e18346136b020ee6abe6",
+  "source_private_verification_sha256": "796383d112c6a3226d106f3a420b2eeb129a56186dacf2b4da388a4b59982e08",
+  "source_public_brief_sha256": "08a4be292488cd41efb50cc3f1d06a46db0348452a5f4624e2d88b3fd827449b",
+  "source_public_complete_sha256": "968f3f6f10663da5c432fea1b3e59c825aec4bbf0153683d42f93fedcab53dd8",
+  "source_helper_sha256": "6a486f7e08c6f7246abba52f9a3f1695995bba44a9f47d865e267907c7f8c02f",
+  "original_bootstrap_source_sha256": "58b20505182149eef2537a42867c04ba98dfc6959f527fe62c1b8c5ff3f39dc2",
+  "same_question_two_source_choice_recomputed_independently": true,
+  "paired_point_and_CI_match_original_bootstrap_primitive": true,
+  "per_generation_signed_differences_match_original": true,
+  "mixed_score_patterns_independently_counted": true,
+  "all3_correct_team_question_count": 182,
+  "original_bootstrap_result": {
+    "task_macro_difference": 0.01,
+    "strata_support": {
+      "gsm8k": 100,
+      "bbh/boolean_expressions": 3,
+      "bbh/causal_judgement": 4,
+      "bbh/date_understanding": 4,
+      "bbh/disambiguation_qa": 4,
+      "bbh/dyck_languages": 4,
+      "bbh/formal_fallacies": 4,
+      "bbh/geometric_shapes": 4,
+      "bbh/hyperbaton": 3,
+      "bbh/logical_deduction_five_objects": 4,
+      "bbh/logical_deduction_seven_objects": 4,
+      "bbh/logical_deduction_three_objects": 4,
+      "bbh/movie_recommendation": 4,
+      "bbh/multistep_arithmetic_two": 3,
+      "bbh/navigate": 4,
+      "bbh/object_counting": 4,
+      "bbh/penguins_in_a_table": 4,
+      "bbh/reasoning_about_colored_objects": 3,
+      "bbh/ruin_names": 4,
+      "bbh/salient_translation_error_detection": 3,
+      "bbh/snarks": 3,
+      "bbh/sports_understanding": 4,
+      "bbh/temporal_sequences": 4,
+      "bbh/tracking_shuffled_objects_five_objects": 3,
+      "bbh/tracking_shuffled_objects_seven_objects": 4,
+      "bbh/tracking_shuffled_objects_three_objects": 4,
+      "bbh/web_of_lies": 4,
+      "bbh/word_sorting": 3
+    },
+    "adequate_support": true,
+    "question_cluster_ci": [
+      -0.011708333333333334,
+      0.03333333333333334
+    ],
+    "question_support": 200,
+    "per_task_support": {
+      "gsm8k": 100,
+      "bbh": 100
+    },
+    "per_generation": [
+      {
+        "generation_seed": 42,
+        "difference": -0.005,
+        "question_cluster_ci": [
+          -0.04,
+          0.030000000000000002
+        ]
+      },
+      {
+        "generation_seed": 137,
+        "difference": 0.055,
+        "question_cluster_ci": [
+          0.02,
+          0.09
+        ]
+      },
+      {
+        "generation_seed": 2024,
+        "difference": -0.02,
+        "question_cluster_ci": [
+          -0.055,
+          0.015
+        ]
+      }
+    ],
+    "positive_generation_replicates": 1,
+    "confidence": 0.95,
+    "bootstrap_replicates": 2000,
+    "bootstrap_unit": "question; all generations grouped; task/subtask stratified",
+    "scope": "Conditional on fitted selector, frozen aggregator and observed generation replicates; no training-set retraining bootstrap"
+  },
+  "source_matrix_and_input_artifacts": {
+    "inputs": {
+      "filename": "selector_validation_inputs.npz",
+      "sha256": "99702ec2e09fbe7ce3615268cb43abd5ae8982c6ab0a8f03c11c9a7fe03cdaff"
+    },
+    "outcomes": {
+      "filename": "selector_validation_outcomes.npz",
+      "sha256": "30fa060eda4da084ba85d7084d1f7b7a7a4eb933e58923247cc450d4195897da"
+    },
+    "matrix_receipt": {
+      "filename": "selector_validation_matrix_receipt.json",
+      "sha256": "b625bc08e12e8a586b5bd4776c760b362b45e086f7aacc3fda4c8c3a81b9f994"
+    }
+  },
+  "new_fits": 0,
+  "new_llm_calls": 0,
+  "new_answer_scoring": 0,
+  "fresh_or_sealed_outcome_access": 0,
+  "not_a_deployable_router_or_confirmatory_gate": true
+}

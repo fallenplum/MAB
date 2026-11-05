@@ -1,3 +1,18 @@
+# v2当前状态：2026-11-06科学诊断与安全暂停
+
+充分反馈选择器在验证200题上为85.67%，训练选出的BBH子任务固定路由为87.00%；差值−1.33pp，95%题簇CI [−3.67,+1.00]pp，未显示稳定收益。原正式科学推进门位于fresh400，尚未评价；训练完成与技术校验通过不能代替科学假设成立。
+
+按用户要求已在在途结果成功提交后暂停剩余生成。9,600次训练/验证成员调用与5,330次fresh成员调用全部成本闭合，PENDING/UNKNOWN/失败均0；fresh聚合0次，Stage3未启动。两项CPU诊断新增LLM、评分、拟合均0，封存200题未用于本轮开发评价。
+
+- [本轮完整报告：验证、原因诊断与最小成本](release/decision_feedback_v2_diagnostic_20261106_v1/REPORT_zh.md)
+- [本轮重要文件索引](release/decision_feedback_v2_diagnostic_20261106_v1/FILE_INDEX_zh.md)
+- [暂停与成本摘要](release/decision_feedback_v2_diagnostic_20261106_v1/PAUSE_AND_COST_PUBLIC_v1.json)
+- [交付哈希清单](release/decision_feedback_v2_diagnostic_20261106_v1/DELIVERY_MANIFEST_v1.json)
+
+这是研究诊断检查点，完整研究尚未完成。以下保留历史E1/E2及早期v2状态，后续进度以本段和本轮报告为准。
+
+---
+
 # 有限评测预算下的模型组合路由：E1与E2归档
 
 原E1已完成8800次真实调用；本目录保存固定源代码、配置、原汇总结果及后验问题审计。E2已完成原定300组固定K=3回放与独立评价；E3–E5仍未完成。
