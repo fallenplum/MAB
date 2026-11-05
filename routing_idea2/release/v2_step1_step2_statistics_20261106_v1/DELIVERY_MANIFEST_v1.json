@@ -1,0 +1,58 @@
+{
+  "schema": "v2_step1_step2_completed_statistics_release_manifest_v1",
+  "files": [
+    {
+      "path": "EXPORT_COMPLETENESS_AND_INTEGRITY_v1.json",
+      "bytes": 2098,
+      "sha256": "6315f9b92d98637afe02ac390cbbbaba4e907d7b03e48f262015ab0f30547488"
+    },
+    {
+      "path": "FILE_INDEX_zh.md",
+      "bytes": 1444,
+      "sha256": "1438e61a51378572d1e9f630cd2b73172ca5eaf83ad00b1ddd2bc87951b327a4"
+    },
+    {
+      "path": "step1/README_zh.md",
+      "bytes": 1816,
+      "sha256": "78b09493f7fc5af0ebd6b836ea7bdc5c9a70aa7a280bdf6dc64ccfce225a4ab4"
+    },
+    {
+      "path": "step1/STEP1_COMPLETE_SCIENTIFIC_STATISTICS_v1.json",
+      "bytes": 562874,
+      "sha256": "91362d521cd88c6489c15b4045caee731bb34bbc8789e72bed6152da6afbb82a"
+    },
+    {
+      "path": "step1/STEP1_CROSS_SEED_TRANSFER_v1.json",
+      "bytes": 22178,
+      "sha256": "8c9633b5e7f00bec0d95d4f6aea81c35770e28471049fb5171a59789ce660dc6"
+    },
+    {
+      "path": "step2/README_zh.md",
+      "bytes": 2662,
+      "sha256": "d0b71bce69c059ffbb68fb9321206d18198b5f43ef0cda36e1723d9f3c0bd608"
+    },
+    {
+      "path": "step2/STEP2_INDEPENDENT_TOP3_ACCURACY_BY_TASK_v1.json",
+      "bytes": 22628,
+      "sha256": "40c9909a87e6e89c452c0c6e21751677685701824c5f5a87141299608e4f708e"
+    },
+    {
+      "path": "step2/STEP2_INDEPENDENT_TOP3_PAIRED_CI_v1.json",
+      "bytes": 10750,
+      "sha256": "7bf1fe556558e25de547430214c9c1860fcda76670149fc22741d155503eb9cc"
+    },
+    {
+      "path": "step2/STEP2_INDEPENDENT_TOP3_VALIDATION_v1.json",
+      "bytes": 33710,
+      "sha256": "e9646e307f04bf785a743c3a8824820eaca589d9803e0e617b02b986b9806e49"
+    },
+    {
+      "path": "step2/STEP2_TOP3_FREEZE_AND_LINEAGE_PUBLIC_v1.json",
+      "bytes": 3899,
+      "sha256": "ef979dd992f24eb5e71b82b85a6e565d759d99ab62dff02f3b30df6fc47a3651"
+    }
+  ],
+  "self_excluded": true,
+  "source_statistics_not_recomputed": true,
+  "status": "COMPLETED_DEVELOPMENT_STATISTICS_RESEARCH_INCOMPLETE"
+}

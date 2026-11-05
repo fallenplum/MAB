@@ -1,0 +1,56 @@
+{
+  "schema": "v2_statistics_export_completeness_v1",
+  "status": "ALL_COMPLETED_SOURCE_STATISTICS_PRESERVED",
+  "step1_statistical_sections": [
+    "evaluation_questions",
+    "generation_seeds",
+    "quality",
+    "paired_comparisons_vs_subtask_fixed",
+    "per_combination",
+    "coverage_vs_final",
+    "cross_generation_hindsight_oracle_transfer",
+    "oracle_scope",
+    "oracle_tie_breaking",
+    "unseen_question_learnability_established",
+    "alone_physical_generation_repeats",
+    "alone_value_shared_across_member_generations",
+    "ci_scope",
+    "multiple_comparison_scope",
+    "selector_fit_performed"
+  ],
+  "step1_all9_source_target_pairs_preserved": true,
+  "step1_all20_combinations_preserved": true,
+  "step1_all27_bbh_subtasks_preserved": true,
+  "step2_all5_method_summaries_preserved": true,
+  "step2_all4_paired_comparisons_and_per_seed_intervals_preserved": true,
+  "step2_all27_subtask_point_estimates_preserved": true,
+  "private_machine_paths_replaced_with_file_basename": true,
+  "no_question_or_attempt_identifiers_or_credentials_detected": true,
+  "source_files_unchanged_after_export": true,
+  "source_files": [
+    {
+      "file_name": "STAGE1_SCIENTIFIC_SUMMARY_v1.json",
+      "sha256": "16bcc11e2140856d9b669f87b0d706b857a6155ef1357e8cd80bfe2d1d8fb98c"
+    },
+    {
+      "file_name": "HARDWARE_LINEAGE_ADDENDUM_v2.json",
+      "sha256": "594d5e51b3c5db04b3ae6410ded22ac9755ddbeddb062ca57a700f8fdbbc6c96"
+    },
+    {
+      "file_name": "VALIDATION_EXPLORATORY_REPORT.json",
+      "sha256": "a11771b39f64d774a8a9bcc88b5ef1827f304f2f8dad42704c36bca6f3296bac"
+    },
+    {
+      "file_name": "MODEL_FROZEN.json",
+      "sha256": "04281f7887f6e9be4d8f55efc9e76f387c9ecf0db1b80008db607677955ab2c3"
+    },
+    {
+      "file_name": "POST_RUN_LINEAGE_VERIFICATION_v1.json",
+      "sha256": "c34021cb753fb55c3a7b623c6dacd661c0e6154e925e5536258d52812367f7f6"
+    }
+  ],
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_answer_scoring_operations": 0,
+  "experiment_generation_and_aggregation_remain_paused": true
+}

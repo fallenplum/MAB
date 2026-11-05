@@ -1,0 +1,310 @@
+{
+  "schema": "v2_step2_independent_top3_paired_intervals_release_v1",
+  "stage": "V2_STEP2_VALIDATION_ONLY",
+  "source_report_sha256": "a11771b39f64d774a8a9bcc88b5ef1827f304f2f8dad42704c36bca6f3296bac",
+  "difference_orientation": "IndependentTop3 minus each comparator; positive favors IndependentTop3",
+  "paired_comparisons": {
+    "selector": {
+      "task_macro_difference": 0.006666666666666667,
+      "strata_support": {
+        "gsm8k": 100,
+        "bbh/boolean_expressions": 3,
+        "bbh/causal_judgement": 4,
+        "bbh/date_understanding": 4,
+        "bbh/disambiguation_qa": 4,
+        "bbh/dyck_languages": 4,
+        "bbh/formal_fallacies": 4,
+        "bbh/geometric_shapes": 4,
+        "bbh/hyperbaton": 3,
+        "bbh/logical_deduction_five_objects": 4,
+        "bbh/logical_deduction_seven_objects": 4,
+        "bbh/logical_deduction_three_objects": 4,
+        "bbh/movie_recommendation": 4,
+        "bbh/multistep_arithmetic_two": 3,
+        "bbh/navigate": 4,
+        "bbh/object_counting": 4,
+        "bbh/penguins_in_a_table": 4,
+        "bbh/reasoning_about_colored_objects": 3,
+        "bbh/ruin_names": 4,
+        "bbh/salient_translation_error_detection": 3,
+        "bbh/snarks": 3,
+        "bbh/sports_understanding": 4,
+        "bbh/temporal_sequences": 4,
+        "bbh/tracking_shuffled_objects_five_objects": 3,
+        "bbh/tracking_shuffled_objects_seven_objects": 4,
+        "bbh/tracking_shuffled_objects_three_objects": 4,
+        "bbh/web_of_lies": 4,
+        "bbh/word_sorting": 3
+      },
+      "adequate_support": true,
+      "question_cluster_ci": [
+        -0.016666666666666666,
+        0.03
+      ],
+      "question_support": 200,
+      "per_task_support": {
+        "gsm8k": 100,
+        "bbh": 100
+      },
+      "per_generation": [
+        {
+          "generation_seed": 42,
+          "difference": 0.015,
+          "question_cluster_ci": [
+            -0.009999999999999998,
+            0.04
+          ]
+        },
+        {
+          "generation_seed": 137,
+          "difference": 0.025,
+          "question_cluster_ci": [
+            -0.009999999999999998,
+            0.06
+          ]
+        },
+        {
+          "generation_seed": 2024,
+          "difference": -0.02,
+          "question_cluster_ci": [
+            -0.05500000000000001,
+            0.015000000000000003
+          ]
+        }
+      ],
+      "positive_generation_replicates": 2,
+      "confidence": 0.95,
+      "bootstrap_replicates": 2000,
+      "bootstrap_unit": "question; all generations grouped; task/subtask stratified",
+      "scope": "Conditional on fitted selector, frozen aggregator and observed generation replicates; no training-set retraining bootstrap"
+    },
+    "global_fixed": {
+      "task_macro_difference": 0.003333333333333334,
+      "strata_support": {
+        "gsm8k": 100,
+        "bbh/boolean_expressions": 3,
+        "bbh/causal_judgement": 4,
+        "bbh/date_understanding": 4,
+        "bbh/disambiguation_qa": 4,
+        "bbh/dyck_languages": 4,
+        "bbh/formal_fallacies": 4,
+        "bbh/geometric_shapes": 4,
+        "bbh/hyperbaton": 3,
+        "bbh/logical_deduction_five_objects": 4,
+        "bbh/logical_deduction_seven_objects": 4,
+        "bbh/logical_deduction_three_objects": 4,
+        "bbh/movie_recommendation": 4,
+        "bbh/multistep_arithmetic_two": 3,
+        "bbh/navigate": 4,
+        "bbh/object_counting": 4,
+        "bbh/penguins_in_a_table": 4,
+        "bbh/reasoning_about_colored_objects": 3,
+        "bbh/ruin_names": 4,
+        "bbh/salient_translation_error_detection": 3,
+        "bbh/snarks": 3,
+        "bbh/sports_understanding": 4,
+        "bbh/temporal_sequences": 4,
+        "bbh/tracking_shuffled_objects_five_objects": 3,
+        "bbh/tracking_shuffled_objects_seven_objects": 4,
+        "bbh/tracking_shuffled_objects_three_objects": 4,
+        "bbh/web_of_lies": 4,
+        "bbh/word_sorting": 3
+      },
+      "adequate_support": true,
+      "question_cluster_ci": [
+        -0.015,
+        0.021666666666666667
+      ],
+      "question_support": 200,
+      "per_task_support": {
+        "gsm8k": 100,
+        "bbh": 100
+      },
+      "per_generation": [
+        {
+          "generation_seed": 42,
+          "difference": 0.01,
+          "question_cluster_ci": [
+            -0.019999999999999997,
+            0.04
+          ]
+        },
+        {
+          "generation_seed": 137,
+          "difference": 0.015,
+          "question_cluster_ci": [
+            -0.024999999999999994,
+            0.05
+          ]
+        },
+        {
+          "generation_seed": 2024,
+          "difference": -0.015,
+          "question_cluster_ci": [
+            -0.045,
+            0.014999999999999998
+          ]
+        }
+      ],
+      "positive_generation_replicates": 2,
+      "confidence": 0.95,
+      "bootstrap_replicates": 2000,
+      "bootstrap_unit": "question; all generations grouped; task/subtask stratified",
+      "scope": "Conditional on fitted selector, frozen aggregator and observed generation replicates; no training-set retraining bootstrap"
+    },
+    "task_fixed": {
+      "task_macro_difference": 0.001666666666666667,
+      "strata_support": {
+        "gsm8k": 100,
+        "bbh/boolean_expressions": 3,
+        "bbh/causal_judgement": 4,
+        "bbh/date_understanding": 4,
+        "bbh/disambiguation_qa": 4,
+        "bbh/dyck_languages": 4,
+        "bbh/formal_fallacies": 4,
+        "bbh/geometric_shapes": 4,
+        "bbh/hyperbaton": 3,
+        "bbh/logical_deduction_five_objects": 4,
+        "bbh/logical_deduction_seven_objects": 4,
+        "bbh/logical_deduction_three_objects": 4,
+        "bbh/movie_recommendation": 4,
+        "bbh/multistep_arithmetic_two": 3,
+        "bbh/navigate": 4,
+        "bbh/object_counting": 4,
+        "bbh/penguins_in_a_table": 4,
+        "bbh/reasoning_about_colored_objects": 3,
+        "bbh/ruin_names": 4,
+        "bbh/salient_translation_error_detection": 3,
+        "bbh/snarks": 3,
+        "bbh/sports_understanding": 4,
+        "bbh/temporal_sequences": 4,
+        "bbh/tracking_shuffled_objects_five_objects": 3,
+        "bbh/tracking_shuffled_objects_seven_objects": 4,
+        "bbh/tracking_shuffled_objects_three_objects": 4,
+        "bbh/web_of_lies": 4,
+        "bbh/word_sorting": 3
+      },
+      "adequate_support": true,
+      "question_cluster_ci": [
+        -0.025000000000000005,
+        0.028333333333333332
+      ],
+      "question_support": 200,
+      "per_task_support": {
+        "gsm8k": 100,
+        "bbh": 100
+      },
+      "per_generation": [
+        {
+          "generation_seed": 42,
+          "difference": 0.015,
+          "question_cluster_ci": [
+            -0.02,
+            0.05
+          ]
+        },
+        {
+          "generation_seed": 137,
+          "difference": 0.005,
+          "question_cluster_ci": [
+            -0.034999999999999996,
+            0.04
+          ]
+        },
+        {
+          "generation_seed": 2024,
+          "difference": -0.015,
+          "question_cluster_ci": [
+            -0.045000000000000005,
+            0.02
+          ]
+        }
+      ],
+      "positive_generation_replicates": 2,
+      "confidence": 0.95,
+      "bootstrap_replicates": 2000,
+      "bootstrap_unit": "question; all generations grouped; task/subtask stratified",
+      "scope": "Conditional on fitted selector, frozen aggregator and observed generation replicates; no training-set retraining bootstrap"
+    },
+    "subtask_fixed": {
+      "task_macro_difference": -0.006666666666666668,
+      "strata_support": {
+        "gsm8k": 100,
+        "bbh/boolean_expressions": 3,
+        "bbh/causal_judgement": 4,
+        "bbh/date_understanding": 4,
+        "bbh/disambiguation_qa": 4,
+        "bbh/dyck_languages": 4,
+        "bbh/formal_fallacies": 4,
+        "bbh/geometric_shapes": 4,
+        "bbh/hyperbaton": 3,
+        "bbh/logical_deduction_five_objects": 4,
+        "bbh/logical_deduction_seven_objects": 4,
+        "bbh/logical_deduction_three_objects": 4,
+        "bbh/movie_recommendation": 4,
+        "bbh/multistep_arithmetic_two": 3,
+        "bbh/navigate": 4,
+        "bbh/object_counting": 4,
+        "bbh/penguins_in_a_table": 4,
+        "bbh/reasoning_about_colored_objects": 3,
+        "bbh/ruin_names": 4,
+        "bbh/salient_translation_error_detection": 3,
+        "bbh/snarks": 3,
+        "bbh/sports_understanding": 4,
+        "bbh/temporal_sequences": 4,
+        "bbh/tracking_shuffled_objects_five_objects": 3,
+        "bbh/tracking_shuffled_objects_seven_objects": 4,
+        "bbh/tracking_shuffled_objects_three_objects": 4,
+        "bbh/web_of_lies": 4,
+        "bbh/word_sorting": 3
+      },
+      "adequate_support": true,
+      "question_cluster_ci": [
+        -0.03,
+        0.015000000000000001
+      ],
+      "question_support": 200,
+      "per_task_support": {
+        "gsm8k": 100,
+        "bbh": 100
+      },
+      "per_generation": [
+        {
+          "generation_seed": 42,
+          "difference": 0.0,
+          "question_cluster_ci": [
+            -0.034999999999999996,
+            0.035
+          ]
+        },
+        {
+          "generation_seed": 137,
+          "difference": 0.009999999999999998,
+          "question_cluster_ci": [
+            -0.025,
+            0.049999999999999996
+          ]
+        },
+        {
+          "generation_seed": 2024,
+          "difference": -0.030000000000000002,
+          "question_cluster_ci": [
+            -0.06,
+            1.734723475976807e-18
+          ]
+        }
+      ],
+      "positive_generation_replicates": 1,
+      "confidence": 0.95,
+      "bootstrap_replicates": 2000,
+      "bootstrap_unit": "question; all generations grouped; task/subtask stratified",
+      "scope": "Conditional on fitted selector, frozen aggregator and observed generation replicates; no training-set retraining bootstrap"
+    }
+  },
+  "comparison_scope": "Exploratory descriptive paired intervals, no multiplicity adjustment or confirmatory claim; question clusters retain all3 generations, task/BBHsubtask strata, original2000 bootstrap and seed20261104",
+  "unit": "200 unique question clusters retaining all3 generation repeats, not600 independent questions",
+  "intervals_present_in_original_report": "Overall and per generation seed, with task/subtask stratification and support counts. No new per-subtask CI has been invented or computed in this export.",
+  "posthoc_exploratory": true,
+  "fresh_outcomes_evaluated": false,
+  "new_model_calls": 0
+}
