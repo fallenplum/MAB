@@ -79,7 +79,7 @@ def ci(delta,task,sub,reps=2000,seed=20261106):
         draws.append(total)
     lo,hi=np.quantile(np.mean(draws,axis=0),[.025,.975])
     return {'difference':macro(a.mean(axis=1),task),'ci95':[float(lo),float(hi)],'unique_questions':len(a),'strata_support':support,'bootstrap_replicates':reps,'unit':'question_cluster_with_all_generation_repeats','posthoc_descriptive':True}
-def metrics(pred,d):
+def metrics(pred,d,baseline=None):
     Y=d['Y'];a=selected(Y,np.argmax(pred,axis=1));ym=Y.mean(axis=1)
     di=pred[:,PAIRS[:,0]]-pred[:,PAIRS[:,1]]
     dy=Y[:,:,PAIRS[:,0]]-Y[:,:,PAIRS[:,1]];mask=dy!=0
@@ -88,8 +88,10 @@ def metrics(pred,d):
     valid=mask.sum(axis=(1,2))>0
     rq=np.divide((rank*mask).sum(axis=(1,2)),mask.sum(axis=(1,2)),out=np.zeros(len(Y)),where=valid)
     delta_mean=ym[:,PAIRS[:,0]]-ym[:,PAIRS[:,1]]
+    target=Y if baseline is None else Y-selected(Y,baseline)[:,:,None]
     return {'accuracy':macro(a.mean(axis=1),d['task']),'top1_regret':macro((Y.max(axis=2)-a).mean(axis=1),d['task']),
-        'mse':float(np.mean((pred[:,None,:]-Y)**2)),'conditional_mean_mse':float(np.mean((pred-ym)**2)),
+        'value_target':'absolute_reward' if baseline is None else 'same_question_same_seed_paired_delta',
+        'mse':float(np.mean((pred[:,None,:]-target)**2)),'conditional_mean_mse':float(np.mean((pred-target.mean(axis=1))**2)),
         'pair_value_difference_mae':float(np.abs(di-delta_mean).mean()),
         'non_tie_pair_ranking_accuracy':macro(rq[valid],d['task'][valid]) if valid.any() else None,
         'rankable_questions':int(valid.sum()),'per_generation_accuracy':[macro(a[:,g],d['task']) for g in range(3)],

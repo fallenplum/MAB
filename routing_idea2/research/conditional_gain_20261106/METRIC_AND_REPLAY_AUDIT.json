@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "prediction_max_abs_replay_error": 0.0,
+  "validation_choice_changes": 0,
+  "delta_value_mse_corrected_to_paired_target": true,
+  "initial_pre_audit_results_sha256": "302a3c3c1e81716ebdb9998fd1bda915bc035d4096ec8956d12409b8a72a4639",
+  "fold_conditional_training_mse_not_retained": true,
+  "new_fits": 0,
+  "new_llm_calls": 0
+}
