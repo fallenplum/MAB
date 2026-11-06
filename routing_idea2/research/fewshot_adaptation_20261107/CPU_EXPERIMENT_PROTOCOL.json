@@ -1,0 +1,49 @@
+{
+  "schema": "mab_fewshot_adaptation_protocol_v1",
+  "status": "CPU_ONLY_FULL_AND_RESTRICTED_SUPPORT",
+  "task_units": "BBH 27 subtasks plus GSM8K as one task",
+  "support_seeds": [
+    11,
+    29,
+    47,
+    71
+  ],
+  "k_values": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "episode_unit": "question IDs; same generation seed support/query; three seeds are repeated measurements",
+  "seen_mode": "same task first half history, remaining pool split support/query",
+  "unseen_mode": "entire target task excluded from base history",
+  "full_feedback": "all 20 existing aggregate scores for support question at that generation seed",
+  "restricted_feedback": "only default combination score; unknown actions remain unobserved",
+  "methods": [
+    "task_subtask_fixed",
+    "pretrained_ridge",
+    "online_ridge",
+    "hierarchical_update",
+    "retrieval_knn",
+    "lowrank_adapter_r2",
+    "lowrank_adapter_r4",
+    "random_support_control"
+  ],
+  "base_ridge": "direct20 PCA16 history-only, alpha100",
+  "online_ridge_lambda": 10.0,
+  "hierarchical_lambda": 4.0,
+  "retrieval_k": 5,
+  "lowrank_dimensions": [
+    2,
+    4
+  ],
+  "random_control": "shuffle observed support rewards within action, support IDs fixed",
+  "selection": "fixed protocol; no validation tuning",
+  "fresh_or_sealed_opened": false,
+  "new_llm_calls": 0
+}

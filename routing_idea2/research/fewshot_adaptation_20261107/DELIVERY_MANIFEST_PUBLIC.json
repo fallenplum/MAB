@@ -1,0 +1,40 @@
+{
+  "schema": "mab_fewshot_adaptation_public_manifest_v1",
+  "files": [
+    {
+      "file": "01_episode_construction.md",
+      "sha256": "bda0640119f5c04b25bfdbeae3ed41f61d7accb804d9194271e398e3e2f10fdc",
+      "bytes": 852
+    },
+    {
+      "file": "02_fewshot_adaptation_baselines.md",
+      "sha256": "ca8521faa9041c311189c5b9daa7da42c1d05e51df8faa7ac85ab3e60f55f83e",
+      "bytes": 1685
+    },
+    {
+      "file": "CPU_EXPERIMENT_PROTOCOL.json",
+      "sha256": "c2d95c506d6d297a0ad78ba2cf243b12e00adf05ae87341333755ac4dbe70e84",
+      "bytes": 1426
+    },
+    {
+      "file": "EXPERIMENT_RESULTS_COMPACT.json",
+      "sha256": "dac41dc5045ba5f6312e7382c4eccddec545fe92ee731ad729a4a0c21571f5f5",
+      "bytes": 390209
+    },
+    {
+      "file": "EXPERIMENT_SUMMARY.md",
+      "sha256": "c2586ee9f3b4eb33fc9572fb1fc94136013cfa622cd97c5a032fdc58bc46aa80",
+      "bytes": 1400
+    },
+    {
+      "file": "fewshot_adaptation.py",
+      "sha256": "13f1f5dd1681ab7b65dd871a25a47e43045141d0d1f91c97e8c4afbe6df3353f",
+      "bytes": 12504
+    }
+  ],
+  "full_episode_results_private_file": "EXPERIMENT_RESULTS.json (not uploaded)",
+  "private_episode_rows_excluded": true,
+  "new_llm_calls": 0,
+  "fresh_or_sealed_opened": false,
+  "research_complete": false
+}
