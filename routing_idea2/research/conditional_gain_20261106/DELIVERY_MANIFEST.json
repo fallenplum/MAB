@@ -1,0 +1,182 @@
+{
+  "files": [
+    {
+      "file": ".gitattributes",
+      "sha256": "50b0b7215f701db4075529fabc0d7f362be4f78b16b31eb759ac23d6aeeb6d9c",
+      "bytes": 56
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "7cca348c8bba0222d759edefd19f4a66c21a9a25a29f9461ccb2df6a260fcc22",
+      "bytes": 50
+    },
+    {
+      "file": "01_stability_and_oracle_analysis.md",
+      "sha256": "51426bfe0ef07fed64d5cc471fcc315d6a856c59c8347fe0bcb9dcc6fa2e654e",
+      "bytes": 2139
+    },
+    {
+      "file": "02_second_order_vs_direct20.md",
+      "sha256": "8899f8911edc7a21b7b244abf7434e7392ad69ca8a63c347eb6f2340d9a4b1bd",
+      "bytes": 2028
+    },
+    {
+      "file": "03_feature_ablation.md",
+      "sha256": "a74d4330c4cf9b2e07142dbc907f0b8d43b175d336f359ca12acdc2ad3b9419b",
+      "bytes": 1934
+    },
+    {
+      "file": "04_conditional_gain_router.md",
+      "sha256": "5bf87ad3aa47b03b0b5c6d8782e2fc99ea055162953b332b129a9f57764c2cd4",
+      "bytes": 43766
+    },
+    {
+      "file": "05_theory_and_proofs.md",
+      "sha256": "7719b0a8d65721ee74cf6dc492ff13139a1cb0a64bc9ec121786f387d683f9b2",
+      "bytes": 11659
+    },
+    {
+      "file": "06_fresh400_evaluation.md",
+      "sha256": "0760cd1f71180ed3a214d3711f60615e4f2841fcd36eea82774f73006e1fb2c9",
+      "bytes": 1485
+    },
+    {
+      "file": "07_feedback_acquisition.md",
+      "sha256": "0a16154d68e95c270a790c087140839daff5b2d6f940683776eeb152421152f6",
+      "bytes": 916
+    },
+    {
+      "file": "ASSET_AND_CODE_READING_INDEX.json",
+      "sha256": "8e38effa2a93c98be6a8fc3a71b085c8b7cc30ad076fde56f6a2d53e738ddfa2",
+      "bytes": 162396
+    },
+    {
+      "file": "code/audit_and_freeze.py",
+      "sha256": "8b9233126855911e49c7576835b89ff4af6ae86f34f7657e97132f4e93e70a00",
+      "bytes": 7730
+    },
+    {
+      "file": "code/common.py",
+      "sha256": "06bf330f603f9ec6019bf57aab2df9cbf866deb630e054ec0817b1704cec5db6",
+      "bytes": 10741
+    },
+    {
+      "file": "code/final_checks.py",
+      "sha256": "692e557a10f42ff42471f75e47ebf559f9f936bb6d38d706eb8a51b1f078ecab",
+      "bytes": 6110
+    },
+    {
+      "file": "code/prepare_and_stability.py",
+      "sha256": "2784c55f6d3e50440f0ae92fe13e8da33718cf958e9f249448c438e29599b651",
+      "bytes": 9257
+    },
+    {
+      "file": "code/run_cpu_ablation.py",
+      "sha256": "4326500423d7f43610b9c3d5b4297bfc372265e49b2293580f1035226577f02a",
+      "bytes": 16128
+    },
+    {
+      "file": "code/theory_and_finalize.py",
+      "sha256": "30b1ea88f10758f7a33fbc3df3d6909ef50faf6bc2291d515bf646c19dbeaf03",
+      "bytes": 19337
+    },
+    {
+      "file": "CPU_COMPLETE_RESULTS.json",
+      "sha256": "9332fa536f183a2dfabb0f8e5edc4729c01829abeb17726d8d730252e459462e",
+      "bytes": 1569435
+    },
+    {
+      "file": "CPU_EXPERIMENT_PROTOCOL.json",
+      "sha256": "de2719f9b7f8c493d195bdfecff757bde84b0f921ea680b970ae7dc847f34c82",
+      "bytes": 2137
+    },
+    {
+      "file": "CPU_SEARCH_PROGRESS.json",
+      "sha256": "d43b883161e31deee87ab636586846e7ae11d1eb650acf28c528db9fb076f2d4",
+      "bytes": 200
+    },
+    {
+      "file": "ERROR_SOURCE_ANALYSIS.md",
+      "sha256": "a2b149eb5f5b20013a47d753504cab2fa125dc31dac271f1176338fecb394ba7",
+      "bytes": 1442
+    },
+    {
+      "file": "EXPERIMENT_SUMMARY.md",
+      "sha256": "a81c89a205444c38f57ce3a4f96cbfdfd3d7566d99d51f39375ad5f9df282ba8",
+      "bytes": 3785
+    },
+    {
+      "file": "FINAL_VALIDATION_CHECKS.json",
+      "sha256": "17f7cf4aa95348919efce7d34985d1c13d2f6e8e56312f90e7aa6bc26712af2a",
+      "bytes": 930
+    },
+    {
+      "file": "FRESH_POLICY_FREEZE_INPUT_ONLY.json",
+      "sha256": "eef280ea8b47b62198bf940c529c630e058ee8c3c7b247b41b77e21298987ab2",
+      "bytes": 1178
+    },
+    {
+      "file": "METRIC_AND_REPLAY_AUDIT.json",
+      "sha256": "c1ca97f4efecf5f1365f6d5c2db39cc5afcdcaa06b6696097b99cb5f764047a4",
+      "bytes": 352
+    },
+    {
+      "file": "MODULE_PROVENANCE_AND_OPTIMIZATION.json",
+      "sha256": "e70604bf5cfdf63242e09000b54eac0d77d6774689c85d75cff84a70d8b1ced8",
+      "bytes": 29367
+    },
+    {
+      "file": "NUMERICAL_QUALIFICATION.json",
+      "sha256": "9a561988e71b0eb358e7821e90826d71a9f79f6c593b19b6d19b70fd52b4eb03",
+      "bytes": 351
+    },
+    {
+      "file": "REUSED_CROSS_SEED_RANK_AND_TRANSFER.json",
+      "sha256": "b1f1006b54173c72ddd7f24c0e9e040cd760c32ea6a3d9230e73ab15117e024b",
+      "bytes": 279375
+    },
+    {
+      "file": "ROUTER_AND_INFERENCE_COST.json",
+      "sha256": "26f824a88c1f8d26bfe89c8d1bfdacfd515bcf4fdcb4c4faabab225e6698454c",
+      "bytes": 3921
+    },
+    {
+      "file": "STABILITY_AND_VARIANCE.json",
+      "sha256": "63713cb886e639df6a32317e0b0b2f0515f66bc66494453c06a82da5d5ae99bd",
+      "bytes": 18543
+    },
+    {
+      "file": "STAGE_STATUS.json",
+      "sha256": "80bc885ae3db626edc1f6696e46c9a041ac997883568dc59abb3ba03b88641e3",
+      "bytes": 445
+    },
+    {
+      "file": "STRATIFIED_VARIANCE_ANALYSIS.json",
+      "sha256": "64a5a826da86ec840eed5d6ef096c05c4928e90276ea7a362d5a7fbc08aac43a",
+      "bytes": 19596
+    },
+    {
+      "file": "THEORY_NUMERICAL_CHECKS.json",
+      "sha256": "27e5f77863c0ac0c589acd942c3843842346c84cba7ed311344ea49a4234a54a",
+      "bytes": 1484
+    },
+    {
+      "file": "TRAIN_ONLY_MAIN_SELECTION_FROZEN.json",
+      "sha256": "069a72145973e941a1fdceda52f34543df8d8c1f8cdf3c963f775ed39fbd2667",
+      "bytes": 14524
+    },
+    {
+      "file": "TRAIN_ONLY_STRUCTURE_FEATURE_SELECTION.json",
+      "sha256": "0a83e1a59ef33e9d485c40e9e5c764767bb73d0f84fb6013b69bb579b13a0759",
+      "bytes": 600
+    },
+    {
+      "file": "UNCERTAINTY_CALIBRATION.json",
+      "sha256": "d5a2f105bdf842e31335fd398141ae32aa2807bf8fa0b0a40d5eb6daa86e337f",
+      "bytes": 776
+    }
+  ],
+  "text_newlines": "LF",
+  "private_models_arrays_and_data_excluded": true,
+  "research_complete": false
+}

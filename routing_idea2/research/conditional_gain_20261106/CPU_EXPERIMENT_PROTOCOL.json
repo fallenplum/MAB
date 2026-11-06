@@ -47,7 +47,8 @@
   "uncertainty_variant": "proper-train480/calibration120 split; separate calibration max error across20 observed paired reward means; exploratory empirical calibration, not strict population Delta bound; do not refit on cal",
   "independent_evaluation": "fresh400 all3seeds only after all policies frozen and exact necessary call union; sealed200 excluded",
   "feedback_gate": "fresh paired95CI lower>0 vs subtask and >=2/3seeds positive, adequate support",
-  "original_main": null,
+  "original_main": "bf1db55079fb38b3fd91311f4f3731e405db714a",
   "no_llm_retraining": true,
-  "prior_cpu_diagnostic_validation_seen": true
+  "prior_cpu_diagnostic_validation_seen": true,
+  "base_head_metadata_recovered_from_branch_parent": true
 }

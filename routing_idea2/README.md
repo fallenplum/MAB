@@ -1,3 +1,17 @@
+# 当前研究分支：条件增益可学习性诊断
+
+实验1—4已完成现有数据分析、44配置CPU训练与理论证明；训练OOF选择的主候选在val200为86.17%，子任务固定87.00%，差值CI跨0，尚无可重复开发增益。fresh400未评分，有限反馈未运行；新LLM调用0。
+
+- [本轮实验总结](research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md)
+- [结构与特征消融](research/conditional_gain_20261106/02_second_order_vs_direct20.md)
+- [条件增益路由](research/conditional_gain_20261106/04_conditional_gain_router.md)
+- [理论命题与完整证明](research/conditional_gain_20261106/05_theory_and_proofs.md)
+- [阶段完成边界](research/conditional_gain_20261106/STAGE_STATUS.json)
+
+以下保留此前main已归档的历史记录。
+
+---
+
 ## V2 Step 1与Step 2完整统计补充（2026-11-06）
 
 本次单独补齐Step1开发诊断200题的完整跨生成稳定性统计，避免与上次Step2 train/validation跨种子诊断混淆。保留全部9个源→目标种子对（6跨seed+3对角）、20组合、2任务及27个BBH子任务、支持数和描述性配对区间。
