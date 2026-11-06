@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_CHOICES_EXECUTION_HOLD_NO_FRESH_SCORES_OPENED",
+  "selected_main": {
+    "candidate": "delta_mlp__full_meta__a1",
+    "threshold": 0.025,
+    "oof_accuracy": 0.8766666666666667,
+    "switch_rate": 0.8483333333333334
+  },
+  "input_sha256": "d01801872d8c2a469ea115e1a5a0c0a2510e42385b453ab37dc0feef779e2735",
+  "private_frozen_choice_sha256": "a884bb1f9bdd6a2d757994e14a594d716fcbe952bd3e329701f13f449f84c202",
+  "policy_names": [
+    "selector",
+    "global_fixed",
+    "task_fixed",
+    "subtask_fixed",
+    "independent_top3",
+    "conditional_main"
+  ],
+  "questions": 400,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "unique_question_team_calls_per_seed": 1807,
+  "unique_question_team_calls_three_seeds": 5421,
+  "control_calls_not_in_this_union": [
+    "strong_single",
+    "three_sample_vote_or_fusion",
+    "aggregator_alone"
+  ],
+  "not_a_complete_nine_baseline_execution_budget": true,
+  "fresh_gold_opened": false,
+  "new_member_or_aggregate_calls": 0,
+  "reason_for_execution_hold": "Train-OOF selected candidate has no repeatable positive development validation gain; do not manufacture success or automatically expand compute."
+}
