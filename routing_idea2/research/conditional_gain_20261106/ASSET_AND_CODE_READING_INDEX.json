@@ -1,0 +1,5708 @@
+{
+  "files": [
+    {
+      "file": "artifacts\\audit\\audit_e1_failure_modes_v2.py",
+      "root_role": "routing_idea2",
+      "bytes": 12000,
+      "sha256": "79ce5a734950b0b768a762947110d552d4c043726d873ff7b7661d61df65ac6d",
+      "functions": [
+        "rows",
+        "sha",
+        "canon",
+        "grade",
+        "cost",
+        "strict_number",
+        "main",
+        "stats",
+        "transition",
+        "summary",
+        "paired"
+      ]
+    },
+    {
+      "file": "artifacts\\audit\\audit_e1_input_content_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 6070,
+      "sha256": "0030272a83fcdf897bbb5b1a576348065fba1572243bb4833b7ef3e0dc92b554",
+      "functions": [
+        "rows",
+        "digest",
+        "main",
+        "CachedTokenizer",
+        "__init__",
+        "encode",
+        "decode"
+      ]
+    },
+    {
+      "file": "artifacts\\audit\\audit_e1_option_text_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 2787,
+      "sha256": "0271e8f85016ba4d78089aeec6e2384fb5a1a6bfccfa8c76832d9f5dcfbce0bb",
+      "functions": [
+        "rows",
+        "main"
+      ]
+    },
+    {
+      "file": "artifacts\\audit\\audit_isolated_e1_causal_outputs_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 10447,
+      "sha256": "3ab2a0fd08df0d468bdd56ce0b2863ad190cc18ad319ec39420f827cd7d20286",
+      "functions": [
+        "read",
+        "rows",
+        "sha",
+        "digest",
+        "main",
+        "grade",
+        "contrast"
+      ]
+    },
+    {
+      "file": "artifacts\\audit\\build_e1_teacher_report_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 30211,
+      "sha256": "5cc22c13dd108e9a353717546e7f5c131d757cc83c3448ebe4aede74c5e4881a",
+      "functions": [
+        "read",
+        "sha",
+        "rows",
+        "font",
+        "text",
+        "head",
+        "table",
+        "page",
+        "main"
+      ]
+    },
+    {
+      "file": "artifacts\\audit\\compare_causal_fusion_to_vote_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 3558,
+      "sha256": "6f3992b8e2865ea46fc9353af985c78e4e9ebdc4b096711bf463e72291eb8c2e",
+      "functions": [
+        "read",
+        "rows",
+        "main"
+      ]
+    },
+    {
+      "file": "configs\\aggregator_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 384,
+      "sha256": "4d5b420058636d9bf1db35bf6d7d2fc3c20dce0e1156e230cdc070144306c85b"
+    },
+    {
+      "file": "configs\\decision_feedback_v2\\aggregator_qwen3_8b_candidate_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 394,
+      "sha256": "d99b44d10a8ff9af828c336058f91790982453428c3a7937b8d0ef60bf4af5f6"
+    },
+    {
+      "file": "configs\\experiment_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 10881,
+      "sha256": "38736a28c268fb67d0154fe5f111970546f9610a1c7d755d9bdf8ae805de9fc0"
+    },
+    {
+      "file": "configs\\member_cogito-v1-preview-llama-8b.json",
+      "root_role": "routing_idea2",
+      "bytes": 509,
+      "sha256": "dc695c9eba14e5d6741e5efeec8f17d25cacb31e565bb07ac5bdee516e0c6308"
+    },
+    {
+      "file": "configs\\member_deephermes-3-llama-3-8b-preview.json",
+      "root_role": "routing_idea2",
+      "bytes": 523,
+      "sha256": "3fba4c1a6f02dd15f845c5ae6105e7c298bd170c5bed72f0aae2696afeb24736"
+    },
+    {
+      "file": "configs\\member_deepseek-r1-distill-qwen-7b.json",
+      "root_role": "routing_idea2",
+      "bytes": 513,
+      "sha256": "f95fe507ac463767dbcb5f596dc0aa883723940dfb813546d2a26004bf3b6a98"
+    },
+    {
+      "file": "configs\\member_granite-3.3-8b-instruct.json",
+      "root_role": "routing_idea2",
+      "bytes": 505,
+      "sha256": "533fdb0ccfbdd4ce1f17591b04b32cdc558894da43e16282a7850804cbe2f0ab"
+    },
+    {
+      "file": "configs\\member_qwen2.5-coder-7b-instruct.json",
+      "root_role": "routing_idea2",
+      "bytes": 495,
+      "sha256": "be22329d445848da8e625dc46f6945da3c53b3de523b33248ecaf8c3de5cd4f4"
+    },
+    {
+      "file": "configs\\member_qwen3-8b.json",
+      "root_role": "routing_idea2",
+      "bytes": 461,
+      "sha256": "d27164da9a82dfb15b83babdbc8846e714258dd712f8a2fddff36e9e7ad15244"
+    },
+    {
+      "file": "configs\\pool_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 2735,
+      "sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf"
+    },
+    {
+      "file": "data\\cache_audit\\__init__.py",
+      "root_role": "routing_idea2",
+      "bytes": 75,
+      "sha256": "08da2993f9410f0cfcebcfd16be5d50b0629376e44ad8ff69f61cb58e0fc4c30",
+      "functions": []
+    },
+    {
+      "file": "data\\cache_audit\\audit.py",
+      "root_role": "routing_idea2",
+      "bytes": 13878,
+      "sha256": "3821de00e0fa823ad359937604fb9b2c47e2d534686ee54b5046b985aa4092e2",
+      "functions": [
+        "canonical_model",
+        "canonical_task",
+        "sha_text",
+        "json_stable",
+        "number",
+        "valid_record",
+        "audit_cache"
+      ]
+    },
+    {
+      "file": "data\\cache_audit\\download.py",
+      "root_role": "routing_idea2",
+      "bytes": 9682,
+      "sha256": "44ddc008e6529822ada06721c1a936ede95ed9fbe8904214a8b35be09c982d81",
+      "functions": [
+        "digest",
+        "write_json",
+        "within",
+        "metadata",
+        "download",
+        "validate_member",
+        "safe_extract"
+      ]
+    },
+    {
+      "file": "data\\cache_audit\\normalize.py",
+      "root_role": "routing_idea2",
+      "bytes": 10080,
+      "sha256": "e662c323386d19386688c64297e19047cfd76a43dadc725174589d77a65844cd",
+      "functions": [
+        "nfkc_query",
+        "official_bbh_index",
+        "normalize_available"
+      ]
+    },
+    {
+      "file": "data\\cache_audit\\source_tasks.py",
+      "root_role": "routing_idea2",
+      "bytes": 5455,
+      "sha256": "f7bf9d0912951726b11bd8afca8cacb05c8b2cdd693b331d99b4b9d4b04132b4",
+      "functions": [
+        "fetch_official_task_sources"
+      ]
+    },
+    {
+      "file": "data\\cache_audit\\tests.py",
+      "root_role": "routing_idea2",
+      "bytes": 6676,
+      "sha256": "394f1b407768d76eefce184af94d24ed8479d265c64d394d303168482b314d4a",
+      "functions": [
+        "run_tests"
+      ]
+    },
+    {
+      "file": "E1_FILE_INDEX.md",
+      "root_role": "routing_idea2",
+      "bytes": 2578,
+      "sha256": "957e5ee96928cca123c6e94fc1673be43c9336fee84fcb526576e7e574aa0af6"
+    },
+    {
+      "file": "protocol\\decision_feedback_v2\\EXPERIMENT_DESIGN_v2.txt",
+      "root_role": "routing_idea2",
+      "bytes": 5612,
+      "sha256": "7214551faffbe01a13528aea70f64837aa677321bcb2e351993dc11cd567fe76"
+    },
+    {
+      "file": "protocol\\decision_feedback_v2\\EXPERIMENT_PROTOCOL_v2.json",
+      "root_role": "routing_idea2",
+      "bytes": 11176,
+      "sha256": "319790ab22d04a6a82c0e3e029354df5114a7c72965437e22a66f2aa912d2c78"
+    },
+    {
+      "file": "protocol\\E0_LOCK.json",
+      "root_role": "routing_idea2",
+      "bytes": 9742,
+      "sha256": "6527f298cb60724b80d624f59aeaf3710ec8e592fcf6f792ca03694c7945c2c7"
+    },
+    {
+      "file": "protocol\\EXECUTION_CONTRACT.md",
+      "root_role": "routing_idea2",
+      "bytes": 10254,
+      "sha256": "a71203efd7193c710192bc7603b5f1e1ba0e1fd45426a235364b191df30ceabc"
+    },
+    {
+      "file": "protocol\\LOCAL_MODEL_PROTOCOL.md",
+      "root_role": "routing_idea2",
+      "bytes": 1903,
+      "sha256": "b9f6af2ca3ba87ca0fad9d56855f3b133f9361741a7c57162cadfc75ea820684"
+    },
+    {
+      "file": "README.md",
+      "root_role": "routing_idea2",
+      "bytes": 7815,
+      "sha256": "b9d05fc1a3a27702ce8d5f7eb1262cc0062d03cff9631bf3f174f2c7fe466a47"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\DELIVERY_MANIFEST_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 4817,
+      "sha256": "050955afefa7d1b4d8bbd9390fd7636d46317a78797926205695b62bca5cf653"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\FILE_INDEX_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 2336,
+      "sha256": "1bc683ec205f70a8598a3a9c9dfa92cc1c01fa6ef5b5aa6eb3a55b9f0fbf89fc"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\PAUSE_AND_COST_PUBLIC_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 5562,
+      "sha256": "3e30d6385fc1c605e75c1120247d9abf44dfa66dde6f44f6684e8367ba6bdc62"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\REPORT_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 5948,
+      "sha256": "563005e110307278f414823e82b4546fbb963e8a336b42271cd6aee145f2c662"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\seed_stability\\INTERPRETATION_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 5082,
+      "sha256": "70c25053b187b40158d2d7423ad6cf9ef59aaf74e27681f2457b46bff5f44ab7"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\seed_stability\\PUBLIC_ARITHMETIC_VERIFICATION_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 4005,
+      "sha256": "a2cc2f797c302ba0302f2beaa7d25b58a6c9f1a86fa29b879638321b6672cfe8"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\selector\\PUBLIC_DIAGNOSTIC_BRIEF_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 3212,
+      "sha256": "a67a2d8021a93a26238073c76f05381da0d07c7ba35d6b78e1643dc766e9806e"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\selector\\PUBLIC_DIAGNOSTIC_SANITIZATION_RECEIPT_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 1218,
+      "sha256": "e437905850a8723570d744797602e9bd2e581c3106cc46028122fb91f546e63d"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\selector\\PUBLIC_FILE_INDEX_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 1441,
+      "sha256": "94f8f42e291b1797a1f08005ce049d6da914352f1d9269bb846af723f94820ba"
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\diagnostics\\export_public_diagnostic_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 13277,
+      "sha256": "1c0d020dfb7ca06972f3a011f45b217c72247c9cb44ce4e86994ce8c4b7f8f23",
+      "functions": [
+        "sha",
+        "put",
+        "read"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\diagnostics\\run_frozen_selector_diagnostic_v2.py",
+      "root_role": "routing_idea2",
+      "bytes": 19971,
+      "sha256": "cfee9a2ac992a9a9b69cfc4b0013ccee95f6e6641720aab61c4f93261cfbc0c0",
+      "functions": [
+        "sha",
+        "read",
+        "ref",
+        "check",
+        "arrays",
+        "put",
+        "context",
+        "it3_choices",
+        "counts",
+        "support_pair",
+        "domain_stats",
+        "summarize",
+        "main"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\diagnostics\\run_independent_top3_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 17780,
+      "sha256": "86fc48a62075e3e51e38eebf0d193008f22932d3f8951df1cf9469577f42e50e",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "ref",
+        "put",
+        "contexts",
+        "choice_arrays",
+        "freeze_choices",
+        "quality_summary",
+        "run",
+        "main"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\diagnostics\\run_seed_stability_diagnostics_v1.py",
+      "root_role": "routing_idea2",
+      "bytes": 23477,
+      "sha256": "9d42ae1856487d6f6af5847828fa5c4f0662f30c1f8ccbe956eea9ce89150c13",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "ref",
+        "put",
+        "QuestionBootstrap",
+        "select",
+        "pattern_counts",
+        "rank_pair",
+        "transfer",
+        "analyze_scope",
+        "load_data",
+        "main",
+        "__init__",
+        "stat",
+        "conditional",
+        "routes"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\scripts\\v2\\full_feedback\\prepare_inputs.py",
+      "root_role": "routing_idea2",
+      "bytes": 16007,
+      "sha256": "3400c7745ea1e6bd9635ee4bb09fe7552701da5c08521bb93c5330d08a3b238f",
+      "functions": [
+        "canonical_hash",
+        "identity_rows",
+        "identity_hash",
+        "metadata_arrays",
+        "verify_original_questions",
+        "cache_inputs",
+        "fresh_inputs",
+        "validate_assets",
+        "main"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\src\\budget_router\\features.py",
+      "root_role": "routing_idea2",
+      "bytes": 5229,
+      "sha256": "b58a43a2b73cd9e481223b64e5a9d1a86b748a5aceee99abaebe7e8be80064c3",
+      "functions": [
+        "_finite_array",
+        "enumerate_subsets",
+        "canonical_subset",
+        "single_member_replacements",
+        "FrozenPCAFeatures",
+        "SubsetFeatureMap",
+        "__init__",
+        "fit",
+        "pca_mean",
+        "feature_dim",
+        "transform",
+        "__init__",
+        "basis",
+        "transform",
+        "feature"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\src\\budget_router\\learner.py",
+      "root_role": "routing_idea2",
+      "bytes": 8109,
+      "sha256": "9e268e24663eeef5d4a091d052c77fb604e910ea2d9122223e256a8ab5ca8c6a",
+      "functions": [
+        "FeedbackNotArrived",
+        "OriginalLabel",
+        "cold_start_limit",
+        "question_block_bootstrap_weights",
+        "SharedRidgeRegressor",
+        "__init__",
+        "label_count",
+        "question_count",
+        "labels",
+        "design",
+        "design_inverse",
+        "theta",
+        "add_label",
+        "predict",
+        "working_variance",
+        "bootstrap_coefficients",
+        "thompson_sample"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\src\\budget_router\\ranking_evaluation.py",
+      "root_role": "routing_idea2",
+      "bytes": 14835,
+      "sha256": "211646e7dbe335a7e4de0e108d7f806d1d4323bbec1c5f4a8929e543a7e98c4b",
+      "functions": [
+        "_mean",
+        "ranking_metrics",
+        "evaluate_episode_predictions",
+        "summarize_prediction_rows",
+        "stratified_question_interval",
+        "write_cost_curve",
+        "_actual_resource",
+        "rich_fixed_references",
+        "strict_quality_cost_dominance"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\source_snapshot\\src\\budget_router_v2\\full_feedback.py",
+      "root_role": "routing_idea2",
+      "bytes": 30879,
+      "sha256": "58b20505182149eef2537a42867c04ba98dfc6959f527fe62c1b8c5ff3f39dc2",
+      "functions": [
+        "require",
+        "sha_file",
+        "read_json",
+        "write_json",
+        "reference",
+        "verified",
+        "new_output",
+        "load_bundle",
+        "read_inputs",
+        "read_outcomes",
+        "fit_selector",
+        "predictions",
+        "_macro",
+        "_cluster_difference",
+        "evaluate_predictions",
+        "freeze_predictions",
+        "fit_bundle",
+        "predict_bundle",
+        "score_bundle"
+      ]
+    },
+    {
+      "file": "release\\decision_feedback_v2_diagnostic_20261106_v1\\VALIDATION_AND_COST_DECISION_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 42435,
+      "sha256": "949e303d0b1e9185def7c160d4432b1a90d7841d23b7514bbfa385a8ccfc1f84"
+    },
+    {
+      "file": "release\\e2_20261104\\DELIVERY_MANIFEST.json",
+      "root_role": "routing_idea2",
+      "bytes": 3008,
+      "sha256": "f14d55666c143ffdf7e87c445933c8eb7f85643dd5c1c637b2e3b06635bd6c0f"
+    },
+    {
+      "file": "release\\e2_20261104\\E2_AGGREGATED_RESULTS.json",
+      "root_role": "routing_idea2",
+      "bytes": 714413,
+      "sha256": "246ceeb8b52503d45c968a81026e401fb89ac279bf157a2576912354c14c8845"
+    },
+    {
+      "file": "release\\e2_20261104\\E2_FILE_INDEX.json",
+      "root_role": "routing_idea2",
+      "bytes": 207831,
+      "sha256": "cf4707b6a1d8588903fb4cae28f6bbd4e9a349e1a9507807dface9b3ce9b24fb"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\DELIVERY_MANIFEST_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 2020,
+      "sha256": "25308635a3e2637122be12e9f5de580664d97074fe14272f710da91cec711cda"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\EXPORT_COMPLETENESS_AND_INTEGRITY_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 2098,
+      "sha256": "6315f9b92d98637afe02ac390cbbbaba4e907d7b03e48f262015ab0f30547488"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\FILE_INDEX_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 1444,
+      "sha256": "1438e61a51378572d1e9f630cd2b73172ca5eaf83ad00b1ddd2bc87951b327a4"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step1\\README_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 1816,
+      "sha256": "78b09493f7fc5af0ebd6b836ea7bdc5c9a70aa7a280bdf6dc64ccfce225a4ab4"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step1\\STEP1_COMPLETE_SCIENTIFIC_STATISTICS_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 562874,
+      "sha256": "91362d521cd88c6489c15b4045caee731bb34bbc8789e72bed6152da6afbb82a"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step1\\STEP1_CROSS_SEED_TRANSFER_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 22178,
+      "sha256": "8c9633b5e7f00bec0d95d4f6aea81c35770e28471049fb5171a59789ce660dc6"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step2\\README_zh.md",
+      "root_role": "routing_idea2",
+      "bytes": 2662,
+      "sha256": "d0b71bce69c059ffbb68fb9321206d18198b5f43ef0cda36e1723d9f3c0bd608"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step2\\STEP2_INDEPENDENT_TOP3_ACCURACY_BY_TASK_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 22628,
+      "sha256": "40c9909a87e6e89c452c0c6e21751677685701824c5f5a87141299608e4f708e"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step2\\STEP2_INDEPENDENT_TOP3_PAIRED_CI_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 10750,
+      "sha256": "7bf1fe556558e25de547430214c9c1860fcda76670149fc22741d155503eb9cc"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step2\\STEP2_INDEPENDENT_TOP3_VALIDATION_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 33710,
+      "sha256": "e9646e307f04bf785a743c3a8824820eaca589d9803e0e617b02b986b9806e49"
+    },
+    {
+      "file": "release\\v2_step1_step2_statistics_20261106_v1\\step2\\STEP2_TOP3_FREEZE_AND_LINEAGE_PUBLIC_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 3899,
+      "sha256": "ef979dd992f24eb5e71b82b85a6e565d759d99ab62dff02f3b30df6fc47a3651"
+    },
+    {
+      "file": "requirements-lock.txt",
+      "root_role": "routing_idea2",
+      "bytes": 463,
+      "sha256": "fdbfde358ecdce29f47e853f83cff8ea3d6947fdbbcfa8b546a7faf2670c60c4"
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\01_stability_and_oracle_analysis.md",
+      "root_role": "routing_idea2",
+      "bytes": 1736,
+      "sha256": "7339ab685c511712a15a2cd9e4fddfa51d3763dd1c3df52232eac43bf1bbff70"
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\ASSET_AND_CODE_READING_INDEX.json",
+      "root_role": "routing_idea2",
+      "bytes": 166556,
+      "sha256": "b7dab7bf82076d552645f7b5a0a370f98cee058757d2d73b688eae1ffc61849d"
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\code\\common.py",
+      "root_role": "routing_idea2",
+      "bytes": 10528,
+      "sha256": "6566e7f51d73e67fa722c6c2e4a9f1a47aee290ff5d4723d55922c60d7c2bd44",
+      "functions": [
+        "sha",
+        "read",
+        "put",
+        "load",
+        "subset",
+        "macro",
+        "selected",
+        "ci",
+        "metrics",
+        "defaults",
+        "Transform",
+        "ridge",
+        "structured",
+        "pair_rank",
+        "fit_predict",
+        "__init__",
+        "meta",
+        "fit",
+        "transform",
+        "objective",
+        "augment"
+      ]
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\code\\prepare_and_stability.py",
+      "root_role": "routing_idea2",
+      "bytes": 9257,
+      "sha256": "2784c55f6d3e50440f0ae92fe13e8da33718cf958e9f249448c438e29599b651",
+      "functions": [
+        "main",
+        "phi"
+      ]
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\code\\run_cpu_ablation.py",
+      "root_role": "routing_idea2",
+      "bytes": 15904,
+      "sha256": "969f8239892e729fba275061a62c5b2f986fd5eaa6265e68cd5f605ef9f75040",
+      "functions": [
+        "main",
+        "run_one",
+        "best"
+      ]
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\CPU_EXPERIMENT_PROTOCOL.json",
+      "root_role": "routing_idea2",
+      "bytes": 2131,
+      "sha256": "46564fe169408edd338cf6c2ff7e1cc3840671fba337a8b00edd924f4d27c951"
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\NUMERICAL_QUALIFICATION.json",
+      "root_role": "routing_idea2",
+      "bytes": 360,
+      "sha256": "033808a3bc173a280646715a9a19be489d6baf9e24d5dc186e21ee794f20b0f9"
+    },
+    {
+      "file": "research\\conditional_gain_20261106\\STABILITY_AND_VARIANCE.json",
+      "root_role": "routing_idea2",
+      "bytes": 19075,
+      "sha256": "10b7d8e55711542df8c6e42c05780a1dcb6ae117417c33e4f6bbe268ddfd88b2"
+    },
+    {
+      "file": "results\\decision_feedback_v2\\DELIVERY_MANIFEST_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 5254,
+      "sha256": "459aeffc699a7e768609d601a4b8f9867281c4b5d08628308c60e4be86102d32"
+    },
+    {
+      "file": "results\\decision_feedback_v2\\DEVELOPMENT_STATUS_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 1742,
+      "sha256": "040b30292d51494f7d7c9a7afd88ba4050cb815b18e50b7522137a12e337d31a"
+    },
+    {
+      "file": "results\\decision_feedback_v2\\FILE_INDEX_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 4656,
+      "sha256": "3f81fa4f476e4f0db4da8bba7dfe37d22fccd35aeb4034930891dc4fccad5a39"
+    },
+    {
+      "file": "results\\decision_feedback_v2\\IMPLEMENTATION_VERIFICATION_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 1027,
+      "sha256": "0f460beca8b12d2f58a3de11e08691a2e397a93e8d4242fcfb21059f8fd8185d"
+    },
+    {
+      "file": "results\\decision_feedback_v2\\s1_qualification\\QUALIFICATION_SUMMARY_v1.json",
+      "root_role": "routing_idea2",
+      "bytes": 1394,
+      "sha256": "2b8cf613c6197d2b1fedf0ec162d99f5b7e2a5e61325db1b593402058943dced"
+    },
+    {
+      "file": "results\\e1\\audit_metrics.json",
+      "root_role": "routing_idea2",
+      "bytes": 10371,
+      "sha256": "b2a0bf75193ea14442536ac4e2f73d4adcf391c8e446d7679215911e15c107cd"
+    },
+    {
+      "file": "results\\e1\\causal_diagnostic_summary.json",
+      "root_role": "routing_idea2",
+      "bytes": 7522,
+      "sha256": "013a1fadb7e9d0b11416f1e422ed15415bd1136fcc3b7da3e1b3be54405f7144"
+    },
+    {
+      "file": "results\\e1\\e1_diagnostics.json",
+      "root_role": "routing_idea2",
+      "bytes": 15095,
+      "sha256": "8331fb9a384ef537cd97ec52356708eb43352fa2073a2523768de574832ce1e7"
+    },
+    {
+      "file": "results\\e1\\independent_review_summary.json",
+      "root_role": "routing_idea2",
+      "bytes": 391,
+      "sha256": "67f328cb2a188b1474f8f92830b666e58bbc234aacd7457aef14e1d041aebd4f"
+    },
+    {
+      "file": "results\\e1\\input_reconstruction.json",
+      "root_role": "routing_idea2",
+      "bytes": 1969,
+      "sha256": "24385a65b4d564fc0614f5322e09a47bf466fb6959f491aeede66be9aa1bf942"
+    },
+    {
+      "file": "results\\e1\\option_text_diagnostic.json",
+      "root_role": "routing_idea2",
+      "bytes": 1251,
+      "sha256": "c1bfabff41b77fefd3579c6306436f6e4674955f9337e7be46c8d3996bf438b0"
+    },
+    {
+      "file": "results\\e1\\physical_call_summary.json",
+      "root_role": "routing_idea2",
+      "bytes": 4822,
+      "sha256": "1196a32c98e8ebc5058fc1eb93486f6160bfec790965537922f075a163c6732f"
+    },
+    {
+      "file": "scripts\\apply_runtime_fixes.py",
+      "root_role": "routing_idea2",
+      "bytes": 4584,
+      "sha256": "a166370515a691353a7eb5bd59b5ac12a82d2e68aada4b95c64d5d3eb0b9cc96",
+      "functions": [
+        "sha",
+        "build_patched_source",
+        "planned_bytes",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\audit_cache.py",
+      "root_role": "routing_idea2",
+      "bytes": 1362,
+      "sha256": "bcb66aba10b059d38aedf9dadb269047c51e52102929ae8768f6853e68313d05",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\build_delivery.py",
+      "root_role": "routing_idea2",
+      "bytes": 77132,
+      "sha256": "39af52aeda69c57f2dbd88b70ed161cecefbf8f2d0e22f8be633a224ff50f1fd",
+      "functions": [
+        "finite",
+        "_group_contract",
+        "_evaluation_arrays",
+        "validate_final_evaluation_set",
+        "_interval",
+        "paired_statistics",
+        "_training_summary",
+        "_decisions",
+        "_selected_resources",
+        "actual_final_costs",
+        "validate_final_grading_measurement",
+        "compute_final_statistics",
+        "_e1_replay",
+        "validate_acceptance",
+        "physical_summary",
+        "_public_e1",
+        "_hypotheses",
+        "_history_sha",
+        "_history_ref",
+        "_observer_io_patch",
+        "_historical_control_ref",
+        "_observer_io_source_revisions",
+        "_scorer_source_revisions",
+        "_control_source_revisions",
+        "sanitized_source_history",
+        "housekeeping_summary",
+        "sanitize_json",
+        "validate_static_json_for_publication",
+        "safe_package_relative",
+        "source_whitelist",
+        "_test_receipts",
+        "csv_text",
+        "_paired_csv",
+        "render_report",
+        "portable_text",
+        "_comparison_labels",
+        "render_documents",
+        "_stage_tables",
+        "build_delivery",
+        "main",
+        "compare",
+        "nodes",
+        "check"
+      ]
+    },
+    {
+      "file": "scripts\\build_final_release.py",
+      "root_role": "routing_idea2",
+      "bytes": 13377,
+      "sha256": "717a0869d9dba7bd56a47bf93c83c6d9cc2dea72e1613a7d02c5a470d7666abe",
+      "functions": [
+        "select_policy_groups",
+        "_output_path",
+        "publish_validated_release",
+        "_locked_group_plan",
+        "preparation_value",
+        "complete_value",
+        "build_release",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\diagnose_runtime.py",
+      "root_role": "routing_idea2",
+      "bytes": 5355,
+      "sha256": "40bbe39dfcdc77931ae6927b17f30234ce206d70ead0fffe44370626d453374a",
+      "functions": [
+        "main",
+        "thread_failure"
+      ]
+    },
+    {
+      "file": "scripts\\download_inference_models.py",
+      "root_role": "routing_idea2",
+      "bytes": 2511,
+      "sha256": "153d13f3d4ce37047b046f660955c0242f6ff5ba14ca60452d4ff41a8f46ea1e",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\download_llmrouterbench.py",
+      "root_role": "routing_idea2",
+      "bytes": 892,
+      "sha256": "cbca1a03cb7ba26504ffb2072f0310eb2999bcb702fbf9f549a4c9785bc2dc5a",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\download_member_models.py",
+      "root_role": "routing_idea2",
+      "bytes": 2482,
+      "sha256": "8d7f10f116100ef1e96584f291cc80138dd151029aa4dc4f8c801298fb2032d5",
+      "functions": [
+        "download",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\download_models_resumable.py",
+      "root_role": "routing_idea2",
+      "bytes": 23270,
+      "sha256": "0b9280156b8e058b85e6b79c524a09b8f60eabf65250be48a2f67c6d951e1d26",
+      "functions": [
+        "AssetValidationError",
+        "AssetLockError",
+        "_sha",
+        "_json",
+        "_atomic_json",
+        "_inside",
+        "_transport_policy",
+        "_transport_sources",
+        "_metadata_paths",
+        "_source_url",
+        "_descriptors",
+        "_cached_metadata",
+        "metadata",
+        "_verify_file",
+        "_has_matching_completed_receipt",
+        "verified_completed_receipt",
+        "_reclaim_stale_lock",
+        "migrate_partial",
+        "_target_has_complete_size",
+        "download_model",
+        "locked_download_model",
+        "main",
+        "one",
+        "progress"
+      ]
+    },
+    {
+      "file": "scripts\\download_second_aggregator.py",
+      "root_role": "routing_idea2",
+      "bytes": 1715,
+      "sha256": "ff2c940c98cc8d099a496809ac3ce3b98a7bf6e3122d30edebab7f4043943773",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\download_with_retry.py",
+      "root_role": "routing_idea2",
+      "bytes": 2330,
+      "sha256": "83397acb6595bda70c0b5fdf7162ad8896b460d86059ad33a0ece4e8587914b2",
+      "functions": [
+        "_state",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_e2.py",
+      "root_role": "routing_idea2",
+      "bytes": 8948,
+      "sha256": "7ba412a45972aefd20a9b45ac83bff89dd182886bf2e7315766f22f411083d9f",
+      "functions": [
+        "learnability_conclusion",
+        "evaluate",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_e3.py",
+      "root_role": "routing_idea2",
+      "bytes": 17564,
+      "sha256": "7f59f9cc2e3242d828e65db8d18e6d16b148e615c5bc51e06374fbc0f1fa6a4c",
+      "functions": [
+        "_id_rows",
+        "_cell_resource",
+        "_cell_wall",
+        "_sum_known",
+        "project_episode",
+        "verify_reused_none",
+        "paired_comparisons",
+        "evaluate",
+        "main",
+        "indexed"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_e4.py",
+      "root_role": "routing_idea2",
+      "bytes": 7513,
+      "sha256": "edd5974c3cbf66f5432ec0e206ff2a8db22db8cb79bc44b1be0c46c28bf7ae5e",
+      "functions": [
+        "compare_paired",
+        "evaluate",
+        "indexed"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_flex_reference.py",
+      "root_role": "routing_idea2",
+      "bytes": 2072,
+      "sha256": "81781c92ff47c2f6c3c6db1310b0c25e7edd0ef08e67093de26691eae90cb9ec",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_frozen_policies.py",
+      "root_role": "routing_idea2",
+      "bytes": 1815,
+      "sha256": "ee29dce94447499949058aab25784e21046b613d9bab5d2016a934a1662b2612",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\evaluate_real_e1.py",
+      "root_role": "routing_idea2",
+      "bytes": 31335,
+      "sha256": "9a81e740be5c2b38b04fcc8dca885fd64cf17cc8c2b09f057cf5f66a9c029889",
+      "functions": [
+        "file_sha",
+        "digest",
+        "text_sha",
+        "read_json",
+        "_quantity",
+        "_sum_cost",
+        "_tokens",
+        "_read_stores",
+        "_validate_result",
+        "_score",
+        "_jobids",
+        "_validate_aggregate_sources",
+        "_load_split_and_questions",
+        "assemble_e1",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\freeze_e0.py",
+      "root_role": "routing_idea2",
+      "bytes": 313,
+      "sha256": "ccb25a68c9894c7a82608ac3a13427c04fca3402b61f5a12c859c2b75450b7f1",
+      "functions": []
+    },
+    {
+      "file": "scripts\\monitor_experiment.py",
+      "root_role": "routing_idea2",
+      "bytes": 57258,
+      "sha256": "53e56e6d5dd0b5e9225b67cfab73926818f2dc0d8e42f3a16aab7c9fb9befa5f",
+      "functions": [
+        "atomic_json",
+        "open_shared_read",
+        "read_bytes_shared",
+        "read_json",
+        "digest",
+        "reject_constant",
+        "stage_glob",
+        "valid_ledger_key",
+        "load_status_support",
+        "RecoveryObservationError",
+        "recovery_record",
+        "observe_recovery_run",
+        "LedgerCounters",
+        "finite_number",
+        "recent_wall_distribution",
+        "option_values",
+        "command_path",
+        "compact_run",
+        "sha256_file",
+        "validation_write_audit",
+        "validation_readonly",
+        "validate_final_acceptance_readonly",
+        "verify_terminal_acceptance",
+        "master_pid_absent",
+        "observe_full_run",
+        "model_config_metadata",
+        "final_manifest_metadata",
+        "observe_inflight",
+        "MonitorLockError",
+        "lease_guard",
+        "MonitorLease",
+        "gpu_probe",
+        "ExperimentMonitor",
+        "positive_interval",
+        "main",
+        "__init__",
+        "fresh",
+        "observe_success_wall",
+        "bootstrap_recent_wall",
+        "scan",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "__init__",
+        "poll",
+        "record_observation_error"
+      ]
+    },
+    {
+      "file": "scripts\\operator_abort_e1_call.py",
+      "root_role": "routing_idea2",
+      "bytes": 23981,
+      "sha256": "d3e31b5277ea07a73a1bb58aa8369dbdc1876a58e7eb9293b4187267872193cb",
+      "functions": [
+        "ProofUnavailable",
+        "ReconciliationRequired",
+        "sha",
+        "canonical",
+        "finite",
+        "validate_authorization",
+        "WindowsFreezeLease",
+        "make_failure_row",
+        "reconcile_failure_once",
+        "run_guarded_abort",
+        "UnqualifiedProductionAdapter",
+        "main",
+        "__init__",
+        "_identity",
+        "_probe",
+        "__enter__",
+        "_resume",
+        "_watchdog",
+        "require_active",
+        "capture_pyspy",
+        "ticket_state",
+        "terminate_and_wait",
+        "__exit__",
+        "owned",
+        "require_capabilities"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_e1_controls.py",
+      "root_role": "routing_idea2",
+      "bytes": 629,
+      "sha256": "4f79a06416337a24df761228e810429285f654794e28e19ad67bd571f5784002",
+      "functions": []
+    },
+    {
+      "file": "scripts\\prepare_features.py",
+      "root_role": "routing_idea2",
+      "bytes": 3789,
+      "sha256": "7b48a05590e4ba0b00149e9067448375714115a1921b26c7ff0edb574148cbaa",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_final_features.py",
+      "root_role": "routing_idea2",
+      "bytes": 13173,
+      "sha256": "e9b1b7bb160a5dd000c4396befd781e18eacb70b3cb02bb4d4fc636aa7f8ece2",
+      "functions": [
+        "load_question_texts",
+        "load_final_question_texts",
+        "CalibrationEncoderDrift",
+        "compare_calibration_encoder_replay",
+        "calibration_encoder_replay",
+        "prepare_final_features",
+        "main",
+        "__init__"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_final_jobs.py",
+      "root_role": "routing_idea2",
+      "bytes": 1105,
+      "sha256": "9e8bfe7a7b1a0bb88e6e363d13eec2526a8682c74f5ae99fb61d0a02ac10ff9c",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_final_matrices.py",
+      "root_role": "routing_idea2",
+      "bytes": 749,
+      "sha256": "c9ac3c3795c44eb25d89bf9d4fa73cfe6a5609e580e092cdddcc3adf3579b5ed",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_jobs.py",
+      "root_role": "routing_idea2",
+      "bytes": 1255,
+      "sha256": "0a693e16c30552230d8ed6026bd7baaa5a8a28f73112ad6bf48e1826d0bb477f",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_model_configs.py",
+      "root_role": "routing_idea2",
+      "bytes": 1786,
+      "sha256": "628ddf686629cb29d024ec03c32c28d50267719fbdea9a146758302415830242",
+      "functions": []
+    },
+    {
+      "file": "scripts\\prepare_online_matrices.py",
+      "root_role": "routing_idea2",
+      "bytes": 29189,
+      "sha256": "0cd71c9ee939ea6c5f0b805517adcfa9b935a77b41f942be49a5767b8250c41d",
+      "functions": [
+        "AssetError",
+        "_json",
+        "_text_sha",
+        "_reference",
+        "_ref",
+        "_read_jsonl",
+        "_load_features",
+        "_load_common",
+        "_jobs",
+        "_stage",
+        "_immutable_publish",
+        "assemble_online_matrices",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_second_aggregator.py",
+      "root_role": "routing_idea2",
+      "bytes": 1947,
+      "sha256": "9160c7f169f259864c4076343da6edc1b65e0b12a2654aab43fcf838e9063313",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\prepare_splits.py",
+      "root_role": "routing_idea2",
+      "bytes": 18565,
+      "sha256": "63d2a6ff36fc86ce31acd6365e739345c6f0d1ccdbffd69d4d65ca4e14d44fc2",
+      "functions": [
+        "sha_file",
+        "canonical_question",
+        "canonical_qid",
+        "local_seed",
+        "project_record",
+        "assert_unique_inputs",
+        "output_row",
+        "validate_assignments",
+        "build_assignments",
+        "meaningful_self_tests",
+        "checked_runtime_split_names",
+        "read_sources",
+        "atomic_json",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\recycle_at_settled_boundary.py",
+      "root_role": "routing_idea2",
+      "bytes": 23248,
+      "sha256": "7b0f52150757a035decdcebfa568f4f29730068ba609b371b44eb0799c52455c",
+      "functions": [
+        "file_sha",
+        "process_identity",
+        "assert_identity",
+        "_usage",
+        "inspect_ledger",
+        "prepare_plan",
+        "Audit",
+        "MonitoredProcess",
+        "BoundaryWatcher",
+        "gpu_snapshot",
+        "OperatorLease",
+        "try_acquire_boundary",
+        "run_waiter",
+        "main",
+        "__init__",
+        "emit",
+        "__init__",
+        "exited",
+        "exit_code",
+        "close",
+        "__init__",
+        "wait",
+        "close",
+        "verify_owned",
+        "release_after_exit",
+        "Luid",
+        "Open",
+        "Memory",
+        "Close"
+      ]
+    },
+    {
+      "file": "scripts\\resume_e1_aggregation.py",
+      "root_role": "routing_idea2",
+      "bytes": 14135,
+      "sha256": "3d1ba8a610341f06968fe380a6c13cd32cd3e2c50fe46ed4f5d47a5ed01a7f00",
+      "functions": [
+        "_load_frozen",
+        "_write_lease",
+        "_lease_token",
+        "_release_owned_leases",
+        "_acquire_supervisor_leases",
+        "wait_original_processes",
+        "continue_frozen_tail",
+        "execute_recovery",
+        "main",
+        "decorate",
+        "writer",
+        "heartbeat"
+      ]
+    },
+    {
+      "file": "scripts\\review_interrupted_call_recovery.py",
+      "root_role": "routing_idea2",
+      "bytes": 2948,
+      "sha256": "c6f77bf865810179055dd7ffb96cc33fbac0ef65fd9d85d9e5d275f09b823b1a",
+      "functions": [
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\review_runtime.py",
+      "root_role": "routing_idea2",
+      "bytes": 10323,
+      "sha256": "3ab9e0fd8369949c8422a64b5235f83013add22c483c8384769db239b4bee0e4",
+      "functions": [
+        "_project_path",
+        "_code_hashes",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\run_aggregation.py",
+      "root_role": "routing_idea2",
+      "bytes": 6511,
+      "sha256": "3762402fba3f2e49c628f968c494afdaf8b3bb67359f22b1bd6236c0752d98fc",
+      "functions": [
+        "_read_qualification",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\run_e5_ablations.py",
+      "root_role": "routing_idea2",
+      "bytes": 6607,
+      "sha256": "5c787f6b79a14c71f4b9ccbd9f3cc869f9659988fcedded28a75f1eaad9aa77e",
+      "functions": [
+        "parser",
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "scripts\\run_final_generation.py",
+      "root_role": "routing_idea2",
+      "bytes": 536,
+      "sha256": "e4eb1d0c8ae66aba43b3dfe9cbac049e1dd00df4efb39b2ea9379c1964f8314a",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\run_flex_reference.py",
+      "root_role": "routing_idea2",
+      "bytes": 5711,
+      "sha256": "064ef5722c3df4bc37bb91028bba680245dbf043782f4a2fc960eb89b72f2c41",
+      "functions": [
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "scripts\\run_full_experiment.py",
+      "root_role": "routing_idea2",
+      "bytes": 45609,
+      "sha256": "bba6deaa23189c7c9d7ab1056a83bf2bdc3a8d033f3e4919a72a64ce0488fee4",
+      "functions": [
+        "ReviewRequired",
+        "state",
+        "_pulse",
+        "child",
+        "_legacy_active",
+        "_legacy_owner_gone",
+        "_recovery_record",
+        "_recovery_snapshot",
+        "_upstream_active",
+        "_upstream_identity_snapshot",
+        "_upstream_owner_gone",
+        "_normal_upstream_completion",
+        "_wait_recovery_natural_exit",
+        "_wait_upstream_normal_exit",
+        "_script_from_command",
+        "_owner_gone",
+        "_owned_previous_child",
+        "_settled_before_resume",
+        "_master_guard",
+        "_acquire_master_lease",
+        "master_lease",
+        "follow_previous_child",
+        "_legacy_identity_snapshot",
+        "_normal_legacy_completion",
+        "_wait_legacy_normal_exit",
+        "wait_real_matrices",
+        "_inputs",
+        "matrix_args",
+        "_resume",
+        "accept_legitimate_e1_stop",
+        "_admit_gpu",
+        "ensure_second_aggregator",
+        "start_second_download_if_needed",
+        "wait_second_download",
+        "run_restricted_stages",
+        "prepare_final_release",
+        "run_all_final_conditions",
+        "physical_model_accounting",
+        "accept_full_experiment",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\run_local_e1.py",
+      "root_role": "routing_idea2",
+      "bytes": 20988,
+      "sha256": "8a6ffcc89affbee7421453fff9a1fd8e28e1d9a5220da9618890ba519a1abd85",
+      "functions": [
+        "atomic_json",
+        "state",
+        "run",
+        "NetworkAssetUnavailable",
+        "wait_download",
+        "host_memory_snapshot",
+        "gpu_snapshot",
+        "wait_gpu",
+        "qualification_cache_complete",
+        "qualification_gpu_admission",
+        "gpu_min_free_mib_argument",
+        "runtime_review",
+        "verify_e0_after_child",
+        "evaluate_e1_receipt",
+        "main",
+        "sha",
+        "MemoryStatus"
+      ]
+    },
+    {
+      "file": "scripts\\run_members.py",
+      "root_role": "routing_idea2",
+      "bytes": 7873,
+      "sha256": "0afbdcc119281504ee9bf195aa2e69dba02387794154a4a27639f36b3fbc188c",
+      "functions": [
+        "_qualification_receipts",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\run_neighbors.py",
+      "root_role": "routing_idea2",
+      "bytes": 4643,
+      "sha256": "4147b2f0a8cce16d56d6c308f184b1f62ff269867bd1cf6a4ec1000f3c2d78ae",
+      "functions": [
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "scripts\\run_online.py",
+      "root_role": "routing_idea2",
+      "bytes": 9353,
+      "sha256": "f2d498caafd96e53226be1606c2cba21e196f41a2b9875eab74e303785121969",
+      "functions": [
+        "parser",
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "scripts\\show_status.py",
+      "root_role": "routing_idea2",
+      "bytes": 6436,
+      "sha256": "a71e8945fc1290be5b896cdec06c7320e454d8d6a9e56155136a66540e0ec409",
+      "functions": [
+        "read",
+        "observe_process",
+        "effective_record",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\v2\\audit_gold_reuse.py",
+      "root_role": "routing_idea2",
+      "bytes": 12355,
+      "sha256": "dcc9775c4293d7b6ea8db045bfa04402196be8df82c0a39cd2b3cb888b6f5d74",
+      "functions": [
+        "require",
+        "sha_file",
+        "read_json",
+        "source_path",
+        "selected_records",
+        "execution_receipt",
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\v2\\audit_query_operator.py",
+      "root_role": "routing_idea2",
+      "bytes": 3345,
+      "sha256": "66a98c0079b59673eef017f7f4dc2629ae830149dabecc61236eb10678b25daf",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "scripts\\v2\\prepare_aggregator_qualification.py",
+      "root_role": "routing_idea2",
+      "bytes": 15072,
+      "sha256": "9afc475a285c187289b30b853ce20e4137d29fedc55cb58112dbfcb5f032a0f8",
+      "functions": [
+        "require",
+        "read",
+        "sha",
+        "digest",
+        "jsonl",
+        "write_immutable",
+        "json_bytes",
+        "main",
+        "source"
+      ]
+    },
+    {
+      "file": "scripts\\v2\\review_aggregator_qualification.py",
+      "root_role": "routing_idea2",
+      "bytes": 24948,
+      "sha256": "7763cffb39c66d8c686403fd60c7d6be06f4005da3de0f5e7d11d692f197fa87",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "encoded",
+        "write_immutable",
+        "unpack",
+        "qualification_references",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\__init__.py",
+      "root_role": "routing_idea2",
+      "bytes": 974,
+      "sha256": "cbd90705a5deb150469e87af44276d12578f89de903440388d26be095c59ee76",
+      "functions": []
+    },
+    {
+      "file": "src\\budget_router\\acquisition.py",
+      "root_role": "routing_idea2",
+      "bytes": 13299,
+      "sha256": "dc68df2bbd9abda6f398066f8a6c0bb10d68eb21eb69c2d9a5d0164b5dd3cc73",
+      "functions": [
+        "rank_one_inverse_update",
+        "directional_information_gain",
+        "choose_main",
+        "AcquisitionPlan",
+        "plan_acquisition",
+        "audit",
+        "labels_to_request",
+        "no_purchase",
+        "append_action"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\budget.py",
+      "root_role": "routing_idea2",
+      "bytes": 5414,
+      "sha256": "02a05b33377a97b36b89341786e66d876b3979238ff0eadbed7ca3c5d430fd71",
+      "functions": [
+        "BudgetExceeded",
+        "ResourceCost",
+        "CostPrediction",
+        "BudgetLedger",
+        "__post_init__",
+        "__add__",
+        "__sub__",
+        "__mul__",
+        "fits_within",
+        "__post_init__",
+        "__init__",
+        "reserved",
+        "available",
+        "remaining",
+        "reserve_future_service",
+        "can_reserve",
+        "reserve",
+        "reserve_service",
+        "settle",
+        "cancel",
+        "snapshot"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\diagnostics.py",
+      "root_role": "routing_idea2",
+      "bytes": 16542,
+      "sha256": "78e30d5cf4f89a9df5718c3e040699ae12ea8a874638e5f6a2a45a3e4f7e3372",
+      "functions": [
+        "_matrix",
+        "_binary",
+        "_tasks",
+        "_macro",
+        "_interval",
+        "evaluate_e1"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\downloads.py",
+      "root_role": "routing_idea2",
+      "bytes": 12089,
+      "sha256": "fbde5586ba6098172f8a76f699004baa13caa276176ec03b58446a3d44062de5",
+      "functions": [
+        "DownloadError",
+        "DownloadLockedError",
+        "RangeProtocolError",
+        "DownloadIntegrityError",
+        "DownloadInterruptedError",
+        "_expected_digest",
+        "_exclusive_lock",
+        "_verified_hashes",
+        "_response_length",
+        "resumable_download",
+        "event",
+        "verified_result"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\e1_controls.py",
+      "root_role": "routing_idea2",
+      "bytes": 9964,
+      "sha256": "b3ee1112dc6ce1f63333350812f113158186e72994997c6917ab1a49d5ce51be",
+      "functions": [
+        "_select_calibration_model",
+        "select_strong_model",
+        "_sample_seed",
+        "prepare_strong_samples",
+        "_validate_sample_result",
+        "prepare_strong_aggregation"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\e5_validation.py",
+      "root_role": "routing_idea2",
+      "bytes": 35440,
+      "sha256": "ef1bd47c830b05beaee644db917efe3bbcdc257b89d39336a5a15f944a1dbcbc",
+      "functions": [
+        "_full_gate",
+        "validate_plan",
+        "condition_specifications",
+        "upstream_refs",
+        "make_e5_run_plan",
+        "verify_run_plan",
+        "make_condition_identity",
+        "verify_condition_identity",
+        "_indices",
+        "_cost",
+        "_wall",
+        "_known",
+        "project_e5_episode",
+        "load_environments",
+        "_frozen_entry",
+        "upstream_inventory",
+        "_comparison",
+        "all_comparisons",
+        "verify_complete_bundle",
+        "evaluate_bundle",
+        "gate_bindings",
+        "validate_e5_pre_final_gate",
+        "validate_e5_episode",
+        "_episode_authorization_key",
+        "_references",
+        "_E5FinalBatchAuthorization",
+        "authorize_e5_final_batch",
+        "group",
+        "__init__",
+        "gate",
+        "bindings",
+        "verify_unchanged",
+        "unique"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\encoding.py",
+      "root_role": "routing_idea2",
+      "bytes": 2200,
+      "sha256": "889bcb6935c6d73c13c55d8b5008d3a8dfc3ff1c2ca927a28ae668e47a931bb3",
+      "functions": [
+        "FrozenQuestionEncoder",
+        "__init__",
+        "encode"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\execution.py",
+      "root_role": "routing_idea2",
+      "bytes": 20701,
+      "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f",
+      "functions": [
+        "_digest",
+        "_text_hash",
+        "_assert_no_labels_or_secrets",
+        "_tokenizer_identity",
+        "head_tail_candidate",
+        "_prepare",
+        "aggregation_messages",
+        "make_job",
+        "make_alone_job",
+        "validate_job",
+        "_validate_result",
+        "ExecutionStore",
+        "__init__",
+        "_reload",
+        "_lock",
+        "_append_unlocked",
+        "append",
+        "_cached",
+        "run"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\features.py",
+      "root_role": "routing_idea2",
+      "bytes": 5229,
+      "sha256": "b58a43a2b73cd9e481223b64e5a9d1a86b748a5aceee99abaebe7e8be80064c3",
+      "functions": [
+        "_finite_array",
+        "enumerate_subsets",
+        "canonical_subset",
+        "single_member_replacements",
+        "FrozenPCAFeatures",
+        "SubsetFeatureMap",
+        "__init__",
+        "fit",
+        "pca_mean",
+        "feature_dim",
+        "transform",
+        "__init__",
+        "basis",
+        "transform",
+        "feature"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\final_generation.py",
+      "root_role": "routing_idea2",
+      "bytes": 45980,
+      "sha256": "745beda8d9f32938549955bf818f2fbea24b453555d1cb45afb30f1149e8ee2d",
+      "functions": [
+        "aggregator_descriptor",
+        "_inside",
+        "context",
+        "_spec_for_condition",
+        "_under",
+        "_batch_paths",
+        "_qualification",
+        "_authority",
+        "_load_tokenizer",
+        "_validate_manifest_header",
+        "_manifest",
+        "prepare_member_jobs",
+        "_read_jobs",
+        "_evaluation_helpers",
+        "_audit_store",
+        "_call_cap",
+        "_expected_members",
+        "_stored_members",
+        "_expected_aggregates",
+        "prepare_aggregate_jobs",
+        "_validated_batch",
+        "_gpu_admission",
+        "_final_execution_lock",
+        "_completed_batch_receipt",
+        "run_released_batch",
+        "_append_grading_progress",
+        "_GradingAttempt",
+        "_grading_inventory",
+        "_future_reference",
+        "_score_digest",
+        "_validate_matrix_arrays",
+        "_verify_existing_bundle",
+        "_assembly_lock",
+        "assemble_final_matrix",
+        "__init__",
+        "checkpoint",
+        "score",
+        "finish",
+        "put"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\flex_simulation.py",
+      "root_role": "routing_idea2",
+      "bytes": 18353,
+      "sha256": "63c1a59f47e62cc3a990c4e922ff34a046c2c683ff2274ffd5e870139665d7a7",
+      "functions": [
+        "_sha",
+        "flex_source_hashes",
+        "VerifiedFlexAuthorization",
+        "authorize_flex_pair",
+        "_check_flex_authorization",
+        "run_flex_simulation",
+        "public_record"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\flex_training.py",
+      "root_role": "routing_idea2",
+      "bytes": 13401,
+      "sha256": "5c7d19fe3481a40274a2b88a4ad840417c54894f15d306f9befacd79a0ef4802",
+      "functions": [
+        "PaidFullWarmupRow",
+        "normalized_frozen_pca",
+        "_training_data",
+        "torch_exact_hit_probabilities",
+        "torch_smoothed_flex_objective",
+        "require_finite_exact_training_rows",
+        "FrozenPCASmoothedFlexPolicy",
+        "train_flex_adapted",
+        "__init__",
+        "kernel",
+        "select",
+        "state_dict",
+        "training_report",
+        "from_state_dict"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\flex_validation.py",
+      "root_role": "routing_idea2",
+      "bytes": 34669,
+      "sha256": "8f2cd3c096d23d6a629faadfad2e8d80e14d75a87f278cb0a3654494dfd17a95",
+      "functions": [
+        "locked_grid",
+        "flex_settings",
+        "make_identity",
+        "verify_identity",
+        "_add",
+        "validate_result",
+        "FlexEpisodeStore",
+        "_recompute_episode",
+        "verify_complete_flex_grid",
+        "reference_evaluation",
+        "_reference_bindings",
+        "_check_grid_summary",
+        "accept_flex_reference",
+        "validate_flex_reference_gate",
+        "validate_flex_episode",
+        "make_e4_full_gate",
+        "validate_e4_full_gate",
+        "FlexFinalBatchAuthorization",
+        "authorize_flex_final_batch",
+        "__init__",
+        "load",
+        "commit",
+        "_check_top_level",
+        "verify_unchanged"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\frozen_evaluation.py",
+      "root_role": "routing_idea2",
+      "bytes": 85292,
+      "sha256": "6ca077a6963b1b2fdbc0936f73c0a795cecceb085d0c1a848667588a71803922",
+      "functions": [
+        "_int",
+        "_array",
+        "_digest",
+        "anonymous_question_id",
+        "_compact_checkpoint_metadata",
+        "_ridge_state",
+        "FrozenPolicy",
+        "_resolve_references",
+        "validate_encoder_feature_sources",
+        "_validate_policy_groups",
+        "_finish_final_batches",
+        "validate_final_release",
+        "_decision_record",
+        "freeze_final_decisions",
+        "_read_frozen_decisions",
+        "evaluate_final_matrix",
+        "paired_final_comparisons",
+        "FrozenNeighborPolicy",
+        "project_sealed_embeddings",
+        "_validate_declared_group_plan",
+        "validate_preparation_release",
+        "FrozenFlexPolicy",
+        "release_conditions_from_plan",
+        "validate_physical_grading_work",
+        "validate_calibration_replay_record",
+        "__init__",
+        "checkpoint_metadata",
+        "for_software_test",
+        "from_bound_checkpoint",
+        "select",
+        "bad_constant",
+        "cost",
+        "add",
+        "__init__",
+        "checkpoint_metadata",
+        "assert_unchanged",
+        "for_software_test",
+        "from_bound_checkpoint",
+        "select",
+        "__init__",
+        "select"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\inference.py",
+      "root_role": "routing_idea2",
+      "bytes": 16514,
+      "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef",
+      "functions": [
+        "ModelSpec",
+        "GenerationResult",
+        "GenerationFailure",
+        "InputTooLong",
+        "_file_hash",
+        "validate_local_model_source",
+        "_validated_usage",
+        "chat_template_text",
+        "TransformersBackend",
+        "OpenAICompatibleBackend",
+        "make_backend",
+        "configuration_fingerprint",
+        "validate",
+        "__init__",
+        "__init__",
+        "generate",
+        "__init__",
+        "generate"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\learner.py",
+      "root_role": "routing_idea2",
+      "bytes": 8109,
+      "sha256": "9e268e24663eeef5d4a091d052c77fb604e910ea2d9122223e256a8ab5ca8c6a",
+      "functions": [
+        "FeedbackNotArrived",
+        "OriginalLabel",
+        "cold_start_limit",
+        "question_block_bootstrap_weights",
+        "SharedRidgeRegressor",
+        "__init__",
+        "label_count",
+        "question_count",
+        "labels",
+        "design",
+        "design_inverse",
+        "theta",
+        "add_label",
+        "predict",
+        "working_variance",
+        "bootstrap_coefficients",
+        "thompson_sample"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\member_execution.py",
+      "root_role": "routing_idea2",
+      "bytes": 10740,
+      "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2",
+      "functions": [
+        "member_mode",
+        "member_messages",
+        "make_member_job",
+        "validate_member_job",
+        "validate_resample_groups",
+        "MemberStore",
+        "_cached",
+        "run"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\neighbor_policies.py",
+      "root_role": "routing_idea2",
+      "bytes": 39256,
+      "sha256": "e01bff046a48a8c518577ce955151e3bcd2d4293b9b27af6f2271ed8a30e9592",
+      "functions": [
+        "FeedbackPermissionError",
+        "RelaxationInfeasible",
+        "_vector",
+        "_time",
+        "_members",
+        "_permission",
+        "LegalMemberFeedback",
+        "LegalComboFeedback",
+        "PastMemberExecution",
+        "_execution",
+        "_import_file",
+        "load_audited_ces",
+        "CESPaidWarmupPolicy",
+        "confidence_radius",
+        "structural_reward",
+        "relaxed_reward",
+        "_fractional",
+        "dependent_round",
+        "base_convex_decomposition",
+        "swap_round",
+        "C2MABVPolicy",
+        "flexrouter_kernel",
+        "_dpp_kernel",
+        "dpp_coverage_probability",
+        "flexrouter_loss",
+        "complete_labels_from_broker",
+        "require_finite_flexrouter_training_loss",
+        "fixed_k_dpp_greedy",
+        "__init__",
+        "observe_paid_warmup",
+        "observe_warmup_costs",
+        "freeze_profile",
+        "profile",
+        "member_features",
+        "select",
+        "register_execution",
+        "observe_combo",
+        "state_dict",
+        "load_state_dict",
+        "__init__",
+        "observe_members",
+        "observe_costs",
+        "confidence_bounds",
+        "solve_relaxation",
+        "select",
+        "state_dict",
+        "load_state_dict"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\neighbor_simulation.py",
+      "root_role": "routing_idea2",
+      "bytes": 26926,
+      "sha256": "ebbe66be26baf25b6320c6ef01d39c1cd10c38599dabae742321239994f57a03",
+      "functions": [
+        "_sha",
+        "_digest",
+        "neighbor_source_hashes",
+        "_environment_bindings",
+        "VerifiedE3Authorization",
+        "authorize_neighbor_pair",
+        "_check_authorization",
+        "_safe",
+        "_member_receipts",
+        "_cost_receipts",
+        "_combo_receipt",
+        "_evaluate_frozen_service",
+        "_ces_snapshot",
+        "run_neighbor_simulation",
+        "public_record",
+        "consume"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\neighbor_validation.py",
+      "root_role": "routing_idea2",
+      "bytes": 15284,
+      "sha256": "d5248abf7eef1c3b6e20554b534bd7a7fc39d571f303055c8e52de44411e1bd0",
+      "functions": [
+        "locked_grid",
+        "make_identity",
+        "verify_identity",
+        "_cost_add",
+        "validate_result",
+        "NeighborEpisodeStore",
+        "verify_complete_neighbor_grid",
+        "NeighborFinalBatchAuthorization",
+        "authorize_neighbor_final_batch",
+        "validate_neighbor_episode",
+        "validate_e4_gate",
+        "__init__",
+        "load",
+        "commit"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\online_continuation.py",
+      "root_role": "routing_idea2",
+      "bytes": 6023,
+      "sha256": "15131facb66b32cd0e52da8047d87d71e3a58c0f6a23c9524fd30f1eb77892a9",
+      "functions": [
+        "_json",
+        "_sha",
+        "_inside",
+        "verify_matrix_receipt",
+        "continue_online_assets"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\operator_snapshot_proof.py",
+      "root_role": "routing_idea2",
+      "bytes": 20561,
+      "sha256": "34ab40b4d8c86798b2cc72d784e9b09888f3c4970bb7feb6c77cc82ffd932881",
+      "functions": [
+        "SnapshotProofError",
+        "_fail",
+        "_sha",
+        "_digest",
+        "_int",
+        "_finite",
+        "_path",
+        "_same_ast",
+        "_method",
+        "_writes",
+        "audit_source_invariants",
+        "_profile",
+        "_FrozenCaptureTicket",
+        "_lease",
+        "issue_frozen_capture_ticket",
+        "_pairs",
+        "_load",
+        "_locals",
+        "_literal",
+        "_anchor",
+        "PrefixProof",
+        "prove_frozen_sample",
+        "inspect_pyspy_dump",
+        "__init__",
+        "prompt_tokens",
+        "completion_tokens",
+        "evidence"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\preparation.py",
+      "root_role": "routing_idea2",
+      "bytes": 14668,
+      "sha256": "3201a0fb5c726373e15d2817fa43680fdadaea621260e504a40c4f85178f92f7",
+      "functions": [
+        "file_sha",
+        "read_jsonl",
+        "load_inputs",
+        "select_records",
+        "read_spec",
+        "immutable_jsonl",
+        "validate_success_rows",
+        "prepare_members",
+        "collect_members",
+        "prepare_aggregations",
+        "prepare_alone"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\protocol_lock.py",
+      "root_role": "routing_idea2",
+      "bytes": 18596,
+      "sha256": "62b5a504aad493cdf5203e3fd8587fa222e25a934455e1809f7b623d183c3bf2",
+      "functions": [
+        "verify_qualification",
+        "_freeze_guard",
+        "_atomic_bytes",
+        "_transaction_paths",
+        "_clean_transaction",
+        "_recover_e0_transaction",
+        "_commit_e0_pair",
+        "freeze_e0",
+        "_freeze_e0_guarded"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\ranking_evaluation.py",
+      "root_role": "routing_idea2",
+      "bytes": 14835,
+      "sha256": "211646e7dbe335a7e4de0e108d7f806d1d4323bbec1c5f4a8929e543a7e98c4b",
+      "functions": [
+        "_mean",
+        "ranking_metrics",
+        "evaluate_episode_predictions",
+        "summarize_prediction_rows",
+        "stratified_question_interval",
+        "write_cost_curve",
+        "_actual_resource",
+        "rich_fixed_references",
+        "strict_quality_cost_dominance"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\recovery_runtime.py",
+      "root_role": "routing_idea2",
+      "bytes": 34566,
+      "sha256": "0cb074f81b66cf39a12d06df38a1b41d29784737a6c2b3f9d2b9159a121f1d88",
+      "functions": [
+        "RecoveryAuthorizationError",
+        "_authorization_guard",
+        "sha_file",
+        "canonical_digest",
+        "argv_digest",
+        "read_json",
+        "atomic_json",
+        "immutable_json",
+        "artifact_reference",
+        "_inside",
+        "verified_reference",
+        "_positive",
+        "_process_factory",
+        "_script",
+        "_process_record",
+        "_flag",
+        "validate_recovery_authorization",
+        "observed_process",
+        "assert_original_supervisor_gone",
+        "validate_helper_process",
+        "validate_settled_costs",
+        "validate_original_aggregation",
+        "ReadOnlyProcessHandle",
+        "acquire_original_handles",
+        "_validated_owner_artifact",
+        "validated_recovery_owner",
+        "validated_recovery_completion",
+        "guarded",
+        "reject",
+        "__init__",
+        "wait",
+        "close"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\runtime_diagnostics.py",
+      "root_role": "routing_idea2",
+      "bytes": 4195,
+      "sha256": "e49012966ca7ec27e045cdf7aa9b5925ad8de083d783f9c7a6d2fc277e14ff8a",
+      "functions": [
+        "BackendInitializationError",
+        "_runtime_inventory",
+        "make_backend_with_diagnostics",
+        "__init__",
+        "public_record"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\runtime_memory.py",
+      "root_role": "routing_idea2",
+      "bytes": 9740,
+      "sha256": "180726e893f70316a1c52fe214d23438f0edf74a78f60f21e106ffc4b175e9dc",
+      "functions": [
+        "RuntimeMemoryHousekeepingError",
+        "_digest",
+        "_append_audit",
+        "_allocator",
+        "cleanup_after_committed_success",
+        "cleanup_after_backend_initialization",
+        "RuntimeMemorySummary",
+        "__init__",
+        "observe",
+        "as_dict"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\scoring.py",
+      "root_role": "routing_idea2",
+      "bytes": 8705,
+      "sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d",
+      "functions": [
+        "ScoreResult",
+        "_clean",
+        "_boxed",
+        "_candidate",
+        "_trim",
+        "_numeric",
+        "_normal_text",
+        "_choice",
+        "_canonical",
+        "score_answer",
+        "to_dict"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\simulation.py",
+      "root_role": "routing_idea2",
+      "bytes": 65854,
+      "sha256": "a99d5478a4db65842855355005fde1ad0e9dfaa861743edfcc1d17a79aecd964",
+      "functions": [
+        "_hash_file",
+        "_digest",
+        "_reference",
+        "_validate_stage_bindings",
+        "_validate_locked_split",
+        "CallCaps",
+        "SimulationSettings",
+        "QuestionContext",
+        "MatrixEnvironment",
+        "_EnvironmentSession",
+        "FeedbackBroker",
+        "_PastCostPredictor",
+        "_fixed_from_arrived_warmup",
+        "_ContextualMemberRidges",
+        "_validate_pair",
+        "validate_strategy_requirements",
+        "_clock",
+        "_elapsed",
+        "_add_timing",
+        "_read_quality_for_evaluation",
+        "_checkpoint_json_value",
+        "_ridge_checkpoint",
+        "_broker_checkpoint",
+        "_prediction_snapshot",
+        "run_simulation",
+        "save_simulation",
+        "paired_question_bootstrap",
+        "__post_init__",
+        "service",
+        "alternate",
+        "__post_init__",
+        "__init__",
+        "from_npz",
+        "for_software_test",
+        "__len__",
+        "phi_dimension",
+        "context",
+        "new_session",
+        "public_provenance",
+        "__init__",
+        "_cell_cost",
+        "execute_member_prior",
+        "execute",
+        "__init__",
+        "pending_labels",
+        "request",
+        "request_member_prior_reference",
+        "deliver",
+        "__init__",
+        "update",
+        "_tokens",
+        "predictions",
+        "__init__",
+        "label_counts",
+        "record_generated",
+        "observe",
+        "predict",
+        "choose_subset",
+        "wall"
+      ]
+    },
+    {
+      "file": "src\\budget_router\\stage_validation.py",
+      "root_role": "routing_idea2",
+      "bytes": 27174,
+      "sha256": "eeb7bccd4cbf5488813814959465e7b49496afda142a5eff2e9d0cab9964ba21",
+      "functions": [
+        "sha_file",
+        "canonical_digest",
+        "_constant",
+        "read_json",
+        "atomic_json",
+        "immutable_json",
+        "artifact_reference",
+        "verified_reference",
+        "source_references",
+        "validate_protocol_config",
+        "expected_grid",
+        "episode_specs",
+        "episode_name",
+        "settings_from_config",
+        "validate_locked_grid",
+        "input_identity",
+        "verify_input_identity",
+        "make_run_identity",
+        "validate_run_identity",
+        "EpisodeStore",
+        "read_jsonl",
+        "validate_episode_result",
+        "compact_result",
+        "verify_complete_grid",
+        "e2_bindings",
+        "validate_e2_gate",
+        "authorize_e2_pair",
+        "verified_grid_summary",
+        "e3_bindings",
+        "validate_e3_gate",
+        "__init__",
+        "_inside",
+        "load",
+        "commit"
+      ]
+    },
+    {
+      "file": "src\\budget_router_v2\\__init__.py",
+      "root_role": "routing_idea2",
+      "bytes": 321,
+      "sha256": "9fc8057ac139ff689716666e188b0360926579ae300cad7757bda4b19e818407",
+      "functions": []
+    },
+    {
+      "file": "src\\budget_router_v2\\acquisition.py",
+      "root_role": "routing_idea2",
+      "bytes": 11524,
+      "sha256": "70b54cd15ff443a8fe89c410fb69595aa097a5f9b244d77e853d83863c45d0bb",
+      "functions": [
+        "_array",
+        "antithetic_fantasies",
+        "_prepare_shared",
+        "_score_candidate",
+        "decision_values",
+        "decision_value"
+      ]
+    },
+    {
+      "file": "src\\budget_router_v2\\feedback.py",
+      "root_role": "routing_idea2",
+      "bytes": 17027,
+      "sha256": "070953debb754e9702144753fbf1ac2fb50b928d5902bea828bf0f2e88e4c688",
+      "functions": [
+        "LedgerError",
+        "UnknownCostError",
+        "ExecutionReceipt",
+        "ScoreObservation",
+        "_identity",
+        "_integer",
+        "_duration",
+        "BudgetFeedbackLedger",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "close",
+        "_transaction",
+        "_unknown_count",
+        "_assert_settled",
+        "request_gold",
+        "arrive_gold",
+        "has_success",
+        "record_execution",
+        "reconcile_execution",
+        "record_score",
+        "record_overhead",
+        "summary"
+      ]
+    },
+    {
+      "file": "tests\\test_e0_reference_boundary.py",
+      "root_role": "routing_idea2",
+      "bytes": 6647,
+      "sha256": "2845e124c7407051204e55ec46a2cbfe099c0fb639dccd5f7e867aefea1c276d",
+      "functions": [
+        "SealedQuestionsTrap",
+        "forbid_weights",
+        "assert_failed_freeze_preserved",
+        "test_sealed_mapping_never_accessed_and_preflight_precedes_weight_validation",
+        "test_invalid_nonsealed_reference_stops_before_weights_and_preserves_config",
+        "test_unknown_split_fails_before_question_lookup_or_weights",
+        "test_incomplete_member_coverage_stops_before_reference_preflight",
+        "test_actual_config_scorer_version_mismatch_stops_before_references_and_weights",
+        "__init__",
+        "__getitem__",
+        "score",
+        "score"
+      ]
+    },
+    {
+      "file": "tests\\test_e1_controls_runtime.py",
+      "root_role": "routing_idea2",
+      "bytes": 11705,
+      "sha256": "641dc2dae2195664dd51e9f03354776f5720c696ad0d4d90db51a610a60af3f8",
+      "functions": [
+        "member_spec",
+        "records_and_questions",
+        "test_strongest_model_never_uses_evaluation_correctness_and_ties_use_pool_index",
+        "Tokenizer",
+        "test_strong_control_requires_three_actual_calls_and_preserves_unclipped_costs",
+        "load_review",
+        "runtime_fixture",
+        "test_runtime_is_format_only_and_receipt_binds_all_sources",
+        "test_runtime_cannot_relabel_an_e1_question_as_qualification",
+        "test_declared_parse_and_cap_rules_only",
+        "test_runtime_minimum_four_and_job_hash_are_required",
+        "test_prepare_alone_accepts_current_tokenizer_keyword",
+        "__init__",
+        "encode",
+        "decode",
+        "Backend",
+        "generate"
+      ]
+    },
+    {
+      "file": "tests\\test_interrupted_generation_accounting_review.py",
+      "root_role": "routing_idea2",
+      "bytes": 13426,
+      "sha256": "f6a08721f324c70d5621f9c7328e3745cf8ec99629d4504dc3c260097b79f23e",
+      "functions": [
+        "setup_job",
+        "Backend",
+        "audit",
+        "test_known_failure_retry_is_two_billed_calls_and_one_success",
+        "test_unknown_usage_blocks_retry_and_does_not_become_known_zero",
+        "test_known_token_declaration_does_not_reconcile_missing_wall",
+        "test_e1_member_collection_keeps_six_successes_and_preserves_failure",
+        "test_full_e1_assembler_preserves_known_member_failure_without_changing_scores",
+        "test_e0_collects_actual_synthetic_1800_successes_binds_failure_and_keeps_cap_one",
+        "test_operator_review_never_touches_processes_or_ledgers_even_with_claimed_approval",
+        "__init__",
+        "generate"
+      ]
+    },
+    {
+      "file": "tests\\test_preparation.py",
+      "root_role": "routing_idea2",
+      "bytes": 19509,
+      "sha256": "8f17b781c145ac21e350abc3a38f735219bcec9504f71e13e8ef726387b04870",
+      "functions": [
+        "put_json",
+        "put_jsonl",
+        "canonical",
+        "refresh_manifest_audit",
+        "project",
+        "CharTokenizer",
+        "fake_tokenizer",
+        "gate_fixture",
+        "member_output_fixture",
+        "mutate_first_member",
+        "test_load_inputs_preserves_legal_unicode_jsonl_and_original_ids",
+        "test_load_inputs_fails_closed_on_manifest_source_receipt_and_content_drift",
+        "test_read_spec_binds_full_base_fingerprint_before_resampling",
+        "test_all_stage_names_and_exact_task_counts_and_sealed_guard",
+        "test_e1_rejects_wrong_task_or_cal_eval_quota_even_with_300_total",
+        "test_online_gate_requires_exact_pass_and_current_split_full_config_lock_and_pool",
+        "test_collect_members_accepts_only_full_six_real_job_bound_outputs",
+        "test_member_metadata_and_original_job_identity_cannot_drift_under_rehashed_record",
+        "test_member_result_identity_usage_and_nonempty_text_are_required",
+        "test_member_success_cannot_hide_unknown_cost",
+        "test_terminal_failed_call_must_have_known_real_usage_even_when_all_successes_exist",
+        "test_full_e1_jobs_bind_300_times_20_and_never_copy_references_or_scores",
+        "test_historical_outputs_are_qualification_only_and_separate_from_real_jobs",
+        "test_aggregator_alone_is_exactly_200_diagnostic_jobs_without_labels",
+        "load_cli",
+        "test_cli_rejects_stage_or_historical_mode_misuse_before_preparation",
+        "test_immutable_batches_reuse_identical_bytes_but_never_replace_different_jobs",
+        "encode",
+        "decode",
+        "change",
+        "change"
+      ]
+    },
+    {
+      "file": "tests\\test_real_e1_assembly.py",
+      "root_role": "routing_idea2",
+      "bytes": 14893,
+      "sha256": "934ffe344cbffaf19d023600e831650d6fbf4fe7dae0ffc924efd805feeb0546",
+      "functions": [
+        "sha",
+        "write_json",
+        "signed",
+        "write_rows",
+        "result",
+        "corpus",
+        "evaluate",
+        "test_complete_real_schema_assembly_counts_unique_calls_and_separate_logical_costs",
+        "test_missing_combination_is_partial_and_never_filled_with_zero",
+        "test_missing_real_controls_are_absent_not_zero_baselines",
+        "test_source_answer_tampering_is_rejected_even_with_valid_record_checksum",
+        "test_duplicate_cached_physical_call_is_counted_once",
+        "test_unknown_failed_attempt_cost_is_partial_not_imputed_zero",
+        "test_evaluation_questions_cannot_select_strong_model",
+        "test_split_pass_is_not_full_e0_pass",
+        "aggregate"
+      ]
+    },
+    {
+      "file": "tests\\test_real_execution_protocol.py",
+      "root_role": "routing_idea2",
+      "bytes": 17675,
+      "sha256": "929cea763bff4ebaff76d12179a4cd87400a66d46d9c5e1117bd05977330e337",
+      "functions": [
+        "CharTokenizer",
+        "spec",
+        "job",
+        "FakeBackend",
+        "test_revision_nf4_and_credentials_are_explicit",
+        "test_head_tail_keeps_source_budget_and_charges_marker_separately",
+        "test_job_binds_middle_source_content_policy_and_full_original_cost",
+        "test_hash_and_model_config_tampering_stops_before_generation",
+        "test_labels_never_enter_job_provenance_or_prompt",
+        "test_resume_reuses_exact_success_without_duplicate_costs",
+        "test_unknown_cost_is_null_and_retry_requires_reconciliation",
+        "test_known_failed_response_usage_is_preserved",
+        "test_success_record_mutation_is_not_a_cache_hit",
+        "test_local_model_receipt_checks_repo_revision_inventory_and_actual_bytes",
+        "test_service_must_attest_model_revision_and_real_usage",
+        "load_cli",
+        "test_formal_cli_requires_matching_pass_receipt",
+        "test_cached_formal_batch_does_not_load_a_model",
+        "member_spec",
+        "member_job",
+        "test_aggregator_alone_has_no_fake_candidate_and_same_prompt",
+        "test_member_jobs_are_question_only_and_have_independent_sampling_protocol",
+        "test_member_store_has_required_fields_and_resumes_without_aggregation_disguise",
+        "test_member_unknown_cost_remains_unknown_and_stops_retry",
+        "load_member_cli",
+        "test_member_cli_serializes_models_and_preserves_unicode_jsonl",
+        "test_candidate_cap_cannot_use_a_different_models_tokenizer",
+        "test_new_sampled_member_and_strong_role_share_fingerprint_but_not_jobs",
+        "test_enable_thinking_forwarding_and_aggregator_fingerprint_compatibility",
+        "encode",
+        "decode",
+        "__init__",
+        "generate",
+        "factory",
+        "Template",
+        "apply_chat_template"
+      ]
+    },
+    {
+      "file": "tests\\test_runtime_memory.py",
+      "root_role": "routing_idea2",
+      "bytes": 12722,
+      "sha256": "5aea852e3a0f3b45fab4907efa33e5b532a419a03307fc0663ef0bae32b7851c",
+      "functions": [
+        "FakeCuda",
+        "CudaBackend",
+        "test_cleanup_is_after_generate_return_raw_append_fsync_and_store_lock_release",
+        "test_cached_or_failed_rows_do_not_even_access_torch",
+        "test_unsettled_or_modified_success_is_rejected_before_cuda",
+        "test_cleanup_failure_is_sanitized_and_never_retries_an_already_successful_job",
+        "cli_fixture",
+        "test_runners_only_housekeep_fresh_durable_success_and_separate_batch_overhead",
+        "test_cached_batches_never_load_backend_or_touch_cuda",
+        "test_unknown_failure_still_stops_before_second_call_without_success_cleanup_or_retry",
+        "test_core_qualification_source_bytes_remain_identical_and_old_runners_are_preserved",
+        "test_initialization_boundary_has_no_job_and_precedes_first_generate",
+        "test_constructor_failure_never_claims_initialization_cleanup_or_generates",
+        "test_initialization_cleanup_failure_stops_before_any_generation",
+        "__init__",
+        "is_available",
+        "memory_allocated",
+        "memory_reserved",
+        "empty_cache",
+        "__init__",
+        "generate",
+        "fsync",
+        "safe_boundary",
+        "Poison",
+        "at_init",
+        "failed",
+        "torch"
+      ]
+    },
+    {
+      "file": "tests\\test_scoring_diagnostics.py",
+      "root_role": "routing_idea2",
+      "bytes": 6967,
+      "sha256": "88ade62ab9ccae1b094713aceeb74ca46af5a4ffc1f14673d310f6e9c2a4cc80",
+      "functions": [
+        "test_gsm8k_safe_final_extraction",
+        "test_bad_reference_stops_instead_of_becoming_zero",
+        "test_bbh_task_specific_exact_scoring",
+        "test_bbh_does_not_take_an_earlier_cot_letter",
+        "test_choice_text_requires_pinned_choice_mapping",
+        "fixture_data",
+        "test_e1_uses_calibration_only_and_labels_oracle",
+        "test_missing_real_controls_is_partial_even_with_good_oracle",
+        "test_missing_actual_diagnostic_cost_is_not_replaced_by_combo_sum",
+        "test_weak_true_aggregate_quality_stops_e1",
+        "test_split_leakage_and_fake_scores_fail_closed",
+        "test_duplicate_question_content_with_different_ids_is_rejected"
+      ]
+    },
+    {
+      "file": "tests\\test_word_sorting_ampersand_revision.py",
+      "root_role": "routing_idea2",
+      "bytes": 2613,
+      "sha256": "deb8579e73cbfc6d070a58d8427808fbc5a44a8e9aa50067f4454a8a06abd063",
+      "functions": [
+        "test_letter_compound_with_internal_ampersand_is_a_literal_token",
+        "test_ampersand_does_not_enable_operators_or_nonletter_neighbors",
+        "test_existing_supported_syntax_keeps_its_result",
+        "test_explicit_final_marker_still_controls_extraction",
+        "test_bad_word_sorting_reference_still_stops",
+        "test_ampersand_repair_is_not_applied_to_numeric_tasks"
+      ]
+    },
+    {
+      "file": "tests\\v2\\test_decision_value.py",
+      "root_role": "routing_idea2",
+      "bytes": 10566,
+      "sha256": "fe431f6d9cfd55962172a8c15b21297dc2d8473b688290d24c8d53029e8d6bb7",
+      "functions": [
+        "inputs",
+        "test_antithetic_fantasies_are_seeded_centered_and_leave_global_rng_untouched",
+        "test_parameter_information_decoy_has_zero_decision_value",
+        "test_general_three_observation_bundle_uses_joint_predictive_covariance",
+        "test_reference_weights_integrate_future_decision_value_without_reference_labels",
+        "test_extreme_finite_reference_weights_normalize_without_overflow",
+        "test_finite_inputs_that_overflow_predictive_covariance_are_rejected",
+        "test_zero_posterior_uncertainty_returns_zero_information_and_no_finite_margin",
+        "test_fixed_twenty_action_shape_and_input_arrays_are_preserved",
+        "test_invalid_inputs_fail_before_any_observation_is_produced",
+        "test_invalid_fantasy_configuration_is_rejected",
+        "test_batch_matches_single_values_for_different_bundle_sizes",
+        "test_batch_validates_shared_posterior_only_once_without_cached_state",
+        "test_batch_rejects_invalid_shared_and_per_candidate_inputs",
+        "test_batch_is_order_stable_deterministic_and_preserves_inputs",
+        "test_fantasy_prediction_overflow_is_rejected_before_nonnegative_clamp",
+        "counted"
+      ]
+    },
+    {
+      "file": "tests\\v2\\test_feedback.py",
+      "root_role": "routing_idea2",
+      "bytes": 11543,
+      "sha256": "63f6721d188ea7d2ab37f754d265c2f583ca0e736084a132d05c7dbbf4c0e193",
+      "functions": [
+        "receipt",
+        "observation",
+        "reveal",
+        "test_pending_gold_survives_restart_and_arrives_only_once",
+        "test_repeated_gold_request_after_original_due_preserves_pending_schedule",
+        "test_one_question_reference_scores_six_members_and_twenty_teams",
+        "test_new_seed_uses_new_execution_but_reuses_arrived_question_gold",
+        "test_execution_receipts_are_idempotent_across_restart",
+        "test_known_failed_attempt_and_successful_retry_both_keep_actual_cost",
+        "test_unknown_failure_is_durable_and_stops_new_work_until_reconciled",
+        "test_reconciliation_cannot_replace_already_known_cost",
+        "test_scoring_requires_success_matching_reference_and_arrival",
+        "test_score_target_dedup_ignores_replay_timing_and_rejects_changed_value",
+        "test_external_judge_needs_own_successful_same_question_receipt",
+        "test_actual_planning_and_update_overheads_are_separate_idempotent_events"
+      ]
+    },
+    {
+      "file": "ACL研究报告_有限评测预算下的模型组合路由.txt",
+      "root_role": "protocol",
+      "bytes": 34877,
+      "sha256": "731c1f9c9b2ff5d234f8bab293ca58118ecfb2c55bef853b14be83f415db07c3"
+    },
+    {
+      "file": "decision_feedback_v2\\EXPERIMENT_DESIGN_v2.txt",
+      "root_role": "protocol",
+      "bytes": 5612,
+      "sha256": "7214551faffbe01a13528aea70f64837aa677321bcb2e351993dc11cd567fe76"
+    },
+    {
+      "file": "decision_feedback_v2\\EXPERIMENT_PROTOCOL_v2.json",
+      "root_role": "protocol",
+      "bytes": 11176,
+      "sha256": "319790ab22d04a6a82c0e3e029354df5114a7c72965437e22a66f2aa912d2c78"
+    },
+    {
+      "file": "E0_LOCK.json",
+      "root_role": "protocol",
+      "bytes": 9509,
+      "sha256": "da9429b2359e283cb4ea187a7198d827082a4f38d8c143e80917c3b39d8198a8"
+    },
+    {
+      "file": "e5_robustness_plan_v1.json",
+      "root_role": "protocol",
+      "bytes": 5607,
+      "sha256": "34532fe24273c6732e99b6b7c8631d0275281011f5cbfdb141ad4d24425d5b41"
+    },
+    {
+      "file": "EXECUTION_CONTRACT.md",
+      "root_role": "protocol",
+      "bytes": 10254,
+      "sha256": "a71203efd7193c710192bc7603b5f1e1ba0e1fd45426a235364b191df30ceabc"
+    },
+    {
+      "file": "final_policy_groups_v1.json",
+      "root_role": "protocol",
+      "bytes": 54923,
+      "sha256": "ae61f219cb6be15c15a8e648a773e6c529c0fc0dd1448a7ba30cd15836d6b3c6"
+    },
+    {
+      "file": "flex_training_adaptation_manifest.json",
+      "root_role": "protocol",
+      "bytes": 5493,
+      "sha256": "3535d599e6311e49b17bb29bdf75e2de5aaa9d6d5cb3f41a29e8683dfdf4fd1b"
+    },
+    {
+      "file": "Idea2_LLM_Routing_Research_Plan.txt",
+      "root_role": "protocol",
+      "bytes": 17945,
+      "sha256": "c44c8de11a9949463e322477a076403f97ebd33ad825ab0940c8a211df632a8e"
+    },
+    {
+      "file": "Idea2_LLM_Routing_Research_Plan_Formatted.txt",
+      "root_role": "protocol",
+      "bytes": 18689,
+      "sha256": "1b0bfcd85a5bbe293c13829439d8c0f80bc0dde3ff9c3e27bdf5678f0c8bc212"
+    },
+    {
+      "file": "LOCAL_MODEL_PROTOCOL.md",
+      "root_role": "protocol",
+      "bytes": 1903,
+      "sha256": "b9f6af2ca3ba87ca0fad9d56855f3b133f9361741a7c57162cadfc75ea820684"
+    },
+    {
+      "file": "neighbor_implementation_manifest.json",
+      "root_role": "protocol",
+      "bytes": 10916,
+      "sha256": "e11fb6c685cdfe09be48ae27524e0be8f879efe5a46820cb05c92b2fda8c6539"
+    },
+    {
+      "file": "NEIGHBOR_REPRODUCTION_BOUNDARY.md",
+      "root_role": "protocol",
+      "bytes": 7977,
+      "sha256": "4af47a8a3bbc6812f8da2b1b4be591643978e76f69579880c67d2ff9c89871f9"
+    },
+    {
+      "file": "source_manifest.json",
+      "root_role": "protocol",
+      "bytes": 2164,
+      "sha256": "5191960eb64ed098a3f9ea6886125b20c718056294cb46e3bc6bacc20470d4ef"
+    },
+    {
+      "file": "budget_router\\__init__.py",
+      "root_role": "src",
+      "bytes": 974,
+      "sha256": "cbd90705a5deb150469e87af44276d12578f89de903440388d26be095c59ee76",
+      "functions": []
+    },
+    {
+      "file": "budget_router\\acquisition.py",
+      "root_role": "src",
+      "bytes": 13299,
+      "sha256": "dc68df2bbd9abda6f398066f8a6c0bb10d68eb21eb69c2d9a5d0164b5dd3cc73",
+      "functions": [
+        "rank_one_inverse_update",
+        "directional_information_gain",
+        "choose_main",
+        "AcquisitionPlan",
+        "plan_acquisition",
+        "audit",
+        "labels_to_request",
+        "no_purchase",
+        "append_action"
+      ]
+    },
+    {
+      "file": "budget_router\\budget.py",
+      "root_role": "src",
+      "bytes": 5414,
+      "sha256": "02a05b33377a97b36b89341786e66d876b3979238ff0eadbed7ca3c5d430fd71",
+      "functions": [
+        "BudgetExceeded",
+        "ResourceCost",
+        "CostPrediction",
+        "BudgetLedger",
+        "__post_init__",
+        "__add__",
+        "__sub__",
+        "__mul__",
+        "fits_within",
+        "__post_init__",
+        "__init__",
+        "reserved",
+        "available",
+        "remaining",
+        "reserve_future_service",
+        "can_reserve",
+        "reserve",
+        "reserve_service",
+        "settle",
+        "cancel",
+        "snapshot"
+      ]
+    },
+    {
+      "file": "budget_router\\diagnostics.py",
+      "root_role": "src",
+      "bytes": 16542,
+      "sha256": "78e30d5cf4f89a9df5718c3e040699ae12ea8a874638e5f6a2a45a3e4f7e3372",
+      "functions": [
+        "_matrix",
+        "_binary",
+        "_tasks",
+        "_macro",
+        "_interval",
+        "evaluate_e1"
+      ]
+    },
+    {
+      "file": "budget_router\\downloads.py",
+      "root_role": "src",
+      "bytes": 12089,
+      "sha256": "fbde5586ba6098172f8a76f699004baa13caa276176ec03b58446a3d44062de5",
+      "functions": [
+        "DownloadError",
+        "DownloadLockedError",
+        "RangeProtocolError",
+        "DownloadIntegrityError",
+        "DownloadInterruptedError",
+        "_expected_digest",
+        "_exclusive_lock",
+        "_verified_hashes",
+        "_response_length",
+        "resumable_download",
+        "event",
+        "verified_result"
+      ]
+    },
+    {
+      "file": "budget_router\\e1_controls.py",
+      "root_role": "src",
+      "bytes": 9964,
+      "sha256": "b3ee1112dc6ce1f63333350812f113158186e72994997c6917ab1a49d5ce51be",
+      "functions": [
+        "_select_calibration_model",
+        "select_strong_model",
+        "_sample_seed",
+        "prepare_strong_samples",
+        "_validate_sample_result",
+        "prepare_strong_aggregation"
+      ]
+    },
+    {
+      "file": "budget_router\\e5_validation.py",
+      "root_role": "src",
+      "bytes": 35440,
+      "sha256": "ef1bd47c830b05beaee644db917efe3bbcdc257b89d39336a5a15f944a1dbcbc",
+      "functions": [
+        "_full_gate",
+        "validate_plan",
+        "condition_specifications",
+        "upstream_refs",
+        "make_e5_run_plan",
+        "verify_run_plan",
+        "make_condition_identity",
+        "verify_condition_identity",
+        "_indices",
+        "_cost",
+        "_wall",
+        "_known",
+        "project_e5_episode",
+        "load_environments",
+        "_frozen_entry",
+        "upstream_inventory",
+        "_comparison",
+        "all_comparisons",
+        "verify_complete_bundle",
+        "evaluate_bundle",
+        "gate_bindings",
+        "validate_e5_pre_final_gate",
+        "validate_e5_episode",
+        "_episode_authorization_key",
+        "_references",
+        "_E5FinalBatchAuthorization",
+        "authorize_e5_final_batch",
+        "group",
+        "__init__",
+        "gate",
+        "bindings",
+        "verify_unchanged",
+        "unique"
+      ]
+    },
+    {
+      "file": "budget_router\\encoding.py",
+      "root_role": "src",
+      "bytes": 2200,
+      "sha256": "889bcb6935c6d73c13c55d8b5008d3a8dfc3ff1c2ca927a28ae668e47a931bb3",
+      "functions": [
+        "FrozenQuestionEncoder",
+        "__init__",
+        "encode"
+      ]
+    },
+    {
+      "file": "budget_router\\execution.py",
+      "root_role": "src",
+      "bytes": 20701,
+      "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f",
+      "functions": [
+        "_digest",
+        "_text_hash",
+        "_assert_no_labels_or_secrets",
+        "_tokenizer_identity",
+        "head_tail_candidate",
+        "_prepare",
+        "aggregation_messages",
+        "make_job",
+        "make_alone_job",
+        "validate_job",
+        "_validate_result",
+        "ExecutionStore",
+        "__init__",
+        "_reload",
+        "_lock",
+        "_append_unlocked",
+        "append",
+        "_cached",
+        "run"
+      ]
+    },
+    {
+      "file": "budget_router\\features.py",
+      "root_role": "src",
+      "bytes": 5229,
+      "sha256": "b58a43a2b73cd9e481223b64e5a9d1a86b748a5aceee99abaebe7e8be80064c3",
+      "functions": [
+        "_finite_array",
+        "enumerate_subsets",
+        "canonical_subset",
+        "single_member_replacements",
+        "FrozenPCAFeatures",
+        "SubsetFeatureMap",
+        "__init__",
+        "fit",
+        "pca_mean",
+        "feature_dim",
+        "transform",
+        "__init__",
+        "basis",
+        "transform",
+        "feature"
+      ]
+    },
+    {
+      "file": "budget_router\\final_generation.py",
+      "root_role": "src",
+      "bytes": 45980,
+      "sha256": "745beda8d9f32938549955bf818f2fbea24b453555d1cb45afb30f1149e8ee2d",
+      "functions": [
+        "aggregator_descriptor",
+        "_inside",
+        "context",
+        "_spec_for_condition",
+        "_under",
+        "_batch_paths",
+        "_qualification",
+        "_authority",
+        "_load_tokenizer",
+        "_validate_manifest_header",
+        "_manifest",
+        "prepare_member_jobs",
+        "_read_jobs",
+        "_evaluation_helpers",
+        "_audit_store",
+        "_call_cap",
+        "_expected_members",
+        "_stored_members",
+        "_expected_aggregates",
+        "prepare_aggregate_jobs",
+        "_validated_batch",
+        "_gpu_admission",
+        "_final_execution_lock",
+        "_completed_batch_receipt",
+        "run_released_batch",
+        "_append_grading_progress",
+        "_GradingAttempt",
+        "_grading_inventory",
+        "_future_reference",
+        "_score_digest",
+        "_validate_matrix_arrays",
+        "_verify_existing_bundle",
+        "_assembly_lock",
+        "assemble_final_matrix",
+        "__init__",
+        "checkpoint",
+        "score",
+        "finish",
+        "put"
+      ]
+    },
+    {
+      "file": "budget_router\\flex_simulation.py",
+      "root_role": "src",
+      "bytes": 18092,
+      "sha256": "88b0bafde22fc8c1a278a33f84b9823a826e7b84f35f0d25a9afb59e3196da7c",
+      "functions": [
+        "_sha",
+        "flex_source_hashes",
+        "VerifiedFlexAuthorization",
+        "authorize_flex_pair",
+        "_check_flex_authorization",
+        "run_flex_simulation",
+        "public_record"
+      ]
+    },
+    {
+      "file": "budget_router\\flex_training.py",
+      "root_role": "src",
+      "bytes": 13177,
+      "sha256": "637b3fdcd0b609502a3b55e4de789feb531049fc278be692fa3998e887438790",
+      "functions": [
+        "PaidFullWarmupRow",
+        "normalized_frozen_pca",
+        "_training_data",
+        "torch_exact_hit_probabilities",
+        "torch_smoothed_flex_objective",
+        "require_finite_exact_training_rows",
+        "FrozenPCASmoothedFlexPolicy",
+        "train_flex_adapted",
+        "__init__",
+        "kernel",
+        "select",
+        "state_dict",
+        "training_report",
+        "from_state_dict"
+      ]
+    },
+    {
+      "file": "budget_router\\flex_validation.py",
+      "root_role": "src",
+      "bytes": 34215,
+      "sha256": "6382aa74d23795b48cd2d37de08a8944255a2e189d6970a4d4b4bbb875a3d870",
+      "functions": [
+        "locked_grid",
+        "flex_settings",
+        "make_identity",
+        "verify_identity",
+        "_add",
+        "validate_result",
+        "FlexEpisodeStore",
+        "_recompute_episode",
+        "verify_complete_flex_grid",
+        "reference_evaluation",
+        "_reference_bindings",
+        "_check_grid_summary",
+        "accept_flex_reference",
+        "validate_flex_reference_gate",
+        "validate_flex_episode",
+        "make_e4_full_gate",
+        "validate_e4_full_gate",
+        "FlexFinalBatchAuthorization",
+        "authorize_flex_final_batch",
+        "__init__",
+        "load",
+        "commit",
+        "_check_top_level",
+        "verify_unchanged"
+      ]
+    },
+    {
+      "file": "budget_router\\frozen_evaluation.py",
+      "root_role": "src",
+      "bytes": 85292,
+      "sha256": "6ca077a6963b1b2fdbc0936f73c0a795cecceb085d0c1a848667588a71803922",
+      "functions": [
+        "_int",
+        "_array",
+        "_digest",
+        "anonymous_question_id",
+        "_compact_checkpoint_metadata",
+        "_ridge_state",
+        "FrozenPolicy",
+        "_resolve_references",
+        "validate_encoder_feature_sources",
+        "_validate_policy_groups",
+        "_finish_final_batches",
+        "validate_final_release",
+        "_decision_record",
+        "freeze_final_decisions",
+        "_read_frozen_decisions",
+        "evaluate_final_matrix",
+        "paired_final_comparisons",
+        "FrozenNeighborPolicy",
+        "project_sealed_embeddings",
+        "_validate_declared_group_plan",
+        "validate_preparation_release",
+        "FrozenFlexPolicy",
+        "release_conditions_from_plan",
+        "validate_physical_grading_work",
+        "validate_calibration_replay_record",
+        "__init__",
+        "checkpoint_metadata",
+        "for_software_test",
+        "from_bound_checkpoint",
+        "select",
+        "bad_constant",
+        "cost",
+        "add",
+        "__init__",
+        "checkpoint_metadata",
+        "assert_unchanged",
+        "for_software_test",
+        "from_bound_checkpoint",
+        "select",
+        "__init__",
+        "select"
+      ]
+    },
+    {
+      "file": "budget_router\\inference.py",
+      "root_role": "src",
+      "bytes": 16514,
+      "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef",
+      "functions": [
+        "ModelSpec",
+        "GenerationResult",
+        "GenerationFailure",
+        "InputTooLong",
+        "_file_hash",
+        "validate_local_model_source",
+        "_validated_usage",
+        "chat_template_text",
+        "TransformersBackend",
+        "OpenAICompatibleBackend",
+        "make_backend",
+        "configuration_fingerprint",
+        "validate",
+        "__init__",
+        "__init__",
+        "generate",
+        "__init__",
+        "generate"
+      ]
+    },
+    {
+      "file": "budget_router\\learner.py",
+      "root_role": "src",
+      "bytes": 8109,
+      "sha256": "9e268e24663eeef5d4a091d052c77fb604e910ea2d9122223e256a8ab5ca8c6a",
+      "functions": [
+        "FeedbackNotArrived",
+        "OriginalLabel",
+        "cold_start_limit",
+        "question_block_bootstrap_weights",
+        "SharedRidgeRegressor",
+        "__init__",
+        "label_count",
+        "question_count",
+        "labels",
+        "design",
+        "design_inverse",
+        "theta",
+        "add_label",
+        "predict",
+        "working_variance",
+        "bootstrap_coefficients",
+        "thompson_sample"
+      ]
+    },
+    {
+      "file": "budget_router\\member_execution.py",
+      "root_role": "src",
+      "bytes": 10740,
+      "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2",
+      "functions": [
+        "member_mode",
+        "member_messages",
+        "make_member_job",
+        "validate_member_job",
+        "validate_resample_groups",
+        "MemberStore",
+        "_cached",
+        "run"
+      ]
+    },
+    {
+      "file": "budget_router\\neighbor_policies.py",
+      "root_role": "src",
+      "bytes": 38578,
+      "sha256": "4781d76378062cc73f8bfbe87cdec9610e8d8a810034e8f7d4dcfd80d96f9e1d",
+      "functions": [
+        "FeedbackPermissionError",
+        "RelaxationInfeasible",
+        "_vector",
+        "_time",
+        "_members",
+        "_permission",
+        "LegalMemberFeedback",
+        "LegalComboFeedback",
+        "PastMemberExecution",
+        "_execution",
+        "_import_file",
+        "load_audited_ces",
+        "CESPaidWarmupPolicy",
+        "confidence_radius",
+        "structural_reward",
+        "relaxed_reward",
+        "_fractional",
+        "dependent_round",
+        "base_convex_decomposition",
+        "swap_round",
+        "C2MABVPolicy",
+        "flexrouter_kernel",
+        "_dpp_kernel",
+        "dpp_coverage_probability",
+        "flexrouter_loss",
+        "complete_labels_from_broker",
+        "require_finite_flexrouter_training_loss",
+        "fixed_k_dpp_greedy",
+        "__init__",
+        "observe_paid_warmup",
+        "observe_warmup_costs",
+        "freeze_profile",
+        "profile",
+        "member_features",
+        "select",
+        "register_execution",
+        "observe_combo",
+        "state_dict",
+        "load_state_dict",
+        "__init__",
+        "observe_members",
+        "observe_costs",
+        "confidence_bounds",
+        "solve_relaxation",
+        "select",
+        "state_dict",
+        "load_state_dict"
+      ]
+    },
+    {
+      "file": "budget_router\\neighbor_simulation.py",
+      "root_role": "src",
+      "bytes": 26522,
+      "sha256": "c4be703de609a62c77c93473880ed2f5f413b351114870c83ffd7f80b55721dd",
+      "functions": [
+        "_sha",
+        "_digest",
+        "neighbor_source_hashes",
+        "_environment_bindings",
+        "VerifiedE3Authorization",
+        "authorize_neighbor_pair",
+        "_check_authorization",
+        "_safe",
+        "_member_receipts",
+        "_cost_receipts",
+        "_combo_receipt",
+        "_evaluate_frozen_service",
+        "_ces_snapshot",
+        "run_neighbor_simulation",
+        "public_record",
+        "consume"
+      ]
+    },
+    {
+      "file": "budget_router\\neighbor_validation.py",
+      "root_role": "src",
+      "bytes": 15284,
+      "sha256": "d5248abf7eef1c3b6e20554b534bd7a7fc39d571f303055c8e52de44411e1bd0",
+      "functions": [
+        "locked_grid",
+        "make_identity",
+        "verify_identity",
+        "_cost_add",
+        "validate_result",
+        "NeighborEpisodeStore",
+        "verify_complete_neighbor_grid",
+        "NeighborFinalBatchAuthorization",
+        "authorize_neighbor_final_batch",
+        "validate_neighbor_episode",
+        "validate_e4_gate",
+        "__init__",
+        "load",
+        "commit"
+      ]
+    },
+    {
+      "file": "budget_router\\online_continuation.py",
+      "root_role": "src",
+      "bytes": 6023,
+      "sha256": "15131facb66b32cd0e52da8047d87d71e3a58c0f6a23c9524fd30f1eb77892a9",
+      "functions": [
+        "_json",
+        "_sha",
+        "_inside",
+        "verify_matrix_receipt",
+        "continue_online_assets"
+      ]
+    },
+    {
+      "file": "budget_router\\operator_snapshot_proof.py",
+      "root_role": "src",
+      "bytes": 20152,
+      "sha256": "063a5695b70b78a194b2d2e3aea0660924be839b61af696017964944914b4362",
+      "functions": [
+        "SnapshotProofError",
+        "_fail",
+        "_sha",
+        "_digest",
+        "_int",
+        "_finite",
+        "_path",
+        "_same_ast",
+        "_method",
+        "_writes",
+        "audit_source_invariants",
+        "_profile",
+        "_FrozenCaptureTicket",
+        "_lease",
+        "issue_frozen_capture_ticket",
+        "_pairs",
+        "_load",
+        "_locals",
+        "_literal",
+        "_anchor",
+        "PrefixProof",
+        "prove_frozen_sample",
+        "inspect_pyspy_dump",
+        "__init__",
+        "prompt_tokens",
+        "completion_tokens",
+        "evidence"
+      ]
+    },
+    {
+      "file": "budget_router\\preparation.py",
+      "root_role": "src",
+      "bytes": 14668,
+      "sha256": "3201a0fb5c726373e15d2817fa43680fdadaea621260e504a40c4f85178f92f7",
+      "functions": [
+        "file_sha",
+        "read_jsonl",
+        "load_inputs",
+        "select_records",
+        "read_spec",
+        "immutable_jsonl",
+        "validate_success_rows",
+        "prepare_members",
+        "collect_members",
+        "prepare_aggregations",
+        "prepare_alone"
+      ]
+    },
+    {
+      "file": "budget_router\\protocol_lock.py",
+      "root_role": "src",
+      "bytes": 18596,
+      "sha256": "62b5a504aad493cdf5203e3fd8587fa222e25a934455e1809f7b623d183c3bf2",
+      "functions": [
+        "verify_qualification",
+        "_freeze_guard",
+        "_atomic_bytes",
+        "_transaction_paths",
+        "_clean_transaction",
+        "_recover_e0_transaction",
+        "_commit_e0_pair",
+        "freeze_e0",
+        "_freeze_e0_guarded"
+      ]
+    },
+    {
+      "file": "budget_router\\ranking_evaluation.py",
+      "root_role": "src",
+      "bytes": 14835,
+      "sha256": "211646e7dbe335a7e4de0e108d7f806d1d4323bbec1c5f4a8929e543a7e98c4b",
+      "functions": [
+        "_mean",
+        "ranking_metrics",
+        "evaluate_episode_predictions",
+        "summarize_prediction_rows",
+        "stratified_question_interval",
+        "write_cost_curve",
+        "_actual_resource",
+        "rich_fixed_references",
+        "strict_quality_cost_dominance"
+      ]
+    },
+    {
+      "file": "budget_router\\recovery_runtime.py",
+      "root_role": "src",
+      "bytes": 34006,
+      "sha256": "fe76c9126cff102331b6edac5762e45444cf4208e6d34bff59005fc5bab1a1cb",
+      "functions": [
+        "RecoveryAuthorizationError",
+        "_authorization_guard",
+        "sha_file",
+        "canonical_digest",
+        "argv_digest",
+        "read_json",
+        "atomic_json",
+        "immutable_json",
+        "artifact_reference",
+        "_inside",
+        "verified_reference",
+        "_positive",
+        "_process_factory",
+        "_script",
+        "_process_record",
+        "_flag",
+        "validate_recovery_authorization",
+        "observed_process",
+        "assert_original_supervisor_gone",
+        "validate_helper_process",
+        "validate_settled_costs",
+        "validate_original_aggregation",
+        "ReadOnlyProcessHandle",
+        "acquire_original_handles",
+        "_validated_owner_artifact",
+        "validated_recovery_owner",
+        "validated_recovery_completion",
+        "guarded",
+        "reject",
+        "__init__",
+        "wait",
+        "close"
+      ]
+    },
+    {
+      "file": "budget_router\\runtime_diagnostics.py",
+      "root_role": "src",
+      "bytes": 4195,
+      "sha256": "e49012966ca7ec27e045cdf7aa9b5925ad8de083d783f9c7a6d2fc277e14ff8a",
+      "functions": [
+        "BackendInitializationError",
+        "_runtime_inventory",
+        "make_backend_with_diagnostics",
+        "__init__",
+        "public_record"
+      ]
+    },
+    {
+      "file": "budget_router\\runtime_memory.py",
+      "root_role": "src",
+      "bytes": 9740,
+      "sha256": "180726e893f70316a1c52fe214d23438f0edf74a78f60f21e106ffc4b175e9dc",
+      "functions": [
+        "RuntimeMemoryHousekeepingError",
+        "_digest",
+        "_append_audit",
+        "_allocator",
+        "cleanup_after_committed_success",
+        "cleanup_after_backend_initialization",
+        "RuntimeMemorySummary",
+        "__init__",
+        "observe",
+        "as_dict"
+      ]
+    },
+    {
+      "file": "budget_router\\scoring.py",
+      "root_role": "src",
+      "bytes": 8705,
+      "sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d",
+      "functions": [
+        "ScoreResult",
+        "_clean",
+        "_boxed",
+        "_candidate",
+        "_trim",
+        "_numeric",
+        "_normal_text",
+        "_choice",
+        "_canonical",
+        "score_answer",
+        "to_dict"
+      ]
+    },
+    {
+      "file": "budget_router\\simulation.py",
+      "root_role": "src",
+      "bytes": 65854,
+      "sha256": "a99d5478a4db65842855355005fde1ad0e9dfaa861743edfcc1d17a79aecd964",
+      "functions": [
+        "_hash_file",
+        "_digest",
+        "_reference",
+        "_validate_stage_bindings",
+        "_validate_locked_split",
+        "CallCaps",
+        "SimulationSettings",
+        "QuestionContext",
+        "MatrixEnvironment",
+        "_EnvironmentSession",
+        "FeedbackBroker",
+        "_PastCostPredictor",
+        "_fixed_from_arrived_warmup",
+        "_ContextualMemberRidges",
+        "_validate_pair",
+        "validate_strategy_requirements",
+        "_clock",
+        "_elapsed",
+        "_add_timing",
+        "_read_quality_for_evaluation",
+        "_checkpoint_json_value",
+        "_ridge_checkpoint",
+        "_broker_checkpoint",
+        "_prediction_snapshot",
+        "run_simulation",
+        "save_simulation",
+        "paired_question_bootstrap",
+        "__post_init__",
+        "service",
+        "alternate",
+        "__post_init__",
+        "__init__",
+        "from_npz",
+        "for_software_test",
+        "__len__",
+        "phi_dimension",
+        "context",
+        "new_session",
+        "public_provenance",
+        "__init__",
+        "_cell_cost",
+        "execute_member_prior",
+        "execute",
+        "__init__",
+        "pending_labels",
+        "request",
+        "request_member_prior_reference",
+        "deliver",
+        "__init__",
+        "update",
+        "_tokens",
+        "predictions",
+        "__init__",
+        "label_counts",
+        "record_generated",
+        "observe",
+        "predict",
+        "choose_subset",
+        "wall"
+      ]
+    },
+    {
+      "file": "budget_router\\stage_validation.py",
+      "root_role": "src",
+      "bytes": 27174,
+      "sha256": "eeb7bccd4cbf5488813814959465e7b49496afda142a5eff2e9d0cab9964ba21",
+      "functions": [
+        "sha_file",
+        "canonical_digest",
+        "_constant",
+        "read_json",
+        "atomic_json",
+        "immutable_json",
+        "artifact_reference",
+        "verified_reference",
+        "source_references",
+        "validate_protocol_config",
+        "expected_grid",
+        "episode_specs",
+        "episode_name",
+        "settings_from_config",
+        "validate_locked_grid",
+        "input_identity",
+        "verify_input_identity",
+        "make_run_identity",
+        "validate_run_identity",
+        "EpisodeStore",
+        "read_jsonl",
+        "validate_episode_result",
+        "compact_result",
+        "verify_complete_grid",
+        "e2_bindings",
+        "validate_e2_gate",
+        "authorize_e2_pair",
+        "verified_grid_summary",
+        "e3_bindings",
+        "validate_e3_gate",
+        "__init__",
+        "_inside",
+        "load",
+        "commit"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\__init__.py",
+      "root_role": "src",
+      "bytes": 315,
+      "sha256": "43aa4e69021ff21bdc62b320acbda574d1525e5c92a449e5db8e427d05d958ce",
+      "functions": []
+    },
+    {
+      "file": "budget_router_v2\\acquisition.py",
+      "root_role": "src",
+      "bytes": 11335,
+      "sha256": "cc578b39b60b429f00939abce2ac8390cce6c9de83145a1bb668449d5ea0b8ac",
+      "functions": [
+        "_array",
+        "antithetic_fantasies",
+        "_prepare_shared",
+        "_score_candidate",
+        "decision_values",
+        "decision_value"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\ces_pool_adapter.py",
+      "root_role": "src",
+      "bytes": 2934,
+      "sha256": "3513d7513d1d4abadde1a319b81b9cea5ad968bdd90a26d5d3b7194d1136655f",
+      "functions": [
+        "_PoolWarmup",
+        "load_ces_pool_namespace",
+        "__init__",
+        "visit_FunctionDef",
+        "visit_Compare"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\feedback.py",
+      "root_role": "src",
+      "bytes": 16709,
+      "sha256": "ed39b12d6d12efae79a3c1bb7b0d23a1758f5f00ab4c528ee33a5a2c92a165ec",
+      "functions": [
+        "LedgerError",
+        "UnknownCostError",
+        "ExecutionReceipt",
+        "ScoreObservation",
+        "_identity",
+        "_integer",
+        "_duration",
+        "BudgetFeedbackLedger",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "close",
+        "_transaction",
+        "_unknown_count",
+        "_assert_settled",
+        "request_gold",
+        "arrive_gold",
+        "has_success",
+        "record_execution",
+        "reconcile_execution",
+        "record_score",
+        "record_overhead",
+        "summary"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\full_feedback.py",
+      "root_role": "src",
+      "bytes": 30879,
+      "sha256": "58b20505182149eef2537a42867c04ba98dfc6959f527fe62c1b8c5ff3f39dc2",
+      "functions": [
+        "require",
+        "sha_file",
+        "read_json",
+        "write_json",
+        "reference",
+        "verified",
+        "new_output",
+        "load_bundle",
+        "read_inputs",
+        "read_outcomes",
+        "fit_selector",
+        "predictions",
+        "_macro",
+        "_cluster_difference",
+        "evaluate_predictions",
+        "freeze_predictions",
+        "fit_bundle",
+        "predict_bundle",
+        "score_bundle"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\full_strategy.py",
+      "root_role": "src",
+      "bytes": 19244,
+      "sha256": "d25aee12286d1c390f287daee533863253d13c8dd39f54b2e2403930546d8598",
+      "functions": [
+        "validate_full_strategy_contract",
+        "FullStrategyRun",
+        "__init__",
+        "close",
+        "_refresh",
+        "_instance",
+        "_observations",
+        "_learn",
+        "_initialize_policy",
+        "_freeze_profile",
+        "_score_profile_members",
+        "_select",
+        "_feasible",
+        "_apply",
+        "run",
+        "selection_scores"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\limited_feedback.py",
+      "root_role": "src",
+      "bytes": 27317,
+      "sha256": "e38657b6b57f72d9f1e3a1ddce8de87637f77ddfb95faf41feef9928b27a0eb6",
+      "functions": [
+        "require",
+        "_json",
+        "legal_resources",
+        "replay_accounting",
+        "validate_source_bounds",
+        "declared_feasible",
+        "shared_warmup_schedule",
+        "execute_cached_bundle",
+        "release_aggregate_scores",
+        "CachedReplayStore",
+        "PoolAcquisitionRun",
+        "__init__",
+        "slot",
+        "aggregate_id",
+        "execution_bundle",
+        "visible_score",
+        "physical_totals",
+        "__init__",
+        "_recover_learner",
+        "close",
+        "_refresh",
+        "_rng",
+        "_learn",
+        "_resources",
+        "_feasible",
+        "_prospective_ids",
+        "_candidate_actions",
+        "_choose",
+        "_warmup",
+        "_apply",
+        "run"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\scoring.py",
+      "root_role": "src",
+      "bytes": 4075,
+      "sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d",
+      "functions": [
+        "ParsedPrediction",
+        "_evaluator",
+        "_prediction_candidate",
+        "parse_prediction",
+        "score_answer"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\stage3_artifacts.py",
+      "root_role": "src",
+      "bytes": 4198,
+      "sha256": "a4eb32331efe0e942bfb4caae585d56b5cd84500aef58f92b86e021a12c1125a",
+      "functions": [
+        "artifact_lease",
+        "_reject_constant",
+        "_unique_object",
+        "_json_value",
+        "_canonical_json",
+        "_publish",
+        "write_json_once",
+        "write_npz_once"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\stage3_assets.py",
+      "root_role": "src",
+      "bytes": 13151,
+      "sha256": "b5c1122bccbe9d1bcad1f94e0ae069a991449e52b55e99ca5def2de73843fff7",
+      "functions": [
+        "transformed_contexts",
+        "transformed_features",
+        "checked_reference",
+        "checked_policy_state_sources",
+        "load_execution_metadata",
+        "_physical_metadata_object",
+        "_physical_sha256",
+        "_physical_attempt_totals",
+        "load_physical_preparation",
+        "validate_training_physical_membership",
+        "load_training_replay",
+        "verify_source"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\stage3_contract.py",
+      "root_role": "src",
+      "bytes": 16023,
+      "sha256": "fd8d0140c59f8517420c0572a4886f90365780155b6a77cd48eadd9c98223ca2",
+      "functions": [
+        "require",
+        "_reference",
+        "_integer",
+        "_number",
+        "validate_run_contract",
+        "_resolved",
+        "_metadata_reference",
+        "load_stage2_admission"
+      ]
+    },
+    {
+      "file": "budget_router_v2\\stage3_statistics.py",
+      "root_role": "src",
+      "bytes": 6646,
+      "sha256": "c0d4830b9ca3e6a2695ed1cf98718da6170174c2b4c7fbfe39505aa098d7dcec",
+      "functions": [
+        "require",
+        "_integer",
+        "_strings",
+        "paired_family"
+      ]
+    },
+    {
+      "file": "apply_runtime_fixes.py",
+      "root_role": "scripts",
+      "bytes": 4584,
+      "sha256": "a166370515a691353a7eb5bd59b5ac12a82d2e68aada4b95c64d5d3eb0b9cc96",
+      "functions": [
+        "sha",
+        "build_patched_source",
+        "planned_bytes",
+        "main"
+      ]
+    },
+    {
+      "file": "audit_cache.py",
+      "root_role": "scripts",
+      "bytes": 1362,
+      "sha256": "bcb66aba10b059d38aedf9dadb269047c51e52102929ae8768f6853e68313d05",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "build_delivery.py",
+      "root_role": "scripts",
+      "bytes": 76210,
+      "sha256": "5a3ac51f1053079abbdc591171b95fa62ef7ab9f92921e3a0b09e27608874608",
+      "functions": [
+        "finite",
+        "_group_contract",
+        "_evaluation_arrays",
+        "validate_final_evaluation_set",
+        "_interval",
+        "paired_statistics",
+        "_training_summary",
+        "_decisions",
+        "_selected_resources",
+        "actual_final_costs",
+        "validate_final_grading_measurement",
+        "compute_final_statistics",
+        "_e1_replay",
+        "validate_acceptance",
+        "physical_summary",
+        "_public_e1",
+        "_hypotheses",
+        "_history_sha",
+        "_history_ref",
+        "_observer_io_patch",
+        "_historical_control_ref",
+        "_observer_io_source_revisions",
+        "_scorer_source_revisions",
+        "_control_source_revisions",
+        "sanitized_source_history",
+        "housekeeping_summary",
+        "sanitize_json",
+        "validate_static_json_for_publication",
+        "safe_package_relative",
+        "source_whitelist",
+        "_test_receipts",
+        "csv_text",
+        "_paired_csv",
+        "render_report",
+        "portable_text",
+        "_comparison_labels",
+        "render_documents",
+        "_stage_tables",
+        "build_delivery",
+        "main",
+        "compare",
+        "nodes",
+        "check"
+      ]
+    },
+    {
+      "file": "build_final_release.py",
+      "root_role": "scripts",
+      "bytes": 13377,
+      "sha256": "717a0869d9dba7bd56a47bf93c83c6d9cc2dea72e1613a7d02c5a470d7666abe",
+      "functions": [
+        "select_policy_groups",
+        "_output_path",
+        "publish_validated_release",
+        "_locked_group_plan",
+        "preparation_value",
+        "complete_value",
+        "build_release",
+        "main"
+      ]
+    },
+    {
+      "file": "diagnose_runtime.py",
+      "root_role": "scripts",
+      "bytes": 5355,
+      "sha256": "40bbe39dfcdc77931ae6927b17f30234ce206d70ead0fffe44370626d453374a",
+      "functions": [
+        "main",
+        "thread_failure"
+      ]
+    },
+    {
+      "file": "download_inference_models.py",
+      "root_role": "scripts",
+      "bytes": 2511,
+      "sha256": "153d13f3d4ce37047b046f660955c0242f6ff5ba14ca60452d4ff41a8f46ea1e",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "download_llmrouterbench.py",
+      "root_role": "scripts",
+      "bytes": 892,
+      "sha256": "cbca1a03cb7ba26504ffb2072f0310eb2999bcb702fbf9f549a4c9785bc2dc5a",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "download_member_models.py",
+      "root_role": "scripts",
+      "bytes": 2482,
+      "sha256": "8d7f10f116100ef1e96584f291cc80138dd151029aa4dc4f8c801298fb2032d5",
+      "functions": [
+        "download",
+        "main"
+      ]
+    },
+    {
+      "file": "download_models_resumable.py",
+      "root_role": "scripts",
+      "bytes": 23270,
+      "sha256": "0b9280156b8e058b85e6b79c524a09b8f60eabf65250be48a2f67c6d951e1d26",
+      "functions": [
+        "AssetValidationError",
+        "AssetLockError",
+        "_sha",
+        "_json",
+        "_atomic_json",
+        "_inside",
+        "_transport_policy",
+        "_transport_sources",
+        "_metadata_paths",
+        "_source_url",
+        "_descriptors",
+        "_cached_metadata",
+        "metadata",
+        "_verify_file",
+        "_has_matching_completed_receipt",
+        "verified_completed_receipt",
+        "_reclaim_stale_lock",
+        "migrate_partial",
+        "_target_has_complete_size",
+        "download_model",
+        "locked_download_model",
+        "main",
+        "one",
+        "progress"
+      ]
+    },
+    {
+      "file": "download_second_aggregator.py",
+      "root_role": "scripts",
+      "bytes": 1715,
+      "sha256": "ff2c940c98cc8d099a496809ac3ce3b98a7bf6e3122d30edebab7f4043943773",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "download_with_retry.py",
+      "root_role": "scripts",
+      "bytes": 2330,
+      "sha256": "83397acb6595bda70c0b5fdf7162ad8896b460d86059ad33a0ece4e8587914b2",
+      "functions": [
+        "_state",
+        "main"
+      ]
+    },
+    {
+      "file": "evaluate_e2.py",
+      "root_role": "scripts",
+      "bytes": 8948,
+      "sha256": "7ba412a45972aefd20a9b45ac83bff89dd182886bf2e7315766f22f411083d9f",
+      "functions": [
+        "learnability_conclusion",
+        "evaluate",
+        "main"
+      ]
+    },
+    {
+      "file": "evaluate_e3.py",
+      "root_role": "scripts",
+      "bytes": 17564,
+      "sha256": "7f59f9cc2e3242d828e65db8d18e6d16b148e615c5bc51e06374fbc0f1fa6a4c",
+      "functions": [
+        "_id_rows",
+        "_cell_resource",
+        "_cell_wall",
+        "_sum_known",
+        "project_episode",
+        "verify_reused_none",
+        "paired_comparisons",
+        "evaluate",
+        "main",
+        "indexed"
+      ]
+    },
+    {
+      "file": "evaluate_e4.py",
+      "root_role": "scripts",
+      "bytes": 7513,
+      "sha256": "edd5974c3cbf66f5432ec0e206ff2a8db22db8cb79bc44b1be0c46c28bf7ae5e",
+      "functions": [
+        "compare_paired",
+        "evaluate",
+        "indexed"
+      ]
+    },
+    {
+      "file": "evaluate_flex_reference.py",
+      "root_role": "scripts",
+      "bytes": 2029,
+      "sha256": "5a2e2f4c4d166baf854085425344c3ec89e60da6e1447b792d5bcb31128459e2",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "evaluate_frozen_policies.py",
+      "root_role": "scripts",
+      "bytes": 1815,
+      "sha256": "ee29dce94447499949058aab25784e21046b613d9bab5d2016a934a1662b2612",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "evaluate_real_e1.py",
+      "root_role": "scripts",
+      "bytes": 31335,
+      "sha256": "9a81e740be5c2b38b04fcc8dca885fd64cf17cc8c2b09f057cf5f66a9c029889",
+      "functions": [
+        "file_sha",
+        "digest",
+        "text_sha",
+        "read_json",
+        "_quantity",
+        "_sum_cost",
+        "_tokens",
+        "_read_stores",
+        "_validate_result",
+        "_score",
+        "_jobids",
+        "_validate_aggregate_sources",
+        "_load_split_and_questions",
+        "assemble_e1",
+        "main"
+      ]
+    },
+    {
+      "file": "freeze_e0.py",
+      "root_role": "scripts",
+      "bytes": 313,
+      "sha256": "ccb25a68c9894c7a82608ac3a13427c04fca3402b61f5a12c859c2b75450b7f1",
+      "functions": []
+    },
+    {
+      "file": "monitor_experiment.py",
+      "root_role": "scripts",
+      "bytes": 56319,
+      "sha256": "b225d92e3ed5afb10e7f75c217e8f3c5f0b976835b33248c341b379567bc2e31",
+      "functions": [
+        "atomic_json",
+        "open_shared_read",
+        "read_bytes_shared",
+        "read_json",
+        "digest",
+        "reject_constant",
+        "stage_glob",
+        "valid_ledger_key",
+        "load_status_support",
+        "RecoveryObservationError",
+        "recovery_record",
+        "observe_recovery_run",
+        "LedgerCounters",
+        "finite_number",
+        "recent_wall_distribution",
+        "option_values",
+        "command_path",
+        "compact_run",
+        "sha256_file",
+        "validation_write_audit",
+        "validation_readonly",
+        "validate_final_acceptance_readonly",
+        "verify_terminal_acceptance",
+        "master_pid_absent",
+        "observe_full_run",
+        "model_config_metadata",
+        "final_manifest_metadata",
+        "observe_inflight",
+        "MonitorLockError",
+        "lease_guard",
+        "MonitorLease",
+        "gpu_probe",
+        "ExperimentMonitor",
+        "positive_interval",
+        "main",
+        "__init__",
+        "fresh",
+        "observe_success_wall",
+        "bootstrap_recent_wall",
+        "scan",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "__init__",
+        "poll",
+        "record_observation_error"
+      ]
+    },
+    {
+      "file": "operator_abort_e1_call.py",
+      "root_role": "scripts",
+      "bytes": 23586,
+      "sha256": "9be5c2211e308560e484c5026d7bef2ab85edc7b836fcef20e271e88666cf0c7",
+      "functions": [
+        "ProofUnavailable",
+        "ReconciliationRequired",
+        "sha",
+        "canonical",
+        "finite",
+        "validate_authorization",
+        "WindowsFreezeLease",
+        "make_failure_row",
+        "reconcile_failure_once",
+        "run_guarded_abort",
+        "UnqualifiedProductionAdapter",
+        "main",
+        "__init__",
+        "_identity",
+        "_probe",
+        "__enter__",
+        "_resume",
+        "_watchdog",
+        "require_active",
+        "capture_pyspy",
+        "ticket_state",
+        "terminate_and_wait",
+        "__exit__",
+        "owned",
+        "require_capabilities"
+      ]
+    },
+    {
+      "file": "prepare_e1_controls.py",
+      "root_role": "scripts",
+      "bytes": 629,
+      "sha256": "4f79a06416337a24df761228e810429285f654794e28e19ad67bd571f5784002",
+      "functions": []
+    },
+    {
+      "file": "prepare_features.py",
+      "root_role": "scripts",
+      "bytes": 3789,
+      "sha256": "7b48a05590e4ba0b00149e9067448375714115a1921b26c7ff0edb574148cbaa",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_final_features.py",
+      "root_role": "scripts",
+      "bytes": 13173,
+      "sha256": "e9b1b7bb160a5dd000c4396befd781e18eacb70b3cb02bb4d4fc636aa7f8ece2",
+      "functions": [
+        "load_question_texts",
+        "load_final_question_texts",
+        "CalibrationEncoderDrift",
+        "compare_calibration_encoder_replay",
+        "calibration_encoder_replay",
+        "prepare_final_features",
+        "main",
+        "__init__"
+      ]
+    },
+    {
+      "file": "prepare_final_jobs.py",
+      "root_role": "scripts",
+      "bytes": 1105,
+      "sha256": "9e8bfe7a7b1a0bb88e6e363d13eec2526a8682c74f5ae99fb61d0a02ac10ff9c",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_final_matrices.py",
+      "root_role": "scripts",
+      "bytes": 749,
+      "sha256": "c9ac3c3795c44eb25d89bf9d4fa73cfe6a5609e580e092cdddcc3adf3579b5ed",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_jobs.py",
+      "root_role": "scripts",
+      "bytes": 1255,
+      "sha256": "0a693e16c30552230d8ed6026bd7baaa5a8a28f73112ad6bf48e1826d0bb477f",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_model_configs.py",
+      "root_role": "scripts",
+      "bytes": 1786,
+      "sha256": "628ddf686629cb29d024ec03c32c28d50267719fbdea9a146758302415830242",
+      "functions": []
+    },
+    {
+      "file": "prepare_online_matrices.py",
+      "root_role": "scripts",
+      "bytes": 29189,
+      "sha256": "0cd71c9ee939ea6c5f0b805517adcfa9b935a77b41f942be49a5767b8250c41d",
+      "functions": [
+        "AssetError",
+        "_json",
+        "_text_sha",
+        "_reference",
+        "_ref",
+        "_read_jsonl",
+        "_load_features",
+        "_load_common",
+        "_jobs",
+        "_stage",
+        "_immutable_publish",
+        "assemble_online_matrices",
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_second_aggregator.py",
+      "root_role": "scripts",
+      "bytes": 1947,
+      "sha256": "9160c7f169f259864c4076343da6edc1b65e0b12a2654aab43fcf838e9063313",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "prepare_splits.py",
+      "root_role": "scripts",
+      "bytes": 18565,
+      "sha256": "63d2a6ff36fc86ce31acd6365e739345c6f0d1ccdbffd69d4d65ca4e14d44fc2",
+      "functions": [
+        "sha_file",
+        "canonical_question",
+        "canonical_qid",
+        "local_seed",
+        "project_record",
+        "assert_unique_inputs",
+        "output_row",
+        "validate_assignments",
+        "build_assignments",
+        "meaningful_self_tests",
+        "checked_runtime_split_names",
+        "read_sources",
+        "atomic_json",
+        "main"
+      ]
+    },
+    {
+      "file": "recycle_at_settled_boundary.py",
+      "root_role": "scripts",
+      "bytes": 22881,
+      "sha256": "5da071284843100c9a0d8552d70b9461ef227524a473e6dd4dbcb0cdf5646e5a",
+      "functions": [
+        "file_sha",
+        "process_identity",
+        "assert_identity",
+        "_usage",
+        "inspect_ledger",
+        "prepare_plan",
+        "Audit",
+        "MonitoredProcess",
+        "BoundaryWatcher",
+        "gpu_snapshot",
+        "OperatorLease",
+        "try_acquire_boundary",
+        "run_waiter",
+        "main",
+        "__init__",
+        "emit",
+        "__init__",
+        "exited",
+        "exit_code",
+        "close",
+        "__init__",
+        "wait",
+        "close",
+        "verify_owned",
+        "release_after_exit",
+        "Luid",
+        "Open",
+        "Memory",
+        "Close"
+      ]
+    },
+    {
+      "file": "resume_e1_aggregation.py",
+      "root_role": "scripts",
+      "bytes": 13887,
+      "sha256": "4ed11da8cdd0bc7f581606fe5b381244f57b8c2b02e6d89d251881cb1aa7b728",
+      "functions": [
+        "_load_frozen",
+        "_write_lease",
+        "_lease_token",
+        "_release_owned_leases",
+        "_acquire_supervisor_leases",
+        "wait_original_processes",
+        "continue_frozen_tail",
+        "execute_recovery",
+        "main",
+        "decorate",
+        "writer",
+        "heartbeat"
+      ]
+    },
+    {
+      "file": "review_interrupted_call_recovery.py",
+      "root_role": "scripts",
+      "bytes": 2889,
+      "sha256": "cbb1bed086c656022bd227316c7f850e349d798e2ccde8584cc0bfd85905d3e8",
+      "functions": [
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "review_runtime.py",
+      "root_role": "scripts",
+      "bytes": 10323,
+      "sha256": "3ab9e0fd8369949c8422a64b5235f83013add22c483c8384769db239b4bee0e4",
+      "functions": [
+        "_project_path",
+        "_code_hashes",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "run_aggregation.py",
+      "root_role": "scripts",
+      "bytes": 6511,
+      "sha256": "3762402fba3f2e49c628f968c494afdaf8b3bb67359f22b1bd6236c0752d98fc",
+      "functions": [
+        "_read_qualification",
+        "main"
+      ]
+    },
+    {
+      "file": "run_e5_ablations.py",
+      "root_role": "scripts",
+      "bytes": 6607,
+      "sha256": "5c787f6b79a14c71f4b9ccbd9f3cc869f9659988fcedded28a75f1eaad9aa77e",
+      "functions": [
+        "parser",
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "run_final_generation.py",
+      "root_role": "scripts",
+      "bytes": 536,
+      "sha256": "e4eb1d0c8ae66aba43b3dfe9cbac049e1dd00df4efb39b2ea9379c1964f8314a",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "run_flex_reference.py",
+      "root_role": "scripts",
+      "bytes": 5628,
+      "sha256": "170de218fc08c613966488a8d6fb0c61c2a4399089510613895df63ac48f5f09",
+      "functions": [
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "run_full_experiment.py",
+      "root_role": "scripts",
+      "bytes": 44890,
+      "sha256": "c2578aedd7ea7d3b98a008a7226612916b4cf7bfe1eb5e25ee75fbd4cbb606dd",
+      "functions": [
+        "ReviewRequired",
+        "state",
+        "_pulse",
+        "child",
+        "_legacy_active",
+        "_legacy_owner_gone",
+        "_recovery_record",
+        "_recovery_snapshot",
+        "_upstream_active",
+        "_upstream_identity_snapshot",
+        "_upstream_owner_gone",
+        "_normal_upstream_completion",
+        "_wait_recovery_natural_exit",
+        "_wait_upstream_normal_exit",
+        "_script_from_command",
+        "_owner_gone",
+        "_owned_previous_child",
+        "_settled_before_resume",
+        "_master_guard",
+        "_acquire_master_lease",
+        "master_lease",
+        "follow_previous_child",
+        "_legacy_identity_snapshot",
+        "_normal_legacy_completion",
+        "_wait_legacy_normal_exit",
+        "wait_real_matrices",
+        "_inputs",
+        "matrix_args",
+        "_resume",
+        "accept_legitimate_e1_stop",
+        "_admit_gpu",
+        "ensure_second_aggregator",
+        "start_second_download_if_needed",
+        "wait_second_download",
+        "run_restricted_stages",
+        "prepare_final_release",
+        "run_all_final_conditions",
+        "physical_model_accounting",
+        "accept_full_experiment",
+        "main"
+      ]
+    },
+    {
+      "file": "run_local_e1.py",
+      "root_role": "scripts",
+      "bytes": 20988,
+      "sha256": "8a6ffcc89affbee7421453fff9a1fd8e28e1d9a5220da9618890ba519a1abd85",
+      "functions": [
+        "atomic_json",
+        "state",
+        "run",
+        "NetworkAssetUnavailable",
+        "wait_download",
+        "host_memory_snapshot",
+        "gpu_snapshot",
+        "wait_gpu",
+        "qualification_cache_complete",
+        "qualification_gpu_admission",
+        "gpu_min_free_mib_argument",
+        "runtime_review",
+        "verify_e0_after_child",
+        "evaluate_e1_receipt",
+        "main",
+        "sha",
+        "MemoryStatus"
+      ]
+    },
+    {
+      "file": "run_members.py",
+      "root_role": "scripts",
+      "bytes": 7873,
+      "sha256": "0afbdcc119281504ee9bf195aa2e69dba02387794154a4a27639f36b3fbc188c",
+      "functions": [
+        "_qualification_receipts",
+        "main"
+      ]
+    },
+    {
+      "file": "run_neighbors.py",
+      "root_role": "scripts",
+      "bytes": 4643,
+      "sha256": "4147b2f0a8cce16d56d6c308f184b1f62ff269867bd1cf6a4ec1000f3c2d78ae",
+      "functions": [
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "run_online.py",
+      "root_role": "scripts",
+      "bytes": 9353,
+      "sha256": "f2d498caafd96e53226be1606c2cba21e196f41a2b9875eab74e303785121969",
+      "functions": [
+        "parser",
+        "main",
+        "writer"
+      ]
+    },
+    {
+      "file": "show_status.py",
+      "root_role": "scripts",
+      "bytes": 6436,
+      "sha256": "a71e8945fc1290be5b896cdec06c7320e454d8d6a9e56155136a66540e0ec409",
+      "functions": [
+        "read",
+        "observe_process",
+        "effective_record",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\aggregation_sourceview.py",
+      "root_role": "scripts",
+      "bytes": 51793,
+      "sha256": "ab247b96e911c727457d0077cee824ec55943e68db14518a1872e7c22cfdc8ce",
+      "functions": [
+        "require",
+        "io_path",
+        "logical_path",
+        "resolved_path",
+        "bytes_of",
+        "files_below",
+        "connect_database",
+        "sha",
+        "digest",
+        "read",
+        "encoded",
+        "write_once",
+        "reference",
+        "indexed_rows",
+        "safe_relative",
+        "validate_inventory",
+        "source_question",
+        "verify_operator_and_jobs",
+        "verify_fresh_before_outputs",
+        "resources_for",
+        "sum_resources",
+        "verify_closed",
+        "stable_source_identity",
+        "stable_attempt_identity",
+        "monotonic_cost_reconciliation",
+        "publish_sourceview",
+        "lookup_source",
+        "physical_totals",
+        "export_closed",
+        "ingest_closed",
+        "main",
+        "evidence"
+      ]
+    },
+    {
+      "file": "v2\\apply_stage2_member_runtime_overlay.py",
+      "root_role": "scripts",
+      "bytes": 7882,
+      "sha256": "e8399996596fc88b7077ec91a043bc4feec7968fefc7c828df597ebeaf609db6",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "write_once",
+        "verify_plan_delta",
+        "verify_payload",
+        "check_prepaid_state",
+        "apply",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\assemble_full_feedback_bundle.py",
+      "root_role": "scripts",
+      "bytes": 2512,
+      "sha256": "e6f297c40e1511baecaa635b00ccd89a7263825291be5a02dd436de9413be676",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\assemble_stage2_matrices.py",
+      "root_role": "scripts",
+      "bytes": 12847,
+      "sha256": "e9392cabb21902a113148a48a1a7d019cb9e0b42f4d5ec1f77ade974fb913b2d",
+      "functions": [
+        "verified_freeze",
+        "bundle_identity",
+        "assemble",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\audit_gold_reuse.py",
+      "root_role": "scripts",
+      "bytes": 12149,
+      "sha256": "05ee65cb839e96bf1c1097e06c85b4780fded01d318e316eb7f2574b58059bae",
+      "functions": [
+        "require",
+        "sha_file",
+        "read_json",
+        "source_path",
+        "selected_records",
+        "execution_receipt",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\audit_query_operator.py",
+      "root_role": "scripts",
+      "bytes": 3283,
+      "sha256": "35e530765f78cba02d1ee3ddd4d805d306377c5c3c2820c4ad97f314cbfc8377",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_candidate_calibration_bundle.py",
+      "root_role": "scripts",
+      "bytes": 8737,
+      "sha256": "1b0edcdae430bfebb15fb9d156feddb1362bfac6ff71cdcf10a40d6ff5ccce75",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_stage1_aggregation_bundle.py",
+      "root_role": "scripts",
+      "bytes": 20009,
+      "sha256": "522b1303368718e65be579609dd01c096f2ff0fa86304fb023a173c88eac9ce9",
+      "functions": [
+        "ref",
+        "task_scope",
+        "partition_jobs",
+        "physical_jobs",
+        "checked_task",
+        "registry_lock",
+        "reserve_assignment",
+        "archive_inputs",
+        "build",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_stage1_deepseek_bundle_r2.py",
+      "root_role": "scripts",
+      "bytes": 4660,
+      "sha256": "17b088bf4589087175183cddd29ea4bd9bd84b307eafed6e82547561e22de905",
+      "functions": [
+        "sha",
+        "read",
+        "write",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_stage1_member_bundle.py",
+      "root_role": "scripts",
+      "bytes": 7793,
+      "sha256": "c611aaeafd3ef5fafa32cb0a80e20cc658b7906cbac77c92b06b99083d017d89",
+      "functions": [
+        "read",
+        "sha",
+        "require",
+        "jsonl",
+        "write_json",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_stage2_aggregation_bundle.py",
+      "root_role": "scripts",
+      "bytes": 22681,
+      "sha256": "7cedd4d294e1fcb0e141ca90051dcd80a0ebeaf99d320074316f1673b67b9b92",
+      "functions": [
+        "reference",
+        "checked_reference",
+        "task_scope",
+        "bridge_jobs",
+        "checked_task",
+        "validate_local_fresh",
+        "contract_files",
+        "reserve_assignment",
+        "fresh_files",
+        "build",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\build_typed_stage1_aggregation_bundle.py",
+      "root_role": "scripts",
+      "bytes": 14892,
+      "sha256": "42a55e285bb2ece247b5e4b3c9a4aed6d4610acce46112aa9f0ec20d169d9512",
+      "functions": [
+        "ref",
+        "checked_task",
+        "physical_jobs",
+        "build",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\full_feedback\\INPUT_CONTRACT_v1.json",
+      "root_role": "scripts",
+      "bytes": 8071,
+      "sha256": "f34f2beb89658744131b73228d925693754a335f235add2fcb94b4d69675ea5b"
+    },
+    {
+      "file": "v2\\full_feedback\\INPUT_CONTRACT_v2.json",
+      "root_role": "scripts",
+      "bytes": 8388,
+      "sha256": "13f3346e616fe7f25c85de995603f0f15cd3e347848bafbd4a2cbde015966ddc"
+    },
+    {
+      "file": "v2\\full_feedback\\prepare_inputs.py",
+      "root_role": "scripts",
+      "bytes": 15754,
+      "sha256": "2b89e89af72706065886a6a183b834249193be2af26d114856b6c379b077173a",
+      "functions": [
+        "canonical_hash",
+        "identity_rows",
+        "identity_hash",
+        "metadata_arrays",
+        "verify_original_questions",
+        "cache_inputs",
+        "fresh_inputs",
+        "validate_assets",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\full_feedback\\run.py",
+      "root_role": "scripts",
+      "bytes": 5955,
+      "sha256": "16d6a18268fba36a78526a8e4a81b8dfa689163a09c4518008a2780b1bcbcd83",
+      "functions": [
+        "historical_smoke",
+        "selfcheck",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\full_strategy\\run.py",
+      "root_role": "scripts",
+      "bytes": 9616,
+      "sha256": "0fc4b8b44e460b64a86b4a235673ab6883ad664d2954c5235c19e503e0a292f8",
+      "functions": [
+        "full_admission",
+        "run_full",
+        "_run_full_locked",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\ingest_stage1_external_owners.py",
+      "root_role": "scripts",
+      "bytes": 22683,
+      "sha256": "b9191b772f006a93ab9114a235d687a93627862341f815e18d6043767d072d70",
+      "functions": [
+        "unpack_owner",
+        "verify_bound_success",
+        "verify_owner",
+        "failed_candidate_contract",
+        "main",
+        "ref"
+      ]
+    },
+    {
+      "file": "v2\\ingest_typed_calibration_sourceview.py",
+      "root_role": "scripts",
+      "bytes": 13729,
+      "sha256": "fe6f9da7b03095fa6c59e71afe3319011822718c525344bcc294e929615dab10",
+      "functions": [
+        "scope_source_rows",
+        "ingest",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\input_validator_bridge.py",
+      "root_role": "scripts",
+      "bytes": 7113,
+      "sha256": "a5bcbb4ccab30aaa12670e82b031c55c855752b58c2e8615ce42858dae8be44f",
+      "functions": [
+        "function_ast",
+        "check_historical_sources",
+        "verify_bridge",
+        "create_bridge",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\limited_feedback\\run.py",
+      "root_role": "scripts",
+      "bytes": 23940,
+      "sha256": "7034d29e224701ab89f00ad020c03ebffd107075f937df629f0ff4ef31229df7",
+      "functions": [
+        "admission",
+        "run_all",
+        "_run_all_locked",
+        "score_all",
+        "main",
+        "read_predictions",
+        "family"
+      ]
+    },
+    {
+      "file": "v2\\materialize_stage1_generation.py",
+      "root_role": "scripts",
+      "bytes": 14126,
+      "sha256": "dfcf7ca632e8f4874e6489ea175c05d451eef0d885a6ccbd22043f6ede700188",
+      "functions": [
+        "reference",
+        "checked_reference",
+        "validate_canonical_freeze",
+        "seed42_external_ownership",
+        "materialize",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\materialize_stage2_aggregation.py",
+      "root_role": "scripts",
+      "bytes": 11713,
+      "sha256": "9c6c6525163c8b7f61057eeb6f5f2d8a4ccf3ce7c8262e3fc8151f75d7c9e592",
+      "functions": [
+        "checked_reference",
+        "closed_member_store",
+        "load_members",
+        "materialize",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\materialize_typed_stage1_generation.py",
+      "root_role": "scripts",
+      "bytes": 18653,
+      "sha256": "e6252cec1b48de94dbf41348026edfe304162b9269cc1664d07ee1828d163d90",
+      "functions": [
+        "reference",
+        "checked_reference",
+        "check_nested_references",
+        "validate_request",
+        "checked_plan",
+        "validate_typed_freeze",
+        "load_members",
+        "build_jobs",
+        "materialize",
+        "main",
+        "accept"
+      ]
+    },
+    {
+      "file": "v2\\package_stage2_generation.py",
+      "root_role": "scripts",
+      "bytes": 5719,
+      "sha256": "fcc765e7871f87b2a7d8e95bc7d59be4ad1171af7f39ccbe113b077ed902466a",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\preflight_stage2_member_tokens.py",
+      "root_role": "scripts",
+      "bytes": 4446,
+      "sha256": "2ae67ae631cf9d0008898e032ce4813a9223e19261e404f925470a5ecbc16abe",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_aggregator_qualification.py",
+      "root_role": "scripts",
+      "bytes": 14833,
+      "sha256": "8a5dfade579d72a9aa3dbfb62f58b2ce4a2cc3b24ffca9ad09903a2adc8dff7a",
+      "functions": [
+        "require",
+        "read",
+        "sha",
+        "digest",
+        "jsonl",
+        "write_immutable",
+        "json_bytes",
+        "main",
+        "source"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage1_aggcal_jobs.py",
+      "root_role": "scripts",
+      "bytes": 10109,
+      "sha256": "28fffbc2e0bc9128b0b2e82a78d0712ecd2543f0845008647916b27556c9d93a",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "write",
+        "encoded",
+        "main",
+        "source"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage1_diagnostic_bundle.py",
+      "root_role": "scripts",
+      "bytes": 9241,
+      "sha256": "0335157ee77495a1592d62adc263d25a182e26bc70de8a542a1efc48bd68cfaf",
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage1_diagnostic_jobs.py",
+      "root_role": "scripts",
+      "bytes": 10188,
+      "sha256": "e8744a3845a6f296d7c7aedf01afb922f531ca20d8cd25bbfa4d7e0e817ae647",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "write",
+        "encoded",
+        "main",
+        "source"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage1_generation.py",
+      "root_role": "scripts",
+      "bytes": 25938,
+      "sha256": "6713fdf9d8328da839783e0a6545e009a5c6bd90af13bdf4da52ea5a5fccdcec",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "rows",
+        "write_once",
+        "checked_store",
+        "control_seed",
+        "prepare",
+        "add_task",
+        "materialize",
+        "main",
+        "source"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage2_generation.py",
+      "root_role": "scripts",
+      "bytes": 13554,
+      "sha256": "41173f5a05974022222cc10d728e1a2e2527a16f4333509d688f3fe5bdb58e9d",
+      "functions": [
+        "main",
+        "source",
+        "reference"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage2_member_typed_overlay.py",
+      "root_role": "scripts",
+      "bytes": 8220,
+      "sha256": "1996cc17b389efb843acf86cc8384b7a143fb40a1d8a57e24e0b4cc866722155",
+      "functions": [
+        "prepare",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage2_native_bundle.py",
+      "root_role": "scripts",
+      "bytes": 9202,
+      "sha256": "e79f85ccbf3cb829e866380ed22da171f45823e75441be3d71ae2f247f0b8b67",
+      "functions": [
+        "main",
+        "copy"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage2_phase_resources.py",
+      "root_role": "scripts",
+      "bytes": 18210,
+      "sha256": "17f6cdf2c5385624bb06424128bd247b907c7009f04c560bd6205808df8a9253",
+      "functions": [
+        "require",
+        "project_reference",
+        "load_base",
+        "validate_variant_delta",
+        "make_variants",
+        "selected_plan",
+        "sequential_after",
+        "build_manifest",
+        "archive_bytes",
+        "copy_local_transfer_fallback",
+        "prepare",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_stage3_assets.py",
+      "root_role": "scripts",
+      "bytes": 35778,
+      "sha256": "f98325ab72240121f175abb212938ccfd5b811ddd2655a17984ff8e4e66a3690",
+      "functions": [
+        "reference",
+        "checked",
+        "unique_sources",
+        "train_identity",
+        "freeze_reference",
+        "snapshot_views",
+        "verified_cache_metadata",
+        "aggregator_execution",
+        "add_attempt",
+        "resource_totals",
+        "resource_matrix_check",
+        "validate_phase_receipts",
+        "legacy_aggregations",
+        "prepare",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_typed_aggregator_candidate.py",
+      "root_role": "scripts",
+      "bytes": 13573,
+      "sha256": "0d7d878196a44db54d630207cffc8d956b5b14dbbf11a54c93ff619011854fab",
+      "functions": [
+        "jsonl",
+        "prepare",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\prepare_typed_stage1_diagnostic.py",
+      "root_role": "scripts",
+      "bytes": 6704,
+      "sha256": "a28b0d43bfe3732c07b34e04e2e353a9e057003e6b435fd8b959fbe39b3f4198",
+      "functions": [
+        "prepare",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\review_aggregator_qualification.py",
+      "root_role": "scripts",
+      "bytes": 24599,
+      "sha256": "450b2adcc6778dfe43a745bc2f3bd2246b95a17bea493e689f8dd4e2b3420b89",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "encoded",
+        "write_immutable",
+        "unpack",
+        "qualification_references",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\review_stage1_aggcal.py",
+      "root_role": "scripts",
+      "bytes": 26337,
+      "sha256": "3c1b9ebd1d647d5d086aaf9ee51ccba18082f1215842f1621a8a042996149250",
+      "functions": [
+        "reconstruct",
+        "verify_ledger",
+        "summarize",
+        "write_matrix",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\review_typed_aggregator_candidate.py",
+      "root_role": "scripts",
+      "bytes": 34693,
+      "sha256": "7ade41fe6793144d395cc73cb34862d87e578a866fa5021368bea543e9061b1f",
+      "functions": [
+        "no_software_fixture",
+        "validate_local_inputs",
+        "trusted_scope",
+        "unpack_archive",
+        "verify_scope",
+        "probe_gate",
+        "full_gate",
+        "verify_union",
+        "review",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\run_candidate_calibration.py",
+      "root_role": "scripts",
+      "bytes": 25311,
+      "sha256": "65cd14ea06931d4858e8964fd8b4eed2287e94b31c944e6543205c04426429ac",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "save",
+        "load_core",
+        "validate_probe_dependency",
+        "validate_candidate_inputs",
+        "export_closed",
+        "main",
+        "update"
+      ]
+    },
+    {
+      "file": "v2\\run_candidate_calibration_remaining.py",
+      "root_role": "scripts",
+      "bytes": 26739,
+      "sha256": "ee5818d8b79e6f7969e32787a3c63c67250bcd74e2ab418d72c1767421311cb7",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "save",
+        "load_core",
+        "validate_probe_dependency",
+        "validate_candidate_inputs",
+        "export_closed",
+        "CandidateCostFences",
+        "failed_owner_cost",
+        "persist_shared_cost_fence",
+        "main",
+        "__init__",
+        "exists",
+        "update"
+      ]
+    },
+    {
+      "file": "v2\\run_stage1_aggregation_native.py",
+      "root_role": "scripts",
+      "bytes": 32986,
+      "sha256": "735512dc0ec43f1cf1c33ede6557ae6d20522addc74a97b169e605d8b0295b7f",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "save",
+        "validate_physical_spec_mapping",
+        "export_closed",
+        "request_for",
+        "record_for",
+        "append_record",
+        "recover_completed",
+        "validate_operator_lock",
+        "capacity",
+        "acquire_gpu",
+        "claim_assignments",
+        "validate_shard_jobs",
+        "durable_attempt_counts",
+        "main",
+        "update"
+      ]
+    },
+    {
+      "file": "v2\\run_stage1_members_native.py",
+      "root_role": "scripts",
+      "bytes": 18445,
+      "sha256": "a403834a97f2ca1470b7cd13534b556984cf543c3976a71346cfc14601672ae9",
+      "functions": [
+        "AdmissionStopped",
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "save",
+        "load_module",
+        "capacity",
+        "acquire_slot",
+        "acquire_gpu",
+        "reconcile_journals",
+        "main",
+        "update",
+        "RPC",
+        "call",
+        "factory"
+      ]
+    },
+    {
+      "file": "v2\\run_stage1_members_native_r2.py",
+      "root_role": "scripts",
+      "bytes": 21969,
+      "sha256": "74b45ecd7f215f9f271e030bb141a9c5bf94b9adbd8777b57d8bd362ecdce888",
+      "functions": [
+        "AdmissionStopped",
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "save",
+        "load_module",
+        "capacity",
+        "acquire_slot",
+        "acquire_gpu",
+        "reconcile_journals",
+        "validate_dispatch_adaptation",
+        "main",
+        "update",
+        "RPC",
+        "call",
+        "factory"
+      ]
+    },
+    {
+      "file": "v2\\run_stage2_aggregation_native.py",
+      "root_role": "scripts",
+      "bytes": 31763,
+      "sha256": "c729807cc6acf8306e1b560a42e59d52a98f4a4a371623cdad6d1ff10d364a71",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "digest",
+        "save",
+        "load_runtime_core",
+        "AdmissionFences",
+        "paid_cost_requires_review",
+        "persist_cost_fence",
+        "validate_prospective_fresh",
+        "validate_shard_jobs",
+        "export_closed",
+        "load_paid_cost_guard",
+        "validate_typed_operator_lock",
+        "main",
+        "stage2_record",
+        "__init__",
+        "exists",
+        "update"
+      ]
+    },
+    {
+      "file": "v2\\run_stage2_members_native.py",
+      "root_role": "scripts",
+      "bytes": 24696,
+      "sha256": "c368835c31b05bf5e8653d969711a1c9c295526bc2ce9b9a6da54cb8e0c58ae4",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "save",
+        "load_module",
+        "request_for",
+        "block_prior_cost_failures",
+        "reconcile_phase",
+        "spec_fingerprint",
+        "export_phase",
+        "main",
+        "update",
+        "context_for"
+      ]
+    },
+    {
+      "file": "v2\\run_typed_stage1_aggregation.py",
+      "root_role": "scripts",
+      "bytes": 14107,
+      "sha256": "9d851b2c7caa89e96015754dce9efe9e5228e9e27469a0fc04d934a1b2a404cd",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "TypedRuntimeAdapter",
+        "validate_generation_scope",
+        "validate_typed_scope",
+        "export_snapshot",
+        "load_runtime_core",
+        "main",
+        "__init__",
+        "visit_ImportFrom",
+        "visit_Expr",
+        "visit_Assign",
+        "validate_shard_jobs",
+        "validate_operator_lock",
+        "save_with_owner_fence"
+      ]
+    },
+    {
+      "file": "v2\\scientific_matrix_common.py",
+      "root_role": "scripts",
+      "bytes": 24848,
+      "sha256": "14c24afc9da200fd5c145e1f7aee3dbd16dcdfcda48b355882f0129b51b9b17f",
+      "functions": [
+        "reference",
+        "checked",
+        "rows",
+        "write_npz",
+        "jsonl_bytes",
+        "source_job",
+        "load_aggregation_views",
+        "member_sources",
+        "load_members",
+        "empty_outcomes",
+        "final_outcomes",
+        "project_cohort_references",
+        "score_result",
+        "populate_arrays",
+        "ordinary_members",
+        "verify_aggregation_member_links",
+        "matrix_coverage",
+        "scoped_sourceview_row",
+        "validate_view_identity"
+      ]
+    },
+    {
+      "file": "v2\\select_fresh_development.py",
+      "root_role": "scripts",
+      "bytes": 8623,
+      "sha256": "89ddc1ee672b71c200b1025a81b0c8dfcc4acbb6ac6a744cf256be7f1a92b7ca",
+      "functions": [
+        "require",
+        "skip_value",
+        "input_projection",
+        "sha",
+        "write_immutable",
+        "main",
+        "rank"
+      ]
+    },
+    {
+      "file": "v2\\stage1_member_phase_transfer.py",
+      "root_role": "scripts",
+      "bytes": 15629,
+      "sha256": "d6510eb32ae28750a185636fbfd1a1a0d5f537ce7654cbb3835fc28818ff9e48",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "write_once",
+        "encoded",
+        "private_path",
+        "load_assignment",
+        "validate_phase",
+        "export_phase",
+        "ingest_phase",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\stage1_member_subset_transfer.py",
+      "root_role": "scripts",
+      "bytes": 20670,
+      "sha256": "3f89405ec8e1452f925660a1508180cdd31995d1e9babd48b4680abd3633010e",
+      "functions": [
+        "selected_assignment",
+        "proc_identity",
+        "flock_owner",
+        "owner_guard",
+        "check_source_context",
+        "validate_subset",
+        "project_subset",
+        "export_subset",
+        "ingest_subset",
+        "main",
+        "argument"
+      ]
+    },
+    {
+      "file": "v2\\stage1_review_common.py",
+      "root_role": "scripts",
+      "bytes": 8061,
+      "sha256": "2f9ef59c1e93026361343118bce38f25e8646177fad1038986954a0eb4093ab2",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "rows",
+        "encoded",
+        "write",
+        "unpack_closed",
+        "project_references",
+        "operator_identity"
+      ]
+    },
+    {
+      "file": "v2\\stage2_aggregation_adapter.py",
+      "root_role": "scripts",
+      "bytes": 12445,
+      "sha256": "df5e63891f97ec8c875159cfdc39aacd09be8a9659404f7909dacef9797accd5",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "rows",
+        "encoded",
+        "write_once",
+        "reference",
+        "prepare_aggregation_inputs",
+        "load_aggregation_api",
+        "validate_job",
+        "make_job"
+      ]
+    },
+    {
+      "file": "v2\\stage2_fresh_admission.py",
+      "root_role": "scripts",
+      "bytes": 5601,
+      "sha256": "ecfc1557c7ea5b1988b003db35e1f908ec053d634f38184cc4ac90ae57bc5a2b",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "validate_fresh_admission"
+      ]
+    },
+    {
+      "file": "v2\\stage2_member_adapter.py",
+      "root_role": "scripts",
+      "bytes": 7352,
+      "sha256": "34d6cb8d2597d498e3c1fe16a56e2d002e82500a5e5e08f0f954770f23dec74c",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "canonical_hash",
+        "load_member_api",
+        "validate_member_job",
+        "make_member_job"
+      ]
+    },
+    {
+      "file": "v2\\stage2_member_phase_transfer.py",
+      "root_role": "scripts",
+      "bytes": 26815,
+      "sha256": "4b14b6d4cab35d56a248a32d18cc6726769967f31769a9011785257348082948",
+      "functions": [
+        "transfer_validator",
+        "source_file",
+        "load_assignment",
+        "unpack_archive",
+        "assert_real_context",
+        "validate_closed",
+        "record_physical_attempts",
+        "ingest",
+        "main",
+        "Adapter",
+        "__init__",
+        "visit_Constant",
+        "visit_Compare"
+      ]
+    },
+    {
+      "file": "v2\\stage2_phase_resource_guard.py",
+      "root_role": "scripts",
+      "bytes": 46412,
+      "sha256": "d538c04a0ee25648a62e449b8fbef90ecc6bb208c0c28e1d2f46e2fbcd189f1e",
+      "functions": [
+        "AdmissionDeferred",
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "save",
+        "argument",
+        "owner_key",
+        "assigned_plan",
+        "validate_definition",
+        "owned_file",
+        "load_control",
+        "process_identity",
+        "current_identity",
+        "worker_assignment",
+        "registered_live",
+        "workspace_owner",
+        "read_journal",
+        "validate_known_successes",
+        "inspect_workspace",
+        "check_global",
+        "persist_stop",
+        "install_control",
+        "watch_owner_live",
+        "run_phase",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\summarize_stage1_scientific.py",
+      "root_role": "scripts",
+      "bytes": 29516,
+      "sha256": "35821de1cfc17332ee06551c5cfac30db742bbc3a3b585633471d7fe9a67cd50",
+      "functions": [
+        "select_fixed_routes",
+        "route_indices",
+        "quality",
+        "scientific_statistics",
+        "resource_format_groups",
+        "unique_attempt_costs",
+        "operator_development_attempts",
+        "physical_cost_accounting",
+        "summarize",
+        "main",
+        "summarize"
+      ]
+    },
+    {
+      "file": "v2\\test_stage1_review_contract.py",
+      "root_role": "scripts",
+      "bytes": 10242,
+      "sha256": "551c8008b6ee29ad0e06541b5827f40842c50bbe768b75bc2e0ebef5b4ee261f",
+      "functions": [
+        "rejected",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\test_stage2_member_adapter.py",
+      "root_role": "scripts",
+      "bytes": 7039,
+      "sha256": "7ad259ae75b60608d286033cbeab201ec2e7c04dfddfeae4ae40aa8230376d23",
+      "functions": [
+        "rejected",
+        "main",
+        "FakeBackend",
+        "__init__",
+        "generate"
+      ]
+    },
+    {
+      "file": "v2\\train_member_score_cache.py",
+      "root_role": "scripts",
+      "bytes": 28182,
+      "sha256": "2170b4f283fa3a66e34bc428f4e9addc17b9191222ec880b73fd0f4d7de5215e",
+      "functions": [
+        "reference_lineage",
+        "unique_attempts",
+        "physical_totals",
+        "execution_metadata",
+        "prepare_sources",
+        "closed_phase_sources",
+        "build",
+        "MemberScoreOracle",
+        "load_member_score_cache",
+        "main",
+        "__init__",
+        "query",
+        "verify_source"
+      ]
+    },
+    {
+      "file": "v2\\typed_aggregation_execution.py",
+      "root_role": "scripts",
+      "bytes": 7096,
+      "sha256": "acbc9cd911635f26da0e23cce4174bf6660a7604d29a5d7224f1df08e083f368",
+      "functions": [
+        "output_contract",
+        "_question_from_base",
+        "upgrade_job",
+        "validate_job",
+        "load_execution_api",
+        "make_job",
+        "make_alone_job"
+      ]
+    },
+    {
+      "file": "v2\\typed_aggregation_sourceview.py",
+      "root_role": "scripts",
+      "bytes": 5551,
+      "sha256": "a2dfb7c7d2e1e21bea865aeb48bf75d14895095965814d4c624147106713f883",
+      "functions": [
+        "_require",
+        "_TypedImports",
+        "load_namespace",
+        "__init__",
+        "visit_ImportFrom",
+        "visit_Call",
+        "validate_scope",
+        "verify_operator_and_jobs"
+      ]
+    },
+    {
+      "file": "v2\\typed_operator_contract.py",
+      "root_role": "scripts",
+      "bytes": 3098,
+      "sha256": "c9c3c7562ea07e9d32074e5ee67c551a458faa6ad34c17d521659c6abf379767",
+      "functions": [
+        "require",
+        "validate_typed_freeze_header"
+      ]
+    },
+    {
+      "file": "v2\\typed_paid_cost_guard.py",
+      "root_role": "scripts",
+      "bytes": 6909,
+      "sha256": "d9bd6ff54a8a276dc4395556e401831c5d54c621b971f3434428be996dc5bf4e",
+      "functions": [
+        "require",
+        "sha",
+        "read",
+        "process_identity",
+        "owner_is_live",
+        "write_exclusive",
+        "register_owner",
+        "cost_requires_review",
+        "persist_fence",
+        "check_registered_owners",
+        "AdmissionFences",
+        "__init__",
+        "exists"
+      ]
+    },
+    {
+      "file": "v2\\validate_stage2_generation.py",
+      "root_role": "scripts",
+      "bytes": 4165,
+      "sha256": "bc4d86be9990c9a41108e983926e58a5f4e4e2ab74beefa24e70a1d430efa550",
+      "functions": [
+        "validate",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\watch_candidate_calibration_owners.py",
+      "root_role": "scripts",
+      "bytes": 9691,
+      "sha256": "11b295c1c501801a3e92fc02e1b327d9a55c99de434c01db6d8a80a7055e1d23",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "own_file",
+        "argument",
+        "load_owners",
+        "process_state",
+        "journal_states",
+        "observe_owner",
+        "persist_fence",
+        "check_once",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\watch_candidate_calibration_owners_r2.py",
+      "root_role": "scripts",
+      "bytes": 11354,
+      "sha256": "aea7781de96594efabe17c1401f95ac1a9ce4f73ef4ad36395b1b123c14bd01f",
+      "functions": [
+        "require",
+        "sha",
+        "digest",
+        "read",
+        "own_file",
+        "argument",
+        "load_owners",
+        "process_state",
+        "journal_states",
+        "observe_owner",
+        "persist_fence",
+        "check_once",
+        "main"
+      ]
+    },
+    {
+      "file": "v2\\write_stage1_review_receipt.py",
+      "root_role": "scripts",
+      "bytes": 3001,
+      "sha256": "8ca57111f55c90da685548c423267365b79cabf0303055228bdae901614347ba",
+      "functions": []
+    }
+  ],
+  "boundary": "Complete byte/AST inventory, not a claim of replaying every historical experiment."
+}
