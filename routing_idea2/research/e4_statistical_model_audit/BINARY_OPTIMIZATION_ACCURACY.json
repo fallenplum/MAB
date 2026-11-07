@@ -1,0 +1,239 @@
+{
+  "status": "COMPLETE",
+  "schema": "e4_binary_newton_optimization_sensitivity_v1",
+  "gradient_tolerance": 1e-07,
+  "initial_models": {
+    "cases": 40,
+    "gradient_inf_before_max": 0.016391007339875863,
+    "gradient_inf_after_max": 5.772547240212589e-08,
+    "polish_cpu_s_sum": 7.5,
+    "polish_wall_s_sum": 7.494647600018652,
+    "newton_iterations_max": 1,
+    "query_argmax_changed_cases": 0,
+    "query_argmax_changed_decisions": 0,
+    "probability_max_absolute_difference": 8.97214409878444e-06,
+    "mean_l2_max": 0.0002450077801291273,
+    "covariance_relative_frobenius_max": 1.818388866809607e-06
+  },
+  "checkpoint_references": {
+    "cases": 120,
+    "gradient_inf_before_max": 0.01774075330456637,
+    "gradient_inf_after_max": 5.818786918965202e-08,
+    "polish_cpu_s_sum": 22.265625,
+    "polish_wall_s_sum": 22.466299500039895,
+    "newton_iterations_max": 1,
+    "query_argmax_changed_cases": 0,
+    "query_argmax_changed_decisions": 0,
+    "probability_max_absolute_difference": 9.352697594056103e-06,
+    "mean_l2_max": 0.0002661459395308567,
+    "covariance_relative_frobenius_max": 2.2372629234867983e-06
+  },
+  "by_family_step": [
+    {
+      "family": "logistic",
+      "step": 1,
+      "cases": 20,
+      "gradient_inf_before_max": 0.005916236257624163,
+      "gradient_inf_after_max": 2.5587861607334617e-08,
+      "polish_cpu_s_sum": 3.734375,
+      "polish_wall_s_sum": 3.7625611999683315,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 4.637147756891835e-06,
+      "mean_l2_max": 0.00022857397553570363,
+      "covariance_relative_frobenius_max": 1.80451006667139e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.0002527309614978937,
+          "maximum": 0.0014774445879493195
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.0012895861040211293,
+          "maximum": 0.007592133798653432
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 1.5061611360199291e-06,
+          "maximum": 4.911234038417964e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.0,
+          "maximum": 0.0
+        }
+      }
+    },
+    {
+      "family": "logistic",
+      "step": 5,
+      "cases": 20,
+      "gradient_inf_before_max": 0.006085645273955331,
+      "gradient_inf_after_max": 3.778836532575269e-08,
+      "polish_cpu_s_sum": 3.703125,
+      "polish_wall_s_sum": 3.7191055000294,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 4.6769865686968615e-06,
+      "mean_l2_max": 0.00021551129973227285,
+      "covariance_relative_frobenius_max": 2.2372629234867983e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.0002536724018346077,
+          "maximum": 0.0013408949155295962
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.0016389177635906331,
+          "maximum": 0.0076010407687779604
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 1.7684498278039786e-06,
+          "maximum": 5.030793165575656e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.0,
+          "maximum": 0.0
+        }
+      }
+    },
+    {
+      "family": "logistic",
+      "step": 20,
+      "cases": 20,
+      "gradient_inf_before_max": 0.004932023095808535,
+      "gradient_inf_after_max": 2.7894415666196437e-08,
+      "polish_cpu_s_sum": 3.6875,
+      "polish_wall_s_sum": 3.716093799986993,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 9.13859168594211e-06,
+      "mean_l2_max": 0.0002661459395308567,
+      "covariance_relative_frobenius_max": 1.8236487070146051e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.00043298395000000527,
+          "maximum": 0.0014760235179385323
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.002960577250996721,
+          "maximum": 0.009059798234985511
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 3.802207431129084e-06,
+          "maximum": 7.268391024155579e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.05,
+          "maximum": 1.0
+        }
+      }
+    },
+    {
+      "family": "probit",
+      "step": 1,
+      "cases": 20,
+      "gradient_inf_before_max": 0.009329003993086532,
+      "gradient_inf_after_max": 4.683131349381142e-08,
+      "polish_cpu_s_sum": 3.75,
+      "polish_wall_s_sum": 3.779393400021945,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 8.653520239709778e-06,
+      "mean_l2_max": 0.000124616930467113,
+      "covariance_relative_frobenius_max": 1.725110645886875e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.00011754322595917778,
+          "maximum": 0.00048254503940152216
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.0008597910970678035,
+          "maximum": 0.005275187821538368
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 1.2379720731927475e-06,
+          "maximum": 2.989992816029796e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.0,
+          "maximum": 0.0
+        }
+      }
+    },
+    {
+      "family": "probit",
+      "step": 5,
+      "cases": 20,
+      "gradient_inf_before_max": 0.0143988492781979,
+      "gradient_inf_after_max": 5.818786918965202e-08,
+      "polish_cpu_s_sum": 3.71875,
+      "polish_wall_s_sum": 3.7726334999752,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 8.544788204001286e-06,
+      "mean_l2_max": 0.00013499407185440306,
+      "covariance_relative_frobenius_max": 2.0544354902674066e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.00011811411798122676,
+          "maximum": 0.0004551329960444683
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.001110527222047845,
+          "maximum": 0.005408431089362851
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 1.3624252187666928e-06,
+          "maximum": 3.1422063795382426e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.0,
+          "maximum": 0.0
+        }
+      }
+    },
+    {
+      "family": "probit",
+      "step": 20,
+      "cases": 20,
+      "gradient_inf_before_max": 0.01774075330456637,
+      "gradient_inf_after_max": 3.9943916618767616e-08,
+      "polish_cpu_s_sum": 3.671875,
+      "polish_wall_s_sum": 3.7165121000580257,
+      "newton_iterations_max": 1,
+      "query_argmax_changed_cases": 0,
+      "query_argmax_changed_decisions": 0,
+      "probability_max_absolute_difference": 9.352697594056103e-06,
+      "mean_l2_max": 0.0001800167476368713,
+      "covariance_relative_frobenius_max": 1.346808932677435e-06,
+      "sequential_vs_refined": {
+        "mean_l2": {
+          "mean": 0.00019996726968748974,
+          "maximum": 0.0006377807513020202
+        },
+        "covariance_relative_frobenius": {
+          "mean": 0.0021962903451929446,
+          "maximum": 0.007408300579160687
+        },
+        "probability_mean_absolute_difference": {
+          "mean": 2.8486917728277923e-06,
+          "maximum": 5.9507554518146154e-06
+        },
+        "query_argmax_changes": {
+          "mean": 0.1,
+          "maximum": 2.0
+        }
+      }
+    }
+  ],
+  "original_C_selection_and_actor_results_unchanged": true,
+  "query_rewards_used": false,
+  "new_physical_model_calls": 0,
+  "scope": "Independent numerical correction of insufficiently precise MAP references; finite Newton tolerance remains explicit",
+  "policy_reexecution_performed": false,
+  "private_derived_results": "private/optimization; original reference results retained separately",
+  "wall_elapsed_s": 21.11921859999711,
+  "audit_source_sha256": "b0ecebbd7a0eebe1856f5aadf2004e89daea9b768c2a55ed55f0441595976ad1"
+}

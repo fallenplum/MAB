@@ -1,0 +1,21 @@
+{
+  "status": "OPEN",
+  "basis": "B noise calibration mismatch, C candidate selected by development Brier only",
+  "candidate": "P2_text-only_probit",
+  "C_results_sha256": "99e00d582bb58894c87f37204dcf3ff17d5af3ddc0c4adeb988f13898bdf7cf2",
+  "order_seeds": [
+    17
+  ],
+  "budget_gold": 20,
+  "history": 480,
+  "live_expected_paths": 165,
+  "snapshot_candidates": 1200,
+  "extra_control": "Gaussian Probability-DA isolates Bernoulli-outcome replacement from Platt recalibration",
+  "scope": "development mechanism audit, no established independent model superiority",
+  "source_hashes": {
+    "run_decision_audit.py": "9adca64bb4768a871b1f9980f4fb78474e0a0051de5bedb62b3b5cb5979a993f",
+    "e4_decision.py": "28debcae48d719bfb9af387c235175ca9b1f4def0d5e55901dd923bea328fb68",
+    "e4_binary.py": "ed597fb9a5830b2034f0cbfb717677f5dab98cc2a30fe0c680c0400f1f795ca6",
+    "e4_gaussian.py": "31af12c580efda4d4a5ab710eb2fc9e0edcdd3ed5d97d70c2c6ca708c7fb8094"
+  }
+}

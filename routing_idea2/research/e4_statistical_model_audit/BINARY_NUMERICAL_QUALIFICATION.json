@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "family": "logistic",
+      "fit": {
+        "success": true,
+        "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+        "iterations": 9,
+        "objective": 1224.735334715644,
+        "gradient_infinity": 1.9098979623155543e-05,
+        "wall_s": 0.00430190000042785,
+        "composite_likelihood": true,
+        "cluster_unit": "original question"
+      },
+      "gradient_check": 6.112300907925271e-11,
+      "hessian_check": 1.766498058941579e-11,
+      "sequential_batch_mean_l2": 2.0013321185867456e-05,
+      "sequential_batch_covariance_relative_frobenius": 0.00024486671033456704
+    },
+    {
+      "family": "probit",
+      "fit": {
+        "success": true,
+        "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+        "iterations": 11,
+        "objective": 1218.4801528751013,
+        "gradient_infinity": 1.6874911422437577e-05,
+        "wall_s": 0.0023127999884309247,
+        "composite_likelihood": true,
+        "cluster_unit": "original question"
+      },
+      "gradient_check": 9.468581474436633e-11,
+      "hessian_check": 2.610835991845306e-10,
+      "sequential_batch_mean_l2": 1.799634480160961e-05,
+      "sequential_batch_covariance_relative_frobenius": 0.0002726372823536715
+    }
+  ],
+  "new_llm_calls": 0
+}

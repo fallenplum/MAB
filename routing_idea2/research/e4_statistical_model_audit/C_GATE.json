@@ -1,0 +1,148 @@
+{
+  "status": "OPEN",
+  "reason": "measured noise-model probability calibration improvement without proven routing gain",
+  "N4_minus_N2_brier": {
+    "gsm": {
+      "difference": -0.004161374349653485,
+      "ci95": [
+        -0.006340749995744249,
+        -0.0017795003344180862
+      ],
+      "p_value_descriptive_two_sided": 0.0005998800239952009,
+      "question_stratified_ci95": [
+        -0.006340749995744249,
+        -0.0017795003344180862
+      ],
+      "task_cluster_ci95": [
+        -0.006340749995744249,
+        -0.0017795003344180862
+      ]
+    },
+    "bbh_macro": {
+      "difference": -0.0020887486350412176,
+      "ci95": [
+        -0.0044660379266732286,
+        0.00044123807819909395
+      ],
+      "p_value_descriptive_two_sided": 0.09918016396720655,
+      "question_stratified_ci95": [
+        -0.0044660379266732286,
+        0.00044123807819909395
+      ],
+      "task_cluster_ci95": [
+        -0.005747042939943105,
+        0.0018741736174817955
+      ]
+    },
+    "bbh_micro": {
+      "difference": -0.0017827540889206852,
+      "ci95": [
+        -0.0042265377132612355,
+        0.0007952896643281918
+      ],
+      "p_value_descriptive_two_sided": 0.17876424715056988,
+      "question_stratified_ci95": [
+        -0.0042265377132612355,
+        0.0007952896643281918
+      ],
+      "task_cluster_ci95": [
+        -0.0052965918870732966,
+        0.0019591862391373444
+      ]
+    },
+    "balanced_subtask": {
+      "difference": -0.0031250614923473514,
+      "ci95": [
+        -0.004800546684598473,
+        -0.0013901659097584394
+      ],
+      "p_value_descriptive_two_sided": 0.0003999200159968006,
+      "question_stratified_ci95": [
+        -0.004800546684598473,
+        -0.0013901659097584394
+      ],
+      "task_cluster_ci95": [
+        -0.00522674361204375,
+        -0.0008612448175348068
+      ]
+    },
+    "balanced_v2": {
+      "difference": -0.002972064219287085,
+      "ci95": [
+        -0.004666809317899791,
+        -0.0012105381820409196
+      ],
+      "p_value_descriptive_two_sided": 0.0005998800239952009,
+      "question_stratified_ci95": [
+        -0.004666809317899791,
+        -0.0012105381820409196
+      ],
+      "task_cluster_ci95": [
+        -0.0050202153027786136,
+        -0.0007869365659684469
+      ]
+    },
+    "bbh": {
+      "difference": -0.0017827540889206852,
+      "ci95": [
+        -0.0042265377132612355,
+        0.0007952896643281918
+      ],
+      "p_value_descriptive_two_sided": 0.17876424715056988,
+      "question_stratified_ci95": [
+        -0.0042265377132612355,
+        0.0007952896643281918
+      ],
+      "task_cluster_ci95": [
+        -0.0052965918870732966,
+        0.0019591862391373444
+      ]
+    },
+    "metadata": {
+      "question_support": 500,
+      "excluded_nonfinite_questions": 0,
+      "strata_support": {
+        "gsm8k": 250,
+        "bbh/boolean_expressions": 7,
+        "bbh/causal_judgement": 10,
+        "bbh/date_understanding": 10,
+        "bbh/disambiguation_qa": 8,
+        "bbh/dyck_languages": 9,
+        "bbh/formal_fallacies": 10,
+        "bbh/geometric_shapes": 11,
+        "bbh/hyperbaton": 8,
+        "bbh/logical_deduction_five_objects": 9,
+        "bbh/logical_deduction_seven_objects": 8,
+        "bbh/logical_deduction_three_objects": 8,
+        "bbh/movie_recommendation": 10,
+        "bbh/multistep_arithmetic_two": 8,
+        "bbh/navigate": 9,
+        "bbh/object_counting": 10,
+        "bbh/penguins_in_a_table": 9,
+        "bbh/reasoning_about_colored_objects": 10,
+        "bbh/ruin_names": 10,
+        "bbh/salient_translation_error_detection": 11,
+        "bbh/snarks": 9,
+        "bbh/sports_understanding": 9,
+        "bbh/temporal_sequences": 9,
+        "bbh/tracking_shuffled_objects_five_objects": 9,
+        "bbh/tracking_shuffled_objects_seven_objects": 10,
+        "bbh/tracking_shuffled_objects_three_objects": 10,
+        "bbh/web_of_lies": 9,
+        "bbh/word_sorting": 10
+      },
+      "bbh_subtasks_present": 27,
+      "minimum_nonempty_stratum_support": 7,
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20261107,
+      "ci95_default": "original-question bootstrap within fixed task/subtask strata",
+      "task_cluster_ci95": "whole BBH task blocks; GSM questions retained as its only semantic task",
+      "scope": "conditional on fixed OOF fits and cached generation repeats; descriptive unadjusted",
+      "cv_training_history_changes_included": false,
+      "generation_or_combination_cells_are_new_questions": false,
+      "bbh_alias": "bbh_micro"
+    }
+  },
+  "source_sha256": "92b1b7ef86aee46ec1d148cd84b23435b2cb4387f9d710e8ed81e7a12c209cac",
+  "new_llm_calls": 0
+}
