@@ -12,6 +12,7 @@ import math
 from pathlib import Path
 import sys
 import time
+import zipfile
 import numpy as np
 from models import METHODS, initialize, adapt, semantic_labels
 
@@ -92,11 +93,32 @@ def qualify(train, validation):
         third_prediction = adapt(state, support, poisoned, restricted, method)
         assert np.allclose(first, third_prediction, atol=1e-12)
     assert np.max(np.abs(state.action_embedding.sum(0))) < 1e-10
+    assert np.allclose(state.action_embedding.T @ state.action_embedding, 20 * np.eye(4))
+    # Compare the cached historical top-five shortcut with brute-force retrieval.
+    history = state.history_indices
+    history_residual = train['Y'][history].mean(1) - state.train_features @ state.coefficients
+    all_distance = np.maximum(0.0, 1 - query['E'] @ train['E'][history].T)
+    residual_feedback = reward - state.query_prediction[support]
+    expected = state.query_prediction.copy()
+    for q in range(len(rows)):
+        for action in range(20):
+            old_indices = np.argsort(all_distance[q])[:5]
+            old_weights = 1 / np.maximum(all_distance[q, old_indices], .01)
+            old = np.average(history_residual[old_indices, action], weights=old_weights)
+            distances = np.r_[all_distance[q], state.query_distances[q, support]]
+            residuals = np.r_[history_residual[:, action], residual_feedback[:, action]]
+            chosen = np.argsort(distances)[:5]
+            new = np.average(residuals[chosen], weights=1 / np.maximum(distances[chosen], .01))
+            expected[q, action] += new - old
+    brute_error = float(np.max(np.abs(expected - adapt(state, support, reward, observed, 'knn'))))
+    assert brute_error < 1e-10
     return {'status': 'PASS', 'historical_posterior_max_error': error,
+            'historical_knn_bruteforce_max_error': brute_error,
             'checks': ['unseen_scores_and_embeddings_excluded', 'query_outcome_perturbation_invariance',
                        'full_parameter_online_equals_explicit_refit', 'restricted_online_equals_explicit_refit',
                        'unobserved_feedback_invariance_all_updaters', 'k0_identity_all_updaters',
-                       'k0_fixed_identity', 'learned_action_embedding_centered'],
+                       'k0_fixed_identity', 'learned_action_embedding_centered_orthogonal',
+                       'historical_plus_support_knn_equals_bruteforce'],
             'scope': 'numerical_and_information_boundary_qualification_not_scientific_success'}
 
 
@@ -127,6 +149,11 @@ def evaluate_group(train, validation, name, mode, feedback, k, state, rows):
                 valid = str(saved['signature']) == identity
                 valid &= np.array_equal(saved['question_ids'], validation['ids'][rows])
                 valid &= saved['choices'].shape == (math.comb(n, k), 3, len(METHODS), n)
+                valid &= saved['support_sets'].shape == (math.comb(n, k), k)
+                valid &= saved['total'].shape == (9, len(METHODS), 8)
+                valid &= saved['roles'].shape == (n, 9, len(METHODS), 8)
+                valid &= saved['service_cost'].shape == (3, len(METHODS), 5)
+                valid &= saved['support_cost'].shape == (3, 5)
                 if valid:
                     size = len(saved['support_sets'])
                     count = size * (n - k)
@@ -134,7 +161,7 @@ def evaluate_group(train, validation, name, mode, feedback, k, state, rows):
                             'count': count, 'support_sets': size, 'gold_reveals_per_episode': k,
                             'service_cost_mean': saved['service_cost'] / count,
                             'support_cost_per_episode': saved['support_cost'] / size, 'private_file': path.name}
-        except (KeyError, ValueError, OSError):
+        except (KeyError, ValueError, OSError, EOFError, zipfile.BadZipFile):
             pass
     support_sets = np.asarray(list(itertools.combinations(range(n), k)), dtype=np.int16).reshape(-1, k) if k else np.empty((1, 0), np.int16)
     shape = (9, len(METHODS), 8)

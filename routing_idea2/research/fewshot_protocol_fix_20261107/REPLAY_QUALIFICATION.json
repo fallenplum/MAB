@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "compared_configurations": 12,
+  "maximum_numerical_metric_difference": 0.0,
+  "checks": [
+    "k0_k1_k2_frozen_baselines_equal",
+    "frozen_choices_source_seed_invariant",
+    "initial_and_hardened_cache_engine_metrics_equal"
+  ],
+  "new_llm_calls": 0
+}

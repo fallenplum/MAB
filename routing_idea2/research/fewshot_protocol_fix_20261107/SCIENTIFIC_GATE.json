@@ -1,0 +1,200 @@
+{
+  "status": "NOT_MET",
+  "meta_learning_started": false,
+  "fresh_queue_started": false,
+  "checks": [
+    {
+      "configuration": "seen/full20/k1",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 2,
+      "cross_seed_gain": -0.004045080433969325,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/full20/k1",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.016072764683875793,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/full20/k1",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.017540216984661423,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/full20/k2",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.013061548974247392,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/full20/k2",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.012736110156745074,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/full20/k2",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.020301026134359475,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k1",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 2,
+      "cross_seed_gain": -0.0007014590347923684,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k1",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.006932285821174711,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k1",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.006089599700710813,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k2",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -1.2597631645246132e-06,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k2",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.0059025439580995195,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "seen/single/k2",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.004560170869694676,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k1",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.005331088664421998,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k1",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.019673587729143287,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k1",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.015997007108118216,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k2",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.009460725928979896,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k2",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.01710853814028417,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/full20/k2",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.013870984982096095,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k1",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 1,
+      "cross_seed_gain": -0.009703516647961097,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k1",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.010533108866442202,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k1",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.015348858959970065,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k2",
+      "method": "hierarchical",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.01260414042160074,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k2",
+      "method": "adapter2",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.016447811447811444,
+      "passes_diagnostic_screen": false
+    },
+    {
+      "configuration": "unseen/single/k2",
+      "method": "adapter4",
+      "positive_unadjusted_ci_vs_all_three_references": false,
+      "positive_same_seed_directions": 0,
+      "cross_seed_gain": -0.01716305152813089,
+      "passes_diagnostic_screen": false
+    }
+  ],
+  "note": "Screen failure is descriptive. Passing would still require multiplicity-aware independent confirmation."
+}
