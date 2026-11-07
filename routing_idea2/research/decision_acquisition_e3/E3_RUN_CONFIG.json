@@ -1,0 +1,147 @@
+{
+  "schema": "decision_acquisition_e3_prequential_v1",
+  "N": 6,
+  "K": 3,
+  "actions": 20,
+  "alpha": 100.0,
+  "pca_components": 16,
+  "history_sizes": [
+    120,
+    240,
+    480
+  ],
+  "main_history_size": 240,
+  "folds": 5,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "order_seeds": [
+    17,
+    29,
+    43
+  ],
+  "gold_budgets": [
+    10,
+    20,
+    40,
+    60
+  ],
+  "primary_gold_budget": 20,
+  "primary_predictor": "P2",
+  "predictors": [
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "fantasy_pairs": 8,
+  "reference_count": 54,
+  "warmup_gold": 2,
+  "pacing": "equal-width gold slots; observe first third, then first record, mandatory last; Random uniform per slot",
+  "feedback_delay": 0,
+  "noise": ".5 I + .5 history-only within-question generation correlation; unit diagonal",
+  "historical_likelihood": "independent unit-noise original Ridge; frozen prior for correlated online updates",
+  "common_algorithm_random_numbers_across_generation_seeds": true,
+  "matched_random_scope": "source-KG-schedule-conditioned random-neighbor diagnostic; not an independent same-permission deployable policy",
+  "primary_comparison": "P2/B1/decision_cost - ig_cost at gold20,history240",
+  "secondary_comparisons": [
+    "P2/B1/decision_cost - random",
+    "P2/B1/decision_cost - boundary_cost",
+    "P2/B2/decision_cost - ig",
+    "P2/B2/decision_cost - random_neighbor"
+  ],
+  "quality_target_rule": "No-feedback accuracy + .005 absolute, fixed before replay; unreachable is censored",
+  "delete_groups": 20,
+  "new_llm_calls": 0,
+  "sensitivity": "history120/480 at gold20 for B1 and B2 Random,IG,DecisionCost; primary mechanism grid history240",
+  "multiplicity": "Holm over primary plus four declared secondary contrasts; descriptive trace intervals separately marked",
+  "identity": "7995dfdc3afcff8eb8473f6da2af79d55818283d30044200a92c293bf583a499",
+  "source_hashes": {
+    "config": {
+      "schema": "decision_acquisition_e3_prequential_v1",
+      "N": 6,
+      "K": 3,
+      "actions": 20,
+      "alpha": 100.0,
+      "pca_components": 16,
+      "history_sizes": [
+        120,
+        240,
+        480
+      ],
+      "main_history_size": 240,
+      "folds": 5,
+      "generation_seeds": [
+        42,
+        137,
+        2024
+      ],
+      "order_seeds": [
+        17,
+        29,
+        43
+      ],
+      "gold_budgets": [
+        10,
+        20,
+        40,
+        60
+      ],
+      "primary_gold_budget": 20,
+      "primary_predictor": "P2",
+      "predictors": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "fantasy_pairs": 8,
+      "reference_count": 54,
+      "warmup_gold": 2,
+      "pacing": "equal-width gold slots; observe first third, then first record, mandatory last; Random uniform per slot",
+      "feedback_delay": 0,
+      "noise": ".5 I + .5 history-only within-question generation correlation; unit diagonal",
+      "historical_likelihood": "independent unit-noise original Ridge; frozen prior for correlated online updates",
+      "common_algorithm_random_numbers_across_generation_seeds": true,
+      "matched_random_scope": "source-KG-schedule-conditioned random-neighbor diagnostic; not an independent same-permission deployable policy",
+      "primary_comparison": "P2/B1/decision_cost - ig_cost at gold20,history240",
+      "secondary_comparisons": [
+        "P2/B1/decision_cost - random",
+        "P2/B1/decision_cost - boundary_cost",
+        "P2/B2/decision_cost - ig",
+        "P2/B2/decision_cost - random_neighbor"
+      ],
+      "quality_target_rule": "No-feedback accuracy + .005 absolute, fixed before replay; unreachable is censored",
+      "delete_groups": 20,
+      "new_llm_calls": 0,
+      "sensitivity": "history120/480 at gold20 for B1 and B2 Random,IG,DecisionCost; primary mechanism grid history240",
+      "multiplicity": "Holm over primary plus four declared secondary contrasts; descriptive trace intervals separately marked"
+    },
+    "code": {
+      "run_e3.py": "0104eef94bcf0a1c30074e27ea9278e3a5b5cb9b96637a3c616797e6b4e8229b",
+      "assets.py": "64f01de3e2e007f50c8ed6e5f690ffd147f6354eed808d83fce1f0fc5892cf64",
+      "predictors.py": "10b9058c81cf7cf1c5d052620bd698fef7b579fca42b81e23784421557372969",
+      "acquisition.py": "173c25e19d7579e30f0baeaddda40cf87007b860257a604d9095dc4118e5ae32"
+    },
+    "v2_kg_sha256": "cc578b39b60b429f00939abce2ac8390cce6c9de83145a1bb668449d5ea0b8ac"
+  },
+  "split_metadata": {
+    "fold_source": "E:\\语言模型组合路由\\research\\conditional_gain_20261106\\private\\FOLDS_PRIVATE.npz",
+    "fold_source_sha256": "6b433dcd2d8e6cd9938d2dd2d97261e18c3ae3d18325d7a04c6590e4d0600d50",
+    "fold_original_seed": 20261106,
+    "fold_original_seed_is_new_algorithm_seed": false,
+    "nested_seed": 20261107,
+    "order_seeds": [
+      17,
+      29,
+      43
+    ],
+    "algorithm_seed_rule": "SeedSequence([20261107,fold,order_seed,generation_index,919])",
+    "reference_count": 54,
+    "reference_gsm": 27,
+    "reference_bbh_subtasks": 27,
+    "reference_weights": "GSM half, BBH27-subtask macro half",
+    "query_each_question_exactly_once": true
+  },
+  "classification": "development_offline_replay"
+}
