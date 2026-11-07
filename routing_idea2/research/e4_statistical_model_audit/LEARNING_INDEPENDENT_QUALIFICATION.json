@@ -1,0 +1,219 @@
+{
+  "scope": "independent formula and permission qualification; two real f0/n480 final L3 cases",
+  "models": {
+    "P1": {
+      "learning_vs_original_E3_max_abs": 2.0816681711721685e-15,
+      "learning_vs_N1_max_abs": 2.0816681711721685e-15,
+      "argmax_identity_original": true,
+      "argmax_identity_N1": true,
+      "final_case": {
+        "L": 3,
+        "subset": [
+          0,
+          1,
+          2
+        ],
+        "alpha": 100.0,
+        "regularization": "fixed",
+        "train_raw_mse": 0.10993434475569856,
+        "train_mean_mse": 0.07268897438532819,
+        "effective_df": 249.35768400297957,
+        "observable_parameter_dimension": 255,
+        "original_parameter_dimension": 374,
+        "posterior_trace_observable": 0.05642315997020447,
+        "prior_only_null_trace": 1.19,
+        "posterior_max_eigenvalue_original": 0.01
+      },
+      "noise_3fold_history_questions": 480,
+      "noise_3fold_question_counts": [
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        },
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        },
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        }
+      ],
+      "query_label_flip_N1_mean_cov_unchanged": true,
+      "query_label_flip_OOF_predictions_noise_unchanged": true
+    },
+    "P2": {
+      "learning_vs_original_E3_max_abs": 1.887379141862766e-15,
+      "learning_vs_N1_max_abs": 1.887379141862766e-15,
+      "argmax_identity_original": true,
+      "argmax_identity_N1": true,
+      "final_case": {
+        "L": 3,
+        "subset": [
+          0,
+          1,
+          2
+        ],
+        "alpha": 100.0,
+        "regularization": "fixed",
+        "train_raw_mse": 0.11284458034867716,
+        "train_mean_mse": 0.0755992099783068,
+        "effective_df": 317.92207792207785,
+        "observable_parameter_dimension": 340,
+        "original_parameter_dimension": 340,
+        "posterior_trace_observable": 0.2207792207792208,
+        "prior_only_null_trace": 0.0,
+        "posterior_max_eigenvalue_original": 0.0006493506493506554
+      },
+      "noise_3fold_history_questions": 480,
+      "noise_3fold_question_counts": [
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        },
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        },
+        {
+          "fit": 320,
+          "held_out": 160,
+          "pca_fit_only_training": true
+        }
+      ],
+      "query_label_flip_N1_mean_cov_unchanged": true,
+      "query_label_flip_OOF_predictions_noise_unchanged": true
+    }
+  },
+  "source_hashes": {
+    "E:\\语言模型组合路由\\research\\e4_statistical_model_audit\\private\\learning\\f0_n480_P1.json": "d52f96bb2ed4e02190ed420b8e71a22b5701b18bc93b9f8bc3c63d41812c6641",
+    "E:\\语言模型组合路由\\research\\e4_statistical_model_audit\\private\\learning\\f0_n480_P1.npz": "48861c8679b0fd4e4d4fd08df9957e09ebbb382c60c46a7189669acdf7c1d6b6",
+    "E:\\语言模型组合路由\\research\\e4_statistical_model_audit\\private\\learning\\f0_n480_P2.json": "91428c739ce83f890c9d490f9f4e330edb4a9bbb83ea38d9884a0b43b9e41f2e",
+    "E:\\语言模型组合路由\\research\\e4_statistical_model_audit\\private\\learning\\f0_n480_P2.npz": "69d8ff557d576a9c9718d155d250580c89ea4b50c2f51e1ed354dadab550a2f4",
+    "D:\\develop\\CV\\多臂老虎机\\.e4_staging\\run_learning.py": "f1669afb6f34c4da8fdb989221a01a1843acdf5b1c219c4b3fb36cd3d8d6efb8",
+    "D:\\develop\\CV\\多臂老虎机\\.e4_staging\\e4_gaussian.py": "31af12c580efda4d4a5ab710eb2fc9e0edcdd3ed5d97d70c2c6ca708c7fb8094",
+    "D:\\develop\\CV\\多臂老虎机\\.e4_staging\\e4_common.py": "7dd61cfe9e8e9a0b14669128e5dffd31b3da15febfb31a05d75d647c95e9c8bd",
+    "E:\\语言模型组合路由\\research\\decision_acquisition_e3\\public\\predictors.py": "10b9058c81cf7cf1c5d052620bd698fef7b579fca42b81e23784421557372969",
+    "E:\\语言模型组合路由\\data\\derived\\split_manifest.json": "172619f6486d818efa35fd5e6c51add404cd49afe1db92efb126f2b3f1df566d",
+    "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\fresh_dev400\\SELECTION_MANIFEST_v1.json": "d2bac8bbbb06e9d6dff0aa51197eb52d92c55ab76679bcc0253cd4219bdc4a02"
+  },
+  "outer_folds": [
+    {
+      "fold": 0,
+      "history": 480,
+      "stream": 120,
+      "question_and_canonical_overlap": 0
+    },
+    {
+      "fold": 1,
+      "history": 480,
+      "stream": 120,
+      "question_and_canonical_overlap": 0
+    },
+    {
+      "fold": 2,
+      "history": 480,
+      "stream": 120,
+      "question_and_canonical_overlap": 0
+    },
+    {
+      "fold": 3,
+      "history": 480,
+      "stream": 120,
+      "question_and_canonical_overlap": 0
+    },
+    {
+      "fold": 4,
+      "history": 480,
+      "stream": 120,
+      "question_and_canonical_overlap": 0
+    }
+  ],
+  "assets": {
+    "bundle": {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\BUNDLE_TRAINVAL.json",
+      "sha256": "15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db"
+    },
+    "member_pool": {
+      "path": "E:\\语言模型组合路由\\configs\\pool_v1.json",
+      "sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf"
+    },
+    "operator_freeze": {
+      "path": "E:\\语言模型组合路由\\results\\decision_feedback_v2\\s1_typed_aggcal_generation42_9ef6c02bc9fb\\OPERATOR_FREEZE_LOCK_v1.json",
+      "sha256": "66d77c2ab5eef0c6a360cfe2d8df01429369927c96fe3ae7b6a63697f4fc09b0"
+    },
+    "inputs": {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\full_feedback_inputs\\v1\\selector_train_inputs.npz",
+      "sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3"
+    },
+    "outcomes": {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\tr\\selector_train_outcomes.npz",
+      "sha256": "a01230f2bed3e7f9d05713bf9e3e4f1cf44987b41c460f91e1d83bc1c29f191e"
+    },
+    "matrix_receipts": {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\tr\\selector_train_matrix_receipt.json",
+      "sha256": "1619acd8ce8ff055365387b3714fd03ee85701739f38eaebae236f87f58d96a1"
+    },
+    "identity": {
+      "operator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+      "scorer": "safe_exact_v2_0_terminal_final_heading_fix",
+      "generation_seeds": [
+        42,
+        137,
+        2024
+      ],
+      "new_llm_calls": 0,
+      "decoded_payload_splits": [
+        "selector_train"
+      ]
+    }
+  },
+  "frozen_manifest_overlap": {
+    "qualification": {
+      "metadata_ids": 8,
+      "id_overlap": 0,
+      "canonical_overlap": 0
+    },
+    "e1_selection_calibration": {
+      "metadata_ids": 100,
+      "id_overlap": 0,
+      "canonical_overlap": 0
+    },
+    "e1_diagnostic_evaluation": {
+      "metadata_ids": 200,
+      "id_overlap": 0,
+      "canonical_overlap": 0
+    },
+    "online_calibration": {
+      "metadata_ids": 200,
+      "id_overlap": 0,
+      "canonical_overlap": 0
+    },
+    "sealed_test": {
+      "metadata_ids": 200,
+      "id_overlap": 0,
+      "canonical_overlap": 0
+    }
+  },
+  "manifest_metadata_only_no_score_payloads": true,
+  "independent_questions": 600,
+  "generation_repeats_are_independent_questions": false,
+  "qualification_tolerance": 1e-10,
+  "new_llm_calls": 0,
+  "limitations": [
+    "Only f0 n480 final L3 P1/P2 predictions independently replayed, not all650fits",
+    "Frozen manifest checks textual canonical overlaps only; no external task payload or semantic duplicates examined",
+    "OOF noise folds stratify GSM/BBH; outer five folds additionally preserve27BBH subtasks"
+  ],
+  "fresh_frozen_manifest_metadata_overlap": {
+    "metadata_ids": 400,
+    "id_overlap": 0,
+    "canonical_overlap": 0,
+    "raw_input_or_score_payloads_opened": false
+  }
+}
