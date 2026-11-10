@@ -1,0 +1,2893 @@
+{
+  "status": "COMPLETE",
+  "table": {
+    "task-known": {
+      "default_accuracy": {
+        "gsm": 0.9366666666666666,
+        "bbh_macro": 0.7816124205013094,
+        "bbh_micro": 0.7811111111111111,
+        "balanced_subtask": 0.859139543583988,
+        "balanced_v2": 0.8588888888888888,
+        "bbh": 0.7811111111111111
+      },
+      "table": {
+        "gap": {
+          "statistics": {
+            "coverage": 0.16166666666666668,
+            "switched_questions": 97,
+            "independent_questions": 600,
+            "gain": 0.006666666666666666,
+            "rho": 0.026666666666666665,
+            "eta": 0.625,
+            "correction_rate": 0.016666666666666666,
+            "harm_rate": 0.009999999999999998,
+            "gain_among_switched": 0.04123711340206185,
+            "expected_corrected_questions": 10.0,
+            "expected_harmed_questions": 6.0,
+            "question_generation_corrections": 30,
+            "question_generation_harms": 18,
+            "selected_nonzero_feedback_questions": 32,
+            "selected_positive_mean_questions": 20,
+            "selected_negative_mean_questions": 11,
+            "per_generation_gain": [
+              0.011666666666666667,
+              0.0,
+              0.008333333333333333
+            ],
+            "per_generation_correction": [
+              0.02,
+              0.015000000000000001,
+              0.015000000000000001
+            ],
+            "per_generation_harm": [
+              0.008333333333333333,
+              0.015000000000000001,
+              0.006666666666666667
+            ],
+            "identity_error": 0.0,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": 0.0022222222222222222,
+                "coverage": 0.03
+              },
+              "bbh": {
+                "gain": 0.011111111111111112,
+                "coverage": 0.29333333333333333
+              }
+            },
+            "bbh_subtask_macro_gain": 0.011316872427983538,
+            "balanced_subtask_gain": 0.00676954732510288,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": 0.12121212121212122,
+                "coverage": 0.8181818181818182,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.12121212121212122,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.4166666666666667,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.2727272727272727,
+                "coverage": 0.7272727272727273,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": 0.09090909090909091,
+                "coverage": 0.9090909090909091,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.5,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": -0.08333333333333333,
+                "coverage": 0.4166666666666667,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9388888888888888,
+            "bbh_macro": 0.7929292929292928,
+            "bbh_micro": 0.7922222222222223,
+            "balanced_subtask": 0.8659090909090907,
+            "balanced_v2": 0.8655555555555555,
+            "bbh": 0.7922222222222223
+          },
+          "intervals": {
+            "gain": {
+              "point": 0.006666666666666666,
+              "ci95": [
+                -0.002777777777777778,
+                0.01611111111111111
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0038888888888888896,
+                0.017222222222222222
+              ],
+              "centered_bootstrap_two_sided_p": 0.1793641271745651,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.16166666666666651,
+              "ci95": [
+                0.135,
+                0.18833333333333335
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.13166666666666665,
+                0.19166666666666668
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.02666666666666667,
+              "ci95": [
+                0.017222222222222226,
+                0.03666666666666667
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.016111111111111114,
+                0.03833333333333334
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.016666666666666666,
+              "ci95": [
+                0.009444444444444445,
+                0.024444444444444446
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.008888888888888889,
+                0.025555555555555557
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.01,
+              "ci95": [
+                0.0044444444444444444,
+                0.01611111111111111
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0038888888888888888,
+                0.017222222222222222
+              ],
+              "centered_bootstrap_two_sided_p": 0.0013997200559888023,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": 0.0003703703703703705,
+              "ci95": [
+                -0.0024444444444444444,
+                0.0035466435185185145
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0028403356481481483,
+                0.003981481481481482
+              ],
+              "centered_bootstrap_two_sided_p": 0.8076384723055389,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": 0.00018518518518518558,
+              "ci95": [
+                -0.004148148148148148,
+                0.004722222222222223
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.004824074074074075,
+                0.005458680555555551
+              ],
+              "centered_bootstrap_two_sided_p": 0.9386122775444911,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": 0.005037037037037037,
+              "ci95": [
+                -0.00351875,
+                0.014259490740740738
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0048751157407407415,
+                0.015541782407407407
+              ],
+              "centered_bootstrap_two_sided_p": 0.2705458908218356,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": 0.006296296296296298,
+              "ci95": [
+                -0.0016207175925925929,
+                0.01408379629629629
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0028751157407407415,
+                0.015440277777777772
+              ],
+              "centered_bootstrap_two_sided_p": 0.11537692461507698,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": 0.0064814814814814796,
+              "ci95": [
+                -0.0005928240740740722,
+                0.013435648148148141
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0014771990740740741,
+                0.014523726851851843
+              ],
+              "centered_bootstrap_two_sided_p": 0.06978604279144171,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": 0.0016296296296296295,
+              "ci95": [
+                -0.0008042658730158743,
+                0.003990740740740739
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.001027132936507936,
+                0.00443799603174603
+              ],
+              "centered_bootstrap_two_sided_p": 0.21295740851829634,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "factorized": {
+          "statistics": {
+            "coverage": 0.05666666666666667,
+            "switched_questions": 34,
+            "independent_questions": 600,
+            "gain": 0.0033333333333333335,
+            "rho": 0.012222222222222221,
+            "eta": 0.6363636363636364,
+            "correction_rate": 0.0077777777777777776,
+            "harm_rate": 0.0044444444444444444,
+            "gain_among_switched": 0.058823529411764705,
+            "expected_corrected_questions": 4.666666666666666,
+            "expected_harmed_questions": 2.6666666666666665,
+            "question_generation_corrections": 14,
+            "question_generation_harms": 8,
+            "selected_nonzero_feedback_questions": 14,
+            "selected_positive_mean_questions": 8,
+            "selected_negative_mean_questions": 5,
+            "per_generation_gain": [
+              0.003333333333333333,
+              0.0016666666666666668,
+              0.004999999999999999
+            ],
+            "per_generation_correction": [
+              0.008333333333333333,
+              0.006666666666666667,
+              0.008333333333333333
+            ],
+            "per_generation_harm": [
+              0.005,
+              0.005,
+              0.0033333333333333335
+            ],
+            "identity_error": 8.673617379884035e-19,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": -0.0022222222222222222,
+                "coverage": 0.016666666666666666
+              },
+              "bbh": {
+                "gain": 0.008888888888888889,
+                "coverage": 0.09666666666666666
+              }
+            },
+            "bbh_subtask_macro_gain": 0.008978675645342313,
+            "balanced_subtask_gain": 0.003378226711560045,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.6363636363636364,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.18181818181818182,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.0,
+                "coverage": 0.16666666666666666,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9344444444444445,
+            "bbh_macro": 0.7905910961466517,
+            "bbh_micro": 0.79,
+            "balanced_subtask": 0.8625177702955481,
+            "balanced_v2": 0.8622222222222222,
+            "bbh": 0.79
+          },
+          "intervals": {
+            "gain": {
+              "point": 0.003333333333333333,
+              "ci95": [
+                -0.0016666666666666668,
+                0.00888888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0022222222222222222,
+                0.01
+              ],
+              "centered_bootstrap_two_sided_p": 0.25774845030993804,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.05666666666666667,
+              "ci95": [
+                0.041666666666666664,
+                0.07333333333333333
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.03833333333333334,
+                0.07500000000000001
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.012222222222222223,
+              "ci95": [
+                0.005555555555555556,
+                0.019444444444444445
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.005,
+                0.020555555555555556
+              ],
+              "centered_bootstrap_two_sided_p": 0.0015996800639872025,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.0077777777777777776,
+              "ci95": [
+                0.002777777777777778,
+                0.013333333333333332
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0027777777777777775,
+                0.014444444444444444
+              ],
+              "centered_bootstrap_two_sided_p": 0.005598880223955209,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.0044444444444444444,
+              "ci95": [
+                0.0016666666666666666,
+                0.008333333333333333
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0011111111111111111,
+                0.008888888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.015996800639872025,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.00045370370370370356,
+              "ci95": [
+                -0.0018287037037037035,
+                0.0009491898148148132
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.002016261574074074,
+                0.0012014467592592584
+              ],
+              "centered_bootstrap_two_sided_p": 0.5142971405718856,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.00025,
+              "ci95": [
+                -0.0021576388888888886,
+                0.001925925925925926
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0024354166666666665,
+                0.0024166666666666672
+              ],
+              "centered_bootstrap_two_sided_p": 0.8192361527694461,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": 0.0044907407407407405,
+              "ci95": [
+                -0.000324074074074074,
+                0.009694444444444445
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0008622685185185181,
+                0.010690624999999988
+              ],
+              "centered_bootstrap_two_sided_p": 0.07898420315936813,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": 0.0037870370370370375,
+              "ci95": [
+                -0.0010603009259259263,
+                0.009148263888888888
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0015417824074074073,
+                0.00995607638888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.1401719656068786,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": 0.003583333333333335,
+              "ci95": [
+                -0.0013148148148148144,
+                0.008685416666666662
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0018240740740740745,
+                0.009472685185185178
+              ],
+              "centered_bootstrap_two_sided_p": 0.15436912617476506,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": -0.0011574074074074071,
+              "ci95": [
+                -0.003194444444444444,
+                0.0008333333333333335
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0035648148148148145,
+                0.0010714947089947079
+              ],
+              "centered_bootstrap_two_sided_p": 0.28434313137372524,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "disagreement": {
+          "statistics": {
+            "coverage": 0.40499999999999975,
+            "switched_questions": 243,
+            "independent_questions": 600,
+            "gain": 0.008333333333333335,
+            "rho": 0.049444444444444444,
+            "eta": 0.5842696629213483,
+            "correction_rate": 0.028888888888888888,
+            "harm_rate": 0.020555555555555556,
+            "gain_among_switched": 0.020576131687242816,
+            "expected_corrected_questions": 17.333333333333332,
+            "expected_harmed_questions": 12.333333333333332,
+            "question_generation_corrections": 52,
+            "question_generation_harms": 37,
+            "selected_nonzero_feedback_questions": 62,
+            "selected_positive_mean_questions": 33,
+            "selected_negative_mean_questions": 25,
+            "per_generation_gain": [
+              0.008333333333333333,
+              0.0033333333333333322,
+              0.013333333333333334
+            ],
+            "per_generation_correction": [
+              0.03166666666666667,
+              0.025,
+              0.030000000000000002
+            ],
+            "per_generation_harm": [
+              0.023333333333333334,
+              0.021666666666666667,
+              0.016666666666666666
+            ],
+            "identity_error": 3.469446951953614e-18,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": 0.0044444444444444444,
+                "coverage": 0.32
+              },
+              "bbh": {
+                "gain": 0.012222222222222223,
+                "coverage": 0.49
+              }
+            },
+            "bbh_subtask_macro_gain": 0.012532734754956977,
+            "balanced_subtask_gain": 0.00848858959970071,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": 0.09090909090909091,
+                "coverage": 1.0,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.09090909090909091,
+                "coverage": 1.0,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": 0.0,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.7272727272727273,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.05555555555555555,
+                "coverage": 0.5833333333333334,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.7272727272727273,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.36363636363636365,
+                "coverage": 0.9090909090909091,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": 0.09090909090909091,
+                "coverage": 1.0,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.0,
+                "coverage": 0.6666666666666666,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": -0.09090909090909091,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": -0.1111111111111111,
+                "coverage": 0.5,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.941111111111111,
+            "bbh_macro": 0.7941451552562663,
+            "bbh_micro": 0.7933333333333334,
+            "balanced_subtask": 0.8676281331836886,
+            "balanced_v2": 0.8672222222222222,
+            "bbh": 0.7933333333333334
+          },
+          "intervals": {
+            "gain": {
+              "point": 0.008333333333333333,
+              "ci95": [
+                -0.0033333333333333344,
+                0.020555555555555556
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.005000000000000001,
+                0.022222222222222223
+              ],
+              "centered_bootstrap_two_sided_p": 0.1863627274545091,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.4050000000000007,
+              "ci95": [
+                0.37999999999999995,
+                0.4316666666666667
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.3766666666666666,
+                0.435
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.049444444444444444,
+              "ci95": [
+                0.03776388888888889,
+                0.06222222222222223
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.035555555555555556,
+                0.06444444444444444
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.02888888888888889,
+              "ci95": [
+                0.019444444444444445,
+                0.03888888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.018333333333333333,
+                0.04055555555555555
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.020555555555555556,
+              "ci95": [
+                0.013333333333333334,
+                0.028333333333333335
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.012777777777777777,
+                0.029444444444444447
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": 0.0015000000000000005,
+              "ci95": [
+                -0.006810879629629629,
+                0.010518749999999999
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.008145891203703704,
+                0.011753414351851836
+              ],
+              "centered_bootstrap_two_sided_p": 0.729254149170166,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": 0.001981481481481483,
+              "ci95": [
+                -0.006917592592592595,
+                0.011509490740740739
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.008301041666666667,
+                0.012685648148148142
+              ],
+              "centered_bootstrap_two_sided_p": 0.6664667066586683,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": 0.008351851851851852,
+              "ci95": [
+                -0.0032741402116402115,
+                0.02006527777777777
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.004801736111111111,
+                0.021366550925925914
+              ],
+              "centered_bootstrap_two_sided_p": 0.15536892621475704,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": 0.006833333333333332,
+              "ci95": [
+                0.00030057870370369955,
+                0.013754629629629629
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0007295717592592577,
+                0.014738599537037034
+              ],
+              "centered_bootstrap_two_sided_p": 0.04839032193561288,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": 0.0063518518518518524,
+              "ci95": [
+                -8.356481481481402e-05,
+                0.012667361111111101
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0009722222222222219,
+                0.01352777777777778
+              ],
+              "centered_bootstrap_two_sided_p": 0.05158968206358728,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": -1.8518518518518244e-05,
+              "ci95": [
+                -0.0030559523809523814,
+                0.0032689484126984074
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.003481481481481484,
+                0.0037317129629629614
+              ],
+              "centered_bootstrap_two_sided_p": 0.9928014397120576,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "direction": {
+          "statistics": {
+            "coverage": 0.05,
+            "switched_questions": 30,
+            "independent_questions": 600,
+            "gain": 0.002777777777777778,
+            "rho": 0.010555555555555554,
+            "eta": 0.6315789473684211,
+            "correction_rate": 0.006666666666666666,
+            "harm_rate": 0.0038888888888888888,
+            "gain_among_switched": 0.05555555555555555,
+            "expected_corrected_questions": 3.9999999999999996,
+            "expected_harmed_questions": 2.333333333333333,
+            "question_generation_corrections": 12,
+            "question_generation_harms": 7,
+            "selected_nonzero_feedback_questions": 11,
+            "selected_positive_mean_questions": 6,
+            "selected_negative_mean_questions": 4,
+            "per_generation_gain": [
+              0.0,
+              0.0033333333333333335,
+              0.004999999999999999
+            ],
+            "per_generation_correction": [
+              0.005,
+              0.006666666666666667,
+              0.008333333333333333
+            ],
+            "per_generation_harm": [
+              0.005,
+              0.0033333333333333335,
+              0.0033333333333333335
+            ],
+            "identity_error": 1.3010426069826053e-18,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": -0.0022222222222222222,
+                "coverage": 0.016666666666666666
+              },
+              "bbh": {
+                "gain": 0.0077777777777777776,
+                "coverage": 0.08333333333333333
+              }
+            },
+            "bbh_subtask_macro_gain": 0.007856341189674524,
+            "balanced_subtask_gain": 0.0028170594837261505,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.15151515151515152,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.0,
+                "coverage": 0.16666666666666666,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9344444444444445,
+            "bbh_macro": 0.789468761690984,
+            "bbh_micro": 0.788888888888889,
+            "balanced_subtask": 0.8619566030677143,
+            "balanced_v2": 0.8616666666666668,
+            "bbh": 0.788888888888889
+          },
+          "intervals": {
+            "gain": {
+              "point": 0.002777777777777778,
+              "ci95": [
+                -0.001666666666666667,
+                0.008333333333333333
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0022222222222222227,
+                0.00888888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.3141371725654869,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.05,
+              "ci95": [
+                0.035,
+                0.065
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.03333333333333333,
+                0.06666666666666668
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.010555555555555556,
+              "ci95": [
+                0.0044444444444444444,
+                0.017777777777777778
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0038888888888888888,
+                0.01888888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.003999200159968006,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.006666666666666666,
+              "ci95": [
+                0.0022222222222222222,
+                0.012222222222222221
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0016666666666666666,
+                0.012777777777777779
+              ],
+              "centered_bootstrap_two_sided_p": 0.010597880423915218,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.0038888888888888888,
+              "ci95": [
+                0.0011111111111111111,
+                0.007222222222222223
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0011111111111111111,
+                0.008333333333333333
+              ],
+              "centered_bootstrap_two_sided_p": 0.023595280943811237,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.00041666666666666664,
+              "ci95": [
+                -0.0017687500000000004,
+                0.0009537037037037037
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.001979224537037037,
+                0.0011806712962962947
+              ],
+              "centered_bootstrap_two_sided_p": 0.5410917816436712,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.00010185185185185194,
+              "ci95": [
+                -0.0019724537037037037,
+                0.0020187499999999967
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0022549768518518518,
+                0.0024081018518518423
+              ],
+              "centered_bootstrap_two_sided_p": 0.9224155168966207,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": 0.0043981481481481476,
+              "ci95": [
+                -0.0001298611111111109,
+                0.009166666666666667
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0006436342592592593,
+                0.00999548611111111
+              ],
+              "centered_bootstrap_two_sided_p": 0.0631873625274945,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": 0.003194444444444445,
+              "ci95": [
+                -0.0011670138888888887,
+                0.00813888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0016413773148148147,
+                0.009078935185185183
+              ],
+              "centered_bootstrap_two_sided_p": 0.17796440711857628,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": 0.002879629629629631,
+              "ci95": [
+                -0.0015650462962962964,
+                0.007593287037037028
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.001990740740740741,
+                0.008301041666666667
+              ],
+              "centered_bootstrap_two_sided_p": 0.21195760847830433,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": -0.0016203703703703703,
+              "ci95": [
+                -0.003462962962962963,
+                0.0004446759259259224
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.003847337962962963,
+                0.0007037037037037032
+              ],
+              "centered_bootstrap_two_sided_p": 0.1311737652469506,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        }
+      },
+      "permission": "default and proposer both receive identical declared metadata; no cross-permission winner selected",
+      "bootstrap": {
+        "seed": 20261110,
+        "replicates": 5000,
+        "independent_questions": 600,
+        "rule_rows": 4,
+        "strata": "outer fold crossed with GSM8K/BBH",
+        "resampling_checks": [
+          {
+            "fold": 0,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 0,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 1,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 1,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 2,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 2,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 3,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 3,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 4,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 4,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          }
+        ],
+        "controls_recomputed_inside_each_draw": true,
+        "matched_control_rule": "counts matched within each original outer fold; expected uniform-control contribution recomputed from resampled complete records",
+        "generation_repeats_are_new_questions": false,
+        "scope": "conditional development intervals with fixed fitted rules and cached rewards; overlapping training histories and historical model selection not re-fitted"
+      },
+      "independent_questions": 600
+    },
+    "subtask-oracle": {
+      "default_accuracy": {
+        "gsm": 0.9366666666666666,
+        "bbh_macro": 0.7824541713430603,
+        "bbh_micro": 0.7811111111111111,
+        "balanced_subtask": 0.8595604190048635,
+        "balanced_v2": 0.8588888888888888,
+        "bbh": 0.7811111111111111
+      },
+      "table": {
+        "gap": {
+          "statistics": {
+            "coverage": 0.25666666666666665,
+            "switched_questions": 154,
+            "independent_questions": 600,
+            "gain": -0.005555555555555555,
+            "rho": 0.028888888888888888,
+            "eta": 0.4038461538461538,
+            "correction_rate": 0.011666666666666665,
+            "harm_rate": 0.017222222222222222,
+            "gain_among_switched": -0.021645021645021644,
+            "expected_corrected_questions": 7.0,
+            "expected_harmed_questions": 10.333333333333332,
+            "question_generation_corrections": 21,
+            "question_generation_harms": 31,
+            "selected_nonzero_feedback_questions": 37,
+            "selected_positive_mean_questions": 15,
+            "selected_negative_mean_questions": 21,
+            "per_generation_gain": [
+              4.336808689942018e-19,
+              4.336808689942018e-19,
+              -0.016666666666666666
+            ],
+            "per_generation_correction": [
+              0.016666666666666666,
+              0.013333333333333334,
+              0.005
+            ],
+            "per_generation_harm": [
+              0.016666666666666666,
+              0.013333333333333334,
+              0.021666666666666667
+            ],
+            "identity_error": 3.469446951953614e-18,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": -0.0011111111111111111,
+                "coverage": 0.19666666666666666
+              },
+              "bbh": {
+                "gain": -0.01,
+                "coverage": 0.31666666666666665
+              }
+            },
+            "bbh_subtask_macro_gain": -0.010381593714927048,
+            "balanced_subtask_gain": -0.00574635241301908,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": -0.21212121212121213,
+                "coverage": 0.8181818181818182,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.25,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.1111111111111111,
+                "coverage": 0.5,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.6363636363636364,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": -0.05555555555555555,
+                "coverage": 0.3333333333333333,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9355555555555556,
+            "bbh_macro": 0.7720725776281332,
+            "bbh_micro": 0.7711111111111112,
+            "balanced_subtask": 0.8538140665918443,
+            "balanced_v2": 0.8533333333333334,
+            "bbh": 0.7711111111111112
+          },
+          "intervals": {
+            "gain": {
+              "point": -0.005555555555555555,
+              "ci95": [
+                -0.015,
+                0.003333333333333334
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.01611111111111111,
+                0.004444444444444445
+              ],
+              "centered_bootstrap_two_sided_p": 0.2591481703659268,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.2566666666666664,
+              "ci95": [
+                0.22833333333333336,
+                0.28500000000000003
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.22500000000000003,
+                0.2883333333333334
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.02888888888888889,
+              "ci95": [
+                0.02,
+                0.03888888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.01888888888888889,
+                0.040555555555555546
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.011666666666666667,
+              "ci95": [
+                0.006111111111111111,
+                0.017777777777777778
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.005555555555555556,
+                0.01888888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.0007998400319936012,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.017222222222222222,
+              "ci95": [
+                0.010555555555555556,
+                0.025
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.009444444444444445,
+                0.026111111111111113
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.001106481481481481,
+              "ci95": [
+                -0.00641724537037037,
+                0.0036344907407407376
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.007213194444444444,
+                0.004368344907407403
+              ],
+              "centered_bootstrap_two_sided_p": 0.6648670265946811,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.0011111111111111115,
+              "ci95": [
+                -0.006981481481481481,
+                0.004102083333333327
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.007838078703703705,
+                0.004861342592592589
+              ],
+              "centered_bootstrap_two_sided_p": 0.6848630273945211,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": -0.005268518518518518,
+              "ci95": [
+                -0.014213194444444443,
+                0.003324074074074074
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.015361342592592593,
+                0.004630092592592586
+              ],
+              "centered_bootstrap_two_sided_p": 0.23155368926214756,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": -0.004449074074074075,
+              "ci95": [
+                -0.011601851851851851,
+                0.0025324074074074077
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.012430902777777777,
+                0.003534780092592592
+              ],
+              "centered_bootstrap_two_sided_p": 0.22635472905418916,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": -0.004444444444444444,
+              "ci95": [
+                -0.011232175925925923,
+                0.0023057870370370354
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.012060300925925926,
+                0.003222222222222223
+              ],
+              "centered_bootstrap_two_sided_p": 0.20295940811837632,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": -0.00028703703703703703,
+              "ci95": [
+                -0.0036020171957671966,
+                0.0032037037037037034
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.004037037037037037,
+                0.0035919477513227504
+              ],
+              "centered_bootstrap_two_sided_p": 0.8728254349130175,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "factorized": {
+          "statistics": {
+            "coverage": 0.04666666666666667,
+            "switched_questions": 28,
+            "independent_questions": 600,
+            "gain": 0.0038888888888888888,
+            "rho": 0.004999999999999999,
+            "eta": 0.8888888888888888,
+            "correction_rate": 0.004444444444444444,
+            "harm_rate": 0.0005555555555555556,
+            "gain_among_switched": 0.08333333333333333,
+            "expected_corrected_questions": 2.6666666666666665,
+            "expected_harmed_questions": 0.3333333333333333,
+            "question_generation_corrections": 8,
+            "question_generation_harms": 1,
+            "selected_nonzero_feedback_questions": 7,
+            "selected_positive_mean_questions": 6,
+            "selected_negative_mean_questions": 0,
+            "per_generation_gain": [
+              0.0033333333333333335,
+              0.005,
+              0.0033333333333333335
+            ],
+            "per_generation_correction": [
+              0.0033333333333333335,
+              0.006666666666666667,
+              0.0033333333333333335
+            ],
+            "per_generation_harm": [
+              0.0,
+              0.0016666666666666668,
+              0.0
+            ],
+            "identity_error": 8.673617379884035e-19,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": 0.0,
+                "coverage": 0.03666666666666667
+              },
+              "bbh": {
+                "gain": 0.0077777777777777776,
+                "coverage": 0.056666666666666664
+              }
+            },
+            "bbh_subtask_macro_gain": 0.007856341189674524,
+            "balanced_subtask_gain": 0.003928170594837262,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.09090909090909091,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9366666666666666,
+            "bbh_macro": 0.7903105125327348,
+            "bbh_micro": 0.788888888888889,
+            "balanced_subtask": 0.8634885895997007,
+            "balanced_v2": 0.8627777777777779,
+            "bbh": 0.788888888888889
+          },
+          "intervals": {
+            "gain": {
+              "point": 0.0038888888888888888,
+              "ci95": [
+                0.0011111111111111111,
+                0.007222222222222223
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0005555555555555556,
+                0.0077777777777777776
+              ],
+              "centered_bootstrap_two_sided_p": 0.022795440911817635,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.04666666666666667,
+              "ci95": [
+                0.03166666666666667,
+                0.06333333333333334
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.03,
+                0.065
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.005,
+              "ci95": [
+                0.0016666666666666666,
+                0.00888888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0011111111111111111,
+                0.009444444444444446
+              ],
+              "centered_bootstrap_two_sided_p": 0.012997400519896021,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.0044444444444444444,
+              "ci95": [
+                0.0016666666666666666,
+                0.007777777777777778
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0011111111111111111,
+                0.008888888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.014397120575884824,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.0005555555555555556,
+              "ci95": [
+                0.0,
+                0.0016666666666666668
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0,
+                0.0022222222222222222
+              ],
+              "centered_bootstrap_two_sided_p": 0.6296740651869626,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.00017592592592592578,
+              "ci95": [
+                -0.0015972222222222219,
+                0.0014353009259259243
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0018264467592592594,
+                0.0017222222222222222
+              ],
+              "centered_bootstrap_two_sided_p": 0.8090381923615277,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.00016666666666666674,
+              "ci95": [
+                -0.0016666666666666668,
+                0.0016854166666666634
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.001851851851851852,
+                0.002060300925925924
+              ],
+              "centered_bootstrap_two_sided_p": 0.8414317136572685,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": 0.00375925925925926,
+              "ci95": [
+                0.0007773148148148149,
+                0.0071761574074074045
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.00039791666666666675,
+                0.007638888888888889
+              ],
+              "centered_bootstrap_two_sided_p": 0.01859628074385123,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": 0.0040648148148148145,
+              "ci95": [
+                0.0011850694444444443,
+                0.007277777777777779
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0008888888888888888,
+                0.0077314814814814815
+              ],
+              "centered_bootstrap_two_sided_p": 0.008198360327934412,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": 0.004055555555555555,
+              "ci95": [
+                0.0012222222222222224,
+                0.007148379629629625
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0008608796296296298,
+                0.007629629629629631
+              ],
+              "centered_bootstrap_two_sided_p": 0.006998600279944011,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": 0.0001296296296296296,
+              "ci95": [
+                -0.0005185185185185189,
+                0.0010370370370370373
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0006111111111111109,
+                0.0012222222222222218
+              ],
+              "centered_bootstrap_two_sided_p": 0.7738452309538092,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "disagreement": {
+          "statistics": {
+            "coverage": 0.26999999999999996,
+            "switched_questions": 162,
+            "independent_questions": 600,
+            "gain": -0.003888888888888889,
+            "rho": 0.03833333333333333,
+            "eta": 0.44927536231884063,
+            "correction_rate": 0.017222222222222222,
+            "harm_rate": 0.02111111111111111,
+            "gain_among_switched": -0.014403292181069963,
+            "expected_corrected_questions": 10.333333333333332,
+            "expected_harmed_questions": 12.666666666666666,
+            "question_generation_corrections": 31,
+            "question_generation_harms": 38,
+            "selected_nonzero_feedback_questions": 48,
+            "selected_positive_mean_questions": 20,
+            "selected_negative_mean_questions": 25,
+            "per_generation_gain": [
+              0.005,
+              -0.003333333333333334,
+              -0.013333333333333336
+            ],
+            "per_generation_correction": [
+              0.021666666666666667,
+              0.015000000000000001,
+              0.015000000000000001
+            ],
+            "per_generation_harm": [
+              0.016666666666666666,
+              0.018333333333333333,
+              0.028333333333333335
+            ],
+            "identity_error": 4.7704895589362195e-18,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": -0.0022222222222222222,
+                "coverage": 0.19
+              },
+              "bbh": {
+                "gain": -0.005555555555555556,
+                "coverage": 0.35
+              }
+            },
+            "bbh_subtask_macro_gain": -0.006266367377478489,
+            "balanced_subtask_gain": -0.004244294799850355,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": -0.09090909090909091,
+                "coverage": 0.45454545454545453,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.06060606060606061,
+                "coverage": 1.0,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": -0.09090909090909091,
+                "coverage": 0.5454545454545454,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.16666666666666666,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.8181818181818182,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.0,
+                "coverage": 0.7272727272727273,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": -0.06060606060606061,
+                "coverage": 1.0,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.1111111111111111,
+                "coverage": 0.4166666666666667,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.36363636363636365,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": 0.05555555555555555,
+                "coverage": 0.75,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9344444444444445,
+            "bbh_macro": 0.7761878039655818,
+            "bbh_micro": 0.7755555555555557,
+            "balanced_subtask": 0.8553161242050131,
+            "balanced_v2": 0.8550000000000001,
+            "bbh": 0.7755555555555557
+          },
+          "intervals": {
+            "gain": {
+              "point": -0.003888888888888889,
+              "ci95": [
+                -0.014444444444444446,
+                0.0066666666666666645
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.01611111111111111,
+                0.0077777777777777776
+              ],
+              "centered_bootstrap_two_sided_p": 0.4963007398520296,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.2699999999999998,
+              "ci95": [
+                0.2466666666666667,
+                0.29333333333333333
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.24333333333333335,
+                0.2966666666666667
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.03833333333333333,
+              "ci95": [
+                0.027777777777777783,
+                0.05
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.026381944444444447,
+                0.051666666666666666
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.017222222222222222,
+              "ci95": [
+                0.010555555555555556,
+                0.024444444444444446
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.009444444444444445,
+                0.026111111111111113
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.021111111111111112,
+              "ci95": [
+                0.013333333333333334,
+                0.030000000000000002
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.012777777777777777,
+                0.031111111111111114
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.001467592592592593,
+              "ci95": [
+                -0.007546296296296297,
+                0.0042224537037037005
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.00826388888888889,
+                0.0048495949074074075
+              ],
+              "centered_bootstrap_two_sided_p": 0.6164767046590682,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.0014722222222222222,
+              "ci95": [
+                -0.008018518518518517,
+                0.0045002314814814775
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.008893634259259259,
+                0.005481481481481482
+              ],
+              "centered_bootstrap_two_sided_p": 0.6412717456508699,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": -0.003981481481481482,
+              "ci95": [
+                -0.013889583333333332,
+                0.006037962962962949
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.015467708333333337,
+                0.007393634259259258
+              ],
+              "centered_bootstrap_two_sided_p": 0.4325134973005399,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": -0.0024212962962962964,
+              "ci95": [
+                -0.010106597222222223,
+                0.005273726851851843
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.01106255787037037,
+                0.006539756944444438
+              ],
+              "centered_bootstrap_two_sided_p": 0.5396920615876825,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": -0.0024166666666666677,
+              "ci95": [
+                -0.009212962962962964,
+                0.004416666666666667
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.01025474537037037,
+                0.005755208333333324
+              ],
+              "centered_bootstrap_two_sided_p": 0.499500099980004,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": 9.259259259259312e-05,
+              "ci95": [
+                -0.002092824074074075,
+                0.0021576388888888856
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0023751157407407406,
+                0.002518518518518519
+              ],
+              "centered_bootstrap_two_sided_p": 0.9414117176564687,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        },
+        "direction": {
+          "statistics": {
+            "coverage": 0.14166666666666666,
+            "switched_questions": 85,
+            "independent_questions": 600,
+            "gain": -0.0016666666666666666,
+            "rho": 0.01611111111111111,
+            "eta": 0.4482758620689655,
+            "correction_rate": 0.007222222222222222,
+            "harm_rate": 0.008888888888888889,
+            "gain_among_switched": -0.011764705882352941,
+            "expected_corrected_questions": 4.333333333333333,
+            "expected_harmed_questions": 5.333333333333333,
+            "question_generation_corrections": 13,
+            "question_generation_harms": 16,
+            "selected_nonzero_feedback_questions": 20,
+            "selected_positive_mean_questions": 9,
+            "selected_negative_mean_questions": 9,
+            "per_generation_gain": [
+              0.006666666666666667,
+              -0.0016666666666666668,
+              -0.01
+            ],
+            "per_generation_correction": [
+              0.01,
+              0.008333333333333333,
+              0.0033333333333333335
+            ],
+            "per_generation_harm": [
+              0.0033333333333333335,
+              0.01,
+              0.013333333333333334
+            ],
+            "identity_error": 2.168404344971009e-19,
+            "main_weighting": "GSM8K/BBH each .5, BBH question average",
+            "by_task": {
+              "gsm8k": {
+                "gain": -0.0022222222222222222,
+                "coverage": 0.14
+              },
+              "bbh": {
+                "gain": -0.0011111111111111111,
+                "coverage": 0.14333333333333334
+              }
+            },
+            "bbh_subtask_macro_gain": -0.0013093901982790873,
+            "balanced_subtask_gain": -0.0017658062102506547,
+            "by_bbh_subtask": {
+              "boolean_expressions": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "causal_judgement": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "date_understanding": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "disambiguation_qa": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "dyck_languages": {
+                "gain": 0.06060606060606061,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "formal_fallacies": {
+                "gain": -0.06060606060606061,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "geometric_shapes": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "hyperbaton": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.16666666666666666,
+                "original_questions": 12
+              },
+              "logical_deduction_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "logical_deduction_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "logical_deduction_three_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "movie_recommendation": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "multistep_arithmetic_two": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "navigate": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "object_counting": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "penguins_in_a_table": {
+                "gain": 0.0,
+                "coverage": 0.0,
+                "original_questions": 11
+              },
+              "reasoning_about_colored_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "ruin_names": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "salient_translation_error_detection": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.2727272727272727,
+                "original_questions": 11
+              },
+              "snarks": {
+                "gain": 0.0,
+                "coverage": 0.25,
+                "original_questions": 12
+              },
+              "sports_understanding": {
+                "gain": 0.0,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "temporal_sequences": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_five_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_seven_objects": {
+                "gain": 0.0,
+                "coverage": 0.09090909090909091,
+                "original_questions": 11
+              },
+              "tracking_shuffled_objects_three_objects": {
+                "gain": 0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "web_of_lies": {
+                "gain": -0.030303030303030304,
+                "coverage": 0.18181818181818182,
+                "original_questions": 11
+              },
+              "word_sorting": {
+                "gain": 0.027777777777777776,
+                "coverage": 0.16666666666666666,
+                "original_questions": 12
+              }
+            }
+          },
+          "accuracy": {
+            "gsm": 0.9344444444444445,
+            "bbh_macro": 0.7811447811447813,
+            "bbh_micro": 0.78,
+            "balanced_subtask": 0.8577946127946129,
+            "balanced_v2": 0.8572222222222223,
+            "bbh": 0.78
+          },
+          "intervals": {
+            "gain": {
+              "point": -0.0016666666666666666,
+              "ci95": [
+                -0.007236111111111109,
+                0.0038888888888888888
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.008333333333333333,
+                0.0044444444444444444
+              ],
+              "centered_bootstrap_two_sided_p": 0.6286742651469706,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "coverage": {
+              "point": 0.14166666666666655,
+              "ci95": [
+                0.125,
+                0.15666666666666668
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.12247916666666668,
+                0.15833333333333335
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "rho": {
+              "point": 0.01611111111111111,
+              "ci95": [
+                0.009444444444444445,
+                0.02388888888888889
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.00860416666666667,
+                0.025
+              ],
+              "centered_bootstrap_two_sided_p": 0.0001999600079984003,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "correction": {
+              "point": 0.007222222222222223,
+              "ci95": [
+                0.0038888888888888888,
+                0.01111111111111111
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.003333333333333333,
+                0.011666666666666665
+              ],
+              "centered_bootstrap_two_sided_p": 0.0005998800239952009,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "harm": {
+              "point": 0.008888888888888889,
+              "ci95": [
+                0.003888888888888889,
+                0.014444444444444446
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                0.0033333333333333335,
+                0.015555555555555555
+              ],
+              "centered_bootstrap_two_sided_p": 0.0021995600879824036,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_global_gain": {
+              "point": -0.0011805555555555558,
+              "ci95": [
+                -0.0056388888888888895,
+                0.0029634259259259193
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0062019097222222215,
+                0.0036249999999999998
+              ],
+              "centered_bootstrap_two_sided_p": 0.622875424915017,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_task_gain": {
+              "point": -0.0011851851851851854,
+              "ci95": [
+                -0.005694675925925926,
+                0.0029631944444444415
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.006222222222222222,
+                0.003662152777777776
+              ],
+              "centered_bootstrap_two_sided_p": 0.5986802639472105,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "random_subtask_gain": {
+              "point": -0.00112962962962963,
+              "ci95": [
+                -0.006777777777777778,
+                0.004157638888888885
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.007602083333333334,
+                0.004953058862433863
+              ],
+              "centered_bootstrap_two_sided_p": 0.6880623875224955,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_global": {
+              "point": -0.0004861111111111111,
+              "ci95": [
+                -0.0028150462962962964,
+                0.001713194444444441
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.0031528935185185193,
+                0.002016261574074074
+              ],
+              "centered_bootstrap_two_sided_p": 0.6796640671865627,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_task": {
+              "point": -0.00048148148148148144,
+              "ci95": [
+                -0.0027872685185185184,
+                0.001722222222222222
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.003129629629629629,
+                0.0020325231481481475
+              ],
+              "centered_bootstrap_two_sided_p": 0.6730653869226155,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            },
+            "excess_subtask": {
+              "point": -0.000537037037037037,
+              "ci95": [
+                -0.0018611111111111113,
+                0.0005370370370370369
+              ],
+              "ci97_5_bonferroni_two_comparisons": [
+                -0.002059623015873016,
+                0.0007037037037037029
+              ],
+              "centered_bootstrap_two_sided_p": 0.3967206558688262,
+              "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly"
+            }
+          }
+        }
+      },
+      "permission": "default and proposer both receive identical declared metadata; no cross-permission winner selected",
+      "bootstrap": {
+        "seed": 20261110,
+        "replicates": 5000,
+        "independent_questions": 600,
+        "rule_rows": 4,
+        "strata": "outer fold crossed with GSM8K/BBH",
+        "resampling_checks": [
+          {
+            "fold": 0,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 0,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 1,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 1,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 2,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 2,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 3,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 3,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 4,
+            "task": "gsm8k",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          },
+          {
+            "fold": 4,
+            "task": "bbh",
+            "original_questions": 60,
+            "draw_size_fixed": true
+          }
+        ],
+        "controls_recomputed_inside_each_draw": true,
+        "matched_control_rule": "counts matched within each original outer fold; expected uniform-control contribution recomputed from resampled complete records",
+        "generation_repeats_are_new_questions": false,
+        "scope": "conditional development intervals with fixed fitted rules and cached rewards; overlapping training histories and historical model selection not re-fitted"
+      },
+      "independent_questions": 600
+    }
+  },
+  "role": "separate information-permission sensitivity; primary remains text-only",
+  "new_llm_calls": 0
+}

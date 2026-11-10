@@ -1,0 +1,618 @@
+{
+  "status": "COMPLETE",
+  "source_cache_once": {
+    "gold": 600,
+    "member_calls": 10800,
+    "aggregator_calls": 36000,
+    "scoring_ops": 36000,
+    "input_tokens": 32009475,
+    "output_tokens": 5264652,
+    "tokens": 37274127,
+    "source_model_wall_s": 299000.5299690191
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "F_complete_training": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19164675,
+        "output_tokens": 3159346,
+        "tokens": 22324021,
+        "source_model_wall_s": 179547.1333120782
+      },
+      "G_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1611,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 918149,
+        "output_tokens": 443988,
+        "tokens": 1362137,
+        "source_model_wall_s": 22088.847069028765
+      },
+      "E_complete_diagnostic": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6431956,
+        "output_tokens": 1050998,
+        "tokens": 7482954,
+        "source_model_wall_s": 59706.40507020953
+      },
+      "E_paired_gate_evaluation": {
+        "gold": 120,
+        "member_calls": 1617,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 907875,
+        "output_tokens": 436866,
+        "tokens": 1344741,
+        "source_model_wall_s": 21598.37988343835
+      },
+      "default_service": {
+        "gold": 0,
+        "member_calls": 1080,
+        "aggregator_calls": 360,
+        "scoring_ops": 360,
+        "input_tokens": 503777,
+        "output_tokens": 322985,
+        "tokens": 826762,
+        "source_model_wall_s": 15536.719069511862
+      },
+      "gate_service": {
+        "gap": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 487420,
+          "output_tokens": 292680,
+          "tokens": 780100,
+          "source_model_wall_s": 14166.00141278794
+        },
+        "factorized": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 495414,
+          "output_tokens": 307027,
+          "tokens": 802441,
+          "source_model_wall_s": 14845.989005183801
+        },
+        "disagreement": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 492041,
+          "output_tokens": 293386,
+          "tokens": 785427,
+          "source_model_wall_s": 14197.954337609117
+        },
+        "direction": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 494957,
+          "output_tokens": 306671,
+          "tokens": 801628,
+          "source_model_wall_s": 14808.629628254916
+        }
+      },
+      "routing": {
+        "repetitions": 100,
+        "questions_per_repeat": 120,
+        "cpu_s": 2.984375,
+        "wall_s": 3.1128498999751173,
+        "cpu_s_per_question": 0.00024869791666666665,
+        "includes": [
+          "PCA/standardize from frozen384 embedding",
+          "P2 twenty-head prediction",
+          "proposal selection",
+          "two gate heads",
+          "threshold decision"
+        ],
+        "encoder_forward_not_measured": true,
+        "new_embedding_model_calls": 0,
+        "exact_action_mismatch": 0
+      },
+      "parameter_reconstruction": {
+        "prediction_max_error": 0.0,
+        "cpu_s": 0.546875,
+        "sha256": "79d5f0a14600131c4406e23d96978eb6b6387f78816b057897a1fb868c8d2e20",
+        "role": "independent serialization/audit, not a new policy"
+      },
+      "new_llm_calls": 0
+    },
+    {
+      "fold": 1,
+      "F_complete_training": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19413800,
+        "output_tokens": 3190934,
+        "tokens": 22604734,
+        "source_model_wall_s": 181031.2339015858
+      },
+      "G_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1602,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 889607,
+        "output_tokens": 428061,
+        "tokens": 1317668,
+        "source_model_wall_s": 21275.059541634866
+      },
+      "E_complete_diagnostic": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6265608,
+        "output_tokens": 1024826,
+        "tokens": 7290434,
+        "source_model_wall_s": 58568.43171589018
+      },
+      "E_paired_gate_evaluation": {
+        "gold": 120,
+        "member_calls": 1596,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 883654,
+        "output_tokens": 426705,
+        "tokens": 1310359,
+        "source_model_wall_s": 21363.649786452297
+      },
+      "default_service": {
+        "gold": 0,
+        "member_calls": 1080,
+        "aggregator_calls": 360,
+        "scoring_ops": 360,
+        "input_tokens": 487727,
+        "output_tokens": 320133,
+        "tokens": 807860,
+        "source_model_wall_s": 15365.18824869697
+      },
+      "gate_service": {
+        "gap": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 479531,
+          "output_tokens": 280006,
+          "tokens": 759537,
+          "source_model_wall_s": 13870.999136852683
+        },
+        "factorized": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 487727,
+          "output_tokens": 320133,
+          "tokens": 807860,
+          "source_model_wall_s": 15365.18824869697
+        },
+        "disagreement": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 478859,
+          "output_tokens": 276190,
+          "tokens": 755049,
+          "source_model_wall_s": 13716.964465236524
+        },
+        "direction": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 486447,
+          "output_tokens": 317612,
+          "tokens": 804059,
+          "source_model_wall_s": 15228.408745026449
+        }
+      },
+      "routing": {
+        "repetitions": 100,
+        "questions_per_repeat": 120,
+        "cpu_s": 3.046875,
+        "wall_s": 3.2025755000067875,
+        "cpu_s_per_question": 0.00025390625,
+        "includes": [
+          "PCA/standardize from frozen384 embedding",
+          "P2 twenty-head prediction",
+          "proposal selection",
+          "two gate heads",
+          "threshold decision"
+        ],
+        "encoder_forward_not_measured": true,
+        "new_embedding_model_calls": 0,
+        "exact_action_mismatch": 0
+      },
+      "parameter_reconstruction": {
+        "prediction_max_error": 0.0,
+        "cpu_s": 0.515625,
+        "sha256": "ebd8c1abf2b71e8e5fca5df5234fe19cf7c3ab33b9400477e843542ce2a0e948",
+        "role": "independent serialization/audit, not a new policy"
+      },
+      "new_llm_calls": 0
+    },
+    {
+      "fold": 2,
+      "F_complete_training": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19148738,
+        "output_tokens": 3177553,
+        "tokens": 22326291,
+        "source_model_wall_s": 181105.18170884112
+      },
+      "G_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1647,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 881029,
+        "output_tokens": 420962,
+        "tokens": 1301991,
+        "source_model_wall_s": 20774.19669463497
+      },
+      "E_complete_diagnostic": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6483128,
+        "output_tokens": 1075768,
+        "tokens": 7558896,
+        "source_model_wall_s": 60416.700575708644
+      },
+      "E_paired_gate_evaluation": {
+        "gold": 120,
+        "member_calls": 1635,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 909232,
+        "output_tokens": 445115,
+        "tokens": 1354347,
+        "source_model_wall_s": 21580.15225151449
+      },
+      "default_service": {
+        "gold": 0,
+        "member_calls": 1080,
+        "aggregator_calls": 360,
+        "scoring_ops": 360,
+        "input_tokens": 482484,
+        "output_tokens": 312509,
+        "tokens": 794993,
+        "source_model_wall_s": 13992.506751776906
+      },
+      "gate_service": {
+        "gap": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 497854,
+          "output_tokens": 297781,
+          "tokens": 795635,
+          "source_model_wall_s": 14481.530490791309
+        },
+        "factorized": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 511307,
+          "output_tokens": 320369,
+          "tokens": 831676,
+          "source_model_wall_s": 15534.905843165587
+        },
+        "disagreement": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 508183,
+          "output_tokens": 306607,
+          "tokens": 814790,
+          "source_model_wall_s": 15049.082311169477
+        },
+        "direction": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 512039,
+          "output_tokens": 323280,
+          "tokens": 835319,
+          "source_model_wall_s": 15634.770092100021
+        }
+      },
+      "routing": {
+        "repetitions": 100,
+        "questions_per_repeat": 120,
+        "cpu_s": 2.765625,
+        "wall_s": 3.0217846000450663,
+        "cpu_s_per_question": 0.00023046875,
+        "includes": [
+          "PCA/standardize from frozen384 embedding",
+          "P2 twenty-head prediction",
+          "proposal selection",
+          "two gate heads",
+          "threshold decision"
+        ],
+        "encoder_forward_not_measured": true,
+        "new_embedding_model_calls": 0,
+        "exact_action_mismatch": 0
+      },
+      "parameter_reconstruction": {
+        "prediction_max_error": 0.0,
+        "cpu_s": 0.59375,
+        "sha256": "7dab74c8e15d0488f777179498164167ed7d901840d5c2f7d2fdc5c5ccb6bf94",
+        "role": "independent serialization/audit, not a new policy"
+      },
+      "new_llm_calls": 0
+    },
+    {
+      "fold": 3,
+      "F_complete_training": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19215200,
+        "output_tokens": 3193327,
+        "tokens": 22408527,
+        "source_model_wall_s": 181582.45160932117
+      },
+      "G_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1635,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 836505,
+        "output_tokens": 377861,
+        "tokens": 1214366,
+        "source_model_wall_s": 19364.34562302439
+      },
+      "E_complete_diagnostic": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6436624,
+        "output_tokens": 1051251,
+        "tokens": 7487875,
+        "source_model_wall_s": 59851.35890173947
+      },
+      "E_paired_gate_evaluation": {
+        "gold": 120,
+        "member_calls": 1635,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 834598,
+        "output_tokens": 387066,
+        "tokens": 1221664,
+        "source_model_wall_s": 19973.57407977886
+      },
+      "default_service": {
+        "gold": 0,
+        "member_calls": 1080,
+        "aggregator_calls": 360,
+        "scoring_ops": 360,
+        "input_tokens": 429944,
+        "output_tokens": 189030,
+        "tokens": 618974,
+        "source_model_wall_s": 10034.05978491879
+      },
+      "gate_service": {
+        "gap": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 471828,
+          "output_tokens": 257148,
+          "tokens": 728976,
+          "source_model_wall_s": 13159.671867265948
+        },
+        "factorized": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 432185,
+          "output_tokens": 197204,
+          "tokens": 629389,
+          "source_model_wall_s": 10391.464874597033
+        },
+        "disagreement": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 431371,
+          "output_tokens": 195872,
+          "tokens": 627243,
+          "source_model_wall_s": 10357.201612025267
+        },
+        "direction": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 487004,
+          "output_tokens": 274870,
+          "tokens": 761874,
+          "source_model_wall_s": 13993.262253891677
+        }
+      },
+      "routing": {
+        "repetitions": 100,
+        "questions_per_repeat": 120,
+        "cpu_s": 2.75,
+        "wall_s": 3.1945236999890767,
+        "cpu_s_per_question": 0.00022916666666666666,
+        "includes": [
+          "PCA/standardize from frozen384 embedding",
+          "P2 twenty-head prediction",
+          "proposal selection",
+          "two gate heads",
+          "threshold decision"
+        ],
+        "encoder_forward_not_measured": true,
+        "new_embedding_model_calls": 0,
+        "exact_action_mismatch": 0
+      },
+      "parameter_reconstruction": {
+        "prediction_max_error": 0.0,
+        "cpu_s": 0.484375,
+        "sha256": "17cea36c39c2e5cc6be73f2c5f0f82ff92f8773a10df325034aa04538c33131f",
+        "role": "independent serialization/audit, not a new policy"
+      },
+      "new_llm_calls": 0
+    },
+    {
+      "fold": 4,
+      "F_complete_training": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19246791,
+        "output_tokens": 3159280,
+        "tokens": 22406071,
+        "source_model_wall_s": 179448.68444304029
+      },
+      "G_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1590,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 960617,
+        "output_tokens": 470902,
+        "tokens": 1431519,
+        "source_model_wall_s": 23767.562757635955
+      },
+      "E_complete_diagnostic": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6392159,
+        "output_tokens": 1061809,
+        "tokens": 7453968,
+        "source_model_wall_s": 60457.63370547129
+      },
+      "E_paired_gate_evaluation": {
+        "gold": 120,
+        "member_calls": 1605,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 967834,
+        "output_tokens": 464411,
+        "tokens": 1432245,
+        "source_model_wall_s": 23647.65283368097
+      },
+      "default_service": {
+        "gold": 0,
+        "member_calls": 1080,
+        "aggregator_calls": 360,
+        "scoring_ops": 360,
+        "input_tokens": 563767,
+        "output_tokens": 374175,
+        "tokens": 937942,
+        "source_model_wall_s": 19064.39586290228
+      },
+      "gate_service": {
+        "gap": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 551318,
+          "output_tokens": 356574,
+          "tokens": 907892,
+          "source_model_wall_s": 18276.292348518502
+        },
+        "factorized": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 563767,
+          "output_tokens": 374175,
+          "tokens": 937942,
+          "source_model_wall_s": 19064.39586290228
+        },
+        "disagreement": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 553758,
+          "output_tokens": 359311,
+          "tokens": 913069,
+          "source_model_wall_s": 18390.05468336551
+        },
+        "direction": {
+          "gold": 0,
+          "member_calls": 1080,
+          "aggregator_calls": 360,
+          "scoring_ops": 360,
+          "input_tokens": 563767,
+          "output_tokens": 374175,
+          "tokens": 937942,
+          "source_model_wall_s": 19064.39586290228
+        }
+      },
+      "routing": {
+        "repetitions": 100,
+        "questions_per_repeat": 120,
+        "cpu_s": 2.921875,
+        "wall_s": 3.566825299989432,
+        "cpu_s_per_question": 0.00024348958333333332,
+        "includes": [
+          "PCA/standardize from frozen384 embedding",
+          "P2 twenty-head prediction",
+          "proposal selection",
+          "two gate heads",
+          "threshold decision"
+        ],
+        "encoder_forward_not_measured": true,
+        "new_embedding_model_calls": 0,
+        "exact_action_mismatch": 0
+      },
+      "parameter_reconstruction": {
+        "prediction_max_error": 0.0,
+        "cpu_s": 0.5,
+        "sha256": "40607bf77b38b5f6f7d356f6e3eceec6d7bbb3a6a2bc6839f359770430ec0a83",
+        "role": "independent serialization/audit, not a new policy"
+      },
+      "new_llm_calls": 0
+    }
+  ],
+  "physical_new_member_calls": 0,
+  "physical_new_aggregator_calls": 0,
+  "resource_roles": "Counterfactual source inference costs are separate from new physical calls. Folds overlap and their fitting accounts are not added as actual repeated cache preparation.",
+  "shared_feedback": "Each G pair supplies every gate and both heads, with one gold and unique member executions per question/seed. No repeated gold fee per rule.",
+  "evaluation_cost": "Whole-matrix diagnostic, pairwise gate evaluation and one-combination deployment are separate accounts.",
+  "cpu_scope": "Routing is measured from existing embeddings with process CPU time. Original encoder preparation cost is unavailable.",
+  "gpu_time_s": null,
+  "gpu_note": "Source model wall sums are proxies, not measured GPU kernel time."
+}

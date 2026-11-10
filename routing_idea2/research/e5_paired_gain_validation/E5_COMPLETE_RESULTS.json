@@ -1,0 +1,173 @@
+{
+  "schema": "e5_completed_gated_protocol_v1",
+  "status": "COMPLETED_AS_GATED_PROTOCOL",
+  "branch": "codex/e5-paired-gain-validation",
+  "base_commit": "b5fa3317c77b1256037d734c93a001ecb19bfa28",
+  "manuscript_sha256": "b2c9c7f9bf09a3183f4907eb7daedd3a7537dc9f6460f62ccfc246e525bb9e99",
+  "independent_original_E_questions": 600,
+  "generation_repeats": 3,
+  "physical_new_llm_calls": 0,
+  "stages": {
+    "A": {
+      "status": "COMPLETE",
+      "population_cases": 140,
+      "population_ridge_cases": 420,
+      "finite_paired_trials": 1800,
+      "finite_LS_and_Ridge_fits": 3600,
+      "synthetic_centering_cases": 21,
+      "actual_centering_folds": 5
+    },
+    "B": {
+      "status": "COMPLETE",
+      "F_fit_models": 15,
+      "feedback_paths": 45
+    },
+    "C": {
+      "status": "COMPLETE",
+      "folds": 5,
+      "rules_per_fold": 20,
+      "main_score_procedures": 4,
+      "metadata_permission_fits": 10
+    },
+    "D": {
+      "status": "COMPLETE",
+      "synthetic_configurations": 640,
+      "MC_per_configuration": 10000,
+      "real_development_fold_certificates": 5,
+      "development_resampling_configurations": 25,
+      "MC_resampling_each": 2000
+    },
+    "E_synthetic": {
+      "status": "COMPLETE",
+      "budget_family_cases": 18,
+      "allocation_methods": 7,
+      "MC_each": 2000,
+      "estimated_weight_cost_sensitivity_plans": 900
+    },
+    "E_real": {
+      "status": "NOT_RUN_GATE_NOT_PASSED",
+      "required_if_development_gate_passes": false
+    }
+  },
+  "primary_comparisons": {
+    "factorized_minus_default": {
+      "point": 0.002777777777777778,
+      "ci95": [
+        -0.004444444444444445,
+        0.01
+      ],
+      "ci97_5_bonferroni_two_comparisons": [
+        -0.005555555555555556,
+        0.011111111111111112
+      ],
+      "centered_bootstrap_two_sided_p": 0.4993001399720056,
+      "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly",
+      "holm_adjusted_centered_bootstrap_p": 0.9986002799440112
+    },
+    "factorized_minus_task_matched": {
+      "point": 0.0004907407407407408,
+      "ci95": [
+        -0.002925925925925925,
+        0.003944444444444444
+      ],
+      "ci97_5_bonferroni_two_comparisons": [
+        -0.0033520833333333337,
+        0.004347337962962961
+      ],
+      "centered_bootstrap_two_sided_p": 0.7744451109778044,
+      "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly",
+      "holm_adjusted_centered_bootstrap_p": 0.9986002799440112
+    }
+  },
+  "scientific": {
+    "error_component_result": "P2_to_Probit raw absolute loss falls, common offset falls more, centered loss rises",
+    "primary_gate_evidence": "INSUFFICIENT_FOR_WITHIN_TASK_RANKING",
+    "certification": "mathematical/numerical validity under declared model assumptions, limited small-gain power",
+    "allocation": "second-moment and estimation improvements separate from strategy-selection quality",
+    "real_allocation": "NOT_RUN_GATE_NOT_PASSED"
+  },
+  "reports": [
+    "01_THEORY_IMPLEMENTATION_CHECKS.md",
+    "02_CENTERED_ERROR_DIAGNOSTICS.md",
+    "03_SWITCH_RANKING_AND_MATCHED_CONTROLS.md",
+    "04_CERTIFICATION_VALIDITY_AND_POWER.md",
+    "05_TWO_RESOURCE_ALLOCATION.md",
+    "EXPERIMENT_SUMMARY.md",
+    "REPRODUCE.md"
+  ],
+  "results": {
+    "THEORY_IMPLEMENTATION_RESULTS.json": {
+      "sha256": "0c3d2a65adce3a836ccf64286d4caf435994fc4a9543dd35bab4fe05fcf4cf88",
+      "bytes": 1402927
+    },
+    "ACTUAL_CENTERING_RESULTS.json": {
+      "sha256": "7a168f26c2a2f88852820a0d8fc3c7c7e1cb7f02618355a5a6ddc9512f6bf6b1",
+      "bytes": 4784
+    },
+    "CENTERED_DIAGNOSTICS_RESULTS.json": {
+      "sha256": "6deae8b9071d291ab537a1e8a8e6dda4d4046d3464c759f8d961fd44a733ce36",
+      "bytes": 472122
+    },
+    "SWITCH_RANKING_RESULTS.json": {
+      "sha256": "7ac4d511c925fe6a3de9dbdadf3800352dc3bff46714f6e4439d194f86194582",
+      "bytes": 1295449
+    },
+    "SWITCH_ABLATION_COMPARISONS.json": {
+      "sha256": "5cfd26ae4008e08666b923521e2faacaf4e36faca72d2eea0f3d4467b96784fd",
+      "bytes": 2001
+    },
+    "METADATA_PERMISSION_CONTROLS.json": {
+      "sha256": "9f90cd6af554b62b3a4e67eac02903126cedca379ff834d3b4c89712e50f9957",
+      "bytes": 112355
+    },
+    "CERTIFICATION_SYNTHETIC_RESULTS.json": {
+      "sha256": "627bee33bebbe4102b910c39b0833ed5c98cb1aec8be7e4a3c955ff1301059b2",
+      "bytes": 1493540
+    },
+    "CERTIFICATION_DEVELOPMENT_POWER.json": {
+      "sha256": "9946e6f068c1ef35c744bb0871a173a5f5bf709f28601709199773e71f35eee0",
+      "bytes": 271935
+    },
+    "ALLOCATION_SYNTHETIC_RESULTS.json": {
+      "sha256": "26045ceb164e1330dc87543dee2a72587cad081c8b3704abeb6905376204dded",
+      "bytes": 1579244
+    },
+    "ALLOCATION_SELECTION_NUMERICAL_SENSITIVITY.json": {
+      "sha256": "4ea7dfdf1ee4ed01784caa5af5bb34a1d6c247b3cf454e9b20a7147709850715",
+      "bytes": 125219
+    },
+    "COST_AND_REUSE_RESULTS.json": {
+      "sha256": "5baf5c50a34fc7809e2b65f3ddf985d8d417c8da70f3bf7d131030339018eb9b",
+      "bytes": 19571
+    },
+    "REAL_ALLOCATION_GATE.json": {
+      "sha256": "6fc2ca90ff87d89dd19ce40dac9d3836a70c8cb9afc1948bcbf33a4327757717",
+      "bytes": 1517
+    },
+    "REFERENCE_AND_INPUTS.json": {
+      "sha256": "4fc08d54265696f7f2ba172117e7737017600e59a81b7f881bbc5a1da0a0e7f6",
+      "bytes": 5317
+    },
+    "E5_EXPERIMENT_CONFIG.json": {
+      "sha256": "b82c4aeaabf4f300c57d5a2bc45bcf250021bc44eb54b4e8f66f3fe1d19bee53",
+      "bytes": 3329
+    },
+    "E5_PROTOCOL_AMENDMENTS.json": {
+      "sha256": "4ea4089dd8c8cc6e255f6b0dff55ef0fb6d9bc97c72545416b4ab9b1ca91bc25",
+      "bytes": 1808
+    }
+  },
+  "independent_verification_report": "E5_INDEPENDENT_AUDIT.json",
+  "preserved_history": "Original E1-E4 artifacts and pre-existing Git blobs preserved",
+  "data_scope": "Controlled development re-use. No validation/fresh400/sealed200 score payloads used.",
+  "limitations": [
+    "historical model selection and overlapping training histories",
+    "three seed IDs do not establish repetition independence or common conditional law",
+    "matched controls condition on frozen fold policies and cached generation blocks",
+    "u conditional likelihood retains original1/L observation weights",
+    "G OOF versus full-G head distribution shift",
+    "upper sample planning is certificate-specific and plug-in, lower bound applies to its stated distribution class",
+    "synthetic allocation budgets are expected resources, not hard realized caps",
+    "GPU kernel time and original encoder preparation timing unavailable"
+  ]
+}

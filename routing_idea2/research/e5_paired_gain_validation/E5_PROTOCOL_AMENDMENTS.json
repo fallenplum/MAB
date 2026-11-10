@@ -1,0 +1,16 @@
+{
+  "schema":"e5_pre_evaluation_execution_details_v1",
+  "timing":"locked after F-only base fits and before E5-C outcome aggregation",
+  "control_folds":"Matched global/task/subtask controls preserve switch counts within each outer fold's frozen procedure. Bootstrap re-computes those counts within every original-question resample.",
+  "u_likelihood":"Filtering to D!=0 retains original1/L weights. Conditional likelihood question mass is its disagreement frequency. Each raw question initially has total unit repeat weight.",
+  "direction":"score=2u-1, zero equals raw u=.5; rank and target-coverage quantiles agree with u-only scoring.",
+  "r_zero":"r-only zero-score is not a gain-sign boundary; smoothed probabilities make it an all-one gate, kept intact.",
+  "family_size":"20 nondefault indexed rules per frozen outer-fold procedure, including duplicate G patterns. No empirical duplicate is used to reduce certificate J.",
+  "primary_threshold":"Always one of5 finite G candidates, without an added infinity default threshold. Exact default remains separate baseline/certification option.",
+  "nonnested_sensitivity":"Each of4 score families at its pre-fixed G50% target threshold. Report actual dominance; never assume nonnesting.",
+  "G_to_E_score_shift":"G scores nested-OOF heads, E scores full-G heads; stacking distribution difference is recorded.",
+  "B_feedback":"Each seed-specific clone receives same20 G pairs frozen by F-P2; E never enters update.",
+  "real_certification":"Five conditional fold procedures have different fitted rules. Construct F.1 task-stratified bounds per fold with delta .01 and per-task .005, no pooled iid600 certificate.",
+  "external_registration":false,
+  "scientific_scope":"controlled existing-development-data diagnosis; no independent fresh confirmation"
+}

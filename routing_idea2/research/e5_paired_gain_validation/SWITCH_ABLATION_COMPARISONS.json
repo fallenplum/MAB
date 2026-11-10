@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE",
+  "comparisons": {
+    "factorized_minus_gap": {
+      "point": -0.008888888888888887,
+      "ci95": [
+        -0.02055555555555556,
+        0.0033333333333333322
+      ],
+      "centered_bootstrap_two_sided_p": 0.15116976604679064,
+      "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly",
+      "holm3_adjusted_centered_bootstrap_p": 0.4535092981403719
+    },
+    "factorized_minus_disagreement": {
+      "point": -0.005555555555555555,
+      "ci95": [
+        -0.016111111111111114,
+        0.005
+      ],
+      "centered_bootstrap_two_sided_p": 0.3271345730853829,
+      "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly",
+      "holm3_adjusted_centered_bootstrap_p": 0.6542691461707658
+    },
+    "factorized_minus_direction": {
+      "point": -0.0038888888888888888,
+      "ci95": [
+        -0.011111111111111112,
+        0.0033472222222220224
+      ],
+      "centered_bootstrap_two_sided_p": 0.3271345730853829,
+      "p_interval_note": "Centered bootstrap p and percentile intervals are descriptive and need not invert exactly",
+      "holm3_adjusted_centered_bootstrap_p": 0.6542691461707658
+    }
+  },
+  "independent_questions": 600,
+  "frozen_primary_method": "factorized",
+  "role": "exploratory mechanism ablations, separate from the two declared primary contrasts",
+  "bootstrap": "same existing outerfold x broad-task original-question draws for every method",
+  "source": {
+    "SWITCH_RANKING_RESULTS.json": "7ac4d511c925fe6a3de9dbdadf3800352dc3bff46714f6e4439d194f86194582",
+    "SWITCH_PAIRED.npz": "b6096d694d67c94bc743c0e8990c1ba56246af289d81461b87ccf9823591c317",
+    "SWITCH_BOOTSTRAP.npz": "24a9bfdbf158b2b4a22106860e71e375733f5d986ae29f050a98816c11fb5903",
+    "audit_switch_ablation.py": "649233c2e81ebbef5e1a05ba6881fe55d0dd68ad810278accdbbdabef6939d26"
+  },
+  "new_llm_calls": 0
+}
