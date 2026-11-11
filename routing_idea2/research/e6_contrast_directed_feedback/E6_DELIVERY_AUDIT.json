@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scalar_or_group_assertions": 160,
+  "python_sources_compiled": 18,
+  "manifest_files_verified": 44,
+  "E5_manifest_records_unchanged": 44,
+  "independently_rebuilt_C_choices": 150000,
+  "maximum_HT_reconstruction_error": 8.326672684688674e-17,
+  "private_question_identifiers_scanned": 1200,
+  "privacy_failures": [],
+  "failures": [],
+  "independent_audit_sha256": {
+    "b/E6_B_AUDIT.json": "e80a23c850e41f3b320c54847b21bde84ffe61f57a6f2090d993d7fb56b998d0",
+    "theory/INDEPENDENT_OPERATOR_AUDIT.json": "2ae75bde832d3d4723897a8e5b4381c99f8d0409da6b61bd443a8bc7fda2f572",
+    "theory/INDEPENDENT_A_STATISTICS_AUDIT.json": "80aa2cf01f51bea655c1887115a7213210a86fde61175947cc3bcccb1f0e7016",
+    "theory/INDEPENDENT_REAL_POOL_AUDIT.json": "411aa32bf07d2a1130b5eed98979f507bef4e56d4a932d7c71abf8eb5f336020",
+    "theory/INDEPENDENT_SOLVER_AUDIT.json": "2514c4d5f66910c785aa17ffa451d3efecf4178968302c2c722f3a677f4c554a",
+    "E6_FINAL_REVIEW.json": "2b99512a1762220c9a12dc053f9db1cff4b2ad73f6b0607d8669b69297a1824f"
+  },
+  "manifest_sha256": "8dfd4153714fe2c352bbd106ebb037ff62e9a95f8fbcac46dd7929b59bb5c033",
+  "scientific_gate": "NO_POSITIVE_PRIMARY_FAMILY_EVIDENCE",
+  "work_status": "COMPLETE",
+  "separation": "A passed numerical audit does not establish a scientific benefit",
+  "outstanding": []
+}

@@ -1,0 +1,499 @@
+{
+  "status": "COMPLETE",
+  "unique_G_questions_across_overlapping_folds": 413,
+  "unique_G_candidate_direction_questions_across_folds": 91,
+  "unique_G_auxiliary_direction_questions_across_folds": 202,
+  "per_fold": [
+    {
+      "fold": 0,
+      "shared_F360_full_information": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19164675,
+        "output_tokens": 3159346,
+        "tokens": 22324021,
+        "source_model_wall_s": 179547.1333120782
+      },
+      "G120_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1611,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 918149,
+        "output_tokens": 443988,
+        "tokens": 1362137,
+        "source_model_wall_s": 22088.847069028765
+      },
+      "G120_all_feedback": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6412844,
+        "output_tokens": 1054308,
+        "tokens": 7467152,
+        "source_model_wall_s": 59746.9915867314
+      },
+      "A4_increment_over_pair": {
+        "gold": 0,
+        "member_calls": 549,
+        "aggregator_calls": 6480,
+        "scoring_ops": 6480,
+        "input_tokens": 5494695,
+        "output_tokens": 610320,
+        "tokens": 6105015,
+        "source_model_wall_s": 37658.14451770263
+      },
+      "gate_cpu": {
+        "A1": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.015625,
+          "cpu_s_per_question": 1.3020833333333334e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A2": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.03125,
+          "cpu_s_per_question": 2.604166666666667e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A3": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.03125,
+          "cpu_s_per_question": 2.604166666666667e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A4": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.046875,
+          "cpu_s_per_question": 3.90625e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        }
+      },
+      "effective_candidate_direction_questions": 20,
+      "effective_auxiliary_direction_questions": 59
+    },
+    {
+      "fold": 1,
+      "shared_F360_full_information": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19413800,
+        "output_tokens": 3190934,
+        "tokens": 22604734,
+        "source_model_wall_s": 181031.2339015858
+      },
+      "G120_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1602,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 889607,
+        "output_tokens": 428061,
+        "tokens": 1317668,
+        "source_model_wall_s": 21275.059541634866
+      },
+      "G120_all_feedback": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6330067,
+        "output_tokens": 1048892,
+        "tokens": 7378959,
+        "source_model_wall_s": 59400.86435154313
+      },
+      "A4_increment_over_pair": {
+        "gold": 0,
+        "member_calls": 558,
+        "aggregator_calls": 6480,
+        "scoring_ops": 6480,
+        "input_tokens": 5440460,
+        "output_tokens": 620831,
+        "tokens": 6061291,
+        "source_model_wall_s": 38125.804809908266
+      },
+      "gate_cpu": {
+        "A1": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.015625,
+          "cpu_s_per_question": 1.3020833333333334e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A2": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.03125,
+          "cpu_s_per_question": 2.604166666666667e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A3": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.046875,
+          "cpu_s_per_question": 3.90625e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A4": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.046875,
+          "cpu_s_per_question": 3.90625e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        }
+      },
+      "effective_candidate_direction_questions": 29,
+      "effective_auxiliary_direction_questions": 63
+    },
+    {
+      "fold": 2,
+      "shared_F360_full_information": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19148738,
+        "output_tokens": 3177553,
+        "tokens": 22326291,
+        "source_model_wall_s": 181105.18170884112
+      },
+      "G120_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1647,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 881029,
+        "output_tokens": 420962,
+        "tokens": 1301991,
+        "source_model_wall_s": 20774.19669463497
+      },
+      "G120_all_feedback": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6377609,
+        "output_tokens": 1011331,
+        "tokens": 7388940,
+        "source_model_wall_s": 57478.64768446935
+      },
+      "A4_increment_over_pair": {
+        "gold": 0,
+        "member_calls": 513,
+        "aggregator_calls": 6480,
+        "scoring_ops": 6480,
+        "input_tokens": 5496580,
+        "output_tokens": 590369,
+        "tokens": 6086949,
+        "source_model_wall_s": 36704.45098983438
+      },
+      "gate_cpu": {
+        "A1": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.015625,
+          "cpu_s_per_question": 1.3020833333333334e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A2": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.0625,
+          "cpu_s_per_question": 5.208333333333334e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A3": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.125,
+          "cpu_s_per_question": 1.0416666666666667e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A4": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.125,
+          "cpu_s_per_question": 1.0416666666666667e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        }
+      },
+      "effective_candidate_direction_questions": 20,
+      "effective_auxiliary_direction_questions": 59
+    },
+    {
+      "fold": 3,
+      "shared_F360_full_information": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19215200,
+        "output_tokens": 3193327,
+        "tokens": 22408527,
+        "source_model_wall_s": 181582.45160932117
+      },
+      "G120_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1635,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 836505,
+        "output_tokens": 377861,
+        "tokens": 1214366,
+        "source_model_wall_s": 19364.34562302439
+      },
+      "G120_all_feedback": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6357651,
+        "output_tokens": 1020074,
+        "tokens": 7377725,
+        "source_model_wall_s": 57566.719457958476
+      },
+      "A4_increment_over_pair": {
+        "gold": 0,
+        "member_calls": 525,
+        "aggregator_calls": 6480,
+        "scoring_ops": 6480,
+        "input_tokens": 5521146,
+        "output_tokens": 642213,
+        "tokens": 6163359,
+        "source_model_wall_s": 38202.373834934086
+      },
+      "gate_cpu": {
+        "A1": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.046875,
+          "cpu_s_per_question": 3.90625e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A2": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.0625,
+          "cpu_s_per_question": 5.208333333333334e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A3": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.140625,
+          "cpu_s_per_question": 1.171875e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A4": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.140625,
+          "cpu_s_per_question": 1.171875e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        }
+      },
+      "effective_candidate_direction_questions": 26,
+      "effective_auxiliary_direction_questions": 55
+    },
+    {
+      "fold": 4,
+      "shared_F360_full_information": {
+        "gold": 360,
+        "member_calls": 6480,
+        "aggregator_calls": 21600,
+        "scoring_ops": 21600,
+        "input_tokens": 19246791,
+        "output_tokens": 3159280,
+        "tokens": 22406071,
+        "source_model_wall_s": 179448.68444304029
+      },
+      "G120_pair_feedback": {
+        "gold": 120,
+        "member_calls": 1590,
+        "aggregator_calls": 720,
+        "scoring_ops": 720,
+        "input_tokens": 960617,
+        "output_tokens": 470902,
+        "tokens": 1431519,
+        "source_model_wall_s": 23767.562757635955
+      },
+      "G120_all_feedback": {
+        "gold": 120,
+        "member_calls": 2160,
+        "aggregator_calls": 7200,
+        "scoring_ops": 7200,
+        "input_tokens": 6370525,
+        "output_tokens": 1043563,
+        "tokens": 7414088,
+        "source_model_wall_s": 59094.21182050754
+      },
+      "A4_increment_over_pair": {
+        "gold": 0,
+        "member_calls": 570,
+        "aggregator_calls": 6480,
+        "scoring_ops": 6480,
+        "input_tokens": 5409908,
+        "output_tokens": 572661,
+        "tokens": 5982569,
+        "source_model_wall_s": 35326.649062871584
+      },
+      "gate_cpu": {
+        "A1": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.046875,
+          "cpu_s_per_question": 3.90625e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A2": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.078125,
+          "cpu_s_per_question": 6.510416666666666e-07,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A3": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.125,
+          "cpu_s_per_question": 1.0416666666666667e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        },
+        "A4": {
+          "batch_repetitions": 1000,
+          "original_questions_per_batch": 120,
+          "process_cpu_s": 0.125,
+          "cpu_s_per_question": 1.0416666666666667e-06,
+          "scope": "gate feature assembly and direction head from saved PCA8 and saved P2 values",
+          "excludes": [
+            "MiniLM encoder",
+            "P2 prediction",
+            "PCA8 transform"
+          ]
+        }
+      },
+      "effective_candidate_direction_questions": 23,
+      "effective_auxiliary_direction_questions": 52
+    }
+  ],
+  "supplementary_key_contrasts": {
+    "A3_minus_default": {
+      "point": 0.000555555555555556,
+      "raw_two_sided_bootstrap_p": 0.9590081983603279,
+      "holm_two_comparisons": 1.0
+    },
+    "A3_minus_A1": {
+      "point": 1.1102230246251565e-16,
+      "raw_two_sided_bootstrap_p": 1.0,
+      "holm_two_comparisons": 1.0
+    }
+  },
+  "gate_cpu_note": "batch CPU of incremental gate only. P2 and encoder excluded, source inference costs counterfactual historic executions.",
+  "fresh400_evaluated": false,
+  "sealed200_evaluated": false,
+  "new_physical_llm_calls": 0
+}

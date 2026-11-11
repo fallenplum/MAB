@@ -1,0 +1,119 @@
+{
+  "schema": "mab_e6_v1",
+  "frozen_utc": "2026-11-11T20:31:59.309672+00:00",
+  "task_sha256": "f7d54b13e9feea1e683cd70ec04450e656682d70cb36b6245864ca4fc574527b",
+  "branch": "codex/e6-contrast-directed-feedback",
+  "base_commit": "7e06c632787f1de093732aed0250c8a30d3035b7",
+  "population": "train600 only; fresh400 and sealed200 not evaluated",
+  "seeds": [
+    42,
+    137,
+    2024
+  ],
+  "N": 6,
+  "K": 3,
+  "combinations": 20,
+  "physical_new_llm_calls": 0,
+  "A": {
+    "main": "A3",
+    "lambdas": [
+      0.01,
+      0.1,
+      1
+    ],
+    "cv": "three grouped original-question folds inside G, broad-task stratification",
+    "cv_objective": "mean paired service gain; tie stronger regularization",
+    "threshold": 0,
+    "logistic_intercept": "penalized as part of beta",
+    "normalization": "all original n*L, D=0 remains in denominator",
+    "one_class_fallback": "Beta(1,1) weighted constant",
+    "auto_class_balance": false,
+    "A3_features": 46,
+    "PCA": "8 components fit on F only",
+    "combo_embedding": "first 2 right singular vectors of row-centered F average rewards, no singular value scaling, deterministic sign",
+    "feature_scaling": "G training fold only",
+    "A4_weights": [
+      0.5,
+      0.02631578947368421
+    ]
+  },
+  "B": {
+    "pilots_per_active_stratum": [
+      30,
+      5
+    ],
+    "budgets": [
+      [
+        0.25,
+        0.5
+      ],
+      [
+        0.5,
+        0.25
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    "repeats": 2000,
+    "epsilon": 0.01,
+    "preserve_default_and_all": true,
+    "old_worlds_unchanged": true
+  },
+  "C": {
+    "main_gold": 36,
+    "gold_budgets": [
+      24,
+      36,
+      48
+    ],
+    "pilot_questions": 12,
+    "pilot_draws": 50,
+    "purchase_draws_per_pilot": 40,
+    "repeats_per_fold": 2000,
+    "methods": [
+      "Uniform",
+      "Marginal",
+      "Contrast",
+      "GapContrast",
+      "NoPilotUniform"
+    ],
+    "sampler": "conditional Bernoulli with exact gold count and execution-call cap, exact first-order inclusion probabilities",
+    "independent_Bernoulli": "supplementary formula and budget-overrun diagnostic; not treated as hard-cap deployment",
+    "execution_units": "one member or aggregator call, all 3 generation repeats charged",
+    "execution_cap": "3*floor(7.5*B_gold), maximum 22.5 calls per gold; deterministic fallback to 24*B only if positivity infeasible based on inputs and pilot costs",
+    "token_hard_cap": "159744*B_gold from frozen member4096/aggregate6144 input and2048 output caps",
+    "expected_cost_source": "F historical per-model and per-combination tokens only",
+    "estimated_moment": "pilot gate-signature mean Dbar squared, 4 pseudo-observations at pooled pilot mean",
+    "estimated_gain": "pilot mean g*Dbar, no Q rewards",
+    "epsilon": 0.01,
+    "tie": "estimate tolerance 1e-12, default then fixed listed order",
+    "unit": "question, shared three-repeat average",
+    "Q_only_evaluator": true
+  },
+  "statistics": {
+    "bootstrap_reps": 5000,
+    "seed": 20261112,
+    "question_strata": "outer fold x GSM/BBH",
+    "primary_comparisons": [
+      "A3 minus task-matched random",
+      "C Contrast minus Marginal at gold36",
+      "C Contrast minus Uniform at gold36"
+    ],
+    "family": "Holm three two-sided centered bootstrap tests; unadjusted95CI plus simultaneous Bonferroni98.3333CI",
+    "MC": "paired replicate distributions, clustered pilot sensitivity separately",
+    "outer_fold_overlap": "conditional development inference, not independent training replications"
+  },
+  "frozen_split_sha256": "30b20b28a7a627747028e47149d7c04343a5254564b49e034ca1292b1191b841",
+  "inputs_sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+  "base_sources": {
+    "BASE_f0": "a180ea13dfe5d702baceaeac1839ba3a5eb446344ea848d39add1a4a83380b0d",
+    "BASE_f1": "a56da64ae61ac759730e7e35315a963caa2de49de7c0021f130dc72b69d145e3",
+    "BASE_f2": "ef347cb99f0b756680bb7ab802af033f2f7df3bf91ec5d58b2086c34c79de37f",
+    "BASE_f3": "392406e8b33f2fb931ac9797f953152c8f3d48b24267bcbd6aaa6047b0849460",
+    "BASE_f4": "7bd7e58b8cb69b44dd7e9129e863247d1fc13e953ef3239745d7ea8ae8e86e1b"
+  },
+  "E6_A_E_scores_read_before_freeze": false,
+  "Q_rewards_available_to_algorithms": false
+}

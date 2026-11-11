@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_questions": 600,
+  "paired_generation_repeats": 3,
+  "all_accuracy_gain_taskmatch_bootstraps": 5000,
+  "subtask_match_bootstrap_probes": 100,
+  "maximum_errors": {
+    "accuracy": 2.220446049250313e-16,
+    "gain": 0.0,
+    "task_matched": 1.0408340855860843e-17,
+    "subtask_matched_100_probes": 1.0408340855860843e-17
+  },
+  "primary_recomputed_on_each_question_bootstrap": true,
+  "inference_scope": "Frozen cross-fitted development predictions, overlapping training histories retained as limitation"
+}

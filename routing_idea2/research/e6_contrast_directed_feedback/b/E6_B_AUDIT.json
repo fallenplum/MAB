@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scalar_checks": 629568,
+  "cases": 12,
+  "original_worlds_reproduced_exactly": 6,
+  "objective_identity_cases": 12,
+  "max_exact_mean_error": 2.6020852139652106e-17,
+  "max_exact_covariance_formula_error": 4.336808689942018e-19,
+  "max_solver_objective_reconstruction_error": 9.094947017729282e-13,
+  "maximum_scaled_duality_gap": 5.474731779031572e-12,
+  "actual_LLM_calls": 0,
+  "results_sha256": "122a3b5cebd724c8a85612c9e5b016d3938e4a159bb3ec8bd3ac8bf7ec79a944"
+}

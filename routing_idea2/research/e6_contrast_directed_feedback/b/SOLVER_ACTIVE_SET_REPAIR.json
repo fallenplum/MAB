@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "failing_case": {
+    "fold": 2,
+    "pilot_index": 38,
+    "gold_budget": 48
+  },
+  "old_solver_sha256": "bf8c55a51fa643e524aefa37af5b64c9ab171ad89754218c315275e6e3ba0d4b",
+  "repaired_solver_sha256": "e08440035b8909f6735ffe764b541e2f16513a45083e907d0d3b4ce2139715f1",
+  "private_failure_input_sha256": "c3c24437dbf59432ca1927a9225d973f60c9d5434edcd3b6b5335246821d47c5",
+  "old_active_identification_tolerance": "2e-6 * max(1, abs(scaled_objective), maximum_resource_budget)",
+  "new_active_identification_tolerance": "2e-8 * max(1, abs(scaled_objective))",
+  "root_cause": "Resource-budget scaling admitted strictly slack objective rows into the KKT multiplier reconstruction.",
+  "original_primal_objective": 0.01800623549901457,
+  "repaired_primal_objective": 0.01800623549901457,
+  "old_scaled_duality_gap": 5.871798706686554e-05,
+  "repaired_scaled_duality_gap": 1.5223141497378023e-10,
+  "original_constraint_violation": 0.0,
+  "repaired_constraint_violation": 0.0,
+  "primal_probability_arrays_bitwise_identical": true,
+  "primal_probability_max_abs_difference": 0.0,
+  "original_duality_acceptance_threshold_unchanged": true,
+  "B_unique_designs_replayed": 48,
+  "B_probability_max_abs_difference": 0.0,
+  "unchanged_completed_C_folds": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "C_fold2_status": "COMPLETE_AFTER_REPAIR",
+  "actual_new_LLM_calls": 0
+}

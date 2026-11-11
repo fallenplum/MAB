@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "folds": [
+    {
+      "fold": 0,
+      "policy_selections": 30000,
+      "ht_max_error": 4.163336342344337e-17,
+      "distinct_P_questions": 60,
+      "distinct_Q_questions": 60,
+      "paired_marginal_contrast_identical": true
+    },
+    {
+      "fold": 1,
+      "policy_selections": 30000,
+      "ht_max_error": 5.551115123125783e-17,
+      "distinct_P_questions": 60,
+      "distinct_Q_questions": 60,
+      "paired_marginal_contrast_identical": true
+    },
+    {
+      "fold": 2,
+      "policy_selections": 30000,
+      "ht_max_error": 8.326672684688674e-17,
+      "distinct_P_questions": 60,
+      "distinct_Q_questions": 60,
+      "paired_marginal_contrast_identical": true
+    },
+    {
+      "fold": 3,
+      "policy_selections": 30000,
+      "ht_max_error": 5.551115123125783e-17,
+      "distinct_P_questions": 60,
+      "distinct_Q_questions": 60,
+      "paired_marginal_contrast_identical": true
+    },
+    {
+      "fold": 4,
+      "policy_selections": 30000,
+      "ht_max_error": 5.551115123125783e-17,
+      "distinct_P_questions": 60,
+      "distinct_Q_questions": 60,
+      "paired_marginal_contrast_identical": true
+    }
+  ],
+  "independently_reconstructed_policy_selections": 150000,
+  "minimum_actual_inclusion": 0.043287669756356895,
+  "maximum_HT_reconstruction_error": 8.326672684688674e-17,
+  "maximum_hard_call_cap_violation": 0.0,
+  "conditional_design_stability": {
+    "reconstructed_designs": 3000,
+    "minimum_partition": 1.7895476461413007e-183,
+    "actual_inclusion_reconstruction_max_error": 0.0,
+    "proposal_clip_bounds": [
+      1e-06,
+      0.999999
+    ],
+    "clipped_proposal_coordinates": 2023,
+    "hard_call_cap_fallback_designs": 0,
+    "no_pilot_hard_call_cap_fallback_designs": 0,
+    "conditional_predicted_token_excess_count": 824,
+    "conditional_predicted_token_excess_max": 3343.3727188197663,
+    "conditional_predicted_token_excess_interpretation": "Conditioning changes actual inclusion; preconditioning token proxy constraint is not inherited. Gold/call and conservative frozen token hard caps are checked separately."
+  },
+  "gold_count_exact": true,
+  "token_caps_pass": true,
+  "finite_pool_masks_default_all": true,
+  "Q_reward_isolation": {
+    "outer_fold": 0,
+    "poisoned_Q_questions": 60,
+    "pilot_draws": 2,
+    "purchase_draws_per_pilot": 3,
+    "total_decisions": 90,
+    "all_Q_rewards_replaced_by_NaN": true,
+    "unchanged": {
+      "selected": true,
+      "estimates": true,
+      "purchases": true,
+      "inclusion": true
+    },
+    "evaluation_JSON_rejects_NaN": true
+  },
+  "source_sha256": "258d1bae447fa8be3cf37a4f16fe5416f8c226a3d34c61a50d92391e238df7b3",
+  "caveat": "Conditional on fixed gates and F/G history; code-array perturbation is not operating-system access forensics."
+}

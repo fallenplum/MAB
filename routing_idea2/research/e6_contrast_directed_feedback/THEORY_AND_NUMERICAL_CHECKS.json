@@ -1,0 +1,92 @@
+{
+  "seed": 20261112,
+  "uses_real_rewards": false,
+  "weighted_classification": {
+    "pointwise_cases": 10,
+    "pointwise_max_error": 0.0,
+    "random_joint_distributions": 1000,
+    "expectation_max_error": 1.1102230246251565e-16,
+    "class_weight_counterexample": {
+      "positive_mass": 0.04,
+      "negative_mass": 0.06,
+      "unweighted_gain": -0.02,
+      "weighted_positive_mass_at_class_weight_2": 0.08,
+      "weighted_negative_mass": 0.06,
+      "decision_reversed": true
+    }
+  },
+  "iid_shared_feedback": {
+    "enumerated_joint_atoms": 162,
+    "probability_sum_error": 0.0,
+    "mean_max_error": 1.3877787807814457e-17,
+    "covariance_max_error": 1.6653345369377348e-16,
+    "pair_variance_max_error": 1.6653345369377348e-16,
+    "conditional_a": [
+      0.16160000000000002,
+      0.22666666666666668,
+      0.06773333333333334
+    ],
+    "mc_repetitions": 200000,
+    "mc_pair_variance": 0.2379414194253058,
+    "exact_pair_variance": 0.24188711844077948,
+    "mc_relative_error": 0.016312150233166234,
+    "requires_iid_questions": true,
+    "requires_gate_constant_within_stratum_for_factored_formula": true,
+    "repeat_independence_required_only_for_a_mu_rho_formula": true
+  },
+  "finite_pool_shared_feedback": {
+    "pool_size": 8,
+    "pilot_size": 2,
+    "enumerated_masks": 64,
+    "mean_max_error": 6.938893903907228e-17,
+    "covariance_max_error": 2.0816681711721685e-17,
+    "pair_variance_max_error": 5.551115123125783e-17,
+    "conditions": "fixed pool, fixed pilot outcomes, frozen gates and p, independent remaining Bernoulli draws"
+  },
+  "all_switch_degeneracy": {
+    "random_non_nested_gate_families": 1000,
+    "population_objective_max_error": 0.0,
+    "finite_pool_objective_max_error": 1.7763568394002505e-15,
+    "gap_normalized_numerically_distinct_cases": 1000,
+    "equality_requires": "binary gates plus default and all-switch in the family; nonnegative second-moment coefficients",
+    "not_a_result_of_nesting": true,
+    "covariance_cancellation_example": {
+      "g_j": [
+        1,
+        1
+      ],
+      "g_k": [
+        1,
+        0
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "a": [
+        1.0,
+        0.01
+      ],
+      "p": [
+        0.5,
+        0.5
+      ],
+      "correct_pair_second_moment": 0.01,
+      "incorrect_sum_of_marginal_second_moments": 2.01
+    }
+  },
+  "bernoulli_budget_counterexample": {
+    "independent_expected_gold": 1.0,
+    "nominal_gold_cap": 1,
+    "probability_above_cap": 0.25,
+    "true_inclusion_after_stop_at_one": [
+      0.5,
+      0.25
+    ],
+    "using_original_p_for_second_item_ht_expectation": 0.5,
+    "correct_expectation_for_second_item": 1.0,
+    "naive_cap_introduces_bias": true
+  },
+  "status": "PASS",
+  "max_exact_algebra_error": 1.7763568394002505e-15
+}
