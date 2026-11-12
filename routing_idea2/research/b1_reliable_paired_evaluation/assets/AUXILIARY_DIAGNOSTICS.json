@@ -1,0 +1,102 @@
+{
+  "schema": "B1_train_only_auxiliary_diagnostic_v1",
+  "historical_nested_OOF_calibration": {
+    "paired_residual_second_moment": {
+      "questions": 549,
+      "observed_mean": 0.04655658204805554,
+      "predicted_mean": 0.0626606556996637,
+      "mean_squared_error": 0.019778765833424052,
+      "correlation": 0.055283926629131945,
+      "prediction_quintiles": [
+        {
+          "questions": 110,
+          "predicted_mean": 1e-06,
+          "observed_mean": 0.058299935686668025
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.014929256051534797,
+          "observed_mean": 0.039169521169526274
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.04715703244558827,
+          "observed_mean": 0.036032030196577
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.08290509658253523,
+          "observed_mean": 0.01942078472034444
+        },
+        {
+          "questions": 109,
+          "predicted_mean": 0.16928016165461426,
+          "observed_mean": 0.08016618026917212
+        }
+      ],
+      "questions_below_floor": 119,
+      "confidence_claim": "working second-moment prediction; no calibrated conditional guarantee"
+    },
+    "paired_raw_second_moment": {
+      "questions": 549,
+      "observed_mean": 0.04654928152195912,
+      "predicted_mean": 0.06037936471778835,
+      "mean_squared_error": 0.019574523274176123,
+      "correlation": 0.09433051488901271,
+      "prediction_quintiles": [
+        {
+          "questions": 110,
+          "predicted_mean": 1e-06,
+          "observed_mean": 0.05959595959595959
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.011952693296359227,
+          "observed_mean": 0.0202020202020202
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.04477297505383084,
+          "observed_mean": 0.04141414141414141
+        },
+        {
+          "questions": 110,
+          "predicted_mean": 0.08070158764620573,
+          "observed_mean": 0.03636363636363636
+        },
+        {
+          "questions": 109,
+          "predicted_mean": 0.1654235144079107,
+          "observed_mean": 0.07543323139653414
+        }
+      ],
+      "questions_below_floor": 131,
+      "confidence_claim": "working second-moment prediction; no calibrated conditional guarantee"
+    }
+  },
+  "input_only_actor_diagnostic": {
+    "active_questions": 184,
+    "structural_zero_questions": 16,
+    "score_gap_summary": {
+      "min": 0.0004412749678991412,
+      "median": 0.02892295423528085,
+      "max": 0.17878624757450245
+    },
+    "auxiliary_raw_negative_counts": {
+      "residual": 59,
+      "raw_moment": 59
+    },
+    "projected_pair_token_cost": {
+      "min": 10896.461666666666,
+      "median": 11972.670000000002,
+      "max": 12693.466666666667,
+      "mean": 11808.410434782607,
+      "std": 477.3055039558146,
+      "coefficient_of_variation": 0.04042080909974754,
+      "maximum_over_minimum": 1.164916378818384,
+      "source": "train600 average usage and frozen validation actions only"
+    }
+  },
+  "validation_scores_or_actual_costs_used": false,
+  "parameter_selection_after_diagnostic": false
+}

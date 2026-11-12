@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "arrays_equal": {
+    "FROZEN_INPUTS.npz": "identical arrays with future payloads access-denied",
+    "FROZEN_MODEL.npz": "identical arrays with future payloads access-denied",
+    "TRAIN_OOF.npz": "identical arrays with future payloads access-denied"
+  },
+  "hidden_validation_rewards_or_costs_opened": 0,
+  "fresh_or_sealed_payloads_opened": 0,
+  "boundary": "Python builtins.open and io.open path guard during complete actor rebuild",
+  "limitation": "Application-level access audit; no claim of OS-wide process confinement",
+  "file_access_attempts": 33,
+  "unique_access_paths": 20,
+  "checks": [
+    "same-action structural zero",
+    "reward-free actor artifact schema",
+    "three-seed member execution union",
+    "two distinct combinations: six aggregator calls",
+    "raw-repeat/mean Ridge equivalence retained from freeze receipt"
+  ],
+  "wall_seconds": 1.9043124000017997
+}

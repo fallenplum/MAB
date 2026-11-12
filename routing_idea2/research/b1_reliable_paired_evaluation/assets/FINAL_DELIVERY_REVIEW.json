@@ -1,0 +1,116 @@
+{
+  "schema": "B1_independent_final_delivery_review_v1",
+  "status": "PASS",
+  "reviewed_at_utc": "2026-11-12T19:22:55.281242+00:00",
+  "completed_result_counts": {
+    "real_cells": 27,
+    "real_sampling_repetitions_per_cell": 2000,
+    "synthetic_settings": 36,
+    "synthetic_methods_per_setting": 6,
+    "synthetic_repetitions": 2000,
+    "synthetic_method_estimates": 432000,
+    "supplements": 2,
+    "supplement_repetitions": 2000,
+    "new_physical_LLM_calls": 0
+  },
+  "all_index_reference_hashes_match": true,
+  "checked_index_references": [
+    "B1_PROTOCOL.json",
+    "REAL_FIXED_POOL_RESULTS.json",
+    "SUPPLEMENTARY_FINITE_POOL_RESULTS.json",
+    "inference/SYNTHETIC_PROTOCOL.json",
+    "inference/SYNTHETIC_COMPLETE_RESULTS.json",
+    "NATIVE_REFERENCE_RESULTS.json",
+    "PUBLIC_METHOD_RESULTS.json",
+    "UPSTREAM_SOURCE_MANIFEST.json",
+    "EQUAL_RMSE_COST_DIAGNOSTIC.json",
+    "assets/ASSET_FREEZE_PUBLIC.json",
+    "assets/AUXILIARY_DIAGNOSTICS.json",
+    "assets/ROOT_PIPELINE_REVIEW.json",
+    "assets/SYNTHETIC_REVIEW.json",
+    "inference/INFERENCE_QUALIFICATION.json",
+    "SOURCE_AND_REPRODUCTION_CORRECTIONS.json"
+  ],
+  "main_metric_table_matches_frozen_JSON": true,
+  "scientific_conclusion": "T1 real-pool efficiency unsupported; negative result preserved",
+  "native_scope": {
+    "ASI": "20 budgets x 1000 author AlphaFold repeats",
+    "Robust_ASI": "native operator qualified; registered Pew data unavailable, full original experiment partial",
+    "Active_Testing": "100 original standard-example repeats, explicitly reduced from 5000",
+    "Fixed_Size": "requested full repository 404; author CPS package example 2000 draws and 17 tests",
+    "LTT": "valid native bounded iid operator check, not a sampling baseline"
+  },
+  "supplement": {
+    "fixedsize_trials": 2000,
+    "LURE_trials": 2000,
+    "full_pool_denominator": 200,
+    "active_pool": 184,
+    "fixed_active_samples": 45,
+    "fixedsize_inference": "actual first/second inclusion probabilities, asymptotic normal SYG",
+    "LURE_inference": "separate fixed-time weighted-PURE martingale bound"
+  },
+  "source_and_reproduction": {
+    "public_python_files_parse": 21,
+    "guarded_verify": {
+      "status": "PASS",
+      "frozen_source_hashes": {
+        "public\\assets\\diagnose_auxiliaries.py": true,
+        "public\\assets\\freeze_assets.py": true,
+        "public\\assets\\verify_frozen_assets.py": true,
+        "public\\inference\\b1_inference.py": true,
+        "public\\main\\b1_design.py": true,
+        "public\\main\\run_b1.py": true,
+        "public\\methods\\public_methods.py": true
+      },
+      "design_cells": 27,
+      "protocol_sha256": "bf2b537cd335d116271dce0d4f27ab1671d1a18fddd64ef2094a90825c3e4c0e",
+      "design_summary_sha256": "7679c35f4a2aa2d48cb0be171453056e276d918da22d0c3024758c6a7ca83ac5",
+      "validation_is_original_V2": true,
+      "source_and_probability_hashes_preserved": true,
+      "same_actions_are_structural_zeros": true,
+      "fresh400_and_sealed200_outcomes_opened": false
+    },
+    "safe_cli_help_checks": [
+      {
+        "script": "inference/qualify_inference.py",
+        "help_exit_code": 0
+      },
+      {
+        "script": "inference/run_synthetic.py",
+        "help_exit_code": 0
+      },
+      {
+        "script": "main/run_supplements.py",
+        "help_exit_code": 0
+      }
+    ],
+    "main_27_cell_nonoverwriting_replay": "previous independent replay preserved; current verify re-executed"
+  },
+  "supplement_nonoverwriting_replay": {
+    "status": "PASS",
+    "audit": {
+      "status": "PASS",
+      "original_outputs_overwritten": false,
+      "both_supplements_reproduced": true,
+      "numerical_metrics_and_resource_summaries_identical": true
+    },
+    "audit_sha256": "bf70fda2f156e5f3c7d22ae6983553d84d443e53da0f173257e27e61f9e053e6",
+    "entry_source_sha256": "486bac5c2611a90ac1a1ca3d06b3bba55b41e9997165f0bb771e9909413fdc05",
+    "explicit_new_output_parameter": true,
+    "default_UTC_output_directory": true,
+    "rejects_existing_or_original_output": true,
+    "previous_copy_only_reproduction_risk_resolved": true
+  },
+  "public_content_scan": {
+    "status": "PASS",
+    "private_identifiers_checked": 1000,
+    "actual_private_identity_hits": 0,
+    "prohibited_data_or_weight_binary_files": 0,
+    "high_confidence_credential_hits": 0,
+    "scope": "exact known question IDs/canonical hashes, binary artifact extensions, credential patterns and source syntax"
+  },
+  "findings": [],
+  "real_validation_rewards_or_fresh_or_sealed_payloads_opened_by_final_review": 0,
+  "files_or_results_modified_by_review": [],
+  "wall_seconds": 6.716256400002749
+}

@@ -1,0 +1,173 @@
+{
+  "schema": "B1_actor_auxiliary_freeze_v1",
+  "status": "FROZEN_BEFORE_VALIDATION_OUTCOMES",
+  "frozen_at_utc": "2026-11-12T18:55:57.808876+00:00",
+  "new_llm_calls": 0,
+  "validation_reward_payloads_opened": 0,
+  "fresh400_reward_payloads_opened": 0,
+  "sealed200_reward_payloads_opened": 0,
+  "validation_actual_costs_opened": 0,
+  "questions": 200,
+  "train_questions": 600,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "router": {
+    "name": "direct20__pca16__a100",
+    "restored": true,
+    "source_sha256": "ecc0ea4589cfc1187b9a901224b50f7e2f8599e558ecbc2eaab827e99e68617d",
+    "weights_train_questions": 600,
+    "raw_alpha": 100.0,
+    "mean_alpha": 33.333333333333336,
+    "components": 16,
+    "constant_penalized": true,
+    "task_or_subtask_routing_input": false,
+    "tie_rule": "numpy exact argmax, first lexicographic combination",
+    "restored_vs_independent_closed_form_error": 2.886579864025407e-15,
+    "raw_repeat_vs_mean_objective_error": 2.220446049250313e-15
+  },
+  "default": {
+    "action": 5,
+    "members": [
+      0,
+      2,
+      4
+    ],
+    "source": "all train600, three-repeat mean then global argmax"
+  },
+  "active_questions": 184,
+  "structural_zero_questions": 16,
+  "auxiliary": {
+    "model": "Ridge",
+    "alpha": 100.0,
+    "tuning": false,
+    "fit_intercept": true,
+    "targets": [
+      "question-mean paired residual squared",
+      "question-mean paired reward squared"
+    ],
+    "training_rows": "active disagreements in question-grouped five-fold OOF train600",
+    "input_dimension": 458,
+    "task_or_subtask_features": false,
+    "standardization": "auxiliary fitting rows only",
+    "residual_floor": 1e-06,
+    "residual_cap": 4.0,
+    "raw_moment_cap": 1.0,
+    "nested_diagnostic": {
+      "questions": 600,
+      "action_disagreements": 549,
+      "residual_second_moment": 0.04655658204805554,
+      "raw_second_moment": 0.04654928152195912,
+      "nested_residual_moment_MSE": 0.019778765833424052,
+      "nested_raw_moment_MSE": 0.019574523274176123,
+      "nested_folds": [
+        {
+          "fold": 0,
+          "historical_questions": 480,
+          "held_questions": 120,
+          "inner_splits": 5,
+          "inner_seed": 20261113,
+          "held_out_fitting_or_feedback_access": false
+        },
+        {
+          "fold": 1,
+          "historical_questions": 480,
+          "held_questions": 120,
+          "inner_splits": 5,
+          "inner_seed": 20261114,
+          "held_out_fitting_or_feedback_access": false
+        },
+        {
+          "fold": 2,
+          "historical_questions": 480,
+          "held_questions": 120,
+          "inner_splits": 5,
+          "inner_seed": 20261115,
+          "held_out_fitting_or_feedback_access": false
+        },
+        {
+          "fold": 3,
+          "historical_questions": 480,
+          "held_questions": 120,
+          "inner_splits": 5,
+          "inner_seed": 20261116,
+          "held_out_fitting_or_feedback_access": false
+        },
+        {
+          "fold": 4,
+          "historical_questions": 480,
+          "held_questions": 120,
+          "inner_splits": 5,
+          "inner_seed": 20261117,
+          "held_out_fitting_or_feedback_access": false
+        }
+      ],
+      "in_sample_uncertainty_is_not_a_calibrated_true_error_bound": true
+    }
+  },
+  "cost_model": {
+    "source": "train600 only, average each member/combo over question and generation repeats",
+    "final_cost_unit": "prompt plus completion tokens",
+    "distinct_pair_member_calls": "3 times union of members",
+    "distinct_pair_aggregate_calls": 6,
+    "scoring_ops": 6,
+    "gold_reveals": 1,
+    "structural_zero_evaluation_cost": 0,
+    "validation_output_lengths_or_correctness_used": false,
+    "projected_total_tokens": 2172747.52,
+    "projected_total_member_calls": 2511,
+    "projected_total_aggregate_calls": 1104
+  },
+  "sources": {
+    "research\\conditional_gain_20261106\\repo\\routing_idea2\\research\\conditional_gain_20261106\\code\\common.py": "06bf330f603f9ec6019bf57aab2df9cbf866deb630e054ec0817b1704cec5db6",
+    "research\\conditional_gain_20261106\\repo\\routing_idea2\\research\\conditional_gain_20261106\\code\\run_cpu_ablation.py": "4326500423d7f43610b9c3d5b4297bfc372265e49b2293580f1035226577f02a",
+    "research\\conditional_gain_20261106\\repo\\routing_idea2\\research\\conditional_gain_20261106\\TRAIN_ONLY_STRUCTURE_FEATURE_SELECTION.json": "0a83e1a59ef33e9d485c40e9e5c764767bb73d0f84fb6013b69bb579b13a0759"
+  },
+  "files_sha256": {
+    "FROZEN_INPUTS.npz": "3b438dc0513b71784431c51a39424573a579aeeb41cd21244f53dbf47268ef8c",
+    "FROZEN_MODEL.npz": "3881694be37e4516edbeabc8b9a92b57e6f1319d489e79a8e781cfc1ba4220d9",
+    "TRAIN_OOF.npz": "8b441fbf692ad7b0cbeccead9049be21650041cf44f0f2f7e0e0bc8abde9e7a7"
+  },
+  "script_sha256": "8fc8fa6174ff0b9c3f5965ca70f370ab8f6bc8645076c708af9f40729ce885c8",
+  "wall_seconds": 2.065617600004771,
+  "data_lineage": {
+    "bundle_sha256": "15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db",
+    "partition_sha256": "bac53356f37eadcfd281b64ae574eeeb762848ee99537cedfafd35f6c9aee4b6",
+    "role_summary": {
+      "aggregator_calibration": {
+        "count": 100,
+        "old_split": "e1_selection_calibration",
+        "validation_id_overlap": 0
+      },
+      "selector_train": {
+        "count": 600,
+        "old_split": "online_stream",
+        "validation_id_overlap": 0
+      },
+      "selector_validation": {
+        "count": 200,
+        "old_split": "online_calibration",
+        "validation_id_overlap": 200
+      },
+      "repeated_development_diagnostics": {
+        "count": 200,
+        "old_split": "e1_diagnostic_evaluation",
+        "validation_id_overlap": 0
+      },
+      "technical_qualification": {
+        "count": 8,
+        "old_split": "qualification",
+        "validation_id_overlap": 0
+      }
+    },
+    "validation_is_earlier_aggregator200": false,
+    "validation_is_new_independent_test": false,
+    "train_validation_ID_and_canonical_disjoint": true,
+    "train_input_sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+    "train_outcome_sha256": "a01230f2bed3e7f9d05713bf9e3e4f1cf44987b41c460f91e1d83bc1c29f191e",
+    "validation_input_sha256": "99702ec2e09fbe7ce3615268cb43abd5ae8982c6ab0a8f03c11c9a7fe03cdaff",
+    "validation_outcome_sha256_expected": "30fa060eda4da084ba85d7084d1f7b7a7a4eb933e58923247cc450d4195897da"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "design_frozen_before_outcomes": true,
+  "probabilities_not_retrained_after_reveal": true,
+  "designs": 27,
+  "trials_per_design": 2000,
+  "private_purchase_matrices": true,
+  "question_cluster_repeats": 3,
+  "independent_truth_process_access_logged": true,
+  "fresh400_or_sealed200_opened": false,
+  "expected_budgets_not_hard_caps": true,
+  "cache_reuse_identical_for_all_methods": true
+}

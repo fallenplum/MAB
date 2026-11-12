@@ -1,0 +1,131 @@
+{
+  "ASI_AlphaFold": {
+    "status": "AUTHOR_EXAMPLE_EXECUTED",
+    "author_data": true,
+    "N": 10802,
+    "budgets": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.060000000000000005,
+      0.06999999999999999,
+      0.08,
+      0.09,
+      0.09999999999999999,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.15000000000000002,
+      0.16,
+      0.17,
+      0.18000000000000002,
+      0.19,
+      0.2
+    ],
+    "num_trials": 1000,
+    "alpha": 0.1,
+    "truth_odds_ratio": 2.1308747140812856,
+    "original_cells_executed": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "changes": [
+      "global random seed fixed to 20261113",
+      "data retrieved through author ppi_py dataset ID",
+      "plotting skipped"
+    ],
+    "inference_scope": "author native asymptotic population delta-method CI",
+    "wall_time_s": 41.89692030000151,
+    "main_budget_rows": [
+      {
+        "estimator": "active",
+        "$n_b$": 2160.0,
+        "coverage": 0.97,
+        "width": 0.5697630421251235
+      },
+      {
+        "estimator": "classical",
+        "$n_b$": 2160.0,
+        "coverage": 0.927,
+        "width": 0.9309169747910182
+      },
+      {
+        "estimator": "uniform",
+        "$n_b$": 2160.0,
+        "coverage": 0.973,
+        "width": 0.6112351486940583
+      }
+    ]
+  },
+  "RobustASI_operator": {
+    "status": "NATIVE_OPERATOR_CONTROL_ONLY",
+    "author_data": false,
+    "author_class": "utils_optimization.py::MinMaxOptimizer_l2",
+    "rho": 0.5252525252525253,
+    "objective": 0.7128250017305757,
+    "cleanroom_max_absolute_error": 0.0,
+    "wall_time_s": 0.01436939999985043,
+    "original_benchmark_status": "Pew source .sav absent from author repo. Native full data benchmark remains unreplicated."
+  },
+  "FixedSize_author_package": {
+    "status": "AUTHOR_CPS_PACKAGE_REFERENCE_EXECUTED",
+    "N": 200,
+    "n": 20,
+    "draws": 2000,
+    "target_to_actual_pi_max_error": 3.193723774330692e-08,
+    "actual_pi_to_piij_diagonal_max_error": 4.440892098500626e-16,
+    "fixedsize_identity_error": 8.43769498715119e-15,
+    "bias": 0.0014381416351404164,
+    "mse": 0.05972792180602841,
+    "exact_design_variance": 0.06373357791154449,
+    "mean_SYG_variance": 0.06223705616685092,
+    "wall_time_s": 3.084018299996387
+  },
+  "ActiveTesting_author_quadratic": {
+    "status": "AUTHOR_STANDARD_SYNTHETIC_EXAMPLE_EXECUTED_REDUCED_REPEATS",
+    "author_data": true,
+    "author_config": "conf/paper/SyntheticQuadraticLinear.yaml",
+    "N": 50,
+    "historical": 5,
+    "pool": 45,
+    "runs": 100,
+    "author_runs": 5000,
+    "acquisitions": [
+      "RandomAcquisition",
+      "DistanceBasedAcquisition",
+      "GPSurrogateAcquisitionMSE"
+    ],
+    "changes": [
+      "100 repeated author examples instead of 5000",
+      "pure AST-loaded unchanged author classes avoid optional image/torch imports",
+      "NumPy np.int compatibility alias",
+      "GPU efficient wrapper disabled for sklearn prediction equivalence"
+    ],
+    "wall_time_s": 7.322518000000855,
+    "labels10": [
+      {
+        "strategy": "DistanceBasedAcquisition",
+        "labels": 10,
+        "squared_error": 4.9468758097926965e-05,
+        "biased_squared_error": 5.6474662658869687e-05
+      },
+      {
+        "strategy": "GPSurrogateAcquisitionMSE",
+        "labels": 10,
+        "squared_error": 6.638224979737862e-07,
+        "biased_squared_error": 0.0011080601452532046
+      },
+      {
+        "strategy": "RandomAcquisition",
+        "labels": 10,
+        "squared_error": 5.940306343868036e-05,
+        "biased_squared_error": 5.940306343868035e-05
+      }
+    ]
+  }
+}

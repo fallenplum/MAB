@@ -1,0 +1,542 @@
+{
+  "schema": "B1_independent_root_pipeline_review_v1",
+  "status": "PASS_WITH_REPRODUCIBILITY_GUARD_GAPS",
+  "reviewed_source_hashes": {
+    "D:\\develop\\CV\\多臂老虎机\\.b1_staging\\main\\run_b1.py": "422599c30e72a52a09b736c0246e7736671aa227bfb941019792e5a593eb1dbf",
+    "D:\\develop\\CV\\多臂老虎机\\.b1_staging\\main\\b1_design.py": "00ab0c532805f936fe9c783c5b5da8564df3673a47141224556dec9db4ce7f5e",
+    "D:\\develop\\CV\\多臂老虎机\\.b1_staging\\inference\\b1_inference.py": "238f0c58035f5d435ac56caf87f5cd07f662b6cb5fe5b9bd343e42ff010ce5f1"
+  },
+  "current_public_code_drift_from_prefreeze": [],
+  "freeze_integrity": {
+    "protocol_hash_matches_receipt": true,
+    "probability_hash_matches_receipt": true,
+    "protocol_sha256": "bf2b537cd335d116271dce0d4f27ab1671d1a18fddd64ef2094a90825c3e4c0e",
+    "probability_sha256": "1d28cb147b2825daa7dd99d4ef39f534b00403f68ba939fb08eed9711f90b77b",
+    "current_design_summary_sha256": "7679c35f4a2aa2d48cb0be171453056e276d918da22d0c3024758c6a7ca83ac5",
+    "design_summary_has_prefreeze_hash": false,
+    "summary_vs_frozen_array_cells": [
+      {
+        "cell": "primary__U0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__U1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__A1_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__A2_Robust_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__T0_RawMoment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__T1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__T1_no_execution_constraint",
+        "status": "PASS",
+        "execution_constraint_removed": true
+      },
+      {
+        "cell": "primary__T1_m0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "primary__T1_permuted_moment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__U0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__U1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__A1_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__A2_Robust_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__T0_RawMoment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__T1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__T1_no_execution_constraint",
+        "status": "PASS",
+        "execution_constraint_removed": true
+      },
+      {
+        "cell": "execution_tight__T1_m0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "execution_tight__T1_permuted_moment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__U0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__U1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__A1_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__A2_Robust_ASI",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__T0_RawMoment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__T1",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__T1_no_execution_constraint",
+        "status": "PASS",
+        "execution_constraint_removed": true
+      },
+      {
+        "cell": "answer_tight__T1_m0",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      },
+      {
+        "cell": "answer_tight__T1_permuted_moment",
+        "status": "PASS",
+        "execution_constraint_removed": false
+      }
+    ],
+    "shared_inputs_and_pmin_checks": "PASS"
+  },
+  "qualification": {
+    "optimizer": {
+      "status": "PASS",
+      "cases": [
+        {
+          "setting": 0,
+          "independent_success": true,
+          "objective_difference": 6.838973831690964e-13,
+          "objective": 7.131332592008432,
+          "dual_lower_bound": 7.131332592008434,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 2.3771108640028102,
+          "lambda_execution": 0.0,
+          "expected_answers": 3.0,
+          "expected_execution": 5.828126964562751,
+          "answer_budget": 3.0,
+          "execution_budget": 6.490140169569374,
+          "answer_binding": true,
+          "execution_binding": false,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 2.1633800565231245
+        },
+        {
+          "setting": 1,
+          "independent_success": true,
+          "objective_difference": 2.312816604899126e-12,
+          "objective": 8.473224973832986,
+          "dual_lower_bound": 8.473224973832988,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 0.0,
+          "lambda_execution": 1.4552010749400017,
+          "expected_answers": 3.530683356890376,
+          "expected_execution": 5.822717643458544,
+          "answer_budget": 6.0,
+          "execution_budget": 5.822717643458543,
+          "answer_binding": false,
+          "execution_binding": true,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 1.9409058811528477
+        },
+        {
+          "setting": 2,
+          "independent_success": true,
+          "objective_difference": 3.9674930008004594e-12,
+          "objective": 7.180826379897722,
+          "dual_lower_bound": 7.180826379897721,
+          "relative_primal_dual_gap": 1.2368749398906588e-16,
+          "lambda_answer": 2.393608793299241,
+          "lambda_execution": 0.0,
+          "expected_answers": 2.9999999999999996,
+          "expected_execution": 6.782511361242745,
+          "answer_budget": 3.0,
+          "execution_budget": 14.130551103263366,
+          "answer_binding": true,
+          "execution_binding": false,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 2.3550918505438942
+        },
+        {
+          "setting": 3,
+          "independent_success": true,
+          "objective_difference": 0.0,
+          "objective": 2.5189443195254078,
+          "dual_lower_bound": 2.5189443195254078,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 0.0,
+          "lambda_execution": 0.0,
+          "expected_answers": 12.0,
+          "expected_execution": 24.0697300186117,
+          "answer_budget": 12.0,
+          "execution_budget": 24.0697300186117,
+          "answer_binding": true,
+          "execution_binding": true,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 12,
+          "cost_normalization": 2.0058108348843082
+        },
+        {
+          "setting": 4,
+          "independent_success": true,
+          "objective_difference": 8.348877145181177e-13,
+          "objective": 7.778299872799254,
+          "dual_lower_bound": 7.778299872799256,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 2.5927666242664174,
+          "lambda_execution": 0.0,
+          "expected_answers": 3.0,
+          "expected_execution": 4.896616873135574,
+          "answer_budget": 3.0,
+          "execution_budget": 5.12705425685189,
+          "answer_binding": true,
+          "execution_binding": false,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 1.7090180856172967
+        },
+        {
+          "setting": 5,
+          "independent_success": true,
+          "objective_difference": 3.9968028886505635e-13,
+          "objective": 6.554167643296284,
+          "dual_lower_bound": 6.554167643296287,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 0.0,
+          "lambda_execution": 1.0955655799487956,
+          "expected_answers": 3.381339126502158,
+          "expected_execution": 5.982451222685011,
+          "answer_budget": 6.0,
+          "execution_budget": 5.982451222685009,
+          "answer_binding": false,
+          "execution_binding": true,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 1.9941504075616698
+        },
+        {
+          "setting": 6,
+          "independent_success": true,
+          "objective_difference": 2.2595258997171186e-12,
+          "objective": 7.752161035563195,
+          "dual_lower_bound": 7.752161035563195,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 2.584053678521065,
+          "lambda_execution": 0.0,
+          "expected_answers": 3.0,
+          "expected_execution": 7.020232421713061,
+          "answer_budget": 3.0,
+          "execution_budget": 14.70988757099105,
+          "answer_binding": true,
+          "execution_binding": false,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 0,
+          "cost_normalization": 2.451647928498508
+        },
+        {
+          "setting": 7,
+          "independent_success": true,
+          "objective_difference": 0.0,
+          "objective": 2.5713033953991205,
+          "dual_lower_bound": 2.5713033953991205,
+          "relative_primal_dual_gap": 0.0,
+          "lambda_answer": 0.0,
+          "lambda_execution": 0.0,
+          "expected_answers": 12.0,
+          "expected_execution": 16.98286057819807,
+          "answer_budget": 12.0,
+          "execution_budget": 16.982860578198068,
+          "answer_binding": true,
+          "execution_binding": true,
+          "pmin": 0.05,
+          "floor_count": 0,
+          "ceiling_count": 12,
+          "cost_normalization": 1.4152383815165057
+        }
+      ],
+      "numerical_tolerance": 2e-06
+    },
+    "estimator": {
+      "target": 0.33333333333333337,
+      "expected_estimate": 0.3333333333333333,
+      "exact_design_variance": 0.09280200702075704,
+      "analytic_variance": 0.09280200702075704,
+      "expected_variance_estimate": 0.09280200702075703,
+      "finite_95_coverage": 1.0,
+      "enumerated_patterns": [
+        {
+          "purchased": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "probability": 0.11374999999999999,
+          "estimate": 0.0625,
+          "variance_estimate": 0.0,
+          "covered": true
+        },
+        {
+          "purchased": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "probability": 0.11374999999999999,
+          "estimate": 0.3208333333333333,
+          "variance_estimate": 0.03336805555555555,
+          "covered": true
+        },
+        {
+          "purchased": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "probability": 0.21125000000000002,
+          "estimate": -0.02724358974358973,
+          "variance_estimate": 0.0028188691650230103,
+          "covered": true
+        },
+        {
+          "purchased": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "probability": 0.21125000000000002,
+          "estimate": 0.23108974358974357,
+          "variance_estimate": 0.03618692472057856,
+          "covered": true
+        },
+        {
+          "purchased": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "probability": 0.06124999999999999,
+          "estimate": 0.6339285714285715,
+          "variance_estimate": 0.21224489795918375,
+          "covered": true
+        },
+        {
+          "purchased": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "probability": 0.06124999999999999,
+          "estimate": 0.8922619047619048,
+          "variance_estimate": 0.2456129535147393,
+          "covered": true
+        },
+        {
+          "purchased": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "probability": 0.11374999999999999,
+          "estimate": 0.5441849816849818,
+          "variance_estimate": 0.21506376712420675,
+          "covered": true
+        },
+        {
+          "purchased": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "probability": 0.11374999999999999,
+          "estimate": 0.802518315018315,
+          "variance_estimate": 0.2484318226797623,
+          "covered": true
+        }
+      ],
+      "zero_observation_result": {
+        "target": "fixed_pool_and_fixed_three_generation_repetitions",
+        "estimate": 0.0625,
+        "variance_estimate": 0.0,
+        "purchased_questions": 0,
+        "population_denominator": 4,
+        "intervals": {
+          "finite_bernstein_lower": -0.75,
+          "finite_bernstein_upper": 0.75,
+          "finite_bernstein_one_lower": -0.75,
+          "finite_bernstein_one_upper": 0.75,
+          "asymptotic_wald_lower": -0.75,
+          "asymptotic_wald_upper": 0.75,
+          "asymptotic_wald_one_lower": -0.75,
+          "asymptotic_wald_one_upper": 0.75,
+          "feasible_lower": -0.75,
+          "feasible_upper": 0.75,
+          "variance_upper": 0.29052026098901096,
+          "no_observations": 1.0
+        },
+        "assumptions": [
+          "Fixed finite question pool and fixed auxiliaries/probabilities",
+          "Independent Bernoulli inclusion of original question clusters",
+          "Unpurchased outcomes are inaccessible to the design",
+          "p=0 only for externally known structural zero gains",
+          "All statements concern a single prespecified evaluation time"
+        ]
+      },
+      "all_structural_result": {
+        "target": "fixed_pool_and_fixed_three_generation_repetitions",
+        "estimate": 0.0,
+        "variance_estimate": 0.0,
+        "purchased_questions": 0,
+        "population_denominator": 3,
+        "intervals": {
+          "finite_bernstein_lower": 0.0,
+          "finite_bernstein_upper": 0.0,
+          "finite_bernstein_one_lower": 0.0,
+          "finite_bernstein_one_upper": 0.0,
+          "asymptotic_wald_lower": 0.0,
+          "asymptotic_wald_upper": 0.0,
+          "asymptotic_wald_one_lower": 0.0,
+          "asymptotic_wald_one_upper": 0.0,
+          "feasible_lower": 0.0,
+          "feasible_upper": 0.0,
+          "variance_upper": 0.0,
+          "no_observations": 1.0
+        },
+        "assumptions": [
+          "Fixed finite question pool and fixed auxiliaries/probabilities",
+          "Independent Bernoulli inclusion of original question clusters",
+          "Unpurchased outcomes are inaccessible to the design",
+          "p=0 only for externally known structural zero gains",
+          "All statements concern a single prespecified evaluation time"
+        ]
+      }
+    }
+  },
+  "oracle_index_qualification": {
+    "status": "PASS",
+    "synthetic_question_clusters": 200,
+    "repeats_per_cluster": 3,
+    "costs_checked_against_explicit_loops": true,
+    "reward_gather_and_mean_checked": true,
+    "no_reuse_counterfactual_checked": true,
+    "structural_zero_cost_checked": true,
+    "maximum_cost_error": 7.105427357601002e-15,
+    "real_validation_outcome_payloads_opened_by_review": 0
+  },
+  "freeze_order": {
+    "design_frozen_at_utc": "2026-11-12T19:01:00.358806+00:00",
+    "evaluator_access_at_utc": "2026-11-12T19:01:15.752921+00:00",
+    "chronological_order": "PASS"
+  },
+  "inferential_review": {
+    "status": "VALID_UNDER_STATED_ASSUMPTIONS",
+    "finite_pool": "N=200 retained; three generation repeats averaged per question before sampling",
+    "fixed_pool_variance": "sum((1-p)/p * (d-m)^2)/N^2, with unbiased HT Vhat",
+    "variance_upper": "Independent nonnegative bounded variance-contribution sum, lower-tail Chernoff inversion",
+    "two_sided_error_allocation": "alpha/2 for variance upper failure plus alpha/4 for each tail",
+    "one_sided_error_allocation": "alpha/2 for variance upper failure plus alpha/2 for chosen tail",
+    "population": "iid original-question q contributions; E[q^2] upper-bounds Var(q); requires global support bound on |q|",
+    "separation": "Fixed-pool design coverage and iid-population coverage use distinct functions and variance expressions",
+    "dependence": "Random variance bound requires no extra independence from sample mean because monotonicity and a union bound suffice"
+  },
+  "literal_target_review": {
+    "status": "PASS",
+    "manuscript_file": "E5 private REFERENCE_MANUSCRIPT.pdf",
+    "manuscript_page_22_eq79": "D=(1/L) sum_r D_r",
+    "manuscript_page_22_eq80": "a_h=E[D^2|H=h]",
+    "manuscript_page_4_eq14": "L>1 is a cluster second moment",
+    "E5_implementation": "run_allocation_synthetic true_moments=(rho-mu^2)/L+mu^2; pilot squares dbar",
+    "B1_T0_current_target": "d_i^2, matching the three-repeat cluster observation",
+    "mean_single_repeat_squared": "Different disagreement-like target; not required for T0"
+  },
+  "findings": [
+    {
+      "severity": "LOW",
+      "function": "prepare",
+      "issue": "Existing freeze protocol and designs can be overwritten by invoking prepare again",
+      "observed_impact": "No impact identified in reviewed completed run; timestamps show initial design preceded evaluator access",
+      "remedy": "Use immutable run IDs or refuse overwrite after design/evaluator receipts exist"
+    },
+    {
+      "severity": "LOW",
+      "function": "evaluator_truth/evaluate",
+      "issue": "Evaluate validates protocol and probability bytes but does not enforce saved source code hashes or hash DESIGN_SUMMARY",
+      "observed_impact": "Current source drift list reported separately; statistical design probabilities themselves are hash-checked",
+      "remedy": "Validate saved code hashes and include DESIGN_SUMMARY in freeze manifest before independent replay"
+    }
+  ],
+  "new_real_LLM_calls": 0,
+  "new_model_optimization": false,
+  "wall_seconds": 1.1643908999976702
+}

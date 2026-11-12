@@ -1,0 +1,49 @@
+{
+  "scope": "retrospective finite-pool evaluator-only expected-resource inversion",
+  "target": "primary U1 exact design RMSE",
+  "methods": {
+    "U0": {
+      "equal_RMSE_target": 0.027652832349002225,
+      "expected_joint_budget_fraction": 0.24223439919365408,
+      "expected_gold": 44.57112945163234,
+      "expected_predicted_tokens": 526314.1901067018,
+      "expected_cache_recorded_tokens": 523217.58181992173,
+      "exact_design_RMSE": 0.027652832349001445
+    },
+    "U1": {
+      "equal_RMSE_target": 0.027652832349002225,
+      "expected_joint_budget_fraction": 0.2500000000000032,
+      "expected_gold": 46.00000000000058,
+      "expected_predicted_tokens": 543186.8800000069,
+      "expected_cache_recorded_tokens": 539991.0000000069,
+      "exact_design_RMSE": 0.02765283234900199
+    },
+    "A1_ASI": {
+      "equal_RMSE_target": 0.027652832349002225,
+      "expected_joint_budget_fraction": 0.24504254858254088,
+      "expected_gold": 45.083185033373766,
+      "expected_predicted_tokens": 532415.5897271951,
+      "expected_cache_recorded_tokens": 529016.4055411019,
+      "exact_design_RMSE": 0.02765283234900154
+    },
+    "A2_Robust_ASI": {
+      "equal_RMSE_target": 0.027652832349002225,
+      "expected_joint_budget_fraction": 0.2366859905840815,
+      "expected_gold": 43.52808066340011,
+      "expected_predicted_tokens": 514258.8990603063,
+      "expected_cache_recorded_tokens": 509613.99231195875,
+      "exact_design_RMSE": 0.027652832349001004
+    },
+    "T1": {
+      "equal_RMSE_target": 0.027652832349002225,
+      "expected_joint_budget_fraction": 0.4603607790038641,
+      "expected_gold": 84.59773729240271,
+      "expected_predicted_tokens": 1000247.7408859136,
+      "expected_cache_recorded_tokens": 981084.4411115565,
+      "exact_design_RMSE": 0.027652832349001785
+    }
+  },
+  "probabilities_use_only_frozen_nuisances": true,
+  "target_matching_uses_privileged_pool_truth": true,
+  "operational_claim": "does not establish population cost-to-power or an online stopping procedure"
+}

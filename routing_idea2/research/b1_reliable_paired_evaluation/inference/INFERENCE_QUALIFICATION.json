@@ -1,0 +1,725 @@
+{
+  "status": "PASS",
+  "primary_enumeration": {
+    "target": 0.33333333333333337,
+    "expected_estimate": 0.3333333333333333,
+    "exact_design_variance": 0.09280200702075704,
+    "analytic_variance": 0.09280200702075704,
+    "expected_variance_estimate": 0.09280200702075703,
+    "finite_95_coverage": 1.0,
+    "enumerated_patterns": [
+      {
+        "purchased": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.11374999999999999,
+        "estimate": 0.0625,
+        "variance_estimate": 0.0,
+        "covered": true
+      },
+      {
+        "purchased": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.11374999999999999,
+        "estimate": 0.3208333333333333,
+        "variance_estimate": 0.03336805555555555,
+        "covered": true
+      },
+      {
+        "purchased": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.21125000000000002,
+        "estimate": -0.02724358974358973,
+        "variance_estimate": 0.0028188691650230103,
+        "covered": true
+      },
+      {
+        "purchased": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.21125000000000002,
+        "estimate": 0.23108974358974357,
+        "variance_estimate": 0.03618692472057856,
+        "covered": true
+      },
+      {
+        "purchased": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.06124999999999999,
+        "estimate": 0.6339285714285715,
+        "variance_estimate": 0.21224489795918375,
+        "covered": true
+      },
+      {
+        "purchased": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.06124999999999999,
+        "estimate": 0.8922619047619048,
+        "variance_estimate": 0.2456129535147393,
+        "covered": true
+      },
+      {
+        "purchased": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.11374999999999999,
+        "estimate": 0.5441849816849818,
+        "variance_estimate": 0.21506376712420675,
+        "covered": true
+      },
+      {
+        "purchased": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.11374999999999999,
+        "estimate": 0.802518315018315,
+        "variance_estimate": 0.2484318226797623,
+        "covered": true
+      }
+    ],
+    "zero_observation_result": {
+      "target": "fixed_pool_and_fixed_three_generation_repetitions",
+      "estimate": 0.0625,
+      "variance_estimate": 0.0,
+      "purchased_questions": 0,
+      "population_denominator": 4,
+      "intervals": {
+        "finite_bernstein_lower": -0.75,
+        "finite_bernstein_upper": 0.75,
+        "finite_bernstein_one_lower": -0.75,
+        "finite_bernstein_one_upper": 0.75,
+        "asymptotic_wald_lower": -0.75,
+        "asymptotic_wald_upper": 0.75,
+        "asymptotic_wald_one_lower": -0.75,
+        "asymptotic_wald_one_upper": 0.75,
+        "feasible_lower": -0.75,
+        "feasible_upper": 0.75,
+        "variance_upper": 0.29052026098901096,
+        "no_observations": 1.0
+      },
+      "assumptions": [
+        "Fixed finite question pool and fixed auxiliaries/probabilities",
+        "Independent Bernoulli inclusion of original question clusters",
+        "Unpurchased outcomes are inaccessible to the design",
+        "p=0 only for externally known structural zero gains",
+        "All statements concern a single prespecified evaluation time"
+      ]
+    },
+    "all_structural_result": {
+      "target": "fixed_pool_and_fixed_three_generation_repetitions",
+      "estimate": 0.0,
+      "variance_estimate": 0.0,
+      "purchased_questions": 0,
+      "population_denominator": 3,
+      "intervals": {
+        "finite_bernstein_lower": 0.0,
+        "finite_bernstein_upper": 0.0,
+        "finite_bernstein_one_lower": 0.0,
+        "finite_bernstein_one_upper": 0.0,
+        "asymptotic_wald_lower": 0.0,
+        "asymptotic_wald_upper": 0.0,
+        "asymptotic_wald_one_lower": 0.0,
+        "asymptotic_wald_one_upper": 0.0,
+        "feasible_lower": 0.0,
+        "feasible_upper": 0.0,
+        "variance_upper": 0.0,
+        "no_observations": 1.0
+      },
+      "assumptions": [
+        "Fixed finite question pool and fixed auxiliaries/probabilities",
+        "Independent Bernoulli inclusion of original question clusters",
+        "Unpurchased outcomes are inaccessible to the design",
+        "p=0 only for externally known structural zero gains",
+        "All statements concern a single prespecified evaluation time"
+      ]
+    }
+  },
+  "randomized_small_pool_exhaustive_checks": [
+    {
+      "trial": 0,
+      "target": 0.13333333333333336,
+      "bias": 0.0,
+      "variance_error": 0.0,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 1,
+      "target": 0.3333333333333333,
+      "bias": 0.0,
+      "variance_error": 1.3877787807814457e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 2,
+      "target": -0.4666666666666666,
+      "bias": -5.551115123125783e-17,
+      "variance_error": 4.163336342344337e-17,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 3,
+      "target": -0.0666666666666667,
+      "bias": 4.163336342344337e-17,
+      "variance_error": 1.3877787807814457e-17,
+      "exact_two_sided_coverage": 0.9999999999999998,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 4,
+      "target": 0.4666666666666666,
+      "bias": 1.1102230246251565e-16,
+      "variance_error": 3.3306690738754696e-16,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 5,
+      "target": -0.6,
+      "bias": 0.0,
+      "variance_error": 1.1102230246251565e-16,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 6,
+      "target": -0.2666666666666667,
+      "bias": 1.1102230246251565e-16,
+      "variance_error": -1.1102230246251565e-16,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 7,
+      "target": -0.06666666666666665,
+      "bias": 0.0,
+      "variance_error": -1.1102230246251565e-16,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 8,
+      "target": -0.26666666666666666,
+      "bias": 5.551115123125783e-17,
+      "variance_error": 2.7755575615628914e-17,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 9,
+      "target": -0.4,
+      "bias": 0.0,
+      "variance_error": -2.7755575615628914e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 10,
+      "target": -2.2204460492503132e-17,
+      "bias": 3.95516952522712e-17,
+      "variance_error": 2.7755575615628914e-17,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 11,
+      "target": -0.4,
+      "bias": 0.0,
+      "variance_error": 5.551115123125783e-17,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 12,
+      "target": 0.2,
+      "bias": -1.1102230246251565e-16,
+      "variance_error": 1.6653345369377348e-16,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 13,
+      "target": -0.5333333333333333,
+      "bias": 1.1102230246251565e-16,
+      "variance_error": -2.220446049250313e-16,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 14,
+      "target": -0.33333333333333337,
+      "bias": 5.551115123125783e-17,
+      "variance_error": 1.3877787807814457e-17,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 15,
+      "target": 0.13333333333333336,
+      "bias": 0.0,
+      "variance_error": 0.0,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 16,
+      "target": -0.4,
+      "bias": 5.551115123125783e-17,
+      "variance_error": 0.0,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 17,
+      "target": -0.2,
+      "bias": 8.326672684688674e-17,
+      "variance_error": -5.551115123125783e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 18,
+      "target": 0.13333333333333336,
+      "bias": -5.551115123125783e-17,
+      "variance_error": -6.938893903907228e-18,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 19,
+      "target": -0.2,
+      "bias": 8.326672684688674e-17,
+      "variance_error": -2.220446049250313e-16,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 20,
+      "target": -0.06666666666666667,
+      "bias": -1.3877787807814457e-17,
+      "variance_error": 0.0,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 21,
+      "target": -0.6,
+      "bias": 0.0,
+      "variance_error": -2.7755575615628914e-17,
+      "exact_two_sided_coverage": 0.9999999999999998,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 22,
+      "target": 0.06666666666666665,
+      "bias": 1.3877787807814457e-17,
+      "variance_error": -2.7755575615628914e-17,
+      "exact_two_sided_coverage": 0.9999999999999998,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 23,
+      "target": -0.4666666666666666,
+      "bias": -1.1102230246251565e-16,
+      "variance_error": 1.1102230246251565e-16,
+      "exact_two_sided_coverage": 0.9999999999999998,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 24,
+      "target": -0.06666666666666665,
+      "bias": -1.3877787807814457e-17,
+      "variance_error": 1.3877787807814457e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 25,
+      "target": -0.2,
+      "bias": 1.3877787807814457e-16,
+      "variance_error": 2.7755575615628914e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 26,
+      "target": -0.06666666666666667,
+      "bias": -1.3877787807814457e-17,
+      "variance_error": 5.551115123125783e-17,
+      "exact_two_sided_coverage": 0.9999999999999999,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 27,
+      "target": -0.5333333333333333,
+      "bias": -1.1102230246251565e-16,
+      "variance_error": 1.3877787807814457e-17,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 28,
+      "target": -0.2,
+      "bias": 2.7755575615628914e-17,
+      "variance_error": 0.0,
+      "exact_two_sided_coverage": 1.0,
+      "exact_one_sided_null_rejection": 0.0
+    },
+    {
+      "trial": 29,
+      "target": -0.06666666666666664,
+      "bias": 0.0,
+      "variance_error": -5.551115123125783e-17,
+      "exact_two_sided_coverage": 1.0000000000000002,
+      "exact_one_sided_null_rejection": 0.0
+    }
+  ],
+  "ltt_native_qualification": {
+    "upstream_repository": "aangelopoulos/ltt",
+    "upstream_commit": "3ad7a64adad9f356e29f40e73935a6114f896396",
+    "source_path": "core/bounds.py",
+    "source_sha256": "bba5934b8b88200f95139e4adfb578dd8f09d97a4966fad0eadaf0c03d039b5b",
+    "reproduction_scope": "Exact native HB operator plus legal synthetic iid bounded-loss example; full image experiments were not executed",
+    "comparisons": [
+      {
+        "n": 20,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.05,
+        "native_p": 0.1527640781565053,
+        "stable_operator_p": 0.1527640781565053
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.2,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.95,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.05,
+        "native_p": 5.0545393498238515e-05,
+        "stable_operator_p": 5.0545393498238515e-05
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.2,
+        "native_p": 0.01606223507798409,
+        "stable_operator_p": 0.01606223507798409
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.95,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.05,
+        "native_p": 4.312045897714089e-09,
+        "stable_operator_p": 4.312045897714089e-09
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.2,
+        "native_p": 1.5087152086088426e-05,
+        "stable_operator_p": 1.5087152086088426e-05
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.5,
+        "native_p": 0.13037395397420942,
+        "stable_operator_p": 0.13037395397420942
+      },
+      {
+        "n": 20,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.95,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.02,
+        "native_p": 0.0004800999421880922,
+        "stable_operator_p": 0.0004800999421880922
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.2,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.98,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.02,
+        "native_p": 1.195067710054696e-13,
+        "stable_operator_p": 1.195067710054696e-13
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.2,
+        "native_p": 3.243091214987937e-05,
+        "stable_operator_p": 3.243091214987937e-05
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.98,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.02,
+        "native_p": 2.2538853291264634e-24,
+        "stable_operator_p": 2.2538853291264634e-24
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.2,
+        "native_p": 1.0691711669525618e-12,
+        "stable_operator_p": 1.0691711669525618e-12
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.5,
+        "native_p": 0.006441098859552707,
+        "stable_operator_p": 0.006441098859552707
+      },
+      {
+        "n": 50,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.98,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.005,
+        "native_p": 5.625671053440052e-18,
+        "stable_operator_p": 5.625671053440052e-18
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.2,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.2,
+        "mean_loss": 0.995,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.005,
+        "native_p": 3.374720381947515e-58,
+        "stable_operator_p": 3.374720381947515e-58
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.2,
+        "native_p": 4.599354569447456e-18,
+        "stable_operator_p": 4.599354569447456e-18
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.5,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.5,
+        "mean_loss": 0.995,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.005,
+        "native_p": 3.3609701587648843e-102,
+        "stable_operator_p": 3.3609701587648843e-102
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.2,
+        "native_p": 8.671798566840415e-48,
+        "stable_operator_p": 8.671798566840415e-48
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.5,
+        "native_p": 7.056184837233272e-09,
+        "stable_operator_p": 7.056184837233272e-09
+      },
+      {
+        "n": 200,
+        "risk_threshold": 0.7,
+        "mean_loss": 0.995,
+        "native_p": 1.0,
+        "stable_operator_p": 1.0
+      }
+    ],
+    "exact_null_checks": [
+      {
+        "n": 20,
+        "iid_bernoulli_null_risk": 0.5,
+        "exact_false_approval_probability": 0.0059089660644531285
+      },
+      {
+        "n": 50,
+        "iid_bernoulli_null_risk": 0.5,
+        "exact_false_approval_probability": 0.016419568782134214
+      },
+      {
+        "n": 200,
+        "iid_bernoulli_null_risk": 0.5,
+        "exact_false_approval_probability": 0.014062703616463237
+      }
+    ],
+    "single_candidate_reference_examples": [
+      {
+        "true_gain": 0.0,
+        "n": 5000,
+        "mean_loss": 0.5032,
+        "native_hb_p": 1.0
+      },
+      {
+        "true_gain": -0.02,
+        "n": 5000,
+        "mean_loss": 0.5096,
+        "native_hb_p": 1.0
+      },
+      {
+        "true_gain": 0.01,
+        "n": 5000,
+        "mean_loss": 0.4832,
+        "native_hb_p": 0.024710155830454324
+      },
+      {
+        "true_gain": 0.03,
+        "n": 5000,
+        "mean_loss": 0.4906,
+        "native_hb_p": 0.2561043736227662
+      }
+    ],
+    "active_ipw_input_to_native_hb": false,
+    "optional_stopping_or_multiple_candidates": false
+  },
+  "population_exact_enumeration": {
+    "question_clusters": 3,
+    "atomic_states_per_question": 12,
+    "enumerated_joint_states": 1728,
+    "true_population_gain": 0.020000000000000018,
+    "expected_estimate": 0.019999999999999997,
+    "exact_variance": 0.3105253968253969,
+    "expected_population_variance_estimate": 0.31052539682539676,
+    "exact_finite_bernstein_coverage": 0.9999999999999997,
+    "generation_repeats": "Three identical copies within each iid cluster"
+  },
+  "interpretation": "Software and finite-case qualification; the general guarantee uses the stated analytic proof"
+}

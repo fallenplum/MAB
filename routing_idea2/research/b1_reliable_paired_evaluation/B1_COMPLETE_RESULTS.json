@@ -1,0 +1,103 @@
+{
+  "schema": "MAB_B1_study_index_v1",
+  "status": "COMPLETED_BOUNDED_STUDY_WITH_NATIVE_REPRODUCTION_LIMITS",
+  "scientific_decision": "T1_REAL_POOL_EFFICIENCY_NOT_SUPPORTED",
+  "finished_at_utc": "2026-11-12T19:21:46.021774+00:00",
+  "counts": {
+    "real_cells": 27,
+    "real_sampling_repetitions_per_cell": 2000,
+    "synthetic_settings": 36,
+    "synthetic_methods_per_setting": 6,
+    "synthetic_repetitions": 2000,
+    "synthetic_method_estimates": 432000,
+    "supplements": 2,
+    "supplement_repetitions": 2000,
+    "new_physical_LLM_calls": 0
+  },
+  "real_finite_pool_gain": 0.0033333333333333335,
+  "native_reproduction": {
+    "ASI": "author AlphaFold full budget grid executed",
+    "Robust_ASI": "PARTIAL_missing_registered_Pew_dataset",
+    "Active_Testing": "author standard example executed with 100 versus original 5000 repeats",
+    "Fixed_Size_ASI": "author CPS package executed; requested full experiment repo HTTP404",
+    "LTT": "native operator and valid iid bounded-loss example only"
+  },
+  "evaluation_scope": "old V2 development pool, plus known-truth synthetic populations",
+  "results": {
+    "B1_PROTOCOL.json": {
+      "path": "B1_PROTOCOL.json",
+      "sha256": "bf2b537cd335d116271dce0d4f27ab1671d1a18fddd64ef2094a90825c3e4c0e"
+    },
+    "REAL_FIXED_POOL_RESULTS.json": {
+      "path": "REAL_FIXED_POOL_RESULTS.json",
+      "sha256": "f4c4f57e09b3aa9a83f10ba92d9a323e33143cea830f5971a9cec1e90d82489b"
+    },
+    "SUPPLEMENTARY_FINITE_POOL_RESULTS.json": {
+      "path": "SUPPLEMENTARY_FINITE_POOL_RESULTS.json",
+      "sha256": "32568b74dd1d3851f1197753d0f03b4414885b2cd113a9fc9128dc7196a5d5b1"
+    },
+    "inference/SYNTHETIC_PROTOCOL.json": {
+      "path": "inference/SYNTHETIC_PROTOCOL.json",
+      "sha256": "e9629cdd2fbca791609f67a4f5617303636b4caba0d62f6a48e3a8158b77cbcd"
+    },
+    "inference/SYNTHETIC_COMPLETE_RESULTS.json": {
+      "path": "inference/SYNTHETIC_COMPLETE_RESULTS.json",
+      "sha256": "9c9299adc57ee09baf52a90acd53d0fba1390ea98cc785c3a4e4f291c9e961ea"
+    },
+    "NATIVE_REFERENCE_RESULTS.json": {
+      "path": "NATIVE_REFERENCE_RESULTS.json",
+      "sha256": "0e1e00dc06939a44c5caec52d5964ff59a0fe05bb627102b88e3e750edb8cd9c"
+    },
+    "PUBLIC_METHOD_RESULTS.json": {
+      "path": "PUBLIC_METHOD_RESULTS.json",
+      "sha256": "eeb5d0f5b80677e150b3fd3cae839ac29e8a2a526c607b3e96d10f4c6b8ca6ae"
+    },
+    "UPSTREAM_SOURCE_MANIFEST.json": {
+      "path": "UPSTREAM_SOURCE_MANIFEST.json",
+      "sha256": "7ff62d72311df54fd1c199ff4e4c646618f7ad6685c5decd26970972faea6317"
+    },
+    "EQUAL_RMSE_COST_DIAGNOSTIC.json": {
+      "path": "EQUAL_RMSE_COST_DIAGNOSTIC.json",
+      "sha256": "26795e658d0b5918cdbf2f95373c44d05ca722ac49ae77475c77a3fdd3524a4b"
+    },
+    "assets/ASSET_FREEZE_PUBLIC.json": {
+      "path": "assets/ASSET_FREEZE_PUBLIC.json",
+      "sha256": "d483d6795a4c656356c6fd62bf9b3ecd1fde19b77fcbef3ea13ece5fcf117dbd"
+    },
+    "assets/AUXILIARY_DIAGNOSTICS.json": {
+      "path": "assets/AUXILIARY_DIAGNOSTICS.json",
+      "sha256": "a661f9ede3bd2584aeba9ec21a52558e3f05616c258936380b58f6871a9bed48"
+    },
+    "assets/ROOT_PIPELINE_REVIEW.json": {
+      "path": "assets/ROOT_PIPELINE_REVIEW.json",
+      "sha256": "a09eec34b143382adeee4e439d90fba3dc4b6a7f146f2c1cd2ea1185fb11ba92"
+    },
+    "assets/SYNTHETIC_REVIEW.json": {
+      "path": "assets/SYNTHETIC_REVIEW.json",
+      "sha256": "09a087fe747d1f706d718ba17d011c48598233ff3658829e7b45aff8341ee728"
+    },
+    "inference/INFERENCE_QUALIFICATION.json": {
+      "path": "inference/INFERENCE_QUALIFICATION.json",
+      "sha256": "1fe73f8dd9e408edee1b569f53e46c765dc5cf7d5c6736fa0bdc98e9db5bc7e7"
+    },
+    "SOURCE_AND_REPRODUCTION_CORRECTIONS.json": {
+      "path": "SOURCE_AND_REPRODUCTION_CORRECTIONS.json",
+      "sha256": "e795ca7a1bdcd403e3e55e23a61de36d1dabd7d0576225516144914796543883"
+    }
+  },
+  "all_main_metrics_reproduced_exactly": true,
+  "router_weights_updated": false,
+  "fresh400_outcomes_accessed": false,
+  "sealed200_outcomes_accessed": false,
+  "next_stage": "STOP_FIRST_ROUND_NO_MULTI_CANDIDATE_EXPANSION",
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.7.2"
+  },
+  "artifact_roles": {
+    "public": "code, provenance, aggregated metrics and reports",
+    "private": "weights, question identities, true score matrices, purchased feedback, individual execution ledgers"
+  }
+}

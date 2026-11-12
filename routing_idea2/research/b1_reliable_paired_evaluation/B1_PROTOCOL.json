@@ -1,0 +1,115 @@
+{
+  "schema": "MAB_B1_frozen_paired_evaluation_v1",
+  "status": "LOCKED_BEFORE_VALIDATION_REWARD_ACCESS",
+  "frozen_at_utc": "2026-11-12T19:01:00.358806+00:00",
+  "base_branch": "codex/ces-traceable-baseline-20261112",
+  "base_commit": "a701eabf0720b834d584c3f47ccd8e82fdcb4440",
+  "branch": "codex/b1-reliable-paired-evaluation",
+  "target": "one frozen candidate minus one frozen global default, question-mean of three repeats",
+  "finite_pool": {
+    "role": "original V2 selector_validation",
+    "questions": 200,
+    "target": "unweighted fixed-pool mean across 200 original questions",
+    "repeats": [
+      42,
+      137,
+      2024
+    ],
+    "prior_development_use": true,
+    "new_independent_test": false,
+    "active_questions": 184,
+    "structural_zero_questions": 16
+  },
+  "router": {
+    "name": "direct20__pca16__a100",
+    "restored": true,
+    "source_sha256": "ecc0ea4589cfc1187b9a901224b50f7e2f8599e558ecbc2eaab827e99e68617d",
+    "weights_train_questions": 600,
+    "raw_alpha": 100.0,
+    "mean_alpha": 33.333333333333336,
+    "components": 16,
+    "constant_penalized": true,
+    "task_or_subtask_routing_input": false,
+    "tie_rule": "numpy exact argmax, first lexicographic combination",
+    "restored_vs_independent_closed_form_error": 2.886579864025407e-15,
+    "raw_repeat_vs_mean_objective_error": 2.220446049250313e-15
+  },
+  "default": {
+    "action": 5,
+    "members": [
+      0,
+      2,
+      4
+    ],
+    "source": "all train600, three-repeat mean then global argmax"
+  },
+  "auxiliary": "clipped original frozen direct20 score difference, zero on identical actions",
+  "nuisance": "fixed alpha100 Ridge on history-only OOF paired moments; nested history-only diagnostic",
+  "sampling": {
+    "design": "independent Bernoulli",
+    "pmin": 0.05,
+    "budgets": "expected answer and historical-predicted token constraints",
+    "trials": 2000,
+    "seed": 2026111305,
+    "common_random_numbers": true
+  },
+  "budgets": {
+    "primary": [
+      0.25,
+      0.25
+    ],
+    "execution_tight": [
+      0.5,
+      0.25
+    ],
+    "answer_tight": [
+      0.25,
+      0.5
+    ]
+  },
+  "methods": [
+    "U0",
+    "U1",
+    "A1_ASI",
+    "A2_Robust_ASI",
+    "T0_RawMoment",
+    "T1",
+    "T1_no_execution_constraint",
+    "T1_m0",
+    "T1_permuted_moment"
+  ],
+  "inference": {
+    "finite_primary": "independent-design variance upper confidence bound plus Bernstein",
+    "finite_secondary": "design-correct unbiased Vhat plus asymptotic Wald",
+    "population": "iid question-cluster experiments with known synthetic truth only",
+    "adoption": "single fixed-time one-sided alpha .05, thresholds 0 and .01",
+    "no_label": "deterministic feasible wide interval; no zero-SE narrow fallback"
+  },
+  "primary_comparisons": [
+    "T1 vs U1",
+    "T1 vs A1_ASI",
+    "T1 vs A2_Robust_ASI"
+  ],
+  "multiplicity": "Holm on three paired Monte Carlo MSE-difference tests; MC precision only",
+  "inference_claim_scope": "fixed-pool coverage is conditional sampling-design coverage, never future-population coverage",
+  "external_native": "source-traced full method examples and clearly named adaptations, separate estimator/inference table",
+  "new_physical_llm_calls": 0,
+  "fresh400_outcomes_permitted": false,
+  "sealed200_outcomes_permitted": false,
+  "freeze_hashes": {
+    "assets": "3b438dc0513b71784431c51a39424573a579aeeb41cd21244f53dbf47268ef8c",
+    "probability_designs": "1d28cb147b2825daa7dd99d4ef39f534b00403f68ba939fb08eed9711f90b77b",
+    "method_tuning": "de8295fd605d204498387df150578c132cdc8a2efdbda9991d01901559898f2d"
+  },
+  "code_hashes": {
+    "public\\assets\\diagnose_auxiliaries.py": "c4c9a3a85760acd08a51a75a114b5bf0249599609c76ae35da2bcea6123275a3",
+    "public\\assets\\freeze_assets.py": "8fc8fa6174ff0b9c3f5965ca70f370ab8f6bc8645076c708af9f40729ce885c8",
+    "public\\assets\\verify_frozen_assets.py": "67b0461db531fc40936da42e93bcacabeb3f85fa74745b2414d09134a4332dac",
+    "public\\inference\\b1_inference.py": "238f0c58035f5d435ac56caf87f5cd07f662b6cb5fe5b9bd343e42ff010ce5f1",
+    "public\\main\\b1_design.py": "00ab0c532805f936fe9c783c5b5da8564df3673a47141224556dec9db4ce7f5e",
+    "public\\main\\run_b1.py": "422599c30e72a52a09b736c0246e7736671aa227bfb941019792e5a593eb1dbf",
+    "public\\methods\\public_methods.py": "71aeaa1e511f8d965d016017f33bce62e34c13e1eec0f1514a10e09bf25d7af8"
+  },
+  "preparation_cpu_wall_seconds": 0.4966518000001088,
+  "separation": "design process exits before evaluation process opens validation rewards; application/file boundary, no OS security claim"
+}

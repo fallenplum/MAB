@@ -1,0 +1,224 @@
+{
+  "retrieved_utc": "2026-11-12T19:13:35.029195+00:00",
+  "sources": [
+    {
+      "repo": "tijana-zrnic/active-inference",
+      "commit": "0f99f7ee6055b6f86c0ce88ece3cb2bf3c9c19cd",
+      "license": null,
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/tijana-zrnic/active-inference/0f99f7ee6055b6f86c0ce88ece3cb2bf3c9c19cd/README.md",
+          "bytes": 1110,
+          "sha256": "d1009301d0bd2c441fd622c3fdf1f2656dafe1c9445eabe9fac21b7188e37c6d"
+        },
+        {
+          "path": "utils.py",
+          "url": "https://raw.githubusercontent.com/tijana-zrnic/active-inference/0f99f7ee6055b6f86c0ce88ece3cb2bf3c9c19cd/utils.py",
+          "bytes": 11298,
+          "sha256": "749527278960915d3fe4f1b9024ed11e2045aae735a813ad63b8cfcb9affd2b8"
+        },
+        {
+          "path": "alphafold-ptm.ipynb",
+          "url": "https://raw.githubusercontent.com/tijana-zrnic/active-inference/0f99f7ee6055b6f86c0ce88ece3cb2bf3c9c19cd/alphafold-ptm.ipynb",
+          "bytes": 7991,
+          "sha256": "04e3e42729557baed9510c1a2354818399bd260c4d4fdc3836c3256a1373205a"
+        },
+        {
+          "path": "pew79-post-election-research.ipynb",
+          "url": "https://raw.githubusercontent.com/tijana-zrnic/active-inference/0f99f7ee6055b6f86c0ce88ece3cb2bf3c9c19cd/pew79-post-election-research.ipynb",
+          "bytes": 9719,
+          "sha256": "592997875620245d8c9fadfcfa4bb44632bb683bb367b5d82b79f715a084bf2b"
+        }
+      ]
+    },
+    {
+      "repo": "lphLeo/Robust-Active-Statistical-Inference",
+      "commit": "e8037bc113c62f420929f9a7c680a93f036674ec",
+      "license": null,
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/lphLeo/Robust-Active-Statistical-Inference/e8037bc113c62f420929f9a7c680a93f036674ec/README.md",
+          "bytes": 104,
+          "sha256": "fd00892d8841c26408f15ac9048f94a25265427b7fda64d10334d0e5e574d3e7"
+        },
+        {
+          "path": "utils.py",
+          "url": "https://raw.githubusercontent.com/lphLeo/Robust-Active-Statistical-Inference/e8037bc113c62f420929f9a7c680a93f036674ec/utils.py",
+          "bytes": 50706,
+          "sha256": "6dfe74a00dffa337c93525626ce71744fa6aa68800a7f738b423d9ac5e8cd5d1"
+        },
+        {
+          "path": "utils_optimization.py",
+          "url": "https://raw.githubusercontent.com/lphLeo/Robust-Active-Statistical-Inference/e8037bc113c62f420929f9a7c680a93f036674ec/utils_optimization.py",
+          "bytes": 16686,
+          "sha256": "b3783f5e42148b0b10a746b774cc31048a29dbc95793c627afc0c8ca3a8f2662"
+        },
+        {
+          "path": "training.py",
+          "url": "https://raw.githubusercontent.com/lphLeo/Robust-Active-Statistical-Inference/e8037bc113c62f420929f9a7c680a93f036674ec/training.py",
+          "bytes": 1695,
+          "sha256": "53476704d7ab5ca84619dc72e408104f17f9bde0a14b87dbfdd18befca6ac990"
+        },
+        {
+          "path": "pew_post_election.ipynb",
+          "url": "https://raw.githubusercontent.com/lphLeo/Robust-Active-Statistical-Inference/e8037bc113c62f420929f9a7c680a93f036674ec/pew_post_election.ipynb",
+          "bytes": 109487,
+          "sha256": "acc3b38ce8098a5871ad54709368e2a8b620988f11b3288e69967646b10d609f"
+        }
+      ]
+    },
+    {
+      "repo": "jlko/active-testing",
+      "commit": "2807fac9ad91fb12e5814e71b9a26c55df9d50fb",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/README.md",
+          "bytes": 4267,
+          "sha256": "4b594ef5091bf46ba571ea2ae06f5a54f7a73150927fe400b26d60646b50e361"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/LICENSE",
+          "bytes": 1070,
+          "sha256": "df17e9fd6b0275f6a605fafec18c6ea9e9e6e1439edda86105216df103ebeef3"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/requirements.txt",
+          "bytes": 229,
+          "sha256": "b56c915a12bab0d626979843f9420ae552399509f011468f67016ea66255cee1"
+        },
+        {
+          "path": "conf/config.yaml",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/conf/config.yaml",
+          "bytes": 667,
+          "sha256": "788432731f27d2466a0c455d0f71faa00b668b792f486723d96a9990afc04278"
+        },
+        {
+          "path": "conf/paper/SyntheticQuadraticLinear.yaml",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/conf/paper/SyntheticQuadraticLinear.yaml",
+          "bytes": 460,
+          "sha256": "d77730d5031d9963fbbe0b50d3fbc1ec194d7e4163649d126e6d49c189a2c88b"
+        },
+        {
+          "path": "activetesting/loss.py",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/activetesting/loss.py",
+          "bytes": 1928,
+          "sha256": "6337167ab29c8e99dd548931e1bbf7e79768ee28b1aafd4507f1edacbe1c0640"
+        },
+        {
+          "path": "activetesting/risk_estimators.py",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/activetesting/risk_estimators.py",
+          "bytes": 8374,
+          "sha256": "8fef2c7ea1e3154d4e315e23c9ffd532ecf573b6ba09c71f29f6872acf7e53ec"
+        },
+        {
+          "path": "activetesting/acquisition.py",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/activetesting/acquisition.py",
+          "bytes": 23039,
+          "sha256": "082667121e440387847fe7555294e4b3c3fcbf3114642f5dc5ca133dda67b6aa"
+        },
+        {
+          "path": "activetesting/datasets.py",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/activetesting/datasets.py",
+          "bytes": 12481,
+          "sha256": "03bf48eefadff7ce8d90c7fa3aaf382ba305887a12e9680d1955e564cf440b3c"
+        },
+        {
+          "path": "activetesting/models/skmodels.py",
+          "url": "https://raw.githubusercontent.com/jlko/active-testing/2807fac9ad91fb12e5814e71b9a26c55df9d50fb/activetesting/models/skmodels.py",
+          "bytes": 5392,
+          "sha256": "930348550fa0d4d4d64f5a6d5fefd568e3905853b04606f6648b5ac5684d22a5"
+        }
+      ]
+    },
+    {
+      "repo": "oberst-lab/cps-sampling",
+      "commit": "a5f3fdbed1500137c54d39544991d9d1850f52e7",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/README.md",
+          "bytes": 3376,
+          "sha256": "6e561496ddbab9d06aa9fbd0ea990b3e0cb5719e8f14a1af01672d5143018d49"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/LICENSE",
+          "bytes": 1088,
+          "sha256": "41b19b868b22fc077fd79ba5e5639e56786e65b960da36cf126c02e51b821dc3"
+        },
+        {
+          "path": "pyproject.toml",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/pyproject.toml",
+          "bytes": 552,
+          "sha256": "23b16564ca1a4f80aa046e9438bfe87308e56fac1f9f15cf135f4be0b01305a3"
+        },
+        {
+          "path": "src/cps_sampling/__init__.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/__init__.py",
+          "bytes": 625,
+          "sha256": "7d9414239b67870751645d3eefd8e2d8bffd7ce1cd99bd19c52879d0b41dc4ad"
+        },
+        {
+          "path": "src/cps_sampling/_kernels.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/_kernels.py",
+          "bytes": 5169,
+          "sha256": "52576f23c7115d3a6fd822a8367a9b674dfedae638131e5ed0a8549eab8f457d"
+        },
+        {
+          "path": "src/cps_sampling/calibration.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/calibration.py",
+          "bytes": 3077,
+          "sha256": "4f353f68ddabcbc57b61731a91a6ab7f680005003a549e6969839077bd8db7a8"
+        },
+        {
+          "path": "src/cps_sampling/design.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/design.py",
+          "bytes": 4866,
+          "sha256": "44cedf45654c163c4351085479356cba4b5d76227e287b2dbd94537b43f9c18d"
+        },
+        {
+          "path": "src/cps_sampling/joint.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/joint.py",
+          "bytes": 1286,
+          "sha256": "8ab2641049668686c27798d8dee5682fff511568dd6bff0424771fa8462c5376"
+        },
+        {
+          "path": "src/cps_sampling/variance.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/src/cps_sampling/variance.py",
+          "bytes": 2968,
+          "sha256": "abe7e52080dbcb5e5d2556212fe429596d29bd00323f752e12afd78729e826f8"
+        },
+        {
+          "path": "tests/test_design.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/tests/test_design.py",
+          "bytes": 2036,
+          "sha256": "4706e6d14b85b73297d603fa156ae6f0ea229111d1fd3d580fc4380e6a90ac2c"
+        },
+        {
+          "path": "tests/test_joint.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/tests/test_joint.py",
+          "bytes": 1603,
+          "sha256": "2fab172b1ab49e83b4d684f73c7d1227c71a5d207207208c2eb564eef3f325c7"
+        },
+        {
+          "path": "tests/test_variance.py",
+          "url": "https://raw.githubusercontent.com/oberst-lab/cps-sampling/a5f3fdbed1500137c54d39544991d9d1850f52e7/tests/test_variance.py",
+          "bytes": 2446,
+          "sha256": "91020c764d6ea7ff67d17dd7ea6b04f3ed38803b73a26edb91a02e5c99b1a4a0"
+        }
+      ]
+    }
+  ],
+  "missing_source": {
+    "repo": "oberst-lab/fixed-size-asi",
+    "status": "HTTP404",
+    "fallback": "paper-linked official author cps-sampling package"
+  }
+}

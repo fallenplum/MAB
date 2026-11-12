@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "N_total": 200,
+  "N_active": 184,
+  "sample_count": 46,
+  "exact_design_variance": 0.001064071038251366,
+  "metadata_variance": 0.0010640710382513663,
+  "absolute_error": 2.168404344971009e-19,
+  "reward_source": "synthetic software regression only"
+}
