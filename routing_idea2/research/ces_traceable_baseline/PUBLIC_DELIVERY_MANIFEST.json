@@ -1,0 +1,197 @@
+{
+  "schema": "ces_traceable_public_v1",
+  "files": {
+    "01_NATIVE_REPRODUCIBILITY_AUDIT.md": {
+      "bytes": 10326,
+      "sha256": "12a975459564473d41125266003bff73b0d6433f138db99b68a18c3c4b8825d4",
+      "git_blob": "34fddd1ccc4de8f6aeab791b5d92c6b0e9b71312"
+    },
+    "02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md": {
+      "bytes": 9179,
+      "sha256": "ea986d70bb3e461710ab58bb6e59446d27f88e06388259f9d0a3f1120393b3dd",
+      "git_blob": "e922b68172aff98096e813369ab0a6b429922faf"
+    },
+    "03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md": {
+      "bytes": 9801,
+      "sha256": "3e74663dc2f7ac2a93e3d03ee844c818561161034d8de08a63ed893b30470d4f",
+      "git_blob": "ab85dd814920090b459c7d4867bd9d76d7b32ff1"
+    },
+    "04_MIGRATION_RESULTS_AND_COST.md": {
+      "bytes": 8462,
+      "sha256": "0a06c51b040f4299a290c9c633a10553f4ccbfd90ce27c5115d5580214e35a2c",
+      "git_blob": "795630ed2994119219d9ead13076007417b96cc1"
+    },
+    "05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md": {
+      "bytes": 3832,
+      "sha256": "504bd2d05aa7878be086f9ae8b3e8e681bb8b142e08c835de4d3cca3b89c9bb0",
+      "git_blob": "7dc08b2d61b2c68acf1d486b9d31e9f25761c0ca"
+    },
+    "adapter/audit_ces_operators.py": {
+      "bytes": 9108,
+      "sha256": "941d531ec4ecb1d80e57c85d785aa5b332dea1d5c71ef5efdafc31fa8f7d78ff",
+      "git_blob": "3cb4ec6608b60eaf38e2132251634345337d9535"
+    },
+    "adapter/audit_migration.py": {
+      "bytes": 13355,
+      "sha256": "9974e9fe571961bff43234acc3e3c871ce3f278dd367158c3b5c23a7456e0b97",
+      "git_blob": "59dcc07bb7ce69ec384c46990a4c5dc35ba65d14"
+    },
+    "adapter/audit_profile_source.py": {
+      "bytes": 2891,
+      "sha256": "4b0e53a5dc4c0e4f071a1fd416078e225164b8fb6782539e7a1bf4dccb1c2191",
+      "git_blob": "bbd4ac2bebe8f84a34f629371a406dd061db3684"
+    },
+    "adapter/CES_ADAPTER_OPERATOR_CHECKS.json": {
+      "bytes": 5313,
+      "sha256": "016cbbbf581e4ccf137b64cc7e4495975ad6b6250d730cc1202bd3d8fc8b5b0e",
+      "git_blob": "5706b049b5cc10ee66fe5b263bd87e1427646856"
+    },
+    "adapter/CES_MIGRATION_OPERATOR_ACCESS_AUDIT.json": {
+      "bytes": 16504,
+      "sha256": "76463821088ac38b3733ab5f675b9ce1bdc14bf222fdfa23afaa35be23b12523",
+      "git_blob": "52626320883273536a0b162542a8b9e911ea39c3"
+    },
+    "adapter/CES_PROFILE_SOURCE_AUDIT.json": {
+      "bytes": 1487,
+      "sha256": "975f858ce56f60e6b4606afb96b4904de9503e35feef7e3bf624057af0c67ea1",
+      "git_blob": "6282dd265c2a10565487cc251746b0bdbecdc45c"
+    },
+    "CES_CAPABILITY_AGGREGATE_RECHECK.json": {
+      "bytes": 22114,
+      "sha256": "a37c2c230fee9115620a3a7667dfddd0bf036aaaeb1f29536ba49736401ac03a",
+      "git_blob": "563788466fa7ec78fc94e7e92581c67d20385128"
+    },
+    "ces_common.py": {
+      "bytes": 6535,
+      "sha256": "cc36e853ec43388a95842b193672dfd6f9399ae2325de41f0faf2965a0eca2ad",
+      "git_blob": "74e29c2e1fa9e49a4694cac4a4e492fc505b4724"
+    },
+    "CES_COMPLETE_RESULTS.json": {
+      "bytes": 3402,
+      "sha256": "83d0569abd548a32eba29bc22aa6f9563e7fddd06a42df4de3d2dd00efff79e2",
+      "git_blob": "118b8f4b1e50c48304313492b7e58a5fbe9273cb"
+    },
+    "CES_DATA_AUDIT_VERIFICATION.json": {
+      "bytes": 572,
+      "sha256": "10e41e8fe5ce033e9ecffd463dac1aa2eed68d77b3e1a6fe59bf7a63753a4ca9",
+      "git_blob": "2205f8d4326d12d3e19fe4747e7ba38c1f7f5f2d"
+    },
+    "CES_FINAL_REVIEW.json": {
+      "bytes": 13513,
+      "sha256": "0340b6173f9776938e9093a43fbcb187092475260d883cc2ec3122814135a0ba",
+      "git_blob": "f30ed89cf8e1b34bc7b16d17d52f732b84d592ad"
+    },
+    "CES_PROTOCOL.json": {
+      "bytes": 7810,
+      "sha256": "b9b9be0a3629e9adcbb9e81d3db4ff269510219adc5faa55914b13f99f4f3b0b",
+      "git_blob": "e5df24dbba108de8aaa241f479a2ed0388f165c2"
+    },
+    "CES_PUBLIC_ASSET_AUDIT.json": {
+      "bytes": 13227,
+      "sha256": "7a13f3e01830ab538ee8bae30dfa7cc34151880635ca40085d2a5b4c307d6442",
+      "git_blob": "2005572af39f380ddf7f3d64cd10a2e0b1b81898"
+    },
+    "data/audit_public_assets.py": {
+      "bytes": 4652,
+      "sha256": "d37a0dcdeb8a91a983e78b569b4516ae099c67635b426b0dee81ce9197ab927a",
+      "git_blob": "ff4e16a9fc4d4ec781aa1bc4d9e82922d0ca9f7c"
+    },
+    "data/inspect_benchmark_inputs.py": {
+      "bytes": 3375,
+      "sha256": "572d511f9e5a28e91d729bb6719cd8fcccd11a3b339f06986c52ff3522e2ecd5",
+      "git_blob": "52344b5f953b9d5b48b0e7f0931e24bfbe844dc5"
+    },
+    "data/make_data_report.py": {
+      "bytes": 13428,
+      "sha256": "4ae96980a09aa9e15411387f282cfdd6e279f83f200605cecde9500e6d24d0cd",
+      "git_blob": "b5f03660c7b37d2a67123b47035364cf17d78aa1"
+    },
+    "data/recompute_profiles.py": {
+      "bytes": 4280,
+      "sha256": "2cfc436d73f95405f51f0d5909165397335e5faab893f81eb5a1eec800747f85",
+      "git_blob": "dfcd8a5b7bf86b550674615ef1d7cd999746d2f3"
+    },
+    "data/record_source_inventory.py": {
+      "bytes": 2986,
+      "sha256": "8bbf8c59bf0bc349101ba45134cdfa8201d67ce1ad3edbed76e4219d861f6196",
+      "git_blob": "dd8ef59ac988397597ff4aa7f647f882324517d1"
+    },
+    "data/verify_data_audit.py": {
+      "bytes": 2590,
+      "sha256": "9be6f0567a7ca33c9dc4f639069f4519c4bf6659f48d7e6549c1eeafe3c21753",
+      "git_blob": "2495e813e0dbfa8dd0abd4f4165f4ded0a466b41"
+    },
+    "E7_FREEZE_RECEIPT.json": {
+      "bytes": 1052,
+      "sha256": "37bd106257e9eff7a324264faad4f01f51a923849fcd1fe0c5ac7d2c16bd0b17",
+      "git_blob": "b3ff1a926720b45d18df534d5414037e13eb0bc3"
+    },
+    "evaluate_migration.py": {
+      "bytes": 10252,
+      "sha256": "4e7de57e624940e9ebc21f14c9c5459b4ba0b5d99b44215bd68e5f391db78f96",
+      "git_blob": "48bee10947f1c1ab3a6f3f29b9075f4a0a6bc645"
+    },
+    "finalize_baseline.py": {
+      "bytes": 12463,
+      "sha256": "102e984db8e175a159faf1b8412f55c0cb169aa616ee7f68542f329f48e1977b",
+      "git_blob": "65e1f3db365a1a69d5029814fa2bcf72aa943111"
+    },
+    "freeze_ces.py": {
+      "bytes": 6134,
+      "sha256": "0326be04d3cb038cdde6ae56dd93efc5d78705881852ea58e667f4b3bb441c41",
+      "git_blob": "6e418573af3785aa616335551709349957b17aaf"
+    },
+    "MIGRATION_RESULTS.json": {
+      "bytes": 137282,
+      "sha256": "38ce6886efb77e27826919daa4155999bf37e067382e821ba71f4e767000158f",
+      "git_blob": "ea8c6e558fb008514a2b86978b66d4f86a3108e3"
+    },
+    "native/audit_native_ces.py": {
+      "bytes": 6864,
+      "sha256": "d113b4d61d10857a1fc2cc551d641c260378963402c67d3334c1cfc2283dd056",
+      "git_blob": "afb8a7fa6dc1aeb30d60f91edb01c464f088f404"
+    },
+    "native/make_native_report.py": {
+      "bytes": 18512,
+      "sha256": "de58765e28cb172ca1ecaa2e9e3543efe9c5622560d694f6d9bf2fd367b4c88f",
+      "git_blob": "46c31f787cf2a6cf9a7f3d053e463b85eadbabe1"
+    },
+    "NATIVE_AUDIT.json": {
+      "bytes": 22047,
+      "sha256": "5b9c3cfc010858a9b992e1906c14d8609bb0d884eaf6f6f334cd9418a998cb14",
+      "git_blob": "b2444f8166b78b6c21463aaaf4c283239082cfd7"
+    },
+    "NATIVE_OPERATOR_QUALIFICATION.json": {
+      "bytes": 4236,
+      "sha256": "1e4302f4052132ff291a04d2249e45ea385230ce1ef104c3c7a8acf1f9debc37",
+      "git_blob": "cfaac1328c4b61685f3617a0b87dc7c7e53f23fb"
+    },
+    "REPRODUCE.md": {
+      "bytes": 5320,
+      "sha256": "ec695be5ca823844c3c407322d66d357d9df9f928cc9e1838e0c8923c6663e23",
+      "git_blob": "1e8fc9ab13d40b3af82095bb6d0d6a18dd4ac3b5"
+    },
+    "review/final_review.py": {
+      "bytes": 19046,
+      "sha256": "e46ae7f18fe7af4d1028323b4e2c7ad2d3ce579927224a829f64e6f8ac06b1ee",
+      "git_blob": "31790a865683f45dd910565279783be3befcfff1"
+    },
+    "run_migration.py": {
+      "bytes": 11091,
+      "sha256": "7028a2d012c1c8b8f32d1cae9677b6b41034dd7c96f9f64c410b809fa089b3a4",
+      "git_blob": "b34da4e9534b368158badbfd53796c37e9cadc42"
+    },
+    "verify_delivery.py": {
+      "bytes": 5903,
+      "sha256": "62a1cd06b1179e17efe0e646806af2a60101a861ec09ef32669efb672d35d7ee",
+      "git_blob": "b279ca8dc60d0080cc129befe72f7ee6724dca01"
+    }
+  },
+  "self_hash_exclusions": [
+    "CES_DELIVERY_AUDIT.json",
+    "PUBLIC_DELIVERY_MANIFEST.json"
+  ],
+  "base_commit": "a7bc3d9a72160b3e6134cae76a1a13f47b8b992b",
+  "branch": "codex/ces-traceable-baseline-20261112",
+  "scope": "Audit, public-source metadata, controlled transfer code and aggregate results, no private question data or fitted states"
+}

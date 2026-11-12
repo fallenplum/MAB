@@ -1,0 +1,513 @@
+{
+  "status": "PASS",
+  "scope": "Independent source/feedback/cost, original-question statistics, frozenE7 and public privacy review",
+  "scalar_checks": 835080,
+  "maximum_reconstruction_error": 1.3322676295501878e-15,
+  "formal_paths": 45,
+  "snapshots": 180,
+  "reconstructed_service_reward_values": 129600,
+  "original_E_questions": 600,
+  "primary_independent": [
+    {
+      "point": -0.004074074074074074,
+      "ci95": [
+        -0.017412037037037035,
+        0.009259259259259255
+      ],
+      "ci97_5": [
+        -0.019814814814814827,
+        0.011206018518518495
+      ],
+      "centered_p": 0.5566886622675465,
+      "Holm_p": 1.0
+    },
+    {
+      "point": 0.004259259259259261,
+      "ci95": [
+        -0.009259259259259259,
+        0.017777777777777778
+      ],
+      "ci97_5": [
+        -0.011111111111111106,
+        0.01925925925925926
+      ],
+      "centered_p": 0.5306938612277544,
+      "Holm_p": 1.0
+    }
+  ],
+  "source_cost_keys": [
+    "gold",
+    "member_calls",
+    "aggregator_calls",
+    "scoring_ops",
+    "input_tokens",
+    "output_tokens",
+    "tokens",
+    "source_model_wall_s"
+  ],
+  "full_summary_rows_reconstructed": 24,
+  "mean_perfold_feedback_cost": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        20.0,
+        180.0,
+        60.0,
+        60.0,
+        81695.8,
+        46668.4,
+        128364.2,
+        2339.054047069241
+      ],
+      [
+        40.0,
+        360.0,
+        120.0,
+        120.0,
+        163660.06666666668,
+        93934.66666666667,
+        257594.73333333334,
+        4699.977856356806
+      ],
+      [
+        60.0,
+        540.0,
+        180.0,
+        180.0,
+        247866.53333333333,
+        144257.53333333333,
+        392124.06666666665,
+        7200.37278550091
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        20.0,
+        180.0,
+        60.0,
+        60.0,
+        94722.4,
+        64117.933333333334,
+        158840.33333333334,
+        3074.0293425904197
+      ],
+      [
+        40.0,
+        360.0,
+        120.0,
+        120.0,
+        188854.0,
+        127937.86666666667,
+        316791.86666666664,
+        6130.939674204999
+      ],
+      [
+        60.0,
+        540.0,
+        180.0,
+        180.0,
+        284666.0,
+        194167.13333333333,
+        478833.13333333336,
+        9290.977049870464
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        20.0,
+        360.0,
+        1200.0,
+        1200.0,
+        1077941.8666666667,
+        180979.26666666666,
+        1258921.1333333333,
+        10182.396519161117
+      ],
+      [
+        40.0,
+        720.0,
+        2400.0,
+        2400.0,
+        2147993.7333333334,
+        359961.4666666667,
+        2507955.2,
+        20312.27951094495
+      ],
+      [
+        60.0,
+        1080.0,
+        3600.0,
+        3600.0,
+        3221890.4,
+        539039.6666666666,
+        3760930.066666667,
+        30518.03838318481
+      ]
+    ]
+  ],
+  "mean_perfold_query_cost": [
+    [
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          575011.7333333333,
+          383341.0,
+          958352.7333333333,
+          18235.222298498637
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          487088.13333333336,
+          269081.8,
+          756169.9333333333,
+          13481.107707496438
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          488857.86666666664,
+          271633.3333333333,
+          760491.2,
+          13690.063241733362
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          501363.2,
+          287822.0,
+          789185.2,
+          14324.827934250981
+        ]
+      ],
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          489238.6,
+          230173.0,
+          719411.6,
+          13066.470421814383
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          512102.26666666666,
+          300052.8,
+          812155.0666666667,
+          15000.673987973232
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          495226.6,
+          279539.13333333336,
+          774765.7333333333,
+          14007.32657685352
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          504223.73333333334,
+          293665.73333333334,
+          797889.4666666667,
+          14601.15068886658
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          568500.3333333334,
+          375517.3333333333,
+          944017.6666666666,
+          17978.754362505122
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          567893.6666666666,
+          374954.4,
+          942848.0666666667,
+          17957.98154705389
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          567637.0666666667,
+          374743.6666666667,
+          942380.7333333333,
+          17947.82166192312
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          567346.9333333333,
+          374350.5333333333,
+          941697.4666666667,
+          17934.028327503318
+        ]
+      ],
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          541495.6666666666,
+          335824.06666666665,
+          877319.7333333333,
+          16577.507533616703
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          540483.0,
+          334581.4,
+          875064.4,
+          16535.197347751222
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          541172.1333333333,
+          335103.2,
+          876275.3333333334,
+          16550.412961021033
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          539677.4,
+          332752.4666666667,
+          872429.8666666667,
+          16469.221361659187
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          568500.3333333334,
+          375517.3333333333,
+          944017.6666666666,
+          17978.754362505122
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          567481.3333333334,
+          374941.73333333334,
+          942423.0666666667,
+          17956.535276100723
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          566516.2,
+          373478.86666666664,
+          939995.0666666667,
+          17904.36257843604
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          567147.8666666667,
+          374794.06666666665,
+          941941.9333333333,
+          17953.030559122515
+        ]
+      ],
+      [
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          541495.6666666666,
+          335824.06666666665,
+          877319.7333333333,
+          16577.507533616703
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          540019.9333333333,
+          333539.6,
+          873559.5333333333,
+          16473.82828102708
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          537747.4,
+          329930.26666666666,
+          867677.6666666666,
+          16356.11336445391
+        ],
+        [
+          0.0,
+          1080.0,
+          360.0,
+          360.0,
+          537657.4,
+          330287.3333333333,
+          867944.7333333333,
+          16407.19180027349
+        ]
+      ]
+    ]
+  ],
+  "native_budget_review": {
+    "status": "PASS",
+    "README_k2_nominal_calls": [
+      600,
+      4025,
+      720,
+      445
+    ],
+    "native_paper_k3_nominal_calls": [
+      800,
+      4830,
+      880,
+      534
+    ],
+    "FLASK_successful_run_precondition": "Missing published profiles must first be resolved; unmodified current runner raises KeyError before producing scores",
+    "native_main_performance": "NOT_REPRODUCED",
+    "source_audit_completion": "COMPLETE",
+    "upstream_profile_consistency": "14 consistent,1 invalid noninteger correct-count model"
+  },
+  "actual_model_API_calls": 0,
+  "migration_result_sha256": "38ce6886efb77e27826919daa4155999bf37e067382e821ba71f4e767000158f",
+  "migration_summary_available": true,
+  "E7_frozen_receipt_records": 8,
+  "E7_public_manifest_records_unchanged": 47,
+  "privacy": {
+    "public_files": 37,
+    "actual_identifiers_scanned": 1200,
+    "question_strings_scanned": 600,
+    "matches": [],
+    "model_parameters_public": false
+  },
+  "python_sources_compiled": 18,
+  "reviewed_file_hash_exclusions": [
+    "CES_FINAL_REVIEW.json",
+    "PUBLIC_DELIVERY_MANIFEST.json",
+    "CES_DELIVERY_AUDIT.json"
+  ],
+  "reviewed_files": {
+    "CES_CAPABILITY_AGGREGATE_RECHECK.json": "a37c2c230fee9115620a3a7667dfddd0bf036aaaeb1f29536ba49736401ac03a",
+    "NATIVE_OPERATOR_QUALIFICATION.json": "1e4302f4052132ff291a04d2249e45ea385230ce1ef104c3c7a8acf1f9debc37",
+    "03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md": "3e74663dc2f7ac2a93e3d03ee844c818561161034d8de08a63ed893b30470d4f",
+    "NATIVE_AUDIT.json": "5b9c3cfc010858a9b992e1906c14d8609bb0d884eaf6f6f334cd9418a998cb14",
+    "01_NATIVE_REPRODUCIBILITY_AUDIT.md": "12a975459564473d41125266003bff73b0d6433f138db99b68a18c3c4b8825d4",
+    "ces_common.py": "cc36e853ec43388a95842b193672dfd6f9399ae2325de41f0faf2965a0eca2ad",
+    "freeze_ces.py": "0326be04d3cb038cdde6ae56dd93efc5d78705881852ea58e667f4b3bb441c41",
+    "E7_FREEZE_RECEIPT.json": "37bd106257e9eff7a324264faad4f01f51a923849fcd1fe0c5ac7d2c16bd0b17",
+    "CES_PROTOCOL.json": "b9b9be0a3629e9adcbb9e81d3db4ff269510219adc5faa55914b13f99f4f3b0b",
+    "CES_PUBLIC_ASSET_AUDIT.json": "7a13f3e01830ab538ee8bae30dfa7cc34151880635ca40085d2a5b4c307d6442",
+    "02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md": "ea986d70bb3e461710ab58bb6e59446d27f88e06388259f9d0a3f1120393b3dd",
+    "run_migration.py": "7028a2d012c1c8b8f32d1cae9677b6b41034dd7c96f9f64c410b809fa089b3a4",
+    "CES_DATA_AUDIT_VERIFICATION.json": "10e41e8fe5ce033e9ecffd463dac1aa2eed68d77b3e1a6fe59bf7a63753a4ca9",
+    "evaluate_migration.py": "4e7de57e624940e9ebc21f14c9c5459b4ba0b5d99b44215bd68e5f391db78f96",
+    "MIGRATION_RESULTS.json": "38ce6886efb77e27826919daa4155999bf37e067382e821ba71f4e767000158f",
+    "finalize_baseline.py": "102e984db8e175a159faf1b8412f55c0cb169aa616ee7f68542f329f48e1977b",
+    "REPRODUCE.md": "ec695be5ca823844c3c407322d66d357d9df9f928cc9e1838e0c8923c6663e23",
+    "04_MIGRATION_RESULTS_AND_COST.md": "0a06c51b040f4299a290c9c633a10553f4ccbfd90ce27c5115d5580214e35a2c",
+    "05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md": "504bd2d05aa7878be086f9ae8b3e8e681bb8b142e08c835de4d3cca3b89c9bb0",
+    "CES_COMPLETE_RESULTS.json": "83d0569abd548a32eba29bc22aa6f9563e7fddd06a42df4de3d2dd00efff79e2",
+    "verify_delivery.py": "62a1cd06b1179e17efe0e646806af2a60101a861ec09ef32669efb672d35d7ee",
+    "adapter/audit_ces_operators.py": "941d531ec4ecb1d80e57c85d785aa5b332dea1d5c71ef5efdafc31fa8f7d78ff",
+    "adapter/CES_ADAPTER_OPERATOR_CHECKS.json": "016cbbbf581e4ccf137b64cc7e4495975ad6b6250d730cc1202bd3d8fc8b5b0e",
+    "adapter/audit_profile_source.py": "4b0e53a5dc4c0e4f071a1fd416078e225164b8fb6782539e7a1bf4dccb1c2191",
+    "adapter/CES_PROFILE_SOURCE_AUDIT.json": "975f858ce56f60e6b4606afb96b4904de9503e35feef7e3bf624057af0c67ea1",
+    "adapter/audit_migration.py": "9974e9fe571961bff43234acc3e3c871ce3f278dd367158c3b5c23a7456e0b97",
+    "adapter/CES_MIGRATION_OPERATOR_ACCESS_AUDIT.json": "76463821088ac38b3733ab5f675b9ce1bdc14bf222fdfa23afaa35be23b12523",
+    "native/audit_native_ces.py": "d113b4d61d10857a1fc2cc551d641c260378963402c67d3334c1cfc2283dd056",
+    "native/make_native_report.py": "de58765e28cb172ca1ecaa2e9e3543efe9c5622560d694f6d9bf2fd367b4c88f",
+    "data/audit_public_assets.py": "d37a0dcdeb8a91a983e78b569b4516ae099c67635b426b0dee81ce9197ab927a",
+    "data/recompute_profiles.py": "2cfc436d73f95405f51f0d5909165397335e5faab893f81eb5a1eec800747f85",
+    "data/inspect_benchmark_inputs.py": "572d511f9e5a28e91d729bb6719cd8fcccd11a3b339f06986c52ff3522e2ecd5",
+    "data/record_source_inventory.py": "8bbf8c59bf0bc349101ba45134cdfa8201d67ce1ad3edbed76e4219d861f6196",
+    "data/make_data_report.py": "4ae96980a09aa9e15411387f282cfdd6e279f83f200605cecde9500e6d24d0cd",
+    "data/verify_data_audit.py": "9be6f0567a7ca33c9dc4f639069f4519c4bf6659f48d7e6549c1eeafe3c21753",
+    "review/final_review.py": "e46ae7f18fe7af4d1028323b4e2c7ad2d3ce579927224a829f64e6f8ac06b1ee"
+  },
+  "pending": []
+}

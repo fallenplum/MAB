@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "scope": "Exact author mathematical modules imported, synthetic operator qualification only",
+  "physical_LLM_calls": 0,
+  "API_clients_created": 0,
+  "checks": 8601,
+  "trials": 200,
+  "sequential_dense_inverse_max_error": 2.566835632933362e-13,
+  "selection_reconstruction_errors": 0,
+  "shared_setUCB_vs_independentTopK_disagreements": 140,
+  "disagreement_denominator": 200,
+  "feature_formula_max_error": 4.440892098500626e-16,
+  "original_default_dimension_check": {
+    "feature_dimension": 96,
+    "projection_dimension": 32,
+    "expert_pool": 15,
+    "k": 3,
+    "trials": 8,
+    "updates_per_trial": 10,
+    "max_dense_mean_error": 6.056266599330229e-14
+  },
+  "source_sha256": {
+    "src\\bandits\\linucb_combinatorial.py": "ac066dfe08517d98180b7cf8792358493b3bfaf95bd38a26a22dd334ec95bc8e",
+    "src\\embeddings\\projectors.py": "397b78f6544239b88baed2e528f599dfcf21b97482ce35e54871efe0f833392f"
+  },
+  "pinned_commit": "9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7",
+  "runner_profiles": {
+    "run_alpacaeval2.py": {
+      "expert_count": 15,
+      "missing_profile_keys": [],
+      "source_sha256": "728c0eb1d6f80687412ae2049979b253690a9e696fddf0764d9f8f0033c3e1e2",
+      "names": [
+        "qwen-3",
+        "deepseek-r1",
+        "llama-3.1",
+        "deepseek-3",
+        "claude-4.5",
+        "gpt-4o",
+        "Mistral-8x22B",
+        "mistral-small-creative",
+        "grok-4.1-fast",
+        "qwen-2.5-72b",
+        "gemma-2-27b-it",
+        "qwen-2.5-32b-instruct",
+        "glm-4-32b",
+        "llama-3.1-70b-instruct",
+        "gpt-3.5-turbo"
+      ]
+    },
+    "run_mt_bench.py": {
+      "expert_count": 15,
+      "missing_profile_keys": [],
+      "source_sha256": "96e98684aefa06dd7a2e13f99d99c781e4d2c57d4852e6dffadeaf67a665a1f7",
+      "names": [
+        "qwen-3",
+        "deepseek-r1",
+        "llama-3.1",
+        "deepseek-3",
+        "claude-4.5",
+        "gpt-4o",
+        "Mistral-8x22B",
+        "mistral-small-creative",
+        "grok-4.1-fast",
+        "qwen-2.5-72b",
+        "gemma-2-27b-it",
+        "qwen-2.5-32b-instruct",
+        "glm-4-32b",
+        "llama-3.1-70b-instruct",
+        "gpt-3.5-turbo"
+      ]
+    },
+    "run_flask.py": {
+      "expert_count": 21,
+      "missing_profile_keys": [
+        "codellama-7b-solidity",
+        "Command-R-Plus-08-2024",
+        "mistral-7b-instruct",
+        "gemma-2-9b-it",
+        "qwen-2.5-7b",
+        "meta-llama/llama-3.1-8b-instruct",
+        "llama-3.2-1b-instruct",
+        "llama-3.2-3b-instruct",
+        "ministral-3b"
+      ],
+      "source_sha256": "750c5fd699b4b45faa3a550c5e8e58f6c847904a9c7fa020d6343c949cf41ec2",
+      "names": [
+        "qwen-3",
+        "deepseek-r1",
+        "llama-3.1",
+        "deepseek-3",
+        "claude-4.5",
+        "gpt-4o",
+        "codellama-7b-solidity",
+        "mistral-small-creative",
+        "grok-4.1-fast",
+        "qwen-2.5-72b",
+        "gemma-2-27b-it",
+        "Command-R-Plus-08-2024",
+        "mistral-7b-instruct",
+        "gemma-2-9b-it",
+        "qwen-2.5-7b",
+        "meta-llama/llama-3.1-8b-instruct",
+        "glm-4-32b",
+        "llama-3.2-1b-instruct",
+        "llama-3.2-3b-instruct",
+        "ministral-3b",
+        "gpt-3.5-turbo"
+      ]
+    },
+    "run_objective_mcq.py": {
+      "expert_count": 15,
+      "missing_profile_keys": [],
+      "source_sha256": "255a12c33dc8c965cdb85beca41b9a89fb9090d1901b729d0e2e03e027a5b27e",
+      "names": [
+        "qwen-3",
+        "deepseek-r1",
+        "llama-3.1",
+        "deepseek-3",
+        "claude-4.5",
+        "gpt-4o",
+        "Mistral-8x22B",
+        "mistral-small-creative",
+        "grok-4.1-fast",
+        "qwen-2.5-72b",
+        "gemma-2-27b-it",
+        "qwen-2.5-32b-instruct",
+        "glm-4-32b",
+        "llama-3.1-70b-instruct",
+        "gpt-3.5-turbo"
+      ]
+    }
+  },
+  "original_paper_benchmark_reproduced": false,
+  "original_per_question_output_cache_available": false,
+  "claim": "This validates only the official core numerical behavior. It cannot reproduce published benchmark scores without original outputs/judgments or new API generation."
+}

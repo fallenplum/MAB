@@ -1,0 +1,551 @@
+{
+  "status": "AUDIT_COMPLETE_NATIVE_BENCHMARK_NOT_REPRODUCED",
+  "method": "CES",
+  "paper": {
+    "bytes": 1715608,
+    "sha256": "35854f0bd965f602adf47913a1add2affebbc093742be9ceb61918777a6aef5b",
+    "pages": 10,
+    "title": "CES: Combinatorial Experts Selection via Contextual Linear Bandits",
+    "doi": "10.1145/3770855.3817902",
+    "source_role": "Local author-paper copy, full text and renders remain private"
+  },
+  "reported_results": {
+    "CES": {
+      "alpaca_LC_percent": 63.12,
+      "alpaca_LC_printed_plusminus": 0.4,
+      "alpaca_WR_percent": 61.47,
+      "alpaca_WR_printed_plusminus": 0.3,
+      "MT_avg": 8.94,
+      "MT_turn1": 9.13,
+      "MT_turn2": 8.75,
+      "ARC_accuracy_percent": 97.5
+    },
+    "KABB": {
+      "alpaca_LC_percent": 59.38,
+      "alpaca_WR_percent": 52.43,
+      "MT_avg": 8.89,
+      "ARC_accuracy_percent": 95.5
+    },
+    "MoA": {
+      "alpaca_LC_percent": 57.93,
+      "alpaca_WR_percent": 73.46,
+      "MT_avg": 9.26,
+      "ARC_accuracy_percent": 96.0
+    },
+    "DeepSeek_R1": {
+      "alpaca_LC_percent": 76.17,
+      "alpaca_WR_percent": 80.95,
+      "MT_avg": 9.48,
+      "ARC_accuracy_percent": 92.5
+    },
+    "source": "Local author paper pp6-7, printed5805-5806, Tables3-5, visually verified",
+    "role": "Paper-reported numbers only, not current independently replayed native benchmark results",
+    "printed_uncertainty": "The extracted experimental description does not determine replicate count or whether plusminus is SD/SE/CI; no95%CI claim"
+  },
+  "upstream": {
+    "repository": "JinkunXu/CES",
+    "default_branch": "master",
+    "head": "9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7",
+    "head_date": "2026-05-28T07:24:30Z",
+    "tree": "1451ea798bd66b75b9b451ab56a322a5576a58e4",
+    "tree_entries": 1280,
+    "blobs": 926,
+    "current_head_equals_existing_pin": true,
+    "release_tag": "v1.0.0-kdd2026",
+    "release_commit": "778ffd9e24ac7e2ee0a3790bc2a52711296dd59f",
+    "release_root_license": false,
+    "current_master_root_license": "MIT",
+    "tag_to_head": "README update plus added root MIT license, mathematical core unchanged",
+    "old_zenodo": "https://zenodo.org/records/20363903",
+    "latest_zenodo": "https://zenodo.org/records/20364184",
+    "archive_md5": "ba087d464f99dbefcebeb618b6b0b413",
+    "native_output_paths_in_tree": [],
+    "root_data_files": [
+      "artifacts/mmlu_meta_10d.json",
+      "data/alpaca_eval/reference.json"
+    ]
+  },
+  "source_scope": "21 already audited exact-byte files, not entire third-party repository or all licenses",
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "1f7167285b17af5f1f4dbc60d25a4c1a2603149f963bf7a530b169256385b321",
+      "git_blob": "ed0903faca486a42e96621504f4de02dcc1d3af1",
+      "bytes": 1065,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0867c727b832bb1688f9623230e2036df593356ba504e8683cb4c47ff7a5e7a2",
+      "git_blob": "2e5b2e73673db7286c579526e3ce28165de84394",
+      "bytes": 10175,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/README.md"
+    },
+    {
+      "path": "scripts/run_ces_ablation_suite.py",
+      "sha256": "074ba22c1377bd533f5de45e5b965c25c012cc88702a8f8198e2ce1541a942ef",
+      "git_blob": "9365da201f4e1156c3f4ba9afb6dd90bcfc27859",
+      "bytes": 3334,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_ces_ablation_suite.py"
+    },
+    {
+      "path": "scripts/run_objective_mcq.py",
+      "sha256": "255a12c33dc8c965cdb85beca41b9a89fb9090d1901b729d0e2e03e027a5b27e",
+      "git_blob": "3293ae5957bd41db495d3316574e95fb30ababbb",
+      "bytes": 24793,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_objective_mcq.py"
+    },
+    {
+      "path": "scripts/utils/meta_profiles.py",
+      "sha256": "b7d53487ad77f5eb373b6883b9644549108d1c8f1ab1df581f55189ee8aa0bea",
+      "git_blob": "4de09b97822b56dfc672edd62579bcab73c401b8",
+      "bytes": 1784,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/utils/meta_profiles.py"
+    },
+    {
+      "path": "src/aggregators/llm_aggregator.py",
+      "sha256": "30f24d71a35e4c9adbef819b3a6cfec633e479fff061ec9d0973072edfc65989",
+      "git_blob": "e337bed598163e59aa0f2b7d110ea08e1e21723e",
+      "bytes": 2923,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/aggregators/llm_aggregator.py"
+    },
+    {
+      "path": "src/bandits/linucb_combinatorial.py",
+      "sha256": "ac066dfe08517d98180b7cf8792358493b3bfaf95bd38a26a22dd334ec95bc8e",
+      "git_blob": "0605f6021746c80b898ddd1081c74674b62a43ed",
+      "bytes": 2606,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/bandits/linucb_combinatorial.py"
+    },
+    {
+      "path": "src/data/dataset_loader.py",
+      "sha256": "43316c1c564c4cc963fd5b4c3c01e00b9e6fb7656861cfe98f0ee1283dd8b4ba",
+      "git_blob": "c0e8e7a62017b658c432912c45330eaeff8c1870",
+      "bytes": 6481,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/data/dataset_loader.py"
+    },
+    {
+      "path": "src/embeddings/encoders.py",
+      "sha256": "64eefc44a992c59efb6b3e650438bfc3f4db3489442371bf6480e6aaa53629ba",
+      "git_blob": "0a43948214abbe80e1cc371d8a6643b0d1fb9d35",
+      "bytes": 3286,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/embeddings/encoders.py"
+    },
+    {
+      "path": "src/embeddings/projectors.py",
+      "sha256": "397b78f6544239b88baed2e528f599dfcf21b97482ce35e54871efe0f833392f",
+      "git_blob": "1b13f67c451ce1dcf49ac8f0fdb3111867682fc8",
+      "bytes": 1816,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/embeddings/projectors.py"
+    },
+    {
+      "path": "src/envs/synthetic_env.py",
+      "sha256": "54f1dd9ba3c16cd6783132f208bc5bde71a92a335ac726377d0ee4568a1135f2",
+      "git_blob": "41fc076b398a3eb84edbf26e28946cab12024247",
+      "bytes": 651,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/envs/synthetic_env.py"
+    },
+    {
+      "path": "src/evaluators/llm_judge.py",
+      "sha256": "84e513abccd88037f3b44c48585ae8b4d953d6f9a5ec1fd83a847b1cc6a1a0bc",
+      "git_blob": "8154a99e02d1fddf85e00a32c93cf4f04ff72bbf",
+      "bytes": 1981,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/evaluators/llm_judge.py"
+    },
+    {
+      "path": "src/experts/base.py",
+      "sha256": "43bda0d6b4628e6fb8ad8dd15906074ca9432276c472d2c30216e1dc7b451d6c",
+      "git_blob": "2933a9c7685e7444dc916a1dbcdd223a78b0eb53",
+      "bytes": 343,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/experts/base.py"
+    },
+    {
+      "path": "src/experts/llm_expert.py",
+      "sha256": "7f0cb1b464ed9436c6d3e393e7aad6a664066b2d6a6e8e3e6750588857d4c640",
+      "git_blob": "ce81ab4dbbe450ca3d90d0755239f3a8fe6a0a1f",
+      "bytes": 1497,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/experts/llm_expert.py"
+    },
+    {
+      "path": "src/orchestration/router.py",
+      "sha256": "3ff421fe63620c7fc3f6af688f7b722c296dcf8f00c9f06c7fca9e3e817d70b4",
+      "git_blob": "40d4f7fbd8aeee555b7cdf6c17abfb18c6c39d2a",
+      "bytes": 4705,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/orchestration/router.py"
+    },
+    {
+      "path": "src/provider/openrouter_client.py",
+      "sha256": "e0219e920f2cd63c71c228f686625346803ad7b20593390400519d4eb5c4d971",
+      "git_blob": "511434b3684db33aad59684f926eff8f22002a7a",
+      "bytes": 5173,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/provider/openrouter_client.py"
+    },
+    {
+      "path": "scripts/run_alpacaeval2.py",
+      "sha256": "728c0eb1d6f80687412ae2049979b253690a9e696fddf0764d9f8f0033c3e1e2",
+      "git_blob": "38a6b0d8561613589837d0a673003fd693cd3cbe",
+      "bytes": 26022,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_alpacaeval2.py"
+    },
+    {
+      "path": "scripts/run_mt_bench.py",
+      "sha256": "96e98684aefa06dd7a2e13f99d99c781e4d2c57d4852e6dffadeaf67a665a1f7",
+      "git_blob": "e3d5df5cd93f2ecea78d75d3591c4171090815f8",
+      "bytes": 26158,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_mt_bench.py"
+    },
+    {
+      "path": "scripts/run_flask.py",
+      "sha256": "750c5fd699b4b45faa3a550c5e8e58f6c847904a9c7fa020d6343c949cf41ec2",
+      "git_blob": "e111b6f3ff7c5ecd2e9d025e2c13fb141735daba",
+      "bytes": 26205,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_flask.py"
+    },
+    {
+      "path": "scripts/eval_mmlu_meta.py",
+      "sha256": "69f29d23463a1377016d96088361dfe415478c26d8b4272b113104391f94c676",
+      "git_blob": "616f40a89bdff6b56c7938edf47169cf189aa980",
+      "bytes": 14781,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/eval_mmlu_meta.py"
+    },
+    {
+      "path": "artifacts/mmlu_meta_10d.json",
+      "sha256": "b0f7c75c7857dd2d69aa7ac06b2cf393ad52b2ded6a10c07257cdf0c2d2f51e6",
+      "git_blob": "4f440a25d6f96a4f406337e2d7f6ea8b063683c0",
+      "bytes": 10580,
+      "url": "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/artifacts/mmlu_meta_10d.json"
+    }
+  ],
+  "operator_qualification": {
+    "status": "PASS",
+    "scope": "Exact author mathematical modules imported, synthetic operator qualification only",
+    "physical_LLM_calls": 0,
+    "API_clients_created": 0,
+    "checks": 8601,
+    "trials": 200,
+    "sequential_dense_inverse_max_error": 2.566835632933362e-13,
+    "selection_reconstruction_errors": 0,
+    "shared_setUCB_vs_independentTopK_disagreements": 140,
+    "disagreement_denominator": 200,
+    "feature_formula_max_error": 4.440892098500626e-16,
+    "original_default_dimension_check": {
+      "feature_dimension": 96,
+      "projection_dimension": 32,
+      "expert_pool": 15,
+      "k": 3,
+      "trials": 8,
+      "updates_per_trial": 10,
+      "max_dense_mean_error": 6.056266599330229e-14
+    },
+    "source_sha256": {
+      "src\\bandits\\linucb_combinatorial.py": "ac066dfe08517d98180b7cf8792358493b3bfaf95bd38a26a22dd334ec95bc8e",
+      "src\\embeddings\\projectors.py": "397b78f6544239b88baed2e528f599dfcf21b97482ce35e54871efe0f833392f"
+    },
+    "pinned_commit": "9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7",
+    "runner_profiles": {
+      "run_alpacaeval2.py": {
+        "expert_count": 15,
+        "missing_profile_keys": [],
+        "source_sha256": "728c0eb1d6f80687412ae2049979b253690a9e696fddf0764d9f8f0033c3e1e2",
+        "names": [
+          "qwen-3",
+          "deepseek-r1",
+          "llama-3.1",
+          "deepseek-3",
+          "claude-4.5",
+          "gpt-4o",
+          "Mistral-8x22B",
+          "mistral-small-creative",
+          "grok-4.1-fast",
+          "qwen-2.5-72b",
+          "gemma-2-27b-it",
+          "qwen-2.5-32b-instruct",
+          "glm-4-32b",
+          "llama-3.1-70b-instruct",
+          "gpt-3.5-turbo"
+        ]
+      },
+      "run_mt_bench.py": {
+        "expert_count": 15,
+        "missing_profile_keys": [],
+        "source_sha256": "96e98684aefa06dd7a2e13f99d99c781e4d2c57d4852e6dffadeaf67a665a1f7",
+        "names": [
+          "qwen-3",
+          "deepseek-r1",
+          "llama-3.1",
+          "deepseek-3",
+          "claude-4.5",
+          "gpt-4o",
+          "Mistral-8x22B",
+          "mistral-small-creative",
+          "grok-4.1-fast",
+          "qwen-2.5-72b",
+          "gemma-2-27b-it",
+          "qwen-2.5-32b-instruct",
+          "glm-4-32b",
+          "llama-3.1-70b-instruct",
+          "gpt-3.5-turbo"
+        ]
+      },
+      "run_flask.py": {
+        "expert_count": 21,
+        "missing_profile_keys": [
+          "codellama-7b-solidity",
+          "Command-R-Plus-08-2024",
+          "mistral-7b-instruct",
+          "gemma-2-9b-it",
+          "qwen-2.5-7b",
+          "meta-llama/llama-3.1-8b-instruct",
+          "llama-3.2-1b-instruct",
+          "llama-3.2-3b-instruct",
+          "ministral-3b"
+        ],
+        "source_sha256": "750c5fd699b4b45faa3a550c5e8e58f6c847904a9c7fa020d6343c949cf41ec2",
+        "names": [
+          "qwen-3",
+          "deepseek-r1",
+          "llama-3.1",
+          "deepseek-3",
+          "claude-4.5",
+          "gpt-4o",
+          "codellama-7b-solidity",
+          "mistral-small-creative",
+          "grok-4.1-fast",
+          "qwen-2.5-72b",
+          "gemma-2-27b-it",
+          "Command-R-Plus-08-2024",
+          "mistral-7b-instruct",
+          "gemma-2-9b-it",
+          "qwen-2.5-7b",
+          "meta-llama/llama-3.1-8b-instruct",
+          "glm-4-32b",
+          "llama-3.2-1b-instruct",
+          "llama-3.2-3b-instruct",
+          "ministral-3b",
+          "gpt-3.5-turbo"
+        ]
+      },
+      "run_objective_mcq.py": {
+        "expert_count": 15,
+        "missing_profile_keys": [],
+        "source_sha256": "255a12c33dc8c965cdb85beca41b9a89fb9090d1901b729d0e2e03e027a5b27e",
+        "names": [
+          "qwen-3",
+          "deepseek-r1",
+          "llama-3.1",
+          "deepseek-3",
+          "claude-4.5",
+          "gpt-4o",
+          "Mistral-8x22B",
+          "mistral-small-creative",
+          "grok-4.1-fast",
+          "qwen-2.5-72b",
+          "gemma-2-27b-it",
+          "qwen-2.5-32b-instruct",
+          "glm-4-32b",
+          "llama-3.1-70b-instruct",
+          "gpt-3.5-turbo"
+        ]
+      }
+    },
+    "original_paper_benchmark_reproduced": false,
+    "original_per_question_output_cache_available": false,
+    "claim": "This validates only the official core numerical behavior. It cannot reproduce published benchmark scores without original outputs/judgments or new API generation."
+  },
+  "paper_code_data_differences": [
+    {
+      "item": "selection",
+      "paper": "expert-wise mean plus alpha*sqrt(phiVinvphi), independent TopK in Alg1 and complexity section",
+      "code": "Greedy marginal of set-UCB using accumulated feature z",
+      "effect": "Different policies; 140/200 artificial configurations selected different sets"
+    },
+    {
+      "item": "feature scaling",
+      "paper": "[normalized x, normalized v, normalized x hadamard normalized v]",
+      "code": "[normalized x,3 normalized v,3 separately normalized(x hadamard v)]",
+      "effect": "Changes action geometry and prior regularization"
+    },
+    {
+      "item": "initial covariance",
+      "paper": "Vinv=I and initial w=0",
+      "code": "Runner ridge.1, so Vinv=10I and w=0",
+      "effect": "Changes exploration scale"
+    },
+    {
+      "item": "K",
+      "paper": "Table5 default3",
+      "code": "README and runner defaults2",
+      "effect": "Paper-default replication needs explicitk3"
+    },
+    {
+      "item": "Alpaca final reference",
+      "paper": "Table3 caption GPT4o reference and GPT4Turbo judge",
+      "code": "Published reference.json generator gpt4_1106_preview; online reference Qwen2.5-72B",
+      "effect": "Offline final reference file does not establish the paper evaluation reference"
+    },
+    {
+      "item": "MT aggregation model",
+      "paper": "Qwen2.5-72B default unless specified",
+      "code": "run_mt_bench aggregator qwen/qwen2.5-vl-72b-instruct",
+      "effect": "Model identity differs"
+    },
+    {
+      "item": "FLASK expert pool",
+      "paper": "Table2 lists15",
+      "code": "run_flask21 experts,9 missing profile entries",
+      "effect": "Direct public runner hits missing metadata before generation"
+    },
+    {
+      "item": "published profile",
+      "paper": "offline MMLU capability estimation",
+      "code": "15 profiles, one has fractional cap_correct with zero reported accuracies",
+      "effect": "14 profiles satisfy count-based reconstruction, one schema inconsistent; never silently repaired"
+    },
+    {
+      "item": "cost accounting",
+      "paper": "Section6.4 states reference and judge included",
+      "code": "Runner reference usage counted, online judge helper returns only scalar and its usage is not added to actual_cost_usd",
+      "effect": "Public runner dollar sums do not establish the published all-in cost"
+    }
+  ],
+  "native_call_budget": [
+    {
+      "setting": "README examples",
+      "k": 2,
+      "task": "ARC-Challenge",
+      "questions": 200,
+      "turns": 1,
+      "member_calls": 400,
+      "aggregate_calls": 200,
+      "reference_calls": 0,
+      "online_judge_calls": 0,
+      "logical_calls_before_external_evaluation": 600,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "README examples",
+      "k": 2,
+      "task": "AlpacaEval2",
+      "questions": 805,
+      "turns": 1,
+      "member_calls": 1610,
+      "aggregate_calls": 805,
+      "reference_calls": 805,
+      "online_judge_calls": 805,
+      "logical_calls_before_external_evaluation": 4025,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "README examples",
+      "k": 2,
+      "task": "MT-Bench",
+      "questions": 80,
+      "turns": 2,
+      "member_calls": 320,
+      "aggregate_calls": 160,
+      "reference_calls": 160,
+      "online_judge_calls": 80,
+      "logical_calls_before_external_evaluation": 720,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "README examples",
+      "k": 2,
+      "task": "FLASK-Hard bundled",
+      "questions": 89,
+      "turns": 1,
+      "member_calls": 178,
+      "aggregate_calls": 89,
+      "reference_calls": 89,
+      "online_judge_calls": 89,
+      "logical_calls_before_external_evaluation": 445,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": "FLASK cannot launch unchanged because9 profile keys missing"
+    },
+    {
+      "setting": "paper Table5 default",
+      "k": 3,
+      "task": "ARC-Challenge",
+      "questions": 200,
+      "turns": 1,
+      "member_calls": 600,
+      "aggregate_calls": 200,
+      "reference_calls": 0,
+      "online_judge_calls": 0,
+      "logical_calls_before_external_evaluation": 800,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "paper Table5 default",
+      "k": 3,
+      "task": "AlpacaEval2",
+      "questions": 805,
+      "turns": 1,
+      "member_calls": 2415,
+      "aggregate_calls": 805,
+      "reference_calls": 805,
+      "online_judge_calls": 805,
+      "logical_calls_before_external_evaluation": 4830,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "paper Table5 default",
+      "k": 3,
+      "task": "MT-Bench",
+      "questions": 80,
+      "turns": 2,
+      "member_calls": 480,
+      "aggregate_calls": 160,
+      "reference_calls": 160,
+      "online_judge_calls": 80,
+      "logical_calls_before_external_evaluation": 880,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": null
+    },
+    {
+      "setting": "paper Table5 default",
+      "k": 3,
+      "task": "FLASK-Hard bundled",
+      "questions": 89,
+      "turns": 1,
+      "member_calls": 267,
+      "aggregate_calls": 89,
+      "reference_calls": 89,
+      "online_judge_calls": 89,
+      "logical_calls_before_external_evaluation": 534,
+      "costs_available": "Budget only, no native generation executed",
+      "caveat": "FLASK cannot launch unchanged because9 profile keys missing"
+    }
+  ],
+  "budget_scope": "Cold cache logical client.chat invocations, excluding final external evaluation, retries, reference regeneration and offline profiling. Online no calls executed.",
+  "profiling": {
+    "published_n_per_subject": 10,
+    "published_questions_per_model": 570,
+    "models": 15,
+    "published_model_question_observation_slots": 8550,
+    "README_regenerate_n_per_subject": 20,
+    "nominal_regenerate_questions_per_model": 1140,
+    "nominal_regenerate_member_calls": 17100,
+    "raw_question_ids_and_member_answers_published": false,
+    "aggregate_recheck": "CES_CAPABILITY_AGGREGATE_RECHECK.json, reaggregation with discrepancies"
+  },
+  "native_benchmark_performance_reproduced": false,
+  "independent_current_native_score": null,
+  "native_results_gap": [
+    "No CES per-question answers/cache/selected sets/rewards/judgments/usage logs in current tree or camera-ready archive",
+    "Paper and public artifact protocol differences listed",
+    "One capability profile is internally inconsistent",
+    "Online model snapshots are not pinned to immutable provider revisions"
+  ],
+  "reproducible_without_LLM_calls": [
+    "Exact official core selection and Sherman-Morrison update qualification",
+    "Published profile aggregate arithmetic with14 valid count-based rows and1 discrepancy",
+    "Benchmark input/reference inventory and manifest hashes"
+  ],
+  "chosen_migration_source": "Pinned official code. Preserve code behavior and label benchmark/pool/feature/feedback changes as adaptation.",
+  "physical_new_LLM_calls": 0
+}

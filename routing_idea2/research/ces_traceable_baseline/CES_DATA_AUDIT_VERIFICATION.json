@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "archive_git_blob_matches": 925,
+  "profile_models_recomputed": 15,
+  "arithmetically_consistent_profiles": 14,
+  "known_invalid_count_profile_preserved": true,
+  "public_asset_audit_sha256": "7a13f3e01830ab538ee8bae30dfa7cc34151880635ca40085d2a5b4c307d6442",
+  "source_profile_sha256": "b0f7c75c7857dd2d69aa7ac06b2cf393ad52b2ded6a10c07257cdf0c2d2f51e6",
+  "audit_note": "PASS verifies the audit faithfully reports the original discrepancy; it does not certify the upstream profile or original CES main metrics.",
+  "model_API_calls": 0
+}

@@ -1,0 +1,549 @@
+{
+  "status": "PASS",
+  "claim_scope": "Independent frozen CES shared-protocol migration operator/permissions/cost audit",
+  "scalar_checks": 8095212,
+  "maximum_error": 1.2104789393063697e-11,
+  "feature_geometries": [
+    {
+      "fold": 0,
+      "seed": 17,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 0,
+      "seed": 29,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 0,
+      "seed": 43,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 1,
+      "seed": 17,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 1,
+      "seed": 29,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 2,
+      "seed": 17,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 2,
+      "seed": 29,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 3,
+      "seed": 17,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 3,
+      "seed": 29,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 4,
+      "seed": 17,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 4,
+      "seed": 29,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "I_only_geometry_exact": true,
+      "historical_combo_mean_updates": 4800
+    }
+  ],
+  "formal_paths": [
+    {
+      "path": "f0_HistoryFit-Full20_s17",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_HistoryFit-Full20_s29",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_HistoryFit-Full20_s43",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_HistoryFit-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_HistoryFit-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_HistoryFit-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_ProfileOnly-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_ProfileOnly-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f0_ProfileOnly-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-Full20_s17",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-Full20_s29",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-Full20_s43",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_HistoryFit-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_ProfileOnly-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_ProfileOnly-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f1_ProfileOnly-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-Full20_s17",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-Full20_s29",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-Full20_s43",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_HistoryFit-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_ProfileOnly-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_ProfileOnly-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f2_ProfileOnly-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-Full20_s17",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-Full20_s29",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-Full20_s43",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_HistoryFit-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_ProfileOnly-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_ProfileOnly-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f3_ProfileOnly-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-Full20_s17",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-Full20_s29",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-Full20_s43",
+      "observed_aggregate_means": 1200,
+      "Gold": 60,
+      "members": 1080,
+      "aggregators": 3600,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_HistoryFit-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_ProfileOnly-SingleCombo_s17",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_ProfileOnly-SingleCombo_s29",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    },
+    {
+      "path": "f4_ProfileOnly-SingleCombo_s43",
+      "observed_aggregate_means": 60,
+      "Gold": 60,
+      "members": 540,
+      "aggregators": 180,
+      "main_and_diagnostic_reconstructed": true,
+      "query_rewards_ever_passed_to_policy": false
+    }
+  ],
+  "snapshots_checked": 180,
+  "hidden_reward_and_future_cost_poison": [
+    {
+      "track": "ProfileOnly-SingleCombo",
+      "fold": 0,
+      "seed": 17,
+      "steps": 60,
+      "unpurchased_U_E_rewards_and_costs_NaN": true,
+      "nonexecuted_combinations_on_paid_single_questions_NaN": true,
+      "choices_predictions_mean_diagnostics_exact": true,
+      "paid_feedback_costs_exact": true
+    },
+    {
+      "track": "HistoryFit-SingleCombo",
+      "fold": 0,
+      "seed": 17,
+      "steps": 60,
+      "unpurchased_U_E_rewards_and_costs_NaN": true,
+      "nonexecuted_combinations_on_paid_single_questions_NaN": true,
+      "choices_predictions_mean_diagnostics_exact": true,
+      "paid_feedback_costs_exact": true
+    },
+    {
+      "track": "HistoryFit-Full20",
+      "fold": 0,
+      "seed": 17,
+      "steps": 60,
+      "unpurchased_U_E_rewards_and_costs_NaN": true,
+      "nonexecuted_combinations_on_paid_single_questions_NaN": false,
+      "choices_predictions_mean_diagnostics_exact": true,
+      "paid_feedback_costs_exact": true
+    }
+  ],
+  "prepared_feature_no_U_E_reward_or_cost_dependence": true,
+  "FeatEncoder_source_matches_upstream_manifest": true,
+  "original_source_hashes": {
+    "src/bandits/linucb_combinatorial.py": "ac066dfe08517d98180b7cf8792358493b3bfaf95bd38a26a22dd334ec95bc8e",
+    "src/embeddings/projectors.py": "397b78f6544239b88baed2e528f599dfcf21b97482ce35e54871efe0f833392f",
+    "scripts/run_objective_mcq.py": "255a12c33dc8c965cdb85beca41b9a89fb9090d1901b729d0e2e03e027a5b27e",
+    "LICENSE": "1f7167285b17af5f1f4dbc60d25a4c1a2603149f963bf7a530b169256385b321"
+  },
+  "extra_encoder_source_sha256": "64eefc44a992c59efb6b3e650438bfc3f4db3489442371bf6480e6aaa53629ba",
+  "new_physical_LLM_calls": 0,
+  "interpretation": "This establishes bounded adapter fidelity and permission isolation, not native benchmark performance or scientific superiority."
+}

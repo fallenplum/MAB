@@ -1,0 +1,96 @@
+{
+  "status": "COMPLETE_FOR_AUDIT_AND_CACHE_TRANSFER",
+  "native_benchmark": "NOT_REPRODUCED_WITH_RELEASED_ARTIFACTS",
+  "original_source_operators": "EXECUTED_AND_INDEPENDENTLY_VERIFIED",
+  "migration": "COMPLETE",
+  "paper_reported_results": {
+    "CES": {
+      "alpaca_LC_percent": 63.12,
+      "alpaca_LC_printed_plusminus": 0.4,
+      "alpaca_WR_percent": 61.47,
+      "alpaca_WR_printed_plusminus": 0.3,
+      "MT_avg": 8.94,
+      "MT_turn1": 9.13,
+      "MT_turn2": 8.75,
+      "ARC_accuracy_percent": 97.5
+    },
+    "KABB": {
+      "alpaca_LC_percent": 59.38,
+      "alpaca_WR_percent": 52.43,
+      "MT_avg": 8.89,
+      "ARC_accuracy_percent": 95.5
+    },
+    "MoA": {
+      "alpaca_LC_percent": 57.93,
+      "alpaca_WR_percent": 73.46,
+      "MT_avg": 9.26,
+      "ARC_accuracy_percent": 96.0
+    },
+    "DeepSeek_R1": {
+      "alpaca_LC_percent": 76.17,
+      "alpaca_WR_percent": 80.95,
+      "MT_avg": 9.48,
+      "ARC_accuracy_percent": 92.5
+    },
+    "source": "Local author paper pp6-7, printed5805-5806, Tables3-5, visually verified",
+    "role": "Paper-reported numbers only, not current independently replayed native benchmark results",
+    "printed_uncertainty": "The extracted experimental description does not determine replicate count or whether plusminus is SD/SE/CI; no95%CI claim"
+  },
+  "main_migration_comparisons": [
+    {
+      "point": -0.004074074074074073,
+      "ci95": [
+        -0.01741203703703704,
+        0.00925925925925926
+      ],
+      "ci_family_bonferroni": [
+        -0.019814814814814816,
+        0.011206018518518485
+      ],
+      "centered_bootstrap_p": 0.5566886622675465,
+      "name": "HistoryFit-Full20 CES-UCB minus E7 Random PCA16 Ridge atGold60",
+      "Holm_p": 1.0,
+      "positive_family_evidence": false
+    },
+    {
+      "point": 0.00425925925925926,
+      "ci95": [
+        -0.009259259259259259,
+        0.01777777777777778
+      ],
+      "ci_family_bonferroni": [
+        -0.011111111111111112,
+        0.01925925925925926
+      ],
+      "centered_bootstrap_p": 0.5306938612277544,
+      "name": "HistoryFit-Full20 CES-UCB minus E7 Random RBF Ridge atGold60",
+      "Holm_p": 1.0,
+      "positive_family_evidence": false
+    }
+  ],
+  "frozen_baseline": "DecisionAware and E7",
+  "E7_freeze_sha256": "37bd106257e9eff7a324264faad4f01f51a923849fcd1fe0c5ac7d2c16bd0b17",
+  "protocol_sha256": "b9b9be0a3629e9adcbb9e81d3db4ff269510219adc5faa55914b13f99f4f3b0b",
+  "formal_paths": 45,
+  "model_snapshots": 180,
+  "extra_CES_I_side_information": true,
+  "physical_new_model_API_calls": 0,
+  "new_acquisition_formula": false,
+  "scope": "Existing train600, controlled author-code port, no fresh/sealed evaluation",
+  "reports": [
+    "01_NATIVE_REPRODUCIBILITY_AUDIT.md",
+    "02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md",
+    "03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md",
+    "04_MIGRATION_RESULTS_AND_COST.md",
+    "05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md",
+    "REPRODUCE.md"
+  ],
+  "native_assets_status": "COMPLETE",
+  "migration_result_sha256": "38ce6886efb77e27826919daa4155999bf37e067382e821ba71f4e767000158f",
+  "unresolved": [
+    "Original generated/graded/usage trajectories missing",
+    "Published profile one-row inconsistency",
+    "Paper-code behavior/configuration discrepancies",
+    "FLASK runner profile-key coverage gap"
+  ]
+}

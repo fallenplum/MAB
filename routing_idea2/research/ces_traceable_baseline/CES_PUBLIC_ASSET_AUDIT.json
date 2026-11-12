@@ -1,0 +1,360 @@
+{
+  "status": "COMPLETE",
+  "audit_completed": true,
+  "physical_model_API_calls": 0,
+  "audit_scope": "Official master, release tag and full software ZIP; data/feedback/cost rights, no live generation",
+  "source_tree_crosscheck": {
+    "status": "PASS",
+    "master_commit": "9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7",
+    "master_tree": "1451ea798bd66b75b9b451ab56a322a5576a58e4",
+    "tag_commit": "778ffd9e24ac7e2ee0a3790bc2a52711296dd59f",
+    "master_blobs": 926,
+    "tag_blobs": 925,
+    "archive_blob_matches": 925,
+    "modified_tag_files": [
+      {
+        "path": "README.md",
+        "tag_blob": "2f2921bde7f22f83669390a9a57ab05c26cc88bf",
+        "master_blob": "2e5b2e73673db7286c579526e3ce28165de84394"
+      }
+    ],
+    "master_only_files": [
+      "LICENSE"
+    ],
+    "tag_only_files": [],
+    "fetched_metadata": [
+      {
+        "url": "https://api.github.com/repos/JinkunXu/CES",
+        "path": "REPO_METADATA_RAW.json",
+        "bytes": 4870,
+        "sha256": "f20260c2ee6a97852276abb9dabaf7ccb895a8934f94dfd098c72a5b79e84078"
+      },
+      {
+        "url": "https://api.github.com/repos/JinkunXu/CES/branches/master",
+        "path": "MASTER_REF_RAW.json",
+        "bytes": 4657,
+        "sha256": "157165fba75ab5915ec8d9133cfdc9ecf7af6f5e03cb233bd1e4c76ee868dd01"
+      },
+      {
+        "url": "https://api.github.com/repos/JinkunXu/CES/git/ref/tags/v1.0.0-kdd2026",
+        "path": "TAG_REF_RAW.json",
+        "bytes": 352,
+        "sha256": "b2a9bb70514b79803dc1dd3d9e96f49f94db8da29a5256a60af46ca77469a404"
+      },
+      {
+        "url": "https://api.github.com/repos/JinkunXu/CES/git/trees/1451ea798bd66b75b9b451ab56a322a5576a58e4?recursive=1",
+        "path": "MASTER_GIT_TREE_RAW.json",
+        "bytes": 336914,
+        "sha256": "84ebaa7c0bb4aa249a68b9864f2859f178f71b1d85dcc9974a38416eb83f895d"
+      },
+      {
+        "url": "https://api.github.com/repos/JinkunXu/CES/git/trees/778ffd9e24ac7e2ee0a3790bc2a52711296dd59f?recursive=1",
+        "path": "TAG_GIT_TREE_RAW.json",
+        "bytes": 336703,
+        "sha256": "dd000fa38d4dd05db1fd58eb87be02a45acb0515af67185deb9929d47e654d3d"
+      }
+    ],
+    "no_truncated_tree": true,
+    "physical_model_API_calls": 0
+  },
+  "archive": {
+    "status": "COMPLETE",
+    "archive": {
+      "url": "https://zenodo.org/records/20364184/files/JinkunXu/CES-v1.0.0-kdd2026.zip?download=1",
+      "file": "CES-v1.0.0-kdd2026.zip",
+      "bytes": 39524383,
+      "sha256": "c3297e7e0e85594933239a1e89b486cee5290459b380eb950f20ad9540dd4583",
+      "md5": "ba087d464f99dbefcebeb618b6b0b413"
+    },
+    "archive_file_count": 925,
+    "core_file_count": 50,
+    "source_result_directories": [],
+    "core_data_files": [
+      {
+        "path": "JinkunXu-CES-778ffd9/artifacts/mmlu_meta_10d.json",
+        "bytes": 10580,
+        "compressed_bytes": 1421,
+        "crc32": "d371a10f",
+        "relative": "artifacts/mmlu_meta_10d.json",
+        "sha256": "b0f7c75c7857dd2d69aa7ac06b2cf393ad52b2ded6a10c07257cdf0c2d2f51e6",
+        "json_type": "dict",
+        "top_level_count": 5,
+        "top_level_keys": [
+          "cap_names",
+          "split",
+          "n_per_subject",
+          "seed",
+          "models"
+        ]
+      },
+      {
+        "path": "JinkunXu-CES-778ffd9/data/alpaca_eval/reference.json",
+        "bytes": 1899765,
+        "compressed_bytes": 659369,
+        "crc32": "b20b1afa",
+        "relative": "data/alpaca_eval/reference.json",
+        "sha256": "83db546b872ddebee8965fd05fa48461ee3c32bc695c62fb57f2d214ff741ec4",
+        "json_type": "list",
+        "top_level_count": 805,
+        "first_record_keys": [
+          "dataset",
+          "instruction",
+          "output",
+          "generator"
+        ]
+      }
+    ],
+    "archive_root_license_present": false,
+    "license": "Current master9e071c51 root code is MIT. The archived tag may omit root LICENSE. Bundled benchmark/baseline subtrees retain separate licenses.",
+    "no_original_CES_outputs_found": true,
+    "physical_model_API_calls": 0,
+    "scope": "Official Zenodo software ZIP inventory, original benchmark inputs and profiles. No live generation/judging."
+  },
+  "benchmark_inputs": {
+    "status": "COMPLETE",
+    "source": "official Zenodo archive with verified MD5",
+    "benchmark_inputs": [
+      {
+        "path": "data/alpaca_eval/reference.json",
+        "bytes": 1899765,
+        "sha256": "83db546b872ddebee8965fd05fa48461ee3c32bc695c62fb57f2d214ff741ec4",
+        "records": 805,
+        "record_keys": [
+          "dataset",
+          "generator",
+          "instruction",
+          "output"
+        ],
+        "generators": {
+          "gpt4_1106_preview": 805
+        }
+      },
+      {
+        "path": "FastChat/fastchat/llm_judge/data/mt_bench/question.jsonl",
+        "bytes": 48929,
+        "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+        "records": 80,
+        "record_keys": [
+          "category",
+          "question_id",
+          "reference",
+          "turns"
+        ],
+        "turn_count_distribution": {
+          "2": 80
+        },
+        "categories": {
+          "writing": 10,
+          "roleplay": 10,
+          "reasoning": 10,
+          "math": 10,
+          "coding": 10,
+          "extraction": 10,
+          "stem": 10,
+          "humanities": 10
+        }
+      },
+      {
+        "path": "FastChat/fastchat/llm_judge/data/mt_bench/reference_answer/gpt-4.jsonl",
+        "bytes": 51109,
+        "sha256": "f957a5bc977badb66885ec970e6cd08527845780313f0995764260e5777b9b3f",
+        "records": 30,
+        "record_keys": [
+          "answer_id",
+          "choices",
+          "model_id",
+          "question_id",
+          "tstamp"
+        ],
+        "choices_per_record": {
+          "1": 30
+        },
+        "referenced_question_categories": {
+          "reasoning": 10,
+          "math": 10,
+          "coding": 10
+        }
+      },
+      {
+        "path": "FLASK/evaluation_set/flask_hard_evaluation.jsonl",
+        "bytes": 119459,
+        "sha256": "9830d65b2a137b9184039850c748f52dde369377a0ae06c00ccb6d464d5ebb48",
+        "records": 89,
+        "record_keys": [
+          "answer",
+          "difficulty",
+          "domain",
+          "idx",
+          "instruction",
+          "skill",
+          "task"
+        ]
+      },
+      {
+        "path": "FLASK/evaluation_set/flask_evaluation.jsonl",
+        "bytes": 2301319,
+        "sha256": "791950bf1f159b048eba8fee205eba606926c25467a9a31e6f9b6affc2e3e13d",
+        "records": 1740,
+        "record_keys": [
+          "answer",
+          "deterministic",
+          "difficulty",
+          "domain",
+          "idx",
+          "instruction",
+          "mcqa",
+          "skill",
+          "skill_domain",
+          "skill_subdomain",
+          "subcategory",
+          "subdomain",
+          "subtag",
+          "task"
+        ]
+      },
+      {
+        "path": "FLASK/input_data/flask_evaluation_raw.jsonl",
+        "bytes": 2072580,
+        "sha256": "ac6a7041e4cb064902a10346239aeb2a085460199e680edf054d8525d6781290",
+        "records": 1700,
+        "record_keys": [
+          "answer",
+          "deterministic",
+          "domain",
+          "mcqa",
+          "num_skills",
+          "question_id",
+          "skill_domain",
+          "skill_subdomain",
+          "subcategory",
+          "subdomain",
+          "subtag",
+          "task",
+          "text"
+        ]
+      }
+    ],
+    "bundled_CSV_files_scanned": 21,
+    "CES_rows_in_bundled_CSVs": [],
+    "conclusion": "Benchmark prompts and reference answers are available, but no CES per-question routed answers/judgments/usage were found in the official artifact.",
+    "physical_model_API_calls": 0
+  },
+  "profile_reaggregation_summary": {
+    "models": 15,
+    "arithmetically_consistent_models": 14,
+    "noninteger_count_and_ratio_discrepancy_model": "qwen-2.5-32b-instruct",
+    "intended_observations": 8550,
+    "raw_question_answers_public": false,
+    "status": "REAGGREGATED_WITH_DISCREPANCIES",
+    "source_sha256": "b0f7c75c7857dd2d69aa7ac06b2cf393ad52b2ded6a10c07257cdf0c2d2f51e6",
+    "full_result": "CES_CAPABILITY_AGGREGATE_RECHECK.json"
+  },
+  "native_main_score_reproduction": {
+    "status": "NOT_REPRODUCED_MISSING_PER_QUESTION_ARTIFACTS",
+    "available": [
+      "algorithm source",
+      "benchmark prompts",
+      "reference outputs",
+      "MMLU aggregate capability profile"
+    ],
+    "missing": [
+      "CES chosen subsets and per-turn answers",
+      "per-question online rewards/judgments",
+      "paper run/config/seed to table mapping",
+      "original embeddings and frozen encoder revision",
+      "provider model snapshots and per-request usage/retry logs",
+      "final evaluator annotations"
+    ]
+  },
+  "nominal_successful_call_budgets": [
+    {
+      "name": "ARC-Challenge README example",
+      "questions": 200,
+      "k": 2,
+      "turns": 1,
+      "selected_member_calls": 400,
+      "aggregator_calls": 200,
+      "reference_generation_calls": 0,
+      "online_judge_calls": 0,
+      "nominal_online_calls": 600,
+      "final_judge_instances": 0,
+      "gold_questions": 200
+    },
+    {
+      "name": "AlpacaEval2 README example",
+      "questions": 805,
+      "k": 2,
+      "turns": 1,
+      "selected_member_calls": 1610,
+      "aggregator_calls": 805,
+      "reference_generation_calls": 805,
+      "online_judge_calls": 805,
+      "nominal_online_calls": 4025,
+      "final_judge_instances": 805,
+      "gold_questions": null
+    },
+    {
+      "name": "MT-Bench README example",
+      "questions": 80,
+      "k": 2,
+      "turns": 2,
+      "selected_member_calls": 320,
+      "aggregator_calls": 160,
+      "reference_generation_calls": 160,
+      "online_judge_calls": 80,
+      "nominal_online_calls": 720,
+      "final_judge_instances": 160,
+      "gold_questions": null
+    },
+    {
+      "name": "FLASK-Hard bundled input at README limit200",
+      "questions": 89,
+      "k": 2,
+      "turns": 1,
+      "selected_member_calls": 178,
+      "aggregator_calls": 89,
+      "reference_generation_calls": 89,
+      "online_judge_calls": 89,
+      "nominal_online_calls": 445,
+      "final_judge_instances": 89,
+      "gold_questions": null
+    }
+  ],
+  "budget_assumptions": [
+    "k2 README defaults",
+    "cold cache",
+    "one logical successful call per requested expert/reference/aggregator/judge",
+    "retry and provider failover overhead excluded and unknown",
+    "offline profile calls excluded from per-task table",
+    "final_judge_instances are logical evaluation items; actual request batching/repetition depends on evaluator config"
+  ],
+  "offline_profile_budget": {
+    "published_profile_lower_bound_generation_calls": 8550,
+    "README_n20_generation_calls_if57_subjects": 17100,
+    "published_unique_gold_question_upper_assumption": 570,
+    "published_max_completion_tokens_per_call": 16,
+    "published_completion_token_cap": 136800,
+    "total_token_cap": null,
+    "total_token_note": "Prompt lengths and source usage records unavailable, cannot give complete actual Token cost"
+  },
+  "permissions": {
+    "native_feedback": "current served aggregate gets correctness or online LLM-judge reward, followed by update each question/topic",
+    "member_capability": "published MMLU test scores are extra offline member-level gold supervision",
+    "no_offline_ablation": "--warm_start random changes projection initialization; it still constructs member features from published capability vectors unless no_meta_vectors is separately used",
+    "main_migration": "new six frozen models require an explicitly sourced/measured member representation; fifteen cloud-model profiles cannot be silently rebound",
+    "actual_cost": "Static model cost features and real API usage are distinct. Missing usage cannot establish zero expense."
+  },
+  "conclusions": [
+    "No original CES benchmark score can presently be recomputed from official released per-question outputs because those outputs are absent",
+    "The capability-profile file can be re-aggregated arithmetically, with14 consistent models and1 invalid noninteger correct-count model",
+    "Code parity and MAB cached-score adaptation can be executed with0 new physical model calls, with their changed permissions declared separately"
+  ],
+  "related_sources": [
+    "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/README.md",
+    "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/artifacts/mmlu_meta_10d.json",
+    "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/src/data/dataset_loader.py",
+    "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/eval_mmlu_meta.py",
+    "https://github.com/JinkunXu/CES/blob/9e071c51b405f4fbfc36b0453ec6a91ddb36d1b7/scripts/run_ces_ablation_suite.py",
+    "https://zenodo.org/records/20364184"
+  ]
+}
