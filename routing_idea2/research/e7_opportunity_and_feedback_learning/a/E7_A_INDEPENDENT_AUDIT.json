@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scalar_checks": 6919800,
+  "maximum_reconstruction_error": 1.9984014443252818e-15,
+  "five_frozen_collections_sha_verified": true,
+  "random_collections_regenerated_without_rewards": true,
+  "all_random_and_deterministic_leaveout_choices_reconstructed": true,
+  "bootstrap_reconstructions": 5000,
+  "original_questions": 600,
+  "generation_repeats": 3,
+  "analytic_random_set_coverage": [
+    {
+      "m": 1,
+      "analytic_random_opportunity_retention": 0.4507079882447235,
+      "archived_200_draw_retention": 0.45182741116751274,
+      "absolute_difference": 0.001119422922789215
+    },
+    {
+      "m": 3,
+      "analytic_random_opportunity_retention": 0.7443541669940752,
+      "archived_200_draw_retention": 0.7485532994923858,
+      "absolute_difference": 0.004199132498310609
+    },
+    {
+      "m": 5,
+      "analytic_random_opportunity_retention": 0.8473018916356283,
+      "archived_200_draw_retention": 0.8507106598984773,
+      "absolute_difference": 0.0034087682628489713
+    },
+    {
+      "m": 19,
+      "analytic_random_opportunity_retention": 1.0,
+      "archived_200_draw_retention": 1.0,
+      "absolute_difference": 0.0
+    }
+  ],
+  "scope": "Frozen development candidate diagnosis with original-question paired bootstrap"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scalar_comparisons": 2246454,
+  "maximum_absolute_error": 0.0,
+  "folds": 5,
+  "original_questions": 600,
+  "question_generation_repeats": 3,
+  "random_sets_per_question": 200,
+  "held_repeat_choices_reconstructed": true,
+  "independent_uniform_tie_reconstruction": true,
+  "candidate_nested_sizes": [
+    2,
+    4,
+    6,
+    20
+  ],
+  "bootstrap_records_reconstructed": 5000,
+  "A3_opportunity_decomposition_reconstructed": true,
+  "source_sha256": "7c8845dbe19d8471ad4ed896ac176c66a01c95210c6e543373026794aa94161d",
+  "scope": "Post-freeze old-development outcome diagnosis. No deployment or stable-population upper-bound claim"
+}

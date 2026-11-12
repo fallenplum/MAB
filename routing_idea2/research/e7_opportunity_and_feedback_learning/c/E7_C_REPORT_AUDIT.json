@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scalar_checks": 145752,
+  "maximum_reconstruction_error": 8.881784197001252e-16,
+  "reward_values_rebuilt": 129600,
+  "formal_paths": 90,
+  "snapshots": 360,
+  "default_initial_cost_mean_per_fold": {
+    "gold": 240.0,
+    "member_calls": 4320.0,
+    "aggregator_calls": 14400.0,
+    "scoring_ops": 14400.0,
+    "input_tokens": 12776157.4,
+    "output_tokens": 2104580.8,
+    "tokens": 14880738.2,
+    "source_model_wall_s": 119723.68127654721
+  },
+  "original_evaluation_questions": 600,
+  "LLM_repeats_per_question": 3,
+  "algorithm_repeats": 3,
+  "output_roles": "Report reconstruction, frozen policy predictions and purchased-feedback metrics, no acquisition changes",
+  "results_sha256": "7337498a0eb8fa3fd56cd8266dacf0df6f4f7aad0e8277c3969438ab90f2c38f"
+}

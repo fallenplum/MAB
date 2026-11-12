@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": 1170,
+  "python_files_compiled": 20,
+  "public_manifest_records": 47,
+  "old_E5_E6_hash_records_preserved": 88,
+  "formal_paths": 90,
+  "snapshots": 360,
+  "evaluation_decisions": 43200,
+  "feedback_purchase_events": 5400,
+  "distinct_original_questions": 600,
+  "new_physical_LLM_calls": 0,
+  "privacy_matches": [],
+  "errors": [],
+  "pending": [],
+  "manifest_sha256": "ee1431da018c29223bd50dd1c7a95ddf13deb766277a7b2124458e4ce9f7f14a",
+  "audit_sha256": {
+    "a/E7_A_INDEPENDENT_AUDIT.json": "84d44b8909af63515aa271f73dae4bbf526286d86d8f271554460374e7e5a1e9",
+    "b/E7_B_INDEPENDENT_AUDIT.json": "430dc144a74d4b495c00e614d758e3b394a1b350cfce233d459051d4dfadb0e2",
+    "c/E7_C_REPORT_AUDIT.json": "e213d0f3dde2c38673d39ccf278bb281234e5ad00311247c7cf74236acd99913",
+    "theory/WORKING_POSTERIOR_OPERATOR_CHECKS.json": "daa4d24498176ef34bbb748d0ae4e65b7784619674432e3a009e8eab5b5e395e",
+    "theory/ACTUAL_MODEL_OPERATOR_AUDIT.json": "a296f2e0a9d570ff56b9ff2e2d4a722e0a70b0da97dfe756b0b6e967f5237ccd",
+    "theory/CANDIDATE_OPPORTUNITY_AUDIT.json": "2fdf9122f2084f7fe68a656ba9aff0d4467579992e1dae24e9a142fa055636c5",
+    "theory/ACTIVE_FEEDBACK_OPERATOR_ACCESS_AUDIT.json": "7832dbc0116c39988e562b3a2e3e8c964d26c45fb8981d1e4afb56f342afd7f1",
+    "theory/ACTIVE_FEEDBACK_STATISTICS_AUDIT.json": "24f5d37b44de363ef0fa03bbed445d543def7ac996f7ea053febc01a5ecaa071",
+    "E7_FINAL_REVIEW.json": "44da097c35c36aa742985264afaeeebf5489c2c27c44ef5dcf6683d5e96ecc1f"
+  },
+  "work_status": "COMPLETE",
+  "science_status": "NO_FAMILY_SUPPORTED_POSITIVE_PRIMARY_CONTRAST",
+  "scope": "Artifact integrity and numerical audits are separate from scientific benefit"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "environment": "equal_expected_reward",
+      "seed": [
+        20261112,
+        0,
+        771
+      ],
+      "initial": 240,
+      "added": 60,
+      "query": 120,
+      "default": 3,
+      "models": {
+        "P1": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.5027777777777778,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.0815844535917513,
+            "offset_mse": 0.00675149432005208
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.46944444444444444,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.08123811620648895,
+            "offset_mse": 0.0056225251059625085
+          }
+        ],
+        "P2": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.4583333333333333,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.07817907777239862,
+            "offset_mse": 0.00628861085574032
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.4861111111111111,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.07830259923751783,
+            "offset_mse": 0.0054524344485938365
+          }
+        ],
+        "P3": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.4583333333333333,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.07831481180146335,
+            "offset_mse": 0.0037676739053325507
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.4583333333333333,
+            "known_expected_accuracy": 0.5,
+            "known_expected_default": 0.5,
+            "known_expected_gain": 0.0,
+            "centered_mse": 0.07839379385836244,
+            "offset_mse": 0.0036766088271137217
+          }
+        ]
+      }
+    },
+    {
+      "environment": "known_feature_switch",
+      "seed": [
+        20261112,
+        1,
+        771
+      ],
+      "initial": 240,
+      "added": 60,
+      "query": 120,
+      "default": 0,
+      "models": {
+        "P1": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.04158992527778345,
+            "offset_mse": 0.0028160577262778034
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.04104409454225455,
+            "offset_mse": 0.0027375175154171283
+          }
+        ],
+        "P2": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.03999575714187718,
+            "offset_mse": 0.0029099629429391897
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.03967791833814506,
+            "offset_mse": 0.002757131582758913
+          }
+        ],
+        "P3": [
+          {
+            "n": 240,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.03969052559666789,
+            "offset_mse": 0.002334688841044305
+          },
+          {
+            "n": 300,
+            "empirical_accuracy": 0.9472222222222222,
+            "known_expected_accuracy": 0.9499999999999997,
+            "known_expected_default": 0.5037499999999999,
+            "known_expected_gain": 0.44625,
+            "centered_mse": 0.039522524416216905,
+            "offset_mse": 0.0023340089019684832
+          }
+        ]
+      }
+    }
+  ],
+  "interpretation": "Software-only known mechanisms, separate from real routing evidence; all methods use the same fit/prediction/metric functions",
+  "null_rule": "Known means are exactly equal, so any noisy realized difference is never classified as a true advantage"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "outer_fold": 0,
+  "packages": 10,
+  "methods": [
+    "Random",
+    "ParameterIG",
+    "DecisionAware"
+  ],
+  "no_E_outcome_scoring": true,
+  "paths": [
+    {
+      "path": "f0_P3_Random_s17",
+      "status": "FROZEN",
+      "wall_s": 0.5963694000020041
+    },
+    {
+      "path": "f0_P3_ParameterIG_s17",
+      "status": "FROZEN",
+      "wall_s": 0.581800200001453
+    },
+    {
+      "path": "f0_P3_DecisionAware_s17",
+      "status": "FROZEN",
+      "wall_s": 1.6118286999990232
+    }
+  ],
+  "formal_path_limit": 90
+}

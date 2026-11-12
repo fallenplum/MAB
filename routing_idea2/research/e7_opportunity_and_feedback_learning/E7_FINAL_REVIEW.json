@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "scalar_comparisons": 209634,
+  "maximum_absolute_error": 4.163336342344337e-17,
+  "original_evaluation_questions": 600,
+  "independent_primary_comparisons": 4,
+  "bootstrap_repetitions": 5000,
+  "all_generation_and_algorithm_repeats_kept_inside_original_question": true,
+  "formal_feedback_paths": 90,
+  "paid_packet_ledgers_rebuilt": 5400,
+  "model_snapshot_hashes_verified": 360,
+  "packet_gold": 1,
+  "packet_member_calls": 18,
+  "packet_aggregator_calls": 60,
+  "packet_Token_hard_upper_bound": 602112,
+  "unique_paid_pool_questions_across_counterfactual_paths": 325,
+  "physical_new_LLM_calls": 0,
+  "legacy_manifest_coverage": [
+    {
+      "stage": "E1",
+      "verified_records": 127,
+      "scope": "E1 immutable delivery snapshot"
+    },
+    {
+      "stage": "E2",
+      "verified_records": 3,
+      "scope": "Three locally available published result/index records",
+      "excluded_manifest_paths": [
+        "README.md",
+        "routing_idea2/README.md"
+      ],
+      "reason": "These two historical Git-only README versions are not present in this local release snapshot; base tree inheritance is checked by publisher"
+    },
+    {
+      "stage": "E3",
+      "verified_records": 44,
+      "scope": "Prior public manifest records"
+    },
+    {
+      "stage": "E4",
+      "verified_records": 59,
+      "scope": "Prior public manifest records"
+    },
+    {
+      "stage": "E5",
+      "verified_records": 44,
+      "scope": "Prior public manifest records"
+    },
+    {
+      "stage": "E6",
+      "verified_records": 44,
+      "scope": "Prior public manifest records"
+    }
+  ],
+  "private_identifiers_checked": 1200,
+  "privacy_matches": [],
+  "real_model_parameters_public": [],
+  "python_sources_compiled": 20,
+  "public_files_at_review": 46,
+  "reviewed_file_sha256": {
+    "RELATED_WORK_MAPPING.md": "3696758272a460f90542c9d53a9efd51d8ca28dc7a76c1d8e8f015dc269af1b2",
+    "E7_PROTOCOL.json": "7fd473cb9ccc37dfffbff0ad8968b0a8ccc969b1a9ae2e99594f33824351bd3d",
+    "e7_common.py": "055a97ffca4289485998785fdec5a0366300ba01b7f90f9fc01be22a474a94cc",
+    "prepare_e7.py": "e15ea912572f7a9d41c21452977ee30a5a4baa6a5c27a12cc48118d587bd70f0",
+    "01_CANDIDATE_OPPORTUNITY.md": "87ad33c9fb08e41592676fb9995cce9a9077b751afa14d63614175abf9011ab7",
+    "02_INPUT_SIGNAL_AND_LEARNING_CURVES.md": "4c55782064f611b8b8f9622315f2fc49da66208272c759b4e75d78963c935b4a",
+    "03_ACTIVE_FEEDBACK_LEARNING.md": "0e7f9add937032ee391675bc65e4e9a8d9c78625fd2771de0ef4b1efdd21626b",
+    "finalize_e7.py": "d9ab6cd98a391a35297e5bf3c9a2132af216847922f0647320a449628482fdb0",
+    "04_COST_AND_STATISTICS.md": "3f4e75b56221c7aad5f4dbd827931bdc0ff67230f4ef5c55c53104b346fbba4d",
+    "05_E7_RESEARCH_DECISION.md": "cdd90f2ea47e679f0a2aa5d2e6eaed7293acc23f27eb612d32dd200628a6e940",
+    "REPRODUCE.md": "72edf70164cf861a2beaaee38e18f828b7ffbc5d97210c8fc815ed666c4ab07a",
+    "E7_PRIMARY_STATISTICS.json": "6c4f93b8d3ba530199e64da3608bbc0a711be9be8df4006bdb54a519a4512972",
+    "E7_COST_SUMMARY.json": "b33a4f8e5668b6240232ee7254efe17ddbcac72bc2303b2adcfd2bc0f15ffbf3",
+    "E7_COMPLETE_RESULTS.json": "55b8fceb4fee353daf9e63eb4eeebace75728d641edb8c6f11ee11558d0a108b",
+    "verify_e7_delivery.py": "dbb05c07ed49c95ad233903c427d5a1f9703edf0b3467d469810cb914e26e88e",
+    "theory/check_working_posterior.py": "c8960f71e7102e16577d0dbce3fc59a5f0124ae2675c5c753d0bac32aa30224a",
+    "theory/WORKING_POSTERIOR_OPERATOR_CHECKS.json": "daa4d24498176ef34bbb748d0ae4e65b7784619674432e3a009e8eab5b5e395e",
+    "theory/ACTUAL_MODEL_OPERATOR_AUDIT.json": "a296f2e0a9d570ff56b9ff2e2d4a722e0a70b0da97dfe756b0b6e967f5237ccd",
+    "theory/audit_models.py": "fa49881381a3fd0cf67cd084fa3f252a361733bfa8786b7e44aa22322884de9b",
+    "theory/audit_candidate_opportunity.py": "c81a55f36b3a3da4be246670f7ff03a95ef0afd93e1f2fd3ffddc0e8ca46a65d",
+    "theory/CANDIDATE_OPPORTUNITY_AUDIT.json": "2fdf9122f2084f7fe68a656ba9aff0d4467579992e1dae24e9a142fa055636c5",
+    "theory/audit_active_learning.py": "1bed0fd88272a61824fee4296d461372a55b8af22802f8d5a02e2055a1b07e85",
+    "theory/ACTIVE_FEEDBACK_OPERATOR_ACCESS_AUDIT.json": "7832dbc0116c39988e562b3a2e3e8c964d26c45fb8981d1e4afb56f342afd7f1",
+    "theory/audit_active_statistics.py": "ec27b725e0364cddff2b1b7cec1168644c100fb890819a4fe31e61a74c143240",
+    "theory/ACTIVE_FEEDBACK_STATISTICS_AUDIT.json": "24f5d37b44de363ef0fa03bbed445d543def7ac996f7ea053febc01a5ecaa071",
+    "theory/final_review.py": "cefb2076c3655866f97dc84c0c4c7d77a408078ff4cf13cee3c2c9b01ca1244e",
+    "b/e7_models.py": "b47fe81b527fa5f8d59a6645f4e7af59800eec700c71e888223ad7b25d13ac76",
+    "b/run_learning_curves.py": "3feaac21f6e42c2fade9deaaa2580503dbba654d81536a65927525ac942db127",
+    "b/E7_B_MODEL_QUALIFICATION.json": "efe6acc061ea85a5d6981d01e265f2c10299e955dc3e468e694d115bb1ea6053",
+    "b/summarize_learning_curves.py": "e2f73ed68642df47bd3feb491bbc5b07150cbfaba06d4b31d70117d0f7c3c807",
+    "b/E7_B_RESULTS.json": "8dbb4acba6780dcfb2ba9ae5075cb1e02621f7fa504e5d59297f4434557d5b60",
+    "b/E7_B_SOFTWARE_CONTROLS.json": "53ca37eba53c8f6b1bc47951c0dc36f34c34f3e0f262304f3c3cf2c4df820127",
+    "b/audit_learning_curves.py": "b2a5e6f5c47821efaeee7fa71ebf4aeb6568d40d646dfbf371f2603cc180505f",
+    "b/E7_B_INDEPENDENT_AUDIT.json": "430dc144a74d4b495c00e614d758e3b394a1b350cfce233d459051d4dfadb0e2",
+    "a/run_opportunity.py": "7c8845dbe19d8471ad4ed896ac176c66a01c95210c6e543373026794aa94161d",
+    "a/qualify_opportunity.py": "4c0f194d0779f8ebd251f9eee348c5308673c57c651caddcd261e977a307c3de",
+    "a/E7_A_QUALIFICATION.json": "c1053baecfdbfa7707ea6a87c0b81121b66e75bc21793f4f25ee8e88590a54f3",
+    "a/E7_A_RESULTS.json": "6dd6379246c9d442dbe8822fd276b2afe21ba71b30b3ba045e342f6e2a4f8fad",
+    "a/audit_opportunity.py": "94a3830cbb242e2dcee442de1aa076629fa64d7a86266c9580a0b3b7634fc1e7",
+    "a/E7_A_INDEPENDENT_AUDIT.json": "84d44b8909af63515aa271f73dae4bbf526286d86d8f271554460374e7e5a1e9",
+    "c/active_feedback.py": "e4106cf9d701f09f0ee9953a2e385c76e00f07814afe6a80a280b7682078bc3e",
+    "c/E7_C_QUALIFICATION.json": "777e105472860875d82c2c49cdcec1fdbd5d2e0cd44d6fdaf6f4a3f1225c1446",
+    "c/evaluate_feedback.py": "cf5496fac81d9b452c1655bbb9040293ce6cbc74b9c811f03811ab120515317e",
+    "c/E7_C_RESULTS.json": "7337498a0eb8fa3fd56cd8266dacf0df6f4f7aad0e8277c3969438ab90f2c38f",
+    "c/make_report.py": "0d6549296d77092f9ba4905f87383b45c0cd1005d9a37d12408aba99264ca72c",
+    "c/E7_C_REPORT_AUDIT.json": "e213d0f3dde2c38673d39ccf278bb281234e5ad00311247c7cf74236acd99913"
+  },
+  "hash_exclusions": [
+    "E7_DELIVERY_AUDIT.json",
+    "E7_FINAL_REVIEW.json",
+    "PUBLIC_DELIVERY_MANIFEST.json"
+  ],
+  "pending": [],
+  "multiple_testing": "Unified Holm4 and separate Bonferroni98.75 intervals rebuilt from complete original-question records",
+  "conclusions": "Opportunity loss both before candidate gate and within it; exploratory independent-supervision growth, no family-supported within-task content gain or acquisition benefit",
+  "boundary": "Existing train600 development, overlapping training histories, no independent confirmation. Legacy checks cover available prior manifest records, not full OS write forensics."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "exact_unit_errors": {
+    "raw_three_to_mean_regularization": 1.6653345369377348e-16,
+    "primal_dual_linear_mean": 3.885780586188048e-16,
+    "legacy_ridge_covariance_scale": 2.7755575615628914e-17,
+    "sequential_batch_mean": 6.38378239159465e-16,
+    "sequential_batch_covariance": 3.608224830031759e-16,
+    "predictive_observation_variance": 0.001060225187185626,
+    "full_packet_information_gain": 0.0
+  },
+  "KG_antithetic_nonnegative": 0.011042697861858408,
+  "shared_innovation_covariance_MC_relative_error": 0.021854701301609065,
+  "observation_unit": "one question three-repeat mean, full20 output package",
+  "working_assumptions": "independent output Gaussian prior with common scalar kernel and fixed noise",
+  "limitation": "Numerical qualification only, no claim that posterior variance is calibrated for true rewards"
+}

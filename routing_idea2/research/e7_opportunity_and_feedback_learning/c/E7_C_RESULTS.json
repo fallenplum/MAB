@@ -1,0 +1,3059 @@
+{
+  "status": "COMPLETE",
+  "original_E_questions": 600,
+  "outer_folds": 5,
+  "algorithm_seeds": [
+    17,
+    29,
+    43
+  ],
+  "LLM_generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "formal_paths": 90,
+  "learners": [
+    "P1",
+    "P3"
+  ],
+  "learner_names": {
+    "P1": "E7-B P1, legacy direct20 PCA16 Ridge originally named P2",
+    "P3": "E7-B P3 RBF kernel Ridge"
+  },
+  "methods": [
+    "Random",
+    "ParameterIG",
+    "DecisionAware"
+  ],
+  "checkpoints": [
+    0,
+    20,
+    40,
+    60
+  ],
+  "primary_gold": 60,
+  "new_llm_calls": 0,
+  "table": {
+    "P1": {
+      "Random": {
+        "0": {
+          "accuracy": 0.8622222222222221,
+          "ci95": [
+            0.839444444444449,
+            0.8844444444444494
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.012222222222222134,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.023930103188032518,
+          "common_offset_error": 0.06553631613557113,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9377777777777779,
+            "bbh": 0.7866666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.7575757575757575,
+            "date_understanding": 0.6363636363636362,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.2727272727272727,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6666666666666666,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6363636363636364,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.611111111111111,
+            "sports_understanding": 0.6969696969696969,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5277777777777778
+          },
+          "GSM_BBH_task_macro": 0.8622222222222222,
+          "GSM_BBH27_macro": 0.8627347549569773,
+          "seed_accuracy": [
+            0.855,
+            0.8683333333333333,
+            0.8633333333333333
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8622222222222222,
+            0.8622222222222222,
+            0.8622222222222222
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.24583333333333332,
+          "full_path_wall_mean": 3.5642986533333896
+        },
+        "20": {
+          "accuracy": 0.8638888888888888,
+          "ci95": [
+            0.842222222222227,
+            0.885189814814821
+          ],
+          "gain_initial": 0.0016666666666666668,
+          "gain_initial_ci95": [
+            -0.0027777777777777788,
+            0.006300925925925861
+          ],
+          "gain_I_fixed": 0.01388888888888884,
+          "corrected_question_equivalents": 5.666666666666667,
+          "harmed_question_equivalents": 4.666666666666666,
+          "net_correction": 1.0,
+          "changed_decisions": 116.33333333333333,
+          "centered_error": 0.02382647584621224,
+          "common_offset_error": 0.06405661897627767,
+          "centered_error_change": -0.00010362734182027723,
+          "GSM_BBH": {
+            "gsm8k": 0.9396296296296295,
+            "bbh": 0.7881481481481482
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 0.9797979797979799,
+            "causal_judgement": 0.7474747474747474,
+            "date_understanding": 0.6363636363636364,
+            "disambiguation_qa": 0.5252525252525252,
+            "dyck_languages": 0.29292929292929293,
+            "formal_fallacies": 0.6464646464646464,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6565656565656565,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6161616161616161,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9595959595959596,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.6203703703703703,
+            "sports_understanding": 0.6868686868686869,
+            "temporal_sequences": 0.9292929292929292,
+            "tracking_shuffled_objects_five_objects": 0.9595959595959596,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9393939393939393,
+            "web_of_lies": 0.888888888888889,
+            "word_sorting": 0.5462962962962963
+          },
+          "GSM_BBH_task_macro": 0.8638888888888888,
+          "GSM_BBH27_macro": 0.8643621399176953,
+          "seed_accuracy": [
+            0.8566666666666667,
+            0.8694444444444445,
+            0.8655555555555555
+          ],
+          "seed_gain_initial": [
+            0.0016666666666666668,
+            0.0011111111111111111,
+            0.0022222222222222222
+          ],
+          "algorithm_seed_accuracy": [
+            0.8611111111111112,
+            0.8672222222222222,
+            0.8633333333333333
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 1077941.8666666667,
+            "output_tokens": 180979.26666666666,
+            "tokens": 1258921.1333333333,
+            "source_model_wall_s": 10182.396519161117
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508114.6,
+            "output_tokens": 304901.4,
+            "tokens": 813016.0,
+            "source_model_wall_s": 15094.049707157521
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1586056.4666666668,
+            "output_tokens": 485880.6666666667,
+            "tokens": 2071937.1333333333,
+            "source_model_wall_s": 25276.446226318636
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.24583333333333332,
+          "full_path_wall_mean": 3.5642986533333896
+        },
+        "40": {
+          "accuracy": 0.8633333333333333,
+          "ci95": [
+            0.8414814814814866,
+            0.8848194444444508
+          ],
+          "gain_initial": 0.0011111111111111118,
+          "gain_initial_ci95": [
+            -0.0040740740740740754,
+            0.006666666666666668
+          ],
+          "gain_I_fixed": 0.013333333333333308,
+          "corrected_question_equivalents": 6.555555555555556,
+          "harmed_question_equivalents": 5.888888888888888,
+          "net_correction": 0.6666666666666664,
+          "changed_decisions": 168.33333333333334,
+          "centered_error": 0.023735755392805716,
+          "common_offset_error": 0.06268065200277582,
+          "centered_error_change": -0.00019434779522680074,
+          "GSM_BBH": {
+            "gsm8k": 0.937037037037037,
+            "bbh": 0.7896296296296296
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 0.9696969696969696,
+            "causal_judgement": 0.7575757575757575,
+            "date_understanding": 0.6464646464646464,
+            "disambiguation_qa": 0.5050505050505051,
+            "dyck_languages": 0.29292929292929293,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6565656565656565,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6262626262626262,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9797979797979799,
+            "reasoning_about_colored_objects": 0.9595959595959596,
+            "ruin_names": 0.6767676767676768,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.696969696969697,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9595959595959596,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9494949494949495,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5462962962962963
+          },
+          "GSM_BBH_task_macro": 0.8633333333333333,
+          "GSM_BBH27_macro": 0.8637828906347425,
+          "seed_accuracy": [
+            0.8544444444444445,
+            0.8666666666666667,
+            0.8688888888888889
+          ],
+          "seed_gain_initial": [
+            -0.0005555555555555556,
+            -0.0016666666666666668,
+            0.005555555555555556
+          ],
+          "algorithm_seed_accuracy": [
+            0.8583333333333333,
+            0.8655555555555555,
+            0.8661111111111112
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2147993.7333333334,
+            "output_tokens": 359961.4666666667,
+            "tokens": 2507955.2,
+            "source_model_wall_s": 20312.27951094495
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 507845.6666666667,
+            "output_tokens": 305625.73333333334,
+            "tokens": 813471.4,
+            "source_model_wall_s": 15112.952118696567
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2655839.4,
+            "output_tokens": 665587.2,
+            "tokens": 3321426.6,
+            "source_model_wall_s": 35425.231629641516
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.24583333333333332,
+          "full_path_wall_mean": 3.5642986533333896
+        },
+        "60": {
+          "accuracy": 0.8625925925925928,
+          "ci95": [
+            0.8409259259259303,
+            0.8835185185185241
+          ],
+          "gain_initial": 0.0003703703703703698,
+          "gain_initial_ci95": [
+            -0.005000000000000004,
+            0.005925925925925927
+          ],
+          "gain_I_fixed": 0.012592592592592822,
+          "corrected_question_equivalents": 8.777777777777779,
+          "harmed_question_equivalents": 8.555555555555554,
+          "net_correction": 0.22222222222222232,
+          "changed_decisions": 206.33333333333334,
+          "centered_error": 0.02370435225165374,
+          "common_offset_error": 0.06226100212959003,
+          "centered_error_change": -0.00022575093637877447,
+          "GSM_BBH": {
+            "gsm8k": 0.9374074074074075,
+            "bbh": 0.7877777777777778
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 0.9696969696969696,
+            "causal_judgement": 0.7171717171717171,
+            "date_understanding": 0.6666666666666666,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.29292929292929293,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9259259259259259,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6565656565656565,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6666666666666667,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9595959595959596,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.6565656565656566,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.6481481481481483,
+            "sports_understanding": 0.7070707070707071,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9494949494949495,
+            "tracking_shuffled_objects_seven_objects": 0.9494949494949495,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.888888888888889,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8625925925925926,
+          "GSM_BBH27_macro": 0.8629860331712185,
+          "seed_accuracy": [
+            0.8533333333333334,
+            0.8694444444444445,
+            0.865
+          ],
+          "seed_gain_initial": [
+            -0.0016666666666666668,
+            0.0011111111111111111,
+            0.0016666666666666668
+          ],
+          "algorithm_seed_accuracy": [
+            0.8633333333333333,
+            0.8555555555555555,
+            0.8688888888888889
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3221890.4,
+            "output_tokens": 539039.6666666666,
+            "tokens": 3760930.066666667,
+            "source_model_wall_s": 30518.03838318481
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 504658.06666666665,
+            "output_tokens": 301274.3333333333,
+            "tokens": 805932.4,
+            "source_model_wall_s": 14901.686355145757
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3726548.466666667,
+            "output_tokens": 840314.0,
+            "tokens": 4566862.466666667,
+            "source_model_wall_s": 45419.724738330566
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.24583333333333332,
+          "full_path_wall_mean": 3.5642986533333896
+        }
+      },
+      "ParameterIG": {
+        "0": {
+          "accuracy": 0.8622222222222221,
+          "ci95": [
+            0.839444444444449,
+            0.8844444444444494
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.012222222222222134,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.023930103188032518,
+          "common_offset_error": 0.06553631613557113,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9377777777777779,
+            "bbh": 0.7866666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.7575757575757575,
+            "date_understanding": 0.6363636363636362,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.2727272727272727,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6666666666666666,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6363636363636364,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.611111111111111,
+            "sports_understanding": 0.6969696969696969,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5277777777777778
+          },
+          "GSM_BBH_task_macro": 0.8622222222222222,
+          "GSM_BBH27_macro": 0.8627347549569773,
+          "seed_accuracy": [
+            0.855,
+            0.8683333333333333,
+            0.8633333333333333
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8622222222222222,
+            0.8622222222222222,
+            0.8622222222222222
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "full_path_planning_CPU_mean": 0.003125,
+          "full_path_update_CPU_mean": 0.23854166666666668,
+          "full_path_wall_mean": 3.316011220002353
+        },
+        "20": {
+          "accuracy": 0.8622222222222221,
+          "ci95": [
+            0.8394444444444483,
+            0.883888888888894
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            -0.00888888888888889,
+            0.00888888888888889
+          ],
+          "gain_I_fixed": 0.012222222222222134,
+          "corrected_question_equivalents": 8.0,
+          "harmed_question_equivalents": 7.999999999999999,
+          "net_correction": -2.220446049250313e-16,
+          "changed_decisions": 144.0,
+          "centered_error": 0.02373118680693169,
+          "common_offset_error": 0.06428055285618071,
+          "centered_error_change": -0.0001989163811008259,
+          "GSM_BBH": {
+            "gsm8k": 0.9377777777777779,
+            "bbh": 0.7866666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6363636363636364,
+            "date_understanding": 0.6363636363636362,
+            "disambiguation_qa": 0.5757575757575757,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6363636363636364,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6363636363636364,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.9393939393939393,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.7575757575757575,
+            "salient_translation_error_detection": 0.6363636363636364,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6666666666666666,
+            "temporal_sequences": 0.909090909090909,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.8787878787878788,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8622222222222222,
+          "GSM_BBH27_macro": 0.8626412270856716,
+          "seed_accuracy": [
+            0.8483333333333334,
+            0.8716666666666667,
+            0.8666666666666667
+          ],
+          "seed_gain_initial": [
+            -0.006666666666666667,
+            0.0033333333333333335,
+            0.0033333333333333335
+          ],
+          "algorithm_seed_accuracy": [
+            0.8622222222222222,
+            0.8622222222222222,
+            0.8622222222222222
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 1046410.2,
+            "output_tokens": 194804.6,
+            "tokens": 1241214.8,
+            "source_model_wall_s": 10682.699461234104
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 506668.0,
+            "output_tokens": 305980.2,
+            "tokens": 812648.2,
+            "source_model_wall_s": 15109.418864020821
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1553078.2,
+            "output_tokens": 500784.80000000005,
+            "tokens": 2053863.0,
+            "source_model_wall_s": 25792.118325254924
+          },
+          "full_path_planning_CPU_mean": 0.003125,
+          "full_path_update_CPU_mean": 0.23854166666666668,
+          "full_path_wall_mean": 3.316011220002353
+        },
+        "40": {
+          "accuracy": 0.8622222222222223,
+          "ci95": [
+            0.839444444444449,
+            0.883888888888894
+          ],
+          "gain_initial": 3.7007434154171887e-19,
+          "gain_initial_ci95": [
+            -0.008902777777777775,
+            0.009444444444444446
+          ],
+          "gain_I_fixed": 0.012222222222222356,
+          "corrected_question_equivalents": 10.0,
+          "harmed_question_equivalents": 10.0,
+          "net_correction": 4.440892098500626e-16,
+          "changed_decisions": 213.0,
+          "centered_error": 0.023663842557460683,
+          "common_offset_error": 0.06312610427739573,
+          "centered_error_change": -0.00026626063057183855,
+          "GSM_BBH": {
+            "gsm8k": 0.9344444444444444,
+            "bbh": 0.79
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6363636363636364,
+            "date_understanding": 0.606060606060606,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6666666666666666,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6666666666666666,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.696969696969697,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.9696969696969696,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9393939393939393,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.6363636363636362,
+            "snarks": 0.611111111111111,
+            "sports_understanding": 0.7272727272727272,
+            "temporal_sequences": 0.909090909090909,
+            "tracking_shuffled_objects_five_objects": 1.0,
+            "tracking_shuffled_objects_seven_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_three_objects": 0.9393939393939393,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8622222222222222,
+          "GSM_BBH27_macro": 0.8627048260381593,
+          "seed_accuracy": [
+            0.8583333333333333,
+            0.8666666666666667,
+            0.8616666666666667
+          ],
+          "seed_gain_initial": [
+            0.0033333333333333335,
+            -0.0016666666666666668,
+            -0.0016666666666666668
+          ],
+          "algorithm_seed_accuracy": [
+            0.8622222222222222,
+            0.8622222222222222,
+            0.8622222222222222
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2136959.2,
+            "output_tokens": 361449.6,
+            "tokens": 2498408.8,
+            "source_model_wall_s": 19881.764838838484
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 504416.2,
+            "output_tokens": 302369.6,
+            "tokens": 806785.8,
+            "source_model_wall_s": 15011.380912364693
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2641375.4000000004,
+            "output_tokens": 663819.2,
+            "tokens": 3305194.5999999996,
+            "source_model_wall_s": 34893.14575120318
+          },
+          "full_path_planning_CPU_mean": 0.003125,
+          "full_path_update_CPU_mean": 0.23854166666666668,
+          "full_path_wall_mean": 3.316011220002353
+        },
+        "60": {
+          "accuracy": 0.8666666666666667,
+          "ci95": [
+            0.8444444444444483,
+            0.8877777777777831
+          ],
+          "gain_initial": 0.0044444444444444444,
+          "gain_initial_ci95": [
+            -0.005000000000000001,
+            0.014444444444444447
+          ],
+          "gain_I_fixed": 0.01666666666666672,
+          "corrected_question_equivalents": 12.333333333333332,
+          "harmed_question_equivalents": 9.666666666666666,
+          "net_correction": 2.666666666666666,
+          "changed_decisions": 258.0,
+          "centered_error": 0.023643198762090978,
+          "common_offset_error": 0.06240799957965557,
+          "centered_error_change": -0.00028690442594153567,
+          "GSM_BBH": {
+            "gsm8k": 0.9355555555555555,
+            "bbh": 0.7977777777777777
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6969696969696969,
+            "date_understanding": 0.6666666666666666,
+            "disambiguation_qa": 0.5757575757575757,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6969696969696969,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6666666666666666,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.696969696969697,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.9393939393939393,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9393939393939393,
+            "ruin_names": 0.6666666666666667,
+            "salient_translation_error_detection": 0.6666666666666666,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6969696969696969,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 1.0,
+            "tracking_shuffled_objects_seven_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_three_objects": 0.9393939393939393,
+            "web_of_lies": 0.9696969696969696,
+            "word_sorting": 0.5
+          },
+          "GSM_BBH_task_macro": 0.8666666666666666,
+          "GSM_BBH27_macro": 0.8672353161242049,
+          "seed_accuracy": [
+            0.8566666666666667,
+            0.865,
+            0.8783333333333333
+          ],
+          "seed_gain_initial": [
+            0.0016666666666666668,
+            -0.0033333333333333335,
+            0.015
+          ],
+          "algorithm_seed_accuracy": [
+            0.8666666666666667,
+            0.8666666666666667,
+            0.8666666666666667
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3329448.4,
+            "output_tokens": 548635.2,
+            "tokens": 3878083.6,
+            "source_model_wall_s": 30460.185389605747
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 505856.8,
+            "output_tokens": 303179.0,
+            "tokens": 809035.8,
+            "source_model_wall_s": 15010.411740040732
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3835305.1999999997,
+            "output_tokens": 851814.2,
+            "tokens": 4687119.4,
+            "source_model_wall_s": 45470.59712964648
+          },
+          "full_path_planning_CPU_mean": 0.003125,
+          "full_path_update_CPU_mean": 0.23854166666666668,
+          "full_path_wall_mean": 3.316011220002353
+        }
+      },
+      "DecisionAware": {
+        "0": {
+          "accuracy": 0.8622222222222221,
+          "ci95": [
+            0.839444444444449,
+            0.8844444444444494
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.012222222222222134,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.023930103188032518,
+          "common_offset_error": 0.06553631613557113,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9377777777777779,
+            "bbh": 0.7866666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.7575757575757575,
+            "date_understanding": 0.6363636363636362,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.2727272727272727,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6666666666666666,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6363636363636364,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9696969696969696,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.611111111111111,
+            "sports_understanding": 0.6969696969696969,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939393,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5277777777777778
+          },
+          "GSM_BBH_task_macro": 0.8622222222222222,
+          "GSM_BBH27_macro": 0.8627347549569773,
+          "seed_accuracy": [
+            0.855,
+            0.8683333333333333,
+            0.8633333333333333
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8622222222222222,
+            0.8622222222222222,
+            0.8622222222222222
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 508555.4,
+            "output_tokens": 306693.4,
+            "tokens": 815248.8,
+            "source_model_wall_s": 15161.588803566969
+          },
+          "full_path_planning_CPU_mean": 5.365625,
+          "full_path_update_CPU_mean": 0.190625,
+          "full_path_wall_mean": 8.397214073333695
+        },
+        "20": {
+          "accuracy": 0.8588888888888888,
+          "ci95": [
+            0.8359259259259298,
+            0.8807407407407454
+          ],
+          "gain_initial": -0.0033333333333333335,
+          "gain_initial_ci95": [
+            -0.011671296296296301,
+            0.004814814814814817
+          ],
+          "gain_I_fixed": 0.008888888888888835,
+          "corrected_question_equivalents": 6.888888888888888,
+          "harmed_question_equivalents": 8.88888888888889,
+          "net_correction": -2.0000000000000004,
+          "changed_decisions": 172.33333333333334,
+          "centered_error": 0.023715726823708677,
+          "common_offset_error": 0.06396359203527777,
+          "centered_error_change": -0.00021437636432383709,
+          "GSM_BBH": {
+            "gsm8k": 0.9362962962962964,
+            "bbh": 0.7814814814814814
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.5353535353535354,
+            "disambiguation_qa": 0.4242424242424242,
+            "dyck_languages": 0.31313131313131315,
+            "formal_fallacies": 0.6363636363636362,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6868686868686869,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6363636363636364,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9393939393939393,
+            "ruin_names": 0.7070707070707071,
+            "salient_translation_error_detection": 0.6363636363636364,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6868686868686869,
+            "temporal_sequences": 0.9292929292929292,
+            "tracking_shuffled_objects_five_objects": 0.9797979797979799,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9090909090909091,
+            "web_of_lies": 0.8787878787878788,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8588888888888889,
+          "GSM_BBH27_macro": 0.8592817059483727,
+          "seed_accuracy": [
+            0.8461111111111111,
+            0.8661111111111112,
+            0.8644444444444445
+          ],
+          "seed_gain_initial": [
+            -0.008888888888888889,
+            -0.0022222222222222222,
+            0.0011111111111111111
+          ],
+          "algorithm_seed_accuracy": [
+            0.8605555555555555,
+            0.8583333333333333,
+            0.8577777777777778
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 1092661.0666666667,
+            "output_tokens": 179966.6,
+            "tokens": 1272627.6666666667,
+            "source_model_wall_s": 9985.19505901668
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 506650.0,
+            "output_tokens": 308351.13333333336,
+            "tokens": 815001.1333333333,
+            "source_model_wall_s": 15184.109829259509
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1599311.0666666667,
+            "output_tokens": 488317.7333333334,
+            "tokens": 2087628.8,
+            "source_model_wall_s": 25169.304888276187
+          },
+          "full_path_planning_CPU_mean": 5.365625,
+          "full_path_update_CPU_mean": 0.190625,
+          "full_path_wall_mean": 8.397214073333695
+        },
+        "40": {
+          "accuracy": 0.8614814814814815,
+          "ci95": [
+            0.838888888888893,
+            0.8829675925925979
+          ],
+          "gain_initial": -0.000740740740740741,
+          "gain_initial_ci95": [
+            -0.009078703703703707,
+            0.00777777777777778
+          ],
+          "gain_I_fixed": 0.011481481481481537,
+          "corrected_question_equivalents": 9.555555555555555,
+          "harmed_question_equivalents": 10.0,
+          "net_correction": -0.4444444444444442,
+          "changed_decisions": 222.66666666666666,
+          "centered_error": 0.023658543572539697,
+          "common_offset_error": 0.06305123883372693,
+          "centered_error_change": -0.00027155961549281724,
+          "GSM_BBH": {
+            "gsm8k": 0.9344444444444444,
+            "bbh": 0.7885185185185184
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6565656565656565,
+            "date_understanding": 0.606060606060606,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6666666666666666,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6868686868686869,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.696969696969697,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9393939393939393,
+            "ruin_names": 0.696969696969697,
+            "salient_translation_error_detection": 0.606060606060606,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6464646464646464,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.98989898989899,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9696969696969696,
+            "web_of_lies": 0.8686868686868686,
+            "word_sorting": 0.5277777777777778
+          },
+          "GSM_BBH_task_macro": 0.8614814814814814,
+          "GSM_BBH27_macro": 0.8619566030677142,
+          "seed_accuracy": [
+            0.8522222222222222,
+            0.8644444444444445,
+            0.8677777777777778
+          ],
+          "seed_gain_initial": [
+            -0.002777777777777778,
+            -0.0038888888888888888,
+            0.0044444444444444444
+          ],
+          "algorithm_seed_accuracy": [
+            0.8611111111111112,
+            0.8627777777777778,
+            0.8605555555555555
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2181032.7333333334,
+            "output_tokens": 356668.93333333335,
+            "tokens": 2537701.6666666665,
+            "source_model_wall_s": 19943.284415465718
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 504923.2,
+            "output_tokens": 305172.4666666667,
+            "tokens": 810095.6666666666,
+            "source_model_wall_s": 15129.602192684464
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2685955.9333333336,
+            "output_tokens": 661841.4,
+            "tokens": 3347797.333333333,
+            "source_model_wall_s": 35072.886608150184
+          },
+          "full_path_planning_CPU_mean": 5.365625,
+          "full_path_update_CPU_mean": 0.190625,
+          "full_path_wall_mean": 8.397214073333695
+        },
+        "60": {
+          "accuracy": 0.8620370370370369,
+          "ci95": [
+            0.839259259259264,
+            0.8837037037037089
+          ],
+          "gain_initial": -0.0001851851851851849,
+          "gain_initial_ci95": [
+            -0.009074074074074071,
+            0.008518518518518517
+          ],
+          "gain_I_fixed": 0.012037037037036957,
+          "corrected_question_equivalents": 10.222222222222223,
+          "harmed_question_equivalents": 10.333333333333332,
+          "net_correction": -0.11111111111111094,
+          "changed_decisions": 250.66666666666666,
+          "centered_error": 0.023570302172421485,
+          "common_offset_error": 0.06178303690375811,
+          "centered_error_change": -0.00035980101561102905,
+          "GSM_BBH": {
+            "gsm8k": 0.939259259259259,
+            "bbh": 0.7848148148148147
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.6161616161616161,
+            "disambiguation_qa": 0.5454545454545454,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6666666666666666,
+            "geometric_shapes": 0.7575757575757575,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 1.0,
+            "logical_deduction_seven_objects": 0.6363636363636364,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.696969696969697,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.9494949494949495,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.9393939393939394,
+            "reasoning_about_colored_objects": 0.9393939393939393,
+            "ruin_names": 0.6868686868686869,
+            "salient_translation_error_detection": 0.5959595959595959,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6363636363636364,
+            "temporal_sequences": 0.9393939393939394,
+            "tracking_shuffled_objects_five_objects": 0.9595959595959596,
+            "tracking_shuffled_objects_seven_objects": 0.9696969696969696,
+            "tracking_shuffled_objects_three_objects": 0.9696969696969696,
+            "web_of_lies": 0.888888888888889,
+            "word_sorting": 0.48148148148148157
+          },
+          "GSM_BBH_task_macro": 0.8620370370370369,
+          "GSM_BBH27_macro": 0.8625713929417631,
+          "seed_accuracy": [
+            0.8561111111111112,
+            0.8644444444444445,
+            0.8655555555555555
+          ],
+          "seed_gain_initial": [
+            0.0011111111111111111,
+            -0.0038888888888888888,
+            0.0022222222222222222
+          ],
+          "algorithm_seed_accuracy": [
+            0.8611111111111112,
+            0.8622222222222222,
+            0.8627777777777778
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3263898.8,
+            "output_tokens": 535274.4666666667,
+            "tokens": 3799173.2666666666,
+            "source_model_wall_s": 29950.51151209343
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 502205.73333333334,
+            "output_tokens": 299497.73333333334,
+            "tokens": 801703.4666666667,
+            "source_model_wall_s": 14852.547518613748
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3766104.533333333,
+            "output_tokens": 834772.2,
+            "tokens": 4600876.733333333,
+            "source_model_wall_s": 44803.05903070718
+          },
+          "full_path_planning_CPU_mean": 5.365625,
+          "full_path_update_CPU_mean": 0.190625,
+          "full_path_wall_mean": 8.397214073333695
+        }
+      }
+    },
+    "P3": {
+      "Random": {
+        "0": {
+          "accuracy": 0.8516666666666667,
+          "ci95": [
+            0.828333333333337,
+            0.8739027777777828
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.0016666666666667052,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.025227215976074687,
+          "common_offset_error": 0.059496608475224505,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9266666666666666,
+            "bbh": 0.7766666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.6969696969696969,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.696969696969697,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.8888888888888888,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7272727272727273,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7878787878787878,
+            "penguins_in_a_table": 0.9696969696969696,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5151515151515151,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.5757575757575757,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8484848484848484,
+            "web_of_lies": 0.9393939393939393,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8516666666666666,
+          "GSM_BBH27_macro": 0.8520351664796108,
+          "seed_accuracy": [
+            0.84,
+            0.8533333333333334,
+            0.8616666666666667
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8516666666666667,
+            0.8516666666666667,
+            0.8516666666666667
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "full_path_planning_CPU_mean": 0.0,
+          "full_path_update_CPU_mean": 0.16875,
+          "full_path_wall_mean": 3.2918616000000234
+        },
+        "20": {
+          "accuracy": 0.8512962962962962,
+          "ci95": [
+            0.828703703703708,
+            0.8727777777777828
+          ],
+          "gain_initial": -0.0003703703703703701,
+          "gain_initial_ci95": [
+            -0.005370370370370372,
+            0.00444907407407401
+          ],
+          "gain_I_fixed": 0.0012962962962962399,
+          "corrected_question_equivalents": 5.111111111111111,
+          "harmed_question_equivalents": 5.333333333333333,
+          "net_correction": -0.2222222222222221,
+          "changed_decisions": 123.0,
+          "centered_error": 0.025113315233968075,
+          "common_offset_error": 0.05949037545918879,
+          "centered_error_change": -0.00011390074210661603,
+          "GSM_BBH": {
+            "gsm8k": 0.9274074074074075,
+            "bbh": 0.7751851851851851
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6363636363636364,
+            "date_understanding": 0.7070707070707071,
+            "disambiguation_qa": 0.5454545454545454,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.6666666666666665,
+            "geometric_shapes": 0.7070707070707071,
+            "hyperbaton": 0.8981481481481483,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7171717171717171,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6868686868686869,
+            "multistep_arithmetic_two": 0.9797979797979799,
+            "navigate": 1.0,
+            "object_counting": 0.7777777777777778,
+            "penguins_in_a_table": 0.8787878787878788,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5050505050505051,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.6203703703703703,
+            "sports_understanding": 0.606060606060606,
+            "temporal_sequences": 0.9494949494949495,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939394,
+            "tracking_shuffled_objects_seven_objects": 0.888888888888889,
+            "tracking_shuffled_objects_three_objects": 0.8383838383838383,
+            "web_of_lies": 0.9797979797979799,
+            "word_sorting": 0.5740740740740741
+          },
+          "GSM_BBH_task_macro": 0.8512962962962962,
+          "GSM_BBH27_macro": 0.8516884898366379,
+          "seed_accuracy": [
+            0.8361111111111111,
+            0.8566666666666667,
+            0.8611111111111112
+          ],
+          "seed_gain_initial": [
+            -0.0038888888888888888,
+            0.0033333333333333335,
+            -0.0005555555555555556
+          ],
+          "algorithm_seed_accuracy": [
+            0.8505555555555555,
+            0.8555555555555555,
+            0.8477777777777777
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 1077941.8666666667,
+            "output_tokens": 180979.26666666666,
+            "tokens": 1258921.1333333333,
+            "source_model_wall_s": 10182.396519161117
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 519556.3333333333,
+            "output_tokens": 321703.8,
+            "tokens": 841260.1333333333,
+            "source_model_wall_s": 15739.974002297828
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1597498.2,
+            "output_tokens": 502683.06666666665,
+            "tokens": 2100181.2666666666,
+            "source_model_wall_s": 25922.370521458943
+          },
+          "full_path_planning_CPU_mean": 0.0,
+          "full_path_update_CPU_mean": 0.16875,
+          "full_path_wall_mean": 3.2918616000000234
+        },
+        "40": {
+          "accuracy": 0.8533333333333334,
+          "ci95": [
+            0.831111111111115,
+            0.8746296296296355
+          ],
+          "gain_initial": 0.0016666666666666674,
+          "gain_initial_ci95": [
+            -0.004259259259259262,
+            0.007592592592592592
+          ],
+          "gain_I_fixed": 0.0033333333333334103,
+          "corrected_question_equivalents": 7.888888888888888,
+          "harmed_question_equivalents": 6.888888888888888,
+          "net_correction": 1.0,
+          "changed_decisions": 172.66666666666666,
+          "centered_error": 0.025058236044354622,
+          "common_offset_error": 0.05955582120953374,
+          "centered_error_change": -0.00016897993172006686,
+          "GSM_BBH": {
+            "gsm8k": 0.9303703703703703,
+            "bbh": 0.7762962962962963
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6464646464646464,
+            "date_understanding": 0.707070707070707,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.34343434343434337,
+            "formal_fallacies": 0.6767676767676768,
+            "geometric_shapes": 0.7373737373737373,
+            "hyperbaton": 0.8888888888888888,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7373737373737373,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6868686868686869,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.808080808080808,
+            "penguins_in_a_table": 0.8787878787878789,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.494949494949495,
+            "salient_translation_error_detection": 0.5656565656565656,
+            "snarks": 0.6388888888888887,
+            "sports_understanding": 0.606060606060606,
+            "temporal_sequences": 0.9595959595959596,
+            "tracking_shuffled_objects_five_objects": 0.9393939393939394,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878789,
+            "tracking_shuffled_objects_three_objects": 0.8383838383838383,
+            "web_of_lies": 0.9595959595959596,
+            "word_sorting": 0.5740740740740741
+          },
+          "GSM_BBH_task_macro": 0.8533333333333333,
+          "GSM_BBH27_macro": 0.8537155505674023,
+          "seed_accuracy": [
+            0.8383333333333334,
+            0.8577777777777778,
+            0.8638888888888889
+          ],
+          "seed_gain_initial": [
+            -0.0016666666666666668,
+            0.0044444444444444444,
+            0.0022222222222222222
+          ],
+          "algorithm_seed_accuracy": [
+            0.8544444444444445,
+            0.8511111111111112,
+            0.8544444444444445
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2147993.7333333334,
+            "output_tokens": 359961.4666666667,
+            "tokens": 2507955.2,
+            "source_model_wall_s": 20312.27951094495
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517457.93333333335,
+            "output_tokens": 319438.13333333336,
+            "tokens": 836896.0666666667,
+            "source_model_wall_s": 15669.750276617357
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2665451.666666667,
+            "output_tokens": 679399.6000000001,
+            "tokens": 3344851.2666666666,
+            "source_model_wall_s": 35982.02978756231
+          },
+          "full_path_planning_CPU_mean": 0.0,
+          "full_path_update_CPU_mean": 0.16875,
+          "full_path_wall_mean": 3.2918616000000234
+        },
+        "60": {
+          "accuracy": 0.8542592592592593,
+          "ci95": [
+            0.8318518518518555,
+            0.8753703703703751
+          ],
+          "gain_initial": 0.002592592592592593,
+          "gain_initial_ci95": [
+            -0.0044444444444444444,
+            0.009814814814814816
+          ],
+          "gain_I_fixed": 0.004259259259259296,
+          "corrected_question_equivalents": 11.777777777777779,
+          "harmed_question_equivalents": 10.222222222222221,
+          "net_correction": 1.5555555555555554,
+          "changed_decisions": 221.33333333333334,
+          "centered_error": 0.025070422586267394,
+          "common_offset_error": 0.05971840075234491,
+          "centered_error_change": -0.00015679338980729824,
+          "GSM_BBH": {
+            "gsm8k": 0.932962962962963,
+            "bbh": 0.7755555555555557
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6464646464646464,
+            "date_understanding": 0.7474747474747474,
+            "disambiguation_qa": 0.45454545454545453,
+            "dyck_languages": 0.35353535353535354,
+            "formal_fallacies": 0.6464646464646465,
+            "geometric_shapes": 0.7373737373737373,
+            "hyperbaton": 0.8703703703703702,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7070707070707071,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6666666666666666,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.808080808080808,
+            "penguins_in_a_table": 0.9090909090909091,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5454545454545454,
+            "salient_translation_error_detection": 0.5656565656565656,
+            "snarks": 0.6388888888888888,
+            "sports_understanding": 0.6363636363636362,
+            "temporal_sequences": 0.9494949494949495,
+            "tracking_shuffled_objects_five_objects": 0.9494949494949495,
+            "tracking_shuffled_objects_seven_objects": 0.8686868686868686,
+            "tracking_shuffled_objects_three_objects": 0.8080808080808081,
+            "web_of_lies": 0.9494949494949495,
+            "word_sorting": 0.5740740740740741
+          },
+          "GSM_BBH_task_macro": 0.8542592592592593,
+          "GSM_BBH27_macro": 0.8546689113355779,
+          "seed_accuracy": [
+            0.8372222222222222,
+            0.8616666666666667,
+            0.8638888888888889
+          ],
+          "seed_gain_initial": [
+            -0.002777777777777778,
+            0.008333333333333333,
+            0.0022222222222222222
+          ],
+          "algorithm_seed_accuracy": [
+            0.8527777777777777,
+            0.8511111111111112,
+            0.8588888888888889
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3221890.4,
+            "output_tokens": 539039.6666666666,
+            "tokens": 3760930.066666667,
+            "source_model_wall_s": 30518.03838318481
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 514926.4666666667,
+            "output_tokens": 316402.06666666665,
+            "tokens": 831328.5333333333,
+            "source_model_wall_s": 15573.15036761562
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3736816.8666666667,
+            "output_tokens": 855441.7333333333,
+            "tokens": 4592258.600000001,
+            "source_model_wall_s": 46091.18875080043
+          },
+          "full_path_planning_CPU_mean": 0.0,
+          "full_path_update_CPU_mean": 0.16875,
+          "full_path_wall_mean": 3.2918616000000234
+        }
+      },
+      "ParameterIG": {
+        "0": {
+          "accuracy": 0.8516666666666667,
+          "ci95": [
+            0.828333333333337,
+            0.8739027777777828
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.0016666666666667052,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.025227215976074687,
+          "common_offset_error": 0.059496608475224505,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9266666666666666,
+            "bbh": 0.7766666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.6969696969696969,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.696969696969697,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.8888888888888888,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7272727272727273,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7878787878787878,
+            "penguins_in_a_table": 0.9696969696969696,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5151515151515151,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.5757575757575757,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8484848484848484,
+            "web_of_lies": 0.9393939393939393,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8516666666666666,
+          "GSM_BBH27_macro": 0.8520351664796108,
+          "seed_accuracy": [
+            0.84,
+            0.8533333333333334,
+            0.8616666666666667
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8516666666666667,
+            0.8516666666666667,
+            0.8516666666666667
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.21145833333333333,
+          "full_path_wall_mean": 3.1525650400003844
+        },
+        "20": {
+          "accuracy": 0.8572222222222223,
+          "ci95": [
+            0.8344444444444487,
+            0.8789027777777827
+          ],
+          "gain_initial": 0.005555555555555555,
+          "gain_initial_ci95": [
+            -0.0011111111111111122,
+            0.01277777777777778
+          ],
+          "gain_I_fixed": 0.007222222222222352,
+          "corrected_question_equivalents": 7.666666666666666,
+          "harmed_question_equivalents": 4.333333333333333,
+          "net_correction": 3.333333333333333,
+          "changed_decisions": 147.0,
+          "centered_error": 0.02518202626699666,
+          "common_offset_error": 0.05956630446565135,
+          "centered_error_change": -4.51897090780316e-05,
+          "GSM_BBH": {
+            "gsm8k": 0.9288888888888888,
+            "bbh": 0.7855555555555556
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6363636363636364,
+            "date_understanding": 0.7272727272727273,
+            "disambiguation_qa": 0.5454545454545454,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.696969696969697,
+            "geometric_shapes": 0.7272727272727273,
+            "hyperbaton": 0.9166666666666666,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7272727272727273,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6666666666666666,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7878787878787878,
+            "penguins_in_a_table": 0.909090909090909,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5757575757575757,
+            "salient_translation_error_detection": 0.5757575757575757,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.6666666666666666,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_three_objects": 0.8787878787878788,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8572222222222221,
+          "GSM_BBH27_macro": 0.8575888514777403,
+          "seed_accuracy": [
+            0.8366666666666667,
+            0.865,
+            0.87
+          ],
+          "seed_gain_initial": [
+            -0.0033333333333333335,
+            0.011666666666666667,
+            0.008333333333333333
+          ],
+          "algorithm_seed_accuracy": [
+            0.8572222222222222,
+            0.8572222222222222,
+            0.8572222222222222
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 963666.0,
+            "output_tokens": 161733.0,
+            "tokens": 1125399.0,
+            "source_model_wall_s": 9311.74386045623
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 512596.6,
+            "output_tokens": 315177.6,
+            "tokens": 827774.2,
+            "source_model_wall_s": 15436.450568691222
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1476262.6,
+            "output_tokens": 476910.6,
+            "tokens": 1953173.2,
+            "source_model_wall_s": 24748.19442914745
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.21145833333333333,
+          "full_path_wall_mean": 3.1525650400003844
+        },
+        "40": {
+          "accuracy": 0.8538888888888889,
+          "ci95": [
+            0.8310972222222253,
+            0.8761111111111161
+          ],
+          "gain_initial": 0.0022222222222222222,
+          "gain_initial_ci95": [
+            -0.005555555555555557,
+            0.010000000000000002
+          ],
+          "gain_I_fixed": 0.0038888888888889417,
+          "corrected_question_equivalents": 8.666666666666666,
+          "harmed_question_equivalents": 7.333333333333333,
+          "net_correction": 1.3333333333333335,
+          "changed_decisions": 184.0,
+          "centered_error": 0.02510901094821389,
+          "common_offset_error": 0.05922697507078207,
+          "centered_error_change": -0.0001182050278607967,
+          "GSM_BBH": {
+            "gsm8k": 0.93,
+            "bbh": 0.7777777777777777
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6363636363636364,
+            "date_understanding": 0.7575757575757575,
+            "disambiguation_qa": 0.45454545454545453,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6666666666666666,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.9444444444444443,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.696969696969697,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7575757575757577,
+            "penguins_in_a_table": 0.9393939393939393,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.606060606060606,
+            "salient_translation_error_detection": 0.606060606060606,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.5757575757575757,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8787878787878788,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8538888888888889,
+          "GSM_BBH27_macro": 0.8542162364384588,
+          "seed_accuracy": [
+            0.8316666666666667,
+            0.8616666666666667,
+            0.8683333333333333
+          ],
+          "seed_gain_initial": [
+            -0.008333333333333333,
+            0.008333333333333333,
+            0.006666666666666667
+          ],
+          "algorithm_seed_accuracy": [
+            0.8538888888888889,
+            0.8538888888888889,
+            0.8538888888888889
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2019459.4,
+            "output_tokens": 339901.8,
+            "tokens": 2359361.2,
+            "source_model_wall_s": 19284.575521054376
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 518210.8,
+            "output_tokens": 319373.8,
+            "tokens": 837584.6,
+            "source_model_wall_s": 15689.330568567733
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2537670.1999999997,
+            "output_tokens": 659275.6,
+            "tokens": 3196945.8000000003,
+            "source_model_wall_s": 34973.906089622105
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.21145833333333333,
+          "full_path_wall_mean": 3.1525650400003844
+        },
+        "60": {
+          "accuracy": 0.86,
+          "ci95": [
+            0.8372222222222259,
+            0.8811111111111164
+          ],
+          "gain_initial": 0.008333333333333335,
+          "gain_initial_ci95": [
+            -0.0027777777777777783,
+            0.019444444444444448
+          ],
+          "gain_I_fixed": 0.010000000000000009,
+          "corrected_question_equivalents": 16.333333333333332,
+          "harmed_question_equivalents": 11.333333333333332,
+          "net_correction": 5.0,
+          "changed_decisions": 278.0,
+          "centered_error": 0.025176750144122906,
+          "common_offset_error": 0.05980938740355093,
+          "centered_error_change": -5.046583195178614e-05,
+          "GSM_BBH": {
+            "gsm8k": 0.9322222222222221,
+            "bbh": 0.7877777777777777
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.7575757575757575,
+            "disambiguation_qa": 0.6666666666666666,
+            "dyck_languages": 0.3333333333333333,
+            "formal_fallacies": 0.6969696969696969,
+            "geometric_shapes": 0.7272727272727273,
+            "hyperbaton": 0.8888888888888888,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.696969696969697,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8787878787878788,
+            "penguins_in_a_table": 0.8484848484848484,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.6363636363636362,
+            "salient_translation_error_detection": 0.606060606060606,
+            "snarks": 0.6666666666666666,
+            "sports_understanding": 0.6363636363636364,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.696969696969697,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.611111111111111
+          },
+          "GSM_BBH_task_macro": 0.8599999999999999,
+          "GSM_BBH27_macro": 0.8603310886644219,
+          "seed_accuracy": [
+            0.8316666666666667,
+            0.865,
+            0.8833333333333333
+          ],
+          "seed_gain_initial": [
+            -0.008333333333333333,
+            0.011666666666666667,
+            0.021666666666666667
+          ],
+          "algorithm_seed_accuracy": [
+            0.86,
+            0.86,
+            0.86
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3085414.8,
+            "output_tokens": 521377.6,
+            "tokens": 3606792.4,
+            "source_model_wall_s": 29511.354286892874
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 504440.4,
+            "output_tokens": 302575.4,
+            "tokens": 807015.8,
+            "source_model_wall_s": 15056.07506583077
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3589855.1999999997,
+            "output_tokens": 823953.0,
+            "tokens": 4413808.2,
+            "source_model_wall_s": 44567.429352723644
+          },
+          "full_path_planning_CPU_mean": 0.0010416666666666667,
+          "full_path_update_CPU_mean": 0.21145833333333333,
+          "full_path_wall_mean": 3.1525650400003844
+        }
+      },
+      "DecisionAware": {
+        "0": {
+          "accuracy": 0.8516666666666667,
+          "ci95": [
+            0.828333333333337,
+            0.8739027777777828
+          ],
+          "gain_initial": 0.0,
+          "gain_initial_ci95": [
+            0.0,
+            0.0
+          ],
+          "gain_I_fixed": 0.0016666666666667052,
+          "corrected_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "net_correction": 0.0,
+          "changed_decisions": 0.0,
+          "centered_error": 0.025227215976074687,
+          "common_offset_error": 0.059496608475224505,
+          "centered_error_change": 0.0,
+          "GSM_BBH": {
+            "gsm8k": 0.9266666666666666,
+            "bbh": 0.7766666666666666
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.6969696969696969,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.696969696969697,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.8888888888888888,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7272727272727273,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7878787878787878,
+            "penguins_in_a_table": 0.9696969696969696,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5151515151515151,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.5757575757575757,
+            "temporal_sequences": 0.9393939393939393,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8484848484848484,
+            "web_of_lies": 0.9393939393939393,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8516666666666666,
+          "GSM_BBH27_macro": 0.8520351664796108,
+          "seed_accuracy": [
+            0.84,
+            0.8533333333333334,
+            0.8616666666666667
+          ],
+          "seed_gain_initial": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8516666666666667,
+            0.8516666666666667,
+            0.8516666666666667
+          ],
+          "feedback_cost": {
+            "gold": 0.0,
+            "member_calls": 0.0,
+            "aggregator_calls": 0.0,
+            "scoring_ops": 0.0,
+            "input_tokens": 0.0,
+            "output_tokens": 0.0,
+            "tokens": 0.0,
+            "source_model_wall_s": 0.0
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 517613.0,
+            "output_tokens": 320525.0,
+            "tokens": 838138.0,
+            "source_model_wall_s": 15688.695789093943
+          },
+          "full_path_planning_CPU_mean": 5.516666666666667,
+          "full_path_update_CPU_mean": 0.18958333333333333,
+          "full_path_wall_mean": 8.564369353333314
+        },
+        "20": {
+          "accuracy": 0.8546296296296297,
+          "ci95": [
+            0.8318518518518551,
+            0.8766666666666717
+          ],
+          "gain_initial": 0.002962962962962963,
+          "gain_initial_ci95": [
+            -0.001666666666666667,
+            0.007962962962962965
+          ],
+          "gain_I_fixed": 0.004629629629629761,
+          "corrected_question_equivalents": 5.0,
+          "harmed_question_equivalents": 3.2222222222222223,
+          "net_correction": 1.7777777777777777,
+          "changed_decisions": 126.33333333333333,
+          "centered_error": 0.025147749905463816,
+          "common_offset_error": 0.059340968946449725,
+          "centered_error_change": -7.946607061087597e-05,
+          "GSM_BBH": {
+            "gsm8k": 0.9266666666666666,
+            "bbh": 0.7825925925925926
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.7272727272727273,
+            "disambiguation_qa": 0.5151515151515151,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.7272727272727273,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.8703703703703703,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.696969696969697,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6868686868686869,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.7878787878787878,
+            "penguins_in_a_table": 0.9797979797979799,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5151515151515151,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.638888888888889,
+            "sports_understanding": 0.6868686868686869,
+            "temporal_sequences": 0.9696969696969696,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_three_objects": 0.8282828282828283,
+            "web_of_lies": 0.9090909090909091,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8546296296296296,
+          "GSM_BBH27_macro": 0.8550592343184935,
+          "seed_accuracy": [
+            0.8355555555555556,
+            0.8577777777777778,
+            0.8705555555555555
+          ],
+          "seed_gain_initial": [
+            -0.0044444444444444444,
+            0.0044444444444444444,
+            0.008888888888888889
+          ],
+          "algorithm_seed_accuracy": [
+            0.8544444444444445,
+            0.8561111111111112,
+            0.8533333333333334
+          ],
+          "feedback_cost": {
+            "gold": 20.0,
+            "member_calls": 360.0,
+            "aggregator_calls": 1200.0,
+            "scoring_ops": 1200.0,
+            "input_tokens": 1135285.2,
+            "output_tokens": 180449.86666666667,
+            "tokens": 1315735.0666666667,
+            "source_model_wall_s": 10142.938846042565
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 515188.8,
+            "output_tokens": 318886.4,
+            "tokens": 834075.2,
+            "source_model_wall_s": 15646.781661402016
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 20.0,
+            "member_calls": 1440.0,
+            "aggregator_calls": 1560.0,
+            "scoring_ops": 1560.0,
+            "input_tokens": 1650474.0,
+            "output_tokens": 499336.2666666667,
+            "tokens": 2149810.2666666666,
+            "source_model_wall_s": 25789.72050744458
+          },
+          "full_path_planning_CPU_mean": 5.516666666666667,
+          "full_path_update_CPU_mean": 0.18958333333333333,
+          "full_path_wall_mean": 8.564369353333314
+        },
+        "40": {
+          "accuracy": 0.8568518518518519,
+          "ci95": [
+            0.8338888888888932,
+            0.8788935185185239
+          ],
+          "gain_initial": 0.005185185185185185,
+          "gain_initial_ci95": [
+            -0.002407407407407407,
+            0.012592592592592596
+          ],
+          "gain_I_fixed": 0.006851851851851887,
+          "corrected_question_equivalents": 10.222222222222223,
+          "harmed_question_equivalents": 7.111111111111112,
+          "net_correction": 3.111111111111111,
+          "changed_decisions": 199.0,
+          "centered_error": 0.025079071275970585,
+          "common_offset_error": 0.05919875382546983,
+          "centered_error_change": -0.00014814470010410832,
+          "GSM_BBH": {
+            "gsm8k": 0.9325925925925925,
+            "bbh": 0.7811111111111111
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6868686868686869,
+            "date_understanding": 0.7272727272727273,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.707070707070707,
+            "geometric_shapes": 0.7070707070707071,
+            "hyperbaton": 0.9444444444444443,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7272727272727273,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 1.0,
+            "object_counting": 0.8181818181818182,
+            "penguins_in_a_table": 0.8585858585858586,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.4545454545454545,
+            "salient_translation_error_detection": 0.5454545454545454,
+            "snarks": 0.6759259259259259,
+            "sports_understanding": 0.6666666666666666,
+            "temporal_sequences": 0.9696969696969696,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8181818181818182,
+            "web_of_lies": 0.9696969696969696,
+            "word_sorting": 0.5555555555555555
+          },
+          "GSM_BBH_task_macro": 0.8568518518518518,
+          "GSM_BBH27_macro": 0.8571336825040528,
+          "seed_accuracy": [
+            0.8411111111111111,
+            0.8644444444444445,
+            0.865
+          ],
+          "seed_gain_initial": [
+            0.0011111111111111111,
+            0.011111111111111112,
+            0.0033333333333333335
+          ],
+          "algorithm_seed_accuracy": [
+            0.8577777777777778,
+            0.8555555555555555,
+            0.8572222222222222
+          ],
+          "feedback_cost": {
+            "gold": 40.0,
+            "member_calls": 720.0,
+            "aggregator_calls": 2400.0,
+            "scoring_ops": 2400.0,
+            "input_tokens": 2238733.533333333,
+            "output_tokens": 360968.6,
+            "tokens": 2599702.1333333333,
+            "source_model_wall_s": 20370.884055665687
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 514873.26666666666,
+            "output_tokens": 317902.73333333334,
+            "tokens": 832776.0,
+            "source_model_wall_s": 15610.005186550901
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 40.0,
+            "member_calls": 1800.0,
+            "aggregator_calls": 2760.0,
+            "scoring_ops": 2760.0,
+            "input_tokens": 2753606.8,
+            "output_tokens": 678871.3333333333,
+            "tokens": 3432478.1333333333,
+            "source_model_wall_s": 35980.88924221659
+          },
+          "full_path_planning_CPU_mean": 5.516666666666667,
+          "full_path_update_CPU_mean": 0.18958333333333333,
+          "full_path_wall_mean": 8.564369353333314
+        },
+        "60": {
+          "accuracy": 0.8538888888888888,
+          "ci95": [
+            0.8309259259259293,
+            0.876666666666671
+          ],
+          "gain_initial": 0.0022222222222222227,
+          "gain_initial_ci95": [
+            -0.007777777777777776,
+            0.011851851851851853
+          ],
+          "gain_I_fixed": 0.0038888888888888307,
+          "corrected_question_equivalents": 12.333333333333332,
+          "harmed_question_equivalents": 11.0,
+          "net_correction": 1.3333333333333328,
+          "changed_decisions": 255.0,
+          "centered_error": 0.025132099304116952,
+          "common_offset_error": 0.05932213872495428,
+          "centered_error_change": -9.511667195773602e-05,
+          "GSM_BBH": {
+            "gsm8k": 0.9329629629629629,
+            "bbh": 0.7748148148148148
+          },
+          "BBH_subtasks": {
+            "boolean_expressions": 1.0,
+            "causal_judgement": 0.6666666666666666,
+            "date_understanding": 0.6363636363636364,
+            "disambiguation_qa": 0.4848484848484848,
+            "dyck_languages": 0.3636363636363636,
+            "formal_fallacies": 0.6969696969696969,
+            "geometric_shapes": 0.6969696969696969,
+            "hyperbaton": 0.9444444444444443,
+            "logical_deduction_five_objects": 0.9696969696969696,
+            "logical_deduction_seven_objects": 0.7373737373737373,
+            "logical_deduction_three_objects": 0.9696969696969696,
+            "movie_recommendation": 0.6969696969696969,
+            "multistep_arithmetic_two": 1.0,
+            "navigate": 0.98989898989899,
+            "object_counting": 0.8383838383838383,
+            "penguins_in_a_table": 0.8484848484848485,
+            "reasoning_about_colored_objects": 1.0,
+            "ruin_names": 0.5151515151515151,
+            "salient_translation_error_detection": 0.5151515151515151,
+            "snarks": 0.6666666666666666,
+            "sports_understanding": 0.5656565656565656,
+            "temporal_sequences": 0.9696969696969696,
+            "tracking_shuffled_objects_five_objects": 0.9090909090909091,
+            "tracking_shuffled_objects_seven_objects": 0.8787878787878788,
+            "tracking_shuffled_objects_three_objects": 0.8181818181818182,
+            "web_of_lies": 0.9696969696969696,
+            "word_sorting": 0.5833333333333334
+          },
+          "GSM_BBH_task_macro": 0.8538888888888889,
+          "GSM_BBH27_macro": 0.854107744107744,
+          "seed_accuracy": [
+            0.8361111111111111,
+            0.8638888888888889,
+            0.8616666666666667
+          ],
+          "seed_gain_initial": [
+            -0.0038888888888888888,
+            0.010555555555555556,
+            0.0
+          ],
+          "algorithm_seed_accuracy": [
+            0.8538888888888889,
+            0.8544444444444445,
+            0.8533333333333334
+          ],
+          "feedback_cost": {
+            "gold": 60.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 3600.0,
+            "scoring_ops": 3600.0,
+            "input_tokens": 3273067.933333333,
+            "output_tokens": 533026.4,
+            "tokens": 3806094.3333333335,
+            "source_model_wall_s": 30215.896136121104
+          },
+          "E_service_cost": {
+            "gold": 0.0,
+            "member_calls": 1080.0,
+            "aggregator_calls": 360.0,
+            "scoring_ops": 360.0,
+            "input_tokens": 513471.13333333336,
+            "output_tokens": 317769.06666666665,
+            "tokens": 831240.2,
+            "source_model_wall_s": 15605.014307780719
+          },
+          "feedback_plus_E_service_cost": {
+            "gold": 60.0,
+            "member_calls": 2160.0,
+            "aggregator_calls": 3960.0,
+            "scoring_ops": 3960.0,
+            "input_tokens": 3786539.0666666664,
+            "output_tokens": 850795.4666666667,
+            "tokens": 4637334.533333333,
+            "source_model_wall_s": 45820.91044390183
+          },
+          "full_path_planning_CPU_mean": 5.516666666666667,
+          "full_path_update_CPU_mean": 0.18958333333333333,
+          "full_path_wall_mean": 8.564369353333314
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "P1:DA-Random@0": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci_family_bonferroni": [
+        0.0,
+        0.0
+      ],
+      "centered_bootstrap_p": 1.0,
+      "seed_direction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "P1:DA-Random@20": {
+      "point": -0.005,
+      "ci95": [
+        -0.013333333333333334,
+        0.003148148148148148
+      ],
+      "ci_family_bonferroni": [
+        -0.015880787037037037,
+        0.005185185185185187
+      ],
+      "centered_bootstrap_p": 0.23115376924615078,
+      "seed_direction": [
+        -0.010555555555555556,
+        -0.0033333333333333335,
+        -0.0011111111111111111
+      ]
+    },
+    "P1:DA-Random@40": {
+      "point": -0.0018518518518518524,
+      "ci95": [
+        -0.010000000000000002,
+        0.005925925925925926
+      ],
+      "ci_family_bonferroni": [
+        -0.012222222222222225,
+        0.008148148148148147
+      ],
+      "centered_bootstrap_p": 0.6626674665066986,
+      "seed_direction": [
+        -0.0022222222222222222,
+        -0.0022222222222222222,
+        -0.0011111111111111111
+      ]
+    },
+    "P1:DA-Random@60": {
+      "point": -0.0005555555555555539,
+      "ci95": [
+        -0.008333333333333333,
+        0.007222222222222222
+      ],
+      "ci_family_bonferroni": [
+        -0.010555555555555556,
+        0.009584490740740808
+      ],
+      "centered_bootstrap_p": 0.9094181163767247,
+      "seed_direction": [
+        0.002777777777777778,
+        -0.005,
+        0.0005555555555555556
+      ]
+    },
+    "P1:DA-IG@0": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci_family_bonferroni": [
+        0.0,
+        0.0
+      ],
+      "centered_bootstrap_p": 1.0,
+      "seed_direction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "P1:DA-IG@20": {
+      "point": -0.003333333333333334,
+      "ci95": [
+        -0.01,
+        0.0029629629629629624
+      ],
+      "ci_family_bonferroni": [
+        -0.011851851851851855,
+        0.00462962962962963
+      ],
+      "centered_bootstrap_p": 0.3127374525094981,
+      "seed_direction": [
+        -0.0022222222222222222,
+        -0.005555555555555556,
+        -0.0022222222222222222
+      ]
+    },
+    "P1:DA-IG@40": {
+      "point": -0.000740740740740741,
+      "ci95": [
+        -0.006851851851851853,
+        0.005185185185185185
+      ],
+      "ci_family_bonferroni": [
+        -0.00851851851851852,
+        0.006296296296296298
+      ],
+      "centered_bootstrap_p": 0.825634873025395,
+      "seed_direction": [
+        -0.006111111111111111,
+        -0.0022222222222222222,
+        0.006111111111111111
+      ]
+    },
+    "P1:DA-IG@60": {
+      "point": -0.00462962962962963,
+      "ci95": [
+        -0.011666666666666667,
+        0.0020370370370370373
+      ],
+      "ci_family_bonferroni": [
+        -0.01351851851851852,
+        0.00388888888888889
+      ],
+      "centered_bootstrap_p": 0.1903619276144771,
+      "seed_direction": [
+        -0.0005555555555555556,
+        -0.0005555555555555556,
+        -0.012777777777777779
+      ]
+    },
+    "P3:DA-Random@0": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci_family_bonferroni": [
+        0.0,
+        0.0
+      ],
+      "centered_bootstrap_p": 1.0,
+      "seed_direction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "P3:DA-Random@20": {
+      "point": 0.003333333333333333,
+      "ci95": [
+        -0.002222222222222222,
+        0.00907870370370364
+      ],
+      "ci_family_bonferroni": [
+        -0.003703703703703705,
+        0.010925925925925927
+      ],
+      "centered_bootstrap_p": 0.265746850629874,
+      "seed_direction": [
+        -0.0005555555555555556,
+        0.0011111111111111111,
+        0.009444444444444445
+      ]
+    },
+    "P3:DA-Random@40": {
+      "point": 0.003518518518518519,
+      "ci95": [
+        -0.003148148148148147,
+        0.010000000000000002
+      ],
+      "ci_family_bonferroni": [
+        -0.004999999999999999,
+        0.011666666666666669
+      ],
+      "centered_bootstrap_p": 0.3163367326534693,
+      "seed_direction": [
+        0.002777777777777778,
+        0.006666666666666667,
+        0.0011111111111111111
+      ]
+    },
+    "P3:DA-Random@60": {
+      "point": -0.00037037037037037084,
+      "ci95": [
+        -0.00962962962962963,
+        0.00851851851851852
+      ],
+      "ci_family_bonferroni": [
+        -0.012177083333333333,
+        0.011111111111111113
+      ],
+      "centered_bootstrap_p": 0.9506098780243951,
+      "seed_direction": [
+        -0.0011111111111111111,
+        0.0022222222222222222,
+        -0.0022222222222222222
+      ]
+    },
+    "P3:DA-IG@0": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci_family_bonferroni": [
+        0.0,
+        0.0
+      ],
+      "centered_bootstrap_p": 1.0,
+      "seed_direction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "P3:DA-IG@20": {
+      "point": -0.002592592592592593,
+      "ci95": [
+        -0.009444444444444443,
+        0.0038888888888888896
+      ],
+      "ci_family_bonferroni": [
+        -0.011111111111111113,
+        0.005880787037037105
+      ],
+      "centered_bootstrap_p": 0.4533093381323735,
+      "seed_direction": [
+        -0.0011111111111111111,
+        -0.007222222222222222,
+        0.0005555555555555556
+      ]
+    },
+    "P3:DA-IG@40": {
+      "point": 0.0029629629629629646,
+      "ci95": [
+        -0.005925925925925926,
+        0.011481481481481485
+      ],
+      "ci_family_bonferroni": [
+        -0.008333333333333333,
+        0.013888888888888892
+      ],
+      "centered_bootstrap_p": 0.5166966606678665,
+      "seed_direction": [
+        0.009444444444444445,
+        0.002777777777777778,
+        -0.0033333333333333335
+      ]
+    },
+    "P3:DA-IG@60": {
+      "point": -0.006111111111111109,
+      "ci95": [
+        -0.018152777777777778,
+        0.005370370370370373
+      ],
+      "ci_family_bonferroni": [
+        -0.020925925925925924,
+        0.008703703703703705
+      ],
+      "centered_bootstrap_p": 0.3011397720455909,
+      "seed_direction": [
+        0.0044444444444444444,
+        -0.0011111111111111111,
+        -0.021666666666666667
+      ]
+    }
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "learner": "P1",
+      "accuracy": [
+        [
+          0.8888888888888891,
+          0.8759259259259259,
+          0.8768518518518517,
+          0.8768518518518518
+        ],
+        [
+          0.8888888888888891,
+          0.8777777777777778,
+          0.8722222222222221,
+          0.875
+        ],
+        [
+          0.8888888888888891,
+          0.8740740740740743,
+          0.8638888888888889,
+          0.8740740740740739
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 1,
+      "learner": "P1",
+      "accuracy": [
+        [
+          0.8305555555555556,
+          0.8342592592592593,
+          0.8361111111111111,
+          0.837962962962963
+        ],
+        [
+          0.8305555555555556,
+          0.8333333333333335,
+          0.838888888888889,
+          0.8527777777777777
+        ],
+        [
+          0.8305555555555556,
+          0.8296296296296297,
+          0.836111111111111,
+          0.8324074074074075
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 2,
+      "learner": "P1",
+      "accuracy": [
+        [
+          0.8388888888888889,
+          0.8444444444444447,
+          0.8407407407407407,
+          0.8379629629629629
+        ],
+        [
+          0.8388888888888889,
+          0.8388888888888889,
+          0.838888888888889,
+          0.8388888888888891
+        ],
+        [
+          0.8388888888888889,
+          0.8370370370370371,
+          0.8425925925925928,
+          0.8453703703703705
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 3,
+      "learner": "P1",
+      "accuracy": [
+        [
+          0.8916666666666668,
+          0.9,
+          0.8990740740740739,
+          0.9
+        ],
+        [
+          0.8916666666666668,
+          0.8861111111111112,
+          0.9000000000000001,
+          0.8972222222222223
+        ],
+        [
+          0.8916666666666668,
+          0.8851851851851854,
+          0.8981481481481484,
+          0.889814814814815
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 4,
+      "learner": "P1",
+      "accuracy": [
+        [
+          0.861111111111111,
+          0.8648148148148146,
+          0.8638888888888887,
+          0.8601851851851848
+        ],
+        [
+          0.861111111111111,
+          0.8749999999999999,
+          0.8611111111111112,
+          0.8694444444444444
+        ],
+        [
+          0.861111111111111,
+          0.8685185185185186,
+          0.8666666666666666,
+          0.8685185185185185
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 0,
+      "learner": "P3",
+      "accuracy": [
+        [
+          0.863888888888889,
+          0.8666666666666669,
+          0.8703703703703703,
+          0.8722222222222222
+        ],
+        [
+          0.863888888888889,
+          0.8694444444444448,
+          0.866666666666667,
+          0.866666666666667
+        ],
+        [
+          0.863888888888889,
+          0.866666666666667,
+          0.8675925925925927,
+          0.8638888888888892
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 1,
+      "learner": "P3",
+      "accuracy": [
+        [
+          0.8277777777777778,
+          0.8333333333333334,
+          0.8268518518518521,
+          0.8287037037037038
+        ],
+        [
+          0.8277777777777778,
+          0.8416666666666667,
+          0.8222222222222224,
+          0.8666666666666666
+        ],
+        [
+          0.8277777777777778,
+          0.8305555555555556,
+          0.8425925925925924,
+          0.8444444444444446
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 2,
+      "learner": "P3",
+      "accuracy": [
+        [
+          0.8333333333333335,
+          0.8277777777777777,
+          0.826851851851852,
+          0.8351851851851853
+        ],
+        [
+          0.8333333333333335,
+          0.8333333333333335,
+          0.8416666666666668,
+          0.8416666666666668
+        ],
+        [
+          0.8333333333333335,
+          0.8305555555555556,
+          0.8305555555555557,
+          0.8333333333333335
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 3,
+      "learner": "P3",
+      "accuracy": [
+        [
+          0.8861111111111113,
+          0.8824074074074075,
+          0.885185185185185,
+          0.874074074074074
+        ],
+        [
+          0.8861111111111113,
+          0.8916666666666668,
+          0.8888888888888891,
+          0.877777777777778
+        ],
+        [
+          0.8861111111111113,
+          0.8944444444444446,
+          0.8953703703703705,
+          0.889814814814815
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    },
+    {
+      "fold": 4,
+      "learner": "P3",
+      "accuracy": [
+        [
+          0.8472222222222221,
+          0.8462962962962961,
+          0.8574074074074074,
+          0.8611111111111109
+        ],
+        [
+          0.8472222222222221,
+          0.8500000000000001,
+          0.8500000000000001,
+          0.847222222222222
+        ],
+        [
+          0.8472222222222221,
+          0.8509259259259259,
+          0.8481481481481479,
+          0.8379629629629629
+        ]
+      ],
+      "shape_note": "methods bycheckpoints; original120 questions, algorithm seeds averaged"
+    }
+  ],
+  "default_accuracy": 0.85,
+  "default_source": "I240-only best combination per fold, remains fixed",
+  "statistics": "5000 original-question paired bootstrap stratified fold x broad task, all three generation repeats and algorithm seeds remain within question",
+  "CPU_scope": "process_time measured each planning/update, Windows timer quantization can yield0 for short intervals; total wall saved. No original encoder time/GPU kernel time reconstructed.",
+  "cost_scope": "mean per fold/path, initial I separately, feedbackGold per question with18 member and60 aggregator calls; actual Token reported, no equal-Token claim",
+  "private_paired_sha256": "bc1efcf8d5789c22ce2c93739da039baa333c074ccaf9dacb584b290844aea16"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "physical_new_LLM_calls": 0,
+  "source_cache_once": {
+    "gold": 600,
+    "member_calls": 10800,
+    "aggregator_calls": 36000,
+    "scoring_ops": 36000,
+    "input_tokens": 32009475,
+    "output_tokens": 5264652,
+    "tokens": 37274127,
+    "source_model_wall_s": 299000.5299690191
+  },
+  "initial_I240_counterfactual_mean_per_fold": {
+    "gold": 240.0,
+    "member_calls": 4320.0,
+    "aggregator_calls": 14400.0,
+    "scoring_ops": 14400.0,
+    "input_tokens": 12776157.4,
+    "output_tokens": 2104580.8,
+    "tokens": 14880738.2,
+    "source_model_wall_s": 119723.68127654721
+  },
+  "packet": {
+    "gold": 1,
+    "member_calls": 18,
+    "aggregator_calls": 60,
+    "scoring_ops": 60,
+    "Token_upper_bound": 602112
+  },
+  "Gold60": {
+    "gold": 60,
+    "member_calls": 1080,
+    "aggregator_calls": 3600,
+    "scoring_ops": 3600,
+    "Token_upper_bound": 36126720
+  },
+  "source_cache_note": "The original cache was prepared once. Overlapping folds and alternative replay paths are counterfactual per-system costs, not new physical expenses.",
+  "CPU_note": "Per-step process_time on Windows can quantize short IG/update intervals to0. Path wall time separately saved. Original encoder/GPU kernel timing unavailable.",
+  "no_equal_actual_Token_claim": true
+}
