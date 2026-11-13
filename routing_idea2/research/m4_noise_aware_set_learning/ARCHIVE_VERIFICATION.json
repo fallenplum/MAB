@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "parent_files_byte_identical": {
+    "e8_decision_focused_combination_learning": 1219,
+    "e8_m4_mechanism_audit": 196
+  },
+  "core_sources_verified": 6,
+  "models_restored": 16,
+  "maximum_model_score_error": 0.0,
+  "all_fit_statuses_qualified": true,
+  "new_physical_LLM_calls": 0,
+  "retained_reward_reads": 0
+}

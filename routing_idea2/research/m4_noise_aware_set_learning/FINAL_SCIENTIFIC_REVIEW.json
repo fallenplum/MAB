@@ -1,0 +1,971 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_SCIENTIFIC_LIMITATIONS",
+  "checks": [
+    {
+      "name": "frozen_actual_sources",
+      "status": "PASS"
+    },
+    {
+      "name": "joint_prediction_receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "input_pack_rewards_absent_fold0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold0_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold0_NS_main",
+      "status": "PASS",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold0_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold0_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold0_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_delta0_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_delta0_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_delta0_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold0_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold0_NS_delta0",
+      "status": "PASS",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold0_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold0_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold0_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_Davidson_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_Davidson_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_Davidson_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold0_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold0_Davidson_main",
+      "status": "PASS",
+      "maximum_score_error": 3.0531133177191805e-16
+    },
+    {
+      "name": "frozen_eval_identity_fold0_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold0_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold0_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_mc_alt_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_mc_alt_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold0_NS_main_mc_alt_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold0_NS_main_mc_alt",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold0_NS_main_mc_alt",
+      "status": "PASS",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold0_NS_main_mc_alt",
+      "status": "PASS"
+    },
+    {
+      "name": "alternative_batch_alignment",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold0_NS_main_mc_alt",
+      "status": "PASS"
+    },
+    {
+      "name": "input_pack_rewards_absent_fold1",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold1_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold1_NS_main",
+      "status": "PASS",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold1_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold1_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold1_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_delta0_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_delta0_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_NS_delta0_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold1_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold1_NS_delta0",
+      "status": "PASS",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold1_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold1_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold1_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_Davidson_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_Davidson_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold1_Davidson_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold1_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold1_Davidson_main",
+      "status": "PASS",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "name": "frozen_eval_identity_fold1_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold1_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold1_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "input_pack_rewards_absent_fold2",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold2_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold2_NS_main",
+      "status": "PASS",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold2_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold2_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold2_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_delta0_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_delta0_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_NS_delta0_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold2_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold2_NS_delta0",
+      "status": "PASS",
+      "maximum_score_error": 5.898059818321144e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold2_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold2_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold2_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_Davidson_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_Davidson_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold2_Davidson_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold2_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold2_Davidson_main",
+      "status": "PASS",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "name": "frozen_eval_identity_fold2_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold2_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold2_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "input_pack_rewards_absent_fold3",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold3_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold3_NS_main",
+      "status": "PASS",
+      "maximum_score_error": 6.938893903907228e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold3_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold3_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold3_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_delta0_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_delta0_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_NS_delta0_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold3_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold3_NS_delta0",
+      "status": "PASS",
+      "maximum_score_error": 4.85722573273506e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold3_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold3_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold3_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_Davidson_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_Davidson_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold3_Davidson_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold3_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold3_Davidson_main",
+      "status": "PASS",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "name": "frozen_eval_identity_fold3_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold3_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold3_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "input_pack_rewards_absent_fold4",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold4_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold4_NS_main",
+      "status": "PASS",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold4_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold4_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold4_NS_main",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_delta0_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_delta0_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_NS_delta0_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold4_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold4_NS_delta0",
+      "status": "PASS",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "name": "frozen_eval_identity_fold4_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold4_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold4_NS_delta0",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_Davidson_main_MODEL.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_Davidson_main_PREDICTIONS_FROZEN.npz",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_fold4_Davidson_main_FIT_LOG.json",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_fold4_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_restore_fold4_Davidson_main",
+      "status": "PASS",
+      "maximum_score_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "frozen_eval_identity_fold4_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "global_score_alignment_fold4_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "solver_status_fold4_Davidson_main",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_five_outerfold_partition",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_main_minus_M4_gain_CI_p",
+      "status": "PASS",
+      "gain": 0.001111111111111111,
+      "ci95": [
+        -0.012777777777777777,
+        0.015
+      ],
+      "raw_p": 0.8921107889211078
+    },
+    {
+      "name": "NS_main_minus_M4_correction_destruction",
+      "status": "PASS",
+      "corrected": 70,
+      "destroyed": 68
+    },
+    {
+      "name": "NS_main_minus_Ridge_gain_CI_p",
+      "status": "PASS",
+      "gain": 0.007777777777777777,
+      "ci95": [
+        -0.006666666666666668,
+        0.02222222222222222
+      ],
+      "raw_p": 0.3104689531046895
+    },
+    {
+      "name": "NS_main_minus_Ridge_correction_destruction",
+      "status": "PASS",
+      "corrected": 73,
+      "destroyed": 59
+    },
+    {
+      "name": "NS_main_minus_Ridge_Holm_two",
+      "status": "PASS",
+      "adjusted_p": 0.620937906209379
+    },
+    {
+      "name": "NS_main_minus_Ridge_unconfirmed_gain",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_main_minus_M4_Holm_two",
+      "status": "PASS",
+      "adjusted_p": 0.8921107889211078
+    },
+    {
+      "name": "NS_main_minus_M4_unconfirmed_gain",
+      "status": "PASS"
+    },
+    {
+      "name": "M0_Ridge_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "M0_Ridge_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "M4_lex_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "M4_lex_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "TSPO_empirical_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "TSPO_empirical_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_main_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_main_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_delta0_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "NS_delta0_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "Davidson_main_accuracy_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "Davidson_main_frequency_and_ties",
+      "status": "PASS"
+    },
+    {
+      "name": "MC_alt_large_selection_change",
+      "status": "PASS",
+      "changed_questions": 85,
+      "total_questions": 120,
+      "maximum_raw_score_change": 0.07035370713282613
+    },
+    {
+      "name": "MC_change_has_non_negligible_score_gaps",
+      "status": "PASS",
+      "main_min_gap": 2.4729344534867026e-05,
+      "alt_min_gap": 0.00017357621280256197
+    },
+    {
+      "name": "MC_alt_frozen_quality_reconstruction",
+      "status": "PASS"
+    },
+    {
+      "name": "noise_context_independence_denominator",
+      "status": "PASS"
+    },
+    {
+      "name": "Gamma_assumption_documented",
+      "status": "PASS"
+    },
+    {
+      "name": "latent_calibration_unidentified_documented",
+      "status": "PASS"
+    },
+    {
+      "name": "numeric_and_predictive_status_separated",
+      "status": "PASS"
+    },
+    {
+      "name": "nu_fixed_variant_not_MLE_documented",
+      "status": "PASS"
+    },
+    {
+      "name": "MC_alt_not_winner_selected_documented",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_01_THEORY_AND_LITERATURE_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_ACTUAL_TRAINING_OPERATOR_REVIEW.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_fetch_literature.py",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_LITERATURE_SOURCE_MANIFEST.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_MATHEMATICAL_SOFTWARE_CHECKS.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_qualify_set_losses.py",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_review_training_operators.py",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_set_spo_operators.py",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_CORRELATED_SAMPLER_CHECK.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_FOLD0_JOINT_NOISE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_FOLD1_JOINT_NOISE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_FOLD2_JOINT_NOISE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_FOLD3_JOINT_NOISE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_FOLD4_JOINT_NOISE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_NOISE_COMPLETE_RESULTS.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_NOISE_DIAGNOSTIC.md",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_NOISE_PROTOCOL.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_NOISE_SOFTWARE_QUALIFICATION.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_REPLICATE_PROVENANCE_AUDIT.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_JOINT_TRAINING_INTERFACE_REVIEW.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_POSTERIOR_INTERPRETATION_LIMITS.md",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_03_SET_LOSS_TRAINING_RESULTS.md",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_INDEPENDENT_OPERATOR_AGREEMENT.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_NS_PRIMARY_STATISTICS.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_NS_TRAINING_RESULTS.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_TRAINING_OPERATOR_QUALIFICATION.json",
+      "status": "PASS"
+    },
+    {
+      "name": "public_no_binary_TRAINING_SUMMARY.csv",
+      "status": "PASS"
+    },
+    {
+      "name": "public_JSON_no_actual_raw_arrays_or_ids",
+      "status": "PASS",
+      "exact_sensitive_payload_key_hits": []
+    }
+  ],
+  "restored_models": [
+    {
+      "fold": 0,
+      "variant": "NS_main",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "fold": 0,
+      "variant": "NS_delta0",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "fold": 0,
+      "variant": "Davidson_main",
+      "maximum_score_error": 3.0531133177191805e-16
+    },
+    {
+      "fold": 0,
+      "variant": "NS_main_mc_alt",
+      "maximum_score_error": 4.163336342344337e-17
+    },
+    {
+      "fold": 1,
+      "variant": "NS_main",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 1,
+      "variant": "NS_delta0",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 1,
+      "variant": "Davidson_main",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "fold": 2,
+      "variant": "NS_main",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 2,
+      "variant": "NS_delta0",
+      "maximum_score_error": 5.898059818321144e-17
+    },
+    {
+      "fold": 2,
+      "variant": "Davidson_main",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "fold": 3,
+      "variant": "NS_main",
+      "maximum_score_error": 6.938893903907228e-17
+    },
+    {
+      "fold": 3,
+      "variant": "NS_delta0",
+      "maximum_score_error": 4.85722573273506e-17
+    },
+    {
+      "fold": 3,
+      "variant": "Davidson_main",
+      "maximum_score_error": 4.440892098500626e-16
+    },
+    {
+      "fold": 4,
+      "variant": "NS_main",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 4,
+      "variant": "NS_delta0",
+      "maximum_score_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 4,
+      "variant": "Davidson_main",
+      "maximum_score_error": 3.3306690738754696e-16
+    }
+  ],
+  "primary_statistics_independently_recomputed": {
+    "NS_main_minus_M4": {
+      "gain": 0.001111111111111111,
+      "ci95": [
+        -0.012777777777777777,
+        0.015
+      ],
+      "raw_p": 0.8921107889211078,
+      "corrected": 70,
+      "destroyed": 68,
+      "Holm_p": 0.8921107889211078
+    },
+    "NS_main_minus_Ridge": {
+      "gain": 0.007777777777777777,
+      "ci95": [
+        -0.006666666666666668,
+        0.02222222222222222
+      ],
+      "raw_p": 0.3104689531046895,
+      "corrected": 73,
+      "destroyed": 59,
+      "Holm_p": 0.620937906209379
+    }
+  },
+  "source_hashes": {
+    "math_literature\\public\\01_THEORY_AND_LITERATURE_AUDIT.md": "6cca01b94052431e972002b88f59397c6e870dcbc2a59f1ceadcca905a038e91",
+    "math_literature\\public\\ACTUAL_TRAINING_OPERATOR_REVIEW.json": "8f367524db824fa49b7f640788a3b8d69130ea2aaa8d3f872a9ba14aba19d4f4",
+    "math_literature\\public\\fetch_literature.py": "43714e9d669b749a6c18a5bb9c5fba60a537179adb48a5678eb011494a16d116",
+    "math_literature\\public\\LITERATURE_SOURCE_MANIFEST.json": "af432a50cf209390497aaa51465b2c72618bee8e60f8f699158e4ec07b8e8966",
+    "math_literature\\public\\MATHEMATICAL_SOFTWARE_CHECKS.json": "77f3c7d6c04a7f9cb4d48937010ee6cebb47b8ee4844896e31e8965b829cfc6c",
+    "math_literature\\public\\qualify_set_losses.py": "da67ebf31524553c898169f9487b6d3832cb9379f5de9120bd7810e366cafd0f",
+    "math_literature\\public\\review_training_operators.py": "e76193e9fdfadc1f7043b6d12a395770aad75ac66f2cf2d2c115bf0a7487ff4f",
+    "math_literature\\public\\set_spo_operators.py": "c1fe7094ecc1de3cece6d5283ece708ce87f591943c12d0b831fb9e29238df62",
+    "noise\\public\\CORRELATED_SAMPLER_CHECK.json": "74a21018ab65ccd9cfb10aea5f1743d8bc9b98c3fa7abcc2ff38287a9322570b",
+    "noise\\public\\FOLD0_JOINT_NOISE_SUMMARY.json": "9611cc5bbd508599da7fe69c8ab29a38a6ac1a5b436a0a0d8ab5c21e6da20c2c",
+    "noise\\public\\FOLD1_JOINT_NOISE_SUMMARY.json": "c2374eb5963d0234955f8ccc6d7bc147c46778dc0d4fc2f30e9b83c4693f3c24",
+    "noise\\public\\FOLD2_JOINT_NOISE_SUMMARY.json": "2a279bf3a7183be0337b315e28466a45cda40581aa630b3daa41b1a6119714f1",
+    "noise\\public\\FOLD3_JOINT_NOISE_SUMMARY.json": "aa32c64699bc660da3665e74c134a373176b67d246b74f0f9e108d2b48337486",
+    "noise\\public\\FOLD4_JOINT_NOISE_SUMMARY.json": "4745f2b882d052d8998969cdbfe50fd348216973f369ccaeca4819ac4ede155d",
+    "noise\\public\\JOINT_NOISE_COMPLETE_RESULTS.json": "d08b5cd7c34a60b637de3baeab65ba8391096e7aeaa603b50ffd936c44836690",
+    "noise\\public\\JOINT_NOISE_DIAGNOSTIC.md": "7c63e0c33fdcaff168b9c916149099bbe7db7c027e5cccaa353a64a302ab2319",
+    "noise\\public\\JOINT_NOISE_PROTOCOL.json": "9563a1b07abce4fc92b54b687ab866f75e876634b372f6e888688ee126cfce6c",
+    "noise\\public\\JOINT_NOISE_SOFTWARE_QUALIFICATION.json": "faefc17b51ddfd2b333a5d6046589928169e298de07d73f5671ccb14b7671ff2",
+    "noise\\public\\JOINT_REPLICATE_PROVENANCE_AUDIT.json": "0f75e7a1423c3aecc06cbe79c3be148460a5601249c56680b93ea4a03cc84ceb",
+    "noise\\public\\JOINT_TRAINING_INTERFACE_REVIEW.json": "264b138cf2e00f68f1a117a985bdd350307ab75f51545bb5badda84477491a38",
+    "noise\\public\\POSTERIOR_INTERPRETATION_LIMITS.md": "3a6c144679a9d1a58577449bbc5e7dd747f739a940389845f9ee413a87548048",
+    "training\\public\\03_SET_LOSS_TRAINING_RESULTS.md": "d827e3f1a20d5086029931c78044e521647ef48971289b6559f0ccf4fae058cc",
+    "training\\public\\INDEPENDENT_OPERATOR_AGREEMENT.json": "e2e9835ef1b412b4358b226e2155d05bdfead29b23afe5caf9b9af84305edcee",
+    "training\\public\\NS_PRIMARY_STATISTICS.json": "dfc6d6bfb468bf32881e52959e1be3a474c13cb36e054969bbd3b1f0e32e6059",
+    "training\\public\\NS_TRAINING_RESULTS.json": "e4b34f9ddf8a2d90346de67998e0e43386c6cc157e3dfd4ac66c28a659d5f541",
+    "training\\public\\TRAINING_OPERATOR_QUALIFICATION.json": "2206e91bb0e2e95d7ff60cadd3a3d9e1708a14d9d8bb03f650789afb8a77e550",
+    "training\\public\\TRAINING_SUMMARY.csv": "68aa7d86f2568c4aa54c8ee795ed1161a0687821ce4aba1080c7ba0ff929d8e8"
+  },
+  "private_source_hashes": {
+    "paired_outcomes": "b41188c2eaf31d4a3004d67bb2d354884a42548c5b2532b7f50919cc2754d563",
+    "all_predictions": "ae73eb671e5d07179b5a41430a9e93cee3d0580fd185502b647eb5dc0d9857e4"
+  },
+  "historical_evaluator_access": {
+    "split": "selector_train600 only",
+    "actual_file": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\qualification\\fold_packs\\fold1\\history480.npz",
+    "actual_sha256": "85d2bb1a5779401727bfc3e6f7379960a15f748905a43a986d109b8ada762313",
+    "retained_outcomes_read": false,
+    "new_LLM_calls": 0
+  },
+  "scientific_conclusion": "Noise-aware set training changes action concentration, with unconfirmed service gains and marked finite-integration sensitivity",
+  "limitations": [
+    "Reused development folds have overlapping training histories",
+    "Joint Gaussian posterior is a working approximation with Gamma0 assumption",
+    "Latent win/tie/loss calibration is not identified from one held Bernoulli generation",
+    "MC8 uses correlated posterior samples and changes85 of120 actions under the alternate batch",
+    "Fixed historical nu variant is not a joint-MLE Davidson baseline"
+  ]
+}

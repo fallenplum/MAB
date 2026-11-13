@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "source_sha256": "53e7465ab8be3f2ab0aa0c66c8609316bba825a38e2392ed4e3fa6eb8bfdef3a",
+  "ns_gradient_max_error": 1.4689102434406465e-09,
+  "davidson_gradient_max_error": 1.9450930216534726e-10,
+  "exact_epigraph": {
+    "status": "Solved",
+    "solver": "Clarabel",
+    "solver_version": "0.11.1",
+    "objective": 0.7286850323589419,
+    "epigraph_objective": 0.7286850323598468,
+    "objective_error": 9.049427873719651e-13,
+    "constraint_violation": 0.0,
+    "primal_dual_gap": 1.9494073022485736e-11,
+    "stationarity": 2.2856161407958098e-12,
+    "iterations": 14,
+    "cpu_seconds": 0.015625,
+    "wall_seconds": 0.005466300004627556,
+    "questions": 12,
+    "samples_per_question": 4,
+    "variables": 108,
+    "constraints": 960,
+    "regularization": 0.01,
+    "delta": 0.05,
+    "coefficients": 60,
+    "sparse_constraint_nonzeros": 3840,
+    "sparse_constraint_bytes": 46516,
+    "training_min_score_gap": 0.02418298658269269,
+    "current_rss_bytes": 141422592,
+    "process_peak_working_set_bytes": 141422592
+  },
+  "independent_SLSQP_objective_error": 1.1102230246251565e-16,
+  "decision_consistency_counterexample": {
+    "probabilities": [
+      0.9,
+      0.1
+    ],
+    "reward_vectors": [
+      [
+        0.6,
+        0.5
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "mean_rewards": [
+      0.54,
+      0.55
+    ],
+    "surrogate_optimal_score_gap": 0.05000000000000002,
+    "surrogate_selected_action": 0,
+    "Bayes_selected_action": 1,
+    "scope": "Two-action exact posterior, delta in[0,.05], no general Bayes consistency guarantee"
+  },
+  "Monte_Carlo_unit": "one question with jointly sampled twenty-action vector"
+}

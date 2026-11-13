@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_REAL_PREDICTOR_FIT",
+  "frozen_utc": "2026-11-13T17:46:09.827823+00:00",
+  "main_delta": 0.05,
+  "paired_MC_precision": "NS-SPO+ and Davidson main training both use the identical eight joint latent draws per question",
+  "large_MC_role": "512 posterior draws are for sampler/predictive diagnostics, not a stronger Davidson main target",
+  "fixed_nu": "historical marginal tie probability matched at zero margin, not a jointly fitted author-native Davidson likelihood",
+  "frozen_execution_scope": "member-generation seeds42/137/2024, aggregator seed42 remains fixed",
+  "posterior_scope": "bounded empirical-Bayes Gaussian working posterior with partial predictive miscalibration in pilot; no calibrated latent-equivalence claim",
+  "mathematical_scope": "set losses convex and nonnegative; no universal Bayes decision consistency, including an explicit exact-posterior counterexample",
+  "prototype_fits": 16
+}

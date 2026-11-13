@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_CORRELATED_SAMPLER_CHECK",
+  "source_sha256": "3b71f1b930e81ab5a0b0533df6df12a989f56fd7a330751efa56f37880db7228",
+  "frozen_sampler_sha256": "cc3f4b9d42656e37d50f6858f082fc93f5799196073ef36d653c8c7afc8519ff",
+  "expected_correlation": 0.55,
+  "measured_mean_correlation": 0.5701973727638752,
+  "maximum_correlation_error": 0.04206510237893579,
+  "maximum_covariance_error": 0.00026082534405504217,
+  "maximum_parameter_relabeling_error": 1.1368683772161603e-13,
+  "clipping_used": false,
+  "raw_samples_bounded": true,
+  "scope": "software positive correlation check with truncation boundaries over8 standard deviations away; not real latent calibration"
+}

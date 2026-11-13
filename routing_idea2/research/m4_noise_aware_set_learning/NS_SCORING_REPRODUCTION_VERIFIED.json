@@ -1,0 +1,19 @@
+{
+  "status": "PASS_COMPLETE_SCIENTIFIC_REPLAY",
+  "all_16_models_reused": true,
+  "new_model_fits": 0,
+  "new_LLM_calls": 0,
+  "forbidden_outcomes_accessed": [],
+  "files": {
+    "NS_TRAINING_RESULTS.json": {
+      "original_sha256": "e4b34f9ddf8a2d90346de67998e0e43386c6cc157e3dfd4ac66c28a659d5f541",
+      "replay_sha256": "e4b34f9ddf8a2d90346de67998e0e43386c6cc157e3dfd4ac66c28a659d5f541",
+      "complete_JSON_identical": true
+    },
+    "NS_PRIMARY_STATISTICS.json": {
+      "original_sha256": "dfc6d6bfb468bf32881e52959e1be3a474c13cb36e054969bbd3b1f0e32e6059",
+      "replay_sha256": "dfc6d6bfb468bf32881e52959e1be3a474c13cb36e054969bbd3b1f0e32e6059",
+      "complete_JSON_identical": true
+    }
+  }
+}

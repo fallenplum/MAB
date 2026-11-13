@@ -1,0 +1,303 @@
+{
+  "status": "PASS_WITH_COUNTEREXAMPLES_AND_SCOPE_LIMITATIONS",
+  "synthetic_only": true,
+  "real_reward_accesses": 0,
+  "physical_LLM_calls": 0,
+  "source_sha256": "da67ebf31524553c898169f9487b6d3832cb9379f5de9120bd7810e366cafd0f",
+  "operator_sha256": "c1fe7094ecc1de3cece6d5283ece708ce87f591943c12d0b831fb9e29238df62",
+  "checks": [
+    {
+      "name": "nonnegative_and_bounded",
+      "status": "PASS",
+      "cases": 10000,
+      "minimum": 0.0,
+      "maximum": 4.83392254738018,
+      "uniform_bound_Q1": 5
+    },
+    {
+      "name": "approximate_set_decision_upper_bound",
+      "status": "PASS",
+      "maximum_violation": 0.0,
+      "maximum_bias": 0.03570076323782101,
+      "delta": 0.05
+    },
+    {
+      "name": "singleton_set_recovers_original",
+      "status": "PASS",
+      "maximum_error": 0.0
+    },
+    {
+      "name": "unique_argmax_does_not_imply_singleton_near_set",
+      "status": "PASS",
+      "reward": [
+        1.0,
+        0.98
+      ],
+      "delta": 0.05,
+      "weight": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "unadjusted_surrogate_upper_bound_counterexample",
+      "status": "PASS",
+      "loss": 0.026000000000000023,
+      "greedy_regret": 0.05,
+      "delta": 0.05
+    },
+    {
+      "name": "all_tied_zero_score_loss_zero",
+      "status": "PASS",
+      "floating_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "simultaneous_action_permutation_invariance",
+      "status": "PASS",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "name": "three_repeat_empirical_delta_005_equals_delta0",
+      "status": "PASS",
+      "cases": 10000
+    },
+    {
+      "name": "NS_full_MC_finite_difference_gradient",
+      "status": "PASS",
+      "maximum_error": 2.725342868048486e-10
+    },
+    {
+      "name": "NS_convexity_numeric_check",
+      "status": "PASS",
+      "gap": 0.16085199464474975
+    },
+    {
+      "name": "mean_substitution_is_not_full_MC",
+      "status": "PASS",
+      "exact_MC": 1.0,
+      "substituted_mean_loss": 0.0,
+      "E_weight_reward": 1.0,
+      "E_weight_dot_E_reward": 0.5
+    },
+    {
+      "name": "Davidson_head_finite_difference_gradient",
+      "status": "PASS",
+      "maximum_error": 2.5807525300819423e-10
+    },
+    {
+      "name": "Davidson_log_nu_finite_difference_gradient",
+      "status": "PASS",
+      "maximum_error": 6.619399472995724e-11
+    },
+    {
+      "name": "Davidson_stable_extreme_logits",
+      "status": "PASS",
+      "value": 1571060.4168414802
+    },
+    {
+      "name": "Davidson_win_loss_swap_invariance",
+      "status": "PASS"
+    },
+    {
+      "name": "high_uncertainty_need_not_mean_uniform_weights",
+      "status": "PASS",
+      "all_mean_rewards": 0.5,
+      "high_variance_action_weight": 0.5,
+      "each_other_action_weight": 0.02631578947368421,
+      "exchangeable_uniform_reference": 0.05
+    },
+    {
+      "name": "incomparability_overlap_not_transitive",
+      "status": "PASS",
+      "intervals": [
+        [
+          0.0,
+          0.4
+        ],
+        [
+          0.3,
+          0.7
+        ],
+        [
+          0.6,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "absence_of_directional_certainty_not_equivalence",
+      "status": "PASS",
+      "p_plus": 0.5,
+      "p_practical_tie": 0.0,
+      "p_minus": 0.5
+    },
+    {
+      "name": "population_decision_consistency_counterexample",
+      "status": "PASS",
+      "examples": [
+        {
+          "regularization": 0.0,
+          "solver_status": "Solved",
+          "optimal_score": [
+            0.5769700157282864,
+            0.5269700157272649,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.1011449734693033,
+            -0.10114497346930339
+          ],
+          "expected_reward": [
+            0.54,
+            0.55,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "surrogate_selected_action": 0,
+          "bayes_action": 1,
+          "posterior_mean_regret": 0.010000000000000009,
+          "objective": 0.11000000000020432,
+          "primal_dual_gap": 7.200484652969408e-11
+        },
+        {
+          "regularization": 0.001,
+          "solver_status": "Solved",
+          "optimal_score": [
+            0.2725000017469281,
+            0.22250000174689094,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236,
+            -0.027500000196652236
+          ],
+          "expected_reward": [
+            0.54,
+            0.55,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "surrogate_selected_action": 0,
+          "bayes_action": 1,
+          "posterior_mean_regret": 0.010000000000000009,
+          "objective": 0.11013737500193155,
+          "primal_dual_gap": 5.739964059614522e-12
+        },
+        {
+          "regularization": 0.01,
+          "solver_status": "Solved",
+          "optimal_score": [
+            0.2725000003562584,
+            0.22250000035608275,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592,
+            -0.027500000039867592
+          ],
+          "expected_reward": [
+            0.54,
+            0.55,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "surrogate_selected_action": 0,
+          "bayes_action": 1,
+          "posterior_mean_regret": 0.010000000000000009,
+          "objective": 0.11137375000395601,
+          "primal_dual_gap": 8.2457374261935e-12
+        }
+      ],
+      "analytic_sufficient_lambda_upper_bound": 0.058715596330275226
+    }
+  ]
+}

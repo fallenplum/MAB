@@ -1,0 +1,162 @@
+{
+  "status": "PASS_INDEPENDENT_TRAINING_AND_POSTERIOR_INTERFACE_REVIEW",
+  "source_sha256": "42d890c364d77ec77206da40a23dfe7cbf2458818084e7a029ecfa22d799984d",
+  "training_source_sha256": "53e7465ab8be3f2ab0aa0c66c8609316bba825a38e2392ed4e3fa6eb8bfdef3a",
+  "evaluation_source_sha256": "0892949e94793910d473563dcbff368e3ff46e901e7e7f8fdbcd90da5b3bb7c0",
+  "literal_loop_checks": [
+    {
+      "case": 0,
+      "operator": "NS-SPO+",
+      "loss_error": 0.0,
+      "gradient_error": 1.1102230246251565e-16
+    },
+    {
+      "case": 0,
+      "operator": "Davidson",
+      "loss_error": 0.0,
+      "gradient_error": 2.7755575615628914e-17
+    },
+    {
+      "case": 1,
+      "operator": "NS-SPO+",
+      "loss_error": 8.881784197001252e-16,
+      "gradient_error": 2.220446049250313e-16
+    },
+    {
+      "case": 1,
+      "operator": "Davidson",
+      "loss_error": 1.9984014443252818e-15,
+      "gradient_error": 2.7755575615628914e-17
+    },
+    {
+      "case": 2,
+      "operator": "NS-SPO+",
+      "loss_error": 4.440892098500626e-16,
+      "gradient_error": 1.1102230246251565e-16
+    },
+    {
+      "case": 2,
+      "operator": "Davidson",
+      "loss_error": 6.661338147750939e-16,
+      "gradient_error": 1.5612511283791264e-17
+    },
+    {
+      "case": 3,
+      "operator": "NS-SPO+",
+      "loss_error": 4.440892098500626e-16,
+      "gradient_error": 5.551115123125783e-17
+    },
+    {
+      "case": 3,
+      "operator": "Davidson",
+      "loss_error": 2.220446049250313e-16,
+      "gradient_error": 4.163336342344337e-17
+    },
+    {
+      "case": 4,
+      "operator": "NS-SPO+",
+      "loss_error": 0.0,
+      "gradient_error": 4.440892098500626e-16
+    },
+    {
+      "case": 4,
+      "operator": "Davidson",
+      "loss_error": 8.881784197001252e-16,
+      "gradient_error": 4.163336342344337e-17
+    },
+    {
+      "case": 5,
+      "operator": "NS-SPO+",
+      "loss_error": 0.0,
+      "gradient_error": 1.1102230246251565e-16
+    },
+    {
+      "case": 5,
+      "operator": "Davidson",
+      "loss_error": 1.5543122344752192e-15,
+      "gradient_error": 2.7755575615628914e-17
+    },
+    {
+      "case": 6,
+      "operator": "NS-SPO+",
+      "loss_error": 1.3322676295501878e-15,
+      "gradient_error": 1.1102230246251565e-16
+    },
+    {
+      "case": 6,
+      "operator": "Davidson",
+      "loss_error": 3.1086244689504383e-15,
+      "gradient_error": 2.7755575615628914e-17
+    },
+    {
+      "case": 7,
+      "operator": "NS-SPO+",
+      "loss_error": 0.0,
+      "gradient_error": 2.220446049250313e-16
+    },
+    {
+      "case": 7,
+      "operator": "Davidson",
+      "loss_error": 2.220446049250313e-16,
+      "gradient_error": 2.7755575615628914e-17
+    }
+  ],
+  "frozen_posterior_checks": [
+    {
+      "fold": 0,
+      "frozen_target_hash_matches": true,
+      "main_alt_bounded_shapes": true,
+      "probabilities_simplex": true,
+      "posterior_questions": 480,
+      "outer_rewards_used": false
+    },
+    {
+      "fold": 1,
+      "frozen_target_hash_matches": true,
+      "main_alt_bounded_shapes": true,
+      "probabilities_simplex": true,
+      "posterior_questions": 480,
+      "outer_rewards_used": false
+    },
+    {
+      "fold": 2,
+      "frozen_target_hash_matches": true,
+      "main_alt_bounded_shapes": true,
+      "probabilities_simplex": true,
+      "posterior_questions": 480,
+      "outer_rewards_used": false
+    },
+    {
+      "fold": 3,
+      "frozen_target_hash_matches": true,
+      "main_alt_bounded_shapes": true,
+      "probabilities_simplex": true,
+      "posterior_questions": 480,
+      "outer_rewards_used": false
+    },
+    {
+      "fold": 4,
+      "frozen_target_hash_matches": true,
+      "main_alt_bounded_shapes": true,
+      "probabilities_simplex": true,
+      "posterior_questions": 480,
+      "outer_rewards_used": false
+    }
+  ],
+  "static_source_review": {
+    "NS_exact_epigraph_matches_finite_MC_objective": true,
+    "Davidson_main_uses_same_eight_joint_samples_as_NS": true,
+    "512_pair_probabilities_diagnostic_only": true,
+    "all16_model_actions_sealed_before_historical_reward_reader": true,
+    "cross_fold_indices_sources_models_predictions_restored": true,
+    "sampling_unit_original_question": true,
+    "same_linear_capacity_340_and_historical_lambda": true,
+    "Davidson_nu_historical_fixed_zero_margin_matching_declared": true
+  },
+  "reproduction_requirement": "evaluate training-root must contain ns_training.py plus private/fold* models; canonical public/code alone is insufficient",
+  "caveats": [
+    "Classical Rhat/ESS passing does not establish latent probability calibration",
+    "Gaussian moment interval undercoverage remains a statistical mismatch warning",
+    "Final parent snapshots must verify history/input assets against all recorded SHA values"
+  ]
+}
