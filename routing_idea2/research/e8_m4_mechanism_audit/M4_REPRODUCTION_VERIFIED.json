@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL_THREE_MODULES_REPLAYED",
+  "directory": "E:\\语言模型组合路由\\research\\e8_m4_mechanism_audit\\private\\reproductions\\20261113T170730_385639Z",
+  "all_scientific_results_identical": true,
+  "models_refitted": false,
+  "new_physical_LLM_calls": 0,
+  "excluded_comparison_fields": {
+    "stable": [
+      "protocol_sha256",
+      "wall_seconds"
+    ]
+  }
+}

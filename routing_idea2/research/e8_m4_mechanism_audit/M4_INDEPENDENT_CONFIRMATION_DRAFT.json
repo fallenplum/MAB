@@ -1,0 +1,38 @@
+{
+  "status": "PROPOSED_NOT_EXECUTED",
+  "target": "one frozen M4 vs original Ridge",
+  "true_optimal_tie_rule": "original_M4_lexicographic",
+  "reverse_and_uniform_sensitivity": "mechanism_controls_only_excluded_from_main_candidate_selection",
+  "alpha": 0.05,
+  "alternative": "gain > 0",
+  "practical_gain_margin": 0.01,
+  "evaluation_units": "independent original question, all3 generations attached",
+  "primary_weights": "GSM8K50% BBH50%, within BBH question mean",
+  "evaluation_time": "once at predeclared final sample count, no adaptive stopping",
+  "candidate_configuration": "freeze one full-train600 M4 under deterministic historical-only selection rule before heldout rewards",
+  "required_frozen_components": [
+    "MiniLM/PCA/Scaler",
+    "linear coefficients",
+    "M4 regularization",
+    "true-optimum tie rule",
+    "test-time tie rule",
+    "six-model and20-team order",
+    "all question-level actions",
+    "aggregation/scoring operators",
+    "question identities and roles"
+  ],
+  "primary_question_counts_considered": [
+    200,
+    400,
+    600
+  ],
+  "power_for_200_at_current_point": 0.1173106210323221,
+  "approximate_n_for_one_pp_80pct": 2640,
+  "approval_gain_positive": "one-sided95% lower bound >0",
+  "evidence_for_at_least_one_pp": "same lower bound >.01",
+  "scope": "planning only, no retained rewards read, no new language-model generation",
+  "roles": {
+    "fresh400": "one-time independent development evaluation after freezing",
+    "sealed200": "final confirmation, power limitations explicitly retained"
+  }
+}

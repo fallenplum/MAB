@@ -1,0 +1,43 @@
+{
+  "study": "M4 small mechanism audit, stable nonzero empirical gaps",
+  "status": "FROZEN_BEFORE_FIRST_NEW_REWARD_ACCESS",
+  "frozen_at_utc": "2026-11-13T16:57:00.842655+00:00",
+  "source_sha256": "14a9f98ba61bfa26cea4530fdd4c50c353f8349ec7bb2bda1dae86f5b49fa86b",
+  "source_e8_protocol_sha256": "44e8b840544c9c3377bab11f459a281566185da24897dc3b27c2a41d1c9833a3",
+  "predictions_sha256": "48b86b20fb3aaf48723847fbd094da63e1732568d9740386c6da68952785b5eb",
+  "scope": "Exploratory reused-development diagnostic, no independent confirmation",
+  "unit": "600 original questions, all three generations attached",
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "question_bootstrap": {
+    "repetitions": 10000,
+    "seed": 2026111402,
+    "strata": "outer fold x GSM8K/BBH, all LOSO masks and outcomes resampled jointly"
+  },
+  "masks": {
+    "all_questions": "all original questions and three held-generation records",
+    "two_seed_any_mean_value_gap": "two nonheld seeds have nonconstant actionwise reward sums",
+    "two_seed_stable_action_pair": "some action pair has the same nonzero reward difference in both nonheld seeds",
+    "two_seed_stable_selected_pair": "M4 minus Ridge is the same nonzero sign in both nonheld seeds",
+    "two_seed_selected_M4_ahead": "M4 minus Ridge equals +1 in both nonheld seeds",
+    "two_seed_selected_Ridge_ahead": "M4 minus Ridge equals -1 in both nonheld seeds",
+    "two_seed_default_repair_opportunity": "global default fails in both nonheld seeds and some one combination succeeds in both"
+  },
+  "posthoc_masks": {
+    "three_seed_any_mean_gap": "three-seed actionwise mean range is nonzero",
+    "three_seed_nonzero_selected_mean_gap": "three-seed M4 minus Ridge mean is nonzero",
+    "three_seed_selected_consistent_nonzero": "M4 minus Ridge has one strict sign in all three generations",
+    "three_seed_stable_action_pair": "some action pair has one strict sign in all three generations"
+  },
+  "statistics": "Question-cluster paired percentile95 CI. Conditional LOSO accuracy uses selected records. Task-balanced conditional results are separate from pooled support-weighted results.",
+  "multiplicity": "All subgroup and LOSO results exploratory, no claim of confirmatory p-values",
+  "forbidden_outcomes": [
+    "validation200",
+    "fresh400",
+    "sealed200"
+  ],
+  "new_physical_llm_calls": 0
+}

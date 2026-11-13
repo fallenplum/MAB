@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "original_E8_files_byte_identical": 1219,
+  "intervention_models_restored": 25,
+  "maximum_intervention_score_error": 0.0,
+  "restorations": [
+    {
+      "fold": 0,
+      "variant": "full_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 0,
+      "variant": "full_spo_reverselex",
+      "score_error": 0.0
+    },
+    {
+      "fold": 0,
+      "variant": "full_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 0,
+      "variant": "constant_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 0,
+      "variant": "constant_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 1,
+      "variant": "full_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 1,
+      "variant": "full_spo_reverselex",
+      "score_error": 0.0
+    },
+    {
+      "fold": 1,
+      "variant": "full_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 1,
+      "variant": "constant_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 1,
+      "variant": "constant_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 2,
+      "variant": "full_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 2,
+      "variant": "full_spo_reverselex",
+      "score_error": 0.0
+    },
+    {
+      "fold": 2,
+      "variant": "full_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 2,
+      "variant": "constant_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 2,
+      "variant": "constant_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 3,
+      "variant": "full_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 3,
+      "variant": "full_spo_reverselex",
+      "score_error": 0.0
+    },
+    {
+      "fold": 3,
+      "variant": "full_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 3,
+      "variant": "constant_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 3,
+      "variant": "constant_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "full_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "full_spo_reverselex",
+      "score_error": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "full_spo_uniform",
+      "score_error": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "constant_spo_lexicographic",
+      "score_error": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "constant_spo_uniform",
+      "score_error": 0.0
+    }
+  ],
+  "independent_evaluators_agree": true,
+  "corrections": 95,
+  "destructions": 83,
+  "net_events": 12,
+  "scientific_inference": "exploratory reused-development mechanism study",
+  "preserved_outcome_splits_accessed": [],
+  "new_physical_LLM_calls": 0
+}

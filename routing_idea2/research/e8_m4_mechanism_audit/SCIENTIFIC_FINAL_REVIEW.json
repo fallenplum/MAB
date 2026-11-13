@@ -1,0 +1,260 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_SCIENTIFIC_LIMITATIONS",
+  "review_scope": "Independent numerical cross-artifact checks and scientific reading of the three reports",
+  "checks": [
+    {
+      "check": "M4_original concentration",
+      "status": "PASS",
+      "detail": "Aggregate counts sum to600; highest frequency467"
+    },
+    {
+      "check": "M4_original frozen private action frequencies",
+      "status": "PASS",
+      "detail": "All20 counts independently recomputed"
+    },
+    {
+      "check": "full_spo_reverselex concentration",
+      "status": "PASS",
+      "detail": "Aggregate counts sum to600; highest frequency505"
+    },
+    {
+      "check": "full_spo_reverselex frozen private action frequencies",
+      "status": "PASS",
+      "detail": "All20 counts independently recomputed"
+    },
+    {
+      "check": "lex same-solver exact restoration",
+      "status": "PASS",
+      "detail": "All five same-solver lexical controls preserve original actions"
+    },
+    {
+      "check": "reverse-label changed actions",
+      "status": "PASS",
+      "detail": "594 of600 changed under true-target tie intervention"
+    },
+    {
+      "check": "SPO capacity and exact objective qualification",
+      "status": "PASS",
+      "detail": "25 exact QPs, full340 or constant20 parameters, certified small numerical residuals"
+    },
+    {
+      "check": "original selected score stability",
+      "status": "PASS",
+      "detail": "All original M4 decisions have top-score margin above1e-8"
+    },
+    {
+      "check": "uniform numerical degeneracy disclosed",
+      "status": "PASS",
+      "detail": "397 of600 uniform-rule predictions have top gap below1e-8"
+    },
+    {
+      "check": "all module paired outcomes align",
+      "status": "PASS",
+      "detail": "All three modules preserve the same600x3 M4−Ridge paired observations"
+    },
+    {
+      "check": "543 action changes and net12 events",
+      "status": "PASS",
+      "detail": "543 changed questions,95 corrections,83 destructions,12 net outcomes"
+    },
+    {
+      "check": "concentration decomposition additive",
+      "status": "PASS",
+      "detail": "Two frozen-action groups sum to the original net12 events"
+    },
+    {
+      "check": "LOSO stable-action-pair denominator",
+      "status": "PASS",
+      "detail": "164 independent original questions and344 dependent held-generation records kept distinct"
+    },
+    {
+      "check": "LOSO selected pair mask held0",
+      "status": "PASS",
+      "detail": "Mask depends only on the other two generation differences"
+    },
+    {
+      "check": "held-label intervention invariance0",
+      "status": "PASS",
+      "detail": "Flipping all held differences cannot alter its inclusion mask"
+    },
+    {
+      "check": "LOSO selected pair mask held1",
+      "status": "PASS",
+      "detail": "Mask depends only on the other two generation differences"
+    },
+    {
+      "check": "held-label intervention invariance1",
+      "status": "PASS",
+      "detail": "Flipping all held differences cannot alter its inclusion mask"
+    },
+    {
+      "check": "LOSO selected pair mask held2",
+      "status": "PASS",
+      "detail": "Mask depends only on the other two generation differences"
+    },
+    {
+      "check": "held-label intervention invariance2",
+      "status": "PASS",
+      "detail": "Flipping all held differences cannot alter its inclusion mask"
+    },
+    {
+      "check": "LOSO stable selection net loss",
+      "status": "PASS",
+      "detail": "Selected-pair stable layer contains10 corrections and21 destructions"
+    },
+    {
+      "check": "M0_original planning variance",
+      "status": "PASS",
+      "detail": "Variance reconstructed from independent-question means with balanced task weights"
+    },
+    {
+      "check": "M0_original power grid",
+      "status": "PASS",
+      "detail": "All one-sided/two-sided normal approximations recomputed"
+    },
+    {
+      "check": "train_global_fixed planning variance",
+      "status": "PASS",
+      "detail": "Variance reconstructed from independent-question means with balanced task weights"
+    },
+    {
+      "check": "train_global_fixed power grid",
+      "status": "PASS",
+      "detail": "All one-sided/two-sided normal approximations recomputed"
+    },
+    {
+      "check": "retained-outcome boundary declared",
+      "status": "PASS",
+      "detail": "Power consumes only train600 paired values; retained-set roles are documentary metadata"
+    },
+    {
+      "check": "uniform not promoted as winning router",
+      "status": "PASS",
+      "detail": "Report explicitly blocks interpreting the numerically degenerate uniform variant as a stable winner"
+    },
+    {
+      "check": "stable strata are deployment-unavailable diagnostics",
+      "status": "PASS",
+      "detail": "Report exposes same-question outcome conditioning and exploratory evidence scope"
+    },
+    {
+      "check": "power assumptions and one-sided threshold",
+      "status": "PASS",
+      "detail": "Positive-gain detection is distinct from proving a1pp margin; boundary power is described"
+    },
+    {
+      "check": "content logging amendment disclosed",
+      "status": "PASS",
+      "detail": "Reconstructed earlier metadata and application-level reward-read scope explicitly disclosed"
+    },
+    {
+      "check": "public artifacts contain no exact restricted raw-data keys",
+      "status": "PASS",
+      "detail": "No question IDs, raw coefficient arrays, embeddings or full outcomes found in public JSON"
+    }
+  ],
+  "scientific_interpretation": {
+    "tie_intervention": "Controlled evidence that true-label tie orientation changes concentrated routing under fixed training and solver, not evidence of independent accuracy improvement",
+    "uniform": "Near-tied output scores and numerical instability preclude winner promotion",
+    "stable_gaps": "LOSO strata use same-question feedback and cannot certify input-only deployment; sparse supports and intervals retain negative evidence",
+    "content": "Matched one-shuffle control does not establish content dependence; feature masking is distribution-shifting and inherits the learned intercept",
+    "power": "Approximate planning conditional on historical OOF variance, specified effect and one-sided fixed-time test; not retained-set empirical power"
+  },
+  "public_scan": {
+    "restricted_exact_key_hits": [],
+    "local_private_file_reference_fields": [
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/0/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/1/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/2/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/3/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/4/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/5/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/6/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/7/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/8/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/9/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/10/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/11/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/12/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/13/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/14/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/15/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/16/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/17/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/18/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/19/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/20/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/21/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/22/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/23/model_path",
+      "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json/training/fits/24/model_path"
+    ],
+    "local_private_references_note": "These25 fields are absolute paths to model files, not weights or IDs. They can be omitted from a sanitized aggregate copy if desired; never publish the referenced NPZ files.",
+    "private_do_not_publish": [
+      "distribution/private/models/*.npz: coefficient arrays and feature transforms",
+      "distribution/private/INTERVENTIONS_FROZEN.npz: per-question raw scores and selected actions",
+      "distribution/private/EVALUATED_PAIRED_ACTIONS.npz: per-question actions and realized rewards",
+      "stable/private/STABLE_GAP_QUESTION_RECORDS.npz: question_ids, per-question masks, selected actions and rewards",
+      "stable/private/REWARD_ACCESS_LOG.json: raw private input source references",
+      "content_power/private/CONTENT_AND_POWER_PAIRED_VALUES.npz: per-question paired rewards and task metadata",
+      "content_power/private/INPUT_MASK_PREDICTIONS_FROZEN.npz: per-question scores and selected actions",
+      "content_power/private/v1_reconstructed/: reconstructed internal logs, not an original temporal freeze"
+    ]
+  },
+  "reviewed_public_files": [
+    {
+      "path": "distribution\\public\\01_SELECTION_DISTRIBUTION_AND_TIE_AUDIT.md",
+      "sha256": "949c258351af5494fcd7ef311ba9bd09a76f4ad5808d3c0e3f2ad80b73559d95"
+    },
+    {
+      "path": "distribution\\public\\M4_ALL20_SELECTION_COUNTS.csv",
+      "sha256": "176565a92856d1dc76759eb6864fd79fb82889aecc0bbe4f771568a958d6c9d2"
+    },
+    {
+      "path": "distribution\\public\\M4_CONCENTRATION_DECOMPOSITION.json",
+      "sha256": "fb30b5d79769e0ab50d0006d49937f11c4e2746d3f5b2509da92441a0bc4a7d1"
+    },
+    {
+      "path": "distribution\\public\\M4_DISTRIBUTION_AND_TIE_RESULTS.json",
+      "sha256": "5202894d80a86a6b52b4d7d2efd81a6b7d352c1a0e36ca5a31c1fb083685bdff"
+    },
+    {
+      "path": "stable\\public\\02_STABLE_NONZERO_GAPS.md",
+      "sha256": "307e042e2db02c9ae6e2173061cafa4fbfe64fd836224f0d6f0b2321947ad8fa"
+    },
+    {
+      "path": "stable\\public\\M4_STABLE_GAP_PREDECLARED.json",
+      "sha256": "e5389fec1d4bdce2bf82478c34dbd76126c8e14423bef513f34a425ebff1079d"
+    },
+    {
+      "path": "stable\\public\\M4_STABLE_GAP_RESULTS.json",
+      "sha256": "522d9cf3cb85c39c40bac74b70be7fd0299281c8d4e23f42d6a95cc479414893"
+    },
+    {
+      "path": "content_power\\public\\03_CONTENT_AND_INDEPENDENT_CONFIRMATION_PLAN.md",
+      "sha256": "89dfeb39b7699eb8c03e48a1ecefd6ba8b8a496c3ff1ca26c4c92b65cf8ed4f1"
+    },
+    {
+      "path": "content_power\\public\\build_content_report.py",
+      "sha256": "0e6094a9f24ebc9b227e5e608181389adf4cdf290a3c91288ac694f9951149cc"
+    },
+    {
+      "path": "content_power\\public\\CONTENT_ANALYSIS_AMENDMENT.json",
+      "sha256": "12ee795deeab5857e7d62007846316ca063d598dffb814272bdcc076e4d654c9"
+    },
+    {
+      "path": "content_power\\public\\M4_CONTENT_AND_POWER_RESULTS.json",
+      "sha256": "5eccd84f42fa4d9e26cee227d65e40e5ded79c58efef49183c0e840cb033e908"
+    },
+    {
+      "path": "content_power\\public\\M4_INDEPENDENT_CONFIRMATION_DRAFT.json",
+      "sha256": "8129a7e2bf306cf8b5d9ef624ee37565349dca5912ce1fdbad043f43901d0fc6"
+    },
+    {
+      "path": "content_power\\public\\run_content_and_power.py",
+      "sha256": "fada0d0a74c42e4b1a3db5de2c56b5f0105b87f5825687601dd5a2b7b62a7a32"
+    }
+  ],
+  "new_model_or_llm_calls": 0,
+  "historical_sources_modified": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "METADATA_AND_LOG_SEMANTICS_AMENDMENT",
+  "numeric_results_unchanged": true,
+  "checked_unchanged": [
+    "comparisons",
+    "power",
+    "qualification_normal_model",
+    "negative_control_audit"
+  ],
+  "original_source_reconstruction": "private/v1_reconstructed/run_content_and_power.py",
+  "original_result_reconstruction": "private/v1_reconstructed/M4_CONTENT_AND_POWER_RESULTS.json",
+  "original_receipt_timestamp_available": false,
+  "source_v1_reconstructed_sha256": "32f7854eced85534b34b0cc48039b281cf971951fc1d419e373207e60772a360",
+  "result_v1_reconstructed_sha256": "567f1da899e93b7254ee0ca0ce0793a57bab64a1d38b4e3faa59172d2d98ebbc",
+  "final_source_sha256": "fada0d0a74c42e4b1a3db5de2c56b5f0105b87f5825687601dd5a2b7b62a7a32",
+  "final_result_sha256": "5eccd84f42fa4d9e26cee227d65e40e5ded79c58efef49183c0e840cb033e908",
+  "added_metadata": [
+    "Four public role/protocol metadata sources and hashes",
+    "Per-fold history480 input hashes in private ledger",
+    "Explicit application-level read-order receipt, all five histories jointly cover600"
+  ],
+  "report_writer_software_fix": "Python3.11 nested f-string fixed before first rendered report; scientific outputs unchanged"
+}

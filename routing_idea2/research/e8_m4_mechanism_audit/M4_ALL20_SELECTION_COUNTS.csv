@@ -1,0 +1,21 @@
+combo_id,members,M0_count,M4_lex_count,M4_reverse_count
+0,Qwen3-8B + Qwen2.5-Coder-7B-Instruct + Granite-3.3-8b-instruct,28,467,0
+1,Qwen3-8B + Qwen2.5-Coder-7B-Instruct + DeepHermes-3-Llama-3-8B-Preview,12,7,0
+2,Qwen3-8B + Qwen2.5-Coder-7B-Instruct + DeepSeek-R1-Distill-Qwen-7B,39,16,3
+3,Qwen3-8B + Qwen2.5-Coder-7B-Instruct + Cogito-v1-preview-llama-8B,45,12,0
+4,Qwen3-8B + Granite-3.3-8b-instruct + DeepHermes-3-Llama-3-8B-Preview,9,6,5
+5,Qwen3-8B + Granite-3.3-8b-instruct + DeepSeek-R1-Distill-Qwen-7B,46,9,6
+6,Qwen3-8B + Granite-3.3-8b-instruct + Cogito-v1-preview-llama-8B,55,14,5
+7,Qwen3-8B + DeepHermes-3-Llama-3-8B-Preview + DeepSeek-R1-Distill-Qwen-7B,24,11,7
+8,Qwen3-8B + DeepHermes-3-Llama-3-8B-Preview + Cogito-v1-preview-llama-8B,16,13,0
+9,Qwen3-8B + DeepSeek-R1-Distill-Qwen-7B + Cogito-v1-preview-llama-8B,37,1,7
+10,Qwen2.5-Coder-7B-Instruct + Granite-3.3-8b-instruct + DeepHermes-3-Llama-3-8B-Preview,19,5,0
+11,Qwen2.5-Coder-7B-Instruct + Granite-3.3-8b-instruct + DeepSeek-R1-Distill-Qwen-7B,55,8,6
+12,Qwen2.5-Coder-7B-Instruct + Granite-3.3-8b-instruct + Cogito-v1-preview-llama-8B,54,7,3
+13,Qwen2.5-Coder-7B-Instruct + DeepHermes-3-Llama-3-8B-Preview + DeepSeek-R1-Distill-Qwen-7B,26,4,6
+14,Qwen2.5-Coder-7B-Instruct + DeepHermes-3-Llama-3-8B-Preview + Cogito-v1-preview-llama-8B,33,10,9
+15,Qwen2.5-Coder-7B-Instruct + DeepSeek-R1-Distill-Qwen-7B + Cogito-v1-preview-llama-8B,4,0,8
+16,Granite-3.3-8b-instruct + DeepHermes-3-Llama-3-8B-Preview + DeepSeek-R1-Distill-Qwen-7B,35,0,10
+17,Granite-3.3-8b-instruct + DeepHermes-3-Llama-3-8B-Preview + Cogito-v1-preview-llama-8B,20,8,8
+18,Granite-3.3-8b-instruct + DeepSeek-R1-Distill-Qwen-7B + Cogito-v1-preview-llama-8B,21,0,12
+19,DeepHermes-3-Llama-3-8B-Preview + DeepSeek-R1-Distill-Qwen-7B + Cogito-v1-preview-llama-8B,22,2,505
