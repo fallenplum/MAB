@@ -1,0 +1,68 @@
+{
+  "C-A": {
+    "gain": -0.0022222222222222227,
+    "ordinary_paired95": [
+      -0.008333333333333333,
+      0.0038888888888888883
+    ],
+    "unadjusted_two_sided_centered_bootstrap_p": 0.4791520847915208,
+    "corrected_events": 11,
+    "destroyed_events": 15,
+    "net_events": -4,
+    "independent_questions": 600,
+    "recorded_generation_events": 1800,
+    "seed_gain": [
+      -0.0016666666666666668,
+      0.0016666666666666668,
+      -0.006666666666666667
+    ],
+    "task_gain": {
+      "gsm8k": -0.0033333333333333335,
+      "bbh": -0.0011111111111111111
+    },
+    "outer_gain": [
+      -0.002777777777777778,
+      0.005555555555555556,
+      -0.008333333333333333,
+      0.002777777777777778,
+      -0.008333333333333333
+    ],
+    "Holm_p": 0.7197280271972802,
+    "positive_Holm_support": false,
+    "practical_point_gain_at_least_one_pp": false,
+    "interval_scope": "ordinary95 paired interval, not Holm simultaneous interval"
+  },
+  "B-A": {
+    "gain": 0.004444444444444444,
+    "ordinary_paired95": [
+      -0.00388888888888889,
+      0.013888888888888886
+    ],
+    "unadjusted_two_sided_centered_bootstrap_p": 0.3598640135986401,
+    "corrected_events": 32,
+    "destroyed_events": 24,
+    "net_events": 8,
+    "independent_questions": 600,
+    "recorded_generation_events": 1800,
+    "seed_gain": [
+      0.0016666666666666668,
+      0.006666666666666667,
+      0.005
+    ],
+    "task_gain": {
+      "gsm8k": 0.005555555555555556,
+      "bbh": 0.0033333333333333335
+    },
+    "outer_gain": [
+      0.008333333333333333,
+      0.013888888888888888,
+      0.011111111111111112,
+      -0.013888888888888888,
+      0.002777777777777778
+    ],
+    "Holm_p": 0.7197280271972802,
+    "positive_Holm_support": false,
+    "practical_point_gain_at_least_one_pp": false,
+    "interval_scope": "ordinary95 paired interval, not Holm simultaneous interval"
+  }
+}

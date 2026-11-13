@@ -1,0 +1,12 @@
+{
+  "status": "PASS_REPRODUCED",
+  "mode": "scoring-replay",
+  "directory": "E:\\语言模型组合路由\\research\\e9_consistent_cost_sensitive_learning\\private\\reproductions\\scoring-replay_20261113T195124_741314Z",
+  "scientific_metrics_identical": true,
+  "models_refitted": false,
+  "comparison_excludes": "floating restoration diagnostics; full-refit also excludes new execution timing",
+  "cpu_seconds": 2.796875,
+  "wall_seconds": 3.579923699988285,
+  "physical_LLM_calls": 0,
+  "retained_outcome_reads": 0
+}

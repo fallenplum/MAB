@@ -1,0 +1,228 @@
+{
+  "schema": "E9_aggregate_cost_ledger_v1",
+  "status": "COMPLETE_LEDGER_WITH_EXPLICIT_UNTIMED_COMPONENTS",
+  "scope": "completed frozen exploratory E9, aggregate summaries and receipts only",
+  "units": {
+    "time": "seconds",
+    "memory": "bytes",
+    "rates": "fractions unless header specifies pct or pp"
+  },
+  "new_physical_resources": {
+    "LLM_calls": 0,
+    "API_model_calls": 0,
+    "new_data_questions": 0,
+    "new_gold_acquisitions": 0,
+    "new_GPU_LLM_training_runs": 0
+  },
+  "shared_historical_feedback": {
+    "scope": "one shared historical full-feedback train600 preparation, counted once across overlapping folds and methods",
+    "canonical_unique_questions": 600,
+    "gold_questions": 600,
+    "generation_repeats_per_question": 3,
+    "member_calls": 10800,
+    "aggregator_calls": 36000,
+    "all_historical_LLM_calls": 46800,
+    "cached_aggregate_score_events": 36000,
+    "input_tokens": 32009475,
+    "output_tokens": 5264652,
+    "tokens": 37274127,
+    "source_call_wall_seconds_sum": 299000.5299690191,
+    "source_call_wall_scope": "sum of historical recorded call wall times, including receipt-accounted failures",
+    "gpu_kernel_seconds": null,
+    "monetary_cost": null,
+    "monetary_cost_reason": "No currency-denominated billing receipt was supplied",
+    "feedback_information": "cached full 20-action x3-generation feedback with shared paid gold",
+    "upstream_encoder_pretraining_cost": null,
+    "upstream_encoder_pretraining_cost_reason": "Original encoder pretraining resources are outside available receipts",
+    "loader_source_sha256": "64f01de3e2e007f50c8ed6e5f690ffd147f6354eed808d83fce1f0fc5892cf64",
+    "live_verified": true
+  },
+  "formal_heads": {
+    "planned_candidate_slots": 195,
+    "saved_slots": 195,
+    "actual_fits": 165,
+    "derived_Ridge_heads": 30,
+    "failures": 0,
+    "cpu_seconds_sum": 0.828125,
+    "wall_seconds_sum": 0.7301202001981437,
+    "actual_fit_cpu_seconds_sum": 0.8125,
+    "actual_fit_wall_seconds_sum": 0.7173760000732727,
+    "derived_validation_cpu_seconds_sum": 0.015625,
+    "derived_validation_wall_seconds_sum": 0.012744200124870986,
+    "phase_breakdown": {
+      "inner": {
+        "slots": 135,
+        "actual_fits": 105,
+        "derived_heads": 30,
+        "cpu_seconds_sum": 0.546875,
+        "wall_seconds_sum": 0.48722600014298223
+      },
+      "outer": {
+        "slots": 15,
+        "actual_fits": 15,
+        "derived_heads": 0,
+        "cpu_seconds_sum": 0.109375,
+        "wall_seconds_sum": 0.0656072000565473
+      },
+      "controls": {
+        "slots": 45,
+        "actual_fits": 45,
+        "derived_heads": 0,
+        "cpu_seconds_sum": 0.171875,
+        "wall_seconds_sum": 0.1772869999986142
+      }
+    },
+    "maximum_actual_gradient_infinity_norm": 9.881495666511086e-08,
+    "maximum_recorded_process_peak_ram_bytes": 159313920,
+    "peak_ram_scope": "maximum of Windows process-lifetime working-set peaks observed by head fits",
+    "timing_scope": "sum of head fitting and derived-head validation entries, excludes feature preparation, source validation and artifact I/O",
+    "CPU_clock_note": "Windows process CPU readings show 0.015625-second increments and some short entries report zero",
+    "full_pipeline_elapsed_wall_seconds": null,
+    "full_pipeline_elapsed_reason": "A complete process-start-to-finish timer is absent from these receipts"
+  },
+  "formal_teachers": {
+    "new_regions": 30,
+    "inner320_regions": 15,
+    "permuted480_regions": 15,
+    "prior_fits": 90,
+    "posterior_sampling_calls": 90,
+    "draws_per_question": 512,
+    "fallback_question_instances": 0,
+    "B_D_share_targets": true,
+    "outer_mean_assets_reused": 5,
+    "cpu_seconds_sum": 66.65625,
+    "region_wall_seconds_sum": 70.00309739998193,
+    "wall_scope": "sum of thirty individual teacher-region timers",
+    "region_timer_includes": "internal splitting, prior estimation, posterior sampling, array checks, compressed output writes and artifact hashing through receipt construction",
+    "process_concurrency_limit": 2,
+    "parallel_pipeline_elapsed_wall_seconds": null,
+    "parallel_pipeline_elapsed_reason": "Region wall sums and completion timestamps do not provide a complete concurrent pipeline elapsed timer",
+    "peak_ram_bytes": null,
+    "peak_ram_reason": "Teacher receipts do not contain a peak-RAM measurement",
+    "receipt_count": 30,
+    "receipt_manifest_sha256": "7e00e563c52a8b499c9a66660a9dd5fda7fc79c034b4930812b1fcf5d0d561e0"
+  },
+  "qualification_and_replay": {
+    "A_reuse": {
+      "successful_Ridge_replays": 50,
+      "earlier_failed_attempt_Ridge_fits": 1,
+      "all_Ridge_qualification_fits": 51,
+      "successful_replay_audit_cpu_seconds": 0.609375,
+      "successful_replay_audit_wall_seconds": 0.6385601999936625,
+      "successful_timer_scope": "audit main() through report construction, including source verification, input reads, feature fitting and fifty Ridge replays, excluding interpreter startup",
+      "successful_solver_only_cpu_seconds": null,
+      "successful_solver_only_wall_seconds": null,
+      "successful_process_elapsed_wall_seconds": 2.861057,
+      "failed_process_elapsed_wall_seconds": 2.1316688,
+      "failed_solver_cpu_seconds": null,
+      "process_timing_provenance": "coordinator-observed execution durations, including process startup and surrounding work",
+      "failed_solver_cpu_reason": "The failed process has no separate solver CPU timer",
+      "failure_and_repair": "Audit used an algebraically equivalent lambda operation order in an exact-float assertion; corrected to match frozen implementation."
+    },
+    "teacher_variable61": {
+      "synthetic_questions": 61,
+      "prior_fits": 3,
+      "sampling_calls": 3,
+      "draws_per_question": 512,
+      "cpu_seconds": 0.84375,
+      "wall_seconds": 0.9621308000059798,
+      "scope": "one synthetic software-qualification region, separate from thirty formal regions"
+    },
+    "teacher_prior_independent_replay": {
+      "prior_moment_recomputations": 6,
+      "new_sampling_calls": 0,
+      "process_elapsed_wall_seconds": 3.3297257,
+      "process_timing_provenance": "coordinator-observed entire audit process including startup, validation and I/O",
+      "prior_only_cpu_seconds": null,
+      "prior_only_wall_seconds": null,
+      "timing_reason": "No timer isolates the six moment recomputations"
+    },
+    "heads": {
+      "normal_synthetic_fits": 12,
+      "expected_mock_rejection_calls": 1,
+      "mock_real_optimizer_fits": 0,
+      "normal_fit_cpu_seconds_sum": 0.015625,
+      "normal_fit_wall_seconds_sum": 0.01768170003197156,
+      "mock_validation_cpu_seconds": 0.0,
+      "mock_validation_wall_seconds": 0.00011890000314451754,
+      "full_qualification_cpu_seconds": null,
+      "full_qualification_wall_seconds": null,
+      "timing_scope": "fit-entry timers exclude finite differences and other software checks"
+    },
+    "mathematical_operator": {
+      "current_checks_passed": 14,
+      "current_check_count": 14,
+      "normal_synthetic_fits_per_invocation": 2,
+      "invocation_count": null,
+      "all_synthetic_fit_count": null,
+      "cpu_seconds": null,
+      "wall_seconds": null,
+      "timing_status": "not independently timed, repeated invocation count not completely retained",
+      "retained_failed_qualification_records": 1,
+      "failed_checks": [
+        "exact_equal_logits_common_offset"
+      ],
+      "repair": "subtract per-row maximum logit before the identical CSCE data term, preserving original L2 and denominator"
+    }
+  },
+  "failure_ledger": {
+    "formal_head_fit_failures": 0,
+    "mathematical_stability_qualification_failures_retained": 1,
+    "A_reuse_audit_failed_attempts_retained": 1,
+    "expected_mock_gradient_rejections": 1,
+    "expected_invalid_input_rejections_are_failures": false
+  },
+  "unavailable_total_costs": {
+    "end_to_end_CPU_seconds": null,
+    "end_to_end_elapsed_wall_seconds": null,
+    "whole_pipeline_peak_RAM_bytes": null,
+    "GPU_kernel_seconds": null,
+    "reason": "Feature preparation, I/O, source verification, all audit work and repeated mathematical qualifications lack mutually complete timers"
+  },
+  "public_content_policy": "aggregate metrics, counts and configurations only, private identities, per-question outcomes and fitted coefficients remain private",
+  "source_sha256": {
+    "E9_MAIN_RESULTS.json": "7f6ed168677d6c0dde205452cf2c42abd0c8feb1464ecb9cb2431a0bbd0f74ab",
+    "E9_PRIMARY_STATISTICS.json": "6b100ddb3d47cbb2b92e31d22f75be62dbcc36f50d78c5e54cd93e3500439ee2",
+    "E9_CONTENT_CONTROLS.json": "494f3baefa81f84935b94b2f5319df135b3d1020475756ea0db5865421c62d98",
+    "E9_PROTOCOL.json": "1ef85dd32b5bf199604408260fb1579c546e26a36f9b5a958a270db927ee6f34",
+    "TEACHER_SOFTWARE_QUALIFICATION.json": "3425f4be4a4f10f7a0534ae4a1046d039bba91e2b4e15e3387bfb62e41673c3e",
+    "E9_ASSET_A_REUSE_QUALIFICATION.json": "fa70c0da982915a966c0b382bb8839daaef69753596ca4068b6c75b51e12e773",
+    "E9_TEACHER_ARTIFACT_AUDIT.json": "babdcd317d55d57b9a067a3a0f3061449a9cf9ad822e8c33e31f27ef2f37b4d8",
+    "E9_HEADS_QUALIFICATION.json": "f89cd1864907b2327ab7c1dbdbf29d7522f86654759b3d3b86ab6f2d0d2f52ad",
+    "CSCE_QUALIFICATION.json": "603b1bb2c47ac249423f4697b035cbcf02696dc31fdf4ed1bd29636adf15ff25",
+    "CSCE_QUALIFICATION_V1.json": "d7636bce86c5f04bff3a3a06ea938029e7b20541bbd11bcac5c3f8f27ee89a37"
+  },
+  "coordinator_process_observations": {
+    "A_first_failed_audit_process": 2.1316688,
+    "A_successful_replay_process": 2.861057,
+    "six_prior_recomputation_audit_process": 3.3297257
+  },
+  "deliverable_validation": {
+    "source_files_unchanged": true,
+    "csv_numeric_roundtrip_exact": true,
+    "csv_files": {
+      "MAIN_SUMMARY.csv": {
+        "rows": 19,
+        "columns": 25,
+        "sha256": "85e388482cf956dee8b9c020a38624c65973ebf8db926759e1e0adb885fed7b3"
+      },
+      "COMPARISONS.csv": {
+        "rows": 17,
+        "columns": 28,
+        "sha256": "5b7757fe7665ebc1ce0b994fa6260f77d518bb2dca00f23b762571bba307e668"
+      },
+      "GRID.csv": {
+        "rows": 45,
+        "columns": 16,
+        "sha256": "2a43a02ae0fb0c5167aba145a5aa69d970ef2729a4c2cf15eb1419d156ec0db8"
+      },
+      "CONTENT_CONTROLS.csv": {
+        "rows": 9,
+        "columns": 29,
+        "sha256": "7382cf1fdaf68d64615a7a91a89ab5197fd99a2eba503605c7d7c484197ab5cd"
+      }
+    },
+    "cost_markdown_sha256": "b5cb2e7b79615084b123c647537c5d470ff608c89ac112f6be3ff0f947e46b81"
+  },
+  "generator_source_sha256": "4c7d728bdcbc0ff10ecc8a7c2cf07b893719800478946515f443012e154a660c"
+}

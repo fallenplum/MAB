@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "deterministic synthetic operator qualification",
+  "source_file": "csce_operators.py",
+  "source_sha256": "2a19140ce1424c800a9d97b64b4a0fc1dd722aa792ebe15516280e00e40a3671",
+  "seed": 20261114,
+  "check_count": 14,
+  "passed_count": 14,
+  "formal_output_count": 20,
+  "production_dimension_enforcement": "Required in the experiment runner. Numerical kernel also supports synthetic action counts.",
+  "checks": {
+    "published_cost_to_reward_transform": {
+      "passed": true,
+      "maximum_absolute_error": 1.1102230246251565e-16
+    },
+    "unnormalized_reference_loss_and_gradient": {
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "normalization": "n_original_questions*20"
+    },
+    "finite_difference_gradient": {
+      "passed": true,
+      "maximum_absolute_error": 3.4005890117705384e-10,
+      "coordinate_count": 340,
+      "step": 1e-06
+    },
+    "zero_weight_rows_and_original_question_denominator": {
+      "passed": true,
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "original_rows": 12,
+      "appended_rows": 24
+    },
+    "action_permutation_loss_gradient_and_semantic_decisions": {
+      "passed": true,
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "semantic_decisions_match": true
+    },
+    "exact_ties_use_canonical_three_member_semantic_keys": {
+      "passed": true,
+      "selected_semantic_keys": [
+        [
+          "model_0",
+          "model_1",
+          "model_3"
+        ],
+        [
+          "model_0",
+          "model_1",
+          "model_2"
+        ],
+        [
+          "model_0",
+          "model_1",
+          "model_4"
+        ]
+      ]
+    },
+    "action_permutation_refit": {
+      "passed": true,
+      "maximum_coefficient_absolute_error": 5.551115123125783e-17,
+      "semantic_decisions_match": true,
+      "original_gradient_infinity_norm": 1.655003509563012e-08,
+      "permuted_gradient_infinity_norm": 1.655003509649748e-08
+    },
+    "evaluation_outcome_keys_rejected": {
+      "passed": true,
+      "valid_outcome_free_package_accepted": true,
+      "rejected_keys": {
+        "Y": true,
+        "y": true,
+        "reward": true,
+        "rewards": true,
+        "posterior_reward": true
+      }
+    },
+    "question_identity_overlap_rejected": {
+      "passed": true,
+      "rejection_cases": {
+        "same_question_id": true,
+        "same_global_index": true,
+        "missing_question_id": true
+      }
+    },
+    "per_question_normalization_changes_population_decision": {
+      "passed": true,
+      "reward_mean": [
+        0.5399999999999999,
+        0.55
+      ],
+      "expected_unnormalized_weight": [
+        0.08999999999999998,
+        0.1
+      ],
+      "expected_row_normalized_weight": [
+        0.9,
+        0.1
+      ],
+      "correct_action_one_based": 2,
+      "row_normalized_action_one_based": 1
+    },
+    "ridge_centering_and_shared_baseline_only_change_common_offset": {
+      "passed": true,
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "semantic_decisions_match": true
+    },
+    "large_common_logit_offset_stability": {
+      "passed": true,
+      "absolute_value_error": 8.98070608768009e-07,
+      "maximum_gradient_absolute_error": 5.930216294927626e-06,
+      "common_offset": 1000000000000.0,
+      "tolerance_note": "Input-score rounding at a 1e12 offset is retained in the comparison."
+    },
+    "exact_equal_logits_common_offset": {
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "common_offset": 1000000000000.0,
+      "tolerance_note": "All logits are exactly equal and representable before and after the shift."
+    },
+    "finite_logit_boundary_approaches_infimum": {
+      "passed": true,
+      "logits": [
+        0.0,
+        2.0,
+        6.0,
+        20.0
+      ],
+      "objective_values": [
+        0.03465735902799726,
+        0.00634640055214863,
+        0.00012378425688651786,
+        1.0305768450217863e-10
+      ]
+    }
+  }
+}

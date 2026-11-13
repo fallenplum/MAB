@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "historical_parent_files_unchanged": {
+    "e8_decision_focused_combination_learning": 1219,
+    "e8_m4_mechanism_audit": 196,
+    "m4_noise_aware_set_learning": 237
+  },
+  "restored_head_slots": 195,
+  "actual_head_fits": 165,
+  "derived_heads": 30,
+  "maximum_restoration_error": 5.551115123125783e-16,
+  "physical_LLM_calls": 0,
+  "retained_outcome_reads": 0
+}

@@ -1,0 +1,317 @@
+{
+  "B": {
+    "main_accuracy": 0.8572222222222222,
+    "seeds": [
+      20261114091,
+      20261114092,
+      20261114093
+    ],
+    "permuted_accuracy": [
+      0.8538888888888889,
+      0.8522222222222222,
+      0.8588888888888889
+    ],
+    "main_minus_permuted": [
+      {
+        "gain": 0.0033333333333333335,
+        "ordinary_paired95": [
+          -0.005555555555555556,
+          0.012777777777777777
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.48825117488251174,
+        "corrected_events": 33,
+        "destroyed_events": 27,
+        "net_events": 6,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          0.0016666666666666668,
+          0.011666666666666667,
+          -0.0033333333333333335
+        ],
+        "task_gain": {
+          "gsm8k": -0.0011111111111111111,
+          "bbh": 0.0077777777777777776
+        },
+        "outer_gain": [
+          0.013888888888888888,
+          -0.008333333333333333,
+          0.013888888888888888,
+          0.002777777777777778,
+          -0.005555555555555556
+        ]
+      },
+      {
+        "gain": 0.004999999999999999,
+        "ordinary_paired95": [
+          -0.00611111111111111,
+          0.01611111111111111
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.3945605439456054,
+        "corrected_events": 46,
+        "destroyed_events": 37,
+        "net_events": 9,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.0016666666666666668,
+          0.011666666666666667,
+          0.005
+        ],
+        "task_gain": {
+          "gsm8k": 0.0077777777777777776,
+          "bbh": 0.0022222222222222222
+        },
+        "outer_gain": [
+          0.016666666666666666,
+          0.002777777777777778,
+          0.019444444444444445,
+          0.008333333333333333,
+          -0.022222222222222223
+        ]
+      },
+      {
+        "gain": -0.0016666666666666663,
+        "ordinary_paired95": [
+          -0.012777777777777777,
+          0.009444444444444443
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.7871212878712128,
+        "corrected_events": 36,
+        "destroyed_events": 39,
+        "net_events": -3,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.011666666666666667,
+          0.01,
+          -0.0033333333333333335
+        ],
+        "task_gain": {
+          "gsm8k": -0.0011111111111111111,
+          "bbh": -0.0022222222222222222
+        },
+        "outer_gain": [
+          0.008333333333333333,
+          0.011111111111111112,
+          0.0,
+          -0.005555555555555556,
+          -0.022222222222222223
+        ]
+      }
+    ],
+    "main_minus_mean_permutation_point": 0.0022222222222222365,
+    "minimum_possible_standard_MC_p": 0.25,
+    "inference": "three fixed-configuration sensitivity runs, no formal content significance test or mean-control bootstrap claim"
+  },
+  "C": {
+    "main_accuracy": 0.8505555555555555,
+    "seeds": [
+      20261114091,
+      20261114092,
+      20261114093
+    ],
+    "permuted_accuracy": [
+      0.85,
+      0.8555555555555555,
+      0.8644444444444445
+    ],
+    "main_minus_permuted": [
+      {
+        "gain": 0.0005555555555555558,
+        "ordinary_paired95": [
+          -0.010555555555555554,
+          0.011666666666666667
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.9184081591840816,
+        "corrected_events": 44,
+        "destroyed_events": 43,
+        "net_events": 1,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          0.0033333333333333335,
+          0.0,
+          -0.0016666666666666668
+        ],
+        "task_gain": {
+          "gsm8k": -0.0077777777777777776,
+          "bbh": 0.008888888888888889
+        },
+        "outer_gain": [
+          0.019444444444444445,
+          0.002777777777777778,
+          0.002777777777777778,
+          0.0,
+          -0.022222222222222223
+        ]
+      },
+      {
+        "gain": -0.005,
+        "ordinary_paired95": [
+          -0.016666666666666666,
+          0.006666666666666667
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.41085891410858916,
+        "corrected_events": 45,
+        "destroyed_events": 54,
+        "net_events": -9,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          0.0033333333333333335,
+          -0.008333333333333333,
+          -0.01
+        ],
+        "task_gain": {
+          "gsm8k": -0.0011111111111111111,
+          "bbh": -0.008888888888888889
+        },
+        "outer_gain": [
+          0.011111111111111112,
+          -0.013888888888888888,
+          -0.002777777777777778,
+          0.013888888888888888,
+          -0.03333333333333333
+        ]
+      },
+      {
+        "gain": -0.01388888888888889,
+        "ordinary_paired95": [
+          -0.026111111111111106,
+          -0.0022222222222222227
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.021997800219978002,
+        "corrected_events": 34,
+        "destroyed_events": 59,
+        "net_events": -25,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.018333333333333333,
+          -0.011666666666666667,
+          -0.011666666666666667
+        ],
+        "task_gain": {
+          "gsm8k": -0.0077777777777777776,
+          "bbh": -0.02
+        },
+        "outer_gain": [
+          -0.019444444444444445,
+          -0.002777777777777778,
+          -0.019444444444444445,
+          0.002777777777777778,
+          -0.030555555555555555
+        ]
+      }
+    ],
+    "main_minus_mean_permutation_point": -0.006111111111111067,
+    "minimum_possible_standard_MC_p": 0.25,
+    "inference": "three fixed-configuration sensitivity runs, no formal content significance test or mean-control bootstrap claim"
+  },
+  "D": {
+    "main_accuracy": 0.855,
+    "seeds": [
+      20261114091,
+      20261114092,
+      20261114093
+    ],
+    "permuted_accuracy": [
+      0.8516666666666667,
+      0.8538888888888889,
+      0.8605555555555555
+    ],
+    "main_minus_permuted": [
+      {
+        "gain": 0.0033333333333333322,
+        "ordinary_paired95": [
+          -0.007222222222222222,
+          0.013888888888888886
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.5477452254774523,
+        "corrected_events": 40,
+        "destroyed_events": 34,
+        "net_events": 6,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.0033333333333333335,
+          0.015,
+          -0.0016666666666666668
+        ],
+        "task_gain": {
+          "gsm8k": -0.0022222222222222222,
+          "bbh": 0.008888888888888889
+        },
+        "outer_gain": [
+          0.013888888888888888,
+          0.002777777777777778,
+          0.013888888888888888,
+          -0.005555555555555556,
+          -0.008333333333333333
+        ]
+      },
+      {
+        "gain": 0.0011111111111111113,
+        "ordinary_paired95": [
+          -0.010555555555555554,
+          0.012777777777777777
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.8568143185681432,
+        "corrected_events": 46,
+        "destroyed_events": 44,
+        "net_events": 2,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.005,
+          0.0033333333333333335,
+          0.005
+        ],
+        "task_gain": {
+          "gsm8k": 0.006666666666666667,
+          "bbh": -0.0044444444444444444
+        },
+        "outer_gain": [
+          0.019444444444444445,
+          0.011111111111111112,
+          0.002777777777777778,
+          -0.005555555555555556,
+          -0.022222222222222223
+        ]
+      },
+      {
+        "gain": -0.005555555555555556,
+        "ordinary_paired95": [
+          -0.016666666666666663,
+          0.005
+        ],
+        "unadjusted_two_sided_centered_bootstrap_p": 0.32196780321967805,
+        "corrected_events": 31,
+        "destroyed_events": 41,
+        "net_events": -10,
+        "independent_questions": 600,
+        "recorded_generation_events": 1800,
+        "seed_gain": [
+          -0.016666666666666666,
+          0.0016666666666666668,
+          -0.0016666666666666668
+        ],
+        "task_gain": {
+          "gsm8k": -0.0022222222222222222,
+          "bbh": -0.008888888888888889
+        },
+        "outer_gain": [
+          0.008333333333333333,
+          0.011111111111111112,
+          -0.008333333333333333,
+          -0.013888888888888888,
+          -0.025
+        ]
+      }
+    ],
+    "main_minus_mean_permutation_point": -0.0003703703703704653,
+    "minimum_possible_standard_MC_p": 0.25,
+    "inference": "three fixed-configuration sensitivity runs, no formal content significance test or mean-control bootstrap claim"
+  }
+}

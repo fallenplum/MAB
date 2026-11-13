@@ -1,0 +1,43 @@
+{
+  "schema": "E9_independent_orchestrator_review_v1",
+  "status": "PASS_BEFORE_FORMAL_HEAD_FITS",
+  "created_utc": "2026-11-13T19:17:46.404899+00:00",
+  "training_source_sha256": "57a7d8dad216e240e333eaeda4d228cb6e4e68f97ac1b963829f960ca5f6d18d",
+  "source_syntax": "PASS_AST_PARSE",
+  "checks": {
+    "inner_slots": 135,
+    "inner_B_actual_expected": 15,
+    "inner_B_derived_expected": 30,
+    "inner_C_D_actual_expected": 90,
+    "outer_final_actual_expected": 15,
+    "outer_controls_actual_expected": 45,
+    "all_slots": 195,
+    "all_actual_head_fits_expected_without_cache_fallback": 165,
+    "B_cache": "mult1 base solves; positive analytic scaling verified by actual objective gradient and Gram=nI; fall back actual solve on failure; choices checked unchanged",
+    "inner_feature_fitting": "only legal320 fitting rows",
+    "inner_teacher_scope": "only legal320 labels with held160 and outer120 forbidden identities",
+    "inner_selection": "all inner held predictions restored to original480 positions; empirical true3repeat rewards; GSM8K/BBH50:50; tie1e-12 strongestlambda",
+    "outer_teacher_scope": "verified old512draw mean from same480history",
+    "control_teacher_scope": "permuted3repeat20action blocks, original input fixed; independently rebuilt teacher per permutation; B/D shared legal mean",
+    "control_hyperparameters": "reuse each main selectedlambda, no retuning",
+    "outer_scoring_access": "inputonly120; no outer reward read in source",
+    "freeze_order": "eachfold all3main+9controls saved before ALL_OUTER_PREDICTIONS_FROZEN and FOLD_FROZEN_RECEIPT",
+    "resume_receipt_integrity": "MODEL, PREDICTIONS and FIT_LOG hashes all checked"
+  },
+  "resolved_findings": [
+    {
+      "item": "FIT_LOG cache read now verifies saved fit_log_sha256",
+      "status": "RESOLVED_BEFORE_FREEZE"
+    }
+  ],
+  "teacher_artifact_audit": {
+    "status": "PASS",
+    "report_sha256": "babdcd317d55d57b9a067a3a0f3061449a9cf9ad822e8c33e31f27ef2f37b4d8",
+    "all_new_regions_verified": 30,
+    "sampled_prior_moment_recomputations": 6,
+    "new_posterior_sampling_calls": 0,
+    "head_fits": 0
+  },
+  "blocking_findings": [],
+  "execution_status": "Formal head training has not yet been executed by this review. Actual fit counts, optimizer acceptance, allfold freeze and evaluation ordering require run artifact audit."
+}

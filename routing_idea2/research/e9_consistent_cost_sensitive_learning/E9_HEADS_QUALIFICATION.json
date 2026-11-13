@@ -1,0 +1,801 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic data only. No historical rewards or evaluation artifacts were loaded.",
+  "random_seed": 2026111409,
+  "checks": {
+    "csce_fixed_denominator_value": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "csce_fixed_denominator_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "csce_finite_difference_all340_coefficients": {
+      "pass": true,
+      "maximum_absolute_error": 4.0960401823803005e-10,
+      "scalar_values": 340
+    },
+    "mse_finite_difference_all340_coefficients": {
+      "pass": true,
+      "maximum_absolute_error": 4.07741590491284e-10,
+      "scalar_values": 340
+    },
+    "mse_fixed_denominator_value": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "row_reward_shift_invariance_value": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "row_reward_shift_invariance_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "scalar_values": 340
+    },
+    "row_score_shift_unregularized_value": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "row_score_shift_unregularized_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 1.214306433183765e-17,
+      "scalar_values": 340
+    },
+    "zero_weight_row_retained_in_value_denominator": {
+      "pass": true,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "scalar_values": 1
+    },
+    "zero_weight_row_retained_in_gradient_denominator": {
+      "pass": true,
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "scalar_values": 340
+    },
+    "all_equal_rewards_zero_data_value": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "all_equal_rewards_zero_data_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "unnormalized_reward_weights_distinguish_row_normalization": {
+      "pass": true
+    },
+    "reward_spread_scales_data_loss": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "reward_spread_scales_data_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "constant_coefficient_is_penalized_value": {
+      "pass": true,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "scalar_values": 1
+    },
+    "constant_coefficient_is_penalized_gradient": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 20
+    },
+    "fit_B_accepted": {
+      "pass": true
+    },
+    "fit_B_float64": {
+      "pass": true
+    },
+    "fit_B_costs_recorded": {
+      "pass": true
+    },
+    "fit_B_diagnostic_reconstruction": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 5
+    },
+    "fit_C_accepted": {
+      "pass": true
+    },
+    "fit_C_float64": {
+      "pass": true
+    },
+    "fit_C_costs_recorded": {
+      "pass": true
+    },
+    "fit_C_diagnostic_reconstruction": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 5
+    },
+    "fit_D_accepted": {
+      "pass": true
+    },
+    "fit_D_float64": {
+      "pass": true
+    },
+    "fit_D_costs_recorded": {
+      "pass": true
+    },
+    "fit_D_diagnostic_reconstruction": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 5
+    },
+    "C_D_identical_kernel_and_labels": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "equal_reward_C_zero_solution": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "equal_reward_C_accepted": {
+      "pass": true
+    },
+    "equal_reward_D_zero_solution": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "equal_reward_D_accepted": {
+      "pass": true
+    },
+    "ridge_matches_original_svd_mult_0.1": {
+      "pass": true,
+      "maximum_absolute_error": 5.898059818321144e-16,
+      "scalar_values": 340
+    },
+    "ridge_stationarity_mult_0.1": {
+      "pass": true
+    },
+    "ridge_matches_original_svd_mult_1.0": {
+      "pass": true,
+      "maximum_absolute_error": 2.5326962749261384e-16,
+      "scalar_values": 340
+    },
+    "ridge_stationarity_mult_1.0": {
+      "pass": true
+    },
+    "ridge_matches_original_svd_mult_10.0": {
+      "pass": true,
+      "maximum_absolute_error": 3.9898639947466563e-17,
+      "scalar_values": 340
+    },
+    "ridge_stationarity_mult_10.0": {
+      "pass": true
+    },
+    "realized_three_repeat_mse_mapping": {
+      "pass": true,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "scalar_values": 1
+    },
+    "original_three_repeat_ridge_to_mean_label_mapping": {
+      "pass": true,
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "scalar_values": 340
+    },
+    "exact_ties_preserve_semantic_selection_after_relabel": {
+      "pass": true
+    },
+    "exact_zero_ties_choose_frozen_alias_minimum": {
+      "pass": true
+    },
+    "relabel_preserves_realized_rewards": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 23
+    },
+    "relabel_preserves_balanced_accuracy": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "gsm8k_bbh_exact_50_50_question_weighting": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "BBH_question_mean": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 1
+    },
+    "repeat_and_mean_reward_evaluation_agree": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 23
+    },
+    "fit_relabel_equivariance_B": {
+      "pass": true,
+      "maximum_absolute_error": 0.0,
+      "scalar_values": 340
+    },
+    "fit_relabel_stationarity_B": {
+      "pass": true
+    },
+    "fit_relabel_equivariance_C": {
+      "pass": true,
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "scalar_values": 340
+    },
+    "fit_relabel_stationarity_C": {
+      "pass": true
+    },
+    "fit_relabel_equivariance_D": {
+      "pass": true,
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "scalar_values": 340
+    },
+    "fit_relabel_stationarity_D": {
+      "pass": true
+    },
+    "optimizer_success_alone_rejected_by_actual_gradient": {
+      "pass": true
+    },
+    "evaluation_guard_accepts_disjoint_feature_package": {
+      "pass": true
+    },
+    "evaluation_guard_rejects_reward": {
+      "pass": true
+    },
+    "evaluation_guard_rejects_Y": {
+      "pass": true
+    },
+    "evaluation_guard_rejects_identity_overlap": {
+      "pass": true
+    },
+    "evaluation_guard_rejects_global_index_overlap": {
+      "pass": true
+    },
+    "training_rejects_wrong_action_count": {
+      "pass": true
+    },
+    "training_rejects_wrong_feature_count": {
+      "pass": true
+    },
+    "training_rejects_nonfinite_labels": {
+      "pass": true
+    },
+    "training_rejects_out_of_range_labels": {
+      "pass": true
+    },
+    "training_rejects_invalid_multiplier": {
+      "pass": true
+    },
+    "training_rejects_invalid_family": {
+      "pass": true
+    },
+    "routing_rejects_missing_task": {
+      "pass": true
+    },
+    "routing_rejects_duplicate_semantic_keys": {
+      "pass": true
+    }
+  },
+  "check_count": 70,
+  "scalar_assertions": 6247,
+  "fit_diagnostics": [
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.14547091159286327,
+      "data_loss": 0.08973853037047722,
+      "regularization_term": 0.055732381222386045,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.8769873778275987,
+      "gradient_infinity_norm": 1.3877787807814457e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.015625,
+      "wall_seconds": 0.012582600000314415,
+      "rss_before_bytes": 61435904,
+      "rss_after_bytes": 61575168,
+      "peak_ram_bytes": 61575168,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "C",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.9856140894154827,
+      "data_loss": 0.9815502866702631,
+      "regularization_term": 0.0040638027452195484,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.2368131708415513,
+      "gradient_infinity_norm": 2.8541168714448645e-08,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 5,
+      "function_evaluations": 7,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0010694999946281314,
+      "rss_before_bytes": 61575168,
+      "rss_after_bytes": 61861888,
+      "peak_ram_bytes": 61861888,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    },
+    {
+      "family": "D",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.9856140894154827,
+      "data_loss": 0.9815502866702631,
+      "regularization_term": 0.0040638027452195484,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.2368131708415513,
+      "gradient_infinity_norm": 2.8541168714448645e-08,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 5,
+      "function_evaluations": 7,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0008716000011190772,
+      "rss_before_bytes": 61861888,
+      "rss_after_bytes": 61874176,
+      "peak_ram_bytes": 61874176,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    },
+    {
+      "family": "C",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.0,
+      "data_loss": 0.0,
+      "regularization_term": 0.0,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.0,
+      "gradient_infinity_norm": 0.0,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 0,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.00042729999404400587,
+      "rss_before_bytes": 61874176,
+      "rss_after_bytes": 61882368,
+      "peak_ram_bytes": 61882368,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    },
+    {
+      "family": "D",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.0,
+      "data_loss": 0.0,
+      "regularization_term": 0.0,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.0,
+      "gradient_infinity_norm": 0.0,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 0,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.00044010000419802964,
+      "rss_before_bytes": 61882368,
+      "rss_after_bytes": 61956096,
+      "peak_ram_bytes": 61956096,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    },
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.04603816830261869,
+      "data_loss": 0.02090840219076928,
+      "regularization_term": 0.025129766111849413,
+      "regularization": 0.007246376811594203,
+      "raw_alpha": 10.0,
+      "multiplier": 0.1,
+      "coefficient_norm": 1.8622319198840995,
+      "gradient_infinity_norm": 1.5016200088924236e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0001314000110141933,
+      "rss_before_bytes": 61956096,
+      "rss_after_bytes": 61956096,
+      "peak_ram_bytes": 61956096,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.14547091159286327,
+      "data_loss": 0.08973853037047722,
+      "regularization_term": 0.055732381222386045,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.8769873778275987,
+      "gradient_infinity_norm": 1.3877787807814457e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.00011160000576637685,
+      "rss_before_bytes": 62160896,
+      "rss_after_bytes": 62160896,
+      "peak_ram_bytes": 62160896,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.24502677286219143,
+      "data_loss": 0.22161448844132028,
+      "regularization_term": 0.023412284420871156,
+      "regularization": 0.7246376811594203,
+      "raw_alpha": 1000.0,
+      "multiplier": 10.0,
+      "coefficient_norm": 0.1797469123540157,
+      "gradient_infinity_norm": 2.0816681711721685e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.00011069999891333282,
+      "rss_before_bytes": 62160896,
+      "rss_after_bytes": 62160896,
+      "peak_ram_bytes": 62160896,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.18241939015893238,
+      "data_loss": 0.11738098080704679,
+      "regularization_term": 0.0650384093518856,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.9473806252272743,
+      "gradient_infinity_norm": 2.42861286636753e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0001002000062726438,
+      "rss_before_bytes": 62201856,
+      "rss_after_bytes": 62201856,
+      "peak_ram_bytes": 62201856,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "B",
+      "objective_name": "MSE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.14547091159286327,
+      "data_loss": 0.08973853037047722,
+      "regularization_term": 0.05573238122238606,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.8769873778275988,
+      "gradient_infinity_norm": 1.3877787807814457e-17,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "numpy.linalg.solve",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "Closed-form penalized Ridge normal equations solved",
+      "iterations": 1,
+      "function_evaluations": 1,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.00012250000145286322,
+      "rss_before_bytes": 62259200,
+      "rss_after_bytes": 62263296,
+      "peak_ram_bytes": 62263296,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": null
+    },
+    {
+      "family": "C",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.9856140894154827,
+      "data_loss": 0.9815502866702631,
+      "regularization_term": 0.004063802745219548,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.2368131708415513,
+      "gradient_infinity_norm": 2.8541168715966528e-08,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 5,
+      "function_evaluations": 7,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0008637999999336898,
+      "rss_before_bytes": 62263296,
+      "rss_after_bytes": 62279680,
+      "peak_ram_bytes": 62279680,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    },
+    {
+      "family": "D",
+      "objective_name": "CSCE",
+      "finite": true,
+      "accepted": true,
+      "objective": 0.9856140894154827,
+      "data_loss": 0.9815502866702631,
+      "regularization_term": 0.004063802745219548,
+      "regularization": 0.07246376811594203,
+      "raw_alpha": 100.0,
+      "multiplier": 1.0,
+      "coefficient_norm": 0.2368131708415513,
+      "gradient_infinity_norm": 2.8541168715966528e-08,
+      "gradient_tolerance": 1e-07,
+      "gradient_tolerance_met": true,
+      "normalization": "n_original_questions*20",
+      "constant_penalized": true,
+      "questions": 23,
+      "features": 17,
+      "actions": 20,
+      "dtype": "float64",
+      "solver": "scipy.optimize.minimize/L-BFGS-B",
+      "success": true,
+      "optimizer_success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+      "iterations": 5,
+      "function_evaluations": 7,
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0008504000143148005,
+      "rss_before_bytes": 62279680,
+      "rss_after_bytes": 62283776,
+      "peak_ram_bytes": 62283776,
+      "peak_ram_scope": "OS process-lifetime peak working set",
+      "lbfgs_options": {
+        "maxiter": 2000,
+        "ftol": 1e-12,
+        "gtol": 1e-07,
+        "maxls": 50
+      }
+    }
+  ],
+  "actual_gradient_rejection_probe": {
+    "family": "C",
+    "objective_name": "CSCE",
+    "finite": true,
+    "accepted": false,
+    "objective": 2.159218529444402,
+    "data_loss": 1.1067639944405963,
+    "regularization_term": 1.052454535003806,
+    "regularization": 0.07246376811594203,
+    "raw_alpha": 100.0,
+    "multiplier": 1.0,
+    "coefficient_norm": 3.8110198875173196,
+    "gradient_infinity_norm": 0.09674821541237491,
+    "gradient_tolerance": 1e-07,
+    "gradient_tolerance_met": false,
+    "normalization": "n_original_questions*20",
+    "constant_penalized": true,
+    "questions": 23,
+    "features": 17,
+    "actions": 20,
+    "dtype": "float64",
+    "solver": "scipy.optimize.minimize/L-BFGS-B",
+    "success": true,
+    "optimizer_success": true,
+    "status": 0,
+    "message": "Synthetic false-positive optimizer success",
+    "iterations": 1,
+    "function_evaluations": 1,
+    "cpu_seconds": 0.0,
+    "wall_seconds": 0.00011890000314451754,
+    "rss_before_bytes": 62283776,
+    "rss_after_bytes": 62283776,
+    "peak_ram_bytes": 62283776,
+    "peak_ram_scope": "OS process-lifetime peak working set",
+    "lbfgs_options": {
+      "maxiter": 2000,
+      "ftol": 1e-12,
+      "gtol": 1e-07,
+      "maxls": 50
+    }
+  },
+  "source_sha256": {
+    "e9_heads.py": "f12cee4720614f4a190ccae8c27a5784fc62441f91a8b3c29f9dbf81bbdc4b39",
+    "csce_operators.py": "2a19140ce1424c800a9d97b64b4a0fc1dd722aa792ebe15516280e00e40a3671",
+    "qualify_e9_heads.py": "6f0e56ec30501b748dd3cd3b336178219dfa68e9ead6052a77074ba92a4b7f68"
+  }
+}

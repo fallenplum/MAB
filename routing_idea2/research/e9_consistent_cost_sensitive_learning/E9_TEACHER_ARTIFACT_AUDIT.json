@@ -1,0 +1,923 @@
+{
+  "schema": "E9_independent_teacher_artifact_audit_v1",
+  "status": "PASS",
+  "created_utc": "2026-11-13T19:17:01.257899+00:00",
+  "source_sha256": {
+    "e9_common.py": "b963be56cbc026e60b6b36ca10b0e6aa178b73451c0bfe9c2e217afb8374afd3",
+    "e9_teachers.py": "1be3b39dadc0d12f60b36280a0d2c4c6d82690576207cdc5470b5699ff156ba4",
+    "csce_operators.py": "2a19140ce1424c800a9d97b64b4a0fc1dd722aa792ebe15516280e00e40a3671"
+  },
+  "teacher_source_lock_sha256": "b2ffd47de20d17effc1b923c17876655e8cb766c8e5ca45b9320837ca711b654",
+  "all_regions_checked": 30,
+  "prior_replay_sampling_seed": 20261114095,
+  "sampled_prior_regions": [
+    {
+      "outer": 3,
+      "region": "inner2"
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114091"
+    }
+  ],
+  "records": [
+    {
+      "outer": 0,
+      "region": "inner0",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "d08dcbb3d676ad4acf35c4cb49f7f16b3dd5b281951d23be03cbe85ac154dfd2",
+      "raw_rewards_sha256": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0492785306523327,
+      "minimum_ESS": 105.57034619132133
+    },
+    {
+      "outer": 0,
+      "region": "inner1",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "816dfa6762c8d70f40bf4dad37e4070db7f9b06178e6005fbd087b5bf72a2978",
+      "raw_rewards_sha256": "5d6c60cef741a4e1be5271299539a6296531c754853075d2b73b3e93453ed879",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.033954830039639,
+      "minimum_ESS": 111.16402622644355
+    },
+    {
+      "outer": 0,
+      "region": "inner2",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "dc21cb714723e72bc85ea0602ef1598b1350139dc2fdf5dbe44fec3f05a311b8",
+      "raw_rewards_sha256": "7d65858ae6fe96d17914aeeeac726808ab26c12653e1b3cbe650832e19a4cd7b",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0385253085598805,
+      "minimum_ESS": 89.45576006565081
+    },
+    {
+      "outer": 0,
+      "region": "permutation20261114091",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "576f818d6f2f3d8eec535dfb370470708e20e30d3b5218a8ccc24c11a12ee462",
+      "raw_rewards_sha256": "ce35c0fd058e543b1604bebed7cd175cfe8df102f2c295c78535d0674260983d",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.044441868943839,
+      "minimum_ESS": 121.58287113894396
+    },
+    {
+      "outer": 0,
+      "region": "permutation20261114092",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "f2cfc49c1759c00c9e255c4d346af4c56c2d7cd5ffe2ed8aa1913818c4525043",
+      "raw_rewards_sha256": "807ba71372e44ff711ed174d4cdcc6b739c3545fa11d391d912db47507dfdd51",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0498972654026755,
+      "minimum_ESS": 117.04942579942092
+    },
+    {
+      "outer": 0,
+      "region": "permutation20261114093",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "229d5e3e7b004cc393b46bebf65dd49ed972db411ec9ee1174d9ac38e12ade4f",
+      "raw_rewards_sha256": "8cce2d4fb8f58acd129737d42e277496962f081f3651dfc41052595295fe9891",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0418348914722768,
+      "minimum_ESS": 106.98503094444996
+    },
+    {
+      "outer": 1,
+      "region": "inner0",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "bdaea8fcca8ab60208620a6daa48c0b927e4ffe05d86ad171aa57d45f41c3bd6",
+      "raw_rewards_sha256": "73d9129514729b198dd5bfccfea1dffb47d57b555bfcbeba0018fdfeaf77be9a",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0618177007726066,
+      "minimum_ESS": 118.77269179961132
+    },
+    {
+      "outer": 1,
+      "region": "inner1",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "88a7004a7dd32118a91e3a9b0f66582a2297838aac8f69df5c94f3be8bb4d258",
+      "raw_rewards_sha256": "48e1916930c050f433b3e4e6af5275f52383ded6193454c9442cda9632907f9b",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0351180502613189,
+      "minimum_ESS": 106.24616080936254
+    },
+    {
+      "outer": 1,
+      "region": "inner2",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "7ff0600e0ee6ca063dc2774a799ca1fa3b4788539e7c935767462d0aebfcba92",
+      "raw_rewards_sha256": "6697b36b67a274c2152492ed2e81c5e37496529f0fa87d8c7e5140209505e6e0",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0406016943932366,
+      "minimum_ESS": 108.98591241031481
+    },
+    {
+      "outer": 1,
+      "region": "permutation20261114091",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "4f22d5219461c7398c75daaa1dc569d3e8de49509084b92f350ffee7acea3763",
+      "raw_rewards_sha256": "6f22d8c5e42060ef303feb71828c85598e2eb1590e7659062c61d350d74cd7f4",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0459504916635158,
+      "minimum_ESS": 110.85625238322507
+    },
+    {
+      "outer": 1,
+      "region": "permutation20261114092",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "939b01a05722c6bea60f283403ed4daf6d8150395f4306dd1c192a6b590086b7",
+      "raw_rewards_sha256": "46bec07b90af40ed423a0a2c470b968ceb521d81cecb471086566bc001acb4ba",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0521035651948092,
+      "minimum_ESS": 119.0100229404238
+    },
+    {
+      "outer": 1,
+      "region": "permutation20261114093",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "0bacec88815bd502ede93181711ffd3086e298fbe02e6730169281c2ef175050",
+      "raw_rewards_sha256": "cc4e1642e34b97f9ddccee679920c5105591e44cb51a3ca3464a0f31132a2a09",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0541798718998086,
+      "minimum_ESS": 114.6793708350467
+    },
+    {
+      "outer": 2,
+      "region": "inner0",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "da7092dc6e8e6ef2dc90838425aace0a609dba7c4266a2dd7ea2c794ccd2fe0c",
+      "raw_rewards_sha256": "a4767e004fefa16116ab1d083f2bb852736fe63f2a476c3930429a49f5c5646e",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.040201248873295,
+      "minimum_ESS": 143.24628250272042
+    },
+    {
+      "outer": 2,
+      "region": "inner1",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "9685f04a795526d31c894f72a4326a57baf54d217afd5d2431775d7c809fa48c",
+      "raw_rewards_sha256": "68e6501251ce5aa87b9920324f53c49f36ad38d39e3d627c2224374fb32eef4e",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.035709691434415,
+      "minimum_ESS": 120.20770060039466
+    },
+    {
+      "outer": 2,
+      "region": "inner2",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "dc1cbe6c60802a0139de41ecb30847922952060199be83901853bf8dce552560",
+      "raw_rewards_sha256": "652b85b28cc12dd11dc26f6763fb74c2c3d705bef70979beaff731f5dc18c62d",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0304346703405596,
+      "minimum_ESS": 111.2387593137608
+    },
+    {
+      "outer": 2,
+      "region": "permutation20261114091",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "27717da9d44b3161da3f7f6384dd1b05c9e9473b04b493883a79f7102fc69728",
+      "raw_rewards_sha256": "22ba4a509045b53d569a3f55802b2aa4b6fef94991291432b72dc58126bc5388",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0503677234622828,
+      "minimum_ESS": 72.89076121264942
+    },
+    {
+      "outer": 2,
+      "region": "permutation20261114092",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "fdfad8997bce13eda211bf31e162c58af330ab72c672a8343a2f04f2ff66a81c",
+      "raw_rewards_sha256": "fa0150c013bbf44bd77a700699aa5ed3d9fae86b05299e1bea9b0a8e1dadb00d",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0448901451352204,
+      "minimum_ESS": 93.1500064380633
+    },
+    {
+      "outer": 2,
+      "region": "permutation20261114093",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "0b5277f8198898e7ea1be8bfbd87c07cb8417e0e99ae9b5458a1ede6104890d6",
+      "raw_rewards_sha256": "db82b24f2c756b598fa4fc836987765f19276a8a550630baba3fedec52557e93",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0428212128463992,
+      "minimum_ESS": 66.06026957069848
+    },
+    {
+      "outer": 3,
+      "region": "inner0",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "84b0d28d5bfcc8ec1e022883d8e1f03d0f1239f967c893a9dfa4528d26f4edf8",
+      "raw_rewards_sha256": "61bb3581aa3945a563dcc12fe7045f5f03cd690db5d7e1db4e1eb2be98cdba4e",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0323442509669487,
+      "minimum_ESS": 112.17137174259281
+    },
+    {
+      "outer": 3,
+      "region": "inner1",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "d067e231697e9882a8a73ef71f6c7d0e69d42b2c43d063659fa9a46ba6371ab7",
+      "raw_rewards_sha256": "b5986a3ee915af60afe9a52d30dc8c9e67883d130c3ce920c9effbbf16eff599",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0336223408657443,
+      "minimum_ESS": 93.58023630905355
+    },
+    {
+      "outer": 3,
+      "region": "inner2",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "39ffadc8cf10b846be370d874377a19a69ebb6098c7cfea2b53a1626912be01f",
+      "raw_rewards_sha256": "fce4add542418b476ef75d8a4f1bf62ea9da7fab24dccd0c8b4b638999a2b3f1",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0426985404253388,
+      "minimum_ESS": 128.86891058231362
+    },
+    {
+      "outer": 3,
+      "region": "permutation20261114091",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "6808c916c986b1ac19a2acbbfd9aa1d52f8b45b6cd96c0399e68ca74dbb8828f",
+      "raw_rewards_sha256": "706a86165b21c6a4e014ff6c4da26ff9ae43289631ab90e732a065ac0d5051f4",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0316915065874899,
+      "minimum_ESS": 116.02524212661602
+    },
+    {
+      "outer": 3,
+      "region": "permutation20261114092",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "fa52387d961e63840ad042eb0c00d28fb42ac2aac9dc82f67afbd6e027a11dc9",
+      "raw_rewards_sha256": "798d866f9d8e798695aee37078b57922a6281038156eaf4307b5d9d8e4752870",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0401313591610708,
+      "minimum_ESS": 121.65013725685698
+    },
+    {
+      "outer": 3,
+      "region": "permutation20261114093",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "2de2c83fd65baa43e98074c98990fab0218e2999c54bc8f0bc62f45f736f3c3b",
+      "raw_rewards_sha256": "22458cf37e5593c0c71c96e9f099515adf53323e19edf51ae73ee9b03d543d35",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0320403513351308,
+      "minimum_ESS": 106.20752200307778
+    },
+    {
+      "outer": 4,
+      "region": "inner0",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "3bb5f3723caed6de9bdfac5a94021b79406425572afaf63818f1f95aa55ec2cf",
+      "raw_rewards_sha256": "9105ff6f61c17a1dd4a0a94ed2bd1fdd1867cb8059f03b54efc4187c7e50c864",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0360044941449587,
+      "minimum_ESS": 112.86671276444419
+    },
+    {
+      "outer": 4,
+      "region": "inner1",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "8ae4afabb198574f630fa57deadfb57a61eec1bcc6c70b8559f395de156e7be2",
+      "raw_rewards_sha256": "f72dd77547c4f255dba80958cd1cfd4cb97a4a63768ea12bfcd66fa1373f7f75",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0376239376401213,
+      "minimum_ESS": 124.7140213682212
+    },
+    {
+      "outer": 4,
+      "region": "inner2",
+      "questions": 320,
+      "internal_fitting_target_sizes": [
+        [
+          213,
+          107
+        ],
+        [
+          213,
+          107
+        ],
+        [
+          214,
+          106
+        ]
+      ],
+      "posterior_mean_sha256": "b052dd0dea614a1eccdc2b586a41ff55e00024302dcb257f1243ed3c43ac0630",
+      "raw_rewards_sha256": "22875be5eb2327533bffa83994a366f2b79d68b83984f127c7a12d7ef61df19e",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0365747304602961,
+      "minimum_ESS": 100.88084738729418
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114091",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "85f249851623156ad8e95cb35914b4aeafd203d23e57c732b16e1f2462ddd641",
+      "raw_rewards_sha256": "f5b0760a32c9ddbb293b7afa669c5f3f621c3e4a0dfc57551ebd6f64f01907dd",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0371983487396592,
+      "minimum_ESS": 118.70648295651215
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114092",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "c0a05d97b8297867990358b30689d4c479e7f28fed2064a61bf71f079b8eff45",
+      "raw_rewards_sha256": "13d8ca2266259402af0d9ddcd4962f27556e8be7a0c6d570cde6c219689714c9",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0376212497666741,
+      "minimum_ESS": 121.53581263360256
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114093",
+      "questions": 480,
+      "internal_fitting_target_sizes": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          160
+        ]
+      ],
+      "posterior_mean_sha256": "6cb9f8a2ff5fe4e31e258fa98ba7e13ca1c156cf632159b559328b6a5792b441",
+      "raw_rewards_sha256": "429c4c3df277f2783cd88d57b193cc94c58095f3f606464e5a54254db1e37779",
+      "target_hyperparameters_exclude_target": true,
+      "main_held_and_outer_evaluation_excluded": true,
+      "fallback_questions": 0,
+      "maximum_Rhat": 1.0386531794354639,
+      "minimum_ESS": 124.96966412297527
+    }
+  ],
+  "outer_512_mean_reuse": [
+    {
+      "outer": 0,
+      "source_sha256": "92f358ce3f0a5e30e05f86f21b38df3b2dd0314691ce190792735f8157015ff2",
+      "posterior_mean_sha256": "2140e262e753c2dd609922d2f8c8603716372b9453c9a4911fdeb2bd68037d6e",
+      "mean_vs_8draw_max_abs_difference": 0.14378935195977133,
+      "new_sampling_calls": 0,
+      "identity_order_exact": true
+    },
+    {
+      "outer": 1,
+      "source_sha256": "dfe96d65a74ccf4155fd89ba5efba1a5fd97604a831eef3d3a70386495870610",
+      "posterior_mean_sha256": "a17f3cf3c696a13087771c52c65e07d0b90a2d74ee33bddedd8fc37cb772ecc4",
+      "mean_vs_8draw_max_abs_difference": 0.1360012304401642,
+      "new_sampling_calls": 0,
+      "identity_order_exact": true
+    },
+    {
+      "outer": 2,
+      "source_sha256": "0f6b3251fd0423ef8a7a9b6735b45eb3f0445d5b7668e5406990c1cc75b8dabf",
+      "posterior_mean_sha256": "7e09f0e3341694578886cb0e12c2f5ca2d5871cd9737eb79d7275e1dff59c25a",
+      "mean_vs_8draw_max_abs_difference": 0.12486948405635567,
+      "new_sampling_calls": 0,
+      "identity_order_exact": true
+    },
+    {
+      "outer": 3,
+      "source_sha256": "351f418768d7360efcfe21fbb896a1f7cf443b36abd3fe98abd5ca4aae1f8977",
+      "posterior_mean_sha256": "541dc8256624cdbe56cf25b4047d425faafd7fc1fdb384c9ad9ead3bcd4111a1",
+      "mean_vs_8draw_max_abs_difference": 0.12981070330533528,
+      "new_sampling_calls": 0,
+      "identity_order_exact": true
+    },
+    {
+      "outer": 4,
+      "source_sha256": "f2fabc332530dce617ab8ac65f20b242c30a3868a86f3c0a62dcf7c8da38cc26",
+      "posterior_mean_sha256": "a561d392cb9188c5eae070a0cee479f162d2d846440b3df8a98e993dd4127759",
+      "mean_vs_8draw_max_abs_difference": 0.12802244895836007,
+      "new_sampling_calls": 0,
+      "identity_order_exact": true
+    }
+  ],
+  "sampled_prior_replays": [
+    {
+      "outer": 3,
+      "region": "inner2",
+      "internal_fold": 0,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    },
+    {
+      "outer": 3,
+      "region": "inner2",
+      "internal_fold": 1,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    },
+    {
+      "outer": 3,
+      "region": "inner2",
+      "internal_fold": 2,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114091",
+      "internal_fold": 0,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114091",
+      "internal_fold": 1,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    },
+    {
+      "outer": 4,
+      "region": "permutation20261114091",
+      "internal_fold": 2,
+      "maximum_errors": {
+        "mean": 0.0,
+        "noise": 0.0,
+        "prior_covariance": 0.0,
+        "between_raw": 0.0
+      }
+    }
+  ],
+  "qualification_cost": {
+    "prior_moment_recomputations": 6,
+    "new_posterior_sampling_calls": 0,
+    "new_teacher_regions": 0,
+    "head_fits": 0,
+    "evaluation_reward_reads": 0,
+    "physical_model_calls": 0
+  }
+}
