@@ -1,0 +1,391 @@
+[
+  {
+    "key": "ranknet2005",
+    "query_doi": "10.1145/1102351.1102363",
+    "url": "https://api.crossref.org/works/10.1145%2F1102351.1102363",
+    "response_sha256": "27615a800e4e95274ec4e0dd55b6c126b55f2e7162128a1d575b76391806c736",
+    "DOI": "10.1145/1102351.1102363",
+    "title": [
+      "Learning to rank using gradient descent"
+    ],
+    "authors": [
+      {
+        "given": "Chris",
+        "family": "Burges",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tal",
+        "family": "Shaked",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Erin",
+        "family": "Renshaw",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ari",
+        "family": "Lazier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matt",
+        "family": "Deeds",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicole",
+        "family": "Hamilton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Greg",
+        "family": "Hullender",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 22nd international conference on Machine learning  - ICML '05"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": null,
+    "issue": null,
+    "page": "89-96",
+    "status": "RESOLVED"
+  },
+  {
+    "key": "listnet2007",
+    "query_doi": "10.1145/1273496.1273513",
+    "url": "https://api.crossref.org/works/10.1145%2F1273496.1273513",
+    "response_sha256": "267ae6134e88b0f41540f104a136fb40c84ee06b6447a2bb261560c09211e2d0",
+    "DOI": "10.1145/1273496.1273513",
+    "title": [
+      "Learning to rank"
+    ],
+    "authors": [
+      {
+        "given": "Zhe",
+        "family": "Cao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Tsinghua University, Beijing, P. R. China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tao",
+        "family": "Qin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tsinghua University, Beijing, P. R. China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tie-Yan",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research Asia, Beijing, P. R. China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ming-Feng",
+        "family": "Tsai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "National Taiwan University, Taipei, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research Asia, Beijing, P. R. China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 24th international conference on Machine learning"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          6,
+          20
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          6,
+          20
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          6,
+          20
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "129-136",
+    "status": "RESOLVED"
+  },
+  {
+    "key": "spo_plus",
+    "query_doi": "10.1287/mnsc.2020.3922",
+    "url": "https://api.crossref.org/works/10.1287%2Fmnsc.2020.3922",
+    "response_sha256": "337785a58d5c7543ed2b6c9ae223396c286a3f57be49a31c9b05c24783bf620b",
+    "DOI": "10.1287/mnsc.2020.3922",
+    "title": [
+      "Smart “Predict, then Optimize”"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0729-4999",
+        "authenticated-orcid": false,
+        "given": "Adam N.",
+        "family": "Elmachtoub",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Industrial Engineering and Operations Research and Data Science Institute, Columbia University, New York, New York 10027;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5617-1058",
+        "authenticated-orcid": false,
+        "given": "Paul",
+        "family": "Grigas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Industrial Engineering and Operations Research, University of California, Berkeley, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Management Science"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": "68",
+    "issue": "1",
+    "page": "9-26",
+    "status": "RESOLVED"
+  },
+  {
+    "key": "pyepo",
+    "query_doi": "10.1007/s12532-024-00255-x",
+    "url": "https://api.crossref.org/works/10.1007%2Fs12532-024-00255-x",
+    "response_sha256": "13e514ae910cf1865ceb4e7989cfe2f7fa19882b0002ee2950c0a78a617892ad",
+    "DOI": "10.1007/s12532-024-00255-x",
+    "title": [
+      "PyEPO: a PyTorch-based end-to-end predict-then-optimize library for linear and integer programming"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6035-5167",
+        "authenticated-orcid": false,
+        "given": "Bo",
+        "family": "Tang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5844-9642",
+        "authenticated-orcid": false,
+        "given": "Elias B.",
+        "family": "Khalil",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Mathematical Programming Computation"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          18
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          18
+        ]
+      ]
+    },
+    "volume": "16",
+    "issue": "3",
+    "page": "297-335",
+    "status": "RESOLVED"
+  }
+]

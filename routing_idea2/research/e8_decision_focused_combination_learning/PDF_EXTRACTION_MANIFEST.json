@@ -1,0 +1,44 @@
+[
+  {
+    "paper": "listnet2007",
+    "pages": 9,
+    "pdf_sha256": "2db09fa018030a025323524bdcc3105e350060076758f413f222be21780bee1e",
+    "text_sha256": "46dadf642f107376db821a24be4540342e4ae4840e5ec5fff287fc6f766e9d04",
+    "characters": 35617
+  },
+  {
+    "paper": "liu_grigas2021",
+    "pages": 12,
+    "pdf_sha256": "d420059eea625893fb832926d8fff9b54ef7ddd9660cf966c0a966133bf363ca",
+    "text_sha256": "9682581e7f685f3aefff285369d311765fc80db58645ce8ad356761a2cdbacaf",
+    "characters": 47228
+  },
+  {
+    "paper": "liu_grigas2021_supplement",
+    "pages": 18,
+    "pdf_sha256": "0fd7992d5b20b329684edbfdc9bee0bcd5ef85d8107d57e8ab5c810fcb34405b",
+    "text_sha256": "30f5c987e13be656d043fdb917dc5c2a5d6a45632cafb96de924959e8b813aae",
+    "characters": 42980
+  },
+  {
+    "paper": "pyepo",
+    "pages": 41,
+    "pdf_sha256": "b5880bd7e69f9b54f621b29b2aea4988d52de773bc93455bcf3f3b8b9a53c0df",
+    "text_sha256": "e145a0c236676da384260dcf1a2eb543f5cc8a7a783e1cd3681ee6de8a6b9ce0",
+    "characters": 95099
+  },
+  {
+    "paper": "ranknet2005",
+    "pages": 8,
+    "pdf_sha256": "89e99e88dc91698c90067641eff2f065ac059a88071847dedaba2839e61e867e",
+    "text_sha256": "809c26ff0ea40608c9b2a709fd1d0c5cc55e4634bc396bf09905f3347e4f2fe2",
+    "characters": 33793
+  },
+  {
+    "paper": "spo_plus",
+    "pages": 46,
+    "pdf_sha256": "56381283da01e0a21a861cc8d1bfda97b377095b64051d7d68156b94e848cc3b",
+    "text_sha256": "2330253fbe1d4fe5132fae9ee5976c9b7738aac5269e49034925ed6a83c5e7af",
+    "characters": 111830
+  }
+]

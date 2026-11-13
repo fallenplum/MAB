@@ -1,0 +1,117 @@
+{
+  "schema": "E8_final_document_and_delivery_review_v1",
+  "status": "PASS",
+  "reports_sha256": {
+    "01_LITERATURE_AND_METHOD_MAPPING.md": "40ffcf558170fdc79043e34a72e72d8a04251ad716797b70309f2e34a0fbae4a",
+    "02_MATHEMATICAL_AND_SOFTWARE_CHECKS.md": "9aeacd1520e852dce762a7914a735fbe55c39b42c23fe504bbcdd4f53233c7b8",
+    "03_TRAINING_OBJECTIVES_AND_IMPLEMENTATION.md": "0c256397d2af3ec59a4cd9dec64f0e664bc2605d5dd0bfe63eb4f8ed97e56e6b",
+    "04_MAIN_COMPARISONS.md": "f2f82f85bb157776ee974d1c2320563ee29937c1a40c075cc25609bf98a410c6",
+    "05_NOISE_AND_RANKING_DIAGNOSTICS.md": "740c31bbdd3736ab67f1ab6e52ce7c754876099d56dfa389a7c186f298a82e5b",
+    "06_STATISTICAL_COST_AND_RESEARCH_DECISION.md": "192d82b903ca354d2b17d81ac02fb8c57d5f88d6679c1edfe2bd5fb3e1e1e0d4",
+    "EXPERIMENT_SUMMARY.md": "23d1032a284de593d1972cbb8cfff3fedb5f941fc9066782f584d05284298277",
+    "REPRODUCE.md": "bdf78d91f90b9fd977c0fc42454cd72fd6dfa80f812874be26aa5b6c5ce5fa4d"
+  },
+  "eight_scientific_result_locks_verified": true,
+  "frozen_models": 70,
+  "saved_objective_fits": 610,
+  "primary_bootstrap_draws": 10000,
+  "all_main_tables_match_frozen_results": true,
+  "all_four_research_questions_answered": true,
+  "scientific_claims": {
+    "main_primary_improvement_not_established": true,
+    "reused_development_scope_explicit": true,
+    "raw_and_calibrated_errors_separate": true,
+    "empirical_three_repeat_means_not_population_expectations": true,
+    "zero_gap_shrinkage_not_ranking_success": true,
+    "strict_gap_error_question_then_supported294_mean": true,
+    "uniformtie_solver_sensitivity_not_pure_tie_effect": true,
+    "no_feedback_or_fresh_stage_started": true
+  },
+  "additive_posthoc_check": {
+    "status": "PASS",
+    "maximum_absolute_recalculation_error": 4.163336342344337e-17,
+    "common_pair_denominator": 32400,
+    "strict_pair_events": 6859,
+    "empirical_tied_pair_events": 25541,
+    "scope": "posthoc descriptive decomposition; old v1 archived; main predictions and statistical family unchanged",
+    "original_posthoc_v1_sha256": "67d3169bb47324d66d7ee46b5ea334791302bba14e181f0ef42ac21f6c13363d"
+  },
+  "PCA_Ridge_geometry": {
+    "diagnostic_sha256": "b57efb02baaf21bc96ef8faa04a6cf0e115edf6688f1cb4a2c9ce7c664346e8b",
+    "proof_conditions_reported": true,
+    "original_tuned600_actions_equal": true,
+    "lambda_grid_action_invariant_in_current_whitened_geometry": true,
+    "M0_tuned_not_claimed_as_additional_effective_route_search": true
+  },
+  "CPU_scope": {
+    "successful_model_log_cpu": 1078.25,
+    "original_run_lower_bound": 1476.4375,
+    "recovery_run_lower_bound": 45.796875,
+    "combined_two_run_lower_bound": 1522.234375,
+    "successful_logs_not_added_to_overlapping_run_bound": true,
+    "exact_full_study_CPU_not_claimed": true
+  },
+  "reproduction": {
+    "verify": {
+      "status": "PASS",
+      "frozen_models": 70,
+      "unique_locked_source_files": 7,
+      "protocol_sha256": "44e8b840544c9c3377bab11f459a281566185da24897dc3b27c2a41d1c9833a3"
+    },
+    "CLI_help_checks": [
+      {
+        "entry": "evaluation/reproduce_guarded.py",
+        "help_exit_code": 0,
+        "documented_parameters_supported": true
+      },
+      {
+        "entry": "training/run_e8_training_v1.py",
+        "help_exit_code": 0,
+        "documented_parameters_supported": true
+      },
+      {
+        "entry": "training/run_e8_recovery_v1.py",
+        "help_exit_code": 0,
+        "documented_parameters_supported": true
+      }
+    ],
+    "existing_controlled_evaluation_replay": {
+      "status": "PASS",
+      "original_outputs_overwritten": false,
+      "all14_metrics_identical": true,
+      "all_primary_statistics_identical": true,
+      "models_refitted": false,
+      "original_source_and_prediction_hashes_verified": true
+    },
+    "replay_receipt_sha256": "eae0cb3ede8a146b9803de34aaf33307889fe9e76913296b61e4cb70a3ba2c8d",
+    "current_audit_execution": "read-only verify/help plus document and frozen-artifact checks",
+    "full_training_rebuild_command_scope": "static argument/path review; full refitting not part of final document audit"
+  },
+  "public_content": {
+    "files_scanned": 49,
+    "actual_private_identities_checked": 1200,
+    "actual_ID_hits": 0,
+    "private_binary_artifacts": 0,
+    "credential_hits": 0
+  },
+  "frozen_files_or_results_modified": false,
+  "validation200_fresh400_sealed200_rewards_opened": false,
+  "findings": [],
+  "wall_seconds": 8.868345499999123,
+  "final_objective_formula_review": {
+    "status": "PASS",
+    "reviewed_at_utc": "2026-11-13T16:11:22.986350+00:00",
+    "previous_report_sha256": "02ce8579bb1f21e569ed3af7f8fbb62353b2ddd09fa8844d141f88728eb11aef",
+    "current_report_sha256": "0c256397d2af3ec59a4cd9dec64f0e664bc2605d5dd0bfe63eb4f8ed97e56e6b",
+    "report_builder_sha256": "5995ccd96648a7e745f1f4ee5b8e82bd6fa3a1348882260dde0ff5c9a86600f9",
+    "frozen_training_source_sha256": "0fd7836c90968b3beba83555f1645d8b4982842bce36e6d9b7e1c725ad58eb0f",
+    "M0": "sum squared vector errors divided by20n, same penalized constant and lambda",
+    "M1": "absolute empirical-gap weighted logistic sum divided by190n, true-zero gap weight0",
+    "M2": "Top1 soft-target cross entropy divided byn with declared target/prediction temperatures",
+    "M3": "per-question raw pair weights normalized to mean1 across190 pairs; squared gap sum divided by400n",
+    "M4": "reward-max SPO+ max(2q-r)-2q_truebest+r_truebest; lexicographic true tie, uniform true-tie sensitivity averages q over true maximizers",
+    "epigraph": "t_x >= 2q_j-r_j, same linear terms and positive quadratic regularization",
+    "eight_scientific_result_locks_unchanged": true,
+    "no_training_or_statistical_recomputation": true
+  }
+}

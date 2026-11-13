@@ -1,0 +1,922 @@
+{
+  "retrieved_utc": "2026-11-13T14:51:53.207717+00:00",
+  "physical_LLM_calls": 0,
+  "papers": [
+    {
+      "key": "ranknet2005",
+      "title": "Learning to Rank using Gradient Descent",
+      "authors": [
+        "Christopher J. C. Burges",
+        "Tal Shaked",
+        "Erin Renshaw",
+        "Ari Lazier",
+        "Matt Deeds",
+        "Nicole Hamilton",
+        "Greg Hullender"
+      ],
+      "year": 2005,
+      "doi": "10.1145/1102351.1102363",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf",
+      "role": "RankNet original",
+      "relative_path": "papers/ranknet2005.pdf",
+      "bytes": 173852,
+      "sha256": "89e99e88dc91698c90067641eff2f065ac059a88071847dedaba2839e61e867e",
+      "response_content_type": "application/pdf",
+      "final_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf",
+      "public_redistribution": false
+    },
+    {
+      "key": "listnet2007",
+      "title": "Learning to Rank: From Pairwise Approach to Listwise Approach",
+      "authors": [
+        "Zhe Cao",
+        "Tao Qin",
+        "Tie-Yan Liu",
+        "Ming-Feng Tsai",
+        "Hang Li"
+      ],
+      "year": 2007,
+      "doi": "10.1145/1273496.1273513",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2007-40.pdf",
+      "role": "author full Microsoft technical report MSR-TR-2007-40",
+      "relative_path": "papers/listnet2007.pdf",
+      "bytes": 184455,
+      "sha256": "2db09fa018030a025323524bdcc3105e350060076758f413f222be21780bee1e",
+      "response_content_type": "application/pdf",
+      "final_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2007-40.pdf",
+      "public_redistribution": false
+    },
+    {
+      "key": "spo_plus",
+      "title": "Smart Predict, then Optimize",
+      "authors": [
+        "Adam N. Elmachtoub",
+        "Paul Grigas"
+      ],
+      "year": 2022,
+      "doi": "10.1287/mnsc.2020.3922",
+      "arxiv": "1710.08005v5",
+      "url": "https://arxiv.org/pdf/1710.08005v5",
+      "role": "original SPO/SPO+ full author preprint",
+      "relative_path": "papers/spo_plus.pdf",
+      "bytes": 857150,
+      "sha256": "56381283da01e0a21a861cc8d1bfda97b377095b64051d7d68156b94e848cc3b",
+      "response_content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/1710.08005v5",
+      "public_redistribution": false
+    },
+    {
+      "key": "liu_grigas2021",
+      "title": "Risk Bounds and Calibration for a Smart Predict-then-Optimize Method",
+      "authors": [
+        "Heyuan Liu",
+        "Paul Grigas"
+      ],
+      "year": 2021,
+      "arxiv": "2108.08887v2",
+      "url": "https://papers.nips.cc/paper_files/paper/2021/file/b943325cc7b7422d2871b345bf9b067f-Paper.pdf",
+      "role": "NeurIPS2021 final main paper",
+      "relative_path": "papers/liu_grigas2021.pdf",
+      "bytes": 393669,
+      "sha256": "d420059eea625893fb832926d8fff9b54ef7ddd9660cf966c0a966133bf363ca",
+      "response_content_type": "application/pdf",
+      "final_url": "https://papers.nips.cc/paper_files/paper/2021/file/b943325cc7b7422d2871b345bf9b067f-Paper.pdf",
+      "public_redistribution": false
+    },
+    {
+      "key": "liu_grigas2021_supplement",
+      "title": "Risk Bounds and Calibration for a Smart Predict-then-Optimize Method - Supplemental",
+      "authors": [
+        "Heyuan Liu",
+        "Paul Grigas"
+      ],
+      "year": 2021,
+      "url": "https://papers.nips.cc/paper_files/paper/2021/file/b943325cc7b7422d2871b345bf9b067f-Supplemental.pdf",
+      "role": "same study appendix and full proofs",
+      "relative_path": "papers/liu_grigas2021_supplement.pdf",
+      "bytes": 400734,
+      "sha256": "0fd7992d5b20b329684edbfdc9bee0bcd5ef85d8107d57e8ab5c810fcb34405b",
+      "response_content_type": "application/pdf",
+      "final_url": "https://papers.nips.cc/paper_files/paper/2021/file/b943325cc7b7422d2871b345bf9b067f-Supplemental.pdf",
+      "public_redistribution": false
+    },
+    {
+      "key": "pyepo",
+      "title": "PyEPO: A PyTorch-based End-to-End Predict-then-Optimize Library for Linear and Integer Programming",
+      "authors": [
+        "Bo Tang",
+        "Elias B. Khalil"
+      ],
+      "year": 2024,
+      "doi": "10.1007/s12532-024-00255-x",
+      "arxiv": "2206.14234v3",
+      "url": "https://arxiv.org/pdf/2206.14234v3",
+      "role": "full author preprint of library paper, revision 2026-04-17",
+      "relative_path": "papers/pyepo.pdf",
+      "bytes": 2217270,
+      "sha256": "b5880bd7e69f9b54f621b29b2aea4988d52de773bc93455bcf3f3b8b9a53c0df",
+      "response_content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/2206.14234v3",
+      "public_redistribution": false
+    }
+  ],
+  "repositories": [
+    {
+      "repo": "paulgrigas/SmartPredictThenOptimize",
+      "commit": "4002e9fe94a539c95d1e7520afd4f84d3063adf8",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/README.md",
+          "bytes": 1640,
+          "sha256": "197009acb03701bda4b76c517f5d04f02c31be9b1c7086ce37fd4f7b57437d86",
+          "git_blob_sha1": "a9fd942fb5d01b30d38424a6d5ad5114212bf02c"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/LICENSE",
+          "bytes": 1068,
+          "sha256": "f2f284e9d0cdbad2e0a953028fd2e3455ac0279aeadc3e326d3c81fd5b6f26c9",
+          "git_blob_sha1": "0a2ee929d75059ea081228ca8e9ba8872b4e8ced"
+        },
+        {
+          "path": "solver/util.jl",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/solver/util.jl",
+          "bytes": 11190,
+          "sha256": "6112507ba910a83186560593fdd5011d00aa0ef4e7069d17857a1d480fc0fdfc",
+          "git_blob_sha1": "7730c6db9ae448860d8b17439e0a271453ea88d7"
+        },
+        {
+          "path": "solver/sgd.jl",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/solver/sgd.jl",
+          "bytes": 16545,
+          "sha256": "8c2faa4f66d4752a212180b719ad2004af93f3628b0e93f763b535bf8aea81da",
+          "git_blob_sha1": "87f8b1a020d3c441be38ae8f7bfba04c70565a62"
+        },
+        {
+          "path": "solver/reformulation.jl",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/solver/reformulation.jl",
+          "bytes": 14558,
+          "sha256": "517102dedbb35f7e4a2a55152bfe3faf5d1dcaf254c56e62fb8b6825cd5ce011",
+          "git_blob_sha1": "d5c75160b3dcbb0f00934dcade8f2b446570d946"
+        },
+        {
+          "path": "solver/validation_set.jl",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/solver/validation_set.jl",
+          "bytes": 8554,
+          "sha256": "c0288ce99b17d868cb4529aa314a1af3dede7235af8af90eb35316f3059ff4ec",
+          "git_blob_sha1": "c96632b902b2296d4d2cc426f6d2409479d139da"
+        },
+        {
+          "path": "oracles/basic_optimization_oracles.jl",
+          "url": "https://raw.githubusercontent.com/paulgrigas/SmartPredictThenOptimize/4002e9fe94a539c95d1e7520afd4f84d3063adf8/oracles/basic_optimization_oracles.jl",
+          "bytes": 1004,
+          "sha256": "c84db2e237142591f864b2d29b8638301aea8c31ae4730316a08bf15bef710f3",
+          "git_blob_sha1": "7ae477493e80be581320913c22c8101bdfb3dffa"
+        }
+      ]
+    },
+    {
+      "repo": "khalil-research/PyEPO",
+      "commit": "e5d768e2749bccdeba7494b4ec848c3eb3ffbd25",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/README.md",
+          "bytes": 18270,
+          "sha256": "8e1cd649121e4b724a784febe81df8e7621c80c244d0cc6c307ca85e1df84710",
+          "git_blob_sha1": "a9527dc0dd21fab5815e80e92f47de9b35bb72a1"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/LICENSE",
+          "bytes": 1056,
+          "sha256": "26f64c803b07dfcea82ea31790b87fcf5bfc764d63513cfec6af817b62d6bebc",
+          "git_blob_sha1": "1637db267390c54170f8abf9fb3cf91acee40327"
+        },
+        {
+          "path": "pkg/pyepo/func/surrogate.py",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/pkg/pyepo/func/surrogate.py",
+          "bytes": 8972,
+          "sha256": "23713e82c845928e6d619a0d5a2dff019c9533552038549ea4ec5983ce10914a",
+          "git_blob_sha1": "97dd95c9c2f3057dbe17fbf3349f01d717e20f8b"
+        },
+        {
+          "path": "pkg/pyepo/func/abcmodule.py",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/pkg/pyepo/func/abcmodule.py",
+          "bytes": 3609,
+          "sha256": "0c85c25ed83aa3f67e205272ebe9497892501b8b0f5650fd5d1d056f02693027",
+          "git_blob_sha1": "02ed7428544c680a231bff6a2003fa86e63b2090"
+        },
+        {
+          "path": "pkg/pyepo/func/_common.py",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/pkg/pyepo/func/_common.py",
+          "bytes": 1289,
+          "sha256": "ac6cf6dd9582e7a93e28c3ed3ed2f2c3441305f231b3a62c93d7e43c6fc47593",
+          "git_blob_sha1": "2abdaf1bfe97c68301eadfd83ba736495203f093"
+        },
+        {
+          "path": "pkg/pyepo/EPO.py",
+          "url": "https://raw.githubusercontent.com/khalil-research/PyEPO/e5d768e2749bccdeba7494b4ec848c3eb3ffbd25/pkg/pyepo/EPO.py",
+          "bytes": 638,
+          "sha256": "11193b2e6c790bff4c5c1a69f9055fb29f8f12b88b9fe2cda115dcfec7fa4ca9",
+          "git_blob_sha1": "8943c0a5e3ca246827ff2eef7d6c4aae2aa4c302"
+        }
+      ]
+    },
+    {
+      "repo": "HeyuanLiu/SPO_plus_public",
+      "commit": "60f5ea2896ae315e541e220fb8267a7dd485e80c",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/README.md",
+          "bytes": 124,
+          "sha256": "cfaf2630bca07c1f7fc7aea1668da8b47bf9ef5b69aaf4ef48f980aec9f6c562",
+          "git_blob_sha1": "c79d6a1f9e86d62ab5be42488affa4ca07d92bdb"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/LICENSE",
+          "bytes": 1066,
+          "sha256": "fc33b078ae4339e2e9836b2af2633a55ba4474b9c73872c562b384064c2b363c",
+          "git_blob_sha1": "c35fe9af917c80015da0e61630bd2b0e2400fe5d"
+        },
+        {
+          "path": "tools/loss_func_tools.py",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/tools/loss_func_tools.py",
+          "bytes": 3483,
+          "sha256": "f307459e787fc7dc26ea3e342c9aea1ac98b88f1526b18769e6be381ca548fdb",
+          "git_blob_sha1": "214e7e87ce55838056cea183439c826fcd02fda7"
+        },
+        {
+          "path": "tools/optimization_oracle_tools.py",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/tools/optimization_oracle_tools.py",
+          "bytes": 8645,
+          "sha256": "ae46edea503a309804c348db1ad04f2e9344b61188761f0e0812eb04d9e12ba6",
+          "git_blob_sha1": "e535d24e8d0012a752c6ec2e09ac9a93173c70f3"
+        },
+        {
+          "path": "tools/spo_framework.py",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/tools/spo_framework.py",
+          "bytes": 14522,
+          "sha256": "ce42484b7ab4210f2bf1453f0ad220caa17d9150b14d7cbe69ca90c6bb37e0d8",
+          "git_blob_sha1": "58f5ecc15531df9133c9008e227cbf5145df723e"
+        },
+        {
+          "path": "tools/data_generation_tools.py",
+          "url": "https://raw.githubusercontent.com/HeyuanLiu/SPO_plus_public/60f5ea2896ae315e541e220fb8267a7dd485e80c/tools/data_generation_tools.py",
+          "bytes": 4106,
+          "sha256": "d0c9d8cd68f1b0b81b8d6afb4ee16ded93b0fca9d565013bfed88851e6f65521",
+          "git_blob_sha1": "001fc413fcbdcbb64857eb37abfbdf1545b0f73b"
+        }
+      ]
+    }
+  ],
+  "pdf_extraction": [
+    {
+      "paper": "listnet2007",
+      "pages": 9,
+      "pdf_sha256": "2db09fa018030a025323524bdcc3105e350060076758f413f222be21780bee1e",
+      "text_sha256": "46dadf642f107376db821a24be4540342e4ae4840e5ec5fff287fc6f766e9d04",
+      "characters": 35617
+    },
+    {
+      "paper": "liu_grigas2021",
+      "pages": 12,
+      "pdf_sha256": "d420059eea625893fb832926d8fff9b54ef7ddd9660cf966c0a966133bf363ca",
+      "text_sha256": "9682581e7f685f3aefff285369d311765fc80db58645ce8ad356761a2cdbacaf",
+      "characters": 47228
+    },
+    {
+      "paper": "liu_grigas2021_supplement",
+      "pages": 18,
+      "pdf_sha256": "0fd7992d5b20b329684edbfdc9bee0bcd5ef85d8107d57e8ab5c810fcb34405b",
+      "text_sha256": "30f5c987e13be656d043fdb917dc5c2a5d6a45632cafb96de924959e8b813aae",
+      "characters": 42980
+    },
+    {
+      "paper": "pyepo",
+      "pages": 41,
+      "pdf_sha256": "b5880bd7e69f9b54f621b29b2aea4988d52de773bc93455bcf3f3b8b9a53c0df",
+      "text_sha256": "e145a0c236676da384260dcf1a2eb543f5cc8a7a783e1cd3681ee6de8a6b9ce0",
+      "characters": 95099
+    },
+    {
+      "paper": "ranknet2005",
+      "pages": 8,
+      "pdf_sha256": "89e99e88dc91698c90067641eff2f065ac059a88071847dedaba2839e61e867e",
+      "text_sha256": "809c26ff0ea40608c9b2a709fd1d0c5cc55e4634bc396bf09905f3347e4f2fe2",
+      "characters": 33793
+    },
+    {
+      "paper": "spo_plus",
+      "pages": 46,
+      "pdf_sha256": "56381283da01e0a21a861cc8d1bfda97b377095b64051d7d68156b94e848cc3b",
+      "text_sha256": "2330253fbe1d4fe5132fae9ee5976c9b7738aac5269e49034925ed6a83c5e7af",
+      "characters": 111830
+    }
+  ],
+  "author_operator_check": {
+    "status": "PASS",
+    "kind": "executed exact author operator on synthetic finite-action inputs",
+    "source_commit": "e5d768e2749bccdeba7494b4ec848c3eb3ffbd25",
+    "source_path": "pkg/pyepo/func/surrogate.py",
+    "source_sha256": "23713e82c845928e6d619a0d5a2dff019c9533552038549ea4ec5983ce10914a",
+    "cases": [
+      {
+        "variant": "lex_true_tie",
+        "batch": 24,
+        "actions": 20,
+        "native_forward_error": 0.0,
+        "native_backward_error": 0.0,
+        "common_offset_invariance_error": 8.881784197001252e-16,
+        "minimum_surrogate": 0.5967598312985539,
+        "minimum_upper_bound_slack": 0.317250875231739
+      },
+      {
+        "variant": "uniform_true_tie",
+        "batch": 24,
+        "actions": 20,
+        "native_forward_error": 2.220446049250313e-16,
+        "native_backward_error": 0.0,
+        "common_offset_invariance_error": 7.771561172376096e-16,
+        "minimum_surrogate": 0.6698992351042005,
+        "minimum_upper_bound_slack": 0.6698992351042005
+      }
+    ],
+    "maximum_error": 8.881784197001252e-16,
+    "physical_LLM_calls": 0,
+    "note": "true and perturbed ties use frozen first-index enumeration; true-tie averaging is separately tested"
+  },
+  "source_code_availability": [
+    {
+      "method": "RankNet2005",
+      "status": "AUTHOR_PUBLIC_SOURCE_NOT_LOCATED_IN_BOUNDED_SEARCH",
+      "searched_primary_pages": [
+        "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
+        "https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/resources/"
+      ],
+      "search_queries": [
+        "RankNet Burges source code",
+        "site.microsoft.com RankNet source code"
+      ],
+      "execution": "E8 independent paper-formula implementation",
+      "limitation": "This search result does not prove absence of author code."
+    },
+    {
+      "method": "ListNet2007",
+      "status": "AUTHOR_PUBLIC_SOURCE_NOT_LOCATED_IN_BOUNDED_SEARCH",
+      "searched_primary_pages": [
+        "https://www.microsoft.com/en-us/research/publication/learning-to-rank-from-pairwise-approach-to-listwise-approach/",
+        "https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/resources/"
+      ],
+      "search_queries": [
+        "ListNet Cao source code",
+        "site.microsoft.com ListNet implementation"
+      ],
+      "execution": "E8 independent top-one cross-entropy formula implementation",
+      "limitation": "Third-party same-name implementations are not identified as original author releases."
+    },
+    {
+      "method": "SPO+",
+      "status": "AUTHOR_IMPLEMENTATION_LOCATED_AND_SOURCE_AUDITED",
+      "repo": "paulgrigas/SmartPredictThenOptimize"
+    },
+    {
+      "method": "LiuGrigas2021",
+      "status": "AUTHOR_IMPLEMENTATION_LOCATED_AND_SOURCE_AUDITED",
+      "repo": "HeyuanLiu/SPO_plus_public"
+    },
+    {
+      "method": "PyEPO",
+      "status": "AUTHOR_IMPLEMENTATION_LOCATED_SOURCE_AUDITED_AND_ORIGINAL_AUTOGRAD_OPERATOR_EXECUTED",
+      "repo": "khalil-research/PyEPO"
+    }
+  ],
+  "reading_anchors": [
+    {
+      "paper": "ranknet2005",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sections": [
+        "3 pairwise posterior and cross entropy",
+        "4 gradient training",
+        "5.2 allowing ties"
+      ]
+    },
+    {
+      "paper": "listnet2007",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sections": [
+        "3 query-list construction",
+        "4 permutation and top-one probability",
+        "5 ListNet objective and gradient",
+        "6 query normalization discussion"
+      ]
+    },
+    {
+      "paper": "spo_plus",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "sections": [
+        "2 SPO loss and optimization model",
+        "3 SPO+ derivation and subgradient",
+        "4 consistency assumptions",
+        "5 convex reformulation and regularization"
+      ]
+    },
+    {
+      "paper": "liu_grigas2021",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "sections": [
+        "2 model and calibration definitions",
+        "3 polyhedral calibration",
+        "4 strong-convex level sets",
+        "5 empirical setup",
+        "checklist"
+      ]
+    },
+    {
+      "paper": "liu_grigas2021_supplement",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        16,
+        17,
+        18
+      ],
+      "sections": [
+        "A independent-sample generalization bounds",
+        "B polyhedral assumptions and proofs",
+        "D synthetic classification/portfolio generation and computing protocol"
+      ]
+    },
+    {
+      "paper": "pyepo",
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sections": [
+        "3 prediction/decision/gradient framework",
+        "3.4.1 SPO+ formula and subgradient",
+        "4 software interfaces",
+        "5 benchmark generation"
+      ]
+    }
+  ],
+  "scientific_claim_boundary": "Author-source/operator equivalence and objective mapping are verified. Original ranking or optimization benchmark performance has not been reproduced by this literature module. E8 service-quality evidence comes from its frozen nested evaluation.",
+  "bibliography_identity": [
+    {
+      "key": "ranknet2005",
+      "query_doi": "10.1145/1102351.1102363",
+      "url": "https://api.crossref.org/works/10.1145%2F1102351.1102363",
+      "response_sha256": "27615a800e4e95274ec4e0dd55b6c126b55f2e7162128a1d575b76391806c736",
+      "DOI": "10.1145/1102351.1102363",
+      "title": [
+        "Learning to rank using gradient descent"
+      ],
+      "authors": [
+        {
+          "given": "Chris",
+          "family": "Burges",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tal",
+          "family": "Shaked",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Erin",
+          "family": "Renshaw",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ari",
+          "family": "Lazier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Matt",
+          "family": "Deeds",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicole",
+          "family": "Hamilton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Greg",
+          "family": "Hullender",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 22nd international conference on Machine learning  - ICML '05"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-online": null,
+      "volume": null,
+      "issue": null,
+      "page": "89-96",
+      "status": "RESOLVED"
+    },
+    {
+      "key": "listnet2007",
+      "query_doi": "10.1145/1273496.1273513",
+      "url": "https://api.crossref.org/works/10.1145%2F1273496.1273513",
+      "response_sha256": "267ae6134e88b0f41540f104a136fb40c84ee06b6447a2bb261560c09211e2d0",
+      "DOI": "10.1145/1273496.1273513",
+      "title": [
+        "Learning to rank"
+      ],
+      "authors": [
+        {
+          "given": "Zhe",
+          "family": "Cao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Tsinghua University, Beijing, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tao",
+          "family": "Qin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University, Beijing, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tie-Yan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Research Asia, Beijing, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming-Feng",
+          "family": "Tsai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Taiwan University, Taipei, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hang",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Research Asia, Beijing, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 24th international conference on Machine learning"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            6,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            6,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2007,
+            6,
+            20
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "129-136",
+      "status": "RESOLVED"
+    },
+    {
+      "key": "spo_plus",
+      "query_doi": "10.1287/mnsc.2020.3922",
+      "url": "https://api.crossref.org/works/10.1287%2Fmnsc.2020.3922",
+      "response_sha256": "337785a58d5c7543ed2b6c9ae223396c286a3f57be49a31c9b05c24783bf620b",
+      "DOI": "10.1287/mnsc.2020.3922",
+      "title": [
+        "Smart “Predict, then Optimize”"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0729-4999",
+          "authenticated-orcid": false,
+          "given": "Adam N.",
+          "family": "Elmachtoub",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Industrial Engineering and Operations Research and Data Science Institute, Columbia University, New York, New York 10027;"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5617-1058",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Grigas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Industrial Engineering and Operations Research, University of California, Berkeley, Berkeley, California 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Management Science"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "volume": "68",
+      "issue": "1",
+      "page": "9-26",
+      "status": "RESOLVED"
+    },
+    {
+      "key": "pyepo",
+      "query_doi": "10.1007/s12532-024-00255-x",
+      "url": "https://api.crossref.org/works/10.1007%2Fs12532-024-00255-x",
+      "response_sha256": "13e514ae910cf1865ceb4e7989cfe2f7fa19882b0002ee2950c0a78a617892ad",
+      "DOI": "10.1007/s12532-024-00255-x",
+      "title": [
+        "PyEPO: a PyTorch-based end-to-end predict-then-optimize library for linear and integer programming"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6035-5167",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Tang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5844-9642",
+          "authenticated-orcid": false,
+          "given": "Elias B.",
+          "family": "Khalil",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Mathematical Programming Computation"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            18
+          ]
+        ]
+      },
+      "volume": "16",
+      "issue": "3",
+      "page": "297-335",
+      "status": "RESOLVED"
+    }
+  ]
+}

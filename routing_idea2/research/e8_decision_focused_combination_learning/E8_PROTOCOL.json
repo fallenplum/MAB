@@ -1,0 +1,152 @@
+{
+  "schema": "MAB_E8_fixed_objectives_protocol_v1",
+  "status": "FROZEN_BEFORE_NEW_OUTER_EVALUATION",
+  "frozen_at_utc": "2026-11-13T15:03:24.392675+00:00",
+  "branch": "codex/e8-decision-focused-combination-learning",
+  "parent_branch": "codex/b1-reliable-paired-evaluation",
+  "parent_commit": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+  "target": "same-feature same-linear-capacity relative-value and exact decision-focused training",
+  "asset": {
+    "original_questions": 600,
+    "tasks": {
+      "gsm8k": 300,
+      "bbh": 300
+    },
+    "members": 6,
+    "K": 3,
+    "combinations": 20,
+    "generations": [
+      42,
+      137,
+      2024
+    ],
+    "aggregator": "Qwen/Qwen3-8B",
+    "operator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "scorer": "safe_exact_v2_0_terminal_final_heading_fix",
+    "question_is_independent_unit": true
+  },
+  "data": {
+    "outer_folds": 5,
+    "history_per_fold": 480,
+    "evaluation_per_fold": 120,
+    "inner_folds": 3,
+    "historical_fold_sha256": "6b433dcd2d8e6cd9938d2dd2d97261e18c3ae3d18325d7a04c6590e4d0600d50",
+    "fold_pack_manifest_sha256": "827b090d47d6af023984a391d98d117803830dcfae150805ed5095e9c08431e1",
+    "data_builder": "privileged fold-scoped pack constructor",
+    "training_access": "history480 rewards and evaluation_inputs_only120 only",
+    "new_validation200_outcome_access": false,
+    "fresh400_outcome_access": false,
+    "sealed200_outcome_access": false
+  },
+  "features": {
+    "encoder": "frozen all-MiniLM-L6-v2 cached384",
+    "PCA": 16,
+    "svd_solver": "full",
+    "standardization": "historical fitting region only",
+    "constant": "one penalized coordinate",
+    "head_parameters": 340,
+    "task_and_subtask_not_predictor_inputs": true
+  },
+  "methods": {
+    "M0_original": "absolute mean-squared loss; fixed original raw-alpha100",
+    "M0_tuned": "same M0 loss; same three regularization candidates fairness comparator",
+    "M1": "absolute-gap-weighted RankNet, fixed190 denominator then mean over questions",
+    "M2": "ListNet cross entropy, mean over questions",
+    "M3": "OOF Top3 competitor weighted squared gaps, 1/400 then mean over questions",
+    "M4": "exact epigraph convex SPO+ QP, lexicographic true argmax"
+  },
+  "settings": {
+    "raw_alpha": 100.0,
+    "lambda_multipliers": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "ranknet_pair_denominator": 190,
+    "listnet_target_temperatures": [
+      0.1,
+      0.3,
+      1.0
+    ],
+    "listnet_prediction_temperature": 1.0,
+    "competition_alphas": [
+      0.0,
+      2.0,
+      5.0
+    ],
+    "primary_top_k": 3,
+    "lbfgs_max_iterations": 2000,
+    "lbfgs_ftol": 1e-12,
+    "lbfgs_gtol": 1e-07,
+    "osqp_eps_abs": 1e-08,
+    "osqp_eps_rel": 1e-08,
+    "osqp_max_iterations": 200000,
+    "osqp_polishing": true,
+    "inner_selection_tie_tolerance": 1e-12,
+    "permutation_seed": 2026111317,
+    "oof_seed_offset": 10000
+  },
+  "regularization": "lambda=(100*multiplier)/(3*n_fitting_questions*20), constant penalized",
+  "model_selection": {
+    "primary_baseline": "M0_original",
+    "fairness_baseline": "M0_tuned",
+    "criterion": "GSM8K and BBH equally weighted historical inner OOF actual routed accuracy",
+    "ties": "stronger regularization, then smaller M3 alpha or larger ListNet target temperature",
+    "routing_ties": "original exact numpy argmax, first lexicographic action",
+    "base_seed": 20261113
+  },
+  "sensitivity": {
+    "M3_top5": "reuse selected Top3 alpha and regularization",
+    "M4_uniformtie": "reuse selected lexicographic regularization; uniform average over true reward-maximizers",
+    "shuffled_control": "one fixed task/subtask-block permutation recipe within each legal fitting region; frozen selected hyperparameters; no retuning",
+    "shuffle_oof": "one regional permuted dataset, plain OOF holds its current reassigned reward block out"
+  },
+  "calibration": {
+    "purpose": "numerical value-error diagnostics only",
+    "mapping": "one nonnegative scalar slope and shared intercept, no clipping, all20 outputs",
+    "fit": "selected historical inner-OOF scores and original historical mean rewards",
+    "raw_scores_select_service_action": true
+  },
+  "statistics": {
+    "primary_comparisons": [
+      "M3 minus M0_original",
+      "M4 minus M0_original"
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20261113,
+    "resampling": "paired original questions within outerfold x task strata, all methods and3 repeats attached",
+    "primary_weights": "GSM8K50% BBH50%, BBH internally by question",
+    "bbh_subtask_macro": "secondary descriptive",
+    "pvalues": "two-sided centered paired-bootstrap Monte Carlo test, plus-one correction",
+    "multiplicity": "Holm across exactly two primary objective comparisons",
+    "evidence_scope": "conditional reused-development cross-validation with overlapping training histories"
+  },
+  "metrics": {
+    "primary": "real aggregated correctness at raw-score argmax",
+    "pair_rank": "true nonzero mean gap, numerical predicted tie within1e-12 earns half credit; question average and support reported",
+    "competition": "common outer M0_original predicted Top3; any pair touching that set",
+    "numeric_errors": "raw and historical-affine-calibrated both reported",
+    "selection_loss": "max three-repeat empirical mean minus selected empirical mean, not population regret"
+  },
+  "stopping": "positive primary Holm-controlled evidence required for next-phase protocol only; no automatic feedback execution",
+  "physical_llm_calls": 0,
+  "prior_results_modified": false,
+  "solver": {
+    "exact_SPO": "OSQP1.0.4 epigraph convex quadratic program",
+    "dependency_location": "private/dependencies, isolated from shared environment",
+    "workers": 3,
+    "BLAS_threads_per_worker": 1
+  },
+  "qualification_hashes": {
+    "public\\qualification\\E8_QUALIFICATION.json": "a847e54f81a959ba106d6767aae9bba2ad07234e701715d7de0ae8b988574611",
+    "public\\qualification\\ACTUAL_OPERATOR_REVIEW.json": "118acbd0aa85111330b948d59ccac391b1c338261d2f714837ff222867fb6314",
+    "public\\E8_AUTHOR_SPO_OPERATOR_CHECK.json": "8a92e0404548a8930953f4a7c16dd96389d3b07f7a4188536935d63a35fe23b8"
+  },
+  "source_sha256": {
+    "public\\qualification\\e8_assets.py": "c5fc03c5dc381125844263a616a2bf8a80ee21f51490ee65109ef6876ba0b437",
+    "public\\training\\e8_training_v1.py": "0fd7836c90968b3beba83555f1645d8b4982842bce36e6d9b7e1c725ad58eb0f",
+    "public\\training\\run_e8_training_v1.py": "97ac99f447c589c4e3ab962de45ad01ad3fb13af83481cb204ec4ab41cac10b0",
+    "public\\evaluation\\e8_metrics.py": "2d1003d68b0a8bb98e2222a0f901afb860fd3007f98b97d44a14dbed7bcc5578"
+  },
+  "source_lock_sha256": "c35aa68d9bd71365938344ab50d6ace61141fef7fb99e99eb12d293dc47b5690"
+}

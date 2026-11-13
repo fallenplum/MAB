@@ -1,0 +1,54 @@
+{
+  "schema": "E8_independent_frozen_metric_review_v1",
+  "status": "PASS",
+  "frozen_metrics_source_sha256": "2d1003d68b0a8bb98e2222a0f901afb860fd3007f98b97d44a14dbed7bcc5578",
+  "evaluation_IO_source_sha256": "29f8e17c55ab7ac2112ffa6a60804179dcbec6f5c6bc4a86ea6f5c10dc2f7d6b",
+  "actual_new_outer_reward_files_opened": 0,
+  "real_train600_reward_container_opened": 0,
+  "artificial_metrics": {
+    "original_questions": 7,
+    "generation_repeats": 3,
+    "pair_count": 190,
+    "M0_Top3_competitor_pairs_per_question": 54,
+    "maximum_manual_loop_error": 3.3306690738754696e-16,
+    "no_strict_pair_question_returns_NaN_and_explicit_support": true,
+    "exact_and_near_score_tie_action_checks": true,
+    "correction_harm_identity": true,
+    "candidate_independent_shared_competitor_mask": true,
+    "raw_and_calibrated_diagnostics_separated": true,
+    "absolute_and_centered_MSE_target": "observed three-repeat mean vector"
+  },
+  "historical_affine_calibration": {
+    "known_positive_affine_map_recovered": true,
+    "negative_or_zero_score_signal_slope_clamped_zero": true,
+    "collapsed_calibration_never_changes_raw_routing": true
+  },
+  "statistics": {
+    "stratified_original_question_bootstrap": "PASS",
+    "all_methods_and_three_repeats_attached": true,
+    "centered_pvalue_and_percentile_interval_against_independent_loop": "PASS",
+    "Holm_two_primary_comparisons": "PASS",
+    "claim_scope": "conditional development CV with overlapping historical training regions"
+  },
+  "seventy_model_synthetic_fixture": {
+    "status": "PASS",
+    "folds": 5,
+    "variants": 14,
+    "models_restored": 70,
+    "exact_action_restoration": true,
+    "global_question_coverage": 600,
+    "fail_closed_cases": [
+      "incomplete global index rejected",
+      "duplicate or mismatched model variants rejected",
+      "duplicate outer fold rejected",
+      "changed input pack hash rejected",
+      "misaligned evaluation question IDs rejected",
+      "mismatched model receipt variant identity rejected"
+    ],
+    "actual_formal_saved_models_not_opened_by_review": true
+  },
+  "evaluator_reward_access_order": "collect complete frozen index, verify all70 models and calibration, then main alone calls load_historical",
+  "public_private_boundary": "Scores, models, question metrics, IDs and exact calibration coefficients private; public aggregated diagnostics and hashes",
+  "files_modified_by_review": [],
+  "wall_seconds": 2.234141399996588
+}

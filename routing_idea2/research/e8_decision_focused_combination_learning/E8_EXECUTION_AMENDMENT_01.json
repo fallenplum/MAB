@@ -1,0 +1,45 @@
+{
+  "schema": "E8_pre_evaluation_numerical_execution_amendment_v1",
+  "frozen_at_utc": "2026-11-13T15:29:10.514196+00:00",
+  "original_protocol_sha256": "44e8b840544c9c3377bab11f459a281566185da24897dc3b27c2a41d1c9833a3",
+  "reason": "OSQP returned solved inaccurate at fixed200000 iterations for a uniform-true-tie inner fit",
+  "failure": {
+    "inner_questions": 320,
+    "outer_fold": 0,
+    "true_tie_rule": "uniform",
+    "lambda_multiplier": 1,
+    "original_primal_violation": 2.16308e-08,
+    "original_declared_eps": 1e-08,
+    "original_failure_log_preserved": true
+  },
+  "numerical_recovery": {
+    "solver": "Clarabel0.11.1",
+    "exact_problem": "same P,q,A,b epigraph convex SPO+ QP",
+    "tol_gap_abs": 1e-09,
+    "tol_gap_rel": 1e-09,
+    "tol_feas": 1e-09,
+    "max_iter": 1000,
+    "max_threads": 1,
+    "binding": "explicit single solver-function proxy in a new recovery entry point",
+    "scope": "SPO+ fits in the21 previously unsealed variants only",
+    "all_other_training_function_objects_unchanged": true
+  },
+  "preserved_models": 49,
+  "remaining_models": 21,
+  "preserved_artifact_policy": "reuse and verify every prior receipt and its model/prediction hashes",
+  "scientific_parameters": "same historical inputs, reward labels, linear capacity, losses, lambda grid and selected parameters, folds and seeds",
+  "prior_source_files_unchanged": true,
+  "prior_protocol_retained": true,
+  "outer_evaluation_rewards_read": false,
+  "no_new_physical_LLM_calls": true,
+  "limitations": "uniform true-tie sensitivity shows near-zero score margins and solver-dependent exact argmax; interpreted as numerical sensitivity",
+  "source_lock_sha256": "30e223b213aca90f390eecbff84ccf2c9b811f895962907b1a7ff948e8a9c313",
+  "source_hashes": {
+    "public\\training\\e8_recovery_v1.py": "7874e311d7fb32d7610ae174db7fe51645fe0b6b099110629d0912b60dbb6540",
+    "public\\training\\run_e8_recovery_v1.py": "0a5547ea56b589af4f0920e260ca3c86cbfa7cd52a3468004a6f2e82a39724d0"
+  },
+  "qualification_sha256": {
+    "public\\qualification\\CLARABEL_RECOVERY_QUALIFICATION.json": "3cc95cb2118b5ce8e831627a44fde36b872085fdcb7f40472c4a3ccc0e11cef8",
+    "public\\qualification\\CLARABEL_INDEPENDENT_REVIEW.json": "0d2b072a902d84200f845af75b42870e7bb6f8a5c292b13690616ad0fd8d15d4"
+  }
+}
