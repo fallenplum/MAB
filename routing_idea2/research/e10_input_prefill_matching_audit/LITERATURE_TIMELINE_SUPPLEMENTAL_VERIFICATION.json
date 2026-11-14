@@ -1,0 +1,433 @@
+{
+  "schema": "E10_LITERATURE_TIMELINE_SUPPLEMENTAL_VERIFICATION_v1",
+  "created_utc": "2026-11-14T04:35:57.729968+00:00",
+  "frozen_public_candidate_files": [
+    {
+      "path": "E10_LITERATURE_AND_HYPOTHESES.md",
+      "bytes": 7367,
+      "sha256": "93a743092775e1526462bcea9111ed47770349d5d4610ce39a0227dd717b3e70"
+    },
+    {
+      "path": "E9_REVIEW_TIMELINE_CLARIFICATION.json",
+      "bytes": 13698,
+      "sha256": "f2cc8c6c174ce43eb640e1429b977dcb028dcba99d376c40c192ac23a45b1c7b"
+    },
+    {
+      "path": "E9_REVIEW_TIMELINE_CLARIFICATION.md",
+      "bytes": 6153,
+      "sha256": "4f1ef144066fbc47575a8fbd5c51976b3a2f34d796142cfba58fca325f1552b1"
+    }
+  ],
+  "frozen_files_modified_by_supplement": false,
+  "primary_sources": [
+    {
+      "id": "L1",
+      "requested_url": "https://aclanthology.org/2026.findings-acl.1881.pdf",
+      "retrieved_utc": "2026-11-14T04:33:01.011778+00:00",
+      "private_pdf": "L1.pdf",
+      "pdf_bytes": 6485900,
+      "pdf_sha256": "8f4359f7f06f1b660455291f34a5d50f17dfc5f1fd33b7de8588cf52afb0658b",
+      "pdf_pages": 22,
+      "extracted_text": "L1_fulltext.txt",
+      "text_sha256": "ff4c79b15291776aed4054bd2c14a4c8da47de04ed817bb4bbede7ebdf67924b",
+      "anchors": [
+        {
+          "anchor": "Table 6:",
+          "pdf_pages_1based": [
+            7
+          ]
+        }
+      ],
+      "response_headers": [
+        {
+          "path": "private/literature/L1_transfer_chunks/00000000-00262143.headers.txt",
+          "bytes": 293,
+          "sha256": "09c03d950db42def11bf8f753efeca882f23366b18077807695dadd24fa93119"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/00262144-00524287.headers.txt",
+          "bytes": 298,
+          "sha256": "e8a0f6e759cf775f280856cca0b93a3a36a437efd2e8f75464f8bccdb9827b2d"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/00524288-00786431.headers.txt",
+          "bytes": 298,
+          "sha256": "04afc0348e16a7e182ca8ff84812f52f38d40ea67e75eaf045d4f997125573c2"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/00786432-01048575.headers.txt",
+          "bytes": 299,
+          "sha256": "aedd8bd89d55ec3b44da2b2399df47f540c83cfa288a45816d3cff4d15dd9d83"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/01048576-01310719.headers.txt",
+          "bytes": 300,
+          "sha256": "b2a0a36b07033878963e486f7a1d86e8045067618b9d44b55358ca27a08ef6ef"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/01310720-01572863.headers.txt",
+          "bytes": 300,
+          "sha256": "7cbd532d04ebc8ba156c94233c343adfc34d5b01c4b58ecf056074e9dd9e7b9b"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/01572864-01835007.headers.txt",
+          "bytes": 300,
+          "sha256": "b55c8f72064aa93bf6a601587768b33081c5d1b2b399d118a87f79bbc7fd597e"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/01835008-02097151.headers.txt",
+          "bytes": 300,
+          "sha256": "41fefaca82b8d4ee1bbc1fe22ccb507e76cfe978f378ea225919cb9711eda903"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/02097152-02359295.headers.txt",
+          "bytes": 300,
+          "sha256": "a9d69baa544ce8e2c08578e0d6c56e2bb82219281a51155da1ca1182f19205e7"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/02359296-02621439.headers.txt",
+          "bytes": 300,
+          "sha256": "41bdecee0bb8f9ecbe9110416c10df9bfa5e0facaaaf970763de1fcb104224e6"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/02621440-02883583.headers.txt",
+          "bytes": 300,
+          "sha256": "e5760f5a235133163e18700ffd403bceaa4bd4e17431660bc1058da0e1c85755"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/02883584-03145727.headers.txt",
+          "bytes": 300,
+          "sha256": "663fe27b05629d53b1b0849c74d3567481a7bd03ee78b364776f1640bb37cd07"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/03145728-03407871.headers.txt",
+          "bytes": 300,
+          "sha256": "404976ac2c3899852ce7058f7b2690552b6098d112b2088bd178316a2ee05cd1"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/03407872-03670015.headers.txt",
+          "bytes": 300,
+          "sha256": "1e2b13623f6bb2a5c1cda4cae166e299d5ccabc1e6cbeef059626d2de0d82a3b"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/03670016-03932159.headers.txt",
+          "bytes": 300,
+          "sha256": "62db8f50c7ca954dcdd979ed3c9b9ae90c891c56244ba484bb5b62e9e90cd759"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/03932160-04194303.headers.txt",
+          "bytes": 300,
+          "sha256": "a418d6c211cf2104241cf0c5b697e75810b7e12d1f603022f118f274d1e29532"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/04194304-04456447.headers.txt",
+          "bytes": 300,
+          "sha256": "e27dd47283608533f1a27600fb0628313fadbe6ccc5785fe8761fdd34a077adf"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/04456448-04718591.headers.txt",
+          "bytes": 300,
+          "sha256": "e7542d327aa2f8c9e95abd3f0cde9f6529bd8767d6cc6ea3d8d7cf4404a134c9"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/04718592-04980735.headers.txt",
+          "bytes": 300,
+          "sha256": "4a075595c1b8c30a137021b3a214899aa630d183cabcbeef28d9c35b582637b9"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/04980736-05242879.headers.txt",
+          "bytes": 300,
+          "sha256": "37c6af459e100850e904913ae30dbd48fb5cb218febd9e592832ed5181278f08"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/05242880-05505023.headers.txt",
+          "bytes": 300,
+          "sha256": "ec016aa744f48616c936777f8456d28e84c271b500806492fb1be73a926772cc"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/05505024-05767167.headers.txt",
+          "bytes": 300,
+          "sha256": "b5f11b2f198fe12f733454b6fe83ea8b6e46f36280431eb04d696c4a6d158061"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/05767168-06029311.headers.txt",
+          "bytes": 300,
+          "sha256": "3073963a4fdef0b4ee2fa2b9fec59bb6e64c14c02eedcb00e7a21a950d71ad50"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/06029312-06291455.headers.txt",
+          "bytes": 300,
+          "sha256": "39c0f28f8d9333983133bb483c0aa50c77cbe2af99a632805720934f3284a6dd"
+        },
+        {
+          "path": "private/literature/L1_transfer_chunks/06291456-06485899.headers.txt",
+          "bytes": 300,
+          "sha256": "72f91d4325d5578bc3734f453013e604f3214637ec6545836376baa8e68b8c36"
+        }
+      ],
+      "http_final_status_per_transfer": [
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206,
+        206
+      ]
+    },
+    {
+      "id": "L2",
+      "requested_url": "https://arxiv.org/pdf/2603.20895v3",
+      "retrieved_utc": "2026-11-14T04:33:01.252565+00:00",
+      "private_pdf": "L2.pdf",
+      "pdf_bytes": 1549947,
+      "pdf_sha256": "5d5bb018fc2b68447ed036406e075d34f9d216f0101a008e09511bb94da20dcf",
+      "pdf_pages": 30,
+      "extracted_text": "L2_fulltext.txt",
+      "text_sha256": "34bb79769d9d4cddb618b14200e5c1a8bcde7643474fef3f8d6760e96197bab6",
+      "anchors": [
+        {
+          "anchor": "3.1 Prefill router",
+          "pdf_pages_1based": [
+            3
+          ]
+        },
+        {
+          "anchor": "End-to-End Routing Cost and Latency",
+          "pdf_pages_1based": [
+            28
+          ]
+        }
+      ],
+      "response_headers": [
+        {
+          "path": "private/literature/L2.pdf.http-headers.txt",
+          "bytes": 768,
+          "sha256": "cb991d5f9b850f7b14d5fa39674dddb05f8fd68f81b9049317eb8ae39ac82c31"
+        }
+      ],
+      "http_final_status_per_transfer": [
+        200
+      ]
+    },
+    {
+      "id": "L3",
+      "requested_url": "https://arxiv.org/pdf/2509.10625v3",
+      "retrieved_utc": "2026-11-14T04:33:01.571997+00:00",
+      "private_pdf": "L3.pdf",
+      "pdf_bytes": 1311683,
+      "pdf_sha256": "f0421d8dd919fa5ad66e514c59ccbaf6ff156a0d4f489c8dde1a80deac9cb348",
+      "pdf_pages": 25,
+      "extracted_text": "L3_fulltext.txt",
+      "text_sha256": "c9f8e3049d37b1a676ad2ebb82257dfe224e32b687b0bfefada1559b02806f2f",
+      "anchors": [
+        {
+          "anchor": "4.4 Correctness",
+          "pdf_pages_1based": [
+            5
+          ]
+        },
+        {
+          "anchor": "6 Limitations",
+          "pdf_pages_1based": [
+            9
+          ]
+        },
+        {
+          "anchor": "Table 2:",
+          "pdf_pages_1based": [
+            7
+          ]
+        }
+      ],
+      "response_headers": [
+        {
+          "path": "private/literature/L3.pdf.http-headers.txt",
+          "bytes": 768,
+          "sha256": "f62765bbda6f47f0db0d581be53d9039817010466703e437b21f52860338db76"
+        }
+      ],
+      "http_final_status_per_transfer": [
+        200
+      ]
+    }
+  ],
+  "visual_review": {
+    "status": "PASS",
+    "method": "Rendered source pages opened with view_image and inspected by the reviewing agent.",
+    "reviewed_page_images": [
+      {
+        "path": "private/literature/L1_page_07.png",
+        "bytes": 277473,
+        "sha256": "8a47a789c8e701868950838e2d8d287a4f948657527c47b61545a8ac6f8a9be8"
+      },
+      {
+        "path": "private/literature/L2_page_03.png",
+        "bytes": 239771,
+        "sha256": "0aedb7a7458cf5940286b7aa5eb7b2d737d0623703c6fa4974f24f655d021a0f"
+      },
+      {
+        "path": "private/literature/L2_page_04.png",
+        "bytes": 244467,
+        "sha256": "40ab76a295ec0b666ee178e52763dfa103f76b6c96fa12de90346caad9d928ac"
+      },
+      {
+        "path": "private/literature/L2_page_28.png",
+        "bytes": 168378,
+        "sha256": "7cb711c1c43055ef123d77b6268aac578691945d819292df6d71769824cf61eb"
+      },
+      {
+        "path": "private/literature/L3_page_05.png",
+        "bytes": 207108,
+        "sha256": "3242ba174dac9accad1d6fe90f51b57ecf0e277627e72eb54e5c4fd6eb0dc977"
+      },
+      {
+        "path": "private/literature/L3_page_06.png",
+        "bytes": 231936,
+        "sha256": "e3587aadb3b882ba0c32ebb8b2bb3282e85d2388435333fb753d4c395f51ec6b"
+      },
+      {
+        "path": "private/literature/L3_page_07.png",
+        "bytes": 231713,
+        "sha256": "419bd25752317d95244399cbaeb01cf5ed1e6913ea7b4ba216a21ecdc55a9c31"
+      },
+      {
+        "path": "private/literature/L3_page_09.png",
+        "bytes": 213449,
+        "sha256": "d271c869d6d711bc582c197d581f6f85b30bc356c06a121890243129e98886df"
+      },
+      {
+        "path": "private/literature/L3_page_10.png",
+        "bytes": 230630,
+        "sha256": "b05c4435a18bf0802c4c98e88d4bb7ec6505d68e5df7585bfd66eb7c6ce5709a"
+      }
+    ],
+    "checked_items": [
+      "L1 Table6 row and column identities, values and surrounding discussion",
+      "L2 section3.1 encoder-target distinction, layer/PCA/feature construction, SharedTrunkNet",
+      "L2 AppendixI Tables28/29 cost and latency scope",
+      "L3 section4.4 train/test distinction and in-domain versus transfer limitations",
+      "L3 Table2 GSM8K values and pages9/10 limitations"
+    ]
+  },
+  "additional_review_directory_check": {
+    "sources": [
+      {
+        "source_path": "private/runtime/audit/audit_e9_feature_alignment.py",
+        "sha256": "06c14d813e59f35d0a247410745b736ec348ba4ca799ae9eedd6ff24a637491d",
+        "bytes": 3978
+      },
+      {
+        "source_path": "private/runtime/audit/audit_e9_frozen_heads.py",
+        "sha256": "664e62b2e92857415001bd8a23d3e1f011e794ebcf33dc0cbb3fb53782b61ab0",
+        "bytes": 11861
+      },
+      {
+        "source_path": "private/runtime/audit/check_e9_teachers.py",
+        "sha256": "49294751d358b22438b68c27291c7c31dfe95a1d2486229378edd0801591700d",
+        "bytes": 10366
+      },
+      {
+        "source_path": "private/runtime/audit/E9_ASSET_A_REUSE_QUALIFICATION.json",
+        "sha256": "fa70c0da982915a966c0b382bb8839daaef69753596ca4068b6c75b51e12e773",
+        "bytes": 54445
+      },
+      {
+        "source_path": "private/runtime/audit/E9_ASSET_A_REUSE_QUALIFICATION.md",
+        "sha256": "a0e4a85de5bf12b5fa9f7296c0e53f85f34c0e784832855024ac782767bfba47",
+        "bytes": 2243
+      },
+      {
+        "source_path": "private/runtime/audit/E9_EVALUATION_SOURCE_REVIEW.json",
+        "sha256": "5103772a7ebfa0a9eeaf608556ace80df9c31794a91ee3e3aeee2d7990384d19",
+        "bytes": 2338
+      },
+      {
+        "source_path": "private/runtime/audit/E9_FEATURE_ALIGNMENT_AUDIT.json",
+        "sha256": "89013351f7769a51a0cd436e19e7f8a14dfa57a72aee67af6a3fab640976d297",
+        "bytes": 120016
+      },
+      {
+        "source_path": "private/runtime/audit/E9_FINAL_SCIENTIFIC_REVIEW.json",
+        "sha256": "8157a0bcc31c1bb1f02fa9debe2d54e51d4f0162e82a7337aa3dbbaab9c7ce99",
+        "bytes": 77801
+      },
+      {
+        "source_path": "private/runtime/audit/E9_FINAL_SCIENTIFIC_REVIEW.md",
+        "sha256": "863a03c78d2c4552286b8509e684ad6854ce8b9cdfc7cc2f26c88a1e5e86221d",
+        "bytes": 2830
+      },
+      {
+        "source_path": "private/runtime/audit/E9_FROZEN_HEAD_EXECUTION_AUDIT.json",
+        "sha256": "3d63d7665e5c07420d31859cdf7afb4f36795ee0af173cd73e8cb72d0c8bf283",
+        "bytes": 88786
+      },
+      {
+        "source_path": "private/runtime/audit/E9_INDEPENDENT_CODE_REVIEW.json",
+        "sha256": "251fa28b78c33f64402577cf38acbef0a978be4741634222796f5e33cd6e4a19",
+        "bytes": 2748
+      },
+      {
+        "source_path": "private/runtime/audit/E9_ORCHESTRATOR_REVIEW.json",
+        "sha256": "c4870021c0bb9bf2a3021ab6fcc6057bb4eb004b74fcf51923abdecfdefcccdb",
+        "bytes": 2387
+      },
+      {
+        "source_path": "private/runtime/audit/E9_TEACHER_ARTIFACT_AUDIT.json",
+        "sha256": "babdcd317d55d57b9a067a3a0f3061449a9cf9ad822e8c33e31f27ef2f37b4d8",
+        "bytes": 26215
+      },
+      {
+        "source_path": "private/runtime/audit/qualify_e8_a_reuse.py",
+        "sha256": "6a31dce986028c74a6d75f881baeb5c78b724c25de8aaec0c2c111a8217c28c7",
+        "bytes": 23720
+      },
+      {
+        "source_path": "private/runtime/audit/review_e9_final.py",
+        "sha256": "f19d83c8a5f3b9e78688b98980033295a05f0dd3441e0fed656350b5a17f9bea",
+        "bytes": 21456
+      }
+    ],
+    "found_absolute_review_event_fields": [],
+    "component_source_review": {
+      "original_source_path": "public/E9_INDEPENDENT_CODE_REVIEW.json",
+      "sha256": "251fa28b78c33f64402577cf38acbef0a978be4741634222796f5e33cd6e4a19",
+      "status": "PASS_CURRENT_HEAD_TEACHER_COMMON_SOURCE",
+      "created_utc": "2026-11-13T19:11:24.369187+00:00",
+      "updated_utc": "2026-11-13T19:12:51.620714+00:00",
+      "scope": "Components csce_operators/e9_heads/e9_common/e9_teachers. Formal training entrypoint and actual new teacher artifacts were explicitly deferred.",
+      "interpretation": "Earlier component-source review is preserved. It supplies no completion time for the later orchestrator or evaluation-source review."
+    },
+    "clarification_changes_required": false
+  },
+  "qualification": {
+    "python_ast": "PASS",
+    "json_parse": "PASS",
+    "pdf_hash_recheck": "PASS",
+    "frozen_report_hash_recheck": "PASS"
+  },
+  "access_scope": {
+    "private_npz_payloads_read": 0,
+    "validation_fresh_sealed_reward_reads": 0,
+    "head_or_teacher_refits": 0,
+    "e9_execution_entrypoints_run": 0
+  }
+}

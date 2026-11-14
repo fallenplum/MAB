@@ -1,0 +1,294 @@
+{
+  "schema": "E9_REVIEW_TIMELINE_CLARIFICATION_v1",
+  "appended_utc": "2026-11-14T04:25:01.336250+00:00",
+  "source_experiment_commit": "6502fd62932e91deb35e3b09449506afcf9f7e1c",
+  "historical_artifacts_preserved": true,
+  "reviews": [
+    {
+      "artifact": "E9_ORCHESTRATOR_REVIEW.json",
+      "original_status": "PASS_BEFORE_FORMAL_HEAD_FITS",
+      "review_started_at": null,
+      "review_completed_at": null,
+      "artifact_written_at": {
+        "value": "2026-11-13T19:17:46.404899+00:00",
+        "source_path": "public/E9_ORCHESTRATOR_REVIEW.json",
+        "source_field": "created_utc",
+        "source_sha256": "c4870021c0bb9bf2a3021ab6fcc6057bb4eb004b74fcf51923abdecfdefcccdb"
+      },
+      "artifact_written_at_evidence_kind": "embedded_created_utc_only",
+      "archive_copy_path": "private/runtime/audit/E9_ORCHESTRATOR_REVIEW.json",
+      "archive_copy_sha256": "c4870021c0bb9bf2a3021ab6fcc6057bb4eb004b74fcf51923abdecfdefcccdb",
+      "public_archive_bytes_identical": true,
+      "clarified_status": "当前无法支持，按事后审查解释",
+      "clarified_status_code": "POST_HOC_REVIEW_PRIOR_COMPLETION_UNVERIFIED",
+      "missing_evidence": "Original event-level review start/completion log with an absolute timestamp."
+    },
+    {
+      "artifact": "E9_EVALUATION_SOURCE_REVIEW.json",
+      "original_status": "PASS_BEFORE_FIRST_OUTER_SCORING",
+      "review_started_at": null,
+      "review_completed_at": null,
+      "artifact_written_at": {
+        "value": "2026-11-13T19:27:19.453064+00:00",
+        "source_path": "public/E9_EVALUATION_SOURCE_REVIEW.json",
+        "source_field": "created_utc",
+        "source_sha256": "5103772a7ebfa0a9eeaf608556ace80df9c31794a91ee3e3aeee2d7990384d19"
+      },
+      "artifact_written_at_evidence_kind": "embedded_created_utc_only",
+      "archive_copy_path": "private/runtime/audit/E9_EVALUATION_SOURCE_REVIEW.json",
+      "archive_copy_sha256": "5103772a7ebfa0a9eeaf608556ace80df9c31794a91ee3e3aeee2d7990384d19",
+      "public_archive_bytes_identical": true,
+      "clarified_status": "当前无法支持，按事后审查解释",
+      "clarified_status_code": "POST_HOC_REVIEW_PRIOR_COMPLETION_UNVERIFIED",
+      "missing_evidence": "Original event-level review start/completion log with an absolute timestamp."
+    }
+  ],
+  "execution_timeline": {
+    "first_fit_at": null,
+    "first_fit_at_reason": "FIT_LOG records CPU/wall durations and receipt records freeze time. Absolute fit start is absent.",
+    "first_actual_fit_completed_no_later_than": {
+      "value": "2026-11-13T19:16:07.921613+00:00",
+      "source_path": "private/models/fold0/inner0/B_1/FROZEN_RECEIPT.json",
+      "source_field": "frozen_utc",
+      "source_sha256": "e50f7e120f122779a91954ee4671f43b3912a4204e8adcd8a1c5bfd88968fda6"
+    },
+    "first_actual_fit_log": {
+      "source_path": "private/models/fold0/inner0/B_1/FIT_LOG.json",
+      "source_sha256": "25f4d4c36922ee4aca0a871eb02ab6e232ed65f3d9696fdbf4b82ebac3813608"
+    },
+    "fold_frozen_at": [
+      {
+        "value": "2026-11-13T19:16:16.836875+00:00",
+        "source_path": "private/models/fold0/FOLD_FROZEN_RECEIPT.json",
+        "source_field": "completed_utc",
+        "source_sha256": "067cf57ee0c9cf14b9b7e7a7e1afb4126394ea9ad78b4aa732d9df3157828b8f"
+      },
+      {
+        "value": "2026-11-13T19:18:57.195874+00:00",
+        "source_path": "private/models/fold1/FOLD_FROZEN_RECEIPT.json",
+        "source_field": "completed_utc",
+        "source_sha256": "6a26a5a5f89b0aca8085bda493a026c1649dc7ba601fc15857b89f1aec83496b"
+      },
+      {
+        "value": "2026-11-13T19:18:57.103473+00:00",
+        "source_path": "private/models/fold2/FOLD_FROZEN_RECEIPT.json",
+        "source_field": "completed_utc",
+        "source_sha256": "731f16e3da029cdcd8775ff7fdbd4e59a11afb39303fe937c287c20371f0ca62"
+      },
+      {
+        "value": "2026-11-13T19:19:08.887053+00:00",
+        "source_path": "private/models/fold3/FOLD_FROZEN_RECEIPT.json",
+        "source_field": "completed_utc",
+        "source_sha256": "5fee3c2f66be50d9413049de44636b5c67e554bbf8cc0aa83363cb6132dd0b81"
+      },
+      {
+        "value": "2026-11-13T19:19:08.974626+00:00",
+        "source_path": "private/models/fold4/FOLD_FROZEN_RECEIPT.json",
+        "source_field": "completed_utc",
+        "source_sha256": "2d31c3cf4ded9c5159725a2e94e3b99481ec37a9c1bba16c947763984afc0332"
+      }
+    ],
+    "all_folds_completion_receipt_at": {
+      "value": "2026-11-13T19:19:09.116528+00:00",
+      "source_path": "private/head_execution/ALL_FOLDS_COMPLETE.json",
+      "source_field": "completed_utc",
+      "source_sha256": "387a5569ff9ac985ba5fd64f7fc694a3f87029a8e499465ca91a0f95ba1a0586"
+    },
+    "unified_predictions_frozen_at": {
+      "value": "2026-11-13T19:25:54.081866+00:00",
+      "source_path": "private/EVALUATION_FREEZE_RECEIPT.json",
+      "source_field": "sealed_utc",
+      "source_sha256": "ddaa39b9018dafb6d02b71146d3ff2408fc837a8c160b70eec652d0b7600c0c9"
+    },
+    "first_outer_scoring_at": {
+      "value": "2026-11-13T19:25:54.120852+00:00",
+      "source_path": "private/REWARD_ACCESS_RECEIPT.json",
+      "source_field": "first_outer_evaluator_reward_access_utc",
+      "source_sha256": "645552475581b1ec0f26586df185ac8a973c1d84bfd4fff2ac98acff98b11921"
+    },
+    "prediction_hash_links_match": true,
+    "all_fold_freezes_before_unified_freeze": true,
+    "unified_freeze_precedes_first_outer_scoring": true
+  },
+  "review_timing_interpretation": {
+    "orchestrator_artifact_after_first_completed_fold": true,
+    "evaluation_review_artifact_after_first_outer_scoring": true,
+    "prior_review_completion_supported": false,
+    "data_leakage_established_by_review_creation_times": false,
+    "confidence": "高，限定于原始收据已记录的时序和缺失字段"
+  },
+  "reproduction_evidence": {
+    "scoring_replay_executed_and_verified": true,
+    "published_receipt_models_refitted": false,
+    "published_receipt_source_path": "public/E9_SCORING_REPRODUCTION_VERIFIED.json",
+    "published_receipt_source_sha256": "cc0d4bb47bff503371af992c0042b2cb27dff1899a4a6e6e433968063fe87b9d",
+    "full_refit_entry_exists_source_reviewed": true,
+    "full_refit_actually_executed": null,
+    "full_refit_evidence_status": "NO_EXECUTION_RECEIPT_FOUND_IN_CHECKED_REPRODUCTIONS_ARCHIVE",
+    "full_refit_entry_source_path": "public/code/e9_reproduce.py",
+    "full_refit_entry_source_sha256": "5f0e224981261287a1f020a554ff6f2f79562103cefc7301d8022783b90dae47",
+    "checked_run_receipts": [
+      {
+        "source_path": "private/reproductions/scoring-replay_20261113T193550_520419Z/REPRODUCTION_VERIFIED.json",
+        "source_sha256": "b2a3d6a7d0be4ae35dc358b27e36ab96f4dba61976098a6a7a5cdc00df2ea367",
+        "mode": "scoring-replay",
+        "status": "PASS_REPRODUCED",
+        "models_refitted": false,
+        "scientific_metrics_identical": true
+      },
+      {
+        "source_path": "private/reproductions/scoring-replay_20261113T195124_741314Z/REPRODUCTION_VERIFIED.json",
+        "source_sha256": "cc0d4bb47bff503371af992c0042b2cb27dff1899a4a6e6e433968063fe87b9d",
+        "mode": "scoring-replay",
+        "status": "PASS_REPRODUCED",
+        "models_refitted": false,
+        "scientific_metrics_identical": true
+      }
+    ],
+    "this_audit_reexecuted_e9": false
+  },
+  "wrapper_layout": {
+    "purpose": "Historical stage orchestration sources, archived in original stage-relative layout at private/runtime.",
+    "public_layout": "public/code and public/orchestration are siblings.",
+    "stage_dependency": "Wrappers derive code paths from their own parent directory. Original private/runtime/code provides this layout.",
+    "formal_reproduction_entry": "public/code/e9_reproduce.py",
+    "formal_entry_depends_on_stage_wrappers": false,
+    "path_adapter_added": false,
+    "wrappers": [
+      {
+        "source_path": "public/orchestration/assemble_delivery.py",
+        "source_sha256": "c78f3a8011d07f6f835b9a90e5a2cd25bca8a58662cf4529713c3d706817334d",
+        "archived_runtime_path": "private/runtime/assemble_delivery.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 25,
+            "text": "for folder in (STAGE/'code',STAGE/'math/public'):"
+          },
+          {
+            "line": 27,
+            "text": "for folder in (STAGE/'math/public',STAGE/'audit',STAGE/'public_qualification',STAGE/'reports'):"
+          },
+          {
+            "line": 31,
+            "text": "copy_once(STAGE/'reports/build_cost_and_tables.py',PUBLIC/'code/build_cost_and_tables.py')"
+          },
+          {
+            "line": 32,
+            "text": "for name in ('README.md','REPRODUCE.md'):copy_once(STAGE/name,PUBLIC/name)"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/build_all_teachers.py",
+        "source_sha256": "f695724ade73c69f30a7281708a808f95762cf6585c3635a848e91cee34c0e3e",
+        "archived_runtime_path": "private/runtime/build_all_teachers.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 6,
+            "text": "sys.path.insert(0, str(Path(__file__).parent / 'code'))"
+          },
+          {
+            "line": 16,
+            "text": "str(Path(__file__).parent / 'code/e9_teachers.py'), '--fold', str(fold)],"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/freeze_and_evaluate.py",
+        "source_sha256": "b1a08106a9f4443b431f51497ea94e62942061ed45555b559eb4d9f0b0528660",
+        "archived_runtime_path": "private/runtime/freeze_and_evaluate.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 4,
+            "text": "sys.path.insert(0,str(Path(__file__).parent/'code'))"
+          },
+          {
+            "line": 9,
+            "text": "code=Path(__file__).parent/'code/e9_evaluate.py'"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/freeze_heads.py",
+        "source_sha256": "c5889af74713ba7dec6660e4af482ddfd1ad908872837118c916d1204e2a0019",
+        "archived_runtime_path": "private/runtime/freeze_heads.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 4,
+            "text": "sys.path.insert(0,str(Path(__file__).parent/'code'))"
+          },
+          {
+            "line": 10,
+            "text": "stage=Path(__file__).parent"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/initialize_e9.py",
+        "source_sha256": "8a2dd0055735b11d92a37f0ff5fa8c4ee65f89291a39ff5c6c43d079dc6465a0",
+        "archived_runtime_path": "private/runtime/initialize_e9.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/qualify_and_start_teachers.py",
+        "source_sha256": "f419de66fba9b892e3344f142e511500d67968ecd7ba6528b160e98da7fba6a9",
+        "archived_runtime_path": "private/runtime/qualify_and_start_teachers.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 4,
+            "text": "sys.path.insert(0, str(Path(__file__).parent / 'code'))"
+          },
+          {
+            "line": 14,
+            "text": "code = Path(__file__).parent / 'code'"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      },
+      {
+        "source_path": "public/orchestration/train_remaining_folds.py",
+        "source_sha256": "c694c39f47e35bffd0d19508732ff41be12d65c82c0dfe70fb98e8f3b9cde6f4",
+        "archived_runtime_path": "private/runtime/train_remaining_folds.py",
+        "archived_runtime_bytes_identical": true,
+        "stage_relative_dependencies": [
+          {
+            "line": 6,
+            "text": "sys.path.insert(0,str(Path(__file__).parent/'code'))"
+          },
+          {
+            "line": 15,
+            "text": "result=subprocess.run([sys.executable,'-B','-X','utf8',str(Path(__file__).parent/'code/e9_train.py'),"
+          }
+        ],
+        "published_orchestration_code_subdirectory_exists": false,
+        "archived_runtime_code_subdirectory_exists": true
+      }
+    ]
+  },
+  "audit_scope": {
+    "head_receipt_and_fit_log_pairs_read": 195,
+    "private_npz_payloads_read": 0,
+    "validation_fresh_sealed_reward_reads": 0,
+    "new_head_or_teacher_fits": 0,
+    "e9_entry_points_executed": 0,
+    "source_paths_are_relative_to_original_e9_root": true,
+    "absolute_filesystem_metadata_used_as_historical_time": false
+  }
+}

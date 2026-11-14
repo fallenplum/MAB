@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FROZEN_INFERENCE_ONLY",
+  "created_utc": "2026-11-14T04:52:20.094932+00:00",
+  "independent_questions": 600,
+  "repeats": 10,
+  "timed_inference_events": 6000,
+  "new_fits": 0,
+  "new_prefill": 0,
+  "source_sha256": "0ed5f903299cd6570eb2345764fdd242ca9f03755863f1367eda1b0b8c6138ef",
+  "scope": "float32-to-float64 plus frozen PCA16/standardizer/penalized-linear-head score and semantic argmax, excludes feature extraction and asset reads",
+  "cpu_seconds": 4.578125,
+  "whole_profile_wall_seconds": 5.062774399993941,
+  "latency_seconds": {
+    "min": 3.409999771974981e-05,
+    "p50": 8.009999874047935e-05,
+    "p95": 0.00012520499294623735,
+    "max": 0.001433699973858893
+  },
+  "mean_latency_seconds": 8.248901644644017e-05,
+  "maximum_restoration_error": 9.992007221626409e-16,
+  "process_peak_ram_bytes": 151289856,
+  "peak_scope": "this standalone profiling process, includes imports and feature/model arrays"
+}

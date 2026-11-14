@@ -1,0 +1,220 @@
+{
+  "schema": "MAB_E10_FIXED_INPUT_PREFILL_MATCHING_v1",
+  "status": "FROZEN_BEFORE_E10_OUTCOME_ANALYSIS",
+  "evidence_status": "EXPLORATORY_REUSED_TRAIN600",
+  "parent_commit": "6502fd62932e91deb35e3b09449506afcf9f7e1c",
+  "branch": "codex/e10-input-prefill-matching-audit",
+  "task_sha256": "0c5ae598adb91e7d236e2c88805889328019c0e72a94057f50f49d6c2a43071f",
+  "data": {
+    "questions": 600,
+    "gsm8k": 300,
+    "bbh": 300,
+    "generation_seeds": [
+      42,
+      137,
+      2024
+    ],
+    "actions": 20,
+    "members": 6,
+    "K": 3,
+    "train_input_sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+    "fold_sha256": "6b433dcd2d8e6cd9938d2dd2d97261e18c3ae3d18325d7a04c6590e4d0600d50",
+    "outer_folds": 5,
+    "history_per_fold": 480,
+    "evaluation_per_fold": 120,
+    "validation200_outcomes_allowed": false,
+    "fresh400_outcomes_allowed": false,
+    "sealed200_outcomes_allowed": false
+  },
+  "stages": [
+    "P0 provenance and coverage",
+    "P1 frozen policy matching",
+    "P2 fixed prefill and sealed heads",
+    "P3 single primary evaluation and stop decision"
+  ],
+  "P1": {
+    "policies": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "NS"
+    ],
+    "reward_unit": "question x three-generation mean x action",
+    "coarse": [
+      "outerfold",
+      "task"
+    ],
+    "fine": [
+      "outerfold",
+      "task",
+      "subtask"
+    ],
+    "gsm8k_one_fine_group_per_fold": true,
+    "mixture": "exact group action-frequency expectation",
+    "group_supports_required": true,
+    "no_formal_randomization_or_content_pvalues": true,
+    "invariances": [
+      "enumerated assignment mean",
+      "singleton and one-action zero",
+      "action rename",
+      "question common shift",
+      "group-action common shift"
+    ]
+  },
+  "prefill": {
+    "model_id": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "checkpoint_source": "same original frozen member checkpoint, P0 complete file-SHA verification",
+    "loader": "AutoModel transformer backbone, lm_head unused",
+    "dtype": "float16",
+    "quantization": "nf4 double quant",
+    "bnb_compute_dtype": "float16",
+    "attention": "sdpa",
+    "evaluation_mode": true,
+    "inference_mode": true,
+    "original_transformer_blocks": 36,
+    "target_block_one_based": 24,
+    "hidden_states_index": 24,
+    "extraction": "last nonpadding input token, raw block24 output before final RMSNorm",
+    "formal_execution": "qualified stop at block24, unexecuted blocks removed after synthetic qualification",
+    "vector_dtype": "float32",
+    "vector_l2_normalized": true,
+    "hidden_dimensions": 4096,
+    "formal_batch_size": 1,
+    "tokenization": {
+      "input": "canonical raw question only",
+      "chat_template": false,
+      "add_special_tokens": true,
+      "truncation": false,
+      "padding_side": "left",
+      "empty_pad_token_fallback": "eos",
+      "maximum_context": 40960
+    },
+    "r_match": {
+      "enabled": true,
+      "n_truncated": 6,
+      "expected_formal_processing": 606,
+      "content": "old frozen tokenizer offset-verified visible prefix",
+      "nontruncated_reuse": true
+    },
+    "qualification": {
+      "full_hidden_states_vs_hook_exact": true,
+      "full36_vs_stop24_exact": true,
+      "removed_layer_prefix_vs_resident_exact": true,
+      "padding_and_batch_l2_max": 0.005,
+      "padding_and_batch_cosine_min": 0.99998,
+      "qualification_forward_batches": 6,
+      "qualification_question_events": 10,
+      "qualification_answer_tokens": 0
+    }
+  },
+  "heads": {
+    "target": "original empirical three-generation mean aggregated correctness",
+    "input_metadata": false,
+    "pca": 16,
+    "pca_solver": "full",
+    "standard_scaler": true,
+    "preprocessing_scope": "outer history480 only",
+    "constant_column": true,
+    "constant_penalized": true,
+    "parameters": 340,
+    "outputs": 20,
+    "loss": "sum squared errors /(n*20)",
+    "regularization": "100*10/(3*n*20)",
+    "raw_alpha": 1000,
+    "inner_search": false,
+    "semantic_action_ties": true,
+    "main_heads": 5,
+    "content_control_heads": 15,
+    "match_heads": 5,
+    "new_teachers": 0,
+    "content_seeds": [
+      20261114091,
+      20261114092,
+      20261114093
+    ],
+    "content_permutation": "whole 20-action x3-generation reward blocks within task/BBH-subtask and legal history"
+  },
+  "evaluation": {
+    "primary": "R_full-A",
+    "secondary": [
+      "R_match-A",
+      "R_full-R_match",
+      "R_full-GlobalFixed",
+      "R_full-NS"
+    ],
+    "all_predictions_and_15_controls_frozen_before_scoring": true,
+    "task_weights": {
+      "gsm8k": 0.5,
+      "bbh": 0.5
+    },
+    "task_internal_weights": "question-uniform",
+    "bootstrap_unit": "original question, keep all generations and methods",
+    "bootstrap_strata": [
+      "outerfold",
+      "task"
+    ],
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261114101,
+    "interval": "ordinary paired95 conditional on fitted reused-development models",
+    "primary_p": "two-sided centered bootstrap",
+    "primary_family_size": 1,
+    "content_controls": "three fixed sensitivity controls, no formal permutation p",
+    "matching": "same analytic P1 decomposition",
+    "truncation_subsets": "descriptive only",
+    "confirmation_planning": {
+      "candidates": 1,
+      "test": "fixed-time one-sided",
+      "alpha": 0.05,
+      "power": 0.8,
+      "true_effect_target": 0.01,
+      "null_margin": 0,
+      "paired_variance": "new candidate minus A, question-level development plug-in"
+    }
+  },
+  "go": {
+    "all_required": true,
+    "point_gain_minimum": 0.01,
+    "paired95_lower_strictly_positive": true,
+    "fine_matching_strictly_positive": true,
+    "fine_matching_difference_vs_A_strictly_positive": true,
+    "above_mean_three_controls_strictly_positive": true,
+    "source_mapping_cost_audits_pass": true,
+    "authorizes": "independent confirmation protocol design only"
+  },
+  "costs": {
+    "new_gold": 0,
+    "new_answer_generations": 0,
+    "new_aggregations": 0,
+    "new_teachers": 0,
+    "prefill_is_real_compute": true,
+    "formal_expected_question_events": 606,
+    "record": [
+      "input tokens",
+      "batches",
+      "question processing",
+      "GPU event elapsed",
+      "wall",
+      "VRAM peak",
+      "load time",
+      "hardware",
+      "cache reuse",
+      "failed attempts",
+      "online increment"
+    ],
+    "common_history": "600 gold,10800 members,36000 aggregations, shared complete supervision"
+  },
+  "stop": "If GO fails without specific technical defect, stop this fixed representation/PCA16/Ridge candidate without extra models, layers, losses, tuning or new outcomes",
+  "implementation_choices_not_literature_optima": [
+    "block24 single layer",
+    "PCA16",
+    "Ridge multiplier10",
+    "fixed thresholds"
+  ],
+  "evidence_tiers": [
+    "computed and privately replayable",
+    "public summary/hash supported without external refit",
+    "mechanism hypotheses and future work"
+  ]
+}

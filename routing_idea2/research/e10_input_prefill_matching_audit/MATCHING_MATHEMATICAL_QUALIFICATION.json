@@ -1,0 +1,107 @@
+{
+  "status": "PASS_SYNTHETIC_MATHEMATICAL_QUALIFICATION",
+  "created_utc": "2026-11-14T04:23:16.606687+00:00",
+  "scope": "small deterministic matrices only",
+  "real_reward_values_decoded": false,
+  "real_train600_decomposition_executed": false,
+  "tolerance": 5e-13,
+  "checks": [
+    {
+      "name": "enumerated_all_count_preserving_permutations_equal_analytic_mix",
+      "passed": true,
+      "maximum_absolute_residual": 5.551115123125783e-17,
+      "details": {
+        "row_permutations": 24,
+        "distinct_action_assignments": 12,
+        "exact_rational_permutation_mean": "11/30",
+        "analytic_value": 0.3666666666666667
+      }
+    },
+    {
+      "name": "single_action_groups_and_singleton_groups_have_zero_matching_gain",
+      "passed": true,
+      "maximum_absolute_residual": 0.0,
+      "details": {
+        "single_action_questions": 4,
+        "singleton_groups": 4,
+        "checked_views": "overall, task, generation, outerfold, BBH subtask"
+      }
+    },
+    {
+      "name": "action_coordinate_relabeling_preserves_every_metric",
+      "passed": true,
+      "maximum_absolute_residual": 0.0,
+      "details": {
+        "new_column_old_indices": [
+          2,
+          0,
+          1
+        ],
+        "actions_remapped_by_inverse": true
+      }
+    },
+    {
+      "name": "arbitrary_question_common_offsets_preserve_matching_gain",
+      "passed": true,
+      "maximum_absolute_residual": 2.220446049250313e-16,
+      "details": {
+        "question_offsets": [
+          -0.7,
+          0.4,
+          2.2,
+          -1.9,
+          1.1,
+          0.0,
+          3.2,
+          -4.1
+        ]
+      }
+    },
+    {
+      "name": "arbitrary_group_action_offsets_preserve_matching_gain",
+      "passed": true,
+      "maximum_absolute_residual": 4.440892098500626e-16,
+      "details": {
+        "separate_checks": [
+          "coarse offsets/coarse gain",
+          "fine offsets/fine gain"
+        ]
+      }
+    },
+    {
+      "name": "unequal_task_counts_still_assign_each_task_half_mass",
+      "passed": true,
+      "maximum_absolute_residual": 0.0,
+      "details": {
+        "task_counts": {
+          "bbh": 5,
+          "gsm8k": 3
+        },
+        "task_mass": {
+          "bbh": 0.5,
+          "gsm8k": 0.5
+        }
+      }
+    },
+    {
+      "name": "coarse_to_fine_decomposition_identity_all_views",
+      "passed": true,
+      "maximum_absolute_residual": 0.0,
+      "details": {
+        "identity": "G_coarse = (V_mix_fine - V_mix_coarse) + G_fine"
+      }
+    },
+    {
+      "name": "sum_of_within_group_covariances_equals_matching_gain",
+      "passed": true,
+      "maximum_absolute_residual": 8.326672684688674e-17,
+      "details": {
+        "covariance_denominator": "n_g"
+      }
+    }
+  ],
+  "sources": {
+    "qualify_e10_matching.py": "61fb081ad32e0164d862d84aadfe6b82148a325e96a61aa9366e235c207a77bb",
+    "e10_matching.py": "b06f743d323ac7ac55a2fbd665f2b986f8155aa84c3f20cd1a288a208f76d199"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "synthetic_texts": 2,
+  "forward_batches": 6,
+  "full36_batches": 1,
+  "stop24_batches": 5,
+  "synthetic_question_processing_events": 10,
+  "target_block_one_based": 24,
+  "hidden_states_index": 24,
+  "location": "block24 output before block25 and before final RMSNorm",
+  "comparisons": [
+    {
+      "name": "hook_vs_hidden_states24",
+      "maximum_absolute_error": 0.0,
+      "exact": true
+    },
+    {
+      "name": "full36_vs_stop24_same_batch",
+      "maximum_absolute_error": 0.0,
+      "exact": true
+    },
+    {
+      "name": "left_vs_right_padding",
+      "maximum_absolute_error": 0.00020420551300048828,
+      "maximum_l2_error": 0.001432789140380919,
+      "minimum_cosine": 0.9999990463256836
+    },
+    {
+      "name": "batch_vs_single",
+      "maximum_absolute_error": 0.0002860426902770996,
+      "maximum_l2_error": 0.0018270935397595167,
+      "minimum_cosine": 0.9999982714653015
+    },
+    {
+      "name": "removed_unexecuted_layers_vs_full_resident",
+      "exact": true,
+      "maximum_absolute_error": 0.0
+    }
+  ],
+  "wall_seconds": 1.1906027999939397,
+  "exact_full_vs_early_required": true,
+  "numeric_padding_l2_tolerance": 0.005,
+  "numeric_padding_cosine_minimum": 0.99998,
+  "answer_tokens_generated": 0,
+  "synthetic_input_tokens": 70,
+  "created_utc": "2026-11-14T04:43:47.788866+00:00",
+  "source_sha256": "e4b07c81c5c188b3e5fd5b94fc36d583839d9a5359c947ea44fe18fb068356cc",
+  "protocol_sha256": "13e62aadee7ab124ef299dc81416986e26592c71716b91a0f85751e99f0d47bd",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_load_wall_seconds": 548.36441010001,
+  "model_load_peak_allocated_bytes": 5018019840,
+  "model_load_peak_reserved_bytes": 5039456256,
+  "gpu_seconds": 1.39402783203125,
+  "total_qualification_wall_seconds": 1.39891789999092,
+  "gpu_timing_scope": "CUDA event elapsed interval including intervening host scheduling, not sum of kernel durations",
+  "torch_version": "2.4.1+cu121",
+  "transformers_version": "4.51.3",
+  "bitsandbytes_version": "0.48.2",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}
