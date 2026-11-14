@@ -1,0 +1,16 @@
+{
+  "label": "EXPLORATORY_CROSS_BUDGET_SAME_QUESTIONS",
+  "n": 240,
+  "L2_minus_L1_pp": -0.05555555555555555,
+  "L1_package_budget": 240,
+  "L2_package_budget": 480,
+  "gold_each": 240,
+  "new_fits": 0,
+  "model_selection_uses_this_result": false,
+  "source": "existing locked B predictions only",
+  "generation_direction": [
+    -9,
+    4,
+    -4
+  ]
+}
