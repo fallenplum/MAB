@@ -1,0 +1,122 @@
+{
+  "schema": "E14_three_controlled_mechanism_diagnostics_v1",
+  "evidence": "REUSED_TRAIN600_EXPLORATORY_DEVELOPMENT",
+  "base_branch": "codex/e13-partial-combination-feedback",
+  "base_commit": "0114a7f744eb39aff24e7e2eb2dbb82af66cdd82",
+  "branch": "codex/e14-controlled-mechanism-diagnostics",
+  "original_questions": 600,
+  "outer_folds": 5,
+  "history": 480,
+  "evaluation": 120,
+  "logger_seeds": [
+    17,
+    29,
+    43
+  ],
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "gold_checkpoints": [
+    60,
+    120,
+    240,
+    300,
+    360,
+    480
+  ],
+  "primary_view": {
+    "scenario": "Pair",
+    "gold": 120,
+    "token_anchor_main_gold": 120
+  },
+  "diagnosis_A": {
+    "intervention": "replace predicted group by true group in the same frozen capability table",
+    "methods": [
+      "Group",
+      "GroupResidual",
+      "SaveRouterFixedMask",
+      "TaskFixed",
+      "SubtaskFixed"
+    ],
+    "retrained_models": 0,
+    "oracle_only": true,
+    "group_residual": "hold residual coefficients and all preprocessing fixed",
+    "prior_fixed_baselines": "same original empirical tables; never substitute these for Group C"
+  },
+  "diagnosis_B": {
+    "learner_updates": 0,
+    "target": "E120 only; no history self-evaluation",
+    "support_unit": "distinct purchased history question per group/action within one generation",
+    "support_bins": [
+      "0",
+      "1",
+      "2",
+      "3-4",
+      "5-9",
+      "10+"
+    ],
+    "group_intervention": "true group isolates capability estimation; oracle diagnostic only",
+    "heldout_targets": "matching-generation binary reward and three-generation empirical mean separately",
+    "empty_heldout_group": "undefined/null",
+    "causality": "descriptive support-error association"
+  },
+  "diagnosis_C": {
+    "token_source": "sum complete executed logger_service + feedback resource ledgers",
+    "target": "actual Main tokens at six original checkpoints",
+    "pair_matching": "longest complete original-order executed Pair prefix at or below target",
+    "indivisible_feedback_packages": true,
+    "ranking_by_rewards": false,
+    "actual_token_equality": "discrete residual spend gap always reported; no accuracy interpolation",
+    "existing_learners": [
+      "Raw",
+      "Group",
+      "GroupResidual",
+      "RawCentered",
+      "SaveRouterFixedMask",
+      "GlobalFixed",
+      "TaskFixed",
+      "SubtaskFixed"
+    ],
+    "own_alpha": 1000.0,
+    "task_pseudocount": 10.0,
+    "subgroup_pseudocount": 3.0,
+    "saverouter": "same pinned E13 native estimator/profile",
+    "retraining_scope": "same fixed learners on already executed selected prefixes; no new algorithm",
+    "maximum_new_prefix_fits": 270,
+    "main_snapshots": "reuse existing E13 actions",
+    "cost_scope": "historical executed cost replay; new physical calls zero",
+    "prospective_budget_guarantee": false
+  },
+  "statistics": {
+    "primary_weights": "GSM8K/BBH each 50%; BBH question weighted",
+    "repeated_measurements": "logger and generation repetitions within the same original question",
+    "independent_questions": 600,
+    "confidence_intervals": false,
+    "bootstrap": false,
+    "hypothesis_tests": false,
+    "task_and_seed_directions": true
+  },
+  "new_physical_llm_calls": 0,
+  "fresh400_reads": 0,
+  "sealed200_reads": 0,
+  "source_hashes": {
+    "capability_diagnostic.py": "4b148f1d2ff7ff8138e191b90c6d386be8abd130318b0c6ce979ad350d083065",
+    "e14_common.py": "a528c142b0d67e53c2c3cee2501fa9cd06f16f7da1193cd64dfc53608d035520",
+    "evaluate_e14.py": "fceb1a15378a586bf5e2cac529c05ae25bf10413504a2b27336e2727fd7c0bc5",
+    "finalize_e14.py": "628f5043fdedf32682544d1b17ff6b0cc1aea5c9c2d90db4f01edf2bedae0513",
+    "run_e14.py": "ca89398ec6a58db585134ff8f19678e270396d4b2454801cc940fd75bf5cb31a",
+    "token_matching.py": "228d2eeb40c86bdc3e3a5828cecde24afb964e4e5d9f9e0fc5cc0b7dbeccda44",
+    "tests\\test_capability_diagnostic.py": "ab27d2570ed04eef1295b41b9a05152f0bb121ad41792a9043c4eda6e1701fad",
+    "tests\\test_interventions.py": "3d9b77d4659a33b0f9b70424db98b2a1a6feca41973fed80c1af70f460b800e8",
+    "tests\\test_token_matching.py": "e43a7e13b2d6515feafcb901602d30e8641b080743836f4469b19efa6aa9cd74"
+  },
+  "protected_input_manifest_sha256": "e242230b90d6b84248b48023ed1af679c925b0b4e6b416affa90bb3626355952",
+  "limitations": [
+    "repeatedly exposed development assets",
+    "three generation repetitions",
+    "true group is privileged",
+    "cost matching is retrospective and discrete"
+  ]
+}
