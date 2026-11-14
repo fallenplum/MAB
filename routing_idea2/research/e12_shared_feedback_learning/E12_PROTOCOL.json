@@ -1,0 +1,205 @@
+{
+  "schema": "E12_shared_feedback_six_total_budgets_v1",
+  "evidence": "EXPLORATORY_REUSED_TRAIN600",
+  "created_utc": "2026-11-14T07:04:15.338806+00:00",
+  "parent_commit": "84af4c1bcc63389f9ef9224680292a0e33fb212c",
+  "branch": "codex/e12-shared-feedback-learning",
+  "task_sha256": "177b80cd060e5e2ebccafaf8468f53a27df72532f93273bd74b7a5a2fa8bc9b4",
+  "source_sha256": "7d8e186e66243448d2eeaf80b53e9add981a98543ea0cab5197a828b2ff84d70",
+  "source_assets": {
+    "E7_splits": "48e631682448fca1cd6d53dd2c2c29dadda33cdbeb86d136ae3379a74a94f29a",
+    "prefill_features": "4235fe7a68fd95bd128c6c34543d0c142986e53dcc886182bf5687f058bc3d19",
+    "E10_predictions": "728a83c7c03a1765944818f2d423c0b93dce4b32aebd88d0676762d2de3c476e",
+    "E11_predictions": "a1941690940bf2fc4d9b655f22c2f320e5d6f839826eca21851a9c77c099f3a0",
+    "E9_background": "d8ac242dfa0af454d5b2d3603d8c5fb9383ac07c3873c5cfde8981bc8c1ddc8e",
+    "M_model0": "89f39c048de93e6fdbd1df2ad1332688bc2fda6b557b801b3b8fe5217511f399",
+    "M_model1": "70c39e4fead519d1b9b9925f4bab64a597c00ea25abc3e90c00b86b183511304",
+    "M_model2": "6dabfc4e069789c81736dd4396b3cb2a8d183acdd950b427a3a98d3f311c2640",
+    "M_model3": "aa3f834cad68e8c6acc8b9d255b730ddd4ceee6d8086969dc7ced9e7c62d3d6e",
+    "M_model4": "d92619522e1fee6ba05e3b941d7aae305b6b7d2211ae5506f5bb92638e8393c2",
+    "P_model0": "52fb40f40f13e3e347a461d51bc2f9dc552f24327c01f78e8b9d1c420df684ae",
+    "P_model1": "655e1500f66cde53ac8898b520fc8a6192dba7696902f297763efda289b544df",
+    "P_model2": "588b0198c6e1e9f3db3e88f7e6130282a02f332ddf5d17ec37679086d6b6b30d",
+    "P_model3": "d05e7005b57a523f374860c2a1cccf5d0f380f1fb65568be64747bc22243a2cc",
+    "P_model4": "75cde64e5c7a546281f5e429b0bdf37f25d36a4b07d53b67331c5e01090a57ff",
+    "Group_model0": "084a010fc5610cc92d87cc8c63ba75d20a60a601aba3c6277332ed190f93243d",
+    "Group_model1": "0d29b6762566ff5aff7cfab66c0df7f8bd16d49858648a71a5c0cd5c08d40bb1",
+    "Group_model2": "fb4f1a4a71b608cfff73f92288ac13d54eb4d27df7a5acb6fd3763e6969b9b65",
+    "Group_model3": "67ac2cc99e0095a0d1166c003ab340364b252d4a4aee419c16d89ba50f8fb568",
+    "Group_model4": "c60d19039f17c38a76aec5a5f321f36f7017cc913a8399c9386953c8fac8e69a",
+    "RBF_predictions0": "ade1051e56a90ed90104c9579687914235b55306a9a1d77bf829b789ed03007d",
+    "RBF_predictions1": "d6bfe7c3b5d35e8bf697e8decebf8528181c64d66ed7475f75d565d4960bb439",
+    "RBF_predictions2": "e1b360f247fa266f42c90ce914ab6143780fe97101e95ed4bcec8f6201f1630a",
+    "RBF_predictions3": "aa1f95e698a21997d9100415ff3d54fd9c2adf38256b58de6fab80d8462bbb67",
+    "RBF_predictions4": "9bc86af2377f8b8fe8b047656b662385f423d7fa2c8826fc4f14766abf6b9db9"
+  },
+  "pool": {
+    "questions": 600,
+    "gsm8k": 300,
+    "bbh": 300,
+    "folds": 5,
+    "H": 480,
+    "E": 120,
+    "members": 6,
+    "K": 3,
+    "actions": 20,
+    "generation_seeds": [
+      42,
+      137,
+      2024
+    ],
+    "scoring": "existing V2 true final aggregate correctness"
+  },
+  "budgets": [
+    60,
+    120,
+    240,
+    300,
+    360,
+    480
+  ],
+  "budget_unit": "cumulative distinct original questions with full20x3 feedback",
+  "masks": {
+    "source": "frozen E7 roles",
+    "low_budget_order": "sha256(E7-I-v1|question_id), BBH subtask lexical round-robin",
+    "S60": "30GSM+30BBH",
+    "S120": "60GSM+60BBH",
+    "S240": "original I240",
+    "S300": "I240+original U[:60]",
+    "S360": "I240+original U[:120]",
+    "S480": "original H480",
+    "new_random_seeds": 0,
+    "nested": true,
+    "all_groups": 28,
+    "low_BBH_support": {
+      "60": {
+        "1": 24,
+        "2": 3
+      },
+      "120": {
+        "2": 21,
+        "3": 6
+      },
+      "240": {
+        "4": 15,
+        "5": 12
+      }
+    }
+  },
+  "permissions": {
+    "all_H_text_and_train_group_metadata_visible": true,
+    "only_Y_S_given_to_fitting": true,
+    "evaluation_metadata": "summary only after frozen actions",
+    "validation200_rewards": false,
+    "fresh400_rewards": false,
+    "sealed200_rewards": false,
+    "feedback": "full20 actions x3 original generations per observed original question"
+  },
+  "representations": {
+    "M": "original H480 MiniLM PCA16/Scaler",
+    "P": "E10 H480 complete-question prefill PCA16/Scaler",
+    "new_feature_extraction": 0,
+    "new_PCA_fits": 0,
+    "dimensions": 17,
+    "parameters_per_reward_head": 340,
+    "constant_penalized": true,
+    "eta": "1000/3",
+    "head_selection": "canonical semantic exact tie",
+    "E7_input_difference": "old E7 I240 preprocessing and raw_alpha100 are historical context only"
+  },
+  "methods": [
+    "M_raw",
+    "M_group_all",
+    "P_raw",
+    "P_group_all",
+    "P_group_revealed",
+    "Global_B"
+  ],
+  "primary": "P_group_all(B)-P_raw(B) for all six fixed budgets",
+  "formulas": {
+    "raw": "solve(PhiS.T PhiS+eta I,PhiS.T YS)",
+    "group_mapping": "solve(PhiH.T PhiH+eta I,PhiH.T ZH)",
+    "group_all": "T C_B",
+    "group_revealed": "solve(PhiS.T PhiS+eta I,PhiS.T ZS C_B)",
+    "group_capability": "within-S_B action reward means, no row-probability normalization",
+    "missing_group_fallback": "same-S_B global action mean, record and inspect mask"
+  },
+  "counts": {
+    "reward_free_mapping_solves": 10,
+    "raw_nonfull_solves": 50,
+    "group_revealed_nonfull_solves": 25,
+    "total_linear_solves": 85,
+    "derived_group_all_heads": 60,
+    "reused_full_budget_heads": 15,
+    "main_method_budget_fold_configurations": 150,
+    "Global_B_mean_argmax": 30
+  },
+  "endpoints": {
+    "M_raw_480": "saved A",
+    "P_raw_480": "saved R_full",
+    "P_group_all_480": "saved R_group score/action consistency",
+    "P_group_revealed_480": "saved R_group"
+  },
+  "historical_RBF": {
+    "budgets": [
+      240,
+      300,
+      360,
+      480
+    ],
+    "refits": 0,
+    "source": "E7-B P3 main_predictions",
+    "policy": "np.argmax(scores>=scores.max(-1,keepdims=True)-1e-10,axis=-1)",
+    "alignment": "global_actions[E7_E]=local_actions",
+    "role": "strong existing four-point reference"
+  },
+  "cost": {
+    "per_question_gold": 1,
+    "per_question_member_calls": 18,
+    "per_question_aggregate_calls": 60,
+    "raw_score_values": 60,
+    "mean_targets": 20,
+    "shared_between_methods": true,
+    "nested_budgets": true,
+    "overlapping_folds": "common source cache, not five independent procurements",
+    "physical_new_prefill": 0,
+    "physical_new_answers": 0,
+    "physical_new_aggregations": 0,
+    "physical_new_gold": 0,
+    "deployment_service": "3member+1aggregate per generation, excludes feedback scoring"
+  },
+  "reporting": {
+    "task_weights": {
+      "gsm8k": 0.5,
+      "bbh": 0.5
+    },
+    "within_task": "uniform original questions",
+    "outputs": [
+      "all point curves",
+      "task",
+      "generation",
+      "fold",
+      "BBH support",
+      "corrections and destruction",
+      "within-method changes from own480 actions",
+      "feedback and service cost"
+    ],
+    "first_reaching_targets": [
+      0.8633333333333333,
+      0.8677777777777778
+    ],
+    "AULC": "trapezoidal descriptive six-point area divided by420, RBF only common240..480"
+  },
+  "figure_contract": {
+    "backend": "existing Python matplotlib workflow",
+    "outputs": [
+      "overall six-point budget curve",
+      "two-panel GSM8K/BBH budget curves"
+    ],
+    "actual_points_only": true,
+    "RBF_only_240_to480": true,
+    "labels": "total revealed original questions and final accuracy percent"
+  },
+  "next_step": "interpret group smoothing and supervision propagation separately, choose capability-estimation or partial-action study from observed curves",
+  "scope_boundary": "E12 ends at this full-question-package study, future true partial-action feedback is a separate protocol"
+}
