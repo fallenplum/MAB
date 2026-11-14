@@ -1,0 +1,308 @@
+{
+  "schema": "E13_real_partial_combination_feedback_v1",
+  "evidence": "REUSED_TRAIN600_EXPLORATORY_DEVELOPMENT",
+  "hypothesis": "Task-group statistical sharing uses identical genuinely sparse combination feedback more effectively",
+  "members": 6,
+  "members_per_service": 3,
+  "actions": 20,
+  "aggregator": "original frozen V2 Qwen3-8B",
+  "original_questions": 600,
+  "outerfolds": 5,
+  "history_pool": 480,
+  "evaluation": 120,
+  "budgets": [
+    60,
+    120,
+    240,
+    300,
+    360,
+    480
+  ],
+  "logger_seeds": [
+    17,
+    29,
+    43
+  ],
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "feedback_scenarios": {
+    "Main": "one frozen uniform main combination per revealed question",
+    "Pair": "same main plus one frozen uniform single-member-replacement neighbor"
+  },
+  "feedback_unit": "one question, one generation, one actually executed combination score",
+  "masks": "E12 nested question IDs, uniform hash-based reward-blind logger actions, common to every learner and generation",
+  "feedback_worlds": 90,
+  "snapshots": 540,
+  "input": "frozen H480 MiniLM PCA16/Scaler; ours penalized constant, native SaveRouter implicit unpenalized intercept",
+  "grouping": "g_hat(x)=exact argmax(Phi(x) T_M), using the existing reward-free E12 text/metadata group map",
+  "query_permissions": "text-only for all eight main methods; two true task/subtask oracle diagnostics separately marked",
+  "history_permissions": "all H480 input vectors and task/subtask metadata; only purchased sparse reward tuples",
+  "methods": [
+    "Raw",
+    "Group",
+    "GroupResidual",
+    "RawCentered",
+    "SaveRouterFixedMask",
+    "GlobalFixed",
+    "TaskFixed",
+    "SubtaskFixed",
+    "TaskFixedOracle",
+    "SubtaskFixedOracle"
+  ],
+  "raw": {
+    "alpha_per_single_generation_observation": 1000.0,
+    "penalized_constant": true,
+    "no_observation_action": "zero coefficient prior, never a zero-filled training label"
+  },
+  "group": {
+    "grand": "mean of purchased rewards; empty prior .5",
+    "global_action": "(sum_a+10*grand)/(count_a+10)",
+    "task_action": "(sum_ta+10*global_a)/(count_ta+10)",
+    "bbh_subtask_action": "(sum_ga+3*task_bbh_a)/(count_ga+3)",
+    "gsm": "task capability, no duplicated subtask level",
+    "prediction": "C[g_hat(x)]"
+  },
+  "residual": "one sparse ridge residual per action, r-C_LOO(group,a), exclude all purchased actions for the current whole question",
+  "raw_centered_control": "same observed targets centered by legal global_action mean; isolates zero-prior/count shrinkage from task sharing",
+  "fixed_baselines": "observed empirical global/task/subtask means with observed-only hierarchical fallback; main uses predicted groups",
+  "saverouter": {
+    "commit": "250b7ef35a741c598aaf1bb264930d1e0bfd1a61",
+    "profile": "llmrouterbench",
+    "parameters": {
+      "prior_strength": 40.0,
+      "prior_ridge_alpha": 10.0,
+      "residual_ridge_alpha": 200.0,
+      "residual_gamma": 2.0,
+      "min_model_observations": 8
+    },
+    "upstream_source_hashes": {
+      "router.py": "d3f97af559021f1e8b991c4f4bfe879bcbed889f4cd10e9c2a8edda531ce92b2",
+      "data.py": "5c55ace20cda0deb48155b00ddf4cc8d7032178113c18521573621c86789d70c",
+      "grouping.py": "1af306fb87ad3ca6856dbc514dacc104a790e10c364d42b46c20a6900057ec69",
+      "profiles.py": "319d97271cf05fa7853e42ef3591127b9b4566d441f84a85e396560923c8109f"
+    },
+    "acquisition": "replaced by common fixed logger",
+    "estimator": "original FixedKSparseRouter unchanged",
+    "decision": "quality-only score argmax",
+    "cost_input": "standalone executed combination tokens, not shared incremental acquisition costs"
+  },
+  "reference_version": "V2_selector_train_frozen_bundle_15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db",
+  "reference_version_caveat": "fixed reference-cache identity tag bound to original V2 bundle, not a hash of gold content",
+  "resource_rules": {
+    "gold": "once per canonical question/reference version within a trajectory; union across three generations reported",
+    "main": "3 members+1 aggregate+1 score+1 gold per question",
+    "pair": "4 members+2 aggregates+2 scores+1 gold",
+    "neighbor_increment": "1 member+1 aggregate+1 score, same gold",
+    "actual_tokens": "read only after the action execution is accepted; prompt/completion and member/aggregate separated",
+    "equal_cost": "every learner shares exactly the same full feedback execution ledger",
+    "final_service": "policy-dependent E120 service cost separately accounted after prediction freeze",
+    "hard_caps": "fixed counts plus public conservative token ceilings; no hidden-cost selection"
+  },
+  "primary": {
+    "scenario": "Pair",
+    "gold_budget": 120,
+    "comparisons": [
+      "Group-Raw",
+      "Group-RawCentered",
+      "GroupResidual-SaveRouterFixedMask"
+    ],
+    "bootstrap": 5000,
+    "seed": 202611150013,
+    "strata": "outerfold x task",
+    "independent_unit": "original question",
+    "repeated_unit": "three generation trajectories x three logger seeds averaged within each question",
+    "multiplicity": "Holm across the three predeclared primary contrasts; ordinary95% paired bootstrap intervals labeled separately"
+  },
+  "no_new_loss": true,
+  "no_hyperparameter_search": true,
+  "no_new_encoder": true,
+  "new_physical_llm_calls": 0,
+  "new_gold_procurement": 0,
+  "validation_fresh_sealed_payload_reads": 0,
+  "model_selection": "all settings fixed now; no evaluation-driven refitting or winner replacement",
+  "scientific_scope": "pool-based sparse-feedback offline replay, heldout E120 receives no feedback",
+  "source_hashes": {
+    "common.py": "23897891f9d5e633f42a1fb321fe17707e64eb453e608c8747c96e9f042496f4",
+    "feedback_environment.py": "0354b28f5ef1bed749acc51d0a6df56944aaa9d4ac23bba7902b7fa09ab3a411",
+    "learners.py": "62cc29f0372dd3b8689cfc96090bd9fac204b5b3da127670d6e1a487316766a1",
+    "saverouter_adapter.py": "366ef0b5fdfe53792075f6417e85adedba6da49e4ecba18cb528ae844125cc54",
+    "run_e13.py": "117c9454baa7bb09ff331367841ff6591b34f66e1fb5013feb3856d331f61963",
+    "tests\\test_feedback_environment.py": "e76b3520518d5a7a851980de4b8954377074ff8f637f21f5ac89587ee2767cc9",
+    "tests\\test_learners.py": "15e3622d44220df14841a7b6bd9fed13ae03dbac483f66a9405717c478856bef",
+    "tests\\test_saverouter_adapter.py": "11b06907cd01ce6c8507c23ae6d0041e1a2a1e035bcda6820b0160d38531c715"
+  },
+  "source_assets": [
+    {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\full_feedback_inputs\\v1\\selector_train_inputs.npz",
+      "sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+      "bytes": 917278,
+      "role": "train600 input-only identities/features/metadata"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\tr\\selector_train_outcomes.npz",
+      "sha256": "a01230f2bed3e7f9d05713bf9e3e4f1cf44987b41c460f91e1d83bc1c29f191e",
+      "bytes": 485850,
+      "role": "cache manager only; true executed final rewards and execution costs"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e7_opportunity_and_feedback_learning\\private\\E7_SPLITS_FROZEN.npz",
+      "sha256": "48e631682448fca1cd6d53dd2c2c29dadda33cdbeb86d136ae3379a74a94f29a",
+      "bytes": 15768,
+      "role": "read-only original source"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\public\\E12_PROTOCOL.json",
+      "sha256": "0e71f26d4d0d429f242b5108f6b98864fd3cb88deb70ece1bf537c1afd8779de",
+      "bytes": 7864,
+      "role": "read-only original source"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\public\\code\\e12_shared_feedback.py",
+      "sha256": "7d8e186e66243448d2eeaf80b53e9add981a98543ea0cab5197a828b2ff84d70",
+      "bytes": 25484,
+      "role": "read-only original source"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M0_tuned\\model_state.npz",
+      "sha256": "89f39c048de93e6fdbd1df2ad1332688bc2fda6b557b801b3b8fe5217511f399",
+      "bytes": 53719,
+      "role": "read only four preprocessing arrays; never reuse old reward-fitted coefficients"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold0\\GROUP_MAPPINGS.npz",
+      "sha256": "63c28f055a2cac696fa6adbb33150a58a5171a307634d222e768ddbfcf15ea44",
+      "bytes": 9667,
+      "role": "H480 input/metadata-only T_M and group keys"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold0\\MASKS.npz",
+      "sha256": "335ea6431e63c1e201660cf50d0931d45ae3a69a0eb5119d1676afd957934a5d",
+      "bytes": 3857,
+      "role": "six original nested question masks"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M0_tuned\\model_state.npz",
+      "sha256": "70c39e4fead519d1b9b9925f4bab64a597c00ea25abc3e90c00b86b183511304",
+      "bytes": 53716,
+      "role": "read only four preprocessing arrays; never reuse old reward-fitted coefficients"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold1\\GROUP_MAPPINGS.npz",
+      "sha256": "6624bc78d17326791adc18059880fbaee368a7153579addbe4e76517493cebd3",
+      "bytes": 9650,
+      "role": "H480 input/metadata-only T_M and group keys"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold1\\MASKS.npz",
+      "sha256": "54599373fd48a16c8658a21cace7fe8c3a977dac99b230cbaec568ca4bca81c5",
+      "bytes": 3853,
+      "role": "six original nested question masks"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M0_tuned\\model_state.npz",
+      "sha256": "6dabfc4e069789c81736dd4396b3cb2a8d183acdd950b427a3a98d3f311c2640",
+      "bytes": 53703,
+      "role": "read only four preprocessing arrays; never reuse old reward-fitted coefficients"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold2\\GROUP_MAPPINGS.npz",
+      "sha256": "a56115fb16571aca4b67923a5ccaaf16862ca4ee6537bb547678d2c891e68c15",
+      "bytes": 9659,
+      "role": "H480 input/metadata-only T_M and group keys"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold2\\MASKS.npz",
+      "sha256": "89d7604a4f7d70f31f4cbe1c8502cd241c433f2ea05563147e3dfb9f690207bc",
+      "bytes": 3875,
+      "role": "six original nested question masks"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M0_tuned\\model_state.npz",
+      "sha256": "aa3f834cad68e8c6acc8b9d255b730ddd4ceee6d8086969dc7ced9e7c62d3d6e",
+      "bytes": 53719,
+      "role": "read only four preprocessing arrays; never reuse old reward-fitted coefficients"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold3\\GROUP_MAPPINGS.npz",
+      "sha256": "6f18fb6bd3b11334916b851e638633e3698e4be6fa0f3db07e54659141fa6002",
+      "bytes": 9670,
+      "role": "H480 input/metadata-only T_M and group keys"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold3\\MASKS.npz",
+      "sha256": "19625213a5b8dfa2a46906d13b923f2d6ea7832ea892cd856841e9904d424737",
+      "bytes": 3868,
+      "role": "six original nested question masks"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M0_tuned\\model_state.npz",
+      "sha256": "d92619522e1fee6ba05e3b941d7aae305b6b7d2211ae5506f5bb92638e8393c2",
+      "bytes": 53752,
+      "role": "read only four preprocessing arrays; never reuse old reward-fitted coefficients"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold4\\GROUP_MAPPINGS.npz",
+      "sha256": "c1f4f4e9c7dc1d26df0436a0076332aea809beb006b9b545529e0a92434771bf",
+      "bytes": 9676,
+      "role": "H480 input/metadata-only T_M and group keys"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e12_shared_feedback_learning\\private\\fold4\\MASKS.npz",
+      "sha256": "4bd13d7b7b9c63daa1c357f0896ea037167988684e965906be6880979b7a5f30",
+      "bytes": 3860,
+      "role": "six original nested question masks"
+    }
+  ],
+  "input_packets": [
+    {
+      "fold": 0,
+      "sha256": "02018feb47f4be4918048d65e4b0d8873bccdff3e14944febab4b052e71e1f75",
+      "history": 480,
+      "evaluation": 120,
+      "input_only": true,
+      "old_reward_coefficient_loaded": false
+    },
+    {
+      "fold": 1,
+      "sha256": "6f461ad09a9a0d4038dd2643c3f2be549afe354c75c642f1adc05e6f05e28b15",
+      "history": 480,
+      "evaluation": 120,
+      "input_only": true,
+      "old_reward_coefficient_loaded": false
+    },
+    {
+      "fold": 2,
+      "sha256": "c0cb11cf116464bae40cea24be2cc292e96f70264ffd8281ac793853f39f9c57",
+      "history": 480,
+      "evaluation": 120,
+      "input_only": true,
+      "old_reward_coefficient_loaded": false
+    },
+    {
+      "fold": 3,
+      "sha256": "fe1c9f2219f936daa5031e53d24c2469b0fc48ae51790de56ac2a821f724fb41",
+      "history": 480,
+      "evaluation": 120,
+      "input_only": true,
+      "old_reward_coefficient_loaded": false
+    },
+    {
+      "fold": 4,
+      "sha256": "c018dc2b07f69a3f596bf3cbc40fbffdf7cd9808e0afacbbcf8ce10584338bd4",
+      "history": 480,
+      "evaluation": 120,
+      "input_only": true,
+      "old_reward_coefficient_loaded": false
+    }
+  ],
+  "preparation_cost": {
+    "cpu_s": 0.125,
+    "wall_s": 0.6384785000118427,
+    "rss_bytes": 148619264,
+    "peak_rss_bytes": 150097920
+  },
+  "created_utc": "2026-11-14T14:46:44Z"
+}

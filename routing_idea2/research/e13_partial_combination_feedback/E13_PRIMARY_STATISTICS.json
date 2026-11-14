@@ -1,0 +1,136 @@
+{
+  "status": "COMPLETE",
+  "scenario": "Pair",
+  "gold_budget": 120,
+  "primary_comparisons": {
+    "Group-Raw": {
+      "difference_pp": 0.24074074074074076,
+      "ci95_pp": [
+        -0.5555555555555536,
+        1.0740740740740717
+      ],
+      "p_unadjusted": 0.5772845430913818,
+      "corrections": 249,
+      "destructions": 236,
+      "net_events": 13,
+      "independent_questions": 600,
+      "recorded_generation_logger_events": 5400,
+      "improved_question_means": 94,
+      "harmed_question_means": 88,
+      "equal_question_means": 418,
+      "changed_action_events": 4686,
+      "changed_original_questions_any_trajectory": 600,
+      "generation_difference_pp": {
+        "42": 0.2222222222222222,
+        "137": -0.2777777777777778,
+        "2024": 0.7777777777777778
+      },
+      "logger_difference_pp": {
+        "17": -0.2222222222222222,
+        "29": 0.6666666666666667,
+        "43": 0.2777777777777778
+      },
+      "fold_difference_pp": {
+        "0": -0.6481481481481481,
+        "1": 1.3888888888888888,
+        "2": 1.3888888888888888,
+        "3": -1.0185185185185186,
+        "4": 0.0925925925925926
+      },
+      "task_difference_pp": {
+        "gsm8k": 0.07407407407407407,
+        "bbh": 0.4074074074074074
+      },
+      "p_holm": 1.0
+    },
+    "Group-RawCentered": {
+      "difference_pp": -0.0925925925925926,
+      "ci95_pp": [
+        -0.5370370370370248,
+        0.33333333333332993
+      ],
+      "p_unadjusted": 0.7100579884023195,
+      "corrections": 89,
+      "destructions": 94,
+      "net_events": -5,
+      "independent_questions": 600,
+      "recorded_generation_logger_events": 5400,
+      "improved_question_means": 50,
+      "harmed_question_means": 55,
+      "equal_question_means": 495,
+      "changed_action_events": 1639,
+      "changed_original_questions_any_trajectory": 581,
+      "generation_difference_pp": {
+        "42": 0.0,
+        "137": -0.5555555555555556,
+        "2024": 0.2777777777777778
+      },
+      "logger_difference_pp": {
+        "17": -0.6666666666666667,
+        "29": 0.2222222222222222,
+        "43": 0.16666666666666669
+      },
+      "fold_difference_pp": {
+        "0": 0.2777777777777778,
+        "1": 0.2777777777777778,
+        "2": 0.1851851851851852,
+        "3": -0.4629629629629629,
+        "4": -0.7407407407407408
+      },
+      "task_difference_pp": {
+        "gsm8k": -0.07407407407407407,
+        "bbh": -0.1111111111111111
+      },
+      "p_holm": 1.0
+    },
+    "GroupResidual-SaveRouterFixedMask": {
+      "difference_pp": -0.20370370370370372,
+      "ci95_pp": [
+        -0.8888888888888727,
+        0.5000000000000118
+      ],
+      "p_unadjusted": 0.5872825434913017,
+      "corrections": 172,
+      "destructions": 183,
+      "net_events": -11,
+      "independent_questions": 600,
+      "recorded_generation_logger_events": 5400,
+      "improved_question_means": 74,
+      "harmed_question_means": 78,
+      "equal_question_means": 448,
+      "changed_action_events": 3504,
+      "changed_original_questions_any_trajectory": 598,
+      "generation_difference_pp": {
+        "42": 0.1111111111111111,
+        "137": -0.6666666666666667,
+        "2024": -0.05555555555555555
+      },
+      "logger_difference_pp": {
+        "17": 0.3888888888888889,
+        "29": -0.2777777777777778,
+        "43": -0.7222222222222222
+      },
+      "fold_difference_pp": {
+        "0": -1.0185185185185186,
+        "1": -0.3703703703703704,
+        "2": -1.0185185185185186,
+        "3": 1.0185185185185186,
+        "4": 0.3703703703703704
+      },
+      "task_difference_pp": {
+        "gsm8k": 0.0,
+        "bbh": -0.4074074074074074
+      },
+      "p_holm": 1.0
+    }
+  },
+  "bootstrap_repeats": 5000,
+  "bootstrap_seed": 202611150013,
+  "strata": "outerfold x GSM/BBH",
+  "independent_questions": 600,
+  "cluster": "Original question retaining all three generations, three logger seeds and paired policies",
+  "ci_definition": "ordinary95% paired percentile intervals, not Holm simultaneous confidence intervals",
+  "p_definition": "two-sided centered paired bootstrap with plus-one correction, followed by Holm3",
+  "bootstrap_is_approximate": true,
+  "conditional_on_fitted_models": true
+}
