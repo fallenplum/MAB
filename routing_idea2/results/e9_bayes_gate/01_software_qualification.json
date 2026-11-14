@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "timing": {
+    "cpu_s": 0.3125,
+    "wall_s": 0.4917755000060424,
+    "rss_bytes": 63733760,
+    "peak_rss_bytes": 64782336
+  },
+  "log_sha256": "6f93f4bc0780690c542b6d2c3fcc5037cc164f64ff3209cb3553043d85748f11",
+  "note": "Second recorded execution of the same small synthetic suite; first pre-freeze execution also passed 20 tests",
+  "source_sha256": {
+    "tests\\test_e9_leakage_and_ties.py": "775cdd9c4466e3c5559eb9d8312aafc91c07e9beff5e497e6d0a32b106ab05b9",
+    "tests\\test_e9_math_properties.py": "fd57d522706fe7e51f50263160285ff492b029404cd63f23ed024da292fe72be",
+    "tests\\test_e9_mean_models.py": "077d7536a5a5c54e8cf39c46258496f1185d0ddf0048e788e8419182b1038f23",
+    "tests\\test_e9_repeatability.py": "3438418f2ee7aa809035e54bd72f48a06c3838337877fa833227caff74536948"
+  }
+}

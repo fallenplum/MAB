@@ -1,0 +1,11 @@
+{
+  "reason": "Require explicit PASS on existing asset and math receipts. No objective, input, fitting, selection, or statistical change. The 18 legitimate pilot heads remain reusable.",
+  "created_before_formal_training": true,
+  "original_protocol_sha256": "0c07c083e7ead9d803d5edfc2297279a26ca093ec2e692be6e5d8a7e419ee44a",
+  "source_updates": {
+    "run_nested_cv.py": {
+      "previous_sha256": "179e9bb530d34f19bc81cb520d62259a780f7022b72b38c10f941df295a9bdad",
+      "new_sha256": "8afbdb5380fb0367de7e2ae214b4dc89847dc30086459d2ae3748470f4cd8e14"
+    }
+  }
+}

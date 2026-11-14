@@ -1,0 +1,272 @@
+{
+  "experiment": "E9_BAYES_GATE_DISTINCT_FROM_HISTORICAL_E9_CSCE",
+  "evidence": "reused_train600_development_cross_validation",
+  "samples": 600,
+  "seeds": [
+    42,
+    137,
+    2024
+  ],
+  "models": 6,
+  "members_per_action": 3,
+  "actions": 20,
+  "input": "original MiniLM-L6-v2 384 -> fitting-only PCA16 -> original StandardScaler -> penalized constant",
+  "parameters_per_head": 340,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "inner_split_seed": "20261113+outer_fold, exact original E8 local rows",
+  "candidates": [
+    {
+      "family": "PSMR",
+      "loss": "bce",
+      "multiplier": 0.1
+    },
+    {
+      "family": "PSMR",
+      "loss": "bce",
+      "multiplier": 1.0
+    },
+    {
+      "family": "PSMR",
+      "loss": "bce",
+      "multiplier": 10.0
+    },
+    {
+      "family": "PSMR",
+      "loss": "brier",
+      "multiplier": 0.1
+    },
+    {
+      "family": "PSMR",
+      "loss": "brier",
+      "multiplier": 1.0
+    },
+    {
+      "family": "PSMR",
+      "loss": "brier",
+      "multiplier": 10.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 0.0,
+      "multiplier": 0.1
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 0.0,
+      "multiplier": 1.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 0.0,
+      "multiplier": 10.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 1.0,
+      "multiplier": 0.1
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 1.0,
+      "multiplier": 1.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 1.0,
+      "multiplier": 10.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 3.0,
+      "multiplier": 0.1
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 3.0,
+      "multiplier": 1.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 3.0,
+      "multiplier": 10.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 9.0,
+      "multiplier": 0.1
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 9.0,
+      "multiplier": 1.0
+    },
+    {
+      "family": "HSMR",
+      "shrinkage": 9.0,
+      "multiplier": 10.0
+    }
+  ],
+  "regularization": "lambda=100*multiplier/(3*n_fit*20); Ridge normal alpha=100*multiplier/3",
+  "hierarchy": {
+    "task_pseudocount": 10,
+    "subtask_pseudocount": 3,
+    "whole_question_LOO": true,
+    "support_fallback": "smooth LOO subgroup to task to global; n=1 prior .5"
+  },
+  "calibration": "none; optional calibration axis not adopted",
+  "main_rule": "inner-best PSMR/HSMR if strictly greater than SubtaskFixed+1e-12, else SubtaskFixed; family tie HSMR",
+  "candidate_tie": "higher regularization, higher shrinkage, BCE before Brier",
+  "action_tie": "original exact np.argmax in frozen semantic combination order",
+  "metadata_permission": "heads text-only; fixed/prior/fallback baselines use true task/subtask metadata explicitly",
+  "primary_comparisons": [
+    "E9Rule-SubtaskFixed",
+    "E9Rule-M0_original"
+  ],
+  "bootstrap": {
+    "repeats": 10000,
+    "strata": "outerfold x GSM/BBH",
+    "unit": "original question with all seed/action/method records",
+    "primary_ci": "97.5% Bonferroni simultaneous pairwise lower bounds for two-sided95% family coverage",
+    "ordinary_ci": "95% per-comparison percentile",
+    "p_adjustment": "Holm for two predeclared paired comparisons"
+  },
+  "negative_control": {
+    "repeats": 100,
+    "seeds": [
+      202611150000,
+      202611150001,
+      202611150002,
+      202611150003,
+      202611150004,
+      202611150005,
+      202611150006,
+      202611150007,
+      202611150008,
+      202611150009,
+      202611150010,
+      202611150011,
+      202611150012,
+      202611150013,
+      202611150014,
+      202611150015,
+      202611150016,
+      202611150017,
+      202611150018,
+      202611150019,
+      202611150020,
+      202611150021,
+      202611150022,
+      202611150023,
+      202611150024,
+      202611150025,
+      202611150026,
+      202611150027,
+      202611150028,
+      202611150029,
+      202611150030,
+      202611150031,
+      202611150032,
+      202611150033,
+      202611150034,
+      202611150035,
+      202611150036,
+      202611150037,
+      202611150038,
+      202611150039,
+      202611150040,
+      202611150041,
+      202611150042,
+      202611150043,
+      202611150044,
+      202611150045,
+      202611150046,
+      202611150047,
+      202611150048,
+      202611150049,
+      202611150050,
+      202611150051,
+      202611150052,
+      202611150053,
+      202611150054,
+      202611150055,
+      202611150056,
+      202611150057,
+      202611150058,
+      202611150059,
+      202611150060,
+      202611150061,
+      202611150062,
+      202611150063,
+      202611150064,
+      202611150065,
+      202611150066,
+      202611150067,
+      202611150068,
+      202611150069,
+      202611150070,
+      202611150071,
+      202611150072,
+      202611150073,
+      202611150074,
+      202611150075,
+      202611150076,
+      202611150077,
+      202611150078,
+      202611150079,
+      202611150080,
+      202611150081,
+      202611150082,
+      202611150083,
+      202611150084,
+      202611150085,
+      202611150086,
+      202611150087,
+      202611150088,
+      202611150089,
+      202611150090,
+      202611150091,
+      202611150092,
+      202611150093,
+      202611150094,
+      202611150095,
+      202611150096,
+      202611150097,
+      202611150098,
+      202611150099
+    ],
+    "operation": "whole-question 3x20 blocks shuffled within task/BBH subtask in each legal fitting region separately",
+    "selection": "same nested grid and inner real-outcome scoring as main, never outer outcomes",
+    "feature_preprocessing": "reward-free and identical fitting indices, exact caches reused across controls"
+  },
+  "go": {
+    "positive_simultaneous_primary_lower_bounds": true,
+    "positive_generation_directions_at_least": 2,
+    "task_guard": "both GSM and BBH point differences >=0 for both main comparators",
+    "content_guard": "main E9Rule accuracy strictly above 95th percentile of 100 complete-rule controls",
+    "status": "GO_FRESH_REQUEST requests separate confirmation design only"
+  },
+  "permissions": {
+    "new_llm_calls": 0,
+    "new_gold": 0,
+    "validation200_reads": 0,
+    "fresh400_reads": 0,
+    "sealed200_reads": 0,
+    "push": false,
+    "merge": false
+  },
+  "asset_manifest_sha256": "2e323fafa44fa04bdbcb6f3276c45d8e6911129c1632108ed2054edc10172c12",
+  "source_files": {
+    "audit_assets.py": "670d9639b5455f0e244feaa1119edb548ecc47e6eee907e4146023aabb78e0bb",
+    "common.py": "0f00657a1028c92389ae4f2ccf49f49c8129129e94ae52ffbf256fafee50c6ff",
+    "math_consistency.py": "e4f1fa4c5e4f963a722fd34aa7d544c89f8a3389fb4006832789246c0233d2cb",
+    "run_nested_cv.py": "179e9bb530d34f19bc81cb520d62259a780f7022b72b38c10f941df295a9bdad",
+    "tests\\test_e9_leakage_and_ties.py": "775cdd9c4466e3c5559eb9d8312aafc91c07e9beff5e497e6d0a32b106ab05b9",
+    "tests\\test_e9_math_properties.py": "fd57d522706fe7e51f50263160285ff492b029404cd63f23ed024da292fe72be",
+    "tests\\test_e9_mean_models.py": "077d7536a5a5c54e8cf39c46258496f1185d0ddf0048e788e8419182b1038f23",
+    "tests\\test_e9_repeatability.py": "3438418f2ee7aa809035e54bd72f48a06c3838337877fa833227caff74536948",
+    "train_hsmr.py": "ac3928ae4020c5b5c08edbca99c39d12a191b02a632eb77f3126598e9c21cc25",
+    "train_psmr.py": "c64e2fd49561c193634af5644deedd1f93105277b9f701d5a6038feb5ed40a19"
+  },
+  "created_utc": "2026-11-14T11:59:44Z"
+}

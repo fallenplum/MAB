@@ -1,0 +1,220 @@
+{
+  "status": "COMPLETE",
+  "files": [
+    {
+      "path": "experiments\\e9_bayes_gate\\audit_assets.py",
+      "bytes": 18744,
+      "sha256": "670d9639b5455f0e244feaa1119edb548ecc47e6eee907e4146023aabb78e0bb"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\common.py",
+      "bytes": 7631,
+      "sha256": "0f00657a1028c92389ae4f2ccf49f49c8129129e94ae52ffbf256fafee50c6ff"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\diagnostic_signal.py",
+      "bytes": 29048,
+      "sha256": "fcc39d568c758680342ae988fa927809e78bcd728d90f475f2e836e801616f12"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\evaluate_frozen.py",
+      "bytes": 33676,
+      "sha256": "7a4ce5dc7fee488a9291cc0a30c853d5a27c0ebe4273ab935e3e3ef6c276a324"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\finalize_report.py",
+      "bytes": 22852,
+      "sha256": "8f6dada1674eced5b59230c900e5fcad2e036fcdda78d10f9065774074a7f8df"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\math_consistency.py",
+      "bytes": 15931,
+      "sha256": "e4f1fa4c5e4f963a722fd34aa7d544c89f8a3389fb4006832789246c0233d2cb"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\protocol_amendment_01.json",
+      "bytes": 578,
+      "sha256": "c18bee6351af432fade14b47250a543ba4934cbc16d8c3eef1bfb700555331c2"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\protocol_frozen.json",
+      "bytes": 7636,
+      "sha256": "0c07c083e7ead9d803d5edfc2297279a26ca093ec2e692be6e5d8a7e419ee44a"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\qualify_interfaces.py",
+      "bytes": 1314,
+      "sha256": "ed5ad4d8675774b16f27369eb184aa35ec662fad6ce17664feeeedafb469d753"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\README.md",
+      "bytes": 4902,
+      "sha256": "46bf27d2a609721c68d0ab5418901d0bc374401e17dfc08e28467556f38ea638"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\run_nested_cv.py",
+      "bytes": 17388,
+      "sha256": "8afbdb5380fb0367de7e2ae214b4dc89847dc30086459d2ae3748470f4cd8e14"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\seal_delivery.py",
+      "bytes": 5534,
+      "sha256": "24b88374a72f88999d6f5e1804a73243f11bb9776a945529ebb5ebcf327fcd02"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\tests\\test_e9_leakage_and_ties.py",
+      "bytes": 2290,
+      "sha256": "775cdd9c4466e3c5559eb9d8312aafc91c07e9beff5e497e6d0a32b106ab05b9"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\tests\\test_e9_math_properties.py",
+      "bytes": 1448,
+      "sha256": "fd57d522706fe7e51f50263160285ff492b029404cd63f23ed024da292fe72be"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\tests\\test_e9_mean_models.py",
+      "bytes": 5449,
+      "sha256": "077d7536a5a5c54e8cf39c46258496f1185d0ddf0048e788e8419182b1038f23"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\tests\\test_e9_repeatability.py",
+      "bytes": 1032,
+      "sha256": "3438418f2ee7aa809035e54bd72f48a06c3838337877fa833227caff74536948"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\train_hsmr.py",
+      "bytes": 7461,
+      "sha256": "ac3928ae4020c5b5c08edbca99c39d12a191b02a632eb77f3126598e9c21cc25"
+    },
+    {
+      "path": "experiments\\e9_bayes_gate\\train_psmr.py",
+      "bytes": 5919,
+      "sha256": "c64e2fd49561c193634af5644deedd1f93105277b9f701d5a6038feb5ed40a19"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\.gitignore",
+      "bytes": 22,
+      "sha256": "d56537a93a9565b3322aa9bc821c9cc30a16303467032cade13b069e394cfddc"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\00_asset_manifest.json",
+      "bytes": 68379,
+      "sha256": "2e323fafa44fa04bdbcb6f3276c45d8e6911129c1632108ed2054edc10172c12"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\00_historical_replay.json",
+      "bytes": 1600,
+      "sha256": "6d992cb826bd8936a40ea88082a34aa2d1ee5920793f86f2c495865bf1aefee9"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\00_protocol_audit.md",
+      "bytes": 3147,
+      "sha256": "e378c0b6c943e72a9fc35b24625312e49333d06f93859a52c72b0401ffb468c0"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\01_math_audit.md",
+      "bytes": 8544,
+      "sha256": "037ccce7ca42d4c226e182fd866296b317ff7be95320bd9578589be70b54e25e"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\01_math_qualification.json",
+      "bytes": 4664,
+      "sha256": "3c56bd7f5aac31ee16d93ced7050bb37ac9700f1ff00a874928ec5b556a0e633"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\01_software_qualification.json",
+      "bytes": 888,
+      "sha256": "65dd866785e33bf651733590f3d2d5cadb40a1b5aaf4a476686ddfb2be9675db"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\02_signal_diagnostics.json",
+      "bytes": 2203815,
+      "sha256": "2f564f592ab3e631e3ebaadc0a2a39837cc97a279a634d3328d2d90dd39eb158"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\02_signal_report.md",
+      "bytes": 5975,
+      "sha256": "a5140756b4ffa96dede67763e99b5ed9e5505414bec44f6cd4d127a33539b1ce"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\03_cost_ledger.json",
+      "bytes": 42734,
+      "sha256": "b98694a83c7d99bb7d3e1280baab8cf5bf45884947a7ead70ba36fc19ab0bcee"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\03_hyperparameter_grid.csv",
+      "bytes": 3873,
+      "sha256": "f4d040e14386595f83bab2c267d0e6189c595b28058141d8f60271cccdd1619a"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\03_main_results.csv",
+      "bytes": 4197,
+      "sha256": "89f7aa40ce7e41d8f67994555e52132ec8002c60da86e68b06d6304bba68ed77"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\03_main_results.json",
+      "bytes": 115249,
+      "sha256": "f4e99af177c47993e7af12bdb96853b95a7b75959f2b45b6cea9d2c8f9788336"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\03_question_cluster_ci.json",
+      "bytes": 28522,
+      "sha256": "6f88db59440a4faa2f23d0fc3a67d21063c1bcd32f79b4305f1f83103006f5e5"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\04_ablation_and_negative_controls.csv",
+      "bytes": 160507,
+      "sha256": "fcaaf8c367fbb4a716cc0362ae011ea6a3340e73c9d0b314dddf62fc0528f7b2"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\05_figure_quality_and_gain.png",
+      "bytes": 124942,
+      "sha256": "6dd2238db79caf61b5014121667d10a98e1d4c6355bc8c71cb29d40c6fec6f81"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\05_figure_tie_and_discordance.png",
+      "bytes": 198802,
+      "sha256": "211c0c230f029d531c9f2e18b01107e48996e2cdacf783469c59c9a292a7c244"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\06_gate_decision.json",
+      "bytes": 2878,
+      "sha256": "e4d34ed985ca8c2ae5bd10fa4dda106ea52b87619339aeb3bd1f604cd183430b"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\07_scientific_report_zh.md",
+      "bytes": 11228,
+      "sha256": "cfba9da78369be4051bc6284dbbab61cebbb082da97289a0de52ee6a9a922bce"
+    },
+    {
+      "path": "results\\e9_bayes_gate\\literature\\SOURCES_READ.json",
+      "bytes": 1783,
+      "sha256": "dae767a5569ee134ab28e8f17fb2c0dbf7768f278e22bb4ace46c27f89554c70"
+    }
+  ],
+  "excludes": "entire results/e9_bayes_gate/private tree",
+  "self_excluded": true,
+  "verification": {
+    "status": "PASS",
+    "historical_files_unchanged": 143,
+    "restored_new_outer_heads": 10,
+    "maximum_score_restore_error": 0.0,
+    "public_accuracy_rows_verified": 11,
+    "privacy_hits": [],
+    "actual_head_fits": 28280,
+    "new_llm_calls": 0,
+    "fresh_sealed_payload_reads": 0,
+    "independent_reviewer": "11 accuracies, both paired primary statistics, full bootstrap and 100 controls independently matched",
+    "decision": "NO_GO_INPUT_ROUTER",
+    "plot_visual_QA": "Both PNGs inspected; axes, intervals, unit labels and task/repeat semantics readable",
+    "timing": {
+      "cpu_s": 7.0625,
+      "wall_s": 7.363779899984365,
+      "rss_bytes": 151740416,
+      "peak_rss_bytes": 252051456
+    }
+  },
+  "branch_created": false,
+  "local_git_checkout": false,
+  "pushed": false
+}

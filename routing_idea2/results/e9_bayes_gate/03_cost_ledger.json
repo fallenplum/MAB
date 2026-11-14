@@ -1,0 +1,1034 @@
+{
+  "status": "COMPLETE",
+  "head_fits": {
+    "main_PSMR": {
+      "actual_head_fits": 95,
+      "cpu_s": 0.203125,
+      "wall_s_sum": 0.301866300025722,
+      "maximum_gradient_norm": 5.590745078477511e-08,
+      "optimizer_failures": 0,
+      "maximum_iterations": 13
+    },
+    "main_HSMR": {
+      "actual_head_fits": 185,
+      "cpu_s": 0.328125,
+      "wall_s_sum": 0.4157900999416597,
+      "maximum_gradient_norm": 3.473106811745543e-16,
+      "optimizer_failures": 0,
+      "maximum_iterations": 1
+    },
+    "control_PSMR": {
+      "actual_head_fits": 9500,
+      "cpu_s": 28.328125,
+      "wall_s_sum": 31.55808829885791,
+      "maximum_gradient_norm": 2.8104192766670496e-07,
+      "optimizer_failures": 0,
+      "maximum_iterations": 14
+    },
+    "control_HSMR": {
+      "actual_head_fits": 18500,
+      "cpu_s": 38.421875,
+      "wall_s_sum": 43.34003080014372,
+      "maximum_gradient_norm": 4.1065357545001746e-16,
+      "optimizer_failures": 0,
+      "maximum_iterations": 1
+    }
+  },
+  "total_new_head_fits": 28280,
+  "main_head_fits": 280,
+  "control_head_fits": 28000,
+  "pilot_heads": 18,
+  "pilot_heads_reused_in_main": 18,
+  "pilot": {
+    "status": "PASS",
+    "cpu_s": 0.1875,
+    "wall_s": 0.6481738000002224,
+    "fits": [
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "bce",
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "bce",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.0005208333333333333,
+          "initial_objective": 0.6931471805599452,
+          "objective": 0.3999240564458835,
+          "data_loss_on_question_means": 0.3660385401859363,
+          "data_loss_on_three_repeated_rewards": 0.3660385401859363,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.03388551625994723,
+          "weight_norm": 8.065989785457125,
+          "gradient_l2": 2.823057447938444e-08,
+          "gradient_max_abs": 8.008214431051795e-09,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 11,
+          "function_evaluations": 13,
+          "convex_objective": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.005064499971922487
+        },
+        "model_sha256": "f0f7abb87971eea65164896fa2651ca4e3d1b2005a41bba460fd2dcad0be0a74"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "bce",
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "bce",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.005208333333333334,
+          "initial_objective": 0.6931471805599452,
+          "objective": 0.5363036499943938,
+          "data_loss_on_question_means": 0.4605857836621901,
+          "data_loss_on_three_repeated_rewards": 0.4605857836621901,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.07571786633220372,
+          "weight_norm": 3.812850683646438,
+          "gradient_l2": 2.545516473890162e-09,
+          "gradient_max_abs": 5.694899410987192e-10,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 6,
+          "function_evaluations": 7,
+          "convex_objective": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0029238999995868653
+        },
+        "model_sha256": "5a59bfbcefb1fcd28ca48327408515f4ad3e18cc6628286d7a6f950def7587ae"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "bce",
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "bce",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.05208333333333333,
+          "initial_objective": 0.6931471805599452,
+          "objective": 0.662946831242713,
+          "data_loss_on_question_means": 0.6359700596071524,
+          "data_loss_on_three_repeated_rewards": 0.6359700596071524,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.02697677163556064,
+          "weight_norm": 0.7196902218335083,
+          "gradient_l2": 1.17354575604434e-08,
+          "gradient_max_abs": 1.893018779924871e-09,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 3,
+          "function_evaluations": 4,
+          "convex_objective": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002202700008638203
+        },
+        "model_sha256": "1c6fdc137bd05bf1844745f64aa06a1634fbec35a93b4cbe75884b938430eef3"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "brier",
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "brier",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.0005208333333333333,
+          "initial_objective": 0.21291666666666664,
+          "objective": 0.09859812325858529,
+          "data_loss_on_question_means": 0.07965525794158451,
+          "data_loss_on_three_repeated_rewards": 0.11673859127491784,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.018942865317000773,
+          "weight_norm": 6.030779502571909,
+          "gradient_l2": 3.0758315875378006e-08,
+          "gradient_max_abs": 8.936529699955716e-09,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 10,
+          "function_evaluations": 11,
+          "convex_objective": false,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0033995000121649355
+        },
+        "model_sha256": "ac6e041e8c87997883357e76b6e3742b4aa2f06717b42928f668343308ed64bc"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "brier",
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "brier",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.005208333333333334,
+          "initial_objective": 0.21291666666666664,
+          "objective": 0.16208116566299363,
+          "data_loss_on_question_means": 0.1319430540724424,
+          "data_loss_on_three_repeated_rewards": 0.16902638740577572,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.03013811159055123,
+          "weight_norm": 2.4055181199454383,
+          "gradient_l2": 4.357879271826659e-09,
+          "gradient_max_abs": 9.913805555970085e-10,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 5,
+          "function_evaluations": 6,
+          "convex_objective": false,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.0027929999923799187
+        },
+        "model_sha256": "c4b5281fb3f28ef7fde4df24171dd73a1ae0362ac5366e6b76f212110637a255"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "PSMR",
+          "loss": "brier",
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "PSMR",
+          "loss": "brier",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "normalization": "data divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "l2": 0.05208333333333333,
+          "initial_objective": 0.21291666666666664,
+          "objective": 0.20495190210789485,
+          "data_loss_on_question_means": 0.19745888590320804,
+          "data_loss_on_three_repeated_rewards": 0.23454221923654137,
+          "brier_repeat_constant": 0.037083333333333336,
+          "regularization": 0.007493016204686819,
+          "weight_norm": 0.379296600472489,
+          "gradient_l2": 4.865673910971333e-11,
+          "gradient_max_abs": 7.860250211128017e-12,
+          "optimizer": "float64 scipy L-BFGS-B, zero initialization",
+          "optimizer_success": true,
+          "optimizer_status": 0,
+          "optimizer_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 3,
+          "function_evaluations": 5,
+          "convex_objective": false,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002229400008218363
+        },
+        "model_sha256": "21795fe8fe9b3d1b4ed8d46f1a04ac24a80937c2e92219b7a67d5a23780918d6"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 0.0,
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 0.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 3.3333333333333335,
+          "l2": 0.0005208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.07208149720489251,
+          "regularization": 0.007540941355052119,
+          "objective": 0.07962243855994464,
+          "weight_norm": 3.8050765303341887,
+          "gradient_l2": 7.238474081168332e-17,
+          "gradient_max_abs": 2.949029909160572e-17,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002157799986889586
+        },
+        "model_sha256": "c9751358bd16865c1aec454ebdf549049f48067e4b06a86227207f41c8311a73"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 0.0,
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 0.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 33.333333333333336,
+          "l2": 0.005208333333333334,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.07858082757889791,
+          "regularization": 0.0631476657259571,
+          "objective": 0.141728493304855,
+          "weight_norm": 3.482003994739776,
+          "gradient_l2": 7.861134559659353e-17,
+          "gradient_max_abs": 3.122502256758253e-17,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.0022923999931663275
+        },
+        "model_sha256": "a9d81afa79757840a1c538a676e8234be22051c207f78a5210a03b737d5d502a"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 0.0,
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 0.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 333.3333333333333,
+          "l2": 0.05208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.26439434626023345,
+          "regularization": 0.18469574450667792,
+          "objective": 0.44909009076691137,
+          "weight_norm": 1.883124609400083,
+          "gradient_l2": 7.829165154881534e-17,
+          "gradient_max_abs": 2.7755575615628914e-17,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0022367000055965036
+        },
+        "model_sha256": "630c2dc56a97e25ef7d7163235da3beab126658fafebf7b4303bf1a80b712c54"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 1.0,
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 1.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 3.3333333333333335,
+          "l2": 0.0005208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.04082787316422822,
+          "regularization": 0.007506007410318204,
+          "objective": 0.04833388057454643,
+          "weight_norm": 3.796252655950464,
+          "gradient_l2": 2.622529036401747e-16,
+          "gradient_max_abs": 1.0711917464156784e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0022207000001799315
+        },
+        "model_sha256": "521ed0b999eb274c9ccd731fea026caa004223d04a0b665f07ea25c2e1307065"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 1.0,
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 1.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 33.333333333333336,
+          "l2": 0.005208333333333334,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.04729709493011656,
+          "regularization": 0.06285512969356001,
+          "objective": 0.11015222462367658,
+          "weight_norm": 3.4739293172376895,
+          "gradient_l2": 2.642155659959714e-16,
+          "gradient_max_abs": 1.0581813203458523e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002476199995726347
+        },
+        "model_sha256": "ba0d97c547085c10078163c692374238c19bfc86485e94caec00d2bc22958f6d"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 1.0,
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 1.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 333.3333333333333,
+          "l2": 0.05208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.23224981933036695,
+          "regularization": 0.1838401283935964,
+          "objective": 0.41608994772396335,
+          "weight_norm": 1.878757691975485,
+          "gradient_l2": 2.6401700657543643e-16,
+          "gradient_max_abs": 1.1102230246251565e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002137599978595972
+        },
+        "model_sha256": "ecc0619220c2f973fb948bffa7169923e408cd316cfc1f5a09d01cd0347226eb"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 3.0,
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 3.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 3.3333333333333335,
+          "l2": 0.0005208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.019054286862642232,
+          "regularization": 0.007474775216364663,
+          "objective": 0.026529062079006894,
+          "weight_norm": 3.7883463959120944,
+          "gradient_l2": 2.6745430350115353e-16,
+          "gradient_max_abs": 9.833713704443525e-17,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002656399999978021
+        },
+        "model_sha256": "6c29a19f6a01f3d127f0f6f7214282abf337e0579b0d195f52103816021210e5"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 3.0,
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 3.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 33.333333333333336,
+          "l2": 0.005208333333333334,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.025496590457807358,
+          "regularization": 0.0625935920352217,
+          "objective": 0.08809018249302907,
+          "weight_norm": 3.466694343428992,
+          "gradient_l2": 2.7640110552939135e-16,
+          "gradient_max_abs": 1.0234868508263162e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002162000018870458
+        },
+        "model_sha256": "cfbde40962613b68e7608602f443fe4262422879d5e0fb7a999c08e98d75dcd8"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 3.0,
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 3.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 333.3333333333333,
+          "l2": 0.05208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.20967973403500076,
+          "regularization": 0.18307517703762782,
+          "objective": 0.3927549110726286,
+          "weight_norm": 1.8748449000177203,
+          "gradient_l2": 2.636296047211205e-16,
+          "gradient_max_abs": 9.71445146547012e-17,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002726999984588474
+        },
+        "model_sha256": "e5e2bd8e81a1ba2e5b4ba28d9cd60b10583484958a03ad3d68062b550c10a476"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 9.0,
+          "multiplier": 0.1
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 9.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 3.3333333333333335,
+          "l2": 0.0005208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.006760738300134572,
+          "regularization": 0.00744724477319149,
+          "objective": 0.014207983073326063,
+          "weight_norm": 3.781363506002519,
+          "gradient_l2": 3.2407660980543993e-16,
+          "gradient_max_abs": 1.6046192152785466e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002062300016405061
+        },
+        "model_sha256": "9873e9c9dcc190eb623772d24dc56dfaa06ef2454d0dfa7b7e8177bbb198b547"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 9.0,
+          "multiplier": 1.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 9.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 33.333333333333336,
+          "l2": 0.005208333333333334,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.013179314161970294,
+          "regularization": 0.06236305275094227,
+          "objective": 0.07554236691291256,
+          "weight_norm": 3.4603043403985314,
+          "gradient_l2": 3.2680709883644778e-16,
+          "gradient_max_abs": 1.6653345369377348e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0020763000065926462
+        },
+        "model_sha256": "35c057910e97107129dcd6882594807a72c4d372dad25b3741a75de838041992"
+      },
+      {
+        "region": "inner0",
+        "config": {
+          "family": "HSMR",
+          "shrinkage": 9.0,
+          "multiplier": 10.0
+        },
+        "input_hashes": {
+          "phi": "3bc05442ca16bf39419a0a80e17f6b450b65476d3be39d00174892640521b468",
+          "rewards": "87b248eb39626bc5c7b17c47fe7fda1e1ee9d8b66024ba38e4f7caee40e099e1",
+          "task": "fe67f671e036441b9bafb14b10623f754c1f2af879b15e4aa3ab506f1aaeb362",
+          "sub": "b790b9659112b4be327f9a3177a1d3e1a10a176b2fbfbc928fc8ce1d353a1d8a"
+        },
+        "diagnostics": {
+          "family": "HSMR",
+          "n_questions": 320,
+          "n_actions": 20,
+          "n_parameters": 340,
+          "shrinkage": 9.0,
+          "generation_repeats": 3,
+          "task_prior_pseudocount": 10.0,
+          "subtask_prior_pseudocount": 3.0,
+          "prior_rule": "whole-question LOO at global, task and BBH-subtask levels",
+          "ridge_alpha": 333.3333333333333,
+          "l2": 0.05208333333333333,
+          "normalization": "mean squared error divided by n_questions * n_actions",
+          "constant_column_penalized": true,
+          "data_loss": 0.19668409037413476,
+          "regularization": 0.1824008904387722,
+          "objective": 0.379084980812907,
+          "weight_norm": 1.871389082052267,
+          "gradient_l2": 3.1979328640768286e-16,
+          "gradient_max_abs": 1.5265566588595902e-16,
+          "optimizer": "float64 numpy.linalg.solve",
+          "optimizer_success": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.002254099992569536
+        },
+        "model_sha256": "e96f4fa2711c7c817cf3b5c14dd43e141ba9b8c13850c0bf9835cb682f3a196d"
+      }
+    ],
+    "candidate_heads": 18,
+    "note": "First legal inner320 fits, no outer rewards accessed"
+  },
+  "preprocessing": {
+    "actual_PCA16_scaler_fits": 20,
+    "cpu_s": 0.59375,
+    "wall_s_sum": 0.6226392000098713,
+    "control_reuse": "All 100 controls reuse exactly matched reward-free fitting-index preprocessing"
+  },
+  "formal_training_orchestrator_wall_s": 186.75909740000498,
+  "sum_worker_process_cpu_s": 169.6875,
+  "sum_worker_path_wall_s": 533.7953865003365,
+  "maximum_worker_peak_rss_bytes": 154075136,
+  "software_qualification": {
+    "cpu_s": 0.3125,
+    "wall_s": 0.4917755000060424,
+    "rss_bytes": 63733760,
+    "peak_rss_bytes": 64782336
+  },
+  "asset_audit": {
+    "cpu_seconds": 0.125,
+    "wall_seconds": 3.03353149999748
+  },
+  "mathematics_qualification": {
+    "cpu_seconds": 0.015625,
+    "wall_seconds": 0.01953620000858791
+  },
+  "reward_signal_diagnostics": {
+    "new_predictor_fits": 0,
+    "new_llm_calls": 0,
+    "new_gold": 0,
+    "physical_model_calls": 0,
+    "content_permutation_runs": 0,
+    "cpu_seconds": 1.0625,
+    "wall_seconds": 1.3152178000018466,
+    "rss_bytes": 100704256,
+    "peak_rss_bytes": 101945344
+  },
+  "qualification_development_failure": {
+    "phase": "before source freeze",
+    "type": "synthetic test expected-array shape mismatch",
+    "model_change": false,
+    "corrected": true,
+    "CPU_s": null,
+    "wall_s": null,
+    "note": "Independent initial process time was not retained; recorded subsequent 20-test qualifications pass"
+  },
+  "postprocessing_retry": {
+    "reason": "Leaf-by-leaf scan of 28280 fitting JSON receipts is I/O-bound. Retry reads the identical 56 recorded diagnostics per frozen fold FITTING_LOG instead. No fit, label, prediction, metric or policy changes.",
+    "process_id": 54152,
+    "cpu_s": 10.703125,
+    "wall_s": 190.8031187,
+    "read_bytes": 23045187,
+    "report_public_outputs_written": false,
+    "new_fits": 0
+  },
+  "evaluation": {
+    "cpu_s": 5.34375,
+    "wall_s": 13.441323000006378,
+    "scope": "evaluator through aggregate statistics, before final artifact writes",
+    "rss_bytes": 152891392,
+    "peak_rss_bytes": 296341504
+  },
+  "historical_full_feedback": {
+    "distinct_original_questions": 600,
+    "gold": 600,
+    "member_calls": 10800,
+    "aggregation_calls": 36000,
+    "aggregate_scoring_operations": 36000,
+    "input_tokens": 32009475,
+    "output_tokens": 5264652,
+    "new_physical_expenditure_this_round": 0
+  },
+  "physical_new": {
+    "language_model_calls": 0,
+    "api_calls": 0,
+    "gold": 0,
+    "aggregation_calls": 0,
+    "new_embeddings": 0
+  },
+  "retained_payload_access": {
+    "validation200": 0,
+    "fresh400": 0,
+    "sealed200": 0
+  },
+  "service_execution_equivalent": {
+    "PSMR": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 920973,
+      "member_completion_tokens": 1323336,
+      "member_wall_time_s": 63949.62183925952,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1559103,
+      "aggregate_completion_tokens": 138572,
+      "aggregate_wall_time_s": 8880.0362889237,
+      "total_tokens": 3941984,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "HSMR": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 923088,
+      "member_completion_tokens": 1324883,
+      "member_wall_time_s": 64272.89880493225,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1554951,
+      "aggregate_completion_tokens": 136955,
+      "aggregate_wall_time_s": 8773.317709295778,
+      "total_tokens": 3939877,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "GlobalFixed": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 876636,
+      "member_completion_tokens": 1444033,
+      "member_wall_time_s": 66669.7710248651,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1654148,
+      "aggregate_completion_tokens": 129887,
+      "aggregate_wall_time_s": 8405.527243942837,
+      "total_tokens": 4104704,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "TaskFixed": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 923865,
+      "member_completion_tokens": 1459615,
+      "member_wall_time_s": 73593.83541895135,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1611667,
+      "aggregate_completion_tokens": 124447,
+      "aggregate_wall_time_s": 8042.671049174271,
+      "total_tokens": 4119594,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "SubtaskFixed": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 943158,
+      "member_completion_tokens": 1272484,
+      "member_wall_time_s": 65342.642545029754,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1508851,
+      "aggregate_completion_tokens": 135410,
+      "aggregate_wall_time_s": 8667.649851919501,
+      "total_tokens": 3859903,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "PriorShrink": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 932802,
+      "member_completion_tokens": 1321959,
+      "member_wall_time_s": 67008.77516260056,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1531827,
+      "aggregate_completion_tokens": 136027,
+      "aggregate_wall_time_s": 8690.005070078652,
+      "total_tokens": 3922615,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "E9Rule": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 928503,
+      "member_completion_tokens": 1319355,
+      "member_wall_time_s": 64587.71595180547,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1560984,
+      "aggregate_completion_tokens": 137779,
+      "aggregate_wall_time_s": 8804.913173606154,
+      "total_tokens": 3946621,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "M0_original": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 920586,
+      "member_completion_tokens": 1309298,
+      "member_wall_time_s": 63329.06215681834,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1548712,
+      "aggregate_completion_tokens": 140250,
+      "aggregate_wall_time_s": 8984.550172961317,
+      "total_tokens": 3918846,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "M0_tuned": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 920586,
+      "member_completion_tokens": 1309298,
+      "member_wall_time_s": 63329.06215681834,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1548712,
+      "aggregate_completion_tokens": 140250,
+      "aggregate_wall_time_s": 8984.550172961317,
+      "total_tokens": 3918846,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "M4": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 974772,
+      "member_completion_tokens": 1062137,
+      "member_wall_time_s": 57287.18730710528,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1461393,
+      "aggregate_completion_tokens": 149952,
+      "aggregate_wall_time_s": 9505.911035020603,
+      "total_tokens": 3648254,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    },
+    "NS_main": {
+      "gold": 0,
+      "scoring_ops": 0,
+      "member_execution_counts": 5400,
+      "member_prompt_tokens": 915723,
+      "member_completion_tokens": 1176361,
+      "member_wall_time_s": 59012.856970438734,
+      "aggregate_execution_counts": 1800,
+      "aggregate_prompt_tokens": 1464458,
+      "aggregate_completion_tokens": 141506,
+      "aggregate_wall_time_s": 9059.572372552124,
+      "total_tokens": 3698048,
+      "unit": "execution-equivalent frozen service traces over 600 questions x 3 existing repeats"
+    }
+  },
+  "notes": [
+    "Component wall sums overlap under three workers and are not end-to-end elapsed time",
+    "Original common feedback is paid once, not once per method, fold, seed or permutation",
+    "Service traces are cached counterfactual accounting, no physical service inference was run",
+    "No monetary currency rate or new end-to-end online MiniLM latency was measured",
+    "The first suite execution and the agents' small qualification checks also used CPU; their independent logs are retained where measured"
+  ]
+}
