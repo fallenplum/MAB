@@ -1,0 +1,94 @@
+{
+  "schema": "E15_fixed_actual_token_feedback_structure_interaction_v2",
+  "amendment": "pre-quality v1 pilot archived; RandomPair gold identity corrected to original V2 bundle",
+  "reference_version": "V2_selector_train_frozen_bundle_15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db",
+  "evidence": "REPEATEDLY_EXPOSED_TRAIN600_DEVELOPMENT_REPLAY",
+  "parent_branch": "codex/e14-controlled-mechanism-diagnostics",
+  "parent_commit": "9f84007bf4d5ebf516f20a8e0fc74b5e721c4526",
+  "branch": "codex/e15-feedback-structure-interaction",
+  "original_questions": 600,
+  "history": 480,
+  "evaluation": 120,
+  "outerfolds": 5,
+  "members": 6,
+  "combination_size": 3,
+  "combinations": 20,
+  "aggregator": "frozen V2 Qwen3",
+  "logger_seeds": [
+    17,
+    29,
+    43
+  ],
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "features": "original fold-frozen MiniLM PCA16",
+  "absolute_token_caps": [
+    125000,
+    250000,
+    500000,
+    750000
+  ],
+  "unique_primary_cap": 250000,
+  "token_unit": "one generation trajectory, input plus output, logger service plus feedback",
+  "cap_origin": "250000 is a rounded fixed resource scale near prior E14 Main120; no E15 quality inspected",
+  "structures": {
+    "Main": "one original uniform main combination",
+    "NeighborPair": "same main plus frozen uniform member-replacement neighbor",
+    "RandomPair": "same main plus uniform choice from remaining 19, including nine neighbors"
+  },
+  "random_action_rule": "independent input/identity/fold/logger hash; shared across three generation seeds",
+  "cost_rules": "actual union of executed members, each distinct aggregate once, gold once, scoring per aggregate",
+  "matching": "longest original-order whole-package prefix <= absolute cap; actual spend and residual reported",
+  "budget_scope": "retrospective frozen-cache resource comparison; full plan pool and selected prefix separated",
+  "methods": [
+    "RawCentered",
+    "Group",
+    "SaveRouterFixedMask"
+  ],
+  "history_permissions": "all historical input/group metadata; purchased sparse rewards only",
+  "query_permissions": "text-only predicted group; true-group capability metrics are oracle diagnostics",
+  "learner_parameters": "all E13/E14 own alpha=1000, task prior10, subgroup prior3 and pinned native SaveRouter unchanged",
+  "common_coverage": "N=min three token-matched question counts; same N original question prefix in every structure",
+  "decomposition": "Nfull-Mfull=(Ncommon-Mcommon)+(Nfull-Ncommon)-(Mfull-Mcommon)",
+  "maximum_unique_learner_packets": 900,
+  "primary_comparisons": [
+    "Group NeighborPair-Main",
+    "Group NeighborPair-RandomPair",
+    "(NeighborPair-Main)Group-(NeighborPair-Main)RawCentered"
+  ],
+  "descriptive_go_gate": {
+    "primary_group_neighbor_minus_main_pp_at_least": 1.0,
+    "primary_group_neighbor_minus_random_positive": true,
+    "primary_interaction_positive": true,
+    "group_neighbor_minus_main_positive_generation_count_at_least": 2,
+    "group_neighbor_minus_main_positive_fold_count_at_least": 3,
+    "other_caps_group_neighbor_minus_main_positive_count_at_least": 2
+  },
+  "stopping": "complete all predeclared cells; failed gate stops automatic expansion; passed gate permits frozen confirmation planning only",
+  "statistics": {
+    "primary_weights": "GSM8K and BBH each 50%, BBH question-weighted",
+    "independent_unit": "600 original questions",
+    "repetitions": "generation and logger within original question",
+    "confidence_intervals": false,
+    "bootstrap": false,
+    "hypothesis_tests": false,
+    "decision_gate": "descriptive practical screen, no error-rate guarantee"
+  },
+  "source_hashes": {
+    "e15_common.py": "41db5374b33de8878cfd02885000a3d2341088bae5eee7d026c5ea1335921a9f",
+    "evaluate_e15.py": "9b68cd724abf031d5d8900a02baad982a9fe71cb16b0f7efdde40c0f0dded33a",
+    "finalize_e15.py": "01aaa0dd1a28c44371992f8d35da2b411e022d8cf8720cf15cb4c93d14303f23",
+    "run_e15.py": "5a0c6faec525b7609e7747a79dad3e3e323bac81af387dbfb345a89760c30f6d",
+    "trajectory.py": "f62944241f04331c39300a2d36d5119946434eb74eb9891892bdd3f8180e70df",
+    "tests\\test_e15_design.py": "adf8c944f73a50eb8643f3b1a1b0d88e3af5a58b87f92658a8ec9f268f434514",
+    "tests\\test_trajectory.py": "27872c93534302f8ebc28c1dc841ff7373a86329f030032b81c3a5a45d664c14"
+  },
+  "random_plan_sha256": "d1846e175c30bc415b5d8f0047ab395e8a9eb849743e3c798aade83cc31e0ea3",
+  "historical_manifest_sha256": "244a5fc878115a9a6bd2f0d2e63521d9ced6965470c38a72f341d4f775ee55c8",
+  "new_physical_llm_calls": 0,
+  "fresh400_reads": 0,
+  "sealed200_reads": 0
+}
