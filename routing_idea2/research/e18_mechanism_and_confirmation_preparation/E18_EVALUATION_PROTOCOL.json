@@ -1,0 +1,551 @@
+{
+  "schema": "E18_frozen_confirmation_preparation_v1",
+  "branch": "codex/e18-mechanism-and-confirmation-preparation",
+  "parent_commit": "94a8579f9c8dc16d1f6afb943cee6678c5a9792a",
+  "status": "FROZEN_PREPARATION_AWAITING_TARGET_BUDGET_APPROVAL_AND_SCOPE_ADAPTER",
+  "client_date": "2026-11-16",
+  "models": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform",
+    "GlobalFixed"
+  ],
+  "model_asset_sha256": "aabca0b20967f8711d6a700dea301e490afb71de56b73c6d9a65f9db5fb0f360",
+  "pca_scaler": "load exact full600 E17 state; no fit",
+  "representation": "frozen MiniLM384 to PCA16+StandardScaler+penalized constant",
+  "original_questions": {
+    "existing_fresh": 400,
+    "proposed_new": 2600,
+    "proposed_total": 3000,
+    "GSM8K": 1500,
+    "BBH": 1500
+  },
+  "dataset_admission": "PROPOSED_NOT_ADMITTED",
+  "automatically_admitted_new_questions": 0,
+  "source_target": "GSM official train + BBH official test; BBH source expansion1254 separately tagged and requires approval",
+  "primary_comparison": "TSPO_uniform minus SPO_coordinate",
+  "primary_alpha": 0.05,
+  "alternative": "two-sided",
+  "confidence_interval": "fixed-time95% task-stratified paired t interval with Satterthwaite df, original-question unit",
+  "primary_effect_for_planning_pp": 1,
+  "source_variance_sha256": "aff7827a3025785cee5a755cce94f566e31a6c175ba384d9f904ea0909db64b7",
+  "secondary_comparisons": [
+    "TSPO-Ridge",
+    "SPO-Ridge",
+    "TSPO-GlobalFixed",
+    "SPO-GlobalFixed",
+    "Ridge-GlobalFixed"
+  ],
+  "secondary_multiplicity": "Holm within the five predeclared secondary comparisons; no promotion to primary",
+  "member_generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "member_sample_index": 0,
+  "sampling_control": false,
+  "aggregation_invocation_seed": 42,
+  "active_operator": {
+    "aggregator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+    "base_model_configuration_fingerprint": "32aed6079298ebcf8eee99add17dd5c4a6828a504f13dd5d9236b234776861d3",
+    "prompt_version": "anonymous_final_answer_typed_v3",
+    "composite_identity_sha256": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "member_caps": {
+      "0": 6144,
+      "1": 6144,
+      "2": 6144,
+      "3": 6144,
+      "4": 6144,
+      "5": 6144
+    },
+    "aggregate_cap": 8192,
+    "source_files": [
+      {
+        "path": "E:\\语言模型组合路由\\configs\\decision_feedback_v2\\aggregator_qwen3_8b_candidate_v1.json",
+        "sha256": "b588eeaf6e78d9d59749fbd90a52e8c2602647018c7b841301d92b341fe2c13d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\configs\\pool_v1.json",
+        "sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\BUNDLE_TRAINVAL.json",
+        "sha256": "15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\results\\decision_feedback_v2\\s1_typed_aggcal_generation42_9ef6c02bc9fb\\OPERATOR_FREEZE_LOCK_v1.json",
+        "sha256": "66d77c2ab5eef0c6a360cfe2d8df01429369927c96fe3ae7b6a63697f4fc09b0"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_aggregation_execution.py",
+        "sha256": "acbc9cd911635f26da0e23cce4174bf6660a7604d29a5d7224f1df08e083f368"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_operator_contract.py",
+        "sha256": "c9c3c7562ea07e9d32074e5ee67c551a458faa6ad34c17d521659c6abf379767"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\encoding.py",
+        "sha256": "889bcb6935c6d73c13c55d8b5008d3a8dfc3ff1c2ca927a28ae668e47a931bb3"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\inference.py",
+        "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\execution.py",
+        "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\member_execution.py",
+        "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\scoring.py",
+        "sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router_v2\\scoring.py",
+        "sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d"
+      }
+    ]
+  },
+  "service_tie": "semantic_exact using immutable physical-team identity",
+  "source_frames_separate_reporting": true,
+  "no_implicit_original_frame_3000_claim": true,
+  "fixed_horizon": true,
+  "sequential_peeking": false,
+  "optional_stopping": false,
+  "near_tolerance_primary": 0,
+  "near_tie_diagnostics": "same predeclared1e-8 score sensitivity; no model or action revision",
+  "source_inputs_sha256": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+  "corrected_input_archive_sha256": "57b26e5a3fbbbac99a15007f88292d7b1ae12b6e2af02137e962596c097c258f",
+  "frozen_actions_sha256": "9f87499782a8417ab1bbf7c5ef7c409ca4bf10ece6f6cf35a51e9212b97f9aee",
+  "proposed_DAG_qualification_sha256": "15620530be338a14aa5108362b794edb6282475527730e2a2284594242a17f17",
+  "exact_call_budget_sha256": "e0485018154bb1d234689da022da378fb850848b20d6cacd66ede20d4c2c63ff",
+  "head_fits": 0,
+  "pca_refits": 0,
+  "scaler_refits": 0,
+  "new_llm_generation_calls": 0,
+  "input_encoding": {
+    "questions": 2600,
+    "batches": 325,
+    "batch_size": 8,
+    "device": "cpu"
+  },
+  "gold_reveal_rule": "canonical_question plus original source/reference revision once, reused across executed outputs",
+  "model_judge_calls": 0,
+  "score_operations": 30921,
+  "failure_rule": "original cost journal and stop-on-paid-failure retained; unknown-cost attempts block unaccounted repetition",
+  "automatic_paid_retries": 0,
+  "manual_paid_resume_total_cap": null,
+  "authorization_required_before_actual_generation_or_scoring": true,
+  "protected_input_exception": {
+    "authorized_date": "2026-11-16",
+    "original_inputs": 200,
+    "purpose": "once-only isolated exclusion fingerprints",
+    "display": false,
+    "raw_persistence": false,
+    "answer_reading": false,
+    "encoding": false,
+    "model_training": false
+  },
+  "fresh400_reward_reads": 0,
+  "sealed_answer_reads": 0,
+  "scope_adapter_readiness": {
+    "schema": "E18_execution_adapter_readiness_audit_v1",
+    "status": "PREPARATION_ONLY_EXECUTION_ADAPTERS_PENDING",
+    "paid_runner_status": "NOT_IMPLEMENTED",
+    "native3000_scope_adapter_status": "NOT_IMPLEMENTED",
+    "actual_gold_reader_status": "NOT_IMPLEMENTED",
+    "actual_scoring_adapter_status": "NOT_IMPLEMENTED",
+    "scientific_operator": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "core_scientific_source_changes": 0,
+    "new_models_or_algorithms": 0,
+    "historical_constraints": {
+      "COUNTS": {
+        "selector_train": 600,
+        "selector_validation": 200,
+        "fresh_dev_test": 400
+      },
+      "METHODS": [
+        "selector",
+        "global_fixed",
+        "task_fixed",
+        "subtask_fixed"
+      ]
+    },
+    "historical_guard_checks": {
+      "fixed_full_feedback_counts": true,
+      "full20_score_matrix": true,
+      "old_admission_400x20": true,
+      "old_admission_800_development_ids": true,
+      "old_member_worker_2800_phase_total": true,
+      "old_aggregation_input_projection1200": true,
+      "old_materializer_full_six_member_support": true,
+      "old_aggregation_worker_all20teams": true,
+      "old_typed_aggregation_invocation_seed42": true
+    },
+    "guard_checks_passed": 9,
+    "source_entrypoints": [
+      {
+        "path": "src/budget_router/member_execution.py",
+        "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2",
+        "functions": [
+          {
+            "qualified_name": "make_member_job",
+            "signature": "make_member_job(*, question_id: str, task: str, question: str, model_alias: str, seed: int, model_spec: ModelSpec, split: str, subtask=None, sample_index=0, sampling_control=False)",
+            "line": 44
+          },
+          {
+            "qualified_name": "validate_member_job",
+            "signature": "validate_member_job(job, spec=None)",
+            "line": 68
+          },
+          {
+            "qualified_name": "MemberStore.run",
+            "signature": "MemberStore.run(self, backend, job)",
+            "line": 123
+          }
+        ]
+      },
+      {
+        "path": "src/budget_router/execution.py",
+        "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f",
+        "functions": [
+          {
+            "qualified_name": "make_job",
+            "signature": "make_job(*, question_id: str, task: str, question: str, answers: dict[str, str], seed: int, model_spec: ModelSpec, split: str, subtask=None, member_provenance: dict | None=None, tokenizer=None, source_token_cap=512, head_tokens=128, tail_tokens=384)",
+            "line": 122
+          },
+          {
+            "qualified_name": "validate_job",
+            "signature": "validate_job(job: dict, model_spec: ModelSpec | None=None, *, require_token_policy=False)",
+            "line": 171
+          },
+          {
+            "qualified_name": "ExecutionStore.run",
+            "signature": "ExecutionStore.run(self, backend, job: dict)",
+            "line": 302
+          }
+        ]
+      },
+      {
+        "path": "src/budget_router/inference.py",
+        "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef",
+        "functions": [
+          {
+            "qualified_name": "make_backend",
+            "signature": "make_backend(spec: ModelSpec)",
+            "line": 293
+          },
+          {
+            "qualified_name": "configuration_fingerprint",
+            "signature": "configuration_fingerprint(spec: ModelSpec)",
+            "line": 298
+          }
+        ]
+      },
+      {
+        "path": "src/budget_router_v2/scoring.py",
+        "sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d",
+        "functions": [
+          {
+            "qualified_name": "parse_prediction",
+            "signature": "parse_prediction(task, prediction, *, subtask=None, choices=None)",
+            "line": 70
+          },
+          {
+            "qualified_name": "score_answer",
+            "signature": "score_answer(task, prediction, reference, *, subtask=None, choices=None)",
+            "line": 78
+          }
+        ]
+      },
+      {
+        "path": "src/budget_router_v2/full_feedback.py",
+        "sha256": "58b20505182149eef2537a42867c04ba98dfc6959f527fe62c1b8c5ff3f39dc2",
+        "functions": [
+          {
+            "qualified_name": "read_inputs",
+            "signature": "read_inputs(bundle, base, split)",
+            "line": 98
+          },
+          {
+            "qualified_name": "read_outcomes",
+            "signature": "read_outcomes(bundle, base, split, inputs)",
+            "line": 131
+          },
+          {
+            "qualified_name": "fit_bundle",
+            "signature": "fit_bundle(bundle_path, output)",
+            "line": 353
+          },
+          {
+            "qualified_name": "predict_bundle",
+            "signature": "predict_bundle(bundle_path, model_receipt_path, output)",
+            "line": 384
+          },
+          {
+            "qualified_name": "evaluate_predictions",
+            "signature": "evaluate_predictions(inputs, outcomes, predicted, *, replicates=2000, bootstrap_seed=20261104)",
+            "line": 267
+          },
+          {
+            "qualified_name": "score_bundle",
+            "signature": "score_bundle(bundle_path, prediction_receipt_path, output)",
+            "line": 400
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/typed_aggregation_execution.py",
+        "sha256": "acbc9cd911635f26da0e23cce4174bf6660a7604d29a5d7224f1df08e083f368",
+        "functions": [
+          {
+            "qualified_name": "output_contract",
+            "signature": "output_contract(task, subtask)",
+            "line": 20
+          },
+          {
+            "qualified_name": "upgrade_job",
+            "signature": "upgrade_job(job, model_spec=None)",
+            "line": 67
+          },
+          {
+            "qualified_name": "validate_job",
+            "signature": "validate_job(job, model_spec=None, *, require_token_policy=False)",
+            "line": 88
+          },
+          {
+            "qualified_name": "load_execution_api",
+            "signature": "load_execution_api()",
+            "line": 114
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/stage2_member_adapter.py",
+        "sha256": "34d6cb8d2597d498e3c1fe16a56e2d002e82500a5e5e08f0f954770f23dec74c",
+        "functions": [
+          {
+            "qualified_name": "load_member_api",
+            "signature": "load_member_api(root)",
+            "line": 38
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/stage2_aggregation_adapter.py",
+        "sha256": "df5e63891f97ec8c875159cfdc39aacd09be8a9659404f7909dacef9797accd5",
+        "functions": [
+          {
+            "qualified_name": "prepare_aggregation_inputs",
+            "signature": "prepare_aggregation_inputs(root)",
+            "line": 53
+          },
+          {
+            "qualified_name": "load_aggregation_api",
+            "signature": "load_aggregation_api(root, generation_seed)",
+            "line": 97
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/stage2_fresh_admission.py",
+        "sha256": "ecfc1557c7ea5b1988b003db35e1f908ec053d634f38184cc4ac90ae57bc5a2b",
+        "functions": [
+          {
+            "qualified_name": "validate_fresh_admission",
+            "signature": "validate_fresh_admission(paths, admission_root, contract_root, expected_operator)",
+            "line": 25
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/materialize_stage2_aggregation.py",
+        "sha256": "9c6c6525163c8b7f61057eeb6f5f2d8a4ccf3ce7c8262e3fc8151f75d7c9e592",
+        "functions": [
+          {
+            "qualified_name": "load_members",
+            "signature": "load_members(root, plan_path, plan, api, cohort, generation_seed)",
+            "line": 35
+          },
+          {
+            "qualified_name": "materialize",
+            "signature": "materialize(root, plan_path, freeze_path, cohort, generation_seed, fresh_configuration=None)",
+            "line": 92
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/build_stage2_aggregation_bundle.py",
+        "sha256": "7cedd4d294e1fcb0e141ca90051dcd80a0ebeaf99d320074316f1673b67b9b92",
+        "functions": [
+          {
+            "qualified_name": "task_scope",
+            "signature": "task_scope(task)",
+            "line": 40
+          },
+          {
+            "qualified_name": "build",
+            "signature": "build(task_path, shards, name)",
+            "line": 192
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/run_stage2_members_native.py",
+        "sha256": "c368835c31b05bf5e8653d969711a1c9c295526bc2ce9b9a6da54cb8e0c58ae4",
+        "functions": [
+          {
+            "qualified_name": "main",
+            "signature": "main(argv=None)",
+            "line": 197
+          }
+        ]
+      },
+      {
+        "path": "scripts/v2/run_stage2_aggregation_native.py",
+        "sha256": "c729807cc6acf8306e1b560a42e59d52a98f4a4a371623cdad6d1ff10d364a71",
+        "functions": [
+          {
+            "qualified_name": "validate_prospective_fresh",
+            "signature": "validate_prospective_fresh(bundle, plan, contract_root)",
+            "line": 104
+          },
+          {
+            "qualified_name": "validate_shard_jobs",
+            "signature": "validate_shard_jobs(logical_jobs, jobs, bridge, logical, physical, plan, api)",
+            "line": 127
+          },
+          {
+            "qualified_name": "main",
+            "signature": "main()",
+            "line": 242
+          }
+        ]
+      }
+    ],
+    "protocol": {
+      "members": 6,
+      "K": 3,
+      "combinations": 20,
+      "member_generation_seeds": [
+        42,
+        137,
+        2024
+      ],
+      "sample_index": 0,
+      "sampling_control": false,
+      "member_temperature": 0.7,
+      "member_top_p": 0.95,
+      "aggregator_invocation_seed": 42,
+      "aggregator_temperature": 0,
+      "aggregator_top_p": 1,
+      "member_max_new_tokens": 2048,
+      "aggregator_max_new_tokens": 2048,
+      "typed_prompt": "anonymous_final_answer_typed_v3",
+      "token_compression": "source512 head128 tail384",
+      "scorer": "safe_exact_v2_0_terminal_final_heading_fix"
+    },
+    "minimal_scope_adaptations": [
+      {
+        "target_function": "new load_e18_member_api(contract)",
+        "status": "NOT_IMPLEMENTED",
+        "retained_kernel": "budget_router.member_execution.make_member_job/validate_member_job",
+        "change": "exact frozen3000 qid/canonical/task source binding and required member-key subset"
+      },
+      {
+        "target_function": "new E18 member bundle/phase builder and native main",
+        "status": "NOT_IMPLEMENTED",
+        "retained_kernel": "original backend, MemberStore, journal and actual-cost semantics",
+        "change": "new cohort manifest, missing-key assignments, owned output namespace and host mapping"
+      },
+      {
+        "target_function": "new load_e18_aggregation_api(contract, member_generation_seed)",
+        "status": "NOT_IMPLEMENTED",
+        "retained_kernel": "original anonymous make_job plus frozen typed upgrade/validate",
+        "change": "new cohort input binding and exactly three same-repeat successful member receipts per required team"
+      },
+      {
+        "target_function": "new sparse aggregation materializer/bundle/worker guard",
+        "status": "NOT_IMPLEMENTED",
+        "retained_kernel": "pinned operator9ef6 and aggregate invocation seed42",
+        "change": "per-question selected-team union instead of complete20teams and full six-member prerequisite"
+      },
+      {
+        "target_function": "new verified scoring-record reader and gold projection",
+        "status": "NOT_IMPLEMENTED",
+        "retained_kernel": "budget_router_v2.scoring.score_answer",
+        "change": "authorized cohort/reference/source-frame mapping and exact execution/score receipt byte verification"
+      },
+      {
+        "target_function": "sparse_policy_projection.project_frozen_policy_scores",
+        "status": "SYNTHETIC_KERNEL_QUALIFIED",
+        "retained_kernel": "binary final aggregate rewards",
+        "change": "pure sparse key projection to policy by generation by original-question"
+      },
+      {
+        "target_function": "power_and_statistics.paired_question_test",
+        "status": "SYNTHETIC_KERNEL_QUALIFIED",
+        "retained_kernel": "E18 frozen task-balanced question-level paired two-sided plan",
+        "change": "invoke only on complete verified policy projection after future scoring entrypoint freeze"
+      }
+    ],
+    "source_frame_boundary": {
+      "proposed_questions": 3000,
+      "existing_fresh": 400,
+      "new_proposal": 2600,
+      "new_bbh_full_source_expansion": 1254,
+      "same_original_subpool_distribution_claim_supported": false
+    },
+    "logical_union_from_frozen_preparation": {
+      "member_calls": 47286,
+      "aggregate_calls": 30921,
+      "cache_remainder_source": "separately versioned final reconciliation; not inferred from these totals"
+    },
+    "metadata_dag_role": {
+      "authorizes_execution": false,
+      "native_worker_consumption_allowed": false,
+      "must_not_use_native_plan_schema": true,
+      "native_schema_names": [
+        "v2_stage2_native_members_execution_plan_v1",
+        "v2_stage2_aggregation_shard_run_v1"
+      ],
+      "native_file_names": [
+        "RUN_PLAN.json",
+        "logical_jobs.jsonl",
+        "physical_jobs.jsonl",
+        "JOB_ID_MAP.json"
+      ]
+    },
+    "sparse_software_qualification": {
+      "source_sha256": "098df2f6a5ec6e014473516bab1fa136efbe35a9258803f2ec25c9e43cb9cb6f",
+      "qualification_sha256": "cff52569720f83214c01065e0fbe1223af1e51f511562a4381421708c566acde",
+      "checks": 22,
+      "synthetic_score_rows": 45,
+      "all20_matrix_rows": 360,
+      "paid_runner_status": "NOT_IMPLEMENTED",
+      "referenced_actual_bytes_verified": false
+    },
+    "unicode_input_handling": "new JSONL input adapter must iterate physical file lines; embedded Unicode line separators must remain inside JSON strings",
+    "next_nonpaid_gate": "Implement and qualify exact-cohort scope adapters and verified sparse scoring reader before any executable paid queue is offered",
+    "new_jobs_started": 0,
+    "executable_llm_commands_created": 0,
+    "real_gold_reads": 0,
+    "new_aggregation_output_reads": 0,
+    "sealed_payload_reads": 0,
+    "e17_writes": 0,
+    "report_sha256": "bca8fc76764373054a3cca8faf870afaa606488c30757eb0544faa9804c41370"
+  },
+  "old_worker_reuse": "scientific lower-level factory/backend may be reused; old400/full20 worker and scorer entry points cannot be launched unchanged",
+  "cache_materialization_postcheck_sha256": "015d8413de5a156fe2d90d43e0e6a0c522ce9f96272936aebc7a5002ca4af4d3",
+  "approval_topics": [
+    "Accept and name the expanded BBH target population with separate source tables",
+    "Fix N before any reward, with one-sided historical plans superseded for E18 only",
+    "Approve missing-call budget and any separately accounted manual resume",
+    "Complete the E18-specific native scope admission and sparse result adapter before the first paid call"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source_sha256": "79c67f22b63b6d385062d99a000216698b8ca19e85b694bcc067fa5e6afdf879",
+  "statistical_source_sha256": "1516045f08e475ff94d0d808ca08943819a64cb164bc26f7821b824920cc959f",
+  "synthetic_seed": 1816,
+  "original_questions": 120,
+  "generation_records": 360,
+  "task_counts": {
+    "gsm8k": 80,
+    "bbh": 40
+  },
+  "task_weights": {
+    "gsm8k": 0.5,
+    "bbh": 0.5
+  },
+  "independent_formula_errors": {
+    "estimate": 0.0,
+    "standard_error": 0.0,
+    "satterthwaite_degrees": 0.0,
+    "two_sided_p": 0.0
+  },
+  "maximum_error": 0.0,
+  "target_qualification": {
+    "status": "PASS",
+    "checks": 8,
+    "real_evaluation_rewards_read": 0,
+    "synthetic_intervals_only": true,
+    "fresh_rewards_read": 0,
+    "sealed_payloads_read": 0,
+    "note": "Pure numerical qualification does not establish real-data coverage"
+  },
+  "formulas": {
+    "estimate": "0.5*mean_G+0.5*mean_B",
+    "variance": "0.25*s_G^2/n_G+0.25*s_B^2/n_B",
+    "degrees": "variance^2/sum(component_t^2/(n_t-1))",
+    "p_value": "2*t_survival(abs(estimate/SE),df)"
+  },
+  "evidence_scope": "Synthetic implementation qualification only; no real-data interval reported",
+  "real_confidence_intervals": 0,
+  "real_reward_arrays_opened": 0,
+  "fresh_reward_reads": 0,
+  "sealed_payload_reads": 0,
+  "e17_writes": 0,
+  "cpu_s": 0.015625,
+  "wall_s": 0.011371399974450469
+}

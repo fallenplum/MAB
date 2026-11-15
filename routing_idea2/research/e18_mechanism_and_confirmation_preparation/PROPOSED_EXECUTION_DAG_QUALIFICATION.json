@@ -1,0 +1,49 @@
+{
+  "schema": "e18_proposed_execution_dag_qualification_v1",
+  "status": "PASS_APPROVAL_REQUIRED",
+  "admission_state": "PROPOSED_NOT_ADMITTED",
+  "topology": {
+    "status": "PASS",
+    "independent_question_clusters": 3000,
+    "member_generation_repeats": 3,
+    "question_generation_clusters": 9000,
+    "gold_reveal_accounts": 3000,
+    "unique_member_nodes": 47286,
+    "unique_aggregate_nodes": 30921,
+    "unique_total_nodes": 78207,
+    "dependency_edges": 92763,
+    "frozen_policy_decisions": 12000,
+    "policy_generation_selection_coverage": 36000,
+    "all_policy_generation_selections_covered": true,
+    "each_aggregate_has_exactly_three_members": true,
+    "all_dependencies_same_question_and_generation": true,
+    "topological_layers": [
+      "member output metadata",
+      "aggregate output metadata"
+    ],
+    "acyclic": true,
+    "question_repeats_counted_as_independent_questions": false,
+    "native_queue_writes": 0
+  },
+  "graph_sha256": "1225df93df4f162534fe627262b0f7eea279e039a2deb8b70963a3317c2e18d5",
+  "graph_bytes": 102960214,
+  "source_hashes": {
+    "frozen_call_union": "e669e93a983b6b523d01d97d4461f24c64ac6da9684df4546c811a909d49738d",
+    "frozen_policy_decisions": "9f87499782a8417ab1bbf7c5ef7c409ca4bf10ece6f6cf35a51e9212b97f9aee",
+    "existing_fresh400_inputs": "dc7156566ae34b8d60fecdadf5042b4813e3aa8f47878c878209a3d6a7d49db3",
+    "proposed2600_inputs": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+    "operator_qualification": "26c4900e599ba23b74265fb37542940ac4c64ff987fc7de0bbfb63a43d0b4701",
+    "preparation_code": "97d6aa8713f79f0b90b7bc2521d448b4e63825bb7e80f8dd10721c698d84d303"
+  },
+  "payload_field_qualification": "PASS_INPUT_TEXT_ANSWER_LABEL_NATIVE_JOB_FIELDS_ABSENT",
+  "public_identity_key_values_included": 0,
+  "full_logical_graph_preserved": true,
+  "cache_reuse_applied": false,
+  "native_queue_writes": 0,
+  "head_fits": 0,
+  "encoder_forwards": 0,
+  "llm_calls": 0,
+  "score_operations": 0,
+  "cpu_s": 46.0,
+  "wall_s": 113.42628909996711
+}

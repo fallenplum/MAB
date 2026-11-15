@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "schema": "E18_input_metadata_dtype_repair_v2",
+  "checks": 28,
+  "check_names": [
+    "original v1 NPZ matches frozen input receipt",
+    "candidate JSONL matches frozen candidate SHA",
+    "v1 budget receipt identity matches",
+    "v1 defect is confined to object subtask header",
+    "v1 contains the five declared input-only fields",
+    "all copied source fields are pickle-free",
+    "locked candidate has2600 rows",
+    "question order matches locked candidate",
+    "canonical order matches locked candidate",
+    "task order matches locked candidate",
+    "candidate identities remain unique",
+    "candidate task counts remain1300/1300",
+    "subtasks use only declared null/string metadata",
+    "normalized subtask labels have Unicode dtype",
+    "GSM8K subtasks normalize to empty string",
+    "BBH retains exactly27 declared subtasks",
+    "v2 field set matches the input-only schema",
+    "all five v2 arrays load with allow_pickle=False",
+    "embeddings dtype and shape unchanged",
+    "embeddings values and bytes unchanged",
+    "question_ids dtype and shape unchanged",
+    "question_ids values and bytes unchanged",
+    "canonical_hashes dtype and shape unchanged",
+    "canonical_hashes values and bytes unchanged",
+    "task_labels dtype and shape unchanged",
+    "task_labels values and bytes unchanged",
+    "v2 subtasks exactly match locked normalized metadata",
+    "v1 inputs, predictions, call union and budget remain byte-identical"
+  ],
+  "source_sha256": "250c43950d8b86e3313eb7bdf75ef2d72b25d7ea8ed603a1d1fc19e093d08b01",
+  "candidate_sha256": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+  "original_input": {
+    "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\PROPOSED2600_INPUTS_ONLY.npz",
+    "sha256": "312420e0d714d027fd5f944ba52f8335fd90dfc13283881752d3f956bc221d27",
+    "role": "preserved v1 metadata-only dtype defect",
+    "unsafe_field": "subtask_labels",
+    "unsafe_field_dtype": "object",
+    "unsafe_field_shape": [
+      2600
+    ]
+  },
+  "repaired_input": {
+    "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\PROPOSED2600_INPUTS_ONLY_v2.npz",
+    "sha256": "57b26e5a3fbbbac99a15007f88292d7b1ae12b6e2af02137e962596c097c258f",
+    "role": "input-only Unicode metadata repair",
+    "subtask_dtype": "<U39",
+    "fields": [
+      "canonical_hashes",
+      "embeddings",
+      "question_ids",
+      "subtask_labels",
+      "task_labels"
+    ]
+  },
+  "unchanged_array_hashes": {
+    "embeddings": "36d183c340b94117d1e59643fe78b0cff04aa499bd1bca593a805bcca745fda2",
+    "question_ids": "642fcd503a3e19aa83f2cbe9fea5facc366744c27dd2e2a2c38c2cb3937d36a8",
+    "canonical_hashes": "a9ae8c3eda521fe52be68fe098a5dd7fca6b29ab675f4a94cb310f47f1a0b480",
+    "task_labels": "d13cdcc0a981166c365ebb60d1ef34618c102ce418d7a309939ed20312d1e234"
+  },
+  "normalized_null_subtasks": 1300,
+  "task_counts": {
+    "gsm8k": 1300,
+    "bbh": 1300
+  },
+  "source_frame_counts": {
+    "gsm8k_official_train_original_primary_frame": 1300,
+    "bbh_official_full_source_frame_expansion": 1254,
+    "bbh_old_llmrouterbench_common_subpool": 46
+  },
+  "source_frame_boundary": "BBH full-source expansion remains separately identified; this dtype repair makes no same-source-distribution admission",
+  "unsafe_object_payload_decoded": false,
+  "allow_pickle": false,
+  "unchanged_owner_artifacts": [
+    {
+      "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\PROPOSED2600_INPUTS_ONLY.npz",
+      "sha256": "312420e0d714d027fd5f944ba52f8335fd90dfc13283881752d3f956bc221d27"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\FROZEN3000_INPUT_PREDICTIONS.npz",
+      "sha256": "9f87499782a8417ab1bbf7c5ef7c409ca4bf10ece6f6cf35a51e9212b97f9aee"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\FROZEN_CALL_UNION_3000.json",
+      "sha256": "e669e93a983b6b523d01d97d4461f24c64ac6da9684df4546c811a909d49738d"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\public\\E18_EXACT_CALL_BUDGET.json",
+      "sha256": "8324b599f624db6597f7aebd66d74ed07d58ef60acae8fd5a64eb97648655bd2"
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e18_mechanism_and_confirmation_preparation\\private\\FROZEN_BUDGET_RECEIPT.json",
+      "sha256": "b4525e80edf74e15e056f362923cfd4e3163c0fe6393acc571be407ce462ca06"
+    }
+  ],
+  "new_encoder_forwards": 0,
+  "pca_refits": 0,
+  "scaler_refits": 0,
+  "head_fits": 0,
+  "predictions_recomputed": 0,
+  "changed_service_choices": 0,
+  "changed_logical_call_counts": 0,
+  "physical_llm_calls": 0,
+  "fresh_reward_reads": 0,
+  "sealed_payload_reads": 0,
+  "e17_writes": 0,
+  "cpu_s": 1.625,
+  "wall_s": 2.229261000000406
+}

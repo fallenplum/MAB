@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "reviewer": "root",
+  "reviewed_image_sha256": "8ba39c6fe56c8c4c91eeaaeb6a60d14093d146bce124383165bf73feacaf863b",
+  "readable": true,
+  "overlaps_observed": false,
+  "clipped_labels_observed": false,
+  "operator_and_data_scope_checked": true,
+  "renderer": "shared geometry to native Drawio XML, standalone SVG and Pillow PNG; native draw.io CLI unavailable"
+}

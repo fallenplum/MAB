@@ -1,0 +1,298 @@
+{
+  "schema": "e18_data_source_inventory_v1",
+  "status": "INVENTORY_COMPLETE_BBH_OFFICIAL_INPUT_PROJECTION_BLOCKED",
+  "registered_cohort_counts": [
+    {
+      "split": "e1_diagnostic_evaluation",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 100
+    },
+    {
+      "split": "e1_diagnostic_evaluation",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 100
+    },
+    {
+      "split": "e1_selection_calibration",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 50
+    },
+    {
+      "split": "e1_selection_calibration",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 50
+    },
+    {
+      "split": "fresh_dev400",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 200
+    },
+    {
+      "split": "fresh_dev400",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 200
+    },
+    {
+      "split": "online_calibration",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 100
+    },
+    {
+      "split": "online_calibration",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 100
+    },
+    {
+      "split": "online_stream",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 300
+    },
+    {
+      "split": "online_stream",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 300
+    },
+    {
+      "split": "qualification",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 4
+    },
+    {
+      "split": "qualification",
+      "task": "gsm8k",
+      "source_split": "train",
+      "questions": 4
+    },
+    {
+      "split": "sealed_test",
+      "task": "bbh",
+      "source_split": "test",
+      "questions": 100
+    },
+    {
+      "split": "sealed_test",
+      "task": "gsm8k",
+      "source_split": "test",
+      "questions": 100
+    }
+  ],
+  "old_registered_questions": 1308,
+  "fresh_reserved_questions": 400,
+  "registered_exclusion_union": 1708,
+  "sealed_questions": 200,
+  "sealed_directories_opened": 0,
+  "sealed_payloads_opened": 0,
+  "official_gsm_counts": {
+    "train": 7473,
+    "test": 1319
+  },
+  "official_bbh_examples": 6511,
+  "official_bbh_subtasks": 27,
+  "official_bbh_per_subtask": [
+    {
+      "subtask": "boolean_expressions",
+      "examples": 250
+    },
+    {
+      "subtask": "causal_judgement",
+      "examples": 187
+    },
+    {
+      "subtask": "date_understanding",
+      "examples": 250
+    },
+    {
+      "subtask": "disambiguation_qa",
+      "examples": 250
+    },
+    {
+      "subtask": "dyck_languages",
+      "examples": 250
+    },
+    {
+      "subtask": "formal_fallacies",
+      "examples": 250
+    },
+    {
+      "subtask": "geometric_shapes",
+      "examples": 250
+    },
+    {
+      "subtask": "hyperbaton",
+      "examples": 250
+    },
+    {
+      "subtask": "logical_deduction_five_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "logical_deduction_seven_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "logical_deduction_three_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "movie_recommendation",
+      "examples": 250
+    },
+    {
+      "subtask": "multistep_arithmetic_two",
+      "examples": 250
+    },
+    {
+      "subtask": "navigate",
+      "examples": 250
+    },
+    {
+      "subtask": "object_counting",
+      "examples": 250
+    },
+    {
+      "subtask": "penguins_in_a_table",
+      "examples": 146
+    },
+    {
+      "subtask": "reasoning_about_colored_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "ruin_names",
+      "examples": 250
+    },
+    {
+      "subtask": "salient_translation_error_detection",
+      "examples": 250
+    },
+    {
+      "subtask": "snarks",
+      "examples": 178
+    },
+    {
+      "subtask": "sports_understanding",
+      "examples": 250
+    },
+    {
+      "subtask": "temporal_sequences",
+      "examples": 250
+    },
+    {
+      "subtask": "tracking_shuffled_objects_five_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "tracking_shuffled_objects_seven_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "tracking_shuffled_objects_three_objects",
+      "examples": 250
+    },
+    {
+      "subtask": "web_of_lies",
+      "examples": 250
+    },
+    {
+      "subtask": "word_sorting",
+      "examples": 250
+    }
+  ],
+  "old_bbh_cached_subpool": 1078,
+  "primary_source_target": "GSM8K official train plus BBH official test, matching existing fresh400",
+  "sealed_source_target_difference": "Original sealed200 uses100 GSM8K official test and100 BBH test; it is a different GSM source stratum.",
+  "main_original_source_exact_metadata_upper_bounds": {
+    "gsm_train": 6719,
+    "bbh_old_cached_subpool": 224
+  },
+  "broader_official_bbh_source_frame": {
+    "examples": 6511,
+    "proposed_additional_questions": 1300,
+    "layer": "official BBH expanded coverage beyond old LLMRouterBench common subset",
+    "position_exclusion_status": "BLOCKED_EXTERNAL_SEALED_INDEX"
+  },
+  "alternate_gsm_test_target": {
+    "official_test": 1319,
+    "reserved_sealed_test": 100,
+    "metadata_upper_bound": 1219,
+    "warning": "Cannot supply1500 test-stratum GSM questions; official train is a separately disclosed extension for that different target."
+  },
+  "sealed_external_index_audit": {
+    "source_records": 1078,
+    "sealed_external_metadata_records": 100,
+    "available_fields": [
+      "question_id",
+      "source_question_ids",
+      "source_split",
+      "subtask",
+      "subtask_source_file",
+      "subtask_source_revision",
+      "task"
+    ],
+    "source_question_id_type": "LLMRouterBench per-model record index; no validated official BBH within-file example index",
+    "numeric_source_indices_min": 1,
+    "numeric_source_indices_max": 1080,
+    "official_position_mapping_qualified": false,
+    "sealed_input_or_reference_fields_decoded": 0
+  },
+  "safe_input_sources": [
+    {
+      "path": "data/derived/gsm8k_questions.jsonl",
+      "schema": [
+        "question",
+        "question_id",
+        "source_split",
+        "subtask",
+        "task"
+      ],
+      "projection": "qid header and metadata first; never decode a sealed row or any reference; primary train only"
+    },
+    {
+      "path": "data/derived/available_records.jsonl",
+      "schema": [
+        "question",
+        "question_id",
+        "source_split",
+        "subtask",
+        "task"
+      ],
+      "projection": "qid header excludes sealed before question projection; all other fields syntax-skipped"
+    },
+    {
+      "path": "artifacts/private/routing_redesign_20261104/fresh_dev400/inputs_only.jsonl",
+      "schema": [
+        "canonical_question_sha256",
+        "question",
+        "question_id",
+        "source_split",
+        "subtask",
+        "task"
+      ],
+      "projection": "already input-only; no reward/answer fields allowed"
+    }
+  ],
+  "additional_used_cohort_scope": "All original registered1308 plus fresh400; E1-E17 canonical pipeline reuses these cohorts. An unregistered manual inspection would require an appended external exclusion registry.",
+  "unresolved": [
+    "No validated external official BBH example-index mapping for sealed identities.",
+    "No external sealed text near-duplicate signatures; exact identity exclusion alone cannot complete near-duplicate acceptance."
+  ],
+  "source_manifest_sha256": "72ee4443fc71625bfbd40e322c36533a59cd0fe775ef91906dd8437a59cb6813",
+  "new_llm_calls": 0,
+  "new_downloads": 0,
+  "gold_values_decoded": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0,
+  "cpu_s": 1.578125,
+  "wall_s": 4.381790500017814
+}

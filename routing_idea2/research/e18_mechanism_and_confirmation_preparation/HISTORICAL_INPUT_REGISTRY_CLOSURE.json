@@ -1,0 +1,436 @@
+{
+  "schema": "e18_historical_input_registration_closure_v1",
+  "status": "NO_OUTSIDE_REGISTERED_INPUT_FOUND_IN_REVIEWED_CANONICAL_METADATA",
+  "registered_questions": 1708,
+  "reviewed_research_modules": 26,
+  "protocol_and_source_metadata_containers": 47,
+  "explicitly_checked_identity_or_index_containers": 50,
+  "outside_registered_question_ids": 0,
+  "outside_registered_canonical_hashes": 0,
+  "modules": [
+    {
+      "module": "E0_E1_original",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "original1308_external_split_registry"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E2_original",
+      "reviewed_metadata_containers": 3,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "original1308_external_split_registry"
+      ],
+      "identity_or_index_packets_checked": 3,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "V2_stage1_and_partition",
+      "reviewed_metadata_containers": 3,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "fresh_dev_test_input_identity_asset",
+        "original1308_external_split_registry",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED",
+        "selector_validation_input_identity_asset",
+        "selector_validation_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "conditional_gain",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED",
+        "selector_validation_input_identity_asset",
+        "selector_validation_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "fewshot_protocol_fix",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E3",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "conditional_gain_verified_train600_index_metadata"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "conditional_gain",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E4",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E4_verified_train600_index_metadata"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E5",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E5_verified_train600_index_metadata",
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E6",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "selector_train_input_identity_asset"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E7",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E7_verified_train600_index_metadata",
+        "selector_train_input_identity_asset"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E8",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E8_original_train600_fold_identity_manifest",
+        "conditional_gain_verified_train600_index_metadata",
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 10,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E8_M4_mechanism",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "FROZEN_SCOPE_DECLARATION_AND_PARENT_LINEAGE_ONLY",
+      "registered_source_hash_anchors": [],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E8",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "NS_TSPO_Davidson",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [],
+      "identity_or_index_packets_checked": 5,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E9_CSCE",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "FROZEN_SCOPE_DECLARATION_AND_PARENT_LINEAGE_ONLY",
+      "registered_source_hash_anchors": [],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E8",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E9_Bayes_distinct",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E8_original_train600_fold_identity_manifest",
+        "conditional_gain_verified_train600_index_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E8",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E10",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E8_original_train600_fold_identity_manifest",
+        "conditional_gain_verified_train600_index_metadata",
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E11",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E10_encoder_cache_input_manifest_verified600_VECTOR_NOT_DECODED"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E10",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E12",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E10_encoder_cache_input_manifest_verified600_VECTOR_NOT_DECODED",
+        "E7_verified_train600_index_metadata"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E7",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E13",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4",
+        "E7_verified_train600_index_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 5,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E14",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E13",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E15",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4",
+        "selector_train_input_identity_asset"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E13",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E15_preflight_archive",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4",
+        "selector_train_input_identity_asset"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E13",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E16",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "REGISTERED_SOURCE_HASH_REFERENCE_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E10_encoder_cache_input_manifest_verified600_VECTOR_NOT_DECODED",
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 0,
+      "parent_module": "E13",
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "E17",
+      "reviewed_metadata_containers": 4,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E13_verified_train600_input_packet_fold0",
+        "E13_verified_train600_input_packet_fold1",
+        "E13_verified_train600_input_packet_fold2",
+        "E13_verified_train600_input_packet_fold3",
+        "E13_verified_train600_input_packet_fold4",
+        "fresh_dev_test_input_identity_asset",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 2,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "CES",
+      "reviewed_metadata_containers": 1,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "E7_verified_train600_index_metadata",
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 15,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    },
+    {
+      "module": "B1",
+      "reviewed_metadata_containers": 2,
+      "evidence_level": "IDENTITY_OR_INDEX_CONTAINER_VERIFIED",
+      "registered_source_hash_anchors": [
+        "registered_train600_val200_bundle_metadata",
+        "selector_train_input_identity_asset",
+        "selector_train_outcome_reference_only_NOT_OPENED",
+        "selector_validation_input_identity_asset",
+        "selector_validation_outcome_reference_only_NOT_OPENED"
+      ],
+      "identity_or_index_packets_checked": 1,
+      "parent_module": null,
+      "outside_registered_ids_found": 0,
+      "all_individual_trajectory_inputs_reaudited": false
+    }
+  ],
+  "scope_declaration_only_modules": [
+    "E8_M4_mechanism",
+    "E9_CSCE"
+  ],
+  "unreviewed_containers": [
+    {
+      "container": "E13/ALL_PREDICTIONS_FROZEN and per-world feedback/service traces",
+      "reason": "55MB manifest and many replay packets excluded; checked canonical protocol plus five input packets instead"
+    },
+    {
+      "container": "E14/TOKEN_MATCHES_FROZEN and matched-prefix model packets",
+      "reason": "35MB ledger and response data excluded; checked protocol/source manifest lineage to E13"
+    },
+    {
+      "container": "E15/E16/E17 all model packets, labels, score arrays and per-run traces",
+      "reason": "Only canonical source manifests and selected identity metadata used"
+    },
+    {
+      "container": "Fewshot preliminary/episode result NPZ containers",
+      "reason": "No reward/result arrays read; corrected protocol and frozen fresh input identity plan checked"
+    },
+    {
+      "container": "CES native-author online trajectories and external datasets",
+      "reason": "Original protocol states native full results cannot be replayed without trajectories; native text/correctness data are outside this MAB input audit"
+    },
+    {
+      "container": "B1 public-method synthetic/native example data and Monte Carlo outcomes",
+      "reason": "Outside the real GSM8K/BBH question-pool closure; source protocol and MAB frozen inputs checked"
+    },
+    {
+      "container": "Remote archives, hidden temporary runtime copies, unrelated data roots",
+      "reason": "Not enumerated or reviewed by this bounded local canonical metadata audit"
+    },
+    {
+      "container": "Unregistered manual inspection, copied prompts or undocumented experiments",
+      "reason": "UNKNOWN; no OS-wide access record exists"
+    }
+  ],
+  "manual_unregistered_input_use": "UNKNOWN",
+  "all_project_possible_inputs_certified": false,
+  "interpretation": "Reviewed local protocol/source/hash references and selected identity packets are consistent with the registered1708. This is not a full per-run or OS-wide proof of every historical input access.",
+  "rewards_decoded": 0,
+  "gold_values_decoded": 0,
+  "embedding_arrays_decoded": 0,
+  "model_weights_decoded": 0,
+  "protected_input_values_decoded_this_audit": 0,
+  "new_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "existing_proposal_modified": false,
+  "existing_proposal_sha256": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+  "private_detail_sha256": "82d2a33c130e787ce414609535e0f6985ddb9162b11de88084c1aecb8bcc0e71",
+  "source_sha256": "96ad998ab344c30f16d5a54dd0638ea80c49d6ef0a4b7e6c7c74d86f4de5a773",
+  "cpu_s": 0.296875,
+  "wall_s": 2.754910000017844
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "E18_remote_aggregation_scope_postcheck_v3",
+  "postcheck": "PASS_SCOPED_NO_VERIFIED_FRESH_AGGREGATION",
+  "inventory_sha256": "2442a6d4eb1df5f3d10157f004d2310c6b7c7a4b7ef540dc5fbc65d10db3c7c5",
+  "inventory_bytes": 2201327,
+  "inventory_source_sha256": "d85acfc66bce9a7765cb45e58cb46aae21e2cf89d08f146eb33067ec2ce00c66",
+  "reported_utc": "2026-11-15T17:44:16.174636+00:00",
+  "elapsed_s": 35.257613399997354,
+  "host_pin_match": true,
+  "authenticated_read_only": true,
+  "directory_count": 282,
+  "entries_seen": 1735,
+  "directory_listings_complete": true,
+  "unresolved_in_scope_truncation_count": 0,
+  "configured_depth": 9,
+  "configured_entries": 20000,
+  "configured_regular_file_bytes": 67108864,
+  "metadata_state_counts": {
+    "SAFE_IDENTITY_METADATA_PROJECTED": 130
+  },
+  "metadata_cohort_counts": {
+    "UNSPECIFIED": 94,
+    "selector_train": 24,
+    "selector_validation": 12
+  },
+  "output_container_counts": {
+    "NOT_VERIFIED_FRESH_SCOPE_PAYLOAD_NOT_OPENED": 68
+  },
+  "output_container_roots": {
+    "decision_feedback_v2_stage1_aggcal42_20261104": 1,
+    "routing_v2_stage2_typed_train_g137_20261105": 8,
+    "routing_v2_stage2_typed_train_g2024_20261105": 8,
+    "routing_v2_stage2_typed_train_g42_20261105": 8,
+    "routing_v2_stage2_typed_validation_g137_20261105": 4,
+    "routing_v2_stage2_typed_validation_g2024_20261105": 4,
+    "routing_v2_stage2_typed_validation_g42_20261105": 4,
+    "routing_v2_typed_alone_g42_20261104": 2,
+    "routing_v2_typed_diag200_g42_20261104": 4,
+    "routing_v2_typed_heterogeneous_g137_20261104": 4,
+    "routing_v2_typed_heterogeneous_g2024_20261105": 4,
+    "routing_v2_typed_strong_g137_20261105": 4,
+    "routing_v2_typed_strong_g2024_20261105": 4,
+    "routing_v2_typed_strong_g42_20261104": 4,
+    "tasktyped_calibration_9ef6c02bc9fb_20261104": 5
+  },
+  "fresh_scope_metadata_count": 0,
+  "fresh_aggregation_payloads_opened": 0,
+  "verified_fresh_aggregation_logical_keys": 0,
+  "verified_fresh_aggregation_physical_executions": 0,
+  "verified_incremental_fresh_aggregation_prompt_tokens": 0,
+  "verified_incremental_fresh_aggregation_completion_tokens": 0,
+  "verified_incremental_fresh_aggregation_tokens": 0,
+  "boundary_counts": {
+    "OUTSIDE_AGGREGATION_SCOPE_NO_OPEN": 109,
+    "PROTECTED_NAME_SKIPPED_NO_OPEN": 8
+  },
+  "scanned_scope": [
+    "routing根目录下实际发现的agg/typed/stage2聚合相关根",
+    "三个primary-aggregator-slot，含artifacts、preparation、private、results/raw",
+    "qwen3共享worker内符合聚合作业命名的目录",
+    "上述目录中已枚举的bundle/exports/shard及未评分输出容器元数据"
+  ],
+  "preserved_unknown_scope": [
+    "成员工作区已由成员缓存V2单独核验，本V3不重复读取",
+    "模型、环境、qualification/diagnostics及受保护gold/reference/reward/score/sealed路径",
+    "已列109个域外目录和8个受保护命名项的内部内容",
+    "routing已知根之外的其他用户目录、数据盘位置和未登记旧项目副本"
+  ],
+  "conclusion": "在明确扫描的聚合根、槽位、bundle与exports边界内，未发现fresh scope计划或context，故本轮可确认复用fresh聚合数为0；其他范围维持UNKNOWN。",
+  "historical_train_validation_diagnostic_outputs_value_decoded": false,
+  "all_remote_aggregation_cost": "UNKNOWN_OUTSIDE_INSPECTED_FRESH_SCOPE",
+  "fresh_gold_or_reward_value_decodes": 0,
+  "sealed_paths_opened_by_this_module": 0,
+  "new_generation_jobs": 0,
+  "scoring_jobs": 0,
+  "model_training_jobs": 0,
+  "remote_commands_started": 0,
+  "remote_writes": 0,
+  "retry_budget_note": "成功唯一key费用上限与跨人工续跑的含失败总费用分列；原协议跨续跑max_attempts未锁定。",
+  "guard_limitations": "本次未发现fresh候选，fresh输出及jobs/bridge内容核验路径未用于任何实际缓存纳入。"
+}

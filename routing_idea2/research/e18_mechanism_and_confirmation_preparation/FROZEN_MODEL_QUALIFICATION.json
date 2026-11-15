@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "e17_preservation": {
+    "public_files": 50,
+    "public_manifest_sha256": "a1c15a5cfea713372faf9b03190ea402fbc58041e6d01f10bc9657b510d51b45",
+    "frozen_model_receipt_sha256": "9fd825ed752247286381f90dd70ed33696b6cecc865aa591759f808b7f5d889d",
+    "private_artifacts_verified": 5
+  },
+  "models_sha256": "aabca0b20967f8711d6a700dea301e490afb71de56b73c6d9a65f9db5fb0f360",
+  "frozen_fresh_actions_sha256": "1e4253a0ec9e2add6a7ec83d6ca369fa20bb23240c7731bd14754eeece305ad3",
+  "policies": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform",
+    "GlobalFixed"
+  ],
+  "frozen_weights": true,
+  "pca_refits": 0,
+  "scaler_refits": 0,
+  "head_fits": 0,
+  "fresh_recovered_choices": 1600,
+  "changed_choices_per_policy": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "maximum_score_recovery_error": 4.440892098500626e-16,
+  "service_tie_rule": "canonical physical semantic_exact",
+  "source_sha256": "33c566747481d3c8967f888300e146db3ac83b31b992a392105ac4ed51ffaa74",
+  "active_operator": {
+    "aggregator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+    "base_model_configuration_fingerprint": "32aed6079298ebcf8eee99add17dd5c4a6828a504f13dd5d9236b234776861d3",
+    "prompt_version": "anonymous_final_answer_typed_v3",
+    "composite_identity_sha256": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "member_caps": {
+      "0": 6144,
+      "1": 6144,
+      "2": 6144,
+      "3": 6144,
+      "4": 6144,
+      "5": 6144
+    },
+    "aggregate_cap": 8192,
+    "source_files": [
+      {
+        "path": "E:\\语言模型组合路由\\configs\\decision_feedback_v2\\aggregator_qwen3_8b_candidate_v1.json",
+        "sha256": "b588eeaf6e78d9d59749fbd90a52e8c2602647018c7b841301d92b341fe2c13d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\configs\\pool_v1.json",
+        "sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\BUNDLE_TRAINVAL.json",
+        "sha256": "15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\results\\decision_feedback_v2\\s1_typed_aggcal_generation42_9ef6c02bc9fb\\OPERATOR_FREEZE_LOCK_v1.json",
+        "sha256": "66d77c2ab5eef0c6a360cfe2d8df01429369927c96fe3ae7b6a63697f4fc09b0"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_aggregation_execution.py",
+        "sha256": "acbc9cd911635f26da0e23cce4174bf6660a7604d29a5d7224f1df08e083f368"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_operator_contract.py",
+        "sha256": "c9c3c7562ea07e9d32074e5ee67c551a458faa6ad34c17d521659c6abf379767"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\encoding.py",
+        "sha256": "889bcb6935c6d73c13c55d8b5008d3a8dfc3ff1c2ca927a28ae668e47a931bb3"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\inference.py",
+        "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\execution.py",
+        "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\member_execution.py",
+        "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\scoring.py",
+        "sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router_v2\\scoring.py",
+        "sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d"
+      }
+    ]
+  },
+  "fresh_rewards_read": 0,
+  "sealed_inputs_read": 0,
+  "sealed_rewards_read": 0
+}

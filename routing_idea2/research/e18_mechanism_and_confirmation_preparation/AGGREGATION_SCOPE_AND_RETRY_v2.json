@@ -1,0 +1,408 @@
+{
+  "schema": "E18_aggregate_cache_scope_and_retry_contract_v2",
+  "status": "RECORDED_SCOPE",
+  "current_remote_inventory": "AUTHENTICATED_PINNED_READ_ONLY",
+  "host_hash": "4bcd7d4aa84813baa372d9549ce5f8c24060b5ef0f165365fc0af3dbc81daaa3",
+  "remote_postcheck_sha256": "d179739496a23ddb6d0b97edeada7317b93aca413d9e010241b6c21f4ad0ea4c",
+  "project_root_listings": [
+    {
+      "path": "/data1/data2/chendong/routing",
+      "entries": 32,
+      "content_scope": "Directory names and lstat metadata only"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103",
+      "entries": 12,
+      "content_scope": "Directory names and lstat metadata only"
+    }
+  ],
+  "member_workspaces": [
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/qwen3-8b/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/qwen2.5-coder-7b-instruct/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/granite-3.3-8b-instruct/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/deephermes-3-llama-3-8b-preview/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/deepseek-r1-distill-qwen-7b/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/deepseek-r1-distill-qwen-7b/artifacts/private/routing_v2_stage2_native_members_20261104_r4_variant_fg137",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/deepseek-r1-distill-qwen-7b/artifacts/private/routing_v2_stage2_native_members_20261104_r4_variant_fg2024",
+      "state": "LISTED"
+    },
+    {
+      "path": "/data1/data2/chendong/routing/parallel_workers_20261103/cogito-v1-preview-llama-8b/artifacts/private/routing_v2_stage2_native_members_20261104_r4",
+      "state": "LISTED"
+    }
+  ],
+  "aggregate_related_parent_entries": [
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_train_g42_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_diag200_g42_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_train_g137_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_heterogeneous_g137_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_alone_g42_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "decision_feedback_v2_stage2_members_native_20261104_r4_typed_overlay_v1",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_strong_g2024_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_heterogeneous_g2024_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "tasktyped_calibration_9ef6c02bc9fb_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_strong_g137_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_train_g2024_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_typed_strong_g42_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_validation_g42_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "decision_feedback_v2_stage1_aggcal42_20261104",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_validation_g2024_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing",
+      "name": "routing_v2_stage2_typed_validation_g137_20261105",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing/parallel_workers_20261103",
+      "name": "primary-aggregator-slot0",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing/parallel_workers_20261103",
+      "name": "primary-aggregator-slot2",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    },
+    {
+      "parent": "/data1/data2/chendong/routing/parallel_workers_20261103",
+      "name": "primary-aggregator-slot1",
+      "kind": "directory",
+      "observed": "Parent-entry name/stat only",
+      "child_directory_listed": false,
+      "result_payload_opened": false
+    }
+  ],
+  "verified_reusable_fresh_aggregate_outputs": 0,
+  "aggregate_result_payloads_opened": 0,
+  "meaning_of_zero": "No fresh400 unscored aggregate output has passed identity verification in this audit",
+  "global_fresh_aggregate_cache_state": "UNKNOWN",
+  "not_inspected": [
+    "Contents beneath primary-aggregator-slot0/1/2",
+    "Result files beneath typed aggregation directories",
+    "Unscored aggregate exports/archives beyond the returned parent directory metadata",
+    "Other MAB project copies and other data-root locations",
+    "Member export archives not represented by the inspected workspace JSONL"
+  ],
+  "original_retry_contract": {
+    "check_counts": {
+      "aggregate_numeric_cap_fields_found": [],
+      "aggregate_original_execution_source_matches": 36,
+      "aggregate_original_member_execution_source_matches": 36,
+      "aggregate_plans_with_matching_numeric_cap_key": 0,
+      "aggregate_runtime_core_file_matches_plan": 36,
+      "aggregate_scoped_execution_source_matches": 36,
+      "aggregate_scoped_member_execution_source_matches": 36,
+      "aggregate_worker_file_matches_plan": 36,
+      "member_original_execution_source_matches": 8,
+      "member_original_member_execution_source_matches": 8
+    },
+    "conclusions": {
+      "cross_manual_recovery_total_attempt_cap": {
+        "locked": false,
+        "scope": "checked Store APIs, actual native member workers, and formal aggregation RUN_PLAN/scoped source",
+        "value": null
+      },
+      "legacy_generic_aggregation_failure_stop": {
+        "scope": "failure rows within one invocation of scripts/run_aggregation.py",
+        "value": 3
+      },
+      "lower_level_store_behavior": {
+        "cumulative_attempt_counter_or_max_attempts_parameter": false,
+        "generate_calls_per_run_invocation": 1,
+        "known_usage_failure": "API permits a later upper-level resubmission",
+        "successful_cached_job": "reuse",
+        "unknown_cost_failure": "reconciliation required before resubmission"
+      },
+      "member_max_new_jobs": {
+        "counter": "successful new calls in the current invocation",
+        "counter_increment": "after successful Store commit",
+        "default": null,
+        "scope": "per invocation"
+      },
+      "native_aggregate_automatic_paid_retries": 0,
+      "native_failure_action": "stop and preserve failed attempt for reconciliation",
+      "native_member_automatic_paid_retries": 0,
+      "successful_unique_job_cap": {
+        "meaning": "successful cached job is reused; duplicate successful records are rejected",
+        "numeric_value": "depends on the frozen exact job union"
+      }
+    },
+    "created_at_utc": "2026-11-15T17:29:07.114546+00:00",
+    "interpretation_limits": [
+      "The checked native path halts at a paid failure and blocks automatic restart until reconciliation.",
+      "A numeric total cap for additional attempts after separate manual recovery authorization is absent from the checked parameter scope.",
+      "Per-invocation success counters and legacy failure-stop counters have their stated local scope."
+    ],
+    "schema": "E18_original_retry_bounds_audit_v1",
+    "scope": {
+      "aggregate_archive_root": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\typed_stage2_aggregation_sourceviews_v1\\archives",
+      "aggregate_formal_run_plans_checked": 36,
+      "aggregate_kind": "heterogeneous_aggregation",
+      "files_modified_during_source_audit": 0,
+      "member_actual_phase_workers_checked": 8,
+      "network_connections": 0,
+      "payloads_opened": 0,
+      "run_plan_cap_key_patterns": [
+        "max_attempt",
+        "max_retr",
+        "retry_limit",
+        "attempt_cap",
+        "max_calls"
+      ],
+      "run_plan_numeric_cap_inspection": "top-level RUN_PLAN parameter names"
+    },
+    "sources": [
+      {
+        "lines": [
+          252,
+          253,
+          302,
+          308,
+          309,
+          310,
+          314,
+          316,
+          319,
+          325,
+          329
+        ],
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\execution.py",
+        "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f"
+      },
+      {
+        "lines": [
+          123,
+          129,
+          130,
+          131,
+          134,
+          136,
+          149,
+          154,
+          156
+        ],
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\member_execution.py",
+        "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2"
+      },
+      {
+        "lines": [
+          232,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269
+        ],
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\inference.py",
+        "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef"
+      },
+      {
+        "example_path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\stage2_generation\\phase_returns\\e2b9ac8c63b86d87\\worker.py",
+        "lines": [
+          73,
+          74,
+          77,
+          78,
+          80,
+          81,
+          204,
+          344,
+          346,
+          348,
+          349,
+          352,
+          354,
+          360,
+          366,
+          367,
+          368
+        ],
+        "role": "actual eight phase worker.py copies",
+        "sha256": "c368835c31b05bf5e8653d969711a1c9c295526bc2ce9b9a6da54cb8e0c58ae4"
+      },
+      {
+        "current_identical_path": "E:\\语言模型组合路由\\scripts\\v2\\run_stage2_aggregation_native.py",
+        "lines": [
+          94,
+          97,
+          98,
+          99,
+          320,
+          322,
+          376,
+          387,
+          439,
+          442,
+          444,
+          451,
+          469,
+          470,
+          471,
+          472,
+          473
+        ],
+        "role": "formal aggregation scoped run_worker.py copies",
+        "sha256": "c729807cc6acf8306e1b560a42e59d52a98f4a4a371623cdad6d1ff10d364a71"
+      },
+      {
+        "current_identical_path": "E:\\语言模型组合路由\\scripts\\v2\\run_stage1_aggregation_native.py",
+        "lines": [
+          148,
+          149,
+          150,
+          155
+        ],
+        "role": "formal aggregation scoped stage1_runtime_core.py copies",
+        "sha256": "735512dc0ec43f1cf1c33ede6557ae6d20522addc74a97b169e605d8b0295b7f"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\typed_stage2_aggregation_sourceviews_v1\\archives\\0405d4ac3659f5468bbabd339a386e08dc764c4ce0f675d60fe86884c04d8437\\inputs\\RUN_PLAN.json",
+        "role": "formal aggregation RUN_PLAN example",
+        "sha256": "0a0fdab2c1ab4bac83f1d6469106d1ff403c0cea79e356c240bb8d8b643857e4"
+      }
+    ],
+    "status": "COMPLETE_SCOPED_READ_ONLY_AUDIT"
+  },
+  "retry_proof_sha256": "80e58cd1cf5548eb7d689a6d8e1bc716835b8c81ea53341663c82e356fa474ac",
+  "cost_interpretation": "A successful unique-output cap does not bound later manually authorized recovery attempts",
+  "full_process_attempt_count_cap": null,
+  "full_process_retry_inclusive_token_cap": null,
+  "automatic_paid_retry_count": 0,
+  "module_fresh_gold_or_reward_reads": 0,
+  "module_sealed_paths_opened": 0,
+  "new_generation_or_scoring_jobs": 0,
+  "source_sha256": "76cf59f3d504d1dc63b35f05d7a2c719329dfcccd4fd355e71755dfe7ed4d502"
+}

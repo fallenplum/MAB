@@ -1,0 +1,18 @@
+{
+  "active_model_qualification": "FROZEN_MODEL_QUALIFICATION_v3.json",
+  "active_input_archive_private": "PROPOSED2600_INPUTS_ONLY_v2.npz",
+  "active_input_metadata_receipt": "INPUT_METADATA_REPAIR_v2.json",
+  "active_call_budget": "E18_FINAL_CALL_BUDGET.json",
+  "active_member_inventory": "REMOTE_CACHE_POSTCHECK_v2.json",
+  "active_local_cache_materialization": "MEMBER_CACHE_MATERIALIZATION_POSTCHECK_v4.json",
+  "active_aggregate_inventory": "REMOTE_AGGREGATION_POSTCHECK_v3.json",
+  "protocol": "E18_EVALUATION_PROTOCOL.json",
+  "historical_engineering_records": [
+    "FROZEN_MODEL_QUALIFICATION.json",
+    "FROZEN_MODEL_QUALIFICATION_v2.json",
+    "E18_EXACT_CALL_BUDGET.json",
+    "AGGREGATION_SCOPE_AND_RETRY_v2.json"
+  ],
+  "executed_budget_source_v1_private": "executed_source_v1/frozen_input_budget.py",
+  "version_role": "Earlier source/schema or local-only records are retained; active records above govern this preparation"
+}

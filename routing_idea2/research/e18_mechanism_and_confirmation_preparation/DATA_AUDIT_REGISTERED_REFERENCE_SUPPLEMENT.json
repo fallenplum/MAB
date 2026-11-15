@@ -1,0 +1,43 @@
+{
+  "schema": "e18_registered_reference_completion_v1",
+  "status": "COMPLETE_PROPOSAL_UNCHANGED",
+  "correction": "The initial official duplicate-position exclusion also removed one registered input from the near-duplicate reference pool. This check restores registered duplicate inputs exactly once as reference-only rows.",
+  "prior_data_audit_sha256": "edae91762f745c087c8c98c6e8e960a568e8267330739e45ec5c55e9798d2e55",
+  "registered_exclusion_metadata_questions": 1708,
+  "nonprotected_registered_reference_questions": 1508,
+  "protected_reference_signatures": 200,
+  "restored_nonprotected_reference_questions": 1,
+  "full_near_screen_input_questions": 13877,
+  "official_duplicate_groups": 4,
+  "format_equivalence_clusters": 0,
+  "high_similarity_review_edges": 52,
+  "high_similarity_review_endpoint_questions": 83,
+  "protected_signature_screen": {
+    "protected_signature_records": 200,
+    "candidate_inputs_considered": 12369,
+    "matching_critical_slot_pairs": 3317,
+    "character_hash_cosine_pairs": 3317,
+    "ordered_hash_pairs": 13,
+    "excluded_candidate_inputs": 2,
+    "protected_text_reconstructed": false,
+    "additional_protected_input_values_decoded": 0
+  },
+  "eligible_after_complete_reference_screen": {
+    "gsm8k": 6719,
+    "bbh": 5587
+  },
+  "candidate_selection_repeated_with_same_frozen_rank_and_quotas": true,
+  "candidate_original_order_unchanged": true,
+  "candidate_input_sha256": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+  "protected_input_values_decoded_in_this_supplement": 0,
+  "answer_values_decoded": 0,
+  "fresh_reward_reads": 0,
+  "protected_one_time_audit_total_input_values_decoded": 200,
+  "new_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0,
+  "source_code_sha256": "3c6f34afd63d1d434b95148698d888993015f0d5653e5cd31ff7090db22a2a59",
+  "cpu_s": 9.875,
+  "wall_s": 21.425763999985065
+}

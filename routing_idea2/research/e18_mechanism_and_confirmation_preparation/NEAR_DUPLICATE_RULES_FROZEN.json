@@ -1,0 +1,18 @@
+{
+  "schema": "e18_input_duplicate_rules_v1",
+  "seed": 20261116018,
+  "exact": "SHA256 of Unicode NFKC text with whitespace collapsed; no task/source prefix",
+  "token_equivalence": "Ordered casefolded word/number/operator tokens match exactly; only punctuation/case formatting varies",
+  "critical_slots": "Ordered numeric literals, quoted strings, capitalized word tokens, and math/logical operators must match",
+  "near_candidate_filter": "same task and BBH subtask plus identical critical-slot signature",
+  "character_tfidf_cosine_minimum": 0.985,
+  "character_sequence_ratio_minimum": 0.985,
+  "word_token_jaccard_minimum": 0.95,
+  "near_edges": "Review candidates only; no union-find/transitive merging of pairwise similar texts",
+  "protected_comparison": "Private HMAC slot gate, ordered-token equivalence, hashed character3-5gram count cosine>=.985, ordered-trigram ratio>=.985, word-token hash Jaccard>=.95",
+  "selection": "Exclude all high-similarity review endpoints from text-ready proposals; do not count duplicate token-equivalence groups multiple times",
+  "limitations": "High-threshold syntactic screening does not certify absence of semantic paraphrases. Sealed near-duplicate screening requires external precomputed signatures or separately authorized inputs.",
+  "protected_authorization": "One user-authorized isolated input-only fingerprint pass; no plaintext retained",
+  "candidate_builder_sha256": "cf614661e19f8da894fbbfb9d049c834ec03dd9bfd7bd13bfddeb04f483aa605",
+  "parser_source_sha256": "cbca322df9c40befb0283a6fab406d742896025af89eb2f192472e7815ba6401"
+}

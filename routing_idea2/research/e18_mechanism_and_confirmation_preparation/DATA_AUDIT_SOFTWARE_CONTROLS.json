@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "wall_s": 0.09069199999794364,
+  "scope": "synthetic software controls; not scientific independence proof",
+  "protected_real_input_reads": 0,
+  "gold_reads": 0,
+  "log": "test_duplicate_object_keys_fail_closed (test_source_projection.SourceProjectionTests.test_duplicate_object_keys_fail_closed) ... ok\ntest_metadata_projection_does_not_decode_question_value (test_source_projection.SourceProjectionTests.test_metadata_projection_does_not_decode_question_value) ... ok\ntest_nfkc_and_whitespace_canonical_rule (test_source_projection.SourceProjectionTests.test_nfkc_and_whitespace_canonical_rule) ... ok\ntest_numbers_entities_and_operators_remain_distinct_instances (test_source_projection.SourceProjectionTests.test_numbers_entities_and_operators_remain_distinct_instances) ... ok\ntest_official_counts_do_not_decode_example_input_or_target (test_source_projection.SourceProjectionTests.test_official_counts_do_not_decode_example_input_or_target) ... ok\ntest_private_signature_does_not_persist_plaintext (test_source_projection.SourceProjectionTests.test_private_signature_does_not_persist_plaintext) ... ok\ntest_protected_format_match_excludes_and_different_instances_survive (test_source_projection.SourceProjectionTests.test_protected_format_match_excludes_and_different_instances_survive) ... ok\ntest_unknown_reference_value_is_syntax_skipped_without_json_decoding (test_source_projection.SourceProjectionTests.test_unknown_reference_value_is_syntax_skipped_without_json_decoding) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.031s\n\nOK\n"
+}
