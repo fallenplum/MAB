@@ -1,0 +1,22 @@
+{
+  "schema": "e18_scoring_adapter_qualification_v2",
+  "status": "PASS",
+  "checks_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_s": 8.918052699998952,
+  "adapter_source_sha256": "7eb390f0424f2f18fda806c188e0f3e8e7ed2fc633605c5a3d170d271ca06d8a",
+  "qualification_source_sha256": "f926268ac9efc9caf8c5f76fc80083d98a0d423ea69a9d5ee37b65f89fbf77ed",
+  "execution_adapter_source_sha256": "21e76f6a38fa5f2ed590a2b2068bda8255bc4ebc290dea9eb7c32a3a44a65bc4",
+  "reference_adapter_source_sha256": "8848aa235d98e11005a33ff969274dc0309d02228297f4242f207663e57178ea",
+  "original_scorer_sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d",
+  "qualification_data": "synthetic question/reference files and original Stores with FakeBackend/FakeTokenizer",
+  "checks_log": "test_duplicate_service_policy_reuses_scored_key_without_reference_or_tokens (__main__.ScoringAdapterQualification.test_duplicate_service_policy_reuses_scored_key_without_reference_or_tokens) ... ok\ntest_failed_reference_delivery_preserves_failure_and_provider_cost (__main__.ScoringAdapterQualification.test_failed_reference_delivery_preserves_failure_and_provider_cost) ... ok\ntest_failed_unknown_execution_usage_remains_null (__main__.ScoringAdapterQualification.test_failed_unknown_execution_usage_remains_null) ... ok\ntest_immutable_scoring_receipt_and_resume (__main__.ScoringAdapterQualification.test_immutable_scoring_receipt_and_resume) ... ok\ntest_missing_approval_denies_reference_access (__main__.ScoringAdapterQualification.test_missing_approval_denies_reference_access) ... ok\ntest_native_fakebackend_to_original_scorer_to_sparse_projector (__main__.ScoringAdapterQualification.test_native_fakebackend_to_original_scorer_to_sparse_projector) ... ok\ntest_reference_version_mismatch_is_journaled_without_decoding (__main__.ScoringAdapterQualification.test_reference_version_mismatch_is_journaled_without_decoding) ... ok\ntest_resource_ledger_deduplicates_member_and_aggregate_actuals (__main__.ScoringAdapterQualification.test_resource_ledger_deduplicates_member_and_aggregate_actuals) ... ok\ntest_same_question_different_actions_reuse_one_reference (__main__.ScoringAdapterQualification.test_same_question_different_actions_reuse_one_reference) ... ok\ntest_synthetic_approval_is_rejected_for_production (__main__.ScoringAdapterQualification.test_synthetic_approval_is_rejected_for_production) ... ok\ntest_tampered_native_record_is_denied_before_reference (__main__.ScoringAdapterQualification.test_tampered_native_record_is_denied_before_reference) ... ok\ntest_unapproved_scoring_operation_denies_reference_access (__main__.ScoringAdapterQualification.test_unapproved_scoring_operation_denies_reference_access) ... ok\ntest_unselected_combination_is_denied_before_reference (__main__.ScoringAdapterQualification.test_unselected_combination_is_denied_before_reference) ... ok\ntest_wrong_canonical_identity_is_denied_before_reference (__main__.ScoringAdapterQualification.test_wrong_canonical_identity_is_denied_before_reference) ... ok\ntest_wrong_execution_scope_is_denied_before_reference (__main__.ScoringAdapterQualification.test_wrong_execution_scope_is_denied_before_reference) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 8.918s\n\nOK\n",
+  "real_fresh_reference_reads": 0,
+  "real_sealed_reference_reads": 0,
+  "real_model_inference_calls": 0,
+  "gpu_runtime_status": "NOT_RUNTIME_TESTED",
+  "real_dataset_runtime_status": "NOT_RUNTIME_TESTED",
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0
+}

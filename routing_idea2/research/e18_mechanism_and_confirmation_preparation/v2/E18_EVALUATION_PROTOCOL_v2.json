@@ -1,0 +1,197 @@
+{
+  "schema": "E18_frozen_confirmation_preparation_v2",
+  "branch": "codex/e18-mechanism-and-confirmation-preparation",
+  "parent_commit": "94a8579f9c8dc16d1f6afb943cee6678c5a9792a",
+  "status": "FROZEN_PREPARATION_SOFTWARE_QUALIFIED_AWAITING_TARGET_AND_EXECUTION_APPROVAL",
+  "client_date": "2026-11-16",
+  "models": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform",
+    "GlobalFixed"
+  ],
+  "model_asset_sha256": "aabca0b20967f8711d6a700dea301e490afb71de56b73c6d9a65f9db5fb0f360",
+  "pca_scaler": "load exact full600 E17 state; no fit",
+  "representation": "frozen MiniLM384 to PCA16+StandardScaler+penalized constant",
+  "original_questions": {
+    "existing_fresh": 400,
+    "proposed_new": 2600,
+    "proposed_total": 3000,
+    "GSM8K": 1500,
+    "BBH": 1500
+  },
+  "dataset_admission": "PROPOSED_NOT_ADMITTED",
+  "automatically_admitted_new_questions": 0,
+  "source_target": "GSM official train + BBH official test; BBH source expansion1254 separately tagged and requires approval",
+  "primary_comparison": "TSPO_uniform minus SPO_coordinate",
+  "primary_alpha": 0.05,
+  "alternative": "two-sided",
+  "confidence_interval": "fixed-time95% task-stratified paired t interval with Satterthwaite df, original-question unit",
+  "primary_effect_for_planning_pp": 1,
+  "source_variance_sha256": "aff7827a3025785cee5a755cce94f566e31a6c175ba384d9f904ea0909db64b7",
+  "secondary_comparisons": [
+    "TSPO-Ridge",
+    "SPO-Ridge",
+    "TSPO-GlobalFixed",
+    "SPO-GlobalFixed",
+    "Ridge-GlobalFixed"
+  ],
+  "secondary_multiplicity": "Holm within the five predeclared secondary comparisons; no promotion to primary",
+  "member_generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "member_sample_index": 0,
+  "sampling_control": false,
+  "aggregation_invocation_seed": 42,
+  "active_operator": {
+    "aggregator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+    "base_model_configuration_fingerprint": "32aed6079298ebcf8eee99add17dd5c4a6828a504f13dd5d9236b234776861d3",
+    "prompt_version": "anonymous_final_answer_typed_v3",
+    "composite_identity_sha256": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "member_caps": {
+      "0": 6144,
+      "1": 6144,
+      "2": 6144,
+      "3": 6144,
+      "4": 6144,
+      "5": 6144
+    },
+    "aggregate_cap": 8192,
+    "source_files": [
+      {
+        "path": "E:\\语言模型组合路由\\configs\\decision_feedback_v2\\aggregator_qwen3_8b_candidate_v1.json",
+        "sha256": "b588eeaf6e78d9d59749fbd90a52e8c2602647018c7b841301d92b341fe2c13d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\configs\\pool_v1.json",
+        "sha256": "f41df2050e3c28a3404abb13ad314da002bc6658e45e5747460ee643833b4acf"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\artifacts\\private\\routing_redesign_20261104\\ff_v1\\BUNDLE_TRAINVAL.json",
+        "sha256": "15095d4cf8b4f2d564b62f814102a63fe05a9a9e5c9702e14c9b8232b80649db"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\results\\decision_feedback_v2\\s1_typed_aggcal_generation42_9ef6c02bc9fb\\OPERATOR_FREEZE_LOCK_v1.json",
+        "sha256": "66d77c2ab5eef0c6a360cfe2d8df01429369927c96fe3ae7b6a63697f4fc09b0"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_aggregation_execution.py",
+        "sha256": "acbc9cd911635f26da0e23cce4174bf6660a7604d29a5d7224f1df08e083f368"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\scripts\\v2\\typed_operator_contract.py",
+        "sha256": "c9c3c7562ea07e9d32074e5ee67c551a458faa6ad34c17d521659c6abf379767"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\encoding.py",
+        "sha256": "889bcb6935c6d73c13c55d8b5008d3a8dfc3ff1c2ca927a28ae668e47a931bb3"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\inference.py",
+        "sha256": "3be35e1be1d30487e10b45fabbeae7254a5931c297359d9ef37adf80dd16d0ef"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\execution.py",
+        "sha256": "2dd0fc4bf9e36eb63e4ade5143d07505e14780e59338230ea86817ddd8eae17f"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\member_execution.py",
+        "sha256": "b1eac1cb346f7c67f14de398df130c644193c4f527a33b00ab18de1844f6dfb2"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router\\scoring.py",
+        "sha256": "a9d3a7c7015ef542ff3240d5b638b1239ff5d7b1c4c1c19db81ffc34f0aeba1d"
+      },
+      {
+        "path": "E:\\语言模型组合路由\\src\\budget_router_v2\\scoring.py",
+        "sha256": "6fc1d2f3cc81b3e954350143abd1071d6556e1cfe4f321d9333f2016baf2150d"
+      }
+    ]
+  },
+  "service_tie": "semantic_exact using immutable physical-team identity",
+  "source_frames_separate_reporting": true,
+  "no_implicit_original_frame_3000_claim": true,
+  "fixed_horizon": true,
+  "sequential_peeking": false,
+  "optional_stopping": false,
+  "near_tolerance_primary": 0,
+  "near_tie_diagnostics": "same predeclared1e-8 score sensitivity; no model or action revision",
+  "source_inputs_sha256": "bfef0550d9ff18de6ff625ed72767284224ce0d789ef8df1c38ce5e05ea08e12",
+  "corrected_input_archive_sha256": "57b26e5a3fbbbac99a15007f88292d7b1ae12b6e2af02137e962596c097c258f",
+  "frozen_actions_sha256": "9f87499782a8417ab1bbf7c5ef7c409ca4bf10ece6f6cf35a51e9212b97f9aee",
+  "proposed_DAG_qualification_sha256": "15620530be338a14aa5108362b794edb6282475527730e2a2284594242a17f17",
+  "exact_call_budget_sha256": "e0485018154bb1d234689da022da378fb850848b20d6cacd66ede20d4c2c63ff",
+  "head_fits": 0,
+  "pca_refits": 0,
+  "scaler_refits": 0,
+  "new_llm_generation_calls": 0,
+  "input_encoding": {
+    "questions": 2600,
+    "batches": 325,
+    "batch_size": 8,
+    "device": "cpu"
+  },
+  "gold_reveal_rule": "canonical_question plus original source/reference revision once, reused across executed outputs",
+  "model_judge_calls": 0,
+  "score_operations": 30921,
+  "failure_rule": "original cost journal and stop-on-paid-failure retained; unknown-cost attempts block unaccounted repetition",
+  "automatic_paid_retries": 0,
+  "manual_paid_resume_total_cap": null,
+  "authorization_required_before_actual_generation_or_scoring": true,
+  "protected_input_exception": {
+    "authorized_date": "2026-11-16",
+    "original_inputs": 200,
+    "purpose": "once-only isolated exclusion fingerprints",
+    "display": false,
+    "raw_persistence": false,
+    "answer_reading": false,
+    "encoding": false,
+    "model_training": false
+  },
+  "fresh400_reward_reads": 0,
+  "sealed_answer_reads": 0,
+  "scope_adapter_readiness": {
+    "isolated_scope_factories": "SOFTWARE_QUALIFIED",
+    "single_task_member_and_typed_aggregation": "FAKE_BACKEND_QUALIFIED",
+    "reference_projection": "SYNTHETIC_SOURCES_QUALIFIED",
+    "sparse_scoring_and_resource_ledger": "SYNTHETIC_RECEIPTS_QUALIFIED",
+    "actual_gpu_runtime": "NOT_RUNTIME_TESTED",
+    "full_cohort_production_dispatch": "NOT_STARTED",
+    "production_approval_receipts_created": 0,
+    "real_fresh_gold_reads": 0,
+    "sealed_answer_reads": 0
+  },
+  "old_worker_reuse": "scientific lower-level factory/backend may be reused; old400/full20 worker and scorer entry points cannot be launched unchanged",
+  "cache_materialization_postcheck_sha256": "015d8413de5a156fe2d90d43e0e6a0c522ce9f96272936aebc7a5002ca4af4d3",
+  "approval_topics": [
+    "Accept and name the expanded BBH target population with separate source tables",
+    "Fix N before any reward, with one-sided historical plans superseded for E18 only",
+    "Approve missing-call budget and any separately accounted manual resume",
+    "Complete the E18-specific native scope admission and sparse result adapter before the first paid call"
+  ],
+  "previous_protocol_sha256": "2fac8c494ee27286ceaa0b16a2b7b7bb009134ce4144813276179f32214150b7",
+  "software_adapter_qualification": {
+    "EXECUTION_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "388c17a89ab10e8e646f545ec18dea624cdbb37db68b1e2522522e8429c2a63e",
+      "status": "PASS"
+    },
+    "REFERENCE_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "9c89a74f79749baa2a898ba4ba6d47e33d314518dc7dd588b2b7861a798514a7",
+      "status": "PASS"
+    },
+    "SCORING_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "492da80d1878df51cb781084a1047db76fde1f92672f07c92f3b9abf1dc3c357",
+      "status": "PASS"
+    },
+    "INDEPENDENT_ADAPTER_REVIEW_v2.json": {
+      "sha256": "9e8de7221290fdff6275fefa68d3d933fb004f37fbd837e714d1a7161c87bd1a",
+      "status": "PASS_FINAL_SOURCE_AND_SOFTWARE_REPLAY"
+    }
+  },
+  "input_scope_policy": "Exact frozen policy union; no original split manifest or scientific source edits",
+  "approval_rule": "Following explicit user approval the executor records hash-bound scope authorization; no extra user-authored receipt is required",
+  "reference_source_policy": "Approved single-reference decoding, with any full-source hash or structural byte scans explicitly bound to the approved source scope"
+}

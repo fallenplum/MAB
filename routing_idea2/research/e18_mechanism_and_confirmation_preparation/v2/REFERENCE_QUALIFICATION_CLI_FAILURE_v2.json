@@ -1,0 +1,12 @@
+{
+  "status": "FAIL_BEFORE_QUALIFICATION",
+  "exit_code": 1,
+  "wall_s": 0.4896673,
+  "cpu_s": null,
+  "reason": "The original qualification script ignored --output and refused overwriting its existing immutable result",
+  "correction": "The qualifier now parses --output with argparse while retaining exclusive creation",
+  "runtime_reference_adapter_changed": false,
+  "actual_gold_reads": 0,
+  "actual_llm_calls": 0,
+  "new_tests_executed": 0
+}

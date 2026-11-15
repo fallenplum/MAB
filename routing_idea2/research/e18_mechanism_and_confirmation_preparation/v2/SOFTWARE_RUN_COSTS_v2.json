@@ -1,0 +1,101 @@
+{
+  "runs": [
+    {
+      "file": "EXECUTION_ADAPTER_ROOT_FINAL2_v2.json",
+      "status": "PASS",
+      "cpu_s": 2.125,
+      "wall_s": 3.870634000049904
+    },
+    {
+      "file": "REFERENCE_ADAPTER_ROOT_FINAL2_v2.json",
+      "status": "PASS",
+      "cpu_s": 0.171875,
+      "wall_s": 0.43446249997941777
+    },
+    {
+      "file": "SCORING_ADAPTER_ROOT_FINAL2_v2.json",
+      "status": "PASS",
+      "cpu_s": null,
+      "wall_s": 8.918052699998952
+    },
+    {
+      "file": "INDEPENDENT_ADAPTER_REVIEW_v2.json",
+      "status": "PASS_FINAL_SOURCE_AND_SOFTWARE_REPLAY",
+      "cpu_s": null,
+      "wall_s": null
+    },
+    {
+      "file": "E18_SCORING_ADAPTER_QUALIFICATION_V2_attempt1.json",
+      "status": "FAIL",
+      "cpu_s": null,
+      "wall_s": 1.6062949000042863
+    },
+    {
+      "file": "E18_SCORING_ADAPTER_QUALIFICATION_V2_attempt2.json",
+      "status": "FAIL",
+      "cpu_s": null,
+      "wall_s": 4.9077688999823295
+    },
+    {
+      "file": "E18_SCORING_ADAPTER_QUALIFICATION_V2_attempt3.json",
+      "status": "PASS",
+      "cpu_s": null,
+      "wall_s": 5.932680999976583
+    },
+    {
+      "file": "SCORING_ADAPTER_ROOT_FINAL_v2.json",
+      "status": "FAIL",
+      "cpu_s": null,
+      "wall_s": 2.5727141000097618
+    },
+    {
+      "file": "REFERENCE_QUALIFICATION_CLI_FAILURE_v2.json",
+      "status": "FAIL_BEFORE_QUALIFICATION",
+      "cpu_s": null,
+      "wall_s": 0.4896673
+    },
+    {
+      "file": "EXECUTION_ADAPTER_QUALIFICATION_v2.json",
+      "status": "PASS",
+      "cpu_s": 2.515625,
+      "wall_s": 7.399115599982906
+    },
+    {
+      "file": "EXECUTION_ADAPTER_ROOT_REVIEW_v2.json",
+      "status": "PASS",
+      "cpu_s": 1.78125,
+      "wall_s": 3.059862800000701
+    },
+    {
+      "file": "EXECUTION_ADAPTER_ROOT_FINAL_v2.json",
+      "status": "PASS",
+      "cpu_s": 2.203125,
+      "wall_s": 3.606505299976561
+    },
+    {
+      "file": "EXECUTION_ADAPTER_QUALIFICATION_v2_final.json",
+      "status": "PASS",
+      "cpu_s": 2.125,
+      "wall_s": 3.600387000013143
+    },
+    {
+      "file": "EXECUTION_ADAPTER_QUALIFICATION_v2_final2.json",
+      "status": "PASS",
+      "cpu_s": 2.171875,
+      "wall_s": 4.0532226000214
+    },
+    {
+      "file": "E18_REFERENCE_ADAPTER_QUALIFICATION_v2.json",
+      "status": "PASS",
+      "cpu_s": 0.421875,
+      "wall_s": 0.9559464000049047
+    }
+  ],
+  "reported_cpu_s": 13.515625,
+  "reported_wall_s": 51.40731510000085,
+  "complete_session_wall_s": null,
+  "complete_session_wall_unavailable_reason": "Asynchronous preparation and source review are not covered by a single timed process",
+  "timing_scope": "Recorded software qualification invocations; overlapping agent runs are not additive elapsed time",
+  "actual_new_llm_calls": 0,
+  "actual_new_gold_scoring": 0
+}

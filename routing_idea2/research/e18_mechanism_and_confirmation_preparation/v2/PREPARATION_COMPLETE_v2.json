@@ -1,0 +1,50 @@
+{
+  "status": "PASS_PREPARATION_SOFTWARE_QUALIFIED_AWAITING_APPROVAL",
+  "previous_release_manifest_sha256": "40e49da5e152e6cbc46e52af90928a2ca6ffab2a98396ab329a4b0410dc32195",
+  "previous_protocol_sha256": "2fac8c494ee27286ceaa0b16a2b7b7bb009134ce4144813276179f32214150b7",
+  "protocol_sha256": "bea5afe56f195f39d32b67e896a1454c6789c4590a6461ea75882073d247f8ab",
+  "new_sources": {
+    "e18_execution_adapter.py": "21e76f6a38fa5f2ed590a2b2068bda8255bc4ebc290dea9eb7c32a3a44a65bc4",
+    "qualify_execution_adapter.py": "b149e9c05a5d85f98c4f3867514dd00a2537c5bb2f774d72717cb362e6267916",
+    "e18_reference_adapter.py": "8848aa235d98e11005a33ff969274dc0309d02228297f4242f207663e57178ea",
+    "qualify_e18_reference_adapter.py": "d8caa1fd48d7dfd9e9578c2ce0731f3988a7da610351f44a889b31e961e88fba",
+    "tests/test_reference_adapter.py": "9b4adcb01a5079b603d06d827a987cea9956db5b38a014070f7f928b0f4d53c6",
+    "e18_scoring_adapter.py": "7eb390f0424f2f18fda806c188e0f3e8e7ed2fc633605c5a3d170d271ca06d8a",
+    "qualify_e18_scoring_adapter.py": "f926268ac9efc9caf8c5f76fc80083d98a0d423ea69a9d5ee37b65f89fbf77ed",
+    "root_independent_review_v2.py": "7555a31c16ede4a9e5f71cb679e4ee3857913daa95f477ae6e48d1fcb0ac8992",
+    "finalize_preparation_v2.py": "63c1501fe09049a576b62bebea3790b4306ccb512d8be165d7be44dc1858ad1b"
+  },
+  "qualifications": {
+    "EXECUTION_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "388c17a89ab10e8e646f545ec18dea624cdbb37db68b1e2522522e8429c2a63e",
+      "status": "PASS"
+    },
+    "REFERENCE_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "9c89a74f79749baa2a898ba4ba6d47e33d314518dc7dd588b2b7861a798514a7",
+      "status": "PASS"
+    },
+    "SCORING_ADAPTER_ROOT_FINAL2_v2.json": {
+      "sha256": "492da80d1878df51cb781084a1047db76fde1f92672f07c92f3b9abf1dc3c357",
+      "status": "PASS"
+    },
+    "INDEPENDENT_ADAPTER_REVIEW_v2.json": {
+      "sha256": "9e8de7221290fdff6275fefa68d3d933fb004f37fbd837e714d1a7161c87bd1a",
+      "status": "PASS_FINAL_SOURCE_AND_SOFTWARE_REPLAY"
+    }
+  },
+  "E17_preserved": {
+    "public_files": 50,
+    "public_manifest_sha256": "a1c15a5cfea713372faf9b03190ea402fbc58041e6d01f10bc9657b510d51b45",
+    "frozen_model_receipt_sha256": "9fd825ed752247286381f90dd70ed33696b6cecc865aa591759f808b7f5d889d",
+    "private_artifacts_verified": 5
+  },
+  "paid_execution_authorized": false,
+  "actual_new_llm_calls": 0,
+  "actual_new_scoring": 0,
+  "automatically_admitted_questions": 0,
+  "original_protected_inputs_processed_once": 200,
+  "additional_protected_inputs_read": 0,
+  "sealed_answers_read": 0,
+  "final_budget_sha256": "e0485018154bb1d234689da022da378fb850848b20d6cacd66ede20d4c2c63ff",
+  "verified_required_cache_reuse": 4717
+}
