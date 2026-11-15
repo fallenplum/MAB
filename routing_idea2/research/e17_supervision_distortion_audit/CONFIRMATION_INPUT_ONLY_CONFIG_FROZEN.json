@@ -1,0 +1,138 @@
+{
+  "schema": "e17_fresh400_confirmation_input_only_prefreeze_v1",
+  "status": "CONFIG_FROZEN_BEFORE_FULL600_FITS",
+  "parameters": {
+    "spo_regularization": 0.003472222222222222,
+    "ridge_mean_target_alpha": 333.3333333333333,
+    "source_folds": [
+      {
+        "fold": 0,
+        "spo_regularization": 0.003472222222222222,
+        "ridge_mean_target_alpha": 333.3333333333333,
+        "spo_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M4\\FIT_LOG.json",
+          "sha256": "7406ff4f6c18dc3fdec44d93be4d333d861a7638c165692d79046926cf813914",
+          "bytes": 146645,
+          "role": "frozen M4 regularization"
+        },
+        "ridge_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M0_tuned\\FIT_LOG.json",
+          "sha256": "c9c5ec72e9ab3cc53f5bc0a920faad845f733018ec123caf5cc2efda2cda7da3",
+          "bytes": 140528,
+          "role": "frozen M0_tuned alpha"
+        }
+      },
+      {
+        "fold": 1,
+        "spo_regularization": 0.003472222222222222,
+        "ridge_mean_target_alpha": 333.3333333333333,
+        "spo_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M4\\FIT_LOG.json",
+          "sha256": "f40a81d5c6d2a61b0a9da43c7667b222965883ac0c70212779bf43d4d8721e3d",
+          "bytes": 146653,
+          "role": "frozen M4 regularization"
+        },
+        "ridge_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M0_tuned\\FIT_LOG.json",
+          "sha256": "0def37a62f9c8b6d0d627af110a5698db0f449e812504f907c03fead20a5cba9",
+          "bytes": 140528,
+          "role": "frozen M0_tuned alpha"
+        }
+      },
+      {
+        "fold": 2,
+        "spo_regularization": 0.003472222222222222,
+        "ridge_mean_target_alpha": 333.3333333333333,
+        "spo_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M4\\FIT_LOG.json",
+          "sha256": "b0ff2fde40eae3f2c8bfaefcf6aef374b3aecde5b6e9c1da2391cc53d3ecaca3",
+          "bytes": 146673,
+          "role": "frozen M4 regularization"
+        },
+        "ridge_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M0_tuned\\FIT_LOG.json",
+          "sha256": "58417f1568892b70e9a0881aa48720673cd1c07939db61387151ca597d32c2c8",
+          "bytes": 140539,
+          "role": "frozen M0_tuned alpha"
+        }
+      },
+      {
+        "fold": 3,
+        "spo_regularization": 0.003472222222222222,
+        "ridge_mean_target_alpha": 333.3333333333333,
+        "spo_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M4\\FIT_LOG.json",
+          "sha256": "8bc6c898899e1fc72c502171ddd4a4c041e7c3480d9364745efd922dfcc8fc68",
+          "bytes": 146650,
+          "role": "frozen M4 regularization"
+        },
+        "ridge_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M0_tuned\\FIT_LOG.json",
+          "sha256": "a2c8f427378c3428d41ff018c9b9e689ab9ae62ea9ead11bf3d722d3ebf43eb7",
+          "bytes": 140477,
+          "role": "frozen M0_tuned alpha"
+        }
+      },
+      {
+        "fold": 4,
+        "spo_regularization": 0.00034722222222222224,
+        "ridge_mean_target_alpha": 333.3333333333333,
+        "spo_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M4\\FIT_LOG.json",
+          "sha256": "37d3c5bc63797b0e89a3a59fc094b789d64581470161560f6aa06c5f7018b654",
+          "bytes": 146652,
+          "role": "frozen M4 regularization"
+        },
+        "ridge_source": {
+          "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M0_tuned\\FIT_LOG.json",
+          "sha256": "a1a53e8b4589657bf9fef3de8679191141fb6fd02ff7fd0224e6204368c17b67",
+          "bytes": 140523,
+          "role": "frozen M0_tuned alpha"
+        }
+      }
+    ],
+    "rule": "Median of five frozen final parameter values; no n600 rescaling or retuning.",
+    "equal_numerical_values_do_not_imply_equal_effective_complexity": true
+  },
+  "source_hashes": {
+    "freeze_confirmation.py": "e7449538be5b7786310ee8e6307fa2f983dc96d1c49e46967b503cbd1b9d2618",
+    "confirmation.py": "9c92dec8be59f984447da2dcf4d6491dc8b5817a2df1133dcad723f26ef58ae2",
+    "objectives.py": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+    "e17_common.py": "a78552b426027c00753c77edc8f7dd3a974df7d61ac1319aad819acf81fedc26"
+  },
+  "training_questions": 600,
+  "fresh_input_questions": 400,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "feature_recipe": "full600-only MiniLM384 PCA16(full SVD), StandardScaler, penalized constant plus16 PC coordinates",
+  "heads": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform"
+  ],
+  "input_only_policies": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform",
+    "GlobalFixed",
+    "TaskFixedOracle",
+    "SubtaskFixedOracle"
+  ],
+  "fitted_parameter_count_per_head": 340,
+  "semantic_action_order": "immutable original physical six-model identity order, then lexicographic K=3 combinations; no alias reordering",
+  "training_tie_rules": {
+    "SPO_coordinate": "original canonical first exact true maximizer",
+    "TSPO_uniform": "uniform over exact true maximizers"
+  },
+  "service_tie_rule": "semantic_exact in immutable physical team order; no near-optimal threshold",
+  "no_model_selection_on_fresh": true,
+  "fresh_rewards_read": 0,
+  "sealed_payloads_read": 0,
+  "new_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0
+}

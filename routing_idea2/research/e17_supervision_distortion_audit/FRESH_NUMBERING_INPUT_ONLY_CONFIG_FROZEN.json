@@ -1,0 +1,30 @@
+{
+  "schema": "e17_fresh_numbering_input_only_config_v1",
+  "source_sha256": "d972f0bf7dd354092a85a250acdde560d85321a72bf66fded0efdec80188040e",
+  "main_prediction_freeze_sha256": "e359e1301b58b57883a3e393bfb89021050b1b4c2773afc8837e9a0eec4c9292",
+  "original_protocol_sha256": "56f9bfb5d429efde1eefabcb9b5bd8c618bdbd6fe9af3c9613cc2be9784a9037",
+  "fresh_input_sha256": "d01801872d8c2a469ea115e1a5a0c0a2510e42385b453ab37dc0feef779e2735",
+  "permutation_sha256": "225f6c84e7e074f4a4f3e9483455bcf345cb96d06255ce1df4fad8613802f7f8",
+  "methods": [
+    "Ridge",
+    "SPO_coordinate",
+    "TSPO_uniform"
+  ],
+  "policies": [
+    "semantic_exact",
+    "numeric_exact",
+    "semantic_near",
+    "numeric_near"
+  ],
+  "random_numberings": 100,
+  "identity_controls": 1,
+  "unique_fresh_inputs": 400,
+  "historical_training_feature_maps": 5,
+  "near_tolerance": 1e-08,
+  "source_models": "existing mapped physical-coordinate coefficient matrices",
+  "outcome_access": 0,
+  "new_fits": 0,
+  "encoder_forwards": 0,
+  "model_calls": 0,
+  "interpretation": "numbering sensitivity on new input vectors only; no reward/accuracy generalization claim"
+}

@@ -1,0 +1,326 @@
+{
+  "status": "HISTORICAL_ASSETS_UNCHANGED",
+  "files": [
+    {
+      "asset_relative_path": "artifacts/private/routing_redesign_20261104/full_feedback_inputs/v1/selector_train_inputs.npz",
+      "bytes": 917278,
+      "sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3"
+    },
+    {
+      "asset_relative_path": "artifacts/private/routing_redesign_20261104/ff_v1/tr/selector_train_outcomes.npz",
+      "bytes": 485850,
+      "sha256": "a01230f2bed3e7f9d05713bf9e3e4f1cf44987b41c460f91e1d83bc1c29f191e"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/public/E13_PROTOCOL.json",
+      "bytes": 14340,
+      "sha256": "12ebd4f2d49a284d78e010ca51a610e08301e81e9c5483566f13c051482a76a3"
+    },
+    {
+      "asset_relative_path": "research/e14_mechanism_diagnostics/public/code/e14_common.py",
+      "bytes": 3678,
+      "sha256": "a528c142b0d67e53c2c3cee2501fa9cd06f16f7da1193cd64dfc53608d035520"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/public/NS_SPO_PROTOCOL.json",
+      "bytes": 2664,
+      "sha256": "c234b4421140571078a982856564b7d62c3d1c0fad0f39f4e9c5d9468603fec2"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/public/M4_MECHANISM_PROTOCOL.json",
+      "bytes": 3463,
+      "sha256": "419d5578f511420b6c53b9cb85ec04f3adfad44727bef663896d5cc4ea941d2d"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/public/code/run_distribution_audit.py",
+      "bytes": 17903,
+      "sha256": "d3334819abaee2af4b3501edd4d691c6c89ae03644e4c6ff1b4973eef5382b81"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/dependencies/clarabel/__init__.py",
+      "bytes": 115,
+      "sha256": "7c0c6f2ac3561bcc0fbca30ac34b979a559c021d77b6892c8a1210ba0d8a537b"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/dependencies/clarabel/clarabel.pyd",
+      "bytes": 2209280,
+      "sha256": "4687781daff4828f8a34fedc446e9f7cea10aa578868d55b780097afeea2c9ff"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/private/inputs/fold0/INPUTS_ONLY.npz",
+      "bytes": 137447,
+      "sha256": "02018feb47f4be4918048d65e4b0d8873bccdff3e14944febab4b052e71e1f75"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold0/M4/FIT_LOG.json",
+      "bytes": 146645,
+      "sha256": "7406ff4f6c18dc3fdec44d93be4d333d861a7638c165692d79046926cf813914"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold0/M4/model_state.npz",
+      "bytes": 53493,
+      "sha256": "62bc55052e6c87a1c78365c21b4783b6e3fe14bc68b22db1dfcd48b6ba385648"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold0/M0_tuned/FIT_LOG.json",
+      "bytes": 140528,
+      "sha256": "c9c5ec72e9ab3cc53f5bc0a920faad845f733018ec123caf5cc2efda2cda7da3"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold0/M0_tuned/model_state.npz",
+      "bytes": 53719,
+      "sha256": "89f39c048de93e6fdbd1df2ad1332688bc2fda6b557b801b3b8fe5217511f399"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold0_full_spo_lexicographic.npz",
+      "bytes": 53734,
+      "sha256": "caa406fd2598676e15282ea761b2bb87027743c54fedce8827e5e5c7c53d6afb"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold0_full_spo_reverselex.npz",
+      "bytes": 53733,
+      "sha256": "fc19cd1f0d4c8798523311dc77badf0812de16214ccaa158d53d2f84b61f0cae"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold0_full_spo_uniform.npz",
+      "bytes": 53007,
+      "sha256": "41c2dd092eacdae2df8c0e747ff6a5506397cedbf26feb68acd332b5d4e9bcee"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/noise/private/fold0/POSTERIOR_TRAINING.npz",
+      "bytes": 1958671,
+      "sha256": "92f358ce3f0a5e30e05f86f21b38df3b2dd0314691ce190792735f8157015ff2"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold0/NS_delta0/MODEL.npz",
+      "bytes": 53723,
+      "sha256": "322abaeec80a53594e7b4ea31a89f19dc096e967d75850513e7515fce00010c3"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold0/NS_main/MODEL.npz",
+      "bytes": 53723,
+      "sha256": "9ec20d2e803719bc8f628dc0d61815437c174ef4b6da8d8d9abff870b66e7f96"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/private/inputs/fold1/INPUTS_ONLY.npz",
+      "bytes": 137445,
+      "sha256": "6f461ad09a9a0d4038dd2643c3f2be549afe354c75c642f1adc05e6f05e28b15"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold1/M4/FIT_LOG.json",
+      "bytes": 146653,
+      "sha256": "f40a81d5c6d2a61b0a9da43c7667b222965883ac0c70212779bf43d4d8721e3d"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold1/M4/model_state.npz",
+      "bytes": 53725,
+      "sha256": "eeec65cf58c5baf81230b9fed3fd185e09b37e6b2bbc8304709e00a8168f2395"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold1/M0_tuned/FIT_LOG.json",
+      "bytes": 140528,
+      "sha256": "0def37a62f9c8b6d0d627af110a5698db0f449e812504f907c03fead20a5cba9"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold1/M0_tuned/model_state.npz",
+      "bytes": 53716,
+      "sha256": "70c39e4fead519d1b9b9925f4bab64a597c00ea25abc3e90c00b86b183511304"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold1_full_spo_lexicographic.npz",
+      "bytes": 53712,
+      "sha256": "b4579c33c674e0dc31a1aecd853b20c55ffff488c83f5e19849016c6c08f449b"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold1_full_spo_reverselex.npz",
+      "bytes": 53708,
+      "sha256": "bc2d7ada01a714fcf695b7b49404a553e28b1a07b86fd877a713ce344af7b6a1"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold1_full_spo_uniform.npz",
+      "bytes": 53350,
+      "sha256": "9d9d2987a23d074fe034bfc7f3df9a4cca050a6452558b8dde2e8bdd3dba6484"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/noise/private/fold1/POSTERIOR_TRAINING.npz",
+      "bytes": 1967403,
+      "sha256": "dfe96d65a74ccf4155fd89ba5efba1a5fd97604a831eef3d3a70386495870610"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold1/NS_delta0/MODEL.npz",
+      "bytes": 53704,
+      "sha256": "42efea3ba033a35ffd017298891bc3be0cd4754916d3272b99f7f2a97d81215d"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold1/NS_main/MODEL.npz",
+      "bytes": 53709,
+      "sha256": "f321b589f58c727e781b239d7e0db21aaa4d90f10facb4ad75ad5872092afb65"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/private/inputs/fold2/INPUTS_ONLY.npz",
+      "bytes": 137449,
+      "sha256": "c0cb11cf116464bae40cea24be2cc292e96f70264ffd8281ac793853f39f9c57"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold2/M4/FIT_LOG.json",
+      "bytes": 146673,
+      "sha256": "b0ff2fde40eae3f2c8bfaefcf6aef374b3aecde5b6e9c1da2391cc53d3ecaca3"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold2/M4/model_state.npz",
+      "bytes": 53592,
+      "sha256": "c9b75f3f769e8f627185e1fb14219d90def054b025f9b67491f01a8ad8c4b03e"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold2/M0_tuned/FIT_LOG.json",
+      "bytes": 140539,
+      "sha256": "58417f1568892b70e9a0881aa48720673cd1c07939db61387151ca597d32c2c8"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold2/M0_tuned/model_state.npz",
+      "bytes": 53703,
+      "sha256": "6dabfc4e069789c81736dd4396b3cb2a8d183acdd950b427a3a98d3f311c2640"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold2_full_spo_lexicographic.npz",
+      "bytes": 53722,
+      "sha256": "fe56b6c877ceeed746a545503eba8eb31dba9d998e457da2d742a8ae78507a4d"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold2_full_spo_reverselex.npz",
+      "bytes": 53726,
+      "sha256": "f8aa40535718853ffa62d2ea2f9b22fd695de42ec3f38736550211a1aca46f54"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold2_full_spo_uniform.npz",
+      "bytes": 53281,
+      "sha256": "dc9a948ff61766aca606ca40875e44b5defca8115ddecdf9007cebe84985928c"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/noise/private/fold2/POSTERIOR_TRAINING.npz",
+      "bytes": 1954134,
+      "sha256": "0f6b3251fd0423ef8a7a9b6735b45eb3f0445d5b7668e5406990c1cc75b8dabf"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold2/NS_delta0/MODEL.npz",
+      "bytes": 53715,
+      "sha256": "92566ead2b4e44cdec396a2444ef2f5d2b5678e7486703542271d7e0eaafadf2"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold2/NS_main/MODEL.npz",
+      "bytes": 53713,
+      "sha256": "214bf33e9d317ab74273119a6c6f082ccbaefc806e5a3c565820044a5ec589a5"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/private/inputs/fold3/INPUTS_ONLY.npz",
+      "bytes": 137452,
+      "sha256": "fe1c9f2219f936daa5031e53d24c2469b0fc48ae51790de56ac2a821f724fb41"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold3/M4/FIT_LOG.json",
+      "bytes": 146650,
+      "sha256": "8bc6c898899e1fc72c502171ddd4a4c041e7c3480d9364745efd922dfcc8fc68"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold3/M4/model_state.npz",
+      "bytes": 53727,
+      "sha256": "b54de4f7278bfaeafd5fd2dd1d27193fc90bb7f8c2fd0bc693b2b96c7d0fb3d2"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold3/M0_tuned/FIT_LOG.json",
+      "bytes": 140477,
+      "sha256": "a2c8f427378c3428d41ff018c9b9e689ab9ae62ea9ead11bf3d722d3ebf43eb7"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold3/M0_tuned/model_state.npz",
+      "bytes": 53719,
+      "sha256": "aa3f834cad68e8c6acc8b9d255b730ddd4ceee6d8086969dc7ced9e7c62d3d6e"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold3_full_spo_lexicographic.npz",
+      "bytes": 53726,
+      "sha256": "a770e0f957d24d75376e8ffd42f014ff7a2043e2cc28a7f906c6989c9d1673a1"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold3_full_spo_reverselex.npz",
+      "bytes": 53728,
+      "sha256": "9784d4989f57c0757d5c8ca8c6a7b9e42150d506d34b8d3550e14fd66fb33db1"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold3_full_spo_uniform.npz",
+      "bytes": 53491,
+      "sha256": "d6a421f600d7065f41160b8412ccbcd10cf3cf43bc540eace959c0318a5a89e4"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/noise/private/fold3/POSTERIOR_TRAINING.npz",
+      "bytes": 1955150,
+      "sha256": "351f418768d7360efcfe21fbb896a1f7cf443b36abd3fe98abd5ca4aae1f8977"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold3/NS_delta0/MODEL.npz",
+      "bytes": 53726,
+      "sha256": "d61d4adbcba993ad92a2a87b0b8004e1787e4ce9e2e4c334d26b28d4b967188e"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold3/NS_main/MODEL.npz",
+      "bytes": 53728,
+      "sha256": "afb8946eb7716a2373e5aee042e37b9709056c169cca1d7a148dabf03af1cee0"
+    },
+    {
+      "asset_relative_path": "research/e13_partial_combination_feedback/private/inputs/fold4/INPUTS_ONLY.npz",
+      "bytes": 137484,
+      "sha256": "c018dc2b07f69a3f596bf3cbc40fbffdf7cd9808e0afacbbcf8ce10584338bd4"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold4/M4/FIT_LOG.json",
+      "bytes": 146652,
+      "sha256": "37d3c5bc63797b0e89a3a59fc094b789d64581470161560f6aa06c5f7018b654"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold4/M4/model_state.npz",
+      "bytes": 53375,
+      "sha256": "c59aebd5337341ac7c91c36436c7e7e58e6f7de737746569b3bb1e11c09dd4bb"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold4/M0_tuned/FIT_LOG.json",
+      "bytes": 140523,
+      "sha256": "a1a53e8b4589657bf9fef3de8679191141fb6fd02ff7fd0224e6204368c17b67"
+    },
+    {
+      "asset_relative_path": "research/e8_decision_focused_combination_learning/private/training/fold4/M0_tuned/model_state.npz",
+      "bytes": 53752,
+      "sha256": "d92619522e1fee6ba05e3b941d7aae305b6b7d2211ae5506f5bb92638e8393c2"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold4_full_spo_lexicographic.npz",
+      "bytes": 53700,
+      "sha256": "71324d40908753becf6ba639c071583708ae5551aa9d06b6d74f8b172c85d12d"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold4_full_spo_reverselex.npz",
+      "bytes": 53749,
+      "sha256": "e540a6f926636aa59e608e026ec5bb2b182ddcea3be62f6c1bcced5a2cf47cbd"
+    },
+    {
+      "asset_relative_path": "research/e8_m4_mechanism_audit/private/distribution/models/fold4_full_spo_uniform.npz",
+      "bytes": 53187,
+      "sha256": "4a046cc156b4a2bb729bd96e821609db16f0bb61adbb54cdc498805e91386961"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/noise/private/fold4/POSTERIOR_TRAINING.npz",
+      "bytes": 1957323,
+      "sha256": "f2fabc332530dce617ab8ac65f20b242c30a3868a86f3c0a62dcf7c8da38cc26"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold4/NS_delta0/MODEL.npz",
+      "bytes": 53731,
+      "sha256": "2fba784707d3814f5dbbd540a71d4aedaa075515b99345a2db278366746ced9c"
+    },
+    {
+      "asset_relative_path": "research/m4_noise_aware_set_learning/private/runtime/training/private/fold4/NS_main/MODEL.npz",
+      "bytes": 53731,
+      "sha256": "1dd246fc0a73b800c2e7c5f4e9fef6455ba85a344e5faf792a63541fe5f95750"
+    }
+  ],
+  "scope": "Hash-only historical inputs, frozen configurations, original heads, posterior cache and native solver"
+}

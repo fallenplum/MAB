@@ -1,0 +1,128 @@
+{
+  "TSPO_vs_Ridge": {
+    "schema": "e17_fixed_time_paired_normal_power_plan_v1",
+    "question_unit": "one_original_question_with_generation_repeats_already_averaged",
+    "independent_questions": 600,
+    "groups": {
+      "gsm8k": {
+        "questions": 300,
+        "mean_paired_difference": -0.005555555555555556,
+        "sample_variance_ddof1": 0.013718568066394154,
+        "target_weight": 0.5
+      },
+      "bbh": {
+        "questions": 300,
+        "mean_paired_difference": 0.009999999999999997,
+        "sample_variance_ddof1": 0.0634448160535117,
+        "target_weight": 0.5
+      }
+    },
+    "observed_task_balanced_difference": 0.0022222222222222205,
+    "observed_task_balanced_difference_pp": 0.22222222222222204,
+    "pooled_within_task_variance": 0.038581692059952925,
+    "sigma_question_mean": 0.19642222903722717,
+    "alpha_one_sided": 0.05,
+    "target_power": 0.8,
+    "critical_z": 1.6448536269514715,
+    "target_power_z": 0.8416212335729144,
+    "effects": [
+      {
+        "effect_pp": 0.5,
+        "effect_fraction": 0.005,
+        "required_n": 9542,
+        "power_by_n": [
+          {
+            "n_questions": 400,
+            "normal_approximation_power": 0.1280313828841269
+          }
+        ]
+      },
+      {
+        "effect_pp": 1.0,
+        "effect_fraction": 0.01,
+        "required_n": 2386,
+        "power_by_n": [
+          {
+            "n_questions": 400,
+            "normal_approximation_power": 0.26544797110816726
+          }
+        ]
+      }
+    ],
+    "zero_development_variance": false,
+    "positive_effect_zero_variance_limit": null,
+    "zero_variance_note": null,
+    "assumptions": [
+      "Fixed one-sided test at a predeclared sample size, with no optional stopping.",
+      "New independent questions are sampled GSM8K/BBH equally; BBH is question-weighted.",
+      "Development within-task paired variance transports to the new question population.",
+      "Normal approximation and variance plug-in are planning assumptions, not guarantees.",
+      "A positive-gain test and a lower-bound-above-one-percentage-point test require different effect definitions."
+    ],
+    "confidence_intervals_computed": false,
+    "bootstrap_repetitions": 0
+  },
+  "TSPO_vs_SPO": {
+    "schema": "e17_fixed_time_paired_normal_power_plan_v1",
+    "question_unit": "one_original_question_with_generation_repeats_already_averaged",
+    "independent_questions": 600,
+    "groups": {
+      "gsm8k": {
+        "questions": 300,
+        "mean_paired_difference": -0.013333333333333334,
+        "sample_variance_ddof1": 0.02434782608695653,
+        "target_weight": 0.5
+      },
+      "bbh": {
+        "questions": 300,
+        "mean_paired_difference": 0.004444444444444443,
+        "sample_variance_ddof1": 0.04680292332466245,
+        "target_weight": 0.5
+      }
+    },
+    "observed_task_balanced_difference": -0.004444444444444445,
+    "observed_task_balanced_difference_pp": -0.44444444444444453,
+    "pooled_within_task_variance": 0.03557537470580949,
+    "sigma_question_mean": 0.18861435445323213,
+    "alpha_one_sided": 0.05,
+    "target_power": 0.8,
+    "critical_z": 1.6448536269514715,
+    "target_power_z": 0.8416212335729144,
+    "effects": [
+      {
+        "effect_pp": 0.5,
+        "effect_fraction": 0.005,
+        "required_n": 8798,
+        "power_by_n": [
+          {
+            "n_questions": 400,
+            "normal_approximation_power": 0.1324956550407087
+          }
+        ]
+      },
+      {
+        "effect_pp": 1.0,
+        "effect_fraction": 0.01,
+        "required_n": 2200,
+        "power_by_n": [
+          {
+            "n_questions": 400,
+            "normal_approximation_power": 0.2794457004636166
+          }
+        ]
+      }
+    ],
+    "zero_development_variance": false,
+    "positive_effect_zero_variance_limit": null,
+    "zero_variance_note": null,
+    "assumptions": [
+      "Fixed one-sided test at a predeclared sample size, with no optional stopping.",
+      "New independent questions are sampled GSM8K/BBH equally; BBH is question-weighted.",
+      "Development within-task paired variance transports to the new question population.",
+      "Normal approximation and variance plug-in are planning assumptions, not guarantees.",
+      "A positive-gain test and a lower-bound-above-one-percentage-point test require different effect definitions."
+    ],
+    "confidence_intervals_computed": false,
+    "bootstrap_repetitions": 0
+  }
+}

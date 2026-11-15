@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "test_count": 14,
+  "source_hashes": {
+    "evaluate_e17.py": "0454837a3507e83284bdaef0f8cf69f0def346a23f2e59ec4355a49aa7ece377",
+    "finalize_e17.py": "28c92288f382c18ddd7bbd607ac6f9368c47db255f7bf916997aa2125cf7c72f",
+    "tests/test_evaluation.py": "83199f08388b18755f114e03cb5e73a03e31ffa0ee8002ef87744715b71381ad"
+  },
+  "reproduce_command": "python -B -m unittest discover -s tests -p test_evaluation.py -v",
+  "synthetic_seed": 170315,
+  "outer_reward_reads": 0,
+  "fresh400_reward_reads": 0,
+  "sealed200_reward_reads": 0,
+  "new_physical_llm_calls": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0,
+  "cpu_s": 0.171875,
+  "wall_s": 0.29219710000324994,
+  "cost_role": "small synthetic software qualification replay; not an additional real-data training or evaluation trajectory"
+}

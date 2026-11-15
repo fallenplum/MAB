@@ -1,0 +1,394 @@
+{
+  "schema": "e17_fresh400_input_only_budget_plan_v1",
+  "status": "FROZEN_INPUT_ONLY_EVALUATION_NOT_EXECUTED",
+  "config_sha256": "0bbd6ba39b973213bf01ee37f1ff24ef32a5809bf15fff5e56c7a7e767c535dc",
+  "source_hashes": {
+    "freeze_confirmation.py": "e7449538be5b7786310ee8e6307fa2f983dc96d1c49e46967b503cbd1b9d2618",
+    "confirmation.py": "9c92dec8be59f984447da2dcf4d6491dc8b5817a2df1133dcad723f26ef58ae2",
+    "objectives.py": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+    "e17_common.py": "a78552b426027c00753c77edc8f7dd3a974df7d61ac1319aad819acf81fedc26"
+  },
+  "source_input_hashes": {
+    "train": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+    "fresh": "d01801872d8c2a469ea115e1a5a0c0a2510e42385b453ab37dc0feef779e2735"
+  },
+  "private_artifact_hashes": {
+    "FULL600_MODELS.npz": "aabca0b20967f8711d6a700dea301e490afb71de56b73c6d9a65f9db5fb0f360",
+    "FRESH_POLICY_ACTIONS_FROZEN.npz": "1e4253a0ec9e2add6a7ec83d6ca369fa20bb23240c7731bd14754eeece305ad3",
+    "FULL600_FIT_LOG.json": "0002e2d47f44ac05edc4e8a3a7bf50a5d0b83722d7912f9f714770e0350ee4c5",
+    "INPUT_AND_CACHE_MANIFEST.json": "aafc48e54d140f75f06d1c413fa8a083d3ab3997b375f840dcb4d62b8a56d45a",
+    "CALL_UNIONS_AND_VERIFIED_REMAINDERS.json": "159c80970c881003d92443bd7ed961c84e518e979806af3c0f105da149499d05"
+  },
+  "policies": [
+    {
+      "name": "Ridge",
+      "input_permission": "text-only or global constant"
+    },
+    {
+      "name": "SPO_coordinate",
+      "input_permission": "text-only or global constant"
+    },
+    {
+      "name": "TSPO_uniform",
+      "input_permission": "text-only or global constant"
+    },
+    {
+      "name": "GlobalFixed",
+      "input_permission": "text-only or global constant"
+    },
+    {
+      "name": "TaskFixedOracle",
+      "input_permission": "true task/subtask metadata oracle"
+    },
+    {
+      "name": "SubtaskFixedOracle",
+      "input_permission": "true task/subtask metadata oracle"
+    }
+  ],
+  "training": {
+    "questions": 600,
+    "reward_repeats": 3,
+    "unique_actions": 20,
+    "new_cpu_head_fits": 3,
+    "full600_only_preprocessing": true,
+    "parameters": {
+      "spo_regularization": 0.003472222222222222,
+      "ridge_mean_target_alpha": 333.3333333333333,
+      "source_folds": [
+        {
+          "fold": 0,
+          "spo_regularization": 0.003472222222222222,
+          "ridge_mean_target_alpha": 333.3333333333333,
+          "spo_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M4\\FIT_LOG.json",
+            "sha256": "7406ff4f6c18dc3fdec44d93be4d333d861a7638c165692d79046926cf813914",
+            "bytes": 146645,
+            "role": "frozen M4 regularization"
+          },
+          "ridge_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M0_tuned\\FIT_LOG.json",
+            "sha256": "c9c5ec72e9ab3cc53f5bc0a920faad845f733018ec123caf5cc2efda2cda7da3",
+            "bytes": 140528,
+            "role": "frozen M0_tuned alpha"
+          }
+        },
+        {
+          "fold": 1,
+          "spo_regularization": 0.003472222222222222,
+          "ridge_mean_target_alpha": 333.3333333333333,
+          "spo_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M4\\FIT_LOG.json",
+            "sha256": "f40a81d5c6d2a61b0a9da43c7667b222965883ac0c70212779bf43d4d8721e3d",
+            "bytes": 146653,
+            "role": "frozen M4 regularization"
+          },
+          "ridge_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M0_tuned\\FIT_LOG.json",
+            "sha256": "0def37a62f9c8b6d0d627af110a5698db0f449e812504f907c03fead20a5cba9",
+            "bytes": 140528,
+            "role": "frozen M0_tuned alpha"
+          }
+        },
+        {
+          "fold": 2,
+          "spo_regularization": 0.003472222222222222,
+          "ridge_mean_target_alpha": 333.3333333333333,
+          "spo_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M4\\FIT_LOG.json",
+            "sha256": "b0ff2fde40eae3f2c8bfaefcf6aef374b3aecde5b6e9c1da2391cc53d3ecaca3",
+            "bytes": 146673,
+            "role": "frozen M4 regularization"
+          },
+          "ridge_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M0_tuned\\FIT_LOG.json",
+            "sha256": "58417f1568892b70e9a0881aa48720673cd1c07939db61387151ca597d32c2c8",
+            "bytes": 140539,
+            "role": "frozen M0_tuned alpha"
+          }
+        },
+        {
+          "fold": 3,
+          "spo_regularization": 0.003472222222222222,
+          "ridge_mean_target_alpha": 333.3333333333333,
+          "spo_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M4\\FIT_LOG.json",
+            "sha256": "8bc6c898899e1fc72c502171ddd4a4c041e7c3480d9364745efd922dfcc8fc68",
+            "bytes": 146650,
+            "role": "frozen M4 regularization"
+          },
+          "ridge_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M0_tuned\\FIT_LOG.json",
+            "sha256": "a2c8f427378c3428d41ff018c9b9e689ab9ae62ea9ead11bf3d722d3ebf43eb7",
+            "bytes": 140477,
+            "role": "frozen M0_tuned alpha"
+          }
+        },
+        {
+          "fold": 4,
+          "spo_regularization": 0.00034722222222222224,
+          "ridge_mean_target_alpha": 333.3333333333333,
+          "spo_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M4\\FIT_LOG.json",
+            "sha256": "37d3c5bc63797b0e89a3a59fc094b789d64581470161560f6aa06c5f7018b654",
+            "bytes": 146652,
+            "role": "frozen M4 regularization"
+          },
+          "ridge_source": {
+            "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M0_tuned\\FIT_LOG.json",
+            "sha256": "a1a53e8b4589657bf9fef3de8679191141fb6fd02ff7fd0224e6204368c17b67",
+            "bytes": 140523,
+            "role": "frozen M0_tuned alpha"
+          }
+        }
+      ],
+      "rule": "Median of five frozen final parameter values; no n600 rescaling or retuning.",
+      "equal_numerical_values_do_not_imply_equal_effective_complexity": true
+    }
+  },
+  "fresh": {
+    "questions": 400,
+    "generation_repeats": 3,
+    "rewards_read": 0,
+    "gold_decoded": 0,
+    "score_operations_executed": 0,
+    "new_model_calls": 0,
+    "new_encoder_forwards": 0
+  },
+  "cache": {
+    "verified_importer_receipts": 8,
+    "complete_member_outputs_declared": 3200,
+    "verified_aggregate_outputs": 0,
+    "cache_payloads_reopened": false,
+    "actual_output_lengths_read": false,
+    "remote_inventory_verified": false,
+    "declaration_scope": "Receipt-backed complete fresh400 assignments. Payloads are not reopened or rehashed here; later execution must validate original output identities before reuse.",
+    "local_absence_does_not_establish_new_physical_call_requirement": true
+  },
+  "budget_plans": {
+    "all_text_only_policies": {
+      "policies": [
+        "Ridge",
+        "SPO_coordinate",
+        "TSPO_uniform",
+        "GlobalFixed"
+      ],
+      "input_permission": "embeddings plus fixed policy; no true task/subtask labels",
+      "from_zero": {
+        "member_calls": 6282,
+        "aggregate_calls": 4086,
+        "scoring_ops": 4086,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2894,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 3388,
+        "aggregate_calls": 4086
+      },
+      "conservative_token_upper_bound_from_zero": 72069120,
+      "conservative_token_upper_bound_missing_local": 54288384,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 4086,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "all_policies_with_oracle_metadata": {
+      "policies": [
+        "Ridge",
+        "SPO_coordinate",
+        "TSPO_uniform",
+        "GlobalFixed",
+        "TaskFixedOracle",
+        "SubtaskFixedOracle"
+      ],
+      "input_permission": "includes extra true task/subtask-label oracle diagnostics",
+      "from_zero": {
+        "member_calls": 6702,
+        "aggregate_calls": 5340,
+        "scoring_ops": 5340,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 3034,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 3668,
+        "aggregate_calls": 5340
+      },
+      "conservative_token_upper_bound_from_zero": 84922368,
+      "conservative_token_upper_bound_missing_local": 66281472,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 5340,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "Ridge_versus_GlobalFixed": {
+      "policies": [
+        "Ridge",
+        "GlobalFixed"
+      ],
+      "input_permission": "text-only head versus no-input global default",
+      "from_zero": {
+        "member_calls": 5328,
+        "aggregate_calls": 2325,
+        "scoring_ops": 2325,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2576,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 2752,
+        "aggregate_calls": 2325
+      },
+      "conservative_token_upper_bound_from_zero": 51781632,
+      "conservative_token_upper_bound_missing_local": 35954688,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 2325,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "SPO_coordinate_versus_GlobalFixed": {
+      "policies": [
+        "SPO_coordinate",
+        "GlobalFixed"
+      ],
+      "input_permission": "text-only head versus no-input global default",
+      "from_zero": {
+        "member_calls": 4893,
+        "aggregate_calls": 2382,
+        "scoring_ops": 2382,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2431,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 2462,
+        "aggregate_calls": 2382
+      },
+      "conservative_token_upper_bound_from_zero": 49575936,
+      "conservative_token_upper_bound_missing_local": 34639872,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 2382,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "TSPO_uniform_versus_GlobalFixed": {
+      "policies": [
+        "TSPO_uniform",
+        "GlobalFixed"
+      ],
+      "input_permission": "text-only head versus no-input global default",
+      "from_zero": {
+        "member_calls": 5232,
+        "aggregate_calls": 2262,
+        "scoring_ops": 2262,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2544,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 2688,
+        "aggregate_calls": 2262
+      },
+      "conservative_token_upper_bound_from_zero": 50675712,
+      "conservative_token_upper_bound_missing_local": 35045376,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 2262,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "SPO_coordinate_versus_Ridge": {
+      "policies": [
+        "SPO_coordinate",
+        "Ridge"
+      ],
+      "input_permission": "same text-only input permission",
+      "from_zero": {
+        "member_calls": 5238,
+        "aggregate_calls": 2340,
+        "scoring_ops": 2340,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2514,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 2724,
+        "aggregate_calls": 2340
+      },
+      "conservative_token_upper_bound_from_zero": 51351552,
+      "conservative_token_upper_bound_missing_local": 35905536,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 2340,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "TSPO_uniform_versus_Ridge": {
+      "policies": [
+        "TSPO_uniform",
+        "Ridge"
+      ],
+      "input_permission": "same text-only input permission",
+      "from_zero": {
+        "member_calls": 4716,
+        "aggregate_calls": 2001,
+        "scoring_ops": 2001,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 2147,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 2569,
+        "aggregate_calls": 2001
+      },
+      "conservative_token_upper_bound_from_zero": 45367296,
+      "conservative_token_upper_bound_missing_local": 32176128,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 2001,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    },
+    "all20_hindsight_diagnostic_separate": {
+      "input_permission": "all20 reward hindsight diagnostic; not an input-only deployable routing policy",
+      "included_in_main_policy_union": false,
+      "from_zero": {
+        "member_calls": 7200,
+        "aggregate_calls": 24000,
+        "scoring_ops": 24000,
+        "gold_questions": 400
+      },
+      "receipt_backed_cached_member_calls": 3200,
+      "receipt_backed_cached_aggregate_calls": 0,
+      "unverified_or_missing_local_execution": {
+        "member_calls": 4000,
+        "aggregate_calls": 24000
+      },
+      "conservative_token_upper_bound_from_zero": 240844800,
+      "conservative_token_upper_bound_missing_local": 221184000,
+      "actual_fresh_tokens": null,
+      "remaining_gold_questions": 400,
+      "deterministic_scoring_ops": 24000,
+      "new_physical_generation_required": null,
+      "missing_local_is_not_proof_of_missing_remote_cache": true
+    }
+  },
+  "token_bound": {
+    "member_input_cap": 4096,
+    "member_output_cap": 2048,
+    "aggregate_input_cap": 6144,
+    "aggregate_output_cap": 2048,
+    "type": "conservative per-call caps, not actual observed lengths"
+  },
+  "evaluation_execution": "PENDING; no gold or output read authorized by this preparation artifact",
+  "power_planning": "Use final frozen candidates' legal original-question OOF paired differences; these full600 fitted training rewards do not provide independent confirmation power evidence.",
+  "independent_role": "fresh400 is a once-only frozen-policy development confirmation pool; sealed200 retains its original final role",
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0,
+  "cpu_s": 6.40625,
+  "wall_s": 20.356141199998092
+}

@@ -1,0 +1,665 @@
+{
+  "schema": "E17_fixed_known_truth_operator_qualification_v1",
+  "status": "PASS",
+  "known_truth_cases": [
+    {
+      "name": "same_known_mean_different_operator",
+      "support": [
+        [
+          0.6,
+          0.5
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "probabilities": [
+        0.9,
+        0.1
+      ],
+      "fixed_draw_counts": [
+        9,
+        1
+      ],
+      "questions": 1,
+      "draws": 10,
+      "tie_rule": "lexicographic",
+      "regularization": 0.2,
+      "known_mean": [
+        0.54,
+        0.55
+      ],
+      "working_mean": [
+        0.54,
+        0.55
+      ],
+      "working_mean_error": 0.0,
+      "fixed_draw_mean_error_max_abs": 1.1102230246251565e-16,
+      "working_mean_scope": "Known synthetic target mean; no real posterior-calibration claim",
+      "best_mean_action": 1,
+      "optimal_expected_reward": 0.55,
+      "expected_hindsight_oracle": 0.64,
+      "irreducible_hindsight_gap": 0.08999999999999997,
+      "loss_then_mean": {
+        "analytic_optimal_score_gap": 0.05,
+        "numerical_score_gap": 0.05000000088194281,
+        "analytic_service": {
+          "0.0": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.54,
+            "mean_regret": 0.010000000000000009,
+            "expected_hindsight_regret": 0.09999999999999998
+          },
+          "1e-08": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.54,
+            "mean_regret": 0.010000000000000009,
+            "expected_hindsight_regret": 0.09999999999999998
+          }
+        },
+        "numerical_service": {
+          "0.0": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.54,
+            "mean_regret": 0.010000000000000009,
+            "expected_hindsight_regret": 0.09999999999999998
+          },
+          "1e-08": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.54,
+            "mean_regret": 0.010000000000000009,
+            "expected_hindsight_regret": 0.09999999999999998
+          }
+        },
+        "fit": {
+          "status": "Solved",
+          "solver": "Clarabel",
+          "solver_version": "0.11.1",
+          "objective": 0.11025000018520799,
+          "exact_loss": 0.11025000018520799,
+          "epigraph_objective": 0.11025000017431696,
+          "objective_error": 1.0891024193604437e-11,
+          "direct_epigraph_error": 1.0891024193604437e-11,
+          "constraint_violation": 1.1305290037455507e-11,
+          "primal_violation": 1.1305290037455507e-11,
+          "primal_dual_gap": 4.250076957035276e-10,
+          "stationarity": 4.464451031083172e-10,
+          "iterations": 7,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0015836999518796802,
+          "questions": 1,
+          "samples_per_question": 10,
+          "actions": 2,
+          "variables": 12,
+          "constraints": 20,
+          "coefficient_dimension": 2,
+          "regularization": 0.2,
+          "tie_rule": "lexicographic",
+          "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+          "sparse_constraint_nonzeros": 40,
+          "sparse_constraint_bytes": 532
+        }
+      },
+      "mean_then_loss": {
+        "analytic_optimal_score_gap": -0.005,
+        "numerical_score_gap": -0.0050001080652393014,
+        "analytic_service": {
+          "0.0": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.55,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.08999999999999997
+          },
+          "1e-08": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.55,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.08999999999999997
+          }
+        },
+        "numerical_service": {
+          "0.0": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.55,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.08999999999999997
+          },
+          "1e-08": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.55,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.08999999999999997
+          }
+        },
+        "fit": {
+          "status": "Solved",
+          "solver": "Clarabel",
+          "solver_version": "0.11.1",
+          "objective": 2.5001080664071105e-06,
+          "exact_loss": 2.5001080664071105e-06,
+          "epigraph_objective": 2.5001463626050935e-06,
+          "objective_error": 3.829619798294509e-11,
+          "direct_epigraph_error": 3.829619798294509e-11,
+          "constraint_violation": 0.0,
+          "primal_violation": 0.0,
+          "primal_dual_gap": 1.4631895695060848e-10,
+          "stationarity": 1.678028375973195e-13,
+          "iterations": 11,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0008904999704100192,
+          "questions": 1,
+          "samples_per_question": 1,
+          "actions": 2,
+          "variables": 3,
+          "constraints": 2,
+          "coefficient_dimension": 2,
+          "regularization": 0.2,
+          "tie_rule": "lexicographic",
+          "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+          "sparse_constraint_nonzeros": 4,
+          "sparse_constraint_bytes": 64
+        }
+      },
+      "total_loss_difference_has_no_universal_sign": [
+        {
+          "score_gap": -1.0,
+          "loss_then_mean": 1.8900000000000001,
+          "mean_then_loss": 0.0,
+          "difference": 1.8900000000000001
+        },
+        {
+          "score_gap": 0.0,
+          "loss_then_mean": 0.19,
+          "mean_then_loss": 0.010000000000000009,
+          "difference": 0.18
+        },
+        {
+          "score_gap": 1.0,
+          "loss_then_mean": 0.3,
+          "mean_then_loss": 2.01,
+          "difference": -1.7099999999999997
+        }
+      ],
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.003119100001640618
+    },
+    {
+      "name": "symmetric_true_ties_do_not_imply_mean_consistency",
+      "support": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "probabilities": [
+        0.1,
+        0.2,
+        0.7
+      ],
+      "fixed_draw_counts": [
+        1,
+        2,
+        7
+      ],
+      "questions": 1,
+      "draws": 10,
+      "tie_rule": "uniform",
+      "regularization": 0.2,
+      "known_mean": [
+        0.7999999999999999,
+        0.8999999999999999
+      ],
+      "working_mean": [
+        0.7999999999999999,
+        0.8999999999999999
+      ],
+      "working_mean_error": 0.0,
+      "fixed_draw_mean_error_max_abs": 1.1102230246251565e-16,
+      "working_mean_scope": "Known synthetic target mean; no real posterior-calibration claim",
+      "best_mean_action": 1,
+      "optimal_expected_reward": 0.8999999999999999,
+      "expected_hindsight_oracle": 1.0,
+      "irreducible_hindsight_gap": 0.10000000000000009,
+      "loss_then_mean": {
+        "analytic_optimal_score_gap": 0.0,
+        "numerical_score_gap": -6.314562387558922e-12,
+        "analytic_service": {
+          "0.0": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.7999999999999999,
+            "mean_regret": 0.09999999999999998,
+            "expected_hindsight_regret": 0.20000000000000007
+          },
+          "1e-08": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.7999999999999999,
+            "mean_regret": 0.09999999999999998,
+            "expected_hindsight_regret": 0.20000000000000007
+          }
+        },
+        "numerical_service": {
+          "0.0": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.8999999999999999,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.10000000000000009
+          },
+          "1e-08": {
+            "chosen_physical_action": 0,
+            "expected_reward": 0.7999999999999999,
+            "mean_regret": 0.09999999999999998,
+            "expected_hindsight_regret": 0.20000000000000007
+          }
+        },
+        "fit": {
+          "status": "Solved",
+          "solver": "Clarabel",
+          "solver_version": "0.11.1",
+          "objective": 0.30000000000315724,
+          "exact_loss": 0.30000000000315724,
+          "epigraph_objective": 0.3000000000002221,
+          "objective_error": 2.9351521213527576e-12,
+          "direct_epigraph_error": 2.9351521213527576e-12,
+          "constraint_violation": 3.815392446426813e-12,
+          "primal_violation": 3.815392446426813e-12,
+          "primal_dual_gap": 2.4675039789201492e-11,
+          "stationarity": 2.946598520736643e-11,
+          "iterations": 7,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0009556000004522502,
+          "questions": 1,
+          "samples_per_question": 10,
+          "actions": 2,
+          "variables": 12,
+          "constraints": 20,
+          "coefficient_dimension": 2,
+          "regularization": 0.2,
+          "tie_rule": "uniform",
+          "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+          "sparse_constraint_nonzeros": 40,
+          "sparse_constraint_bytes": 532
+        },
+        "analytic_optimal_action_set": [
+          0,
+          1
+        ],
+        "uniform_inference_tie_expected_reward": 0.85,
+        "uniform_inference_tie_mean_regret": 0.05,
+        "uniform_inference_tie_hindsight_regret": 0.15
+      },
+      "mean_then_loss": {
+        "analytic_optimal_score_gap": -0.05,
+        "numerical_score_gap": -0.05000001225401289,
+        "analytic_service": {
+          "0.0": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.8999999999999999,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.10000000000000009
+          },
+          "1e-08": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.8999999999999999,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.10000000000000009
+          }
+        },
+        "numerical_service": {
+          "0.0": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.8999999999999999,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.10000000000000009
+          },
+          "1e-08": {
+            "chosen_physical_action": 1,
+            "expected_reward": 0.8999999999999999,
+            "mean_regret": 0.0,
+            "expected_hindsight_regret": 0.10000000000000009
+          }
+        },
+        "fit": {
+          "status": "Solved",
+          "solver": "Clarabel",
+          "solver_version": "0.11.1",
+          "objective": 0.0002500001225401439,
+          "exact_loss": 0.0002500001225401439,
+          "epigraph_objective": 0.0002500001610946656,
+          "objective_error": 3.8554521717120566e-11,
+          "direct_epigraph_error": 3.8554521717120566e-11,
+          "constraint_violation": 0.0,
+          "primal_violation": 0.0,
+          "primal_dual_gap": 1.610824806874689e-10,
+          "stationarity": 3.197442310920451e-14,
+          "iterations": 9,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.0008117999532260001,
+          "questions": 1,
+          "samples_per_question": 1,
+          "actions": 2,
+          "variables": 3,
+          "constraints": 2,
+          "coefficient_dimension": 2,
+          "regularization": 0.2,
+          "tie_rule": "uniform",
+          "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+          "sparse_constraint_nonzeros": 4,
+          "sparse_constraint_bytes": 64
+        }
+      },
+      "total_loss_difference_has_no_universal_sign": [
+        {
+          "score_gap": -1.0,
+          "loss_then_mean": 1.0,
+          "mean_then_loss": 0.0,
+          "difference": 1.0
+        },
+        {
+          "score_gap": 0.0,
+          "loss_then_mean": 0.3,
+          "mean_then_loss": 0.09999999999999998,
+          "difference": 0.2
+        },
+        {
+          "score_gap": 1.0,
+          "loss_then_mean": 1.3,
+          "mean_then_loss": 2.1,
+          "difference": -0.8
+        }
+      ],
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0022695999941788614
+    }
+  ],
+  "piecewise_risk_qualification": {
+    "grid_points": 4001,
+    "score_gap_range": [
+      -2.0,
+      2.0
+    ],
+    "direct_piecewise_max_abs_errors": [
+      8.881784197001252e-16,
+      8.881784197001252e-16
+    ],
+    "unregularized_minimum_score_gaps": [
+      0.04999999999999982,
+      0.0
+    ]
+  },
+  "all_tied_only_positive_regularization": [
+    {
+      "actions": 2,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "lexicographic",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 0.0,
+      "numerical_objective_gap": 1.023931826162908e-10,
+      "regularization_penalty": 1.023931826162908e-10,
+      "coefficient_norm": 1.4310358668900707e-05,
+      "norm_bound_from_objective": 1.4310358668900707e-05,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 1.023931826162908e-10,
+        "exact_loss": 1.023931826162908e-10,
+        "epigraph_objective": 1.241383662531348e-10,
+        "objective_error": 2.1745183636843995e-11,
+        "direct_epigraph_error": 2.1745183636843995e-11,
+        "constraint_violation": 0.0,
+        "primal_violation": 0.0,
+        "primal_dual_gap": 2.258153664058682e-10,
+        "stationarity": 4.770629437957129e-13,
+        "iterations": 14,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.000978299998678267,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 2,
+        "variables": 10,
+        "constraints": 12,
+        "coefficient_dimension": 4,
+        "regularization": 0.5,
+        "tie_rule": "lexicographic",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 32,
+        "sparse_constraint_bytes": 428
+      }
+    },
+    {
+      "actions": 2,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "uniform",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 0.0,
+      "numerical_objective_gap": 1.1618049914360864e-16,
+      "regularization_penalty": 3.204054473073554e-32,
+      "coefficient_norm": 2.5314242920038334e-16,
+      "norm_bound_from_objective": 1.5243391954785433e-08,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 1.1618049914360864e-16,
+        "exact_loss": 1.1618049914360864e-16,
+        "epigraph_objective": 2.912670105104098e-13,
+        "objective_error": 2.911508300112662e-13,
+        "direct_epigraph_error": 2.911508300112662e-13,
+        "constraint_violation": 0.0,
+        "primal_violation": 0.0,
+        "primal_dual_gap": 2.777219010319243e-10,
+        "stationarity": 5.548610459982228e-10,
+        "iterations": 6,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0008798000053502619,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 2,
+        "variables": 10,
+        "constraints": 12,
+        "coefficient_dimension": 4,
+        "regularization": 0.5,
+        "tie_rule": "uniform",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 32,
+        "sparse_constraint_bytes": 428
+      }
+    },
+    {
+      "actions": 2,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "semantic",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 0.0,
+      "numerical_objective_gap": 1.0242194168212221e-10,
+      "regularization_penalty": 1.0242194168212221e-10,
+      "coefficient_norm": 1.4312368195523913e-05,
+      "norm_bound_from_objective": 1.4312368195523913e-05,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 1.0242194168212221e-10,
+        "exact_loss": 1.0242194168212221e-10,
+        "epigraph_objective": 1.2417189498847847e-10,
+        "objective_error": 2.174995330635626e-11,
+        "direct_epigraph_error": 2.174995330635626e-11,
+        "constraint_violation": 0.0,
+        "primal_violation": 0.0,
+        "primal_dual_gap": 2.2564672352842763e-10,
+        "stationarity": 9.227618669171989e-13,
+        "iterations": 14,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0009150999831035733,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 2,
+        "variables": 10,
+        "constraints": 12,
+        "coefficient_dimension": 4,
+        "regularization": 0.5,
+        "tie_rule": "semantic",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 32,
+        "sparse_constraint_bytes": 428
+      }
+    },
+    {
+      "actions": 20,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "lexicographic",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 0.0,
+      "numerical_objective_gap": 3.2104170396811447e-10,
+      "regularization_penalty": 3.2104170396811447e-10,
+      "coefficient_norm": 2.5339364789517298e-05,
+      "norm_bound_from_objective": 2.5339364789517298e-05,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 3.2104170396811447e-10,
+        "exact_loss": 3.2104170396811447e-10,
+        "epigraph_objective": 5.162237859401841e-10,
+        "objective_error": 1.9518208197206967e-10,
+        "direct_epigraph_error": 1.9518208197206967e-10,
+        "constraint_violation": 0.0,
+        "primal_violation": 0.0,
+        "primal_dual_gap": 8.372648685472939e-10,
+        "stationarity": 4.1022266432258615e-15,
+        "iterations": 14,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0016528000123798847,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 20,
+        "variables": 46,
+        "constraints": 120,
+        "coefficient_dimension": 40,
+        "regularization": 0.5,
+        "tie_rule": "lexicographic",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 320,
+        "sparse_constraint_bytes": 4028
+      }
+    },
+    {
+      "actions": 20,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "uniform",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 8.326672684688674e-17,
+      "numerical_objective_gap": 8.330013155013371e-17,
+      "regularization_penalty": 6.945812048790551e-33,
+      "coefficient_norm": 1.1786273413416602e-16,
+      "norm_bound_from_objective": 1.2907372432074137e-08,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 8.330013155013371e-17,
+        "exact_loss": 8.330013155013371e-17,
+        "epigraph_objective": -1.0236256287043943e-12,
+        "objective_error": 1.0237089288359445e-12,
+        "direct_epigraph_error": 1.0237089288359445e-12,
+        "constraint_violation": 1.0239586956117819e-12,
+        "primal_violation": 1.0239586956117819e-12,
+        "primal_dual_gap": 2.9405256007919434e-11,
+        "stationarity": 1.014319184200474e-11,
+        "iterations": 7,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0014105999725870788,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 20,
+        "variables": 46,
+        "constraints": 120,
+        "coefficient_dimension": 40,
+        "regularization": 0.5,
+        "tie_rule": "uniform",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 320,
+        "sparse_constraint_bytes": 4028
+      }
+    },
+    {
+      "actions": 20,
+      "questions": 3,
+      "draws": 2,
+      "tie_rule": "semantic",
+      "known_global_optimum": 0.0,
+      "zero_coefficient_objective": 0.0,
+      "numerical_objective_gap": 3.2104101309323095e-10,
+      "regularization_penalty": 3.2104101309323095e-10,
+      "coefficient_norm": 2.5339337524616975e-05,
+      "norm_bound_from_objective": 2.5339337524616975e-05,
+      "floating_point_allowance": 1e-12,
+      "fit": {
+        "status": "Solved",
+        "solver": "Clarabel",
+        "solver_version": "0.11.1",
+        "objective": 3.2104101309323095e-10,
+        "exact_loss": 3.2104101309323095e-10,
+        "epigraph_objective": 5.162224536725546e-10,
+        "objective_error": 1.9518144057932364e-10,
+        "direct_epigraph_error": 1.9518144057932364e-10,
+        "constraint_violation": 0.0,
+        "primal_violation": 0.0,
+        "primal_dual_gap": 8.372655346811086e-10,
+        "stationarity": 1.7763568394002505e-15,
+        "iterations": 14,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0014322000206448138,
+        "questions": 3,
+        "samples_per_question": 2,
+        "actions": 20,
+        "variables": 46,
+        "constraints": 120,
+        "coefficient_dimension": 40,
+        "regularization": 0.5,
+        "tie_rule": "semantic",
+        "normalization": "1/(n*B) + lambda*entire_coefficient_squared_norm",
+        "sparse_constraint_nonzeros": 320,
+        "sparse_constraint_bytes": 4028
+      }
+    }
+  ],
+  "champion_identity_qualification": {
+    "loss_champion0": 0.30000000000000016,
+    "loss_champion1": 2.1,
+    "observed_difference": 1.7999999999999998,
+    "exact_difference_formula": 1.7999999999999998,
+    "scope": "A single tied row in a shared mixed-data objective; not a nonzero all-tied-only optimum"
+  },
+  "synthetic_qp_fits": 10,
+  "real_model_fits": 0,
+  "posterior_sampler_calls": 0,
+  "new_language_model_calls": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0,
+  "true_reward_cache_reads": 0,
+  "objective_source_sha256": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+  "synthetic_source_sha256": "895b188aa83b31a697a874b26b3623b3a2d727a0fad721d33c28c675fa04a870",
+  "cpu_seconds": 0.453125,
+  "wall_seconds": 0.45803819998400286,
+  "scope": "Known synthetic distributions and numerical implementation only; no empirical MAB performance claim"
+}

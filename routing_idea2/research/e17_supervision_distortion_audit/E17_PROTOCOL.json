@@ -1,0 +1,127 @@
+{
+  "schema": "E17_supervision_distortion_controlled_audit_v1",
+  "branch": "codex/e17-supervision-distortion-audit",
+  "parent_commit": "1f012ae7b9af54adc6a68fcf4417fab81a269982",
+  "evidence": "REUSED_TRAIN600_MECHANISM_DEVELOPMENT",
+  "questions": 600,
+  "outerfolds": 5,
+  "history": 480,
+  "evaluation": 120,
+  "members": 6,
+  "K": 3,
+  "actions": 20,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "features": "same original MiniLM PCA16/scaler; penalized17x20 head",
+  "permutation": {
+    "random_permutations": 100,
+    "identity_control": 1,
+    "seed": 20261115017,
+    "encoding": "column j in renamed coordinates represents physical team permutation[j]",
+    "methods": [
+      "Ridge",
+      "SPO_coordinate",
+      "TSPO_uniform"
+    ],
+    "training_targets": "Ridge empirical means; SPO numeric first true champion; TSPO equal exact-maximizer weights",
+    "inference_modes": [
+      "semantic_exact",
+      "numeric_exact",
+      "semantic_near",
+      "numeric_near"
+    ],
+    "near_tolerance": 1e-08,
+    "primary_inference": "semantic_exact; numerical-near1e-8 sensitivity always reported",
+    "semantic_training_control": "canonical SPO identity solution mapped exactly; mathematical same-objective control, not refitted100 times",
+    "regularization": "frozen original method/fold values; no tuning",
+    "solver": "Clarabel0.11.1 exact epigraph tol1e-9/max1000/thread1"
+  },
+  "loss_order": {
+    "primary_MC": 8,
+    "MC_counts": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "pool": "actual cached8 draws followed by pre-existing disjoint alt8",
+    "primary_targets": "E[plain SPO+] delta0 versus SPO+(mean of precisely same draws)",
+    "B1_identity": "both operators identical, one model reused",
+    "B8_expected": "verified original NS_delta0 cache",
+    "original_NS_main": "frozen delta.05 set expectation, background only",
+    "references": [
+      "frozen Ridge",
+      "empirical SPO",
+      "empirical uniform TSPO",
+      "frozen NS.05"
+    ],
+    "regression_metrics": "same training-only nonnegative common scale on centered scores; rankings and deployment scores untouched",
+    "true_mean_and_regret": "known-truth synthetic only; real-data empirical three-repeat loss marked separately"
+  },
+  "confirmation": {
+    "fresh400_role": "input-only mechanism generalization and frozen call-union/power plan until execution decision",
+    "sealed200": "final sealed, no reward access",
+    "fresh_accuracy": "pending prerequisite/cache/budget assessment",
+    "effect_pp_primary": 1.0,
+    "effect_pp_sensitivity": 0.5,
+    "power_target": 0.8,
+    "alpha_one_sided": 0.05,
+    "no_automatic_question_expansion": true
+  },
+  "statistics": "paired original-question point differences, seed/task breakdowns and permutation distributions; no CIs or bootstrap",
+  "evaluation_source_policy": "training sources frozen now; evaluator and confirmation source hashes must be separately frozen before opening outer rewards",
+  "source_hashes": {
+    "confirmation.py": "9c92dec8be59f984447da2dcf4d6491dc8b5817a2df1133dcad723f26ef58ae2",
+    "e17_common.py": "a78552b426027c00753c77edc8f7dd3a974df7d61ac1319aad819acf81fedc26",
+    "objectives.py": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+    "train_e17.py": "0cc1e79cc8b3daba0007b0ad41f39fcf373ff488f16213e9d84b1989c8c1f7e0",
+    "tests\\test_confirmation.py": "3caab4750db51b2611dfdadaa21e57958475068e27c3a347872126e8d4b6f39a",
+    "tests\\test_objectives.py": "e9e69de754a6df09e6bcc1a2c763f1421151e93b65d473e0257a1301b5a77f11"
+  },
+  "permutation_sha256": "225f6c84e7e074f4a4f3e9483455bcf345cb96d06255ce1df4fad8613802f7f8",
+  "original_sample_audit": [
+    {
+      "fold": 0,
+      "actual_samples": 8,
+      "available_joint_pool": 16,
+      "unique_max_samples": 3840,
+      "mean8_vs_mean512_mae": 0.02446941505701309
+    },
+    {
+      "fold": 1,
+      "actual_samples": 8,
+      "available_joint_pool": 16,
+      "unique_max_samples": 3840,
+      "mean8_vs_mean512_mae": 0.023746016459141196
+    },
+    {
+      "fold": 2,
+      "actual_samples": 8,
+      "available_joint_pool": 16,
+      "unique_max_samples": 3840,
+      "mean8_vs_mean512_mae": 0.02375939344559577
+    },
+    {
+      "fold": 3,
+      "actual_samples": 8,
+      "available_joint_pool": 16,
+      "unique_max_samples": 3840,
+      "mean8_vs_mean512_mae": 0.02396522317935244
+    },
+    {
+      "fold": 4,
+      "actual_samples": 8,
+      "available_joint_pool": 16,
+      "unique_max_samples": 3840,
+      "mean8_vs_mean512_mae": 0.024033220851692155
+    }
+  ],
+  "new_physical_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "confidence_intervals": 0,
+  "bootstrap_runs": 0
+}

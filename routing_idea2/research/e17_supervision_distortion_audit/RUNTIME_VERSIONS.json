@@ -1,0 +1,11 @@
+{
+  "python": "3.11.14",
+  "numpy": "1.26.4",
+  "scipy": "1.11.4",
+  "scikit_learn": "1.7.2",
+  "clarabel": "0.11.1",
+  "system": "Windows",
+  "machine": "AMD64",
+  "llm_runtime_required": false,
+  "feature_encoder_forward_required": false
+}
