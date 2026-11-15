@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "tests": 15,
+  "daemon_source_sha256": "4820354dc08fd5d9f83e114f469f1b9c9be5129a64fc10bb95c9b422b45c3f2f",
+  "test_source_sha256": "60e1afc11f89f89c96906a0bd17ca872eb6520f9b67bbe894e66186fdc11c71f",
+  "worker_source_sha256": "de5c3cc8a509be10e66b3290899862bab73a2784a62aa743e7c48d41a7842495",
+  "dispatcher_source_sha256": "715fb1515968717941695224cf5f9a7e60e4fdaa174e18330bf12a9b72911ec6",
+  "actual_model_calls": 0,
+  "actual_gpu_queries": 0,
+  "real_gold_reads": 0,
+  "actual_jobs_submitted": 0,
+  "wall_seconds": 12.027513500011992,
+  "test_output": "test_changed_approval_path_rejected (__main__.QueueQualification.test_changed_approval_path_rejected) ... ok\ntest_changed_physical_loading_path_rejected (__main__.QueueQualification.test_changed_physical_loading_path_rejected) ... ok\ntest_changed_scope_path_rejected (__main__.QueueQualification.test_changed_scope_path_rejected) ... ok\ntest_completed_entry_resume_adds_no_calls (__main__.QueueQualification.test_completed_entry_resume_adds_no_calls) ... ok\ntest_duplicate_key_in_independent_batch_rejected (__main__.QueueQualification.test_duplicate_key_in_independent_batch_rejected) ... ok\ntest_max_one_batch_leaves_second_pending (__main__.QueueQualification.test_max_one_batch_leaves_second_pending) ... ok\ntest_metadata_only_writes_no_execution_done (__main__.QueueQualification.test_metadata_only_writes_no_execution_done) ... ok\ntest_no_ready_waits_without_model_construction (__main__.QueueQualification.test_no_ready_waits_without_model_construction) ... ok\ntest_production_rejects_injected_runner_or_factory (__main__.QueueQualification.test_production_rejects_injected_runner_or_factory) ... ok\ntest_publish_once_rejects_existing_target (__main__.QueueQualification.test_publish_once_rejects_existing_target) ... ok\ntest_published_ready_entry_cannot_be_overwritten (__main__.QueueQualification.test_published_ready_entry_cannot_be_overwritten) ... ok\ntest_root_all_done_exits_after_all_published_plans (__main__.QueueQualification.test_root_all_done_exits_after_all_published_plans) ... ok\ntest_two_plans_reuse_one_actual_fake_backend_construction (__main__.QueueQualification.test_two_plans_reuse_one_actual_fake_backend_construction) ... ok\ntest_unknown_entry_schema_rejected (__main__.QueueQualification.test_unknown_entry_schema_rejected) ... ok\ntest_wrong_worker_source_rejected (__main__.QueueQualification.test_wrong_worker_source_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 12.023s\n\nOK\n"
+}

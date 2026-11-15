@@ -1,0 +1,103 @@
+{
+  "status": "REVIEWABLE_GENERIC_SOURCE_PACKAGE",
+  "files": [
+    {
+      "path": "code/e18_aggregation_dispatcher_v3.py",
+      "bytes": 8892,
+      "sha256": "715fb1515968717941695224cf5f9a7e60e4fdaa174e18330bf12a9b72911ec6"
+    },
+    {
+      "path": "code/e18_aggregation_queue_daemon.py",
+      "bytes": 17019,
+      "sha256": "4820354dc08fd5d9f83e114f469f1b9c9be5129a64fc10bb95c9b422b45c3f2f"
+    },
+    {
+      "path": "code/e18_aggregation_worker_v2.py",
+      "bytes": 22141,
+      "sha256": "c2e13413a0ea4286a896dc7b437886c2e5ba853e284aa4857806c1e5bb9841d7"
+    },
+    {
+      "path": "code/e18_aggregation_worker_v3.py",
+      "bytes": 26763,
+      "sha256": "de5c3cc8a509be10e66b3290899862bab73a2784a62aa743e7c48d41a7842495"
+    },
+    {
+      "path": "code/e18_gpu_dispatcher.py",
+      "bytes": 8873,
+      "sha256": "5d273799e2c74f0b5cbd40aa6a6c6ae9555fa9892672bc47f3cba174b9c481a2"
+    },
+    {
+      "path": "code/e18_gpu_worker.py",
+      "bytes": 16518,
+      "sha256": "17f74192c3ccf10930633f3f1dac48487ce9f62b25c848e2703f03fc6bc9c4f0"
+    },
+    {
+      "path": "code/incremental_aggregation_planner.py",
+      "bytes": 36071,
+      "sha256": "56c8956326427185dd5132b368fb787dba67e6ad4ef0cfb3d602943df0b187e6"
+    },
+    {
+      "path": "code/qualify_aggregation_queue_daemon.py",
+      "bytes": 9980,
+      "sha256": "60e1afc11f89f89c96906a0bd17ca872eb6520f9b67bbe894e66186fdc11c71f"
+    },
+    {
+      "path": "code/qualify_aggregation_worker_v3.py",
+      "bytes": 13009,
+      "sha256": "b27037e74362df62c81a290dd8c9e5dda1222fc2584403564ac3e234b9853f4c"
+    },
+    {
+      "path": "code/qualify_gpu_dispatcher.py",
+      "bytes": 6785,
+      "sha256": "a5749e5134c26221308d76059db003a98e9f97e1e838ac2431042db4ab96d221"
+    },
+    {
+      "path": "code/qualify_gpu_worker.py",
+      "bytes": 11564,
+      "sha256": "982fb7dc18ffaf45c1c133078f7306d8345b40cb39684b7fb881a2570de888d3"
+    },
+    {
+      "path": "code/qualify_incremental_aggregation_planner.py",
+      "bytes": 22332,
+      "sha256": "db77c55e2a83bcaf1c57ca0109661d261289b6725ed13808fb325570f983c876"
+    },
+    {
+      "path": "PRIVACY_SELF_REVIEW.json",
+      "bytes": 908,
+      "sha256": "54300501c3502f2700513378e9f17444f0599eed0d744f4df16536bdceb53789"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1496,
+      "sha256": "7185e02345135830e28d7f56c39c88afa0a031bf1e906cabca2ed5323bca0531"
+    },
+    {
+      "path": "software_pass/AGGREGATION_QUEUE_QUALIFICATION_v1.json",
+      "bytes": 2584,
+      "sha256": "2afc23e3bb8f9f80ca5a3f0d32befd70ca07ba835b759991b33baa42a4af3b48"
+    },
+    {
+      "path": "software_pass/AGGREGATION_WORKER_V3_QUALIFICATION_v1.json",
+      "bytes": 3641,
+      "sha256": "bbec0b11c883d973609bbd954be74b639f693bd8a0ffc2f917744b599b2a39c8"
+    },
+    {
+      "path": "software_pass/GPU_DISPATCHER_QUALIFICATION_v1.json",
+      "bytes": 1723,
+      "sha256": "ed348cd9d24cb381a188b54678b226532a80c4c3bfe60f9e420dfca962647544"
+    },
+    {
+      "path": "software_pass/GPU_WORKER_QUALIFICATION_v3.json",
+      "bytes": 2781,
+      "sha256": "307c85bde6ca263c3edb0b698adb172ded2b10702ecc256adc2034e361929e4d"
+    },
+    {
+      "path": "software_pass/INCREMENTAL_AGGREGATION_PLANNER_QUALIFICATION_v3.json",
+      "bytes": 3710,
+      "sha256": "2e1fda46f43fb6fc02ada2385c638385208030338a79f9860749b6f1b25cc6ab"
+    }
+  ],
+  "source_bytes_unchanged": true,
+  "software_pass_records": 5,
+  "software_tests_recorded": 85
+}
