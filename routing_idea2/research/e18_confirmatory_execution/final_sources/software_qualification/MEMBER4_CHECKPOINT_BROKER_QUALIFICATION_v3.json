@@ -1,0 +1,59 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 23,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/member4_checkpoint_broker.py"
+      ],
+      "record_field": "broker_source_sha256",
+      "sha256": "b2dc379cb05cb10bd66979fbca38a6920f2af70ba3f8f4a944d343228b7a304b"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_member4_checkpoint_broker.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "d899af0b13098f6b79e533265369249f12de3092b87ec8620e856a5fcb9d86a7"
+    }
+  ],
+  "source_record_name": "MEMBER4_CHECKPOINT_BROKER_QUALIFICATION_v3.json",
+  "source_record_sha256": "56a985b5cee0c2fb53d52a56e492d697ce2bf07f0d4a06bbb562516c103fe4ef",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_child_done_is_insufficient_without_native_commits",
+    "test_child_union_must_match_remaining",
+    "test_command_wrong_gpu_rejected",
+    "test_complete_children_mark_original_parents_done_after_all_native",
+    "test_dryrun_sends_no_signal_or_lease",
+    "test_duplicate_child_keys_rejected",
+    "test_empty_pre_reservation_owner_is_unexecuted",
+    "test_every_success_calls_dependency_validator",
+    "test_exit_signal_race_can_use_native_commit_evidence",
+    "test_failed_owner_blocks_lease",
+    "test_gpu_context_must_disappear",
+    "test_graceful_stop_uses_two_signals_and_keeps_two_parent_locks",
+    "test_heartbeat_does_not_change_static_lease",
+    "test_holds_pending_without_stealing_other_active_claim",
+    "test_native_hash_tampering_rejected",
+    "test_no_second_signal_when_former_holds_another_claim",
+    "test_original_stop_fence_blocks_first_signal",
+    "test_pid_reuse_rejected_without_second_signal",
+    "test_second_parent_must_be_held_before_signal",
+    "test_stale_summary_does_not_authorize_second_signal",
+    "test_store_extra_attempt_rejected",
+    "test_target_must_own_running_parent",
+    "test_unknown_reserved_owner_blocks_lease"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_model_calls": 0,
+    "real_gold_reads": 0
+  }
+}

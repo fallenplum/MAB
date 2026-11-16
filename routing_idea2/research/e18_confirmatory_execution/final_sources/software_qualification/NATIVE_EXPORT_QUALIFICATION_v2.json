@@ -1,0 +1,42 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 18,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/export_completed_native_v2.py"
+      ],
+      "record_field": "exporter_source_sha256",
+      "sha256": "a2054daad25fc3ce63f9ec260b17cca86e098bec8077096e6f2edab237364922"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_native_export_v2.py"
+      ],
+      "record_field": "qualification_source_sha256",
+      "sha256": "b842cf9ecda20148756b47303752fa195a961f0fdfdc5684934bcb429384507a"
+    }
+  ],
+  "source_record_name": "NATIVE_EXPORT_QUALIFICATION_v2.json",
+  "source_record_sha256": "d9747b81b06b635f8c81f0c38f02d90400c3e36f4bc297b0a09a9692dbd6bfbb",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_approval_reference_answer_outside_role_is_refused",
+    "test_approval_reference_role_must_be_sha_not_answer",
+    "test_native_reference_sha_field_is_still_forbidden",
+    "test_real_shape_three_role_approval_is_metadata"
+  ],
+  "zero_call_and_access_declarations": {
+    "real_gold_reads": 0,
+    "real_model_calls": 0,
+    "real_scoring_calls": 0,
+    "remote_files_deleted": 0
+  }
+}

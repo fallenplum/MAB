@@ -1,0 +1,74 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 33,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/e18_execution_adapter.py"
+      ],
+      "record_field": "source_sha256",
+      "sha256": "21e76f6a38fa5f2ed590a2b2068bda8255bc4ebc290dea9eb7c32a3a44a65bc4"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/qualify_execution_adapter.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "b149e9c05a5d85f98c4f3867514dd00a2537c5bb2f774d72717cb362e6267916"
+    }
+  ],
+  "source_record_name": "EXECUTION_ADAPTER_ROOT_FINAL2_v2.json",
+  "source_record_sha256": "388c17a89ab10e8e646f545ec18dea624cdbb37db68b1e2522522e8429c2a63e",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_aggregate_single_task_runs_typed_original_store",
+    "test_aggregate_uses_exactly_selected_three_dependencies",
+    "test_approval_binds_scope_and_operation",
+    "test_backend_initialization_failure_leaves_stop_fence",
+    "test_cache_only_key_is_not_admitted_for_new_call",
+    "test_changed_binding_rejected",
+    "test_changed_model_profiles_rejected",
+    "test_changed_scope_hash_rejected",
+    "test_corrupt_member_record_rejected",
+    "test_duplicate_execution_ownership_rejected",
+    "test_existing_success_reused_before_backend_construction",
+    "test_foreign_question_rejected",
+    "test_generation137_2024_preserve_original_aggregation_order_seed42",
+    "test_insufficient_execution_budget_rejected",
+    "test_known_cost_failure_cannot_retry",
+    "test_member_generation_seeds_are_distinct_jobs",
+    "test_member_single_task_runs_original_store",
+    "test_missing_approval_prevents_backend",
+    "test_mixed_generation_dependencies_rejected",
+    "test_native_member_factory_identical",
+    "test_native_task_request_rejects_extra_label_field",
+    "test_original_global_allowed_splits_unchanged",
+    "test_prior_fresh400_member_receipt_bridge",
+    "test_production_rejects_injected_fake_backend",
+    "test_raw_input_mutation_rejected",
+    "test_runtime_api_load_preserves_cuda_visibility",
+    "test_same_task_cannot_change_approved_output_root",
+    "test_software_success_cannot_be_reused_as_production",
+    "test_synthetic_approval_cannot_authorize_production",
+    "test_tokenizer_head_tail_protocol_retained",
+    "test_unapproved_operation_rejected",
+    "test_unknown_cost_failure_cannot_retry",
+    "test_unselected_aggregate_key_rejected"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_transformers_backends_constructed": 0,
+    "fresh_output_reads": 0,
+    "global_dataset_or_split_mutations": 0,
+    "real_gold_reads": 0,
+    "real_jobs_submitted": 0,
+    "real_model_calls": 0,
+    "sealed_payload_reads": 0
+  }
+}

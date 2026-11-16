@@ -1,0 +1,53 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 22,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/e18_reference_adapter.py"
+      ],
+      "record_field": "source_sha256",
+      "sha256": "8848aa235d98e11005a33ff969274dc0309d02228297f4242f207663e57178ea"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/e18_execution_adapter.py"
+      ],
+      "record_field": "gate_source_sha256",
+      "sha256": "21e76f6a38fa5f2ed590a2b2068bda8255bc4ebc290dea9eb7c32a3a44a65bc4"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/tests/test_reference_adapter.py"
+      ],
+      "record_field": "tests_sha256",
+      "sha256": "9b4adcb01a5079b603d06d827a987cea9956db5b38a014070f7f928b0f4d53c6"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_mechanism_and_confirmation_preparation/qualify_e18_reference_adapter.py"
+      ],
+      "record_field": "qualification_code_sha256",
+      "sha256": "d8caa1fd48d7dfd9e9578c2ce0731f3988a7da610351f44a889b31e961e88fba"
+    }
+  ],
+  "source_record_name": "REFERENCE_ADAPTER_ROOT_FINAL2_v2.json",
+  "source_record_sha256": "9c89a74f79749baa2a898ba4ba6d47e33d314518dc7dd588b2b7861a798514a7",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [],
+  "zero_call_and_access_declarations": {
+    "actual_fresh_reference_reads": 0,
+    "actual_gold_values_decoded": 0,
+    "actual_sealed_input_reads": 0,
+    "new_llm_calls": 0
+  }
+}

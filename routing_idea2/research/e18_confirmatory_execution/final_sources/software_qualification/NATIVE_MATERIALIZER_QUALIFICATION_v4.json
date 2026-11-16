@@ -1,0 +1,53 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 13,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/materialize_closed_native.py"
+      ],
+      "record_field": "source_sha256",
+      "sha256": "03c974d2e46252595a09776b8a1a72200f0383c12512accc53f474d04e5bcc67"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_native_materializer.py"
+      ],
+      "record_field": "qualification_source_sha256",
+      "sha256": "a16d0d80fad0d45218ef4e86c1cb0ad2692a5c72b1c25f1e01f076c376ea10c9"
+    }
+  ],
+  "source_record_name": "NATIVE_MATERIALIZER_QUALIFICATION_v4.json",
+  "source_record_sha256": "406a139ab1f8d1884ba7e28471e2972f21df384a13ba7b422bbaf6563feb9beb",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_canonical_archive_directory_cannot_be_destination",
+    "test_conflicting_cross_archive_bytes_fail_before_destination_creation",
+    "test_consistent_cross_archive_task_and_files_are_reused",
+    "test_exact_original_bytes_and_idempotent_resume",
+    "test_gold_payload_is_rejected_without_copy",
+    "test_interruption_before_publish_is_resumable",
+    "test_only_native_exact_paths_are_allowed",
+    "test_reparse_destination_ancestor_is_refused",
+    "test_repeated_catalog_entry_is_explicit_reuse",
+    "test_tar_symlink_is_never_materialized",
+    "test_target_conflict_is_not_overwritten",
+    "test_wrong_manifest_file_sha_fails",
+    "test_wrong_outer_archive_sha_fails"
+  ],
+  "zero_call_and_access_declarations": {
+    "gold_reads": 0,
+    "model_calls": 0,
+    "real_archives_materialized": 0,
+    "real_native_payloads_decoded": 0,
+    "remote_operations": 0,
+    "scoring_calls": 0
+  }
+}

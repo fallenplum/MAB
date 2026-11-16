@@ -1,0 +1,53 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 14,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/generate_final_report.py"
+      ],
+      "record_field": "generator_source_sha256",
+      "sha256": "fa5a93ad7cad1820a3836a30aa643a773c24569d13be7c7080d2172bf1cbbfbe"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_final_report.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "9070d8b4fff1b68ab92852ebc09efbad8068344a91e06ee3df04d44c3079a580"
+    }
+  ],
+  "source_record_name": "FINAL_REPORT_QUALIFICATION_v4.json",
+  "source_record_sha256": "a04bd6ecdd012b9f595a43de87fe3c6a0c00fde8d990ab8d88305b551201a54d",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_complete_toy_report_has_four_deidentified_artifacts",
+    "test_duplicate_physical_attempt_rejected",
+    "test_frozen_mechanism_registry_remains_distinct",
+    "test_input_metadata_roles_are_used_instead_of_prefix",
+    "test_legitimate_unicode_separator_is_one_physical_record",
+    "test_logical_service_cost_mismatch_rejected",
+    "test_mutated_input_order_rejected",
+    "test_new_and_historical_cost_partition_has_known_failure",
+    "test_noncomplete_status_rejected_before_private_load",
+    "test_optional_native_wall_is_separate_from_kernel_time",
+    "test_same_action_reward_conflict_rejected",
+    "test_stored_p_and_holm_are_not_recomputed",
+    "test_toy_cannot_enter_formal_report_mode",
+    "test_zero_and_one_pp_interpretations_are_distinct"
+  ],
+  "zero_call_and_access_declarations": {
+    "formal_e18_result_reads": 0,
+    "formal_gold_reads": 0,
+    "formal_scoring_calls": 0,
+    "github_sends": 0,
+    "model_calls": 0
+  }
+}

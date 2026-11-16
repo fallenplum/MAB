@@ -1,0 +1,46 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 9,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/audit_startup16.py"
+      ],
+      "record_field": "audit_source_sha256",
+      "sha256": "eb8d6c7f34f0d08690261ba33af4bcb4bd78856bf23ec7d58669281fda2dea49"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_audit_startup16.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "bcb075ec09f0ef7475eefead82b4f77ef7c4ea5bc7a3fab79124676d54be9641"
+    }
+  ],
+  "source_record_name": "STARTUP16_AUDIT_QUALIFICATION_v2.json",
+  "source_record_sha256": "10e45b84fc20e5b22418e7e826c89fdded13f3addfc38b0424c97579b657773d",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_aggregate_decode_seed_mismatch_rejected",
+    "test_candidate_provenance_mismatch_rejected",
+    "test_completion_budget_overflow_rejected",
+    "test_expected_count_mismatch_rejected",
+    "test_outer_operator_mismatch_rejected",
+    "test_paid_prompt_job_identity_mismatch_rejected",
+    "test_production_rejects_fixture_injection",
+    "test_valid16_and_exact_typed_prompt_rebuild",
+    "test_verified_true_foreign_model_result_rejected"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_gpu_queries": 0,
+    "actual_model_calls": 0,
+    "formal_gold_reads": 0
+  }
+}

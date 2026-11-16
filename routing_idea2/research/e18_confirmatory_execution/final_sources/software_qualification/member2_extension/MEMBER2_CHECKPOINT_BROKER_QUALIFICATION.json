@@ -1,0 +1,71 @@
+{
+  "current_packaging_reran_tests": false,
+  "defined_test_methods": [
+    "test_512_boundary_and_remaining_partition",
+    "test_513_chunk_is_rejected",
+    "test_both_first_signals_require_installed_graceful_handlers",
+    "test_both_gpu_contexts_must_disappear",
+    "test_broad_dispatcher_cannot_steal_targeted_released_parent",
+    "test_child_asset_root_change_is_rejected",
+    "test_child_backend_change_is_rejected",
+    "test_child_done_cannot_replace_all_native_successes",
+    "test_child_plan_worker_sha_is_rejected_when_changed",
+    "test_child_union_and_worker_sha_are_bound",
+    "test_cli_default_is_metadata_only",
+    "test_cli_execute_is_qualified_with_mock_processes_only",
+    "test_dryrun_checks_both_without_signal_or_lease",
+    "test_duplicate_child_keys_are_rejected",
+    "test_each_start_tick_is_checked",
+    "test_empty_owner_is_unexecuted_and_all_successes_use_validator",
+    "test_exact_manifest_status_and_claim_are_required",
+    "test_extra_store_attempt_blocks_lease",
+    "test_failed_native_owner_blocks_lease",
+    "test_former_cannot_hold_another_claim_before_second_signal",
+    "test_full_run_waits_for_actual_child_refs",
+    "test_native_completion_marks_both_original_parents_done",
+    "test_original_stop_prevents_all_signals",
+    "test_pid_reuse_after_checkpoint_blocks_second_signal",
+    "test_process_exit_race_still_audits_native_commits",
+    "test_reserved_native_owner_blocks_lease_and_fences_original_plan",
+    "test_second_runner_complete_command_change_rejected",
+    "test_stale_summary_never_authorizes_second_signal",
+    "test_static_lease_does_not_change_with_heartbeat",
+    "test_targeted_runner_exits_and_parent_is_leased_before_broad_signal",
+    "test_two_graceful_workers_exit_and_two_claims_stay_held",
+    "test_unknown_native_usage_blocks_lease"
+  ],
+  "historical_record": false,
+  "privacy_transform": "Keep status, counts, scientific source bindings and synthetic scope. Remove raw logs, temporary paths, actual scope/approval/former-metadata/plan identities and authorization contents.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "qualification_scope": "CURRENT_FINAL_TWO_FORMER_BROKER",
+  "real_llm_failure_record": false,
+  "recorded_assertion_failures": 0,
+  "recorded_software_errors": 0,
+  "recorded_tests": 32,
+  "schema": "e18_deidentified_member2_software_qualification_v1",
+  "source_bindings": [
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/member2_checkpoint_broker.py",
+      "record_field": "broker_source_sha256",
+      "sha256": "2ab31388ab41a12ce8824043259f84977a47581587d657371dc398c7f81a7503",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/qualify_member2_checkpoint_broker.py",
+      "record_field": "test_source_sha256",
+      "sha256": "74d73a4b915db33b19cb972c091a0132150e0882167058f4786e588a1c0aa1fb",
+      "source_in_base_or_extension": true
+    }
+  ],
+  "source_record_name": "MEMBER2_CHECKPOINT_BROKER_QUALIFICATION.json",
+  "source_record_sha256": "34056daab2e3ddfc3fed6eb22c78f67126425070a214477fb9cf7e7029107115",
+  "status": "PASS",
+  "zero_real_activity_declarations": {
+    "actual_model_calls": 0,
+    "actual_process_signals": 0,
+    "production_state_or_lease_files_written": 0,
+    "real_gold_reads": 0
+  }
+}

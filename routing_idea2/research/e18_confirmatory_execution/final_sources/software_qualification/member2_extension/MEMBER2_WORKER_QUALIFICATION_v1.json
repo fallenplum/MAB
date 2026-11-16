@@ -1,0 +1,79 @@
+{
+  "current_packaging_reran_tests": false,
+  "defined_test_methods": [
+    "test_changed_backend_path_rejected",
+    "test_dead_broker_rejected",
+    "test_dispatcher_rejects_chunk_over512",
+    "test_dispatcher_rejects_overlapping_chunk_keys",
+    "test_dispatcher_returns_paused_without_next_claim",
+    "test_duplicate_former_worker_ids_rejected",
+    "test_extra_slot_requires_12gib",
+    "test_keys_outside_remaining_rejected",
+    "test_known_cost_failed_attempt_does_not_retry",
+    "test_known_pids_and_sufficient_memory_pass",
+    "test_live_former_worker_rejected",
+    "test_original_fast_worker_bytes_unchanged",
+    "test_original_fast_worker_prefix_reused_with_same_native_identity",
+    "test_other_profile_rejected",
+    "test_own_pid_is_implicitly_allowed",
+    "test_policy_cannot_allow_three_slots",
+    "test_policy_cannot_lower_memory_minimum",
+    "test_production_disallows_injected_telemetry",
+    "test_production_injected_backend_rejected",
+    "test_second_live_former_worker_rejected",
+    "test_signal_stops_after_current_result",
+    "test_slot0_keeps_legacy_memory_admission",
+    "test_slot0_uses_legacy_lock",
+    "test_slot1_is_exclusive",
+    "test_success_cache_adds_no_generation",
+    "test_third_slot_rejected",
+    "test_two_existing_processes_rejected",
+    "test_two_shards_load_once",
+    "test_two_slots_have_distinct_locks",
+    "test_unknown_cost_failure_does_not_retry",
+    "test_unknown_pid_rejected",
+    "test_wrong_gpu_uuid_rejected"
+  ],
+  "historical_record": false,
+  "privacy_transform": "Keep status, counts, scientific source bindings and synthetic scope. Remove raw logs, temporary paths, actual scope/approval/former-metadata/plan identities and authorization contents.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "qualification_scope": "CURRENT_FINAL_MEMBER2_WORKER",
+  "real_llm_failure_record": false,
+  "recorded_assertion_failures": 0,
+  "recorded_software_errors": 0,
+  "recorded_tests": 32,
+  "schema": "e18_deidentified_member2_software_qualification_v1",
+  "source_bindings": [
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/e18_member2_worker_v1.py",
+      "record_field": "worker_source_sha256",
+      "sha256": "2f2f6424e65e39f6a42dc0ba8e2268fd0b63b6b1b20d5fab501c1da53e9cdb40",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/e18_member2_dispatcher_v1.py",
+      "record_field": "dispatcher_source_sha256",
+      "sha256": "db2cb4b4905e536bbab15e57a6e455d37795d86c0a1aac34dcc38e51718fcfff",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/qualify_member2_worker_v1.py",
+      "record_field": "test_source_sha256",
+      "sha256": "11a9ae32194b136616b0437868b292b361f6d8ac044c92bcca2e09f14008b10e",
+      "source_in_base_or_extension": true
+    }
+  ],
+  "source_record_name": "MEMBER2_WORKER_QUALIFICATION_v1.json",
+  "source_record_sha256": "4be020df76b879da7ffdb6c00badc26ff771904b1fcc510c161fa147a5d3ca5d",
+  "status": "PASS",
+  "zero_real_activity_declarations": {
+    "actual_gpu_queries": 0,
+    "actual_jobs_submitted": 0,
+    "actual_model_calls": 0,
+    "actual_os_signals_sent": 0,
+    "real_gold_reads": 0
+  }
+}

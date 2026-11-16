@@ -1,0 +1,69 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 15,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/e18_aggregation_queue_daemon.py"
+      ],
+      "record_field": "daemon_source_sha256",
+      "sha256": "4820354dc08fd5d9f83e114f469f1b9c9be5129a64fc10bb95c9b422b45c3f2f"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_aggregation_queue_daemon.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "60e1afc11f89f89c96906a0bd17ca872eb6520f9b67bbe894e66186fdc11c71f"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/e18_aggregation_worker_v3.py"
+      ],
+      "record_field": "worker_source_sha256",
+      "sha256": "de5c3cc8a509be10e66b3290899862bab73a2784a62aa743e7c48d41a7842495"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/e18_aggregation_dispatcher_v3.py"
+      ],
+      "record_field": "dispatcher_source_sha256",
+      "sha256": "715fb1515968717941695224cf5f9a7e60e4fdaa174e18330bf12a9b72911ec6"
+    }
+  ],
+  "source_record_name": "AGGREGATION_QUEUE_QUALIFICATION_v1.json",
+  "source_record_sha256": "2afc23e3bb8f9f80ca5a3f0d32befd70ca07ba835b759991b33baa42a4af3b48",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_changed_approval_path_rejected",
+    "test_changed_physical_loading_path_rejected",
+    "test_changed_scope_path_rejected",
+    "test_completed_entry_resume_adds_no_calls",
+    "test_duplicate_key_in_independent_batch_rejected",
+    "test_max_one_batch_leaves_second_pending",
+    "test_metadata_only_writes_no_execution_done",
+    "test_no_ready_waits_without_model_construction",
+    "test_production_rejects_injected_runner_or_factory",
+    "test_publish_once_rejects_existing_target",
+    "test_published_ready_entry_cannot_be_overwritten",
+    "test_root_all_done_exits_after_all_published_plans",
+    "test_two_plans_reuse_one_actual_fake_backend_construction",
+    "test_unknown_entry_schema_rejected",
+    "test_wrong_worker_source_rejected"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_gpu_queries": 0,
+    "actual_jobs_submitted": 0,
+    "actual_model_calls": 0,
+    "real_gold_reads": 0
+  }
+}

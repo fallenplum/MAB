@@ -1,0 +1,61 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 23,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/incremental_aggregation_planner.py"
+      ],
+      "record_field": "planner_source_sha256",
+      "sha256": "56c8956326427185dd5132b368fb787dba67e6ad4ef0cfb3d602943df0b187e6"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_incremental_aggregation_planner.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "db77c55e2a83bcaf1c57ca0109661d261289b6725ed13808fb325570f983c876"
+    }
+  ],
+  "source_record_name": "INCREMENTAL_AGGREGATION_PLANNER_QUALIFICATION_v3.json",
+  "source_record_sha256": "2e1fda46f43fb6fc02ada2385c638385208030338a79f9860749b6f1b25cc6ab",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_all_done_requires_startup_done_and_every_frozen_success",
+    "test_broker_control_journal_is_metadata_only_and_ignored",
+    "test_commit_before_publish_recovers_without_duplicate_reservation",
+    "test_failed_event_never_gets_skipped",
+    "test_follow_fake_clock_exits_after_all_done",
+    "test_follow_idle_exception_keeps_stop_without_retry",
+    "test_follow_propagates_failure_without_retry",
+    "test_ingested_journal_rewrite_rejected",
+    "test_new_member_events_unlock_only_legally_ready_combinations",
+    "test_out_of_scope_manifest_key_rejected",
+    "test_partial_journal_tail_is_deferred_until_newline",
+    "test_partial_member_dependencies_do_not_publish",
+    "test_queue_artifact_tampering_fails_closed",
+    "test_ready_keys_partition_three_queues_without_overlap",
+    "test_ready_schema_exact_and_queue_lock_paths_independent",
+    "test_repeated_once_is_idempotent",
+    "test_source_manifest_wrong_scope_rejected",
+    "test_startup_reserved_keys_never_enter_queue",
+    "test_success_requires_committed_fence_metadata",
+    "test_unknown_configuration_schema_rejected",
+    "test_unknown_ready_entry_without_reservation_fails",
+    "test_unknown_source_plan_schema_rejected",
+    "test_unknown_worker_journal_rejected"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_model_calls": 0,
+    "production_queue_entries_published": 0,
+    "real_gold_reads": 0,
+    "real_native_answer_payloads_read": 0
+  }
+}

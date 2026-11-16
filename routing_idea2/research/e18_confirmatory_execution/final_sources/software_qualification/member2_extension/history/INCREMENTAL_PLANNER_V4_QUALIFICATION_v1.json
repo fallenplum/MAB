@@ -1,0 +1,64 @@
+{
+  "covers_current_final_planner": false,
+  "current_packaging_reran_tests": false,
+  "defined_test_methods": [
+    "test_changed_original_backend_rejected",
+    "test_corrupt_bound_checkpoint_partition_rejected",
+    "test_duplicate_child_key_rejected",
+    "test_extra_native_failure_requires_reconciliation",
+    "test_incomplete_remaining_union_rejected",
+    "test_native_answer_sentinels_are_never_decoded_and_repeat_does_not_duplicate",
+    "test_reopen_original_ledger_preserves_config_ready_and_all_done_identity",
+    "test_source_sha_change_rejected",
+    "test_unsettled_lease_rejected",
+    "test_without_extra_refs_reuses_original_planner",
+    "test_wrong_parent_claim_rejected"
+  ],
+  "failure_class": "SOFTWARE_ENVIRONMENT_PERMISSION_DENIED_OS_LINK",
+  "failure_summary": "11项合成检查记录0个断言失败、4个软件错误。错误源于os.link权限限制，未执行模型或生产队列。失败记录保留，不能计作LLM失败。",
+  "historical_planner_source_sha256": "0dd8cbdf3815fd0def9004b823fa179d11b4c41ff87f4a2a81e850d8f5fdc8d2",
+  "historical_record": true,
+  "privacy_transform": "Keep status, counts, scientific source bindings and synthetic scope. Remove raw logs, temporary paths, actual scope/approval/former-metadata/plan identities and authorization contents.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "qualification_scope": "HISTORICAL_SOFTWARE_ENVIRONMENT_FAILURE",
+  "real_llm_failure_record": false,
+  "recorded_assertion_failures": 0,
+  "recorded_software_errors": 4,
+  "recorded_tests": 11,
+  "schema": "e18_deidentified_member2_software_qualification_v1",
+  "source_bindings": [
+    {
+      "historical_unbundled_source": true,
+      "publication_relative_path": null,
+      "record_field": "planner_source_sha256",
+      "sha256": "0dd8cbdf3815fd0def9004b823fa179d11b4c41ff87f4a2a81e850d8f5fdc8d2",
+      "source_in_base_or_extension": false
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/qualify_incremental_aggregation_planner_v4.py",
+      "record_field": "qualification_source_sha256",
+      "sha256": "d1a92a5a957a0181cabc74959e437fe2b54cc209feaf8d51e7a7cc004e87d620",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/incremental_aggregation_planner.py",
+      "record_field": "inherited_planner_source_sha256",
+      "sha256": "56c8956326427185dd5132b368fb787dba67e6ad4ef0cfb3d602943df0b187e6",
+      "source_in_base_or_extension": true
+    }
+  ],
+  "source_record_name": "INCREMENTAL_PLANNER_V4_QUALIFICATION_v1.json",
+  "source_record_sha256": "070dc6e353f4c54efdec897b13cc89cc75157413d02edc2e0cfd9422c712f068",
+  "status": "FAIL",
+  "zero_real_activity_declarations": {
+    "actual_gpu_queries": 0,
+    "actual_model_calls": 0,
+    "original_config_or_source_files_modified": false,
+    "production_queue_entries_published": 0,
+    "real_gold_reads": 0,
+    "real_native_answer_payloads_read": 0,
+    "server_logins": 0
+  }
+}

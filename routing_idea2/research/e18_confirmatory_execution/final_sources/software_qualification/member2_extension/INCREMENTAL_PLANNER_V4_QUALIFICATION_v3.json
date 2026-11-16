@@ -1,0 +1,60 @@
+{
+  "current_packaging_reran_tests": false,
+  "defined_test_methods": [
+    "test_changed_original_backend_rejected",
+    "test_corrupt_bound_checkpoint_partition_rejected",
+    "test_duplicate_child_key_rejected",
+    "test_extra_native_failure_requires_reconciliation",
+    "test_incomplete_remaining_union_rejected",
+    "test_native_answer_sentinels_are_never_decoded_and_repeat_does_not_duplicate",
+    "test_reopen_original_ledger_preserves_config_ready_and_all_done_identity",
+    "test_source_sha_change_rejected",
+    "test_unsettled_lease_rejected",
+    "test_without_extra_refs_reuses_original_planner",
+    "test_wrong_parent_claim_rejected"
+  ],
+  "historical_record": false,
+  "privacy_transform": "Keep status, counts, scientific source bindings and synthetic scope. Remove raw logs, temporary paths, actual scope/approval/former-metadata/plan identities and authorization contents.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "qualification_scope": "CURRENT_FINAL_PLANNER_V4",
+  "real_llm_failure_record": false,
+  "recorded_assertion_failures": 0,
+  "recorded_software_errors": 0,
+  "recorded_tests": 11,
+  "schema": "e18_deidentified_member2_software_qualification_v1",
+  "source_bindings": [
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/incremental_aggregation_planner_v4.py",
+      "record_field": "planner_source_sha256",
+      "sha256": "1d7679b6ca56d29ac2004d208eb148ca977ee809063ffea2e3ae7c58872b1023",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/qualify_incremental_aggregation_planner_v4.py",
+      "record_field": "qualification_source_sha256",
+      "sha256": "d1a92a5a957a0181cabc74959e437fe2b54cc209feaf8d51e7a7cc004e87d620",
+      "source_in_base_or_extension": true
+    },
+    {
+      "historical_unbundled_source": false,
+      "publication_relative_path": "code/e18_confirmatory_execution/incremental_aggregation_planner.py",
+      "record_field": "inherited_planner_source_sha256",
+      "sha256": "56c8956326427185dd5132b368fb787dba67e6ad4ef0cfb3d602943df0b187e6",
+      "source_in_base_or_extension": true
+    }
+  ],
+  "source_record_name": "INCREMENTAL_PLANNER_V4_QUALIFICATION_v3.json",
+  "source_record_sha256": "35cbe740dc5d66ddd150a10cf37ea7eba8261cc914d61d58a8d3d3e0907e7d80",
+  "status": "PASS",
+  "zero_real_activity_declarations": {
+    "actual_gpu_queries": 0,
+    "actual_model_calls": 0,
+    "original_config_or_source_files_modified": false,
+    "production_queue_entries_published": 0,
+    "real_gold_reads": 0,
+    "real_native_answer_payloads_read": 0,
+    "server_logins": 0
+  }
+}

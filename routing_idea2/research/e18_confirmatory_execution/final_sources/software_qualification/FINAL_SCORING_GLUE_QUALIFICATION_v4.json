@@ -1,0 +1,53 @@
+{
+  "check_count_scope": "Recorded by this specific qualification; inherited and repeated cases are not independent experiment samples",
+  "current_packaging_step_reran_tests": false,
+  "privacy_transform": "Whitelisted source identity, counts and synthetic scope only. Raw logs, temporary paths, real scope/approval/plan identities, host resources and user authorization text excluded.",
+  "qualification_mode": "SYNTHETIC_SOFTWARE_ONLY",
+  "recorded_check_count": 15,
+  "schema": "e18_deidentified_software_qualification_summary_v1",
+  "source_bindings": [
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/e18_final_scoring.py"
+      ],
+      "record_field": "finalizer_source_sha256",
+      "sha256": "9b164c40ad6b3a1b21f84c7dc446438a11ce6421d56991d82d224ae2c4b0daa8"
+    },
+    {
+      "external_frozen_source_dependency": false,
+      "packaged_source_paths": [
+        "code/e18_confirmatory_execution/qualify_final_scoring.py"
+      ],
+      "record_field": "test_source_sha256",
+      "sha256": "547adfc01e3c2e3ea4997dcde38663ad4e9292914ed25eb183ecb39ce8449299"
+    }
+  ],
+  "source_record_name": "FINAL_SCORING_GLUE_QUALIFICATION_v4.json",
+  "source_record_sha256": "da0a6db2ac426b3167e1cb25072012fc7950ac0c15bd2102090b91268b0a8181",
+  "status": "PASS",
+  "test_method_scope": "Names extracted from bound source. Inherited suite cases remain described by the recorded check count.",
+  "test_methods_defined_in_bound_qualification_sources": [
+    "test_complete_gate_is_reference_and_scorer_free",
+    "test_declared_full_member_gate_with_short_container_stops_before_provider",
+    "test_explicit_native_and_cpu_roots_preserve_logical_scope",
+    "test_holm_preserves_five_comparison_family",
+    "test_incomplete_gate_cannot_open_reference",
+    "test_input_jsonl_keeps_legal_unicode_separator_inside_one_record",
+    "test_missing_aggregate_blocks_reference_phase",
+    "test_primary_statistics_is_original_frozen_function",
+    "test_production_member_gate47285_stops_before_provider",
+    "test_production_rejects_fixture_factory",
+    "test_requiring_full20_scores_is_rejected",
+    "test_runtime_reference_mapping_keeps_exact_original_sha",
+    "test_scoring_resume_preserves_immutable_publication",
+    "test_toy_end_to_end_uses_frozen_scorer_and_sparse_projection",
+    "test_unknown_physical_usage_blocks_gold"
+  ],
+  "zero_call_and_access_declarations": {
+    "actual_jobs_submitted": 0,
+    "actual_model_calls": 0,
+    "formal_gold_reads": 0,
+    "formal_scorer_calls": 0
+  }
+}
