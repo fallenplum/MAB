@@ -1,0 +1,8 @@
+{
+  "status": "PASS_METADATA_ONLY",
+  "records": 2400,
+  "sources": 28,
+  "sealed_exclusions": 200,
+  "reference_values_decoded": 0,
+  "reference_plan_sha256": "b24b870647fcd70c0b9479375e2eed2317e76f3dc963a21c830f231e9ae18060"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_INPUT_ONLY",
+  "independent_questions": 2400,
+  "task_counts": {
+    "gsm8k": 1200,
+    "bbh": 1200
+  },
+  "support_union_teams": 35512,
+  "required_aggregate_calls": 106536,
+  "required_member_calls": 41289,
+  "new_reference_values_decoded": 0,
+  "new_llm_calls": 0,
+  "primary_tau": 1e-08,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "scope_sha256": "6dce6da5f78604b8bcddde969598e1e923ff9dd75383b57d49f69d80a0fbf2db",
+  "prediction_sha256": "b790643119b6d85b370d34b6547e89e1316c26b26ad0d4a005e047babc521c75",
+  "model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "source_sha256": "da57af76ba35bffef4134c15daecadcc6772fa149c2cfedee9f4e4c7a8fdd4ca"
+}

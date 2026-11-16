@@ -1,0 +1,26 @@
+{
+  "schema": "p2_paid_scorer_synthetic_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "incomplete_outputs_rejected_before_reference_loader": true,
+    "provider_construction_decodes_zero_reference_values": true,
+    "unapproved_question_rejected_before_source_access": true,
+    "official_gsm_terminal_reference_projection": true,
+    "canonical_and_reference_version_deduplicates_gold": true,
+    "frozen_scorer_correct_synthetic_answer": true,
+    "frozen_scorer_incorrect_synthetic_answer": true,
+    "sealed_identity_cannot_be_a_reference": true,
+    "source_change_aborts_before_reference_decode": true,
+    "integrity_errors_are_not_unscorable_exclusions": true,
+    "official_bbh_string_example_converted_to_frozen_byte_projection": true
+  },
+  "synthetic_reference_values_decoded": 2,
+  "real_reference_values_decoded": 0,
+  "new_llm_calls": 0,
+  "frozen_scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+  "score_paid_outputs_sha256": "82e79c7a2becdb8b7f071e85a315ade65031fa365bf81f2fbf35c3814b4879fa",
+  "blind_evaluation_sha256": "da57af76ba35bffef4134c15daecadcc6772fa149c2cfedee9f4e4c7a8fdd4ca",
+  "confidence_intervals_computed": false,
+  "bootstrap_repetitions": 0,
+  "fixture_correction": "The first toy used unsupported FINAL: syntax; corrected to the existing parser's Final answer: format. Frozen scorer unchanged."
+}
