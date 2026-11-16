@@ -1,0 +1,30 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "MEMBER4_TAIL_PARTITION_QUALIFICATION_v4.json",
+  "source_record_sha256": "66cf941a089cfecc867a683d82a1669d281f01b244b945cf6669d561f5c9f5eb",
+  "source_record_schema": "e18_member4_tail_partition_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests_run": 23,
+    "failures": 0,
+    "errors": 0
+  },
+  "synthetic_case_counts": {},
+  "source_sha256_bindings": {
+    "original_worker_source_sha256": "5ac9a17dd07d282bfa2cceaff3dd062ce837e68885b4086816ef509974af5786",
+    "controller_source_sha256": "b921f4da74992951e71247a864aafbfddb3369eb8efaed9dcce9ce782c87b3da",
+    "qualification_source_sha256": "ad353b1ab441563598d1b9048a9a1653a60bf3589c68523534041edafc531bfe"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {
+      "software_test_only": true
+    },
+    "recorded_zero_real_operation_counts": {
+      "gold_reads": 0,
+      "physical_llm_calls": 0,
+      "process_signals_sent": 0
+    }
+  }
+}

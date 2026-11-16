@@ -1,0 +1,56 @@
+{
+  "schema": "e18_lineage_source_overlay_index_v1",
+  "status": "STAGED_NOT_PUBLISHED",
+  "base_commit_sha": "d819d6bde0e60db9d94ff83d1820eb0729cf7cac",
+  "operational_stage_index_sha256": "e492b0e3b674fadce136ad00a55c38db79b9e159d012b1c13ba6f3408aae6551",
+  "files_excluding_index": 4,
+  "files_including_index": 5,
+  "files": [
+    {
+      "package_path": "code/e18_confirmatory_execution/audit_tail_export_lineage.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/audit_tail_export_lineage.py",
+      "role": "byte_identical_lineage_source",
+      "sha256": "98b3e24d9a46095b519629db2562a1d9861f9f2d7aef639d43bbf2662171dd4c",
+      "bytes": 30906,
+      "origin_relative_path": "experiments/e18_confirmatory_execution/audit_tail_export_lineage.py",
+      "origin_sha256": "98b3e24d9a46095b519629db2562a1d9861f9f2d7aef639d43bbf2662171dd4c",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/qualify_tail_export_lineage.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/qualify_tail_export_lineage.py",
+      "role": "byte_identical_lineage_source",
+      "sha256": "5d47f0c114d6642074b544f5c8d1eba0440bb65fb4be86d24d0a32cf753ea94f",
+      "bytes": 17416,
+      "origin_relative_path": "experiments/e18_confirmatory_execution/qualify_tail_export_lineage.py",
+      "origin_sha256": "5d47f0c114d6642074b544f5c8d1eba0440bb65fb4be86d24d0a32cf753ea94f",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "README_TAIL_LINEAGE_EXTENSION.md",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/README_TAIL_LINEAGE_EXTENSION.md",
+      "role": "byte_identical_lineage_explanation",
+      "sha256": "cecd5b3ef27120c5ab2f4aa70033b48d010f1c10f074d8d452bf74697159af8d",
+      "bytes": 4142,
+      "origin_relative_path": "experiments/e18_confirmatory_execution/TAIL_EXPORT_LINEAGE_README.md",
+      "origin_sha256": "cecd5b3ef27120c5ab2f4aa70033b48d010f1c10f074d8d452bf74697159af8d",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "software_qualification/TAIL_EXPORT_LINEAGE_QUALIFICATION_v2.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/TAIL_EXPORT_LINEAGE_QUALIFICATION_v2.json",
+      "role": "allowlisted_software_qualification_summary",
+      "sha256": "284b36418ac66744e15b1a619c0dd4d865f7086b240ba56d446e9332367f875d",
+      "bytes": 1007,
+      "origin_relative_path": "experiments/e18_confirmatory_execution/TAIL_EXPORT_LINEAGE_QUALIFICATION_v2.json",
+      "origin_sha256": "d4c4a7f6cc19da6b4d74a31e22f6219b77f4f2250bdc7f817530d4049149aeea",
+      "byte_identical_to_origin": false
+    }
+  ],
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/INDEX_TAIL_LINEAGE_EXTENSION.json",
+  "formal_source_receipts_included": 0,
+  "per_task_or_physical_attempt_ledgers_included": 0,
+  "tests_rerun": 0,
+  "production_and_scientific_reproduction_claimed": false,
+  "self_hash_policy": "INDEX.json is excluded from its own rows; private verification records its SHA."
+}

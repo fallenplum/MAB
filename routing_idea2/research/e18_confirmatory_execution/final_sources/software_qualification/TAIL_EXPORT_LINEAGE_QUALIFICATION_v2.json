@@ -1,0 +1,28 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "TAIL_EXPORT_LINEAGE_QUALIFICATION_v2.json",
+  "source_record_sha256": "d4c4a7f6cc19da6b4d74a31e22f6219b77f4f2250bdc7f817530d4049149aeea",
+  "source_record_schema": "e18_tail_export_lineage_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests_run": 19,
+    "failures": 0,
+    "errors": 0
+  },
+  "source_sha256_bindings": {
+    "source_sha256": "98b3e24d9a46095b519629db2562a1d9861f9f2d7aef639d43bbf2662171dd4c",
+    "qualification_sha256": "5d47f0c114d6642074b544f5c8d1eba0440bb65fb4be86d24d0a32cf753ea94f"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {
+      "software_test_only": true
+    },
+    "recorded_zero_real_operation_counts": {
+      "model_or_scoring_calls": 0,
+      "gold_reads": 0,
+      "native_answer_values_decoded": 0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "NATIVE_WALLTIME_METADATA_QUALIFICATION_v1.json",
+  "source_record_sha256": "33eeeb297c6e5ef024f83879f675819b12342a19a0f25642b118c386e2896b72",
+  "source_record_schema": "e18_native_walltime_metadata_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "synthetic_case_counts": {},
+  "source_sha256_bindings": {
+    "tool_source_sha256": "b585b0b49769c5d46fb74fbdf222700d9fbc4df7bef5cd5dce3d9e85eabee368",
+    "qualification_source_sha256": "6a63758f5de81d4ec483ac5cad68f2faf87327173fe18f2b8ee949ab71c68a8a",
+    "frozen_report_source_sha256": "fa5a93ad7cad1820a3836a30aa643a773c24569d13be7c7080d2172bf1cbbfbe"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {
+      "software_fixtures_only": true
+    },
+    "recorded_zero_real_operation_counts": {
+      "files_extracted": 0,
+      "generated_answer_values_json_decoded": 0,
+      "gold_reads": 0,
+      "model_or_scoring_calls": 0,
+      "production_archives_scanned": 0,
+      "ssh_logins": 0
+    }
+  }
+}

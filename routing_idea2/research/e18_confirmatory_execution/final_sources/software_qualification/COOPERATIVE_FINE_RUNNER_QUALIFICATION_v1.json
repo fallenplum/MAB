@@ -1,0 +1,31 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "COOPERATIVE_FINE_RUNNER_QUALIFICATION_v1.json",
+  "source_record_sha256": "b0afc3e1daffa7229df3086aee92c6e156e8508d3d028493c36db45b55db8d2d",
+  "source_record_schema": "e18_cooperative_fine_runner_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0
+  },
+  "synthetic_case_counts": {},
+  "source_sha256_bindings": {
+    "runner_source_sha256": "81da354bbbd3f1dafa935926653fd3f9b125d214ca85d7837e6a541473547c75",
+    "qualification_source_sha256": "e441da98c0d3f40227d34525f23b981e0667e1c729c6cab7f3fa760d469a9d5b",
+    "frozen_control_source_sha256": "45c88b376059a4b390d065ef61e38db24fa1862cf8b98f7658c110d89c423f9f",
+    "cooperative_source_sha256": "3d20b299e26c03bafb189be795a21b54156b4bc0bf62001da178f13b16d25d10"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {},
+    "recorded_zero_real_operation_counts": {
+      "actual_gpu_queries": 0,
+      "actual_model_calls": 0,
+      "actual_process_signals": 0,
+      "production_admissions": 0,
+      "real_gold_reads": 0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "COOPERATIVE_SLOT_ADMISSION_QUALIFICATION_v1.json",
+  "source_record_sha256": "b6f13d866ea56a2ed26df4fba44f5432c603b8a565e7ca778cb835e214f3caa0",
+  "source_record_schema": "e18_cooperative_slot_admission_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0
+  },
+  "synthetic_case_counts": {},
+  "source_sha256_bindings": {
+    "admission_source_sha256": "419133e2f8c510940e58f4c9b64c120ae8a23473eb9afc128b6bb97e890c31a4",
+    "qualification_source_sha256": "99f68508490d72fb6d1dd472d65fd211f3533a90cf1724bf294d28789c200955",
+    "original_worker_sha256": "5ac9a17dd07d282bfa2cceaff3dd062ce837e68885b4086816ef509974af5786"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {},
+    "recorded_zero_real_operation_counts": {
+      "actual_gpu_queries": 0,
+      "actual_model_calls": 0,
+      "actual_process_signals": 0,
+      "production_admissions": 0,
+      "real_gold_reads": 0
+    }
+  }
+}

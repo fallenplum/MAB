@@ -1,0 +1,29 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "INCREMENTAL_PLANNER_V5_QUALIFICATION_v3.json",
+  "source_record_sha256": "329368602b0650f0a33b2beb63f26ea9697a9bde1099782f02b446996bb03cc0",
+  "source_record_schema": "e18_r1_tail_registry_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "synthetic_case_counts": {},
+  "source_sha256_bindings": {
+    "source_sha256": "b62f7c152b6859f7e3abcdf637913fa964c0830ebb1f3a5046df6fe88b12cb3a",
+    "qualification_source_sha256": "65920b84746227c57fa7595f2e4d858c928269fe1b8d878698256436dfa2103c"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "synthetic_software_qualification",
+    "recorded_flags": {
+      "software_test_only": true
+    },
+    "recorded_zero_real_operation_counts": {
+      "gold_values_read": 0,
+      "native_answer_payloads_read": 0,
+      "physical_model_calls": 0
+    }
+  }
+}
