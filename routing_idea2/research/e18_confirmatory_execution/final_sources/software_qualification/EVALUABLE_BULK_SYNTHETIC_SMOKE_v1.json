@@ -1,0 +1,19 @@
+{
+  "schema": "e18_allowlisted_software_qualification_summary_v1",
+  "source_record_sha256": "fe6225f23f08c248d3980cee9f2307acde5107a0f40899bfb5ac6ee8d384406b",
+  "source_record_name": "EVALUABLE_BULK_SYNTHETIC_SMOKE_v1.json",
+  "status": "PASS",
+  "software_test_only": true,
+  "counts": {
+    "checks": 4,
+    "synthetic_question_count": 6,
+    "synthetic_valid_questions": 5,
+    "real_question_or_gold_reads": 0,
+    "actual_model_calls": 0,
+    "execution_gate_reruns": 0
+  },
+  "source_sha256_bindings": {
+    "source_sha256": "12d73edda4bfee0c184eb595bf4e714b32b023e5497c07462f011503db13b2a1"
+  },
+  "real_case_boundary": "Synthetic controls do not establish that an actual malformed official input can be mapped. The real strict-resume attempt rejected the malformed case."
+}

@@ -1,0 +1,97 @@
+{
+  "archived_unused_report_source": "v2 remains a local historical schema-failure source; no extra public copy",
+  "excluded_questions": 2,
+  "files": [
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 9555,
+      "package_path": "final_results/E18_CONFIRMATION_REPORT.md",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_CONFIRMATION_REPORT.md",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "011710d14156f6a5899e56c5b0c5b66377c10099d5ad79fde2975b73c1a255fc"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 28264,
+      "package_path": "final_results/E18_POINT_RESULTS.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_POINT_RESULTS.json",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "91c3070b4a1fde80e3f72a6220e74eacfa25eb2bdf170c7351c79cf874d625a1"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 717,
+      "package_path": "final_results/MAIN_TABLE.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/MAIN_TABLE.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "30e513a616b270ca7a5288cd43465117626ce9e825a3333e6a289b1d722cd493"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 745,
+      "package_path": "final_results/PAIRED_TABLE.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/PAIRED_TABLE.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "2ac3cbc0b6c12d94d86bda419a62a917a43f64074223976f01f397d94d359dc3"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 4876,
+      "package_path": "final_results/GROUP_TABLE.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/GROUP_TABLE.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "03627f2dc7514a668cebaca9667d64e509ea81fd41d475cbd9c933cb676f7172"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 460,
+      "package_path": "final_results/SEED_TABLE.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/SEED_TABLE.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "4d16e776dad6453012a6b7c8dd8ed7abba368eb2710c47b55d3288fc580b4baf"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 737,
+      "package_path": "final_results/COST_TABLE.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/COST_TABLE.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "7dee5ebc3f1bf2ba2987ed62e2e6fd726089d26a8e6e1b876d0fcffd4b600c70"
+    },
+    {
+      "byte_identical_to_generated_report": true,
+      "bytes": 519,
+      "package_path": "final_results/REQUESTED_DETERMINISTIC_RANGES.csv",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/REQUESTED_DETERMINISTIC_RANGES.csv",
+      "role": "deidentified_actual_point_summary",
+      "sha256": "3a7907a5d22ef8dd298ac00517fc212a5a4940346638b713790cfbcadd47d644"
+    },
+    {
+      "byte_identical_to_origin": true,
+      "bytes": 24543,
+      "package_path": "code/e18_confirmatory_execution/generate_point_only_report_v3.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/generate_point_only_report_v3.py",
+      "role": "byte_identical_final_report_source",
+      "sha256": "22f6f9491d140724752ed0618afe7de7e290e516949e7b99b19f105240cbc461"
+    }
+  ],
+  "files_excluding_this_index_and_reproduce": 9,
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/INDEX_FINAL_REPORT.json",
+  "input_result_sha256": "86a91632c460085db016bf7718b56cd58fc40808f39a487d898c0dce080db41f",
+  "invalid_rewards_filled_with_zero": false,
+  "new_large_archive_audits": 0,
+  "new_model_or_scoring_calls_by_reporting": 0,
+  "new_sealed_or_gold_reads": 0,
+  "private_arrays_or_weights_included": 0,
+  "private_numeric_arrays_sha256": "5c8c8702ba1dd5b74474ec69475806a7325213e6b3ac7664e16f7a9de397e70a",
+  "public_question_identifiers_included": 0,
+  "raw_answers_or_references_included": 0,
+  "reproduce_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_results/REPRODUCE.md",
+  "requested_questions": 3000,
+  "requested_scope_actual_call_costs_preserved": true,
+  "schema": "e18_partial_final_report_publication_index_v1",
+  "scientific_result_status": "COMPLETE_WITH_UNSCORABLE_INPUTS",
+  "self_hash_policy": "Index and accompanying reproduce file are excluded from their own rows.",
+  "status": "READY_FOR_ROOT_PRIVACY_SCAN_AND_PUBLICATION",
+  "valid_questions": 2998
+}

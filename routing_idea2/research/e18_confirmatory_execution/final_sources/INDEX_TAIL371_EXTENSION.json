@@ -1,0 +1,67 @@
+{
+  "schema": "e18_tail371_source_overlay_index_v1",
+  "status": "STAGED_NOT_PUBLISHED",
+  "previous_release_commit_sha": "f5e7ac42f297e7957c52f11f3bc659842d8b76bc",
+  "previous_release_evidence": "parent agent reports remote readback; this staging performs local byte checks only",
+  "preceding_overlay_index_sha256": {
+    ".safe_e18_operational_sources": "e492b0e3b674fadce136ad00a55c38db79b9e159d012b1c13ba6f3408aae6551",
+    ".safe_e18_tail_lineage_sources": "ac1e57134e8289ff96455af44fc86f5a999e0fffd470f60d38e571965731dd59"
+  },
+  "files_excluding_index": 4,
+  "files_including_index": 5,
+  "files": [
+    {
+      "package_path": "code/e18_confirmatory_execution/member4_tail371_broker.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/member4_tail371_broker.py",
+      "sha256": "0da57c5f6c3c0eabdf50671a037b422956eb2cea59c7fd84b786223796708de0",
+      "bytes": 3730,
+      "role": "byte_identical_tail371_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/member4_tail371_broker.py",
+      "origin_sha256": "0da57c5f6c3c0eabdf50671a037b422956eb2cea59c7fd84b786223796708de0",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/incremental_aggregation_planner_v6.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/incremental_aggregation_planner_v6.py",
+      "sha256": "3a9d8ac2a3fb398f395b9de32f083d4bfb9e2c5734b089421db6c1ee1dba7aae",
+      "bytes": 5680,
+      "role": "byte_identical_tail371_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/incremental_aggregation_planner_v6.py",
+      "origin_sha256": "3a9d8ac2a3fb398f395b9de32f083d4bfb9e2c5734b089421db6c1ee1dba7aae",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/qualify_tail371_extension.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/qualify_tail371_extension.py",
+      "sha256": "8d53744e1fe67e6c2605df2a98877af3af469d03c452d05b48cd601b21bdad8b",
+      "bytes": 7541,
+      "role": "byte_identical_tail371_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/qualify_tail371_extension.py",
+      "origin_sha256": "8d53744e1fe67e6c2605df2a98877af3af469d03c452d05b48cd601b21bdad8b",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "software_qualification/TAIL371_OPTIONAL_EXTENSION_QUALIFICATION_v1.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/TAIL371_OPTIONAL_EXTENSION_QUALIFICATION_v1.json",
+      "sha256": "ee609187cc6f7f64130d0b5eb60ed9a6341c482e4f7621a4c7fd8c19d07de282",
+      "bytes": 1310,
+      "role": "allowlisted_software_qualification_summary",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/TAIL371_OPTIONAL_EXTENSION_QUALIFICATION_v1.json",
+      "origin_sha256": "816efae737ed9cb4fbfd634f78faee65db6e5cf25a00798d32b3de87e8518d60",
+      "byte_identical_to_origin": false
+    }
+  ],
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/INDEX_TAIL371_EXTENSION.json",
+  "qualification_scope": "19 metadata/control checks. Complete native scope and ledger behavior remain inherited frozen v5 logic.",
+  "runtime_literal_disclosure": {
+    "source": "qualify_tail371_extension.py",
+    "kind": "historical_deployment_pid_used_only_as_mock_argument",
+    "publication_decision": "preserve test source bytes under the parent-approved scope",
+    "literal_repeated_in_qualification_summary": false
+  },
+  "reproducibility_boundary": "This overlay provides source integrity and recorded software checks; complete production and scientific reproduction also requires original frozen code, environment and private artifacts.",
+  "real_source_or_checkpoint_receipts_included": 0,
+  "protected_payloads_included": 0,
+  "tests_rerun": 0,
+  "self_hash_policy": "INDEX.json is excluded from its own rows; private verification records its SHA."
+}

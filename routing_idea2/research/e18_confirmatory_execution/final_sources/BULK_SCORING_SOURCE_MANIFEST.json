@@ -1,0 +1,51 @@
+{
+  "dependencies": {
+    "fast_entry": "75bbc675947696d1420c20a1aab8e1a38d9110de9a97fb35b612cd1b999f9c7e",
+    "finalizer": "9b164c40ad6b3a1b21f84c7dc446438a11ce6421d56991d82d224ae2c4b0daa8",
+    "scope_memo": "7fd45e003f09c8fc342e5b90f72b0e96f18e08bca63045c90fe13a424d15ed75"
+  },
+  "files": [
+    {
+      "byte_identical_to_origin": true,
+      "bytes": 18710,
+      "origin_sha256": "812e72bed58ae6ef2aa50fd4464318965d3a6223f67da46afb45b75d89e3afd0",
+      "package_path": "code/e18_confirmatory_execution/bulk_scoring_from_audit.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/bulk_scoring_from_audit.py",
+      "role": "byte_identical_source",
+      "sha256": "812e72bed58ae6ef2aa50fd4464318965d3a6223f67da46afb45b75d89e3afd0"
+    },
+    {
+      "byte_identical_to_origin": true,
+      "bytes": 12148,
+      "origin_sha256": "3ff1b849a8804374847d44a560544dfa2318aca3c7a77238c9e11b49ad78c74f",
+      "package_path": "code/e18_confirmatory_execution/qualify_bulk_scoring.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/qualify_bulk_scoring.py",
+      "role": "byte_identical_source",
+      "sha256": "3ff1b849a8804374847d44a560544dfa2318aca3c7a77238c9e11b49ad78c74f"
+    },
+    {
+      "byte_identical_to_origin": false,
+      "bytes": 731,
+      "origin_sha256": "5b524f36d3ebe8f327c9a2b40176d14eaa21d97e1aff8430e6232fe519335d6f",
+      "package_path": "software_qualification/BULK_SCORING_QUALIFICATION_v2.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/BULK_SCORING_QUALIFICATION_v2.json",
+      "role": "allowlisted_pure_software_counts_and_source_sha",
+      "sha256": "652c81ea919c277f406207892c0278164d139af2b35b501435e870112b226404"
+    }
+  ],
+  "files_excluding_index_and_readme": 3,
+  "gold_or_reward_reads_by_staging": 0,
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/INDEX_BULK_SCORING_SOURCE.json",
+  "large_archive_audits_by_staging": 0,
+  "original_frozen_source_files_modified": 0,
+  "original_gate_reruns": 0,
+  "private_runtime_receipts_included": 0,
+  "protected_payloads_included": 0,
+  "publication_policy": "Point-only result presentation under the latest user instruction.",
+  "readme_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/REPRODUCE_BULK_SCORING.md",
+  "schema": "e18_bulk_scoring_source_overlay_index_v1",
+  "software_qualification_tests_recorded": 4,
+  "source_self_hash_policy": "Index and reproduce note are excluded from their own file rows.",
+  "status": "STAGED_AWAITING_ROOT_RESULTS_PUBLICATION",
+  "tests_rerun_by_staging": 0
+}

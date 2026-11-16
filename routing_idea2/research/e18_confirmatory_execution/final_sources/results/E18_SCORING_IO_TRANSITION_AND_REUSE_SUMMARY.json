@@ -1,0 +1,44 @@
+{
+  "schema": "e18_scoring_io_transition_and_reuse_summary_v1",
+  "status": "COMPLETE_WITH_UNSCORABLE_INPUTS",
+  "requested_questions": 3000,
+  "valid_questions": 2998,
+  "excluded_questions": 2,
+  "scored_aggregate_keys": 30900,
+  "prior_successful_bulk_scores_reused": 8268,
+  "new_deterministic_scores": 22632,
+  "old_slow_successful_scores_matched": 5896,
+  "mismatches": 0,
+  "missing_previous_keys": 0,
+  "standard_answer_unique_canonical_version_accounts": 3000,
+  "unscorable_by_task": {
+    "bbh": 2
+  },
+  "unscorable_by_subtask": {
+    "movie_recommendation": 1,
+    "ruin_names": 1
+  },
+  "unscorable_by_reason": {
+    "CHOICE_REFERENCE_HAS_NO_UNIQUE_VISIBLE_OPTION": 2
+  },
+  "reference_only_choice_body_mappings": 0,
+  "retained_failed_attempts": [
+    {
+      "entry": "bulk_scoring_from_audit.py",
+      "source_sha256": "812e72bed58ae6ef2aa50fd4464318965d3a6223f67da46afb45b75d89e3afd0",
+      "disposition": "Stopped at invalid official reference; retained8268 successful scores"
+    },
+    {
+      "entry": "resume_bulk_choice_reference.py",
+      "source_sha256": "6e9335aeb75aecda681ca8b0bc6bc72d405cb498094215931327bb4ac2ffff05",
+      "disposition": "Strict unique-body mapping rejected the real malformed input; no new successful scores"
+    }
+  ],
+  "final_disposition": "All other frozen questions scored; malformed input/reference cases excluded for every policy. Missing rewards were not filled zero.",
+  "raw_inputs_targets_model_outputs_scorer_sources_modified": false,
+  "new_llm_or_api_calls_for_scoring_recovery": 0,
+  "actual_execution_cost_scope": "All73490 newly executed native calls plus4717 historical paid member outputs, including excluded questions",
+  "uncertainty_reporting": "No confidence intervals or CI bootstrap; requested3000 best/worst figures are deterministic missing-outcome sensitivity bounds",
+  "source_boundary": "Observed incompatibility in the frozen official-source file; no claim of an exhaustive upstream semantic audit",
+  "private_runtime_records_included": false
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "e18_cpu_scope_memo_qualification_v1",
+  "status": "PASS",
+  "tests_run": 22,
+  "errors": 0,
+  "failures": 0,
+  "wrapper_source_sha256": "7fd45e003f09c8fc342e5b90f72b0e96f18e08bca63045c90fe13a424d15ed75",
+  "wrapper_source_unchanged_during_qualification": true,
+  "qualification_source_sha256": "5757fd9734354c817e706cb61b3a1a6b83c341e2a7999a3cd9a8004cd286c13f",
+  "software_test_only": true,
+  "synthetic_question_count": 4,
+  "formal_gold_reads": 0,
+  "real_question_or_reward_reads": 0,
+  "actual_model_calls": 0,
+  "actual_jobs_submitted": 0,
+  "actual_process_signals": 0,
+  "wall_seconds": 20.886659200012218,
+  "scope": "Immutable identity memo and original frozen gate/scoring on synthetic fixture"
+}

@@ -1,0 +1,21 @@
+{
+  "actual_jobs_submitted": 0,
+  "actual_model_calls": 0,
+  "actual_process_signals": 0,
+  "errors": 0,
+  "execution_gate_reruns": 0,
+  "failures": 0,
+  "original_interval_paired_helper_calls": 0,
+  "qualification_source_sha256": "3ff1b849a8804374847d44a560544dfa2318aca3c7a77238c9e11b49ad78c74f",
+  "real_gold_or_question_reads": 0,
+  "schema": "e18_bulk_scoring_io_qualification_v1",
+  "software_test_only": true,
+  "status": "PASS",
+  "synthetic_questions": 4,
+  "synthetic_responses_per_path": 24,
+  "t_ppf_calls": 0,
+  "tests_run": 4,
+  "tool_source_sha256": "812e72bed58ae6ef2aa50fd4464318965d3a6223f67da46afb45b75d89e3afd0",
+  "tool_source_unchanged_during_qualification": true,
+  "whole_execution_receipt_rehash": false
+}

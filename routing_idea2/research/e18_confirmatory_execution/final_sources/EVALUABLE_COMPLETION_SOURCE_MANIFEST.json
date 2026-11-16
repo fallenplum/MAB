@@ -1,0 +1,97 @@
+{
+  "schema": "e18_evaluable_completion_source_overlay_v1",
+  "status": "STAGED_NOT_PUBLISHED",
+  "files": [
+    {
+      "package_path": "code/e18_confirmatory_execution/resume_bulk_choice_reference.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/resume_bulk_choice_reference.py",
+      "sha256": "6e9335aeb75aecda681ca8b0bc6bc72d405cb498094215931327bb4ac2ffff05",
+      "bytes": 12848,
+      "role": "byte_identical_source",
+      "origin_sha256": "6e9335aeb75aecda681ca8b0bc6bc72d405cb498094215931327bb4ac2ffff05"
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/qualify_resume_bulk_choice_reference.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/qualify_resume_bulk_choice_reference.py",
+      "sha256": "b35eebabfc4f0385ef5a3e82a5e9cf3fb7e05b32a3866b1bd83f557231a6123b",
+      "bytes": 9883,
+      "role": "byte_identical_source",
+      "origin_sha256": "b35eebabfc4f0385ef5a3e82a5e9cf3fb7e05b32a3866b1bd83f557231a6123b"
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/finalize_evaluable_bulk.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/finalize_evaluable_bulk.py",
+      "sha256": "12d73edda4bfee0c184eb595bf4e714b32b023e5497c07462f011503db13b2a1",
+      "bytes": 15908,
+      "role": "byte_identical_source",
+      "origin_sha256": "12d73edda4bfee0c184eb595bf4e714b32b023e5497c07462f011503db13b2a1"
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/compare_bulk_with_previous_scoring.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/compare_bulk_with_previous_scoring.py",
+      "sha256": "b594c6fefc9f1c92359e97eab205fdce13c67788eb54fce2edefc682d73e936f",
+      "bytes": 7802,
+      "role": "byte_identical_source",
+      "origin_sha256": "b594c6fefc9f1c92359e97eab205fdce13c67788eb54fce2edefc682d73e936f"
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/compare_evaluable_with_previous_scoring.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/compare_evaluable_with_previous_scoring.py",
+      "sha256": "6443925a0766b8db8d49f3fddbb943c55b017b5be9ed494d51c545e3581259a7",
+      "bytes": 5141,
+      "role": "byte_identical_source",
+      "origin_sha256": "6443925a0766b8db8d49f3fddbb943c55b017b5be9ed494d51c545e3581259a7"
+    },
+    {
+      "package_path": "software_qualification/RESUME_BULK_CHOICE_REFERENCE_QUALIFICATION_v1.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/RESUME_BULK_CHOICE_REFERENCE_QUALIFICATION_v1.json",
+      "sha256": "c3d930381ff007fc32c84050a952ab6d1ffbb910fd984976b033c150f4b21224",
+      "bytes": 843,
+      "role": "allowlisted_software_record",
+      "origin_sha256": "3c8395dc9c623e625cb282d79a7e1b0d70a07aca7c4f2e01ecb3783281662ae8"
+    },
+    {
+      "package_path": "software_qualification/EVALUABLE_BULK_SYNTHETIC_SMOKE_v1.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/EVALUABLE_BULK_SYNTHETIC_SMOKE_v1.json",
+      "sha256": "aa3028e2c77630d89ded0eb6a4e0487fbaa5807741d0ba9a34ec734339393761",
+      "bytes": 784,
+      "role": "allowlisted_software_record",
+      "origin_sha256": "fe6225f23f08c248d3980cee9f2307acde5107a0f40899bfb5ac6ee8d384406b"
+    },
+    {
+      "package_path": "results/E18_SCORING_IO_TRANSITION_AND_REUSE_SUMMARY.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/results/E18_SCORING_IO_TRANSITION_AND_REUSE_SUMMARY.json",
+      "sha256": "9e371b97c83f62e5d53d6435c9370972375babab19d22c532521a908a3aaed9f",
+      "bytes": 2031,
+      "role": "deidentified_failure_and_reuse_summary",
+      "origin_sha256": null
+    },
+    {
+      "package_path": "results/PREVIOUS5896_VS_EVALUABLE30900_COMPARISON_v1.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/results/PREVIOUS5896_VS_EVALUABLE30900_COMPARISON_v1.json",
+      "sha256": "d781eeeca0944e1bd378caba53ff70f760f0b5f35cd2eaa16615af7180de385a",
+      "bytes": 1870,
+      "role": "aggregate_readonly_semantic_comparison",
+      "origin_sha256": "d781eeeca0944e1bd378caba53ff70f760f0b5f35cd2eaa16615af7180de385a"
+    },
+    {
+      "package_path": "README_EVALUABLE_COMPLETION.md",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/README_EVALUABLE_COMPLETION.md",
+      "sha256": "23b96efd85d9351875b2e3f1d32a3c3bd83e1a9faf94241a71f7189a139827f6",
+      "bytes": 1494,
+      "role": "scope_failures_and_reproducibility",
+      "origin_sha256": null
+    }
+  ],
+  "files_excluding_index": 10,
+  "files_including_index": 11,
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/INDEX_EVALUABLE_COMPLETION.json",
+  "existing_frozen_failure_entry_dependency": {
+    "source": "bulk_scoring_from_audit.py",
+    "sha256": "812e72bed58ae6ef2aa50fd4464318965d3a6223f67da46afb45b75d89e3afd0",
+    "existing_overlay_index_sha256": "24c856c99597875b9d0fc79b6139bf8961865543106b0c6fc13898509dd96614"
+  },
+  "real_question_or_standard_answer_payloads_included": 0,
+  "previous_source_packages_modified": false,
+  "self_hash_policy": "INDEX is excluded from its rows; local handoff supplies its SHA"
+}

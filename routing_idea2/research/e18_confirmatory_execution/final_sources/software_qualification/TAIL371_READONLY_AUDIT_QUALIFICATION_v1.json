@@ -1,0 +1,32 @@
+{
+  "schema": "e18_allowlisted_operational_software_qualification_summary_v1",
+  "source_record_name": "TAIL371_READONLY_AUDIT_QUALIFICATION_v1.json",
+  "source_record_sha256": "4aa02f63ab6034ccfbc5d4359f2247f8b7e42aa04e4eaf698179a47cd0c8a278",
+  "source_record_schema": "e18_tail371_readonly_audit_qualification_v1",
+  "status": "PASS",
+  "reported_check_counts": {
+    "tests_run": 13,
+    "errors": 0,
+    "failures": 0
+  },
+  "source_sha256_bindings": {
+    "static_audit_source_sha256": "90b5551718845b27632b341c24a131fa664fffbdac82758cb4801377ef63e60f",
+    "export_audit_source_sha256": "54eb2094b75eb56e37e695d3bdacfa6f959ef23ef17a888e7dad4b13e40fcc3d",
+    "qualification_source_sha256": "2c627941f90f43cadfdd2124190f840cc5664a239d5ffec4fc57131ba1836f04",
+    "metadata_helper_sha256": "98b3e24d9a46095b519629db2562a1d9861f9f2d7aef639d43bbf2662171dd4c"
+  },
+  "exception_category": "no_errors_reported_by_record_status",
+  "software_test_mode": {
+    "classification": "artificial_byte_controls_and_frozen_source_identity_checks",
+    "recorded_flags": {
+      "software_test_only": true
+    },
+    "recorded_zero_real_operation_counts": {
+      "model_calls": 0,
+      "gold_reads": 0,
+      "real_native_record_reads": 0,
+      "real_question_or_reward_reads": 0,
+      "signals_sent": 0
+    }
+  }
+}

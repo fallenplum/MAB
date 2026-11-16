@@ -1,0 +1,153 @@
+{
+  "schema": "e18_tail371_readonly_audit_source_overlay_index_v1",
+  "status": "STAGED_NOT_PUBLISHED",
+  "preceding_overlay_index_sha256": {
+    ".safe_e18_operational_sources": "e492b0e3b674fadce136ad00a55c38db79b9e159d012b1c13ba6f3408aae6551",
+    ".safe_e18_tail_lineage_sources": "ac1e57134e8289ff96455af44fc86f5a999e0fffd470f60d38e571965731dd59",
+    ".safe_e18_tail371_sources": "87d57794f84d08bda8de1e68f1d104ce25cee3a543a15b3411f582d145ed2757"
+  },
+  "files_excluding_index": 5,
+  "files_including_index": 6,
+  "files": [
+    {
+      "package_path": "code/e18_confirmatory_execution/audit_tail371_static_sources.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/audit_tail371_static_sources.py",
+      "sha256": "90b5551718845b27632b341c24a131fa664fffbdac82758cb4801377ef63e60f",
+      "bytes": 14914,
+      "role": "byte_identical_readonly_audit_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/audit_tail371_static_sources.py",
+      "origin_sha256": "90b5551718845b27632b341c24a131fa664fffbdac82758cb4801377ef63e60f",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/audit_tail371_export_lineage.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/audit_tail371_export_lineage.py",
+      "sha256": "54eb2094b75eb56e37e695d3bdacfa6f959ef23ef17a888e7dad4b13e40fcc3d",
+      "bytes": 13176,
+      "role": "byte_identical_readonly_audit_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/audit_tail371_export_lineage.py",
+      "origin_sha256": "54eb2094b75eb56e37e695d3bdacfa6f959ef23ef17a888e7dad4b13e40fcc3d",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "code/e18_confirmatory_execution/qualify_tail371_readonly_audits.py",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/qualify_tail371_readonly_audits.py",
+      "sha256": "2c627941f90f43cadfdd2124190f840cc5664a239d5ffec4fc57131ba1836f04",
+      "bytes": 5229,
+      "role": "byte_identical_readonly_audit_source",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/qualify_tail371_readonly_audits.py",
+      "origin_sha256": "2c627941f90f43cadfdd2124190f840cc5664a239d5ffec4fc57131ba1836f04",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "README_TAIL371_READONLY_AUDIT.md",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/README_TAIL371_READONLY_AUDIT.md",
+      "sha256": "c50c8a5bc8541ab001773bea42c977b8e651fc6c1d0b92a0bd03914ab2450d7e",
+      "bytes": 4050,
+      "role": "byte_identical_source_usage_and_limits",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/TAIL371_READONLY_AUDIT_README.md",
+      "origin_sha256": "c50c8a5bc8541ab001773bea42c977b8e651fc6c1d0b92a0bd03914ab2450d7e",
+      "byte_identical_to_origin": true
+    },
+    {
+      "package_path": "software_qualification/TAIL371_READONLY_AUDIT_QUALIFICATION_v1.json",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/software_qualification/TAIL371_READONLY_AUDIT_QUALIFICATION_v1.json",
+      "sha256": "3e5f379239cd8a40e9e416c8069f06c173e3b6fe8065d84013205f88a1414ace",
+      "bytes": 1311,
+      "role": "allowlisted_software_qualification_summary",
+      "origin_relative_path": "experiments/e18_confirmatory_execution/TAIL371_READONLY_AUDIT_QUALIFICATION_v1.json",
+      "origin_sha256": "4aa02f63ab6034ccfbc5d4359f2247f8b7e42aa04e4eaf698179a47cd0c8a278",
+      "byte_identical_to_origin": false
+    }
+  ],
+  "index_publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/INDEX_TAIL371_READONLY_AUDIT.json",
+  "import_closure": {
+    "status": "COMPLETE_WITH_PRECEDING_PUBLISHED_HELPER_AND_STANDARD_LIBRARY",
+    "new_source_modules": [
+      "audit_tail371_static_sources.py",
+      "audit_tail371_export_lineage.py",
+      "qualify_tail371_readonly_audits.py"
+    ],
+    "previously_published_dependency": {
+      "name": "audit_tail_export_lineage.py",
+      "sha256": "98b3e24d9a46095b519629db2562a1d9861f9f2d7aef639d43bbf2662171dd4c",
+      "publication_path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/audit_tail_export_lineage.py",
+      "preceding_overlay_index_sha256": "ac1e57134e8289ff96455af44fc86f5a999e0fffd470f60d38e571965731dd59"
+    },
+    "module_imports": {
+      "audit_tail371_static_sources.py": {
+        "local_modules": [
+          "audit_tail_export_lineage"
+        ],
+        "standard_library_modules": [
+          "__future__",
+          "argparse",
+          "hashlib",
+          "json",
+          "pathlib",
+          "time",
+          "zipfile"
+        ]
+      },
+      "audit_tail371_export_lineage.py": {
+        "local_modules": [
+          "audit_tail371_static_sources",
+          "audit_tail_export_lineage"
+        ],
+        "standard_library_modules": [
+          "__future__",
+          "argparse",
+          "hashlib",
+          "json",
+          "pathlib",
+          "re",
+          "tarfile",
+          "time"
+        ]
+      },
+      "qualify_tail371_readonly_audits.py": {
+        "local_modules": [
+          "audit_tail371_export_lineage",
+          "audit_tail371_static_sources"
+        ],
+        "standard_library_modules": [
+          "__future__",
+          "argparse",
+          "hashlib",
+          "json",
+          "pathlib",
+          "unittest"
+        ]
+      },
+      "audit_tail_export_lineage.py": {
+        "local_modules": [],
+        "standard_library_modules": [
+          "__future__",
+          "argparse",
+          "hashlib",
+          "json",
+          "pathlib",
+          "re",
+          "stat",
+          "tarfile",
+          "time",
+          "zipfile"
+        ]
+      }
+    },
+    "new_nonstandard_runtime_dependencies": 0
+  },
+  "qualification_scope": "13 artificial-byte and source-identity checks. The recorded qualification does not execute the real202-payload static audit or the real371-task closed-export audit.",
+  "runtime_literal_disclosure": {
+    "source": "audit_tail371_static_sources.py",
+    "kind": "historical_former_pid_literal_checked_as_control_metadata_identity",
+    "source_preserved_byte_identically": true,
+    "literal_repeated_in_qualification_summary": false
+  },
+  "private_asset_boundary": "Actual static202-payload audit receipts, closed371-task lineage receipts, task hashes, physical attempts, raw exports and scientific evaluation outputs remain private.",
+  "reproducibility_boundary": "This source overlay and its preceding helper form the import closure. Production provenance reproduction additionally requires SHA-bound private artifacts. Scientific completion remains governed by the unchanged original9b scoring gate.",
+  "real_runtime_receipts_included": 0,
+  "protected_payloads_included": 0,
+  "tests_rerun": 0,
+  "self_hash_policy": "INDEX.json is excluded from its own rows; the private verification records its SHA."
+}
