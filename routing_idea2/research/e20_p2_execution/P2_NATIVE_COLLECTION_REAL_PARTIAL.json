@@ -1,0 +1,23 @@
+{
+  "schema": "p2_real_partial_native_collection_qualification_v1",
+  "status": "PASS_REAL_PARTIAL",
+  "source_closed_archive_task_counts": [
+    444,
+    1396
+  ],
+  "unique_successful_outputs": 1840,
+  "member_successes": 1582,
+  "aggregate_successes": 258,
+  "actual_success_prompt_tokens": 501844,
+  "actual_success_completion_tokens": 248893,
+  "actual_success_total_tokens": 750737,
+  "repeated_import_new_outputs": 0,
+  "native_files_match_committed_offsets": true,
+  "final_output_freeze_present": false,
+  "failure_closure_pending": true,
+  "all_attempt_total_tokens": null,
+  "new_llm_calls": 0,
+  "reference_values_read": 0,
+  "deterministic_scores_computed": 0,
+  "collector_sha256": "b710d8cd26e93a1c7051a823413aec51010a7395f101ae44feb5730f6cd23c9b"
+}

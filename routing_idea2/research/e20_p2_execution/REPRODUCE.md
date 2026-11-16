@@ -52,9 +52,24 @@ prepare_runtime_sources.py根据既有E18源码构建P2概率scope适配器，pr
 
 ## 完整输出后的盲评入口
 
+本地闭合包收集与恢复资格入口如下。两者均不产生LLM调用。
+
+```powershell
+& 'D:\Anaconda\envs\tslib\python.exe' -B -X utf8 collect_native_exports.py
+& 'D:\Anaconda\envs\tslib\python.exe' -B -X utf8 qualify_native_collector.py
+```
+
+收集器在SQLite中保存已导入包身份、唯一原生输出和已提交文件offset。其`COLLECTION_PROGRESS.json`给出成功输出成本及`failure_closure_pending`。全部41289成员、106536聚合齐备后才生成`OUTPUTS_FROZEN.json`。失败及未知attempt的费用继续在独立账目中闭合，尚未闭合时全部attempt总Token为null。
+
 score_paid_outputs.py的必需参数为`--scope`、`--predictions`、`--outputs-frozen`、`--aggregate-records`和`--output-root`。默认只做资格检查。真正评分还需`--execute-scoring`、`--reference-plan`和`--approval`，且必须先通过全部输出冻结及来源资格。P2_REFERENCE_LOCATORS_FROZEN.json提供批准2400题的官方源位置。sealed200答案继续排除。
 
 blind_evaluation.py在投影阶段使用`--execute-projection`、`--score-rows`和`--outputs-frozen`，将已合法付费执行的稀疏组合评分按冻结概率精确求期望效用。评分与投影均不更换策略、参数、题池或评价权重。
+
+## Ready资料的本地发布准备
+
+`stage_publication.py --stage --parent-commit COMMIT_SHA`只处理显式ready文件清单，输出脱敏JSON、源码快照与FILE_INDEX。新资格中的私有测试目录在发布投影移除，来源原件继续留存，文件索引同时记录来源哈希和发布哈希。`--chunk`只读取索引内文件，已有safe目录中的其他文件继续排除在本次发布范围之外。
+
+registry及v3入口的实际部署、首成功与本地资格分别见P2_THREE_SHARD_ACTIVATION.json和原34项合成资格JSON。当前本地staging状态和已部署状态分别记录，root在最终封存后执行GitHub发布。
 
 ## 私有依赖与审查限制
 

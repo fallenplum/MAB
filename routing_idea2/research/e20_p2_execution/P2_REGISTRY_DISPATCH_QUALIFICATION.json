@@ -1,0 +1,40 @@
+{
+  "schema": "p2_registry_dispatch_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "within_manifest_duplicate_rejected": true,
+    "worker_identity_redefinition_rejected": true,
+    "manifest_alias_rejected": true,
+    "two_shards_exact_completed_remaining_partition": true,
+    "registration_add_only_prefix_retained": true,
+    "same_scope_approval_owner_backend_and_manifest_payload": true,
+    "same_plan_successor_progress_does_not_invalidate_sibling": true,
+    "restore_union_of_old_and_new_aggregate_journals": true,
+    "historical_progress_after_preparation_rejected": true,
+    "explicit_three_shards_supported": true,
+    "question_seed_actions_stay_together_in_two_and_three_shards": true,
+    "dynamic_member_addition_preserves_offsets_and_partial_lines": true,
+    "production_follower_rejects_software_fixture": true,
+    "live_original_full_actor_overlap_rejected": true,
+    "disjoint_registered_actors_can_coexist": true,
+    "missing_graceful_stop_checkpoint_rejected": true,
+    "exact_predecessor_stop_checkpoint_accepted": true,
+    "launcher_explicit_worker_manifest_and_registry_binding": true,
+    "registry_partial_append_requires_explicit_recovery": true,
+    "invalid_shard_count_rejected": true
+  },
+  "checks_passed": 20,
+  "software_test_only": true,
+  "new_llm_calls": 0,
+  "reference_values_decoded": 0,
+  "ssh_operations": 0,
+  "production_process_changes": 0,
+  "production_deployed": false,
+  "source_sha256": {
+    "p2_manifest_registry.py": "8cd840d2b8f7647c012b9432eac45d951210d0d2afa53c239c60400621df8591",
+    "p2_aggregation_follower_v3.py": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98",
+    "prepare_aggregation_shards_v3.py": "45fb927badd6c5ef3a05ef11b2758fb3771bbca01b323e1812e3eb19aaf5b9da",
+    "launch_registered_worker_v3.py": "9037e8a1d1547dcd85e7e48ed160e3255d3062689dde1de9420c86d64062905c",
+    "qualify_registry_dispatch.py": "48cdcc7e49af796e21e6bfbd55fc052513cd926ed4c965068d0cf76d87ef3f8e"
+  }
+}

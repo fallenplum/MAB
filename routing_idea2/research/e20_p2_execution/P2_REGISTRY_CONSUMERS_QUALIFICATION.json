@@ -1,0 +1,31 @@
+{
+  "schema": "p2_registry_consumers_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "old_and_new_journals_visible": true,
+    "semantic_and_physical_attempt_deduplication": true,
+    "cached_rows_do_not_charge_tokens": true,
+    "all_same_profile_manifest_actors_visible": true,
+    "partial_journal_line_ignored": true,
+    "production_consumer_rejects_fixture_mode": true,
+    "duplicate_manifest_semantic_keys_rejected": true,
+    "export_native_identity_and_paid_only_cost": true,
+    "old_sqlite_index_retained_and_archive_semantic_union": true,
+    "second_export_is_noop": true,
+    "closed_archive_index_recovers_without_reexport": true,
+    "no_duplicate_closed_archive": true,
+    "complete_bad_json_is_rejected": true,
+    "contradictory_attempt_usage_rejected": true
+  },
+  "checks_passed": 14,
+  "software_test_only": true,
+  "gold_reads": 0,
+  "new_llm_calls": 0,
+  "ssh_or_process_changes": 0,
+  "production_deployed": false,
+  "source_sha256": {
+    "monitor_native_status_v3.py": "ba041ced547cd9f1e4eb8b0e7d4fe0e16bd9ad5f69afcbb40cbc4f4eaf235dba",
+    "p2_export_native_v3.py": "5df3a3fbe4f3d26649e388d1461923a1a85f0a5185f03b2999ec0e854d426ac1",
+    "qualify_registry_consumers.py": "f988dde3fff7b1171bd2dcd3aead1a8c0e4c33df6ede52e4d4510d5c5e0fb916"
+  }
+}

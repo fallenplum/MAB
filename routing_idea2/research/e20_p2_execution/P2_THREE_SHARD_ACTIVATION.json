@@ -1,0 +1,166 @@
+{
+  "schema": "p2_three_registered_shard_activation_v1",
+  "status": "THREE_SHARDS_FIRST_SUCCESSES_VERIFIED_AT_SNAPSHOT",
+  "snapshot_utc": "2026-11-16T16:55:43.533998+00:00",
+  "old_actor_stop_utc": "2026-11-16T16:53:35.823934+00:00",
+  "old_actor_pid": 2637354,
+  "old_actor_exited": true,
+  "old_unique_completed_aggregations": 586,
+  "old_repeated_success_keys": 0,
+  "original_registered_manifests": 7,
+  "registered_manifests_after_add": 10,
+  "dispatch_plan_sha256": "c2d41b9a4796b2fb79eb94d1aaa8e589c2bd62d579ac7986377aa8695b737d69",
+  "disjoint_remaining_partition_verified": true,
+  "remaining_assigned_aggregations": 105950,
+  "required_aggregations": 106536,
+  "aggregation_shards": [
+    {
+      "shard_index": 0,
+      "gpu": 0,
+      "pid": 2884571,
+      "launch_utc": "2026-11-16T16:54:44.076597+00:00",
+      "assigned_remaining_aggregations": 34883,
+      "first_snapshot_successes": 3,
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        22755,
+        22755,
+        22755
+      ],
+      "shared_resource_authorization": true,
+      "manifest_sha256": "0ae9e2029edf19d6c52ca81ef2d00a3232ad5ac99c3e5b8b797231b6eb8ed0e8",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 1,
+      "gpu": 1,
+      "pid": 2885196,
+      "launch_utc": "2026-11-16T16:54:52.174488+00:00",
+      "assigned_remaining_aggregations": 35826,
+      "first_snapshot_successes": 4,
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        35231,
+        35231,
+        35231
+      ],
+      "shared_resource_authorization": true,
+      "manifest_sha256": "d73ffb62c070bd72538b38ffbaf7c9189ed5433a4482dd282d2396c78fc8517d",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 2,
+      "gpu": 3,
+      "pid": 2885924,
+      "launch_utc": "2026-11-16T16:55:00.060350+00:00",
+      "assigned_remaining_aggregations": 35241,
+      "first_snapshot_successes": 2,
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        36245,
+        36245,
+        36245
+      ],
+      "shared_resource_authorization": true,
+      "manifest_sha256": "d6ee02c787b9b0489509dd819f0f6d84e8c01d442c9fc1a422635b4e1eaa099f",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    }
+  ],
+  "member_profiles": [
+    {
+      "member_index": 0,
+      "gpu": 4,
+      "pid": 2382031,
+      "active_at_snapshot": true,
+      "successful_outputs": 485
+    },
+    {
+      "member_index": 1,
+      "gpu": 7,
+      "pid": 2430534,
+      "active_at_snapshot": true,
+      "successful_outputs": 390
+    },
+    {
+      "member_index": 2,
+      "gpu": 7,
+      "pid": 2382490,
+      "active_at_snapshot": true,
+      "successful_outputs": 329
+    },
+    {
+      "member_index": 3,
+      "gpu": 7,
+      "pid": 2430934,
+      "active_at_snapshot": true,
+      "successful_outputs": 944
+    },
+    {
+      "member_index": 4,
+      "gpu": 5,
+      "pid": 2383366,
+      "active_at_snapshot": true,
+      "successful_outputs": 120
+    },
+    {
+      "member_index": 5,
+      "gpu": 6,
+      "pid": 2447342,
+      "active_at_snapshot": true,
+      "successful_outputs": 1005
+    }
+  ],
+  "active_actor_count_at_snapshot": 9,
+  "duplicate_success_rows_at_snapshot": 0,
+  "extra_paid_attempts_for_successful_keys_at_snapshot": 0,
+  "remote_successful_outputs_at_snapshot": {
+    "member_generation": {
+      "successful_outputs": 3273,
+      "prompt_tokens": 606969,
+      "completion_tokens": 463725,
+      "total_successful_tokens": 1070694
+    },
+    "aggregation": {
+      "successful_outputs": 595,
+      "prompt_tokens": 482816,
+      "completion_tokens": 52066,
+      "total_successful_tokens": 534882
+    }
+  },
+  "local_collection_at_its_own_snapshot": {
+    "snapshot_utc": "2026-11-16T16:57:00.255354+00:00",
+    "imported_archives": 4,
+    "successful_outputs": 3915,
+    "members": 3298,
+    "aggregations": 617,
+    "successful_output_total_tokens": 1629791,
+    "all_required_outputs_frozen": false,
+    "failure_closure_pending": true,
+    "all_attempt_total_tokens": null
+  },
+  "software_checks_at_preparation": 34,
+  "preparation_qualification_reports_preserved": true,
+  "preparation_qualification_sha256": {
+    "P2_REGISTRY_DISPATCH_QUALIFICATION.json": "4cf5150c12e0a6ba32cea455741030dbb615228f046ca32bafd68426832aff32",
+    "P2_REGISTRY_CONSUMERS_QUALIFICATION.json": "641eba4e1037e173068ad0731b406fd2f80fe837ef98d7b26d7262ea5ebac47c",
+    "P2_V3_TOOLING_QUALIFICATION.json": "ada503dc186cadaae7022b6414efb88fa60664f8437069c0a59836f867ab2cc9"
+  },
+  "control_evidence_sha256": {
+    "registry_initialization": "fa141db4d5aeb33382fec3b15d64554999ff6842098443f4e6ae7520c5deb917",
+    "old_actor_checkpoint": "dafaeffafece6012fb5f377740c9e572b084f48ea2c903534b5b321901ecd403",
+    "remaining_partition": "b1b4a1bd3b9a4eb24c087e771b9ab1a2ef40bdbc4fce45e8f09962ef8c1cdf48",
+    "registry_add0": "6db226b28bdf96d94bd3f25f2ff5d3ae09c9914353b508402a423febe9e61328",
+    "registry_add1": "082e7be53f36cddb2a1193333044037f49c4cbc34fdef81d6a7bf9f7c17bca64",
+    "registry_add2": "8c8e0b5bbb7c484b3a413090f8cee15e6c13de62aee2e0852d19d0d5272b287f",
+    "shard0_launch": "2fb8a44ca59f75e5db282499864c6ab6a3b18e34ff52a479044619d34a5d00ad",
+    "shard1_launch": "e9aab3941bbfdc09fe083dccf6f614f31f18a4c5738154cc7f1cb4869ba734c3",
+    "shard2_launch": "d18b381f621d8e1cca2771c846c8251211e9628970288171c60c6354644552e2",
+    "first_success_monitor": "15392bb2fbabb471c0399d58d278e0b864cffb0ef5335010eda11993666871c0",
+    "local_collection_snapshot": "e056e97e455b7eab4d9a7bac2c104b5a8a9fca84ff7bb228eaf43a58bb8307aa"
+  },
+  "science_scope_model_policy_or_generation_changes": 0,
+  "reference_values_read": 0,
+  "deterministic_scores_computed": 0,
+  "local_publication_new_llm_calls": 0,
+  "claims_scope": "Actual graceful checkpoint, disjoint registration, launch and first successes; throughput effect awaits a subsequent matched time window"
+}

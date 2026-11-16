@@ -35,9 +35,19 @@ BBH含原共同子池39题和完整官方源扩展1161题，来源层在结果�
 | P2_REAL_SCOPE_QUALIFICATION.json | 实际输入、概率和执行并集的独立复核 |
 | P2_BLIND_AND_SCOPE_QUALIFICATION.json | 作用域、权限和期望效用的软件控制 |
 | P2_DATA_AND_FROZEN_SCOPE.md | 数据、输入侧机制量与成本说明 |
+| P2_NATIVE_COLLECTION_README.md | 闭合包导入、offset恢复、成功成本与完整输出评分门槛 |
+| P2_NATIVE_COLLECTION_REAL_PARTIAL.json | 两包1840个实际成功输出的导入资格快照 |
+| P2_NATIVE_COLLECTOR_SOFTWARE_QUALIFICATION.json | 12项恢复、并发、去重及完整冻结资格 |
+| P2_SINGLE_AGGREGATION_MIGRATION.json | 单次迁移在所记录UTC时点的接续结果 |
+| P2_RUNTIME_SCALING_REVIEW.json | 本地速率敏感性及执行器扩展边界分析 |
+| P2_THREE_SHARD_ACTIVATION.json | 原actor安全停止、三分片实际启动与首成功的脱敏快照 |
+| P2_V3_TOOLING_QUALIFICATION.json | 原准备阶段34项合成资格及来源哈希 |
+| P2_V3_REGISTERED_DISPATCH_HANDOFF.md | 显式来源、互斥分片与部署追加说明 |
 | REPRODUCE.md | 真实入口、环境、私有依赖和执行顺序 |
 
 P2_PREPARATION_SUMMARY.md给出准备阶段结论。实际质量报告在完整输出冻结及合法评分后生成。
+
+新增运行源码的交付采用显式ready清单。FILE_INDEX.json逐项记录发布字节哈希、原始来源哈希、脱敏字段和工件角色。registry/v3入口已在实际三分片上线后纳入ready版本，原本地资格与实际部署快照分别保留。该打包清单不产生新的部署事件。
 
 ## 私有资产与两个scope
 

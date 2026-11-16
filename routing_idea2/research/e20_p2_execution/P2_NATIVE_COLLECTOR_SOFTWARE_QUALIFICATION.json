@@ -1,0 +1,24 @@
+{
+  "schema": "p2_native_collector_software_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "first_closed_archive_commits_two_rows": true,
+    "unchanged_archive_skips_tar_scan": true,
+    "repeat_does_not_append": true,
+    "overlapping_batches_deduplicate_semantic_native_key": true,
+    "conflicting_native_output_rejected": true,
+    "late_failure_rolls_back_rows_and_file_tail": true,
+    "partial_collection_has_no_final_freeze": true,
+    "hard_exit_after_fsync_before_database_commit_exercised": true,
+    "startup_truncates_to_committed_offset": true,
+    "final_freeze_requires_full_union_and_hashes_exact_files": true,
+    "concurrent_import_commits_each_output_once": true,
+    "concurrent_import_keeps_one_archive_identity": true
+  },
+  "collector_sha256": "b710d8cd26e93a1c7051a823413aec51010a7395f101ae44feb5730f6cd23c9b",
+  "synthetic_fixture_only": true,
+  "real_native_archives_modified": false,
+  "new_llm_calls": 0,
+  "reference_values_read": 0,
+  "deterministic_scores_computed": 0
+}
