@@ -1,0 +1,41 @@
+{
+  "status": "INPUT_ONLY_CROSS_COHORT_NEAR_SCREEN_COMPLETE",
+  "original_input_identities": 4308,
+  "roles": {
+    "historical_development": 1108,
+    "sealed200": 200,
+    "fresh400": 400,
+    "e18_added2600": 2600
+  },
+  "exact_rule": "SHA256 of Unicode NFKC text with whitespace collapsed; no task/source prefix",
+  "critical_slot_gated_rules": {
+    "schema": "e18_input_duplicate_rules_v1",
+    "seed": 20261116018,
+    "exact": "SHA256 of Unicode NFKC text with whitespace collapsed; no task/source prefix",
+    "token_equivalence": "Ordered casefolded word/number/operator tokens match exactly; only punctuation/case formatting varies",
+    "critical_slots": "Ordered numeric literals, quoted strings, capitalized word tokens, and math/logical operators must match",
+    "near_candidate_filter": "same task and BBH subtask plus identical critical-slot signature",
+    "character_tfidf_cosine_minimum": 0.985,
+    "character_sequence_ratio_minimum": 0.985,
+    "word_token_jaccard_minimum": 0.95,
+    "near_edges": "Review candidates only; no union-find/transitive merging of pairwise similar texts",
+    "protected_comparison": "Private HMAC slot gate, ordered-token equivalence, hashed character3-5gram count cosine>=.985, ordered-trigram ratio>=.985, word-token hash Jaccard>=.95",
+    "selection": "Exclude all high-similarity review endpoints from text-ready proposals; do not count duplicate token-equivalence groups multiple times",
+    "limitations": "High-threshold syntactic screening does not certify absence of semantic paraphrases. Sealed near-duplicate screening requires external precomputed signatures or separately authorized inputs."
+  },
+  "cross_role_high_similarity_edges_involving_fresh_or_sealed": 3,
+  "by_role_pair": {
+    "fresh400--historical_development": 1,
+    "fresh400--sealed200": 1,
+    "historical_development--sealed200": 1
+  },
+  "sealed_cross_cohort_high_similarity_edges": 2,
+  "format_equivalence_groups": 0,
+  "limitation": "Frozen high-threshold syntactic screen detects input overlap; semantic independence and pretraining exposure remain unverified",
+  "reward_values_decoded": 0,
+  "answer_values_decoded": 0,
+  "private_input_text_printed": false,
+  "new_llm_calls": 0,
+  "wall_s": 6.536595299956389,
+  "action": "Any flagged independent-pool overlap requires exclusion or explicit protocol disposition before evaluation"
+}

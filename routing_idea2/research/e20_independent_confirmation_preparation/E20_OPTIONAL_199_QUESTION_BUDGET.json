@@ -1,0 +1,36 @@
+{
+  "status": "OPTIONAL_PLANNING_SCENARIO_REQUIRES_APPROVAL",
+  "original_cohort_unchanged": true,
+  "exclusion_count": 1,
+  "original_questions": 200,
+  "hypothetical_questions": 199,
+  "hypothetical_task_counts": {
+    "gsm8k": 100,
+    "bbh": 99
+  },
+  "main_weighting": "GSM8K and BBH each50percent after any approved exclusion",
+  "required_member_calls": 3486,
+  "required_aggregate_calls": 9336,
+  "verified_reused_member_calls": 0,
+  "verified_reused_aggregate_calls": 0,
+  "new_member_calls": 3486,
+  "new_aggregate_calls": 9336,
+  "conservative_new_token_cap": 97898496,
+  "by_task": {
+    "gsm8k": {
+      "questions": 100,
+      "member_calls": 1794,
+      "aggregate_calls": 5055
+    },
+    "bbh": {
+      "questions": 99,
+      "member_calls": 1692,
+      "aggregate_calls": 4281
+    }
+  },
+  "removed_member_calls": 18,
+  "removed_aggregate_calls": 51,
+  "sealed_answers_read": 0,
+  "new_llm_calls": 0,
+  "actual_selection_or_pool_mutation": false
+}

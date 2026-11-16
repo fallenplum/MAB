@@ -1,0 +1,16 @@
+{
+  "status": "HISTORICAL_METADATA_ONLY_CHECK_COMPLETE",
+  "e18_unscorable_questions": 2,
+  "fresh400_unscorable_questions": 0,
+  "affected_subtasks": {
+    "movie_recommendation": 1,
+    "ruin_names": 1
+  },
+  "scores_or_references_decoded": 0,
+  "interpretation": "Native cache success demonstrates output existence; score eligibility remains a separate check",
+  "source_ref": {
+    "path": "D:\\develop\\CV\\多臂老虎机\\.e18_cpu_runtime\\evaluable_bulk_v1\\UNSCORABLE_CASES_PRIVATE.json",
+    "bytes": 845,
+    "sha256": "1c5a108ef4e1d19103c4480fda8e0ce05fdbe88f90da54e6a1342933368d9efd"
+  }
+}

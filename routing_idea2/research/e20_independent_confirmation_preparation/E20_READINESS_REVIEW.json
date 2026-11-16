@@ -1,0 +1,17 @@
+{
+  "status": "PREPARATION_COMPLETE_FORMAL_EVALUATION_NOT_READY",
+  "engineering_qualification": "PASS",
+  "model_frozen": true,
+  "fresh400_independent_confirmation": "FAIL_HISTORICAL_REWARD_EXPOSURE",
+  "sealed200_answer_seal": "PRESERVED",
+  "sealed200_independence": "ONE_NEAR_DUPLICATE_PENDING_DISPOSITION",
+  "sealed200_power_for_1pp": 0.14717139845609703,
+  "independent_pool_proposal": "New2400,1200 per task, no admission or selection performed",
+  "proposed_new_pool_power_for_1pp": 0.881720153820859,
+  "user_execution_approval": "PENDING",
+  "execution_started": false,
+  "new_member_calls_executed": 0,
+  "new_aggregation_calls_executed": 0,
+  "fresh400_reward_values_decoded": 0,
+  "sealed200_answer_values_decoded": 0
+}

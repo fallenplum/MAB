@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "contaminated_input_rejected_before_any_member_decode": true,
+    "tau_uniform_policy": true,
+    "all_policy_rows_sum_to_one": true,
+    "policy_action_renaming_equivariance": true,
+    "raw_exact_sensitivity_kept_separate": true,
+    "exact_support_nested_in_tau_support": true,
+    "existing_final_model_directory_rejected_before_training_access": true
+  },
+  "new_real_fits": 0,
+  "new_llm_calls": 0,
+  "fresh400_reward_values_read": 0,
+  "sealed200_answer_values_read": 0
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "e20_p2_preparation_protocol_v1",
+  "branch": "codex/e20-independent-confirmation-preparation",
+  "base_commit": "07b01361d425b089e49643f1ec5282eae0ac1ec0",
+  "teacher_pdf_sha256": "862d0118f58240b7051790846475248b2154ec4198e4bb45afdfc0ed10607fb2",
+  "scope": "P2 preparation only, final train600 model fitting and input-only execution planning",
+  "hypothesis": "C minus B final aggregate accuracy on independently sampled questions",
+  "conditions": {
+    "B": {
+      "beta": 1,
+      "gamma": 0
+    },
+    "C": {
+      "beta": 0,
+      "gamma": 0
+    }
+  },
+  "training_questions": 600,
+  "reward_observation": "Three original generation repetitions per question, empirical mean over repetitions",
+  "features": "MiniLM-L6 frozen 384D, PCA16 and StandardScaler fit on train600 only, leading intercept",
+  "head_shape": [
+    17,
+    20
+  ],
+  "regularization": 0.003472222222222222,
+  "regularization_source": "E17 frozen full600 rule, median of five frozen M4 coefficients, verified against FULL600_FIT_LOG; no n600 rescaling",
+  "penalty": "regularization times squared Frobenius norm, including intercept",
+  "empirical_max_targets": "Uniform weights over all exact empirical maximizers",
+  "T_definition": "All20 empirical mean rewards equal, training rows only",
+  "T_row_weight": "beta on T, 1 otherwise; retain all600 rows and divide by600",
+  "main_decoder": {
+    "type": "uniform_argmax",
+    "absolute_tolerance": 1e-08
+  },
+  "sensitivity_decoder": "raw floating point exact argmax, uniform over exact maxima",
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "primary_task_weights": {
+    "gsm8k": 0.5,
+    "bbh": 0.5
+  },
+  "independent_unit": "Original question, retaining all generation repetitions inside one cluster",
+  "power_effects_pp": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "power_alpha": 0.05,
+  "power_test": "Two-sided fixed-time paired mean comparison with task-stratified variance; approximate planning only",
+  "primary_comparisons": [
+    "C-B under tau1e-8"
+  ],
+  "multiplicity": "Single primary comparison. Raw-exact is a declared diagnostic. Additional co-primary tests require familywise control and new approval before outcomes.",
+  "confidence_interval_execution": "No new CI or CI-only bootstrap in this E20 preparation, following the latest standing user instruction",
+  "access_allowed": [
+    "train600 rewards",
+    "E19 OOF paired development utilities",
+    "Input-only fresh400 and sealed200 projections",
+    "Existing source, exposure and cache identity metadata"
+  ],
+  "access_forbidden": [
+    "fresh400 true rewards",
+    "sealed200 answers or rewards"
+  ],
+  "new_language_model_calls": 0,
+  "new_aggregation_calls": 0,
+  "new_data_admission": 0,
+  "expansion_authorized": false,
+  "evaluation_start_authorized": false,
+  "execution_requirement": "Required actions are the positive-probability support union of frozen B/C policies, including the raw-exact diagnostic; shared members and identical aggregations reused",
+  "cache_rule": "Reuse only matching question, physical member/action, generation seed, frozen model, prompt, generation and aggregation operator identities",
+  "completion_boundary": "Prepare reports, publish de-identified artifacts and await user approval for actual P2 evaluation",
+  "created_utc": "2026-11-16T14:30:16.285033+00:00",
+  "status": "MODELS_AND_RULES_FROZEN_DATA_SELECTION_AND_EXECUTION_AWAIT_APPROVAL",
+  "final_model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "final_prefit_config_sha256": "082708ade0d51d8a68a812c1c9fb913eccd9b2822518a470ac44bcff2c8b8bec",
+  "final_fit_source_sha256": "993d0aea0b7ee5eb78c6278e993df1ad878adbbc429a3bead58f932820aa407f",
+  "final_prediction_operator_source_sha256": "56bbb2cc43206acbed8575fa6996e0040ad0118a32071b2469ad3a68ccea71bf",
+  "cohort_prediction_receipts": {
+    "fresh400": {
+      "prediction_sha256": "5b3b5c57b9d423a89b9696411472c99da5e4ca4807c93285bdf0ae9253e0a87f",
+      "input_sha256": "d01801872d8c2a469ea115e1a5a0c0a2510e42385b453ab37dc0feef779e2735",
+      "utc": "2026-11-16T14:18:30.339190+00:00"
+    },
+    "sealed200": {
+      "prediction_sha256": "52794c45d7b0f3998d137ee6550e27b49381134fc22d9cabafdc485f1bfa2d45",
+      "input_sha256": "2107fe689ebbfc2cae64d139065d521659f8248f54c63ad272413a218f9e4550",
+      "utc": "2026-11-16T14:19:43.640530+00:00"
+    }
+  },
+  "data_roles": {
+    "fresh400": "EXPOSED_DEVELOPMENT_ONLY",
+    "sealed200": "ANSWER_SEALED_ONE_NEAR_DUPLICATE_PENDING_DISPOSITION"
+  },
+  "proposed_new_pool": {
+    "status": "PROPOSAL_ONLY",
+    "questions": 2400,
+    "gsm8k": 1200,
+    "bbh": 1200,
+    "selected_ids": 0,
+    "bbh_subtask_quota": "44 or45 per subtask,12 receive45; penguins_in_a_table receives44; exact allocation and seed require approval before selection",
+    "source_frame": "Remaining official GSM8K train and full official BBH test, after registered exclusions and frozen duplicate screens",
+    "power_at_1pp_conditional_on_E19_variance": 0.881720153820859,
+    "members_from_zero_upper_calls": 43200,
+    "aggregations_from_zero_upper_calls": 144000,
+    "scope": "Only eventual positive-support union; these are capacity envelopes before input-side selection"
+  },
+  "statistical_reporting": "No new CI or CI-only bootstrap under the latest standing instruction; two-sided power and fixed-time test definitions retained",
+  "linked_reports": {
+    "FINAL_MODEL_NUMERICAL_AUDIT.json": "353b410644c9933ef131948b36b9fc4a2d9af014ea940dc2e6fda87f0b44dcde",
+    "E20_DATA_PERMISSIONS.json": "2c3d564b41b2d184c9d324eb4ec45322e91a44f80e587f77107afb89b83f9943",
+    "E20_COHORT_NEAR_DUPLICATE_AUDIT.json": "9206ab2eb65ae37015181f4453105c14697464f8b6b83de40cc7c4ee4d3fe5aa",
+    "E20_EXACT_EXECUTION_BUDGET_QUALIFIED.json": "b2b31f7298b63d90ff77bb1d064251ec20b5d0ba58492aaf20a07d9bb4d2c82c",
+    "E20_OPTIONAL_199_QUESTION_BUDGET.json": "fa784da238b28c5a09dcb991d886285462953f118b08167967a2ab70378d1ef8",
+    "E20_POWER_RESULTS.json": "db3c48408497b6a8b13b02b1e671a3a1fdcde8d43df1caddab134d01eb2e4bcb",
+    "E20_NUMERICAL_REVIEW.json": "d48cc84aa7abc840c66d1aa86e6b168f994b0bc5dd456010f3f6439450ca6208",
+    "E20_SOFTWARE_GUARDS.json": "69ff2dd35f061fc6340045c93afc60b6d7fac6949ce2860e282e38520fe547d7",
+    "05_P2_FROZEN_PROTOCOL.md": "b55cc7e7d5dcc8919d88f2a09661d94724da083ca831d4d7f4f9e7e8bd6d513a"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "e20_protocol_freeze_receipt_v1",
+  "utc": "2026-11-16T14:35:09.352052+00:00",
+  "protocol_sha256": "db2d8222ec2612f88eb09f46f1d540d9f29b77a091a9c4962d954692229a8270",
+  "prefit_contract_sha256": "e167303936781449768eddc947fea3a640dd9ff75677ca8126b113a1ab322464",
+  "final_model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "source_hashes": {
+    "assemble_e20.py": "6532d2f4941e61e3d6765287304442d513eeb49c2729297b180dcc53e7701a7b",
+    "audit_data_and_budget.py": "8b805dc0b18912edaadbe5c91dabf8b52cf16ddd09dbc3bd75887107cea737c8",
+    "audit_final_models.py": "33f6b2fb778d066620fb5ace0bfda767a3903a4befc841dcee0e556f80dbc2e3",
+    "encode_sealed_inputs.py": "44bc98413b6a2869bef199f2fa3296c7a80c86c0b72cad28327ac0b0f5a84dc6",
+    "fit_final_models.py": "993d0aea0b7ee5eb78c6278e993df1ad878adbbc429a3bead58f932820aa407f",
+    "package_release.py": "c907dfec9e757ceb939c769c98274d86d3f56d7455cbf33aaf3bcab722fb3c4a",
+    "power_analysis.py": "a49a4909a436d74b9dff1cdfeeccf4be0780d0d565ccc3ebd2142b8203591cf3",
+    "predict_final_inputs.py": "56bbb2cc43206acbed8575fa6996e0040ad0118a32071b2469ad3a68ccea71bf",
+    "repair_input_storage.py": "ec33f38eadda24da9fc5b65685f4db3ee1e500c78019c3bf303afa34f6edfcee",
+    "review_prediction_operator.py": "86f79884d0f4d2d9a1e27b962f27ce0db8b607a49e2dfba8e33a6f86eaf730bc",
+    "test_preparation_guards.py": "31f4d71d0e8d27857f7c09a5ef111043de94e5c911800b154536dc119101bb7e"
+  },
+  "evaluation_started": false,
+  "execution_approval": "PENDING"
+}

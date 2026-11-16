@@ -1,0 +1,106 @@
+{
+  "schema": "e20_independent_numerical_review_v1",
+  "review_scope": "Read-only source and frozen-training metadata review, objective reconstruction, input rejection software test, analytic power reproduction; no refit or evaluation",
+  "checks": {
+    "regularization_matches_frozen_final600_config": true,
+    "regularization_is_median_of_five_training_only_parameters": true,
+    "regularization_matches_old_executed_final600_heads": true,
+    "no_n600_rescaling_or_new_parameter_search": true,
+    "original_E19_operator_hash": true,
+    "source_code_matches_prefit_freeze": true,
+    "model_hash_matches_freeze": true,
+    "prefit_hash_matches_freeze": true,
+    "weights_exactly_two_17_by_20_heads": true,
+    "all_600_original_training_rows_retained": true,
+    "standardized_training_columns_have_zero_mean_unit_variance": true,
+    "constant_is_present_and_penalized": true,
+    "all_tied_training_mask_reconstructs": true,
+    "B_independent_fullN_objective_reconstruction": true,
+    "B_uniform_empirical_maximum_weights": true,
+    "B_solver_and_KKT_qualified": true,
+    "C_independent_fullN_objective_reconstruction": true,
+    "C_uniform_empirical_maximum_weights": true,
+    "C_solver_and_KKT_qualified": true,
+    "endpoint_optimality_inequality": true,
+    "input_interface_rejects_Y_before_member_decoding": true,
+    "input_interface_rejects_reward_before_member_decoding": true,
+    "input_interface_rejects_answers_before_member_decoding": true,
+    "prefit_configuration_precedes_model_freeze": true,
+    "power_uses_600_question_clusters_and_1800_recorded_events": true,
+    "power_task_weighting_and_variance_units": true,
+    "power_two_sided_tails_and_pp_conversion": true,
+    "sealed199_power_preserves_half_task_weights_with_100_and_99_questions": true,
+    "PCA_mean_fitted_on_train600": true,
+    "restored_prediction_feature_operator_matches_original_public_sklearn_transform": true,
+    "restored_prediction_features_recover_frozen_design": true,
+    "fresh400_formal_operator_prediction_follows_weight_freeze": true,
+    "fresh400_formal_operator_prediction_has_no_reward_access": true,
+    "fresh400_formal_prediction_hash_matches_receipt": true,
+    "fresh400_formal_prediction_source_matches_receipt": true,
+    "fresh400_formal_primary_and_raw_decoders_reproduce": true,
+    "sealed200_formal_operator_prediction_follows_weight_freeze": true,
+    "sealed200_formal_operator_prediction_has_no_reward_access": true,
+    "sealed200_formal_prediction_hash_matches_receipt": true,
+    "sealed200_formal_prediction_source_matches_receipt": true,
+    "sealed200_formal_primary_and_raw_decoders_reproduce": true
+  },
+  "original_final600_regularization": 0.003472222222222222,
+  "regularization_source_rule": "Median of five frozen final parameter values; no n600 rescaling or retuning.",
+  "training_questions": 600,
+  "model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "reviewed_fit_source_sha256": "993d0aea0b7ee5eb78c6278e993df1ad878adbbc429a3bead58f932820aa407f",
+  "new_fits_executed": 0,
+  "fresh_reward_values_read": 0,
+  "sealed_answer_values_read": 0,
+  "new_llm_calls": 0,
+  "bootstrap_repetitions": 0,
+  "limits": [
+    "Review of available final input-only receipts does not authorize absent input-pool prediction or any reward evaluation.",
+    "Power is conditional on E19 development variance and complete-support expected policy utility.",
+    "This review checks implementation and numerical qualifications, without independent scientific quality evidence.",
+    "The initial algebraically equivalent einsum prediction artifacts remain archived; the formal path restores the frozen original numeric operator because raw-exact argmax can depend on last-bit differences."
+  ],
+  "all_tied_training_questions": 306,
+  "maximum_objective_reconstruction_error": 0.0,
+  "maximum_KKT_stationarity": 5.120778800993264e-12,
+  "maximum_primal_dual_objective_gap": 4.3826803297619676e-11,
+  "reviewer_check_correction": {
+    "initial_check": "Compared float64 PCA mean against numpy default float32 accumulator mean.",
+    "correct_check": "Replay the original explicit float64 training cast before mean computation.",
+    "float32_default_mean_max_difference": 3.98846411037157e-08,
+    "float64_training_mean_max_difference": 0.0,
+    "model_or_fitting_changes": 0
+  },
+  "original_prediction_operator_feature_recovery_tolerance": 1e-13,
+  "original_prediction_operator_feature_recovery_max_error": 1.3322676295501878e-15,
+  "reviewed_prediction_source_sha256": "56bbb2cc43206acbed8575fa6996e0040ad0118a32071b2469ad3a68ccea71bf",
+  "checked_formal_prediction_pools": [
+    "fresh400",
+    "sealed200"
+  ],
+  "formal_numeric_operator_correction": {
+    "fresh400": {
+      "original_prediction_operator": "Original sklearn PCA transform, StandardScaler transform, per-head phi @ Fortran-order W.",
+      "previous_implementation": {
+        "exists": true,
+        "source_sha256": "b27aaa9b79e6591dd6c6fd245716e4fdfffbbf4bea76d6932fdcd0eaf84203f0",
+        "maximum_score_difference": 1.6653345369377348e-16,
+        "primary_changed_policy_rows": 0,
+        "raw_exact_changed_policy_rows": 0
+      },
+      "training_model_changes": 0,
+      "correction_selected_using_evaluation_rewards": false,
+      "formal_prediction_sha256": "5b3b5c57b9d423a89b9696411472c99da5e4ca4807c93285bdf0ae9253e0a87f"
+    },
+    "sealed200": {
+      "original_prediction_operator": "Original sklearn PCA transform, StandardScaler transform, per-head phi @ Fortran-order W.",
+      "previous_implementation": {
+        "exists": false
+      },
+      "training_model_changes": 0,
+      "correction_selected_using_evaluation_rewards": false,
+      "formal_prediction_sha256": "52794c45d7b0f3998d137ee6550e27b49381134fc22d9cabafdc485f1bfa2d45"
+    }
+  },
+  "status": "PASS"
+}
