@@ -1,0 +1,198 @@
+{
+  "schema": "e19_frozen_tspo_reuse_audit_v1",
+  "status": "PASS_READ_ONLY_SOURCE_AND_FEATURE_AUDIT",
+  "sources": [
+    {
+      "path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e17_supervision_distortion_audit\\objectives.py",
+      "bytes": 11236,
+      "sha256": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+      "expected_e17_protocol_sha256": "8cdabb9ce256db8ed23811de05bd53274484795704f40bc78bfd86f8be2e79a6",
+      "match": true
+    },
+    {
+      "path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e17_supervision_distortion_audit\\e17_common.py",
+      "bytes": 3231,
+      "sha256": "a78552b426027c00753c77edc8f7dd3a974df7d61ac1319aad819acf81fedc26",
+      "expected_e17_protocol_sha256": "a78552b426027c00753c77edc8f7dd3a974df7d61ac1319aad819acf81fedc26",
+      "match": true
+    },
+    {
+      "path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e17_supervision_distortion_audit\\train_e17.py",
+      "bytes": 14683,
+      "sha256": "0cc1e79cc8b3daba0007b0ad41f39fcf373ff488f16213e9d84b1989c8c1f7e0",
+      "expected_e17_protocol_sha256": "0cc1e79cc8b3daba0007b0ad41f39fcf373ff488f16213e9d84b1989c8c1f7e0",
+      "match": true
+    },
+    {
+      "path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\public\\qualification\\e8_assets.py",
+      "bytes": 3740,
+      "sha256": "c5fc03c5dc381125844263a616a2bf8a80ee21f51490ee65109ef6876ba0b437",
+      "role": "original_feature_recipe_and_fold_loader"
+    }
+  ],
+  "fold_source_path": "E:\\语言模型组合路由\\research\\conditional_gain_20261106\\private\\FOLDS_PRIVATE.npz",
+  "fold_source_sha256": "6b433dcd2d8e6cd9938d2dd2d97261e18c3ae3d18325d7a04c6590e4d0600d50",
+  "folds": [
+    {
+      "fold": 0,
+      "history_questions": 480,
+      "evaluation_questions": 120,
+      "original_fold_indices_exact_match": true,
+      "history_evaluation_disjoint": true,
+      "input_packet_path": "E:\\语言模型组合路由\\research\\e13_partial_combination_feedback\\private\\inputs\\fold0\\INPUTS_ONLY.npz",
+      "input_packet_sha256": "02018feb47f4be4918048d65e4b0d8873bccdff3e14944febab4b052e71e1f75",
+      "fit_log_path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold0\\M4\\FIT_LOG.json",
+      "fit_log_sha256": "7406ff4f6c18dc3fdec44d93be4d333d861a7638c165692d79046926cf813914",
+      "frozen_lambda": 0.003472222222222222,
+      "lambda_multiplier": 1.0,
+      "features_shape": [
+        480,
+        17
+      ],
+      "coefficient_shape": [
+        17,
+        20
+      ],
+      "constant_feature_column": 0,
+      "constant_all_one": true,
+      "preprocessing_arrays_equal_to_original_E8_M4": true,
+      "canonical_E17_vs_frozen_uniform_score_max_error": 7.852261166547683e-14,
+      "cached_phi_reconstruction_max_errors": {
+        "H": 1.7763568394002505e-15,
+        "E": 1.3322676295501878e-15
+      },
+      "raw_embedding_score_coordinate_conversion_max_error": 1.1102230246251565e-16
+    },
+    {
+      "fold": 1,
+      "history_questions": 480,
+      "evaluation_questions": 120,
+      "original_fold_indices_exact_match": true,
+      "history_evaluation_disjoint": true,
+      "input_packet_path": "E:\\语言模型组合路由\\research\\e13_partial_combination_feedback\\private\\inputs\\fold1\\INPUTS_ONLY.npz",
+      "input_packet_sha256": "6f461ad09a9a0d4038dd2643c3f2be549afe354c75c642f1adc05e6f05e28b15",
+      "fit_log_path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold1\\M4\\FIT_LOG.json",
+      "fit_log_sha256": "f40a81d5c6d2a61b0a9da43c7667b222965883ac0c70212779bf43d4d8721e3d",
+      "frozen_lambda": 0.003472222222222222,
+      "lambda_multiplier": 1.0,
+      "features_shape": [
+        480,
+        17
+      ],
+      "coefficient_shape": [
+        17,
+        20
+      ],
+      "constant_feature_column": 0,
+      "constant_all_one": true,
+      "preprocessing_arrays_equal_to_original_E8_M4": true,
+      "canonical_E17_vs_frozen_uniform_score_max_error": 8.243540524655065e-12,
+      "cached_phi_reconstruction_max_errors": {
+        "H": 1.7763568394002505e-15,
+        "E": 2.220446049250313e-15
+      },
+      "raw_embedding_score_coordinate_conversion_max_error": 1.3877787807814457e-16
+    },
+    {
+      "fold": 2,
+      "history_questions": 480,
+      "evaluation_questions": 120,
+      "original_fold_indices_exact_match": true,
+      "history_evaluation_disjoint": true,
+      "input_packet_path": "E:\\语言模型组合路由\\research\\e13_partial_combination_feedback\\private\\inputs\\fold2\\INPUTS_ONLY.npz",
+      "input_packet_sha256": "c0cb11cf116464bae40cea24be2cc292e96f70264ffd8281ac793853f39f9c57",
+      "fit_log_path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold2\\M4\\FIT_LOG.json",
+      "fit_log_sha256": "b0ff2fde40eae3f2c8bfaefcf6aef374b3aecde5b6e9c1da2391cc53d3ecaca3",
+      "frozen_lambda": 0.003472222222222222,
+      "lambda_multiplier": 1.0,
+      "features_shape": [
+        480,
+        17
+      ],
+      "coefficient_shape": [
+        17,
+        20
+      ],
+      "constant_feature_column": 0,
+      "constant_all_one": true,
+      "preprocessing_arrays_equal_to_original_E8_M4": true,
+      "canonical_E17_vs_frozen_uniform_score_max_error": 3.7410719524675555e-13,
+      "cached_phi_reconstruction_max_errors": {
+        "H": 1.3322676295501878e-15,
+        "E": 1.7763568394002505e-15
+      },
+      "raw_embedding_score_coordinate_conversion_max_error": 1.1102230246251565e-16
+    },
+    {
+      "fold": 3,
+      "history_questions": 480,
+      "evaluation_questions": 120,
+      "original_fold_indices_exact_match": true,
+      "history_evaluation_disjoint": true,
+      "input_packet_path": "E:\\语言模型组合路由\\research\\e13_partial_combination_feedback\\private\\inputs\\fold3\\INPUTS_ONLY.npz",
+      "input_packet_sha256": "fe1c9f2219f936daa5031e53d24c2469b0fc48ae51790de56ac2a821f724fb41",
+      "fit_log_path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold3\\M4\\FIT_LOG.json",
+      "fit_log_sha256": "8bc6c898899e1fc72c502171ddd4a4c041e7c3480d9364745efd922dfcc8fc68",
+      "frozen_lambda": 0.003472222222222222,
+      "lambda_multiplier": 1.0,
+      "features_shape": [
+        480,
+        17
+      ],
+      "coefficient_shape": [
+        17,
+        20
+      ],
+      "constant_feature_column": 0,
+      "constant_all_one": true,
+      "preprocessing_arrays_equal_to_original_E8_M4": true,
+      "canonical_E17_vs_frozen_uniform_score_max_error": 3.68424019997537e-12,
+      "cached_phi_reconstruction_max_errors": {
+        "H": 2.6645352591003757e-15,
+        "E": 1.3322676295501878e-15
+      },
+      "raw_embedding_score_coordinate_conversion_max_error": 2.7755575615628914e-16
+    },
+    {
+      "fold": 4,
+      "history_questions": 480,
+      "evaluation_questions": 120,
+      "original_fold_indices_exact_match": true,
+      "history_evaluation_disjoint": true,
+      "input_packet_path": "E:\\语言模型组合路由\\research\\e13_partial_combination_feedback\\private\\inputs\\fold4\\INPUTS_ONLY.npz",
+      "input_packet_sha256": "c018dc2b07f69a3f596bf3cbc40fbffdf7cd9808e0afacbbcf8ce10584338bd4",
+      "fit_log_path": "E:\\语言模型组合路由\\research\\e8_decision_focused_combination_learning\\private\\training\\fold4\\M4\\FIT_LOG.json",
+      "fit_log_sha256": "37d3c5bc63797b0e89a3a59fc094b789d64581470161560f6aa06c5f7018b654",
+      "frozen_lambda": 0.00034722222222222224,
+      "lambda_multiplier": 0.1,
+      "features_shape": [
+        480,
+        17
+      ],
+      "coefficient_shape": [
+        17,
+        20
+      ],
+      "constant_feature_column": 0,
+      "constant_all_one": true,
+      "preprocessing_arrays_equal_to_original_E8_M4": true,
+      "canonical_E17_vs_frozen_uniform_score_max_error": 8.72575159072267e-13,
+      "cached_phi_reconstruction_max_errors": {
+        "H": 1.3322676295501878e-15,
+        "E": 1.7763568394002505e-15
+      },
+      "raw_embedding_score_coordinate_conversion_max_error": 1.3877787807814457e-16
+    }
+  ],
+  "outer_evaluation_partition_questions": 600,
+  "source_objective": "F1(W)=mean_i[max_j(2phi_i W_j-r_ij)-sum_j alpha_ij(2phi_i W_j-r_ij)]+lambda*sum(W**2)",
+  "alpha": "uniform over exact empirical mean-reward maximizers",
+  "normalization": "1/N questions, no extra1/20 factor",
+  "regularization": "positive scalar times340-dimensional identity, including the constant-feature coefficients",
+  "preprocessing": "PCA16 full solver fit inside H480, then StandardScaler fit to its projected H480, then prepend1",
+  "new_real_model_fits": 0,
+  "new_llm_calls": 0,
+  "fresh_reward_reads": 0,
+  "sealed_reward_reads": 0,
+  "weight_coordinate_rule": "Frozen W multiplies[1,((e-pca_mean)@pca_components.T-scaler_mean)/scaler_scale]. A raw embedding equivalent is raw_weight=C.T@(W[1:]/scale), raw_bias=W[0]-(pca_mean@C.T+scaler_mean)@(W[1:]/scale). The L2 penalty remains on standardized W, not raw_weight."
+}

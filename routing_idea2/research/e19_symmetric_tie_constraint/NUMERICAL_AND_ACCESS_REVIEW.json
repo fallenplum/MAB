@@ -1,0 +1,300 @@
+{
+  "schema": "e19_independent_numerical_and_access_review_v1",
+  "status": "PASS_CURRENT_RUN_WITH_HISTORICAL_NUMERICAL_DIFFERENCES",
+  "source_sha256s": {
+    "run_e19.py": "11021218252e2dbef9f2cf9ef07821f0ef633fe71d60dd2a322166c002cbd33f",
+    "weighted_objectives.py": "019c505c4a5ab2f90e532eda2842546c444c6480a182504f56c935f3527dd4da"
+  },
+  "formal_fit_logs_reviewed": 12,
+  "main_fit_logs": 10,
+  "reverse_qualification_fit_logs": 2,
+  "all_original_training_rows_retained": true,
+  "normalization_count": 480,
+  "all_bias_coefficients_penalized": true,
+  "all_endpoint_inequalities_hold": true,
+  "fold_checks": [
+    {
+      "fold": 0,
+      "source_rows480_before_fits": true,
+      "evaluation_rows120_after_predictions_frozen": true,
+      "header_only_skips_other_reward_rows": true,
+      "F0_B_minus_F0_C": 0.02714682239803623,
+      "JT_C_minus_JT_B": 0.10912792882227891,
+      "endpoint_inequality_holds": true,
+      "old_E17_uniform_centered_score_recovery_error": 0.0,
+      "old_E17_scores_uniform_near_policy_recovery_error": 0.0
+    },
+    {
+      "fold": 1,
+      "source_rows480_before_fits": true,
+      "evaluation_rows120_after_predictions_frozen": true,
+      "header_only_skips_other_reward_rows": true,
+      "F0_B_minus_F0_C": 0.0318715108406008,
+      "JT_C_minus_JT_B": 0.09623028928484895,
+      "endpoint_inequality_holds": true,
+      "old_E17_uniform_centered_score_recovery_error": 2.5100741510850674e-08,
+      "old_E17_scores_uniform_near_policy_recovery_error": 0.07142857142857142
+    },
+    {
+      "fold": 2,
+      "source_rows480_before_fits": true,
+      "evaluation_rows120_after_predictions_frozen": true,
+      "header_only_skips_other_reward_rows": true,
+      "F0_B_minus_F0_C": 0.03011301856866269,
+      "JT_C_minus_JT_B": 0.09171551763168043,
+      "endpoint_inequality_holds": true,
+      "old_E17_uniform_centered_score_recovery_error": 0.0,
+      "old_E17_scores_uniform_near_policy_recovery_error": 0.0
+    },
+    {
+      "fold": 3,
+      "source_rows480_before_fits": true,
+      "evaluation_rows120_after_predictions_frozen": true,
+      "header_only_skips_other_reward_rows": true,
+      "F0_B_minus_F0_C": 0.02572827275346007,
+      "JT_C_minus_JT_B": 0.08673163846640955,
+      "endpoint_inequality_holds": true,
+      "old_E17_uniform_centered_score_recovery_error": 4.830602609870796e-07,
+      "old_E17_scores_uniform_near_policy_recovery_error": 0.0
+    },
+    {
+      "fold": 4,
+      "source_rows480_before_fits": true,
+      "evaluation_rows120_after_predictions_frozen": true,
+      "header_only_skips_other_reward_rows": true,
+      "F0_B_minus_F0_C": 0.02675911507875725,
+      "JT_C_minus_JT_B": 0.10210832754928466,
+      "endpoint_inequality_holds": true,
+      "old_E17_uniform_centered_score_recovery_error": 0.0,
+      "old_E17_scores_uniform_near_policy_recovery_error": 0.0
+    }
+  ],
+  "fit_checks": [
+    {
+      "fold": 0,
+      "branch": "B",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 3.089317690552207e-11,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 244,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 0,
+      "branch": "C",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 3.3728575488112256e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 244,
+      "effective_weight_sum": 236.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 0,
+      "branch": "B_reverse",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 3.090461220267571e-11,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 244,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 0,
+      "branch": "C_reverse",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 3.369832191069122e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 244,
+      "effective_weight_sum": 236.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 1,
+      "branch": "B",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 2.323807812842915e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 240,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 1,
+      "branch": "C",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 4.29253854683509e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 240,
+      "effective_weight_sum": 240.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 2,
+      "branch": "B",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 1.8214540986605243e-11,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 245,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 2,
+      "branch": "C",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 4.8377524208831346e-11,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 245,
+      "effective_weight_sum": 235.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 3,
+      "branch": "B",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 4.252820318129125e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 241,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 3,
+      "branch": "C",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 6.13289974360498e-12,
+      "regularization": 0.003472222222222222,
+      "N": 480,
+      "all_tied_questions": 241,
+      "effective_weight_sum": 239.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 4,
+      "branch": "B",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 2.601396875689943e-11,
+      "regularization": 0.00034722222222222224,
+      "N": 480,
+      "all_tied_questions": 254,
+      "effective_weight_sum": 480.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    },
+    {
+      "fold": 4,
+      "branch": "C",
+      "independent_objective_max_error": 0.0,
+      "maximum_numerical_residual": 3.063030384886645e-11,
+      "regularization": 0.00034722222222222224,
+      "N": 480,
+      "all_tied_questions": 254,
+      "effective_weight_sum": 226.0,
+      "coefficient_dimensions": [
+        17,
+        20
+      ]
+    }
+  ],
+  "OOF_question_partition": 600,
+  "coupling_joint_marginal_max_error": 3.3306690738754696e-16,
+  "independent_expected_corrections": 89.64682539682539,
+  "independent_expected_damages": 63.69047619047619,
+  "independent_expected_net": 25.95634920634921,
+  "strict_both_unique_questions": 203,
+  "strict_changed_questions": 150,
+  "strict_integer_corrections": 38,
+  "strict_integer_damages": 19,
+  "probabilities_definition": "uniform over scores>=rowmax-1e-8; strict iff top1-top2>1e-8",
+  "inference_numeric_argmax_usage": "Only for the strict-unique diagnostic; main expected service uses all numerical-max probabilities",
+  "notes": [
+    "Fractional correction/damage totals use the declared maximal same-action-overlap coupling; marginal policy gains do not depend on that coupling.",
+    "Old E17 recovery is a coefficient/centered-score and common-near-decoder check. E19 uniformly decodes numerical ties, while old E17 semantic min-ID policy summaries are kept unchanged.",
+    "Review decoded train600 reward values only after all12 formal fits and prediction freezes had completed.",
+    "The specified1e-7 reverse-order qualification passes for the current solver. Historical E17 centered-score recovery exceeds that scale in fold3, and the same1e-8 decoder changes near-tie supports for8 evaluation questions in fold1. Exact old deployment recovery is not asserted."
+  ],
+  "review_added_real_fits": 0,
+  "review_added_bootstrap_runs": 0,
+  "review_added_llm_calls": 0,
+  "review_fresh_or_sealed_reward_reads": 0,
+  "existing_source_or_result_files_modified": 0,
+  "historical_near_policy_probability_changed_questions": 8,
+  "historical_centered_score_recovery_over_1e_minus7_folds": [
+    3
+  ],
+  "historical_review_file": "HISTORICAL_NUMERICAL_RECOVERY.json",
+  "saved_bootstrap_review": {
+    "checks": [
+      "gsm8k_first_three_explicit_decoder_policy_seed_cluster_draws_match",
+      "bbh_first_three_explicit_decoder_policy_seed_cluster_draws_match",
+      "primary_and_raw_sensitivity_intervals_recompute_from_saved_paired_draws",
+      "203_strict_unique_plus397_numerical_tie_partition_recovers_primary_gain"
+    ],
+    "first_draws_reconstructed_per_task": 3,
+    "formal_bootstrap_repetitions_repeated": 0,
+    "primary_interval_pp": [
+      0.19069113756613817,
+      2.7222387566137534
+    ],
+    "raw_sensitivity_interval_pp": [
+      -0.33333333333333737,
+      2.3333333333333277
+    ],
+    "partition": {
+      "strict_both_unique": {
+        "questions": 203,
+        "primary_gain_contribution_pp": 1.0555555555555554,
+        "net_expected_events": 19.0
+      },
+      "numerical_tie_in_at_least_one": {
+        "questions": 397,
+        "primary_gain_contribution_pp": 0.3864638447971816,
+        "net_expected_events": 6.956349206349266
+      }
+    }
+  },
+  "analysis_source_sha256": "6f5ae767670f78b6b5e111db9d9c7f1ce30a6fa22fc92e2d4a393f0c630b1f37"
+}

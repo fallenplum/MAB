@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SYNTHETIC_READER_AND_POLICY",
+  "checks": 4,
+  "decoded_real_reward_values": 0,
+  "new_real_fits": 0,
+  "runner_source_sha256": "11021218252e2dbef9f2cf9ef07821f0ef633fe71d60dd2a322166c002cbd33f"
+}

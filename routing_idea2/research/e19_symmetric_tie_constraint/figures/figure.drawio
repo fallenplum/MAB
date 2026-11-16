@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" version="26.0.0" type="device">
+  <diagram name="E17-E18-E19 constraint evidence" id="evidence-scene">
+    <mxGraphModel dx="1800" dy="1400" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="rounded=1;arcSize=10;html=1;fillColor=#F4F7FA;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="160" width="1680" height="330" />
+        </mxCell>
+        <mxCell id="3" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="2">
+          <mxGeometry as="geometry" x="30" y="90" width="430" height="180" />
+        </mxCell>
+        <mxCell id="4" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="2">
+          <mxGeometry as="geometry" x="630" y="90" width="430" height="180" />
+        </mxCell>
+        <mxCell id="5" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="2">
+          <mxGeometry as="geometry" x="1230" y="90" width="420" height="180" />
+        </mxCell>
+        <mxCell id="6" value="" style="rounded=1;arcSize=10;html=1;fillColor=#F4F7FA;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="520" width="1680" height="340" />
+        </mxCell>
+        <mxCell id="7" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="6">
+          <mxGeometry as="geometry" x="30" y="90" width="430" height="180" />
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="6">
+          <mxGeometry as="geometry" x="630" y="90" width="430" height="180" />
+        </mxCell>
+        <mxCell id="9" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="6">
+          <mxGeometry as="geometry" x="1230" y="90" width="420" height="180" />
+        </mxCell>
+        <mxCell id="10" value="" style="rounded=1;arcSize=10;html=1;fillColor=#F4F7FA;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="890" width="1680" height="380" />
+        </mxCell>
+        <mxCell id="11" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="30" y="110" width="300" height="170" />
+        </mxCell>
+        <mxCell id="12" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="460" y="110" width="300" height="170" />
+        </mxCell>
+        <mxCell id="13" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="890" y="110" width="330" height="170" />
+        </mxCell>
+        <mxCell id="14" value="" style="rounded=1;arcSize=10;html=1;fillColor=#FFFFFF;strokeColor=#B7C8D8;strokeWidth=2;container=1;pointerEvents=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="1350" y="110" width="300" height="170" />
+        </mxCell>
+        <mxCell id="15" value="From tied rewards to training constraints" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=40;fontColor=#162B43;fontStyle=1;align=left;verticalAlign=middle;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="28" width="1680" height="55" />
+        </mxCell>
+        <mxCell id="16" value="Six frozen models  |  20 three-member teams  |  Fixed cached feedback  |  Shared linear head" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=24;fontColor=#506276;fontStyle=0;align=left;verticalAlign=middle;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="92" width="1680" height="35" />
+        </mxCell>
+        <mxCell id="17" value="Historical evidence separates behavior and quality" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=29;fontColor=#225E8F;fontStyle=1;align=left;verticalAlign=middle;spacing=0;" vertex="1" parent="2">
+          <mxGeometry as="geometry" x="30" y="20" width="1620" height="40" />
+        </mxCell>
+        <mxCell id="18" value="E17 champion intervention" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=23;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="3">
+          <mxGeometry as="geometry" x="10" y="14" width="410" height="34" />
+        </mxCell>
+        <mxCell id="19" value="100 renumberings on 600 items" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="3">
+          <mxGeometry as="geometry" x="10" y="60" width="410" height="28" />
+        </mxCell>
+        <mxCell id="20" value="SPO team agreement 6.135%" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="3">
+          <mxGeometry as="geometry" x="10" y="91" width="410" height="28" />
+        </mxCell>
+        <mxCell id="21" value="Ridge / uniform TSPO 100%" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="3">
+          <mxGeometry as="geometry" x="10" y="122" width="410" height="28" />
+        </mxCell>
+        <mxCell id="22" value="E17 inference control" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=23;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="4">
+          <mxGeometry as="geometry" x="10" y="14" width="410" height="34" />
+        </mxCell>
+        <mxCell id="23" value="TSPO 397 / 600 near ties" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="4">
+          <mxGeometry as="geometry" x="10" y="60" width="410" height="28" />
+        </mxCell>
+        <mxCell id="24" value="Semantic priority 100% agreement" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="4">
+          <mxGeometry as="geometry" x="10" y="91" width="410" height="28" />
+        </mxCell>
+        <mxCell id="25" value="Numeric near-tie priority 37.308%" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="4">
+          <mxGeometry as="geometry" x="10" y="122" width="410" height="28" />
+        </mxCell>
+        <mxCell id="26" value="E18 frozen quality evaluation" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="5">
+          <mxGeometry as="geometry" x="10" y="14" width="400" height="34" />
+        </mxCell>
+        <mxCell id="27" value="2,998 scorable / 3,000 requested" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="5">
+          <mxGeometry as="geometry" x="10" y="60" width="400" height="28" />
+        </mxCell>
+        <mxCell id="28" value="TSPO − SPO +0.01175 pp" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="5">
+          <mxGeometry as="geometry" x="10" y="91" width="400" height="28" />
+        </mxCell>
+        <mxCell id="29" value="Corrected 377 / damaged 376" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="5">
+          <mxGeometry as="geometry" x="10" y="122" width="400" height="28" />
+        </mxCell>
+        <mxCell id="30" value="E18.1 marginal 95% interval [−0.667,+0.690] pp; post-result supplement on the frozen evaluation." style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="2">
+          <mxGeometry as="geometry" x="30" y="285" width="1620" height="28" />
+        </mxCell>
+        <mxCell id="31" value="Two constructions give different falsifiable predictions" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=29;fontColor=#225E8F;fontStyle=1;align=left;verticalAlign=middle;spacing=0;" vertex="1" parent="6">
+          <mxGeometry as="geometry" x="30" y="20" width="1620" height="40" />
+        </mxCell>
+        <mxCell id="32" value="A1 finite repeated feedback" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="7">
+          <mxGeometry as="geometry" x="10" y="14" width="410" height="34" />
+        </mxCell>
+        <mxCell id="33" value="t=(1−a)^L" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="7">
+          <mxGeometry as="geometry" x="10" y="60" width="410" height="28" />
+        </mxCell>
+        <mxCell id="34" value="d*=0 exactly when tp ≥ 1−t" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="7">
+          <mxGeometry as="geometry" x="10" y="91" width="410" height="28" />
+        </mxCell>
+        <mxCell id="35" value="Fixed L retains the same target risk" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="7">
+          <mxGeometry as="geometry" x="10" y="122" width="410" height="28" />
+        </mxCell>
+        <mxCell id="36" value="A2 symmetric constraint strength" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="8">
+          <mxGeometry as="geometry" x="10" y="14" width="410" height="34" />
+        </mxCell>
+        <mxCell id="37" value="T truly tied; shared parameters" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="8">
+          <mxGeometry as="geometry" x="10" y="60" width="410" height="28" />
+        </mxCell>
+        <mxCell id="38" value="d_X2=(−46+51β)/600" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="8">
+          <mxGeometry as="geometry" x="10" y="91" width="410" height="28" />
+        </mxCell>
+        <mxCell id="39" value="Strict decision crosses at 46/51" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="8">
+          <mxGeometry as="geometry" x="10" y="122" width="410" height="28" />
+        </mxCell>
+        <mxCell id="40" value="Explicit construction boundary" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="9">
+          <mxGeometry as="geometry" x="10" y="14" width="400" height="34" />
+        </mxCell>
+        <mxCell id="41" value="λ=60 belongs to this 3D example" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="9">
+          <mxGeometry as="geometry" x="10" y="60" width="400" height="28" />
+        </mxCell>
+        <mxCell id="42" value="Reward 1 → 0.95 at tie → 0.9" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="9">
+          <mxGeometry as="geometry" x="10" y="91" width="400" height="28" />
+        </mxCell>
+        <mxCell id="43" value="Real W penalty inherited by fold" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="9">
+          <mxGeometry as="geometry" x="10" y="122" width="400" height="28" />
+        </mxCell>
+        <mxCell id="44" value="Directional champion preference and direction-neutral score contraction are distinct mechanisms." style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="6">
+          <mxGeometry as="geometry" x="30" y="295" width="1620" height="28" />
+        </mxCell>
+        <mxCell id="45" value="E19 isolates the fully tied-row term with γ=0" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=29;fontColor=#225E8F;fontStyle=1;align=left;verticalAlign=middle;spacing=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="30" y="20" width="1620" height="40" />
+        </mxCell>
+        <mxCell id="46" value="B retains constraint" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="11">
+          <mxGeometry as="geometry" x="10" y="14" width="280" height="34" />
+        </mxCell>
+        <mxCell id="47" value="β=1" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="11">
+          <mxGeometry as="geometry" x="10" y="60" width="280" height="28" />
+        </mxCell>
+        <mxCell id="48" value="Uniform empirical champions" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="11">
+          <mxGeometry as="geometry" x="10" y="91" width="280" height="28" />
+        </mxCell>
+        <mxCell id="49" value="Original denominator N=480" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="11">
+          <mxGeometry as="geometry" x="10" y="122" width="280" height="28" />
+        </mxCell>
+        <mxCell id="50" value="C disables tied-row term" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="12">
+          <mxGeometry as="geometry" x="10" y="14" width="280" height="34" />
+        </mxCell>
+        <mxCell id="51" value="β=0" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="12">
+          <mxGeometry as="geometry" x="10" y="60" width="280" height="28" />
+        </mxCell>
+        <mxCell id="52" value="Same labels on all other rows" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="12">
+          <mxGeometry as="geometry" x="10" y="91" width="280" height="28" />
+        </mxCell>
+        <mxCell id="53" value="Same original L2, including bias" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="12">
+          <mxGeometry as="geometry" x="10" y="122" width="280" height="28" />
+        </mxCell>
+        <mxCell id="54" value="P0 implementation gate" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="13">
+          <mxGeometry as="geometry" x="10" y="14" width="310" height="34" />
+        </mxCell>
+        <mxCell id="55" value="4 fits; all checks PASS" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="13">
+          <mxGeometry as="geometry" x="10" y="60" width="310" height="28" />
+        </mxCell>
+        <mxCell id="56" value="Mapped policy error 0" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="13">
+          <mxGeometry as="geometry" x="10" y="91" width="310" height="28" />
+        </mxCell>
+        <mxCell id="57" value="0.02715 ≤ 0.10913" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="13">
+          <mxGeometry as="geometry" x="10" y="122" width="310" height="28" />
+        </mxCell>
+        <mxCell id="58" value="P1 uniform τ=1e−8" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="14">
+          <mxGeometry as="geometry" x="10" y="14" width="280" height="34" />
+        </mxCell>
+        <mxCell id="59" value="150 strict changes / 600" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="14">
+          <mxGeometry as="geometry" x="10" y="60" width="280" height="28" />
+        </mxCell>
+        <mxCell id="60" value="C−B +1.442 pp" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="14">
+          <mxGeometry as="geometry" x="10" y="91" width="280" height="28" />
+        </mxCell>
+        <mxCell id="61" value="95% CI [0.191, 2.722] pp" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="14">
+          <mxGeometry as="geometry" x="10" y="122" width="280" height="28" />
+        </mxCell>
+        <mxCell id="62" value="versus" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="350" y="180" width="90" height="30" />
+        </mxCell>
+        <mxCell id="63" value="Strict-change contribution +1.056 pp (38 corrected / 19 damaged); numerical-tie region +0.386 pp" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=23;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="30" y="300" width="1620" height="34" />
+        </mxCell>
+        <mxCell id="64" value="Raw exact-argmax diagnostic +1.000 pp, 95% CI [−0.333,+2.333] pp; the numerical service definition matters." style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=21;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="10">
+          <mxGeometry as="geometry" x="30" y="340" width="1620" height="28" />
+        </mxCell>
+        <mxCell id="65" value="P0 + P1 completed with 10 main and 2 mapping fits on train600 OOF development; additional LLM calls 0." style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#162B43;fontStyle=1;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1300" width="1680" height="34" />
+        </mxCell>
+        <mxCell id="66" value="Independent-confirmation design remains a later stage under a separate frozen protocol." style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=22;fontColor=#506276;fontStyle=0;align=center;verticalAlign=middle;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1346" width="1680" height="28" />
+        </mxCell>
+        <mxCell id="67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="2" source="3" target="4">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="2" source="4" target="5">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="6" source="8" target="9">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="11" target="13">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="240" y="980" />
+              <mxPoint x="1115" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="10" source="12" target="13">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#225E8F;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="10" source="13" target="14">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

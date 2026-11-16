@@ -1,0 +1,220 @@
+{
+  "questions": 120,
+  "B_task_macro_accuracy": 0.8700396825396823,
+  "C_task_macro_accuracy": 0.8694444444444445,
+  "C_minus_B_pp": -0.059523809523796045,
+  "expected_corrections": 17.57142857142857,
+  "expected_damages": 17.785714285714285,
+  "expected_net_corrections": -0.2142857142857144,
+  "expected_counts_are_fractional_coupling_expectations": true,
+  "strict_both_unique_questions": 32,
+  "strict_changed_questions": 29,
+  "strict_integer_corrections": 6,
+  "strict_integer_damages": 9,
+  "strict_integer_net_corrections": -3,
+  "by_task": {
+    "gsm8k": {
+      "questions": 60,
+      "B_accuracy": 0.921031746031746,
+      "C_accuracy": 0.9166666666666666,
+      "gain_pp": -0.43650793650792125
+    },
+    "bbh": {
+      "questions": 60,
+      "B_accuracy": 0.8190476190476188,
+      "C_accuracy": 0.8222222222222222,
+      "gain_pp": 0.31746031746032916
+    }
+  },
+  "by_generation_seed": {
+    "42": {
+      "B_accuracy": 0.8797619047619047,
+      "C_accuracy": 0.8666666666666667,
+      "gain_pp": -1.3095238095237962
+    },
+    "137": {
+      "B_accuracy": 0.8839285714285713,
+      "C_accuracy": 0.8666666666666667,
+      "gain_pp": -1.7261904761904627
+    },
+    "2024": {
+      "B_accuracy": 0.8464285714285713,
+      "C_accuracy": 0.875,
+      "gain_pp": 2.85714285714287
+    }
+  },
+  "bbh_subtasks": {
+    "boolean_expressions": {
+      "questions": 3,
+      "B_accuracy": 1.0,
+      "C_accuracy": 1.0,
+      "gain_pp": 7.401486830834376e-15
+    },
+    "causal_judgement": {
+      "questions": 2,
+      "B_accuracy": 0.49999999999999983,
+      "C_accuracy": 0.5,
+      "gain_pp": 1.1102230246251565e-14
+    },
+    "date_understanding": {
+      "questions": 2,
+      "B_accuracy": 1.0,
+      "C_accuracy": 1.0,
+      "gain_pp": 1.1102230246251565e-14
+    },
+    "disambiguation_qa": {
+      "questions": 2,
+      "B_accuracy": 0.5,
+      "C_accuracy": 0.5,
+      "gain_pp": 0.0
+    },
+    "dyck_languages": {
+      "questions": 2,
+      "B_accuracy": 0.3333333333333333,
+      "C_accuracy": 0.5,
+      "gain_pp": 16.666666666666664
+    },
+    "formal_fallacies": {
+      "questions": 3,
+      "B_accuracy": 0.8888888888888888,
+      "C_accuracy": 0.7777777777777778,
+      "gain_pp": -11.111111111111104
+    },
+    "geometric_shapes": {
+      "questions": 3,
+      "B_accuracy": 0.619047619047619,
+      "C_accuracy": 0.6666666666666666,
+      "gain_pp": 4.761904761904775
+    },
+    "hyperbaton": {
+      "questions": 2,
+      "B_accuracy": 0.9523809523809524,
+      "C_accuracy": 1.0,
+      "gain_pp": 4.761904761904771
+    },
+    "logical_deduction_five_objects": {
+      "questions": 3,
+      "B_accuracy": 0.9682539682539679,
+      "C_accuracy": 0.8888888888888888,
+      "gain_pp": -7.936507936507915
+    },
+    "logical_deduction_seven_objects": {
+      "questions": 2,
+      "B_accuracy": 0.9999999999999999,
+      "C_accuracy": 1.0,
+      "gain_pp": 2.220446049250313e-14
+    },
+    "logical_deduction_three_objects": {
+      "questions": 2,
+      "B_accuracy": 0.9999999999999999,
+      "C_accuracy": 1.0,
+      "gain_pp": 2.220446049250313e-14
+    },
+    "movie_recommendation": {
+      "questions": 2,
+      "B_accuracy": 0.8928571428571428,
+      "C_accuracy": 1.0,
+      "gain_pp": 10.71428571428572
+    },
+    "multistep_arithmetic_two": {
+      "questions": 2,
+      "B_accuracy": 0.9761904761904762,
+      "C_accuracy": 1.0,
+      "gain_pp": 2.380952380952402
+    },
+    "navigate": {
+      "questions": 2,
+      "B_accuracy": 0.9999999999999999,
+      "C_accuracy": 1.0,
+      "gain_pp": 2.220446049250313e-14
+    },
+    "object_counting": {
+      "questions": 2,
+      "B_accuracy": 0.6071428571428571,
+      "C_accuracy": 0.8333333333333334,
+      "gain_pp": 22.619047619047628
+    },
+    "penguins_in_a_table": {
+      "questions": 2,
+      "B_accuracy": 0.6309523809523809,
+      "C_accuracy": 0.6666666666666666,
+      "gain_pp": 3.571428571428581
+    },
+    "reasoning_about_colored_objects": {
+      "questions": 2,
+      "B_accuracy": 0.7857142857142856,
+      "C_accuracy": 1.0,
+      "gain_pp": 21.428571428571438
+    },
+    "ruin_names": {
+      "questions": 3,
+      "B_accuracy": 0.4444444444444444,
+      "C_accuracy": 0.2222222222222222,
+      "gain_pp": -22.22222222222222
+    },
+    "salient_translation_error_detection": {
+      "questions": 2,
+      "B_accuracy": 0.869047619047619,
+      "C_accuracy": 1.0,
+      "gain_pp": 13.095238095238113
+    },
+    "snarks": {
+      "questions": 2,
+      "B_accuracy": 0.8333333333333334,
+      "C_accuracy": 0.8333333333333334,
+      "gain_pp": 0.0
+    },
+    "sports_understanding": {
+      "questions": 2,
+      "B_accuracy": 0.619047619047619,
+      "C_accuracy": 0.5,
+      "gain_pp": -11.904761904761891
+    },
+    "temporal_sequences": {
+      "questions": 3,
+      "B_accuracy": 0.9523809523809521,
+      "C_accuracy": 1.0,
+      "gain_pp": 4.761904761904781
+    },
+    "tracking_shuffled_objects_five_objects": {
+      "questions": 2,
+      "B_accuracy": 0.8333333333333334,
+      "C_accuracy": 1.0,
+      "gain_pp": 16.666666666666682
+    },
+    "tracking_shuffled_objects_seven_objects": {
+      "questions": 2,
+      "B_accuracy": 0.9642857142857141,
+      "C_accuracy": 0.8333333333333334,
+      "gain_pp": -13.095238095238074
+    },
+    "tracking_shuffled_objects_three_objects": {
+      "questions": 2,
+      "B_accuracy": 0.9761904761904762,
+      "C_accuracy": 0.8333333333333334,
+      "gain_pp": -14.285714285714265
+    },
+    "web_of_lies": {
+      "questions": 2,
+      "B_accuracy": 1.0,
+      "C_accuracy": 1.0,
+      "gain_pp": 0.0
+    },
+    "word_sorting": {
+      "questions": 2,
+      "B_accuracy": 0.9880952380952381,
+      "C_accuracy": 0.8333333333333334,
+      "gain_pp": -15.476190476190466
+    }
+  },
+  "B_numerical_tied_questions": 88,
+  "C_numerical_tied_questions": 0,
+  "B_bbh_subtask_macro_accuracy": 0.8198118753674307,
+  "C_bbh_subtask_macro_accuracy": 0.8292181069958846,
+  "fold": 4,
+  "coupling_net_identity_max_error": 2.220446049250313e-16,
+  "raw_exact_B_accuracy": 0.875,
+  "raw_exact_C_accuracy": 0.8694444444444445,
+  "frozen_prediction_receipt_sha256": "e739c3f3e64a20ec63241e407c17efe6ee19e6ded139085c4682a754efff9ec8",
+  "bootstrap_completed": false
+}

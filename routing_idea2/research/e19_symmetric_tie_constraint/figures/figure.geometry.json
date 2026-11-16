@@ -1,0 +1,931 @@
+{
+  "boxes": [
+    {
+      "name": "history",
+      "x": 60,
+      "y": 160,
+      "width": 1680,
+      "height": 330,
+      "fill": "#F4F7FA",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "root"
+    },
+    {
+      "name": "renumber",
+      "x": 90,
+      "y": 250,
+      "width": 430,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "history"
+    },
+    {
+      "name": "symmetry",
+      "x": 690,
+      "y": 250,
+      "width": 430,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "history"
+    },
+    {
+      "name": "quality",
+      "x": 1290,
+      "y": 250,
+      "width": 420,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "history"
+    },
+    {
+      "name": "theory",
+      "x": 60,
+      "y": 520,
+      "width": 1680,
+      "height": 340,
+      "fill": "#F4F7FA",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "root"
+    },
+    {
+      "name": "a1",
+      "x": 90,
+      "y": 610,
+      "width": 430,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "theory"
+    },
+    {
+      "name": "a2",
+      "x": 690,
+      "y": 610,
+      "width": 430,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "theory"
+    },
+    {
+      "name": "boundary",
+      "x": 1290,
+      "y": 610,
+      "width": 420,
+      "height": 180,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "theory"
+    },
+    {
+      "name": "pilot",
+      "x": 60,
+      "y": 890,
+      "width": 1680,
+      "height": 380,
+      "fill": "#F4F7FA",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "root"
+    },
+    {
+      "name": "b",
+      "x": 90,
+      "y": 1000,
+      "width": 300,
+      "height": 170,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "pilot"
+    },
+    {
+      "name": "c",
+      "x": 520,
+      "y": 1000,
+      "width": 300,
+      "height": 170,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "pilot"
+    },
+    {
+      "name": "qualification",
+      "x": 950,
+      "y": 1000,
+      "width": 330,
+      "height": 170,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "pilot"
+    },
+    {
+      "name": "results",
+      "x": 1410,
+      "y": 1000,
+      "width": 300,
+      "height": 170,
+      "fill": "#FFFFFF",
+      "stroke": "#B7C8D8",
+      "radius": 10,
+      "parent": "pilot"
+    }
+  ],
+  "labels": [
+    {
+      "name": "title",
+      "x": 60,
+      "y": 28,
+      "width": 1680,
+      "height": 55,
+      "text": "From tied rewards to training constraints",
+      "size": 40,
+      "bold": true,
+      "color": "#162B43",
+      "align": "left",
+      "parent": "root"
+    },
+    {
+      "name": "setting",
+      "x": 60,
+      "y": 92,
+      "width": 1680,
+      "height": 35,
+      "text": "Six frozen models  |  20 three-member teams  |  Fixed cached feedback  |  Shared linear head",
+      "size": 24,
+      "bold": false,
+      "color": "#506276",
+      "align": "left",
+      "parent": "root"
+    },
+    {
+      "name": "history_header",
+      "x": 90,
+      "y": 180,
+      "width": 1620,
+      "height": 40,
+      "text": "Historical evidence separates behavior and quality",
+      "size": 29,
+      "bold": true,
+      "color": "#225E8F",
+      "align": "left",
+      "parent": "history"
+    },
+    {
+      "name": "renumber_title",
+      "x": 100,
+      "y": 264,
+      "width": 410,
+      "height": 34,
+      "text": "E17 champion intervention",
+      "size": 23,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "renumber"
+    },
+    {
+      "name": "renumber_line0",
+      "x": 100,
+      "y": 310,
+      "width": 410,
+      "height": 28,
+      "text": "100 renumberings on 600 items",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "renumber"
+    },
+    {
+      "name": "renumber_line1",
+      "x": 100,
+      "y": 341,
+      "width": 410,
+      "height": 28,
+      "text": "SPO team agreement 6.135%",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "renumber"
+    },
+    {
+      "name": "renumber_line2",
+      "x": 100,
+      "y": 372,
+      "width": 410,
+      "height": 28,
+      "text": "Ridge / uniform TSPO 100%",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "renumber"
+    },
+    {
+      "name": "symmetry_title",
+      "x": 700,
+      "y": 264,
+      "width": 410,
+      "height": 34,
+      "text": "E17 inference control",
+      "size": 23,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "symmetry"
+    },
+    {
+      "name": "symmetry_line0",
+      "x": 700,
+      "y": 310,
+      "width": 410,
+      "height": 28,
+      "text": "TSPO 397 / 600 near ties",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "symmetry"
+    },
+    {
+      "name": "symmetry_line1",
+      "x": 700,
+      "y": 341,
+      "width": 410,
+      "height": 28,
+      "text": "Semantic priority 100% agreement",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "symmetry"
+    },
+    {
+      "name": "symmetry_line2",
+      "x": 700,
+      "y": 372,
+      "width": 410,
+      "height": 28,
+      "text": "Numeric near-tie priority 37.308%",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "symmetry"
+    },
+    {
+      "name": "quality_title",
+      "x": 1300,
+      "y": 264,
+      "width": 400,
+      "height": 34,
+      "text": "E18 frozen quality evaluation",
+      "size": 22,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "quality"
+    },
+    {
+      "name": "quality_line0",
+      "x": 1300,
+      "y": 310,
+      "width": 400,
+      "height": 28,
+      "text": "2,998 scorable / 3,000 requested",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "quality"
+    },
+    {
+      "name": "quality_line1",
+      "x": 1300,
+      "y": 341,
+      "width": 400,
+      "height": 28,
+      "text": "TSPO − SPO +0.01175 pp",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "quality"
+    },
+    {
+      "name": "quality_line2",
+      "x": 1300,
+      "y": 372,
+      "width": 400,
+      "height": 28,
+      "text": "Corrected 377 / damaged 376",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "quality"
+    },
+    {
+      "name": "history_scope",
+      "x": 90,
+      "y": 445,
+      "width": 1620,
+      "height": 28,
+      "text": "E18.1 marginal 95% interval [−0.667,+0.690] pp; post-result supplement on the frozen evaluation.",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "history"
+    },
+    {
+      "name": "theory_header",
+      "x": 90,
+      "y": 540,
+      "width": 1620,
+      "height": 40,
+      "text": "Two constructions give different falsifiable predictions",
+      "size": 29,
+      "bold": true,
+      "color": "#225E8F",
+      "align": "left",
+      "parent": "theory"
+    },
+    {
+      "name": "a1_title",
+      "x": 100,
+      "y": 624,
+      "width": 410,
+      "height": 34,
+      "text": "A1 finite repeated feedback",
+      "size": 22,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "a1"
+    },
+    {
+      "name": "a1_line0",
+      "x": 100,
+      "y": 670,
+      "width": 410,
+      "height": 28,
+      "text": "t=(1−a)^L",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a1"
+    },
+    {
+      "name": "a1_line1",
+      "x": 100,
+      "y": 701,
+      "width": 410,
+      "height": 28,
+      "text": "d*=0 exactly when tp ≥ 1−t",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a1"
+    },
+    {
+      "name": "a1_line2",
+      "x": 100,
+      "y": 732,
+      "width": 410,
+      "height": 28,
+      "text": "Fixed L retains the same target risk",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a1"
+    },
+    {
+      "name": "a2_title",
+      "x": 700,
+      "y": 624,
+      "width": 410,
+      "height": 34,
+      "text": "A2 symmetric constraint strength",
+      "size": 22,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "a2"
+    },
+    {
+      "name": "a2_line0",
+      "x": 700,
+      "y": 670,
+      "width": 410,
+      "height": 28,
+      "text": "T truly tied; shared parameters",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a2"
+    },
+    {
+      "name": "a2_line1",
+      "x": 700,
+      "y": 701,
+      "width": 410,
+      "height": 28,
+      "text": "d_X2=(−46+51β)/600",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a2"
+    },
+    {
+      "name": "a2_line2",
+      "x": 700,
+      "y": 732,
+      "width": 410,
+      "height": 28,
+      "text": "Strict decision crosses at 46/51",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "a2"
+    },
+    {
+      "name": "boundary_title",
+      "x": 1300,
+      "y": 624,
+      "width": 400,
+      "height": 34,
+      "text": "Explicit construction boundary",
+      "size": 22,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "boundary"
+    },
+    {
+      "name": "boundary_line0",
+      "x": 1300,
+      "y": 670,
+      "width": 400,
+      "height": 28,
+      "text": "λ=60 belongs to this 3D example",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "boundary"
+    },
+    {
+      "name": "boundary_line1",
+      "x": 1300,
+      "y": 701,
+      "width": 400,
+      "height": 28,
+      "text": "Reward 1 → 0.95 at tie → 0.9",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "boundary"
+    },
+    {
+      "name": "boundary_line2",
+      "x": 1300,
+      "y": 732,
+      "width": 400,
+      "height": 28,
+      "text": "Real W penalty inherited by fold",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "boundary"
+    },
+    {
+      "name": "theory_scope",
+      "x": 90,
+      "y": 815,
+      "width": 1620,
+      "height": 28,
+      "text": "Directional champion preference and direction-neutral score contraction are distinct mechanisms.",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "theory"
+    },
+    {
+      "name": "pilot_header",
+      "x": 90,
+      "y": 910,
+      "width": 1620,
+      "height": 40,
+      "text": "E19 isolates the fully tied-row term with γ=0",
+      "size": 29,
+      "bold": true,
+      "color": "#225E8F",
+      "align": "left",
+      "parent": "pilot"
+    },
+    {
+      "name": "b_title",
+      "x": 100,
+      "y": 1014,
+      "width": 280,
+      "height": 34,
+      "text": "B retains constraint",
+      "size": 21,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "b"
+    },
+    {
+      "name": "b_line0",
+      "x": 100,
+      "y": 1060,
+      "width": 280,
+      "height": 28,
+      "text": "β=1",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "b"
+    },
+    {
+      "name": "b_line1",
+      "x": 100,
+      "y": 1091,
+      "width": 280,
+      "height": 28,
+      "text": "Uniform empirical champions",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "b"
+    },
+    {
+      "name": "b_line2",
+      "x": 100,
+      "y": 1122,
+      "width": 280,
+      "height": 28,
+      "text": "Original denominator N=480",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "b"
+    },
+    {
+      "name": "c_title",
+      "x": 530,
+      "y": 1014,
+      "width": 280,
+      "height": 34,
+      "text": "C disables tied-row term",
+      "size": 21,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "c"
+    },
+    {
+      "name": "c_line0",
+      "x": 530,
+      "y": 1060,
+      "width": 280,
+      "height": 28,
+      "text": "β=0",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "c"
+    },
+    {
+      "name": "c_line1",
+      "x": 530,
+      "y": 1091,
+      "width": 280,
+      "height": 28,
+      "text": "Same labels on all other rows",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "c"
+    },
+    {
+      "name": "c_line2",
+      "x": 530,
+      "y": 1122,
+      "width": 280,
+      "height": 28,
+      "text": "Same original L2, including bias",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "c"
+    },
+    {
+      "name": "qualification_title",
+      "x": 960,
+      "y": 1014,
+      "width": 310,
+      "height": 34,
+      "text": "P0 implementation gate",
+      "size": 21,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "qualification"
+    },
+    {
+      "name": "qualification_line0",
+      "x": 960,
+      "y": 1060,
+      "width": 310,
+      "height": 28,
+      "text": "4 fits; all checks PASS",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "qualification"
+    },
+    {
+      "name": "qualification_line1",
+      "x": 960,
+      "y": 1091,
+      "width": 310,
+      "height": 28,
+      "text": "Mapped policy error 0",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "qualification"
+    },
+    {
+      "name": "qualification_line2",
+      "x": 960,
+      "y": 1122,
+      "width": 310,
+      "height": 28,
+      "text": "0.02715 ≤ 0.10913",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "qualification"
+    },
+    {
+      "name": "results_title",
+      "x": 1420,
+      "y": 1014,
+      "width": 280,
+      "height": 34,
+      "text": "P1 uniform τ=1e−8",
+      "size": 21,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "results"
+    },
+    {
+      "name": "results_line0",
+      "x": 1420,
+      "y": 1060,
+      "width": 280,
+      "height": 28,
+      "text": "150 strict changes / 600",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "results"
+    },
+    {
+      "name": "results_line1",
+      "x": 1420,
+      "y": 1091,
+      "width": 280,
+      "height": 28,
+      "text": "C−B +1.442 pp",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "results"
+    },
+    {
+      "name": "results_line2",
+      "x": 1420,
+      "y": 1122,
+      "width": 280,
+      "height": 28,
+      "text": "95% CI [0.191, 2.722] pp",
+      "size": 20,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "results"
+    },
+    {
+      "name": "endpoint_compare",
+      "x": 410,
+      "y": 1070,
+      "width": 90,
+      "height": 30,
+      "text": "versus",
+      "size": 21,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "pilot"
+    },
+    {
+      "name": "pilot_formula",
+      "x": 90,
+      "y": 1190,
+      "width": 1620,
+      "height": 34,
+      "text": "Strict-change contribution +1.056 pp (38 corrected / 19 damaged); numerical-tie region +0.386 pp",
+      "size": 23,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "pilot"
+    },
+    {
+      "name": "raw_sensitivity",
+      "x": 90,
+      "y": 1230,
+      "width": 1620,
+      "height": 28,
+      "text": "Raw exact-argmax diagnostic +1.000 pp, 95% CI [−0.333,+2.333] pp; the numerical service definition matters.",
+      "size": 21,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "pilot"
+    },
+    {
+      "name": "scope",
+      "x": 60,
+      "y": 1300,
+      "width": 1680,
+      "height": 34,
+      "text": "P0 + P1 completed with 10 main and 2 mapping fits on train600 OOF development; additional LLM calls 0.",
+      "size": 22,
+      "bold": true,
+      "color": "#162B43",
+      "align": "center",
+      "parent": "root"
+    },
+    {
+      "name": "footer",
+      "x": 60,
+      "y": 1346,
+      "width": 1680,
+      "height": 28,
+      "text": "Independent-confirmation design remains a later stage under a separate frozen protocol.",
+      "size": 22,
+      "bold": false,
+      "color": "#506276",
+      "align": "center",
+      "parent": "root"
+    }
+  ],
+  "arrows": [
+    {
+      "name": "history_a",
+      "source": "renumber",
+      "target": "symmetry",
+      "points": [
+        [
+          520,
+          340
+        ],
+        [
+          690,
+          340
+        ]
+      ],
+      "parent": "history"
+    },
+    {
+      "name": "history_b",
+      "source": "symmetry",
+      "target": "quality",
+      "points": [
+        [
+          1120,
+          340
+        ],
+        [
+          1290,
+          340
+        ]
+      ],
+      "parent": "history"
+    },
+    {
+      "name": "theory_b",
+      "source": "a2",
+      "target": "boundary",
+      "points": [
+        [
+          1120,
+          700
+        ],
+        [
+          1290,
+          700
+        ]
+      ],
+      "parent": "theory"
+    },
+    {
+      "name": "pilot_a",
+      "source": "b",
+      "target": "qualification",
+      "points": [
+        [
+          240,
+          1000
+        ],
+        [
+          240,
+          980
+        ],
+        [
+          1115,
+          980
+        ],
+        [
+          1115,
+          1000
+        ]
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "pilot_b",
+      "source": "c",
+      "target": "qualification",
+      "points": [
+        [
+          820,
+          1085
+        ],
+        [
+          950,
+          1085
+        ]
+      ],
+      "parent": "pilot"
+    },
+    {
+      "name": "pilot_c",
+      "source": "qualification",
+      "target": "results",
+      "points": [
+        [
+          1280,
+          1085
+        ],
+        [
+          1410,
+          1085
+        ]
+      ],
+      "parent": "pilot"
+    }
+  ]
+}

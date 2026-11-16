@@ -1,0 +1,149 @@
+{
+  "schema": "e19_symmetric_tie_constraint_protocol_v1",
+  "base_commit": "341a8a3c48ee95b7a38c1a5713ac659fccba8f6c",
+  "parent_e18_commit": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+  "branch": "codex/e19-symmetric-tie-constraints",
+  "teacher_pdf_sha256": "862d0118f58240b7051790846475248b2154ec4198e4bb45afdfc0ed10607fb2",
+  "scope": "P0 followed by P1 on the existing train600 only, with a parallel theory and historical-evidence workstream",
+  "models": 6,
+  "members_per_team": 3,
+  "actions": 20,
+  "independent_development_questions": 600,
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "outer_folds": 5,
+  "history_questions_per_fold": 480,
+  "evaluation_questions_per_fold": 120,
+  "features": "frozen fold-local MiniLM-L6 384D, PCA16, StandardScaler, leading constant; no task or subtask features",
+  "head_shape": [
+    17,
+    20
+  ],
+  "head_parameters": 340,
+  "input_packet_fields_allowed": [
+    "H",
+    "E",
+    "phi_h",
+    "phi_e",
+    "pca_components",
+    "pca_mean",
+    "scaler_mean",
+    "scaler_scale"
+  ],
+  "reward_target": "mean of the three original aggregate correctness observations for each history question and physical action",
+  "empirical_max_weights": "uniform over all exact empirical maximizers on each history question",
+  "training_T": "all20 empirical mean rewards exactly equal on a history question; never used to filter evaluation questions",
+  "gamma": 0,
+  "branches": {
+    "B": {
+      "beta": 1
+    },
+    "C": {
+      "beta": 0
+    }
+  },
+  "objective": "F_beta(W) = (1/N) sum_i omega_i(beta) [max_j(2 phi_i W_j-r_ij) - sum_j alpha_ij(2 phi_i W_j-r_ij)] + regularization ||W||_F^2",
+  "row_weight": "omega_i=beta on history T; omega_i=1 otherwise",
+  "normalization_N": 480,
+  "rows_and_epigraph_variables_retained": 480,
+  "tie_constraint": "J_T(W)=(2/N) sum_i_in_T [max_j q_ij - mean_j q_ij]",
+  "penalty": "same positive identity operator on every W entry including constant-feature coefficients; no new regularization or rescaling",
+  "regularization_by_fold": [
+    0.003472222222222222,
+    0.003472222222222222,
+    0.003472222222222222,
+    0.003472222222222222,
+    0.00034722222222222224
+  ],
+  "regularization_source": "frozen E8 M4 final_diagnostics inherited by E17; no E19 parameter search",
+  "solver": {
+    "name": "Clarabel exact convex epigraph QP",
+    "tol_gap_abs": 1e-10,
+    "tol_gap_rel": 1e-10,
+    "tol_feas": 1e-10,
+    "max_iter": 1000,
+    "max_threads": 1,
+    "initialization": "fresh DefaultSolver on every fit, no supplied warm start",
+    "unique_quantity": "W is unique from positive L2; zero-weight epigraph auxiliary coordinates need not be unique"
+  },
+  "P0": {
+    "fold": 0,
+    "main_fits": 2,
+    "qualification_fits": 2,
+    "qualification_permutation": "reverse20, numeric column j represents physical action19-j",
+    "mapped_objects": [
+      "reward columns",
+      "uniform maximizer labels",
+      "isotropic regularizer",
+      "fresh initialization protocol",
+      "output coefficients and scores",
+      "physical action identities"
+    ],
+    "objective_and_kkt_tolerance": 1e-07,
+    "centered_score_mapping_tolerance": 1e-07,
+    "endpoint_inequality": "0 <= F0(W_B)-F0(W_C) <= J_T(W_C)-J_T(W_B), within declared numerical tolerance",
+    "gate": "all objective, KKT, mapping and endpoint optimality checks pass before any remaining real-data fit"
+  },
+  "P1": {
+    "remaining_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "remaining_main_fits": 8,
+    "total_real_main_fits": 10,
+    "total_real_qualification_fits": 2
+  },
+  "deployment": {
+    "policy": "uniform probability on the numerically qualified argmax set, evaluated exactly by summing the frozen cache rewards",
+    "absolute_score_tie_tolerance": 1e-08,
+    "definition": "actions with score >= maximum score - 1e-8 receive probability1/set_size",
+    "raw_exact_argmax_uniform": "saved separately as a floating-point sensitivity diagnostic",
+    "strict_winner": "top1 minus top2 score >1e-8",
+    "strict_change": "both B and C have strict winners and the physical winning actions differ",
+    "fixed_minimum_id_decoding": false
+  },
+  "evaluation_access": "freeze W, complete score vectors, both uniform probability definitions and a receipt before decoding that fold's evaluation rewards",
+  "history_reward_reader": "decode only selected H rows of the numeric NPZ member; evaluation rows remain raw skipped bytes until prediction freeze",
+  "primary_effect": "C minus B final aggregate correctness, averaged inside each three-generation question cluster, with GSM8K/BBH each0.5",
+  "correction_accounting": "report deterministic strict-change corrections separately; all-policy randomized expected corrections/damages use permutation-equivariant maximal same-action overlap coupling, with independent residual action draws",
+  "bbh_subtask_macro": "reported separately, without changing the primary weights",
+  "bootstrap": {
+    "repetitions": 10000,
+    "seed": 20261116019,
+    "unit": "original question with both policies and all three cached generation repetitions",
+    "strata": [
+      "gsm8k",
+      "bbh"
+    ],
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "confidence_level": 0.95,
+    "method": "equal-tailed percentile",
+    "quantile_method": "linear"
+  },
+  "uncertainty_scope": "repeatedly used train600 OOF development, conditional on fitted heads; overlapping five-fold histories do not form independent repetitions",
+  "minimum_practical_effect_pp": 1.0,
+  "stop_rules": [
+    "qualification failure stops P1",
+    "common-score shifts or inference-tie-only effects cannot support a strict cross-question ranking claim",
+    "imprecise utility retains mechanism evidence without starting independent evaluation",
+    "positive and negative utility directions are both preserved without choosing another beta"
+  ],
+  "new_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "fresh400_rewards_read": false,
+  "sealed200_read": false,
+  "P2_P3_P4_executed": false,
+  "source_hashes": {
+    "run_e19.py": "11021218252e2dbef9f2cf9ef07821f0ef633fe71d60dd2a322166c002cbd33f",
+    "weighted_objectives.py": "019c505c4a5ab2f90e532eda2842546c444c6480a182504f56c935f3527dd4da"
+  },
+  "public_artifact_rule": "Question-level scores, masks, rewards, identities and weights stay private. Public release contains aggregate results, code and source hashes."
+}

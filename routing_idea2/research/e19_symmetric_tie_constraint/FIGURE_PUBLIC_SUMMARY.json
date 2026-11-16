@@ -1,0 +1,12 @@
+{
+  "qualification": [
+    "4 fits; all checks PASS",
+    "Mapped policy error 0",
+    "0.02715 ≤ 0.10913"
+  ],
+  "results": [
+    "150 strict changes / 600",
+    "C−B +1.442 pp",
+    "95% CI [0.191, 2.722] pp"
+  ]
+}
