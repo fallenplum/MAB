@@ -1,0 +1,44 @@
+{
+  "schema": "e18_1_statistics_and_mechanisms_protocol_v1",
+  "base_commit": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+  "branch": "codex/e18-1-statistics-and-mechanisms",
+  "analysis_timing": "Supplement requested after E18 outcomes were inspected; no new confirmatory data",
+  "ci_policy_exception": "The user's E18.1 request explicitly authorizes confidence intervals and question-cluster bootstrap for this stage",
+  "original_questions_requested": 3000,
+  "scorable_question_clusters": 2998,
+  "task_sizes": {"gsm8k": 1500, "bbh": 1498},
+  "task_weights": {"gsm8k": 0.5, "bbh": 0.5},
+  "generation_seeds": [42, 137, 2024],
+  "policies": ["Ridge", "SPO_coordinate", "TSPO_uniform", "GlobalFixed"],
+  "comparisons": ["TSPO_uniform minus SPO_coordinate", "TSPO_uniform minus Ridge", "TSPO_uniform minus GlobalFixed"],
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 202611160181,
+    "rng": "numpy PCG64 via SeedSequence child streams",
+    "batch_size": 256,
+    "confidence_level": 0.95,
+    "method": "equal-tailed percentile",
+    "quantile_method": "linear",
+    "main_strata": ["gsm8k", "bbh"],
+    "unit": "original question, with all four policies and all three generation records retained together",
+    "subtask_intervals": "fixed-size paired question bootstrap inside each of the 27 BBH subtasks",
+    "generations_resampled_separately": false
+  },
+  "interaction": {
+    "effect": "BBH question-mean TSPO-SPO gain minus GSM8K question-mean TSPO-SPO gain",
+    "test": "two-sided Welch t on paired within-question policy differences, Satterthwaite degrees of freedom",
+    "bootstrap": "difference of the same two task-specific paired bootstrap means",
+    "scientific_role": "post-E18 exploratory effect heterogeneity"
+  },
+  "multiplicity": {
+    "intervals": "individual marginal 95% intervals, without simultaneous coverage claims",
+    "existing_tests": "retain E18 primary two-sided p and its five-secondary Holm family unchanged",
+    "subtask_tests": "diagnostic raw p and descriptive Holm-27 adjustment; no model selection"
+  },
+  "inference_scope": "Question-sampling approximation conditional on frozen models, current task-source mixture and the three recorded generation repeats; the fully observed finite-pool mean is already known",
+  "missing_questions": "two BBH input-reference incompatibilities remain excluded from bootstrap; E18 deterministic missing-outcome bounds remain separately labeled",
+  "new_llm_calls": 0,
+  "sealed200_access": false,
+  "refitting_or_tuning": false,
+  "public_data_rule": "deidentified aggregate tables, code and evidence summaries only; IDs, answer arrays, weights and bootstrap replicate artifacts stay private"
+}

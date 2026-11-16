@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" viewBox="0 0 1800 1400">
+<title>E17 and E18 joint supervision-distortion evidence</title>
+<desc>Controlled development interventions separate champion labels, inference ties and operator order. Frozen E18 policies are evaluated on2998 valid independent questions with2 excluded inputs.</desc>
+<rect width="1800" height="1400" fill="#FFFFFF"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#225E8F"/></marker></defs>
+<rect id="intervention" x="60" y="160" width="1680" height="390" rx="10" fill="#F4F7FA" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="ties" x="90" y="250" width="300" height="180" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="training" x="510" y="250" width="330" height="180" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="identity" x="960" y="250" width="340" height="180" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="inference" x="1420" y="250" width="290" height="180" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="operator" x="60" y="580" width="1680" height="300" rx="10" fill="#F4F7FA" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="same_draws" x="90" y="670" width="310" height="150" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="operators" x="540" y="670" width="450" height="150" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="operator_results" x="1130" y="670" width="580" height="150" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="confirmation" x="60" y="910" width="1680" height="360" rx="10" fill="#F4F7FA" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="evaluation" x="90" y="1000" width="480" height="210" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="gain" x="710" y="1000" width="420" height="210" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<rect id="boundary" x="1270" y="1000" width="440" height="210" rx="10" fill="#FFFFFF" stroke="#B7C8D8" stroke-width="2"/>
+<polyline id="a1" points="390,340 510,340" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="a2" points="840,340 960,340" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="a3" points="1300,340 1420,340" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="b1" points="400,745 540,745" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="b2" points="990,745 1130,745" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="c1" points="570,1105 710,1105" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline id="c2" points="1130,1105 1270,1105" fill="none" stroke="#225E8F" stroke-width="2" marker-end="url(#arrow)"/>
+<text id="title" x="60" y="52.5" dominant-baseline="central" text-anchor="start" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#162B43">When ties become preferences</text>
+<text id="subtitle" x="60" y="107.5" dominant-baseline="central" text-anchor="start" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#506276">E17 controlled interventions and E18 frozen-policy evaluation</text>
+<text id="intervention_title" x="90" y="199.0" dominant-baseline="central" text-anchor="start" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#225E8F">Champion convention changes the trained router</text>
+<text id="ties_title" x="240.0" y="282.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Empirical supervision</text>
+<text id="ties_body0" x="240.0" y="324.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">20 teams × 3 repeats</text>
+<text id="ties_body1" x="240.0" y="355.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">462–467 / 480</text>
+<text id="ties_body2" x="240.0" y="386.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">multiple-best questions</text>
+<text id="training_title" x="675.0" y="282.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Training intervention</text>
+<text id="training_body0" x="675.0" y="324.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">100 action renumberings</text>
+<text id="training_body1" x="675.0" y="355.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Fixed semantic inference</text>
+<text id="training_body2" x="675.0" y="386.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">340-parameter shared head</text>
+<text id="identity_title" x="1130.0" y="282.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Physical-team agreement</text>
+<text id="identity_body0" x="1130.0" y="324.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">SPO_coordinate  6.135%</text>
+<text id="identity_body1" x="1130.0" y="355.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Ridge / TSPO  100%</text>
+<text id="identity_body2" x="1130.0" y="386.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Same 600 development items</text>
+<text id="inference_title" x="1565.0" y="282.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#162B43">Inference-only control</text>
+<text id="inference_body0" x="1565.0" y="324.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">TSPO: 397 near ties</text>
+<text id="inference_body1" x="1565.0" y="355.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">numeric_near  37.308%</text>
+<text id="inference_body2" x="1565.0" y="386.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">semantic_near  100%</text>
+<text id="loss_difference" x="900.0" y="470.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#162B43">Tied champions s,t:   L_t − L_s = 2(q_s − q_t)   →   different shared-parameter gradients</text>
+<text id="intervention_scope" x="900.0" y="516.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#506276">Training labels and score-space tie priority are separately controlled.</text>
+<text id="operator_title" x="90" y="619.0" dominant-baseline="central" text-anchor="start" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#225E8F">Symmetry and the order of averaging need separate checks</text>
+<text id="same_draws_title" x="245.0" y="702.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Same 8 joint draws</text>
+<text id="same_draws_body0" x="245.0" y="744.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Same features and L2</text>
+<text id="same_draws_body1" x="245.0" y="775.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Reward samples fixed</text>
+<text id="operators_title" x="765.0" y="702.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Two supervision operators</text>
+<text id="operators_body0" x="765.0" y="744.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">LossThenMean  E[L(q,R)]</text>
+<text id="operators_body1" x="765.0" y="775.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">MeanThenLoss  L(q,E[R])</text>
+<text id="operator_results_title" x="1420.0" y="702.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">MeanThenLoss had lower development accuracy</text>
+<text id="operator_results_body0" x="1420.0" y="744.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">MeanThenLoss − LossThenMean  −0.889 pp</text>
+<text id="operator_results_body1" x="1420.0" y="775.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Known-truth example has different optima</text>
+<text id="confirmation_title" x="90" y="949.0" dominant-baseline="central" text-anchor="start" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#225E8F">Frozen-policy quality evaluation gives a near-zero net gain</text>
+<text id="evaluation_title" x="330.0" y="1032.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">Requested 3,000  /  evaluable 2,998</text>
+<text id="evaluation_body0" x="330.0" y="1074.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">Ridge  86.6637%</text>
+<text id="evaluation_body1" x="330.0" y="1105.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">SPO_coordinate  86.3961%</text>
+<text id="evaluation_body2" x="330.0" y="1136.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">TSPO_uniform  86.4079%</text>
+<text id="evaluation_body3" x="330.0" y="1167.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">GlobalFixed  86.8634%</text>
+<text id="gain_title" x="920.0" y="1032.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#162B43">TSPO − SPO  +0.01175 pp</text>
+<text id="gain_body0" x="920.0" y="1074.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">95% CI  [−0.667, +0.690] pp</text>
+<text id="gain_body1" x="920.0" y="1105.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">Corrected 377  /  damaged 376</text>
+<text id="gain_body2" x="920.0" y="1136.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">Task directions oppose</text>
+<text id="gain_body3" x="920.0" y="1167.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#506276">Seed gains: +0.201 / +0.268 / −0.433 pp</text>
+<text id="boundary_title" x="1490.0" y="1032.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#162B43">Retained limitations</text>
+<text id="boundary_body0" x="1490.0" y="1074.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#506276">2 input-reference incompatibilities</text>
+<text id="boundary_body1" x="1490.0" y="1105.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#506276">Excluded outcomes stay unknown</text>
+<text id="boundary_body2" x="1490.0" y="1136.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#506276">Full execution costs retained</text>
+<text id="boundary_body3" x="1490.0" y="1167.5" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#506276">E18.1 is a post-result supplement</text>
+<text id="replication" x="900.0" y="1317.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#162B43">100 renumberings reuse 600 items; three generation repeats remain within-question measurements.</text>
+<text id="interpretation" x="900.0" y="1360.0" dominant-baseline="central" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#506276">E18.1: 20,000 stratified question bootstraps; marginal intervals; specified after viewing E18 results.</text>
+</svg>
