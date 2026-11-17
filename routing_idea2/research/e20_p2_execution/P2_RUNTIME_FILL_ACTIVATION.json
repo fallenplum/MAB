@@ -1,0 +1,224 @@
+{
+  "schema": "p2_runtime_fill_activation_v1",
+  "status": "FOUR_MEMBER_AND_SIX_AGGREGATION_FIRST_SUCCESSES_VERIFIED",
+  "snapshot_utc": "2026-11-17T09:54:02.817922+00:00",
+  "member_index": 4,
+  "member_stop_utc": "2026-11-17T09:47:04.732345+00:00",
+  "aggregation_stop_utc": "2026-11-17T09:49:27.626337+00:00",
+  "historical_member4_successes": 1778,
+  "historical_aggregation_successes": 38939,
+  "member4_required_outputs": 6573,
+  "required_aggregations": 106536,
+  "member_plan_sha256": "5bd363aca0fc1d9c5fa95b86ee5065e43d52c70a1dbe98de2290a8e9f873af21",
+  "aggregation_plan_sha256": "b8abd107494166dcb2777663c32164a5fd7632e86f8b1c72dc2be540b5ded4ba",
+  "member4_shards": [
+    {
+      "shard_index": 0,
+      "gpu": 5,
+      "pid": 2928052,
+      "assigned_outputs": 1145,
+      "first_snapshot_successes": 6,
+      "launch_utc": "2026-11-17T09:48:44.097606+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        46685,
+        46685,
+        46685
+      ],
+      "manifest_sha256": "71927049582236b146a0589e896be89ae2f19f998a873cc214264aaa7a4e8245",
+      "worker_source_sha256": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81"
+    },
+    {
+      "shard_index": 1,
+      "gpu": 4,
+      "pid": 2928635,
+      "assigned_outputs": 1205,
+      "first_snapshot_successes": 3,
+      "launch_utc": "2026-11-17T09:48:52.879237+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        48525,
+        48525,
+        48525
+      ],
+      "manifest_sha256": "d65749c76b771f6a098a3d78a1ff5d281f5ee083cab8f78206cf8b0de7eeec4c",
+      "worker_source_sha256": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81"
+    },
+    {
+      "shard_index": 2,
+      "gpu": 4,
+      "pid": 2929430,
+      "assigned_outputs": 1231,
+      "first_snapshot_successes": 5,
+      "launch_utc": "2026-11-17T09:49:01.580888+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        48525,
+        48525,
+        48525
+      ],
+      "manifest_sha256": "bb30b7d25ffa09d525b828205792c38f29b11ec465fb82e24af86158c3220fe9",
+      "worker_source_sha256": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81"
+    },
+    {
+      "shard_index": 3,
+      "gpu": 5,
+      "pid": 2930238,
+      "assigned_outputs": 1214,
+      "first_snapshot_successes": 5,
+      "launch_utc": "2026-11-17T09:49:10.929401+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        46685,
+        46685,
+        46685
+      ],
+      "manifest_sha256": "b3d84c56a7c898219a1d4b5d4f91e4a4f08912061f29b7f2f6a17acd41d3774c",
+      "worker_source_sha256": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81"
+    }
+  ],
+  "aggregation_shards": [
+    {
+      "shard_index": 0,
+      "gpu": 0,
+      "pid": 2940215,
+      "assigned_outputs": 11529,
+      "first_snapshot_successes": 22,
+      "launch_utc": "2026-11-17T09:51:15.010629+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        21321,
+        21321,
+        21321
+      ],
+      "manifest_sha256": "721052c194f8c7209d86a229628332d09f95f708b3937358fb6bfa73a5da2692",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 1,
+      "gpu": 1,
+      "pid": 2941024,
+      "assigned_outputs": 11821,
+      "first_snapshot_successes": 21,
+      "launch_utc": "2026-11-17T09:51:24.813477+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        48525,
+        48525,
+        48525
+      ],
+      "manifest_sha256": "eeeeb21bee4c159974d89ff7d7dcb1afb4aef555366931a20badc5383caf3594",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 2,
+      "gpu": 3,
+      "pid": 2942007,
+      "assigned_outputs": 11784,
+      "first_snapshot_successes": 17,
+      "launch_utc": "2026-11-17T09:51:33.788006+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        48525,
+        48525,
+        48525
+      ],
+      "manifest_sha256": "7b6c72677cc41b400d693346452429f0580a44003ec84a89043e0da2fca49d29",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 3,
+      "gpu": 1,
+      "pid": 2942731,
+      "assigned_outputs": 11131,
+      "first_snapshot_successes": 17,
+      "launch_utc": "2026-11-17T09:51:43.263907+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        48525,
+        48525,
+        48525
+      ],
+      "manifest_sha256": "c393cb2c214e9407e9ec9b521ba2bbdcb65357307e8875a0d14b902920b33974",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 4,
+      "gpu": 6,
+      "pid": 2943498,
+      "assigned_outputs": 10490,
+      "first_snapshot_successes": 17,
+      "launch_utc": "2026-11-17T09:51:54.165136+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        26577,
+        26577,
+        26577
+      ],
+      "manifest_sha256": "2a7352d8edc25f33c555b35a8a77cf8777714b631dc26dfb03e074e0d897620f",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    },
+    {
+      "shard_index": 5,
+      "gpu": 3,
+      "pid": 2944471,
+      "assigned_outputs": 10842,
+      "first_snapshot_successes": 14,
+      "launch_utc": "2026-11-17T09:52:04.530093+00:00",
+      "active_at_snapshot": true,
+      "observed_free_mib": [
+        40329,
+        40321,
+        40315
+      ],
+      "manifest_sha256": "1a5469ed78d67effdf3463955d091975894fa6d9ecc8811b93dfed63018a270d",
+      "worker_source_sha256": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+    }
+  ],
+  "disjoint_remaining_partitions_verified": true,
+  "registered_manifests_after_add": 25,
+  "active_actor_count_at_snapshot": 12,
+  "remote_successful_outputs_at_snapshot": {
+    "member_generation": {
+      "successful_outputs": 33483,
+      "prompt_tokens": 5717056,
+      "completion_tokens": 5864152,
+      "total_successful_tokens": 11581208
+    },
+    "aggregation": {
+      "successful_outputs": 39047,
+      "prompt_tokens": 31974274,
+      "completion_tokens": 3242915,
+      "total_successful_tokens": 35217189
+    }
+  },
+  "duplicate_success_rows_at_snapshot": 0,
+  "extra_paid_attempts_for_successful_keys_at_snapshot": 0,
+  "software_checks_at_preparation": 17,
+  "preparation_qualification_report_preserved": true,
+  "preparation_qualification_sha256": "d90a661097fe9640d5dee24139824de35ae71583d98aedc1257de9e5bacda4ae",
+  "control_evidence_sha256": {
+    "member_checkpoint": "3db8228ff5a025bb1b6e1a42647544e435a62e75dd11bc4814020bf49df21147",
+    "member_plan": "76165e74d9e9e8b06b80eff2ab7d1814cf96cf7f4f7325a20278514ea6a70291",
+    "member_launch_0": "27f38be66306902e7b1fc44926cda69323a7b8bf18e1133b22e8baa718db608c",
+    "member_launch_1": "cf2be64501c2b636b9d743a826f79d98135c919db27d89890553a26863e2bc06",
+    "member_launch_2": "616137bf4778ef5a1a2d4e7c97239467a292026096a30068b48252462c78e302",
+    "member_launch_3": "fc3e80f545d8c6a073b84a24bb9f45b9ef73f7371fb1d92230d32be07d549e43",
+    "aggregation_checkpoint": "20d624a88f71dd35dc839d7fcdafb05252899c1ac8dc952010e3b506d0baf691",
+    "aggregation_plan": "0f2eebf088817bf15d57d01745e9481dcdab7694fbe79386afcf1dbe20704591",
+    "aggregation_launch_0": "de16726ad126b949645cc40d871a8ee2325310193d8c4889ca6b753c98ba2005",
+    "aggregation_launch_1": "75d5675bc3aa6f25564de836f282df4ba2bd4a3a780197aa95deb72c06ff6972",
+    "aggregation_launch_2": "2b8cca2a981dc87441fc6f92b5e890bcca9824a185b29015ed10fa4d7f9d4f3f",
+    "aggregation_launch_3": "3610a2272d42d18acfbd389cd75edec5f648409f34fe5a0e1d5f30fc3e29eb7a",
+    "aggregation_launch_4": "017598e15d34f915f33ae3b0d01b2896a1f297ccad1342b5280e4845a0145b2d",
+    "aggregation_launch_5": "0699992500653952d8facbab0b6c464a071d803e9616193878a12c6a4aefa70d",
+    "first_success_monitor": "b70edbeff5204f109a5b952607412080d643fe2f64a93e6723305cb36bb198e7"
+  },
+  "science_scope_model_policy_or_generation_changes": 0,
+  "reference_values_read": 0,
+  "deterministic_scores_computed": 0,
+  "local_publication_new_llm_calls": 0,
+  "failure_closure_pending": true,
+  "all_attempt_total_tokens": null,
+  "claims_scope": "实际安全停止、互斥接续、连续资源准入与首成功快照；吞吐变化另用后续窗口核算"
+}

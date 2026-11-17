@@ -1,0 +1,41 @@
+{
+  "schema": "p2_member_parallel_software_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "original_member_summary_without_pid_or_scope_qualified": true,
+    "four_nonempty_subsets_exact_profile_coverage": true,
+    "old_completed_native_cache_keys_excluded_from_new_paid_execution": true,
+    "original_executable_scope_backend_and_scientific_payload_preserved": true,
+    "same_plan_sibling_progress_does_not_block_launch": true,
+    "other_member_profiles_can_continue_without_staling_plan": true,
+    "live_overlapping_predecessor_rejected": true,
+    "member_stop_barrier_uses_original_summary_schema": true,
+    "summary_journal_count_mismatch_rejected": true,
+    "incomplete_nongraceful_member_checkpoint_rejected": true,
+    "backend_change_rejected": true,
+    "late_same_profile_historical_progress_rejected": true,
+    "native_member_launcher_rejects_fixture_before_popen": true,
+    "stop_helper_rejects_fixture_before_any_signal": true,
+    "existing_launch_admission_primitives_reused": true,
+    "invalid_partition_counts_rejected": true,
+    "old_frozen_worker_registry_and_follower_byte_identical": true
+  },
+  "checks_passed": 17,
+  "software_test_only": true,
+  "production_deployed": false,
+  "frozen_source_sha256": {
+    "p2_member_worker.py": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81",
+    "p2_manifest_registry.py": "8cd840d2b8f7647c012b9432eac45d951210d0d2afa53c239c60400621df8591",
+    "p2_aggregation_follower_v3.py": "094617587d90a6459eba2f46ffd2c55da77dc97d497742d83bfd86b250de2e98"
+  },
+  "source_sha256": {
+    "prepare_member_shards.py": "ea560bd505855afae20af11284997b95ef30db78a2e764f1723cabfb88a980d4",
+    "launch_registered_member.py": "a77c6920ae1b15d22cbd9cb1a3dc703e8b48e5fe6b678fd7628bf006daee6332",
+    "stop_registered_workers.py": "e275362ebac43bc564bd3f8f28b82392e80655f50fae1f356aa1d3f062935bf0",
+    "qualify_member_parallel.py": "3a272bfb74ded5061d031e16aaeff41bf36f32137e7fcd184f97980a2a935211"
+  },
+  "ssh_operations": 0,
+  "production_process_changes": 0,
+  "new_llm_calls": 0,
+  "reference_values_decoded": 0
+}

@@ -46,11 +46,14 @@ BBH含原共同子池39题和完整官方源扩展1161题，来源层在结果�
 | P2_FIVE_SHARD_ACTIVATION.json | GPU1/6增量授权后的五路接续与首成功快照 |
 | P2_FIVE_SHARD_TOOLING_QUALIFICATION.json | 原16项五路软件资格，保留准备时点状态 |
 | P2_FIVE_SHARD_HANDOFF.md | 五路调度接口与实际首成功追加说明 |
+| P2_MEMBER_PARALLEL_HANDOFF.md | 慢成员4的互斥接续及现有worker接口 |
+| P2_MEMBER_PARALLEL_QUALIFICATION.json | 原17项成员接续软件资格，保留准备时点状态 |
+| P2_RUNTIME_FILL_ACTIVATION.json | 成员4四路、聚合六路的安全接续及实际首成功快照 |
 | REPRODUCE.md | 真实入口、环境、私有依赖和执行顺序 |
 
 P2_PREPARATION_SUMMARY.md给出准备阶段结论。实际质量报告在完整输出冻结及合法评分后生成。
 
-新增运行源码的交付采用显式ready清单。FILE_INDEX.json逐项记录发布字节哈希、原始来源哈希、脱敏字段和工件角色。三路和五路接续的原本地资格与实际部署快照分别保留，当前运行快照指向五路首成功记录。该打包清单不产生新的部署事件。
+新增运行源码的交付采用显式ready清单。FILE_INDEX.json逐项记录发布字节哈希、原始来源哈希、脱敏字段和工件角色。各次接续的本地资格与实际部署快照分别保留。当前运行快照优先指向已生成的P2_RUNTIME_FILL_ACTIVATION.json，再依次保留五路、三路及原启动记录。该打包清单不产生新的部署事件。
 
 ## 私有资产与两个scope
 
