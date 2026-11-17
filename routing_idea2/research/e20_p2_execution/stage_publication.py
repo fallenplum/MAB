@@ -16,7 +16,7 @@ WORKSPACE = CODE.parents[1]
 STUDY = Path(r"E:\语言模型组合路由\research\e20_p2_execution")
 STAGE = WORKSPACE / ".safe_e20_p2_delivery"
 PREFIX = "routing_idea2/research/e20_p2_execution/"
-DEFAULT_PARENT = "331f2483530238a904afdfafd25b9e5c4fa8cf66"
+DEFAULT_PARENT = "2ab0e322932ebe282c899a19c82a911fb97e4a5f"
 SOURCE_ALLOWLIST = {
     "prepare_independent_pool.py", "p2_scope_freeze.py", "p2_execution_adapter.py",
     "p2_member_worker.py", "p2_aggregation_worker.py", "prepare_runtime_sources.py",
@@ -35,6 +35,9 @@ SOURCE_ALLOWLIST = {
     "launch_registered_worker_v3.py", "qualify_registry_consumers.py",
     "qualify_registry_dispatch.py", "switch_aggregation_to_three_shards.py",
     "P2_V3_REGISTERED_DISPATCH_HANDOFF.md", "record_three_shard_activation.py",
+    "prepare_aggregation_shards_v4.py", "launch_registered_worker_v4.py",
+    "qualify_five_shard_dispatch.py", "scale_aggregation_to_five.py",
+    "P2_FIVE_SHARD_HANDOFF.md", "record_five_shard_activation.py",
 }
 JSON_ALLOWLIST = {
     "P2_PRESELECTION_PROTOCOL.json", "P2_INPUT_SELECTION_FROZEN.json",
@@ -51,6 +54,8 @@ JSON_ALLOWLIST = {
     "P2_SINGLE_AGGREGATION_MIGRATION.json", "P2_RUNTIME_SCALING_REVIEW.json",
     "P2_REGISTRY_DISPATCH_QUALIFICATION.json", "P2_REGISTRY_CONSUMERS_QUALIFICATION.json",
     "P2_V3_TOOLING_QUALIFICATION.json", "P2_THREE_SHARD_ACTIVATION.json",
+    "P2_FIVE_SHARD_TOOLING_QUALIFICATION.json", "P2_FIVE_SHARD_ACTIVATION.json",
+    "P2_FIVE_SHARD_THROUGHPUT.json",
 }
 NEW_JSON_FIELDS = {
     "P2_NATIVE_COLLECTOR_SOFTWARE_QUALIFICATION.json": {
@@ -114,6 +119,34 @@ NEW_JSON_FIELDS = {
         "science_scope_model_policy_or_generation_changes", "reference_values_read",
         "deterministic_scores_computed", "local_publication_new_llm_calls", "claims_scope",
     },
+    "P2_FIVE_SHARD_TOOLING_QUALIFICATION.json": {
+        "schema", "status", "checks", "checks_passed", "software_test_only",
+        "production_deployed", "old_source_sha256", "source_sha256",
+        "reference_values_decoded", "new_llm_calls", "ssh_operations", "production_process_changes",
+    },
+    "P2_FIVE_SHARD_ACTIVATION.json": {
+        "schema", "status", "snapshot_utc", "user_requested_additional_gpu_indices",
+        "old_actor_stop_utc", "retired_three_actor_count", "old_unique_completed_aggregations",
+        "duplicate_paid_success_keys_at_checkpoint", "registered_manifests_before_add",
+        "registered_manifests_after_add", "dispatch_plan_sha256", "disjoint_remaining_partition_verified",
+        "remaining_assigned_aggregations", "required_aggregations", "aggregation_shards", "member_profiles",
+        "active_actor_count_at_snapshot", "first_five_shard_successes", "duplicate_success_rows_at_snapshot",
+        "extra_paid_attempts_for_successful_keys_at_snapshot", "remote_successful_outputs_at_snapshot",
+        "software_checks_at_preparation", "preparation_qualification_report_preserved",
+        "preparation_qualification_sha256", "control_evidence_sha256",
+        "science_scope_model_policy_or_generation_changes", "reference_values_read",
+        "deterministic_scores_computed", "local_publication_new_llm_calls", "failure_closure_pending",
+        "all_attempt_total_tokens", "claims_scope",
+    },
+    "P2_FIVE_SHARD_THROUGHPUT.json": {
+        "schema", "status", "before", "after", "observed_rate_ratio",
+        "loading_and_graceful_transition_excluded_from_windows",
+        "transition_stop_checkpoint_successful_aggregations",
+        "startup_and_loading_seconds_retained_in_private_actor_logs",
+        "all_five_new_workers_alive_at_after_end", "new_worker_stop_events_at_after_end",
+        "additional_paid_attempts_for_successful_keys", "gold_values_read",
+        "confidence_interval_computations", "interpretation",
+    },
 }
 EXPECTED_REDACTIONS = {"P2_NATIVE_COLLECTOR_SOFTWARE_QUALIFICATION.json": {"private_test_artifacts"}}
 ARTIFACT_ROLES = {
@@ -140,6 +173,15 @@ ARTIFACT_ROLES = {
     "P2_V3_REGISTERED_DISPATCH_HANDOFF.md": "PREPARATION_HANDOFF_WITH_ACTIVATION_ADDENDUM",
     "record_three_shard_activation.py": "LOCAL_DEIDENTIFIED_ACTIVATION_RECORDER",
     "P2_THREE_SHARD_ACTIVATION.json": "ACTUAL_THREE_SHARD_FIRST_SUCCESS_SNAPSHOT",
+    "prepare_aggregation_shards_v4.py": "EXECUTED_FIVE_WAY_REMAINING_PARTITION_PREPARER",
+    "launch_registered_worker_v4.py": "EXECUTED_FIVE_SHARD_LAUNCHER",
+    "qualify_five_shard_dispatch.py": "LOCAL_PREDEPLOYMENT_SYNTHETIC_QUALIFICATION",
+    "scale_aggregation_to_five.py": "EXECUTED_GRACEFUL_FIVE_SHARD_SWITCH",
+    "P2_FIVE_SHARD_HANDOFF.md": "FIVE_SHARD_HANDOFF_WITH_ACTIVATION_ADDENDUM",
+    "record_five_shard_activation.py": "LOCAL_DEIDENTIFIED_ACTIVATION_RECORDER",
+    "P2_FIVE_SHARD_TOOLING_QUALIFICATION.json": "PRESERVED_PREDEPLOYMENT_QUALIFICATION_SNAPSHOT",
+    "P2_FIVE_SHARD_ACTIVATION.json": "ACTUAL_FIVE_SHARD_FIRST_SUCCESS_SNAPSHOT",
+    "P2_FIVE_SHARD_THROUGHPUT.json": "OBSERVED_SHARED_LOAD_THROUGHPUT_WINDOWS",
 }
 
 
@@ -211,7 +253,7 @@ def stage(parent_commit=DEFAULT_PARENT):
         data,redactions=publication_bytes(path,source)
         captured[path.name]=(data,digest(source),redactions)
         signatures[path.name]=(after.st_size,after.st_mtime_ns)
-    snapshot_name="P2_THREE_SHARD_ACTIVATION.json" if "P2_THREE_SHARD_ACTIVATION.json" in captured else "P2_ACTIVATION_STATUS.json"
+    snapshot_name=next(name for name in ("P2_FIVE_SHARD_ACTIVATION.json","P2_THREE_SHARD_ACTIVATION.json","P2_ACTIVATION_STATUS.json") if name in captured)
     status=json.loads(captured[snapshot_name][0].decode("utf-8-sig"))
     forbidden = set()
     with np.load(STUDY / "private/P2_PREDICTIONS_FROZEN.npz", allow_pickle=False) as archive:

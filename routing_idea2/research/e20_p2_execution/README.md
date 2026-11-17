@@ -43,11 +43,14 @@ BBH含原共同子池39题和完整官方源扩展1161题，来源层在结果�
 | P2_THREE_SHARD_ACTIVATION.json | 原actor安全停止、三分片实际启动与首成功的脱敏快照 |
 | P2_V3_TOOLING_QUALIFICATION.json | 原准备阶段34项合成资格及来源哈希 |
 | P2_V3_REGISTERED_DISPATCH_HANDOFF.md | 显式来源、互斥分片与部署追加说明 |
+| P2_FIVE_SHARD_ACTIVATION.json | GPU1/6增量授权后的五路接续与首成功快照 |
+| P2_FIVE_SHARD_TOOLING_QUALIFICATION.json | 原16项五路软件资格，保留准备时点状态 |
+| P2_FIVE_SHARD_HANDOFF.md | 五路调度接口与实际首成功追加说明 |
 | REPRODUCE.md | 真实入口、环境、私有依赖和执行顺序 |
 
 P2_PREPARATION_SUMMARY.md给出准备阶段结论。实际质量报告在完整输出冻结及合法评分后生成。
 
-新增运行源码的交付采用显式ready清单。FILE_INDEX.json逐项记录发布字节哈希、原始来源哈希、脱敏字段和工件角色。registry/v3入口已在实际三分片上线后纳入ready版本，原本地资格与实际部署快照分别保留。该打包清单不产生新的部署事件。
+新增运行源码的交付采用显式ready清单。FILE_INDEX.json逐项记录发布字节哈希、原始来源哈希、脱敏字段和工件角色。三路和五路接续的原本地资格与实际部署快照分别保留，当前运行快照指向五路首成功记录。该打包清单不产生新的部署事件。
 
 ## 私有资产与两个scope
 

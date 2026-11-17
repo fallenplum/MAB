@@ -1,7 +1,7 @@
 {
   "schema": "p2_activation_public_file_index_v1",
   "branch": "codex/e20-p2-independent-confirmation",
-  "parent_commit": "331f2483530238a904afdfafd25b9e5c4fa8cf66",
+  "parent_commit": "2ab0e322932ebe282c899a19c82a911fb97e4a5f",
   "stage": "PRODUCTION_EXECUTION_STARTED",
   "files": [
     {
@@ -53,6 +53,16 @@
       "source_sha256": "9037e8a1d1547dcd85e7e48ed160e3255d3062689dde1de9420c86d64062905c",
       "removed_private_fields": [],
       "artifact_role": "EXECUTED_REGISTERED_THREE_SHARD_LAUNCHER"
+    },
+    {
+      "package_path": "launch_registered_worker_v4.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/launch_registered_worker_v4.py",
+      "bytes": 4933,
+      "sha256": "6d3d6b002f7bad0efcf5a9f854c7ed973d7b9b585d4fa51260c8a1e80d83ffdf",
+      "git_sha1": "f188fb4262c6dcb93053e8e33fd95bdf5d18e395",
+      "source_sha256": "6d3d6b002f7bad0efcf5a9f854c7ed973d7b9b585d4fa51260c8a1e80d83ffdf",
+      "removed_private_fields": [],
+      "artifact_role": "EXECUTED_FIVE_SHARD_LAUNCHER"
     },
     {
       "package_path": "migrate_aggregation_once.py",
@@ -223,6 +233,46 @@
       "source_sha256": "a0fa3531967b6c5b91a231df74f718820606e70ce41a448f4248a360d88ca716",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "P2_FIVE_SHARD_ACTIVATION.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FIVE_SHARD_ACTIVATION.json",
+      "bytes": 7170,
+      "sha256": "fdb724fcae37b8acb4f3a8de4d7d7ce43aaa512f9da59bff2844b75de2060741",
+      "git_sha1": "68919d4f0bb9a686ced5587252e330b59f28e563",
+      "source_sha256": "fdb724fcae37b8acb4f3a8de4d7d7ce43aaa512f9da59bff2844b75de2060741",
+      "removed_private_fields": [],
+      "artifact_role": "ACTUAL_FIVE_SHARD_FIRST_SUCCESS_SNAPSHOT"
+    },
+    {
+      "package_path": "P2_FIVE_SHARD_HANDOFF.md",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FIVE_SHARD_HANDOFF.md",
+      "bytes": 4133,
+      "sha256": "418e3377a66d5d279731e34eadaa22258bd910739cab01b5e3c554e98a28f2ed",
+      "git_sha1": "7ad0365da094daf0da57415f3bd27f8b1d15f7de",
+      "source_sha256": "418e3377a66d5d279731e34eadaa22258bd910739cab01b5e3c554e98a28f2ed",
+      "removed_private_fields": [],
+      "artifact_role": "FIVE_SHARD_HANDOFF_WITH_ACTIVATION_ADDENDUM"
+    },
+    {
+      "package_path": "P2_FIVE_SHARD_THROUGHPUT.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FIVE_SHARD_THROUGHPUT.json",
+      "bytes": 1562,
+      "sha256": "14ae94ade679d38bf6f32438a80e4df7c5cb0996cb5ded0189b91b3f8eef6458",
+      "git_sha1": "eb3fd93f859b66be5f426e22c6b02a59cacaea12",
+      "source_sha256": "14ae94ade679d38bf6f32438a80e4df7c5cb0996cb5ded0189b91b3f8eef6458",
+      "removed_private_fields": [],
+      "artifact_role": "OBSERVED_SHARED_LOAD_THROUGHPUT_WINDOWS"
+    },
+    {
+      "package_path": "P2_FIVE_SHARD_TOOLING_QUALIFICATION.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FIVE_SHARD_TOOLING_QUALIFICATION.json",
+      "bytes": 2084,
+      "sha256": "696d732e19a9f1b82529409c1b953cc827c7d866d610a4dbaef404d22f591e56",
+      "git_sha1": "9c882c4698a2f4149c13fcc9e66765438704065f",
+      "source_sha256": "696d732e19a9f1b82529409c1b953cc827c7d866d610a4dbaef404d22f591e56",
+      "removed_private_fields": [],
+      "artifact_role": "PRESERVED_PREDEPLOYMENT_QUALIFICATION_SNAPSHOT"
     },
     {
       "package_path": "P2_FROZEN_EXECUTION_UNION.json",
@@ -487,6 +537,16 @@
       "artifact_role": "EXECUTED_DISJOINT_REMAINING_PARTITION_PREPARER"
     },
     {
+      "package_path": "prepare_aggregation_shards_v4.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/prepare_aggregation_shards_v4.py",
+      "bytes": 9285,
+      "sha256": "c2e909624efd2ad73767a699084cfce98cd804f0c74806351902f4537d244886",
+      "git_sha1": "bc90e0b1a832faec0b7087aab8dbcc9d88c0ca8f",
+      "source_sha256": "c2e909624efd2ad73767a699084cfce98cd804f0c74806351902f4537d244886",
+      "removed_private_fields": [],
+      "artifact_role": "EXECUTED_FIVE_WAY_REMAINING_PARTITION_PREPARER"
+    },
+    {
       "package_path": "prepare_independent_pool.py",
       "publication_path": "routing_idea2/research/e20_p2_execution/prepare_independent_pool.py",
       "bytes": 20117,
@@ -547,6 +607,16 @@
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
     },
     {
+      "package_path": "qualify_five_shard_dispatch.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/qualify_five_shard_dispatch.py",
+      "bytes": 10239,
+      "sha256": "67645b0014c8a37a26e5ac476e283eff94f0700a13cbf6a543378610ba441370",
+      "git_sha1": "f7c7d8498b50d19a307519b734e7f47f95314da7",
+      "source_sha256": "67645b0014c8a37a26e5ac476e283eff94f0700a13cbf6a543378610ba441370",
+      "removed_private_fields": [],
+      "artifact_role": "LOCAL_PREDEPLOYMENT_SYNTHETIC_QUALIFICATION"
+    },
+    {
       "package_path": "qualify_native_collector.py",
       "publication_path": "routing_idea2/research/e20_p2_execution/qualify_native_collector.py",
       "bytes": 9839,
@@ -589,10 +659,10 @@
     {
       "package_path": "README.md",
       "publication_path": "routing_idea2/research/e20_p2_execution/README.md",
-      "bytes": 4871,
-      "sha256": "f18c051163bd232a29b0456db1248e0beaeadba32e69bfa3b864cf0e61588a98",
-      "git_sha1": "1f738b274ef7dc699a18433662b1e14260cefac9",
-      "source_sha256": "f18c051163bd232a29b0456db1248e0beaeadba32e69bfa3b864cf0e61588a98",
+      "bytes": 5148,
+      "sha256": "464b03c919d5454dd3199e276e668c9d5aa4c977844c5fdfd3e6be6b3675b620",
+      "git_sha1": "400318d832495f378b75147a6b29bbf975af7566",
+      "source_sha256": "464b03c919d5454dd3199e276e668c9d5aa4c977844c5fdfd3e6be6b3675b620",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
     },
@@ -605,6 +675,16 @@
       "source_sha256": "5389c371abe3b2c056bdba2c5099f268d38a90d690a013dd1b32811b5e62dcda",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "record_five_shard_activation.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/record_five_shard_activation.py",
+      "bytes": 9764,
+      "sha256": "f39760d5abd38360f1f6d39247638b19cfb13fd42cbcc894f9724afabe277103",
+      "git_sha1": "6833b43f722386d4ff934fb9f05034ce5eed27ec",
+      "source_sha256": "f39760d5abd38360f1f6d39247638b19cfb13fd42cbcc894f9724afabe277103",
+      "removed_private_fields": [],
+      "artifact_role": "LOCAL_DEIDENTIFIED_ACTIVATION_RECORDER"
     },
     {
       "package_path": "record_three_shard_activation.py",
@@ -639,12 +719,22 @@
     {
       "package_path": "RUNTIME_EXECUTION_README.md",
       "publication_path": "routing_idea2/research/e20_p2_execution/RUNTIME_EXECUTION_README.md",
-      "bytes": 8521,
-      "sha256": "c14a815a76829ac63346075980d93e8b0dade140f810fc8435c57968bbebc974",
-      "git_sha1": "1a0ff4fb8c65bebe856b75f8ea4d7e59d38a6d01",
-      "source_sha256": "c14a815a76829ac63346075980d93e8b0dade140f810fc8435c57968bbebc974",
+      "bytes": 9566,
+      "sha256": "46ad66688ea9d6207823a9e6963bb37a87fbcb883fb8b8a944de2642dad7893e",
+      "git_sha1": "ba1e383359b5cac6dced94904aa5749312c3154f",
+      "source_sha256": "46ad66688ea9d6207823a9e6963bb37a87fbcb883fb8b8a944de2642dad7893e",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "scale_aggregation_to_five.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/scale_aggregation_to_five.py",
+      "bytes": 5538,
+      "sha256": "3031ed7b516f6f11467666726740deedebab4adc823e1c859ace778a44f54dfe",
+      "git_sha1": "f9d32f63c9d33de933290ad8a90114bde9b746ae",
+      "source_sha256": "3031ed7b516f6f11467666726740deedebab4adc823e1c859ace778a44f54dfe",
+      "removed_private_fields": [],
+      "artifact_role": "EXECUTED_GRACEFUL_FIVE_SHARD_SWITCH"
     },
     {
       "package_path": "score_paid_outputs.py",
@@ -659,10 +749,10 @@
     {
       "package_path": "stage_publication.py",
       "publication_path": "routing_idea2/research/e20_p2_execution/stage_publication.py",
-      "bytes": 16847,
-      "sha256": "b9b6e0cd7626112423eb4f8e67c3b9c521a07103d390ac841be25dedfa08ae23",
-      "git_sha1": "696892acd13bb0f40fe854b1ea2a82abce333899",
-      "source_sha256": "b9b6e0cd7626112423eb4f8e67c3b9c521a07103d390ac841be25dedfa08ae23",
+      "bytes": 19928,
+      "sha256": "6c8f7ff405bfb2025149b45b739988f840578d77b167b85b46952c9e1eaded03",
+      "git_sha1": "52c191063e21e4a92bf7d82d0bd05394ff358cc1",
+      "source_sha256": "6c8f7ff405bfb2025149b45b739988f840578d77b167b85b46952c9e1eaded03",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
     },
@@ -680,10 +770,10 @@
   "private_identity_or_text_matches": 0,
   "private_arrays_or_weights_uploaded": 0,
   "activation_snapshot_sha256": "a95f06691a7e47ac77a56a7ed53ec0fbd33bc78a607443222f586f74ff9a17b5",
-  "current_runtime_snapshot": "P2_THREE_SHARD_ACTIVATION.json",
-  "current_runtime_snapshot_sha256": "e24160ef864ba9de1af440d48b2720272a0e8d319cfe44dd5751e5a7a390e025",
+  "current_runtime_snapshot": "P2_FIVE_SHARD_ACTIVATION.json",
+  "current_runtime_snapshot_sha256": "fdb724fcae37b8acb4f3a8de4d7d7ce43aaa512f9da59bff2844b75de2060741",
   "staging_not_a_deployment_event": true,
   "unselected_pending_sources": [],
   "new_json_private_path_matches": 0,
-  "staged_utc": "2026-11-16T17:05:53.271718+00:00"
+  "staged_utc": "2026-11-17T04:39:32.815742+00:00"
 }
