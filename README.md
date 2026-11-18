@@ -1,40 +1,29 @@
-# MAB：固定 K=3 模型组合路由实验归档
+# 条件增益：条件增益与预测器比较
 
-本仓库收录原E1（8800次真实调用）及其审计，以及已完成的E2（300组固定K=3路由回放与独立评价）。**E3–E5和完整研究尚未完成。**
+比较二阶预测、直接组合预测和相对默认组合的增益。
 
-研究目标是在固定K=3条件下，检验有限反馈预算下的决策定向组合比较与反馈采集效率；超过单模型不作为核心算法成立的必要条件。
+## 实验记录
 
-- [E2完整汇总与科学结论](routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json)
-- [E2全部300组结果（CSV）](routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv)
-- [E2重要文件与来源索引](routing_idea2/release/e2_20261104/E2_FILE_INDEX.json)
-- [E2交付文件哈希清单](routing_idea2/release/e2_20261104/DELIVERY_MANIFEST.json)
-- [E1给老师汇报的Word文档](reports/e1/E1_流程与实验结果汇报_20261103.docx)：11页，包含流程、执行过程、结果、聚合器失败归因、GSM8K来源与泄漏边界、重要文件索引。
-- [实验源码与复核说明](routing_idea2/README.md)
-- [E1重要文件索引](routing_idea2/E1_FILE_INDEX.md)
-- [原E1汇总](routing_idea2/results/e1/e1_diagnostics.json)
-- [本次只读审计指标](routing_idea2/results/e1/audit_metrics.json)
-- [原E1交付文件哈希清单](release_manifest.json)
+| 内容 | 文件 |
+|---|---|
+| 报告 | [EXPERIMENT_SUMMARY.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md) |
+| 结果 | [CPU_COMPLETE_RESULTS.json](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/CPU_COMPLETE_RESULTS.json) |
+| 代码 | [code](https://github.com/fallenplum/MAB/tree/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/code) |
+| 运行说明 | [CPU_EXPERIMENT_PROTOCOL.json](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json) |
+| 实验设置 | [CPU_EXPERIMENT_PROTOCOL.json](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json) |
+| 补充报告 | [01_stability_and_oracle_analysis.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/01_stability_and_oracle_analysis.md) |
+| 补充报告 | [02_second_order_vs_direct20.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/02_second_order_vs_direct20.md) |
+| 补充报告 | [03_feature_ablation.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/03_feature_ablation.md) |
+| 补充报告 | [04_conditional_gain_router.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/04_conditional_gain_router.md) |
+| 补充报告 | [05_theory_and_proofs.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/05_theory_and_proofs.md) |
+| 补充报告 | [06_fresh400_evaluation.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/06_fresh400_evaluation.md) |
+| 补充报告 | [07_feedback_acquisition.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/routing_idea2/research/conditional_gain_20261106/07_feedback_acquisition.md) |
 
-原E1配置没有证明组合路由的成本质量收益。强单模型79.5%，校准所选固定组合69.5%；同批强三采样直接投票82.5%，原聚合器融合76.5%。GSM8K的95%来自100道官方train题。报告保留这些负结果及解释边界。
 
-原E1的PASS只代表逐题理想上界仍有机会，不是可部署收益。新增600次因果诊断已完成且单列：放宽原聚合上限后78.5%，Qwen3融合83.0%，同设置独答79.5%，直接投票82.5%。融合对投票的+0.5个百分点区间仍包含零，尚未证明异构组合路由收益。E2所需的原在线12000次聚合已完成并通过严格导回校验。
+## 版本
 
-本仓库不包含权重、逐题问题与参考、逐条输出、服务器认证或私有进程状态。
+- 分支：[`conditional-gain-20261106`](https://github.com/fallenplum/MAB/tree/conditional-gain-20261106)
+- 原实验提交：[`8e8093c3e1f3748edd1417564a7665f025b53e78`](https://github.com/fallenplum/MAB/commit/8e8093c3e1f3748edd1417564a7665f025b53e78)
+- 原首页：[README.md](https://github.com/fallenplum/MAB/blob/8e8093c3e1f3748edd1417564a7665f025b53e78/README.md)
 
-新增对照详见 [600次完整因果诊断](routing_idea2/results/e1/causal_diagnostic_summary.json)，Word第11页给出解释。
-
-E2技术门为 **E2_PASS**；预声明主诊断（none / 25条最终评分每100题 / 延迟0）的组合排序准确率为 **51.16%**，95%区间 **[49.99%, 52.28%]**。可排序问题317道（BBH 203、GSM8K 114），5个流种子先按同题平均。科学结论为 **INCONCLUSIVE**：区间跨越50%随机基线。该结果尚不足以确认该预算下共享二阶预测器可靠优于随机排序；E3将在相同预测器与主服务策略下比较决策定向、随机和不确定性采集；E4与共享权限适配的CES等比较完整策略。
-
-E2的20800次真实预计算调用与300组逻辑回放分账；所有策略采用相同的最终组合评分预算上限与verifiable reference权限，实际消耗和成员反馈使用量另列。结论限于一套冻结生成缓存。
-
-## v2开发协议与基础实现
-
-下一轮保留每题选3个模型，依次检查聚合器与多生成重复、充分反馈下的提前选队，以及同选择器下的有限反馈采集。原E1已有92.5%的逐题事后Oracle；69.5%固定组合与78.5%同模型三采样融合不能代替未见训练题上的前瞻路由检验。
-
-v2将标准答案用量按题/真值版本去重，并分列成员生成、聚合、judge、确定性判分和规划开销。原E2的标签单位为组合评分条数，新口径的采集实验需要独立运行。
-
-已完成45项软件回归、真实历史单题的1gold/26评分复用审计，以及Qwen3候选聚合器8次实际服务器资格调用（7/8正确，正常结束8/8，截断0，6142token）。异构组合多生成重复和充分反馈路由进入后续科学关卡。KG-informed采集算子已有理论前史，其实际效果由同条件对照检验。
-
-- [新版实验设计](routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_DESIGN_v2.txt)
-- [新版重要文件索引](routing_idea2/results/decision_feedback_v2/FILE_INDEX_v1.json)
-- [开发状态与完成范围](routing_idea2/results/decision_feedback_v2/DEVELOPMENT_STATUS_v1.json)
+[本阶段复现说明](reproducibility/README.md) · [全部实验](https://github.com/fallenplum/MAB/blob/main/EXPERIMENTS.md)
