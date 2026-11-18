@@ -1,0 +1,36 @@
+{
+  "schema": "mab_p2_deployment_prior_references_v1",
+  "parent_commit": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+  "cohort": "Exact frozen E20 P2 new2400 original questions and three generation seeds",
+  "main_history": "Original balanced train600 complete20x3 binary aggregate scores",
+  "prior": "Sum integer successes over600 questions and3 seeds for each action, divided by1800 when reporting means",
+  "deployment": {
+    "tau": 1e-8,
+    "B_uniform": "Original frozen uniform near-argmax policy",
+    "B_prior": "Within original B near-argmax set choose the action with greatest train600 integer success count, uniform over exact remaining count ties",
+    "C_prior": "Apply exactly the same prior rule within original C near-argmax",
+    "B_raw_and_C_raw": "Reuse original raw-exact floating point maximum sensitivity"
+  },
+  "reference_strategies": [
+    "Train600_GlobalFixed",
+    "Existing_frozen_full600_Ridge",
+    "TSPO_Uniform_training_weights",
+    "TSPO_Matched2026111801",
+    "TSPO_Matched2026111802",
+    "TSPO_Matched2026111803",
+    "B_prior",
+    "C_prior"
+  ],
+  "global_fixed": "Same train600 integer action success counts, uniform over exact maximizing ties",
+  "ridge": "Restore E17 FULL600_MODELS head0 and its original preprocessing and alpha, no parameter search",
+  "weight_controls": "E22 same task/subtask x median nonconstant feature norm strata, same zero counts as T per stratum, frozen seeds2026111801/2/3, final600 salt, lambda0.003472222222222222",
+  "training_normalization": "For all four new TSPO control heads preserve all600 rows and1/600 denominator with all coefficients penalized",
+  "reference_deployment": "Uniform near-argmax tau1e-8 for Ridge and control heads, no choice based on P2 correctness",
+  "freeze_order": "Freeze all reference coefficients and every policy's per-question probabilities before reading current P2 score values for supplemental comparison",
+  "cache_audit": "Require exactly one valid binary score per paid original P2 aggregate key. Known unsupported actions remain NaN. List exact absent member and aggregate keys for the final strategy union.",
+  "cost": "Deduplicate by canonical question, model/team, generation seed, frozen operator. Account existing shared member and aggregate outputs. Bound new member tokens by6144 and aggregation tokens by8192. Record actual newly incurred tokens separately.",
+  "reporting": "Same full2400 denominator and50/50 task weights. Completed supplemental policies only receive full accuracy. Partial policies report coverage and outstanding calls. Retain original main B/C comparison.",
+  "decomposition": "Original302 strict changed rows, original2048 B non-unique rows, original352 B unique rows. Report each contribution at the full cohort denominator.",
+  "statistics": "Supplemental analysis after exposure of P2, no fresh independent confirmation claim, no confidence interval or bootstrap",
+  "scope": "This task prepares exact missing-call union before any new physical LLM execution. No full20 Oracle or extra question collection."
+}
