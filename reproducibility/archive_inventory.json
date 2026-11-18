@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_commit": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
-  "policy": "These paths are excluded only from the curated main working tree; all original blobs remain reachable from source_commit and the experimental branch heads.",
+  "policy": "These original file versions are omitted or replaced in the curated main working tree. All original blobs remain reachable from source_commit and the experimental branch heads.",
   "files": [
     {
       "path": "README.md",

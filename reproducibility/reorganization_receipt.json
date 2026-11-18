@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "repository": "fallenplum/MAB",
+  "recorded_on": "2026-11-18",
+  "timezone": "Asia/Shanghai",
+  "observed_at_utc": "2026-11-18 13:48:46 UTC",
+  "status": "repository_organization_and_branch_renames_verified",
+  "paper_source_commit": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+  "published_paper_main_commit": "fcd93e4f950ca86b7ab2cd9b7572971a1527e2c7",
+  "published_paper_tree": "947b82015cccd8c3cb0da5fbe6d15f437f679ecb",
+  "previous_main_commit": "bf1db55079fb38b3fd91311f4f3731e405db714a",
+  "backup_branch": "archive/main-before-paper-20261118",
+  "branch_verification": {
+    "renamed": 31,
+    "allTipsPreserved": true,
+    "allOldNamesAbsent": true,
+    "remainingCodex": 0,
+    "totalBranches": 34,
+    "mainPreserved": true,
+    "backupCorrect": true,
+    "otherBranchPreserved": true
+  },
+  "branch_mappings": [
+    {
+      "old": "codex/a-fixed-k3-e2-e3",
+      "new": "a-fixed-k3-e2-e3",
+      "expected_sha": "3750e75711a6877a2258020be3db8c52f4c7dd37",
+      "observed_sha": "3750e75711a6877a2258020be3db8c52f4c7dd37",
+      "old_absent": true
+    },
+    {
+      "old": "codex/b1-reliable-paired-evaluation",
+      "new": "b1-reliable-paired-evaluation",
+      "expected_sha": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+      "observed_sha": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+      "old_absent": true
+    },
+    {
+      "old": "codex/ces-traceable-baseline-20261112",
+      "new": "ces-traceable-baseline-20261112",
+      "expected_sha": "a701eabf0720b834d584c3f47ccd8e82fdcb4440",
+      "observed_sha": "a701eabf0720b834d584c3f47ccd8e82fdcb4440",
+      "old_absent": true
+    },
+    {
+      "old": "codex/conditional-gain-20261106",
+      "new": "conditional-gain-20261106",
+      "expected_sha": "8e8093c3e1f3748edd1417564a7665f025b53e78",
+      "observed_sha": "8e8093c3e1f3748edd1417564a7665f025b53e78",
+      "old_absent": true
+    },
+    {
+      "old": "codex/decision-acquisition-e3-20261107",
+      "new": "decision-acquisition-e3-20261107",
+      "expected_sha": "45ff7ad04fa7f017ebafe27f4c3d73ffe5451cf6",
+      "observed_sha": "45ff7ad04fa7f017ebafe27f4c3d73ffe5451cf6",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e3-locked-mechanism-review-20261104",
+      "new": "e3-locked-mechanism-review-20261104",
+      "expected_sha": "1fe57f540970ead0eac70b20cf1a29571fd30390",
+      "observed_sha": "1fe57f540970ead0eac70b20cf1a29571fd30390",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e4-statistical-model-audit-20261107",
+      "new": "e4-statistical-model-audit-20261107",
+      "expected_sha": "b5fa3317c77b1256037d734c93a001ecb19bfa28",
+      "observed_sha": "b5fa3317c77b1256037d734c93a001ecb19bfa28",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e5-paired-gain-validation",
+      "new": "e5-paired-gain-validation",
+      "expected_sha": "7e06c632787f1de093732aed0250c8a30d3035b7",
+      "observed_sha": "7e06c632787f1de093732aed0250c8a30d3035b7",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e6-contrast-directed-feedback",
+      "new": "e6-contrast-directed-feedback",
+      "expected_sha": "0c34a38bede9fcf46359316058759b27fa9f5fea",
+      "observed_sha": "0c34a38bede9fcf46359316058759b27fa9f5fea",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e7-opportunity-and-feedback-learning",
+      "new": "e7-opportunity-and-feedback-learning",
+      "expected_sha": "a7bc3d9a72160b3e6134cae76a1a13f47b8b992b",
+      "observed_sha": "a7bc3d9a72160b3e6134cae76a1a13f47b8b992b",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e8-decision-focused-combination-learning",
+      "new": "e8-decision-focused-combination-learning",
+      "expected_sha": "45767047d556e6cd9cac0e8905cf6dd81d5e3d4f",
+      "observed_sha": "45767047d556e6cd9cac0e8905cf6dd81d5e3d4f",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e8-m4-mechanism-audit",
+      "new": "e8-m4-mechanism-audit",
+      "expected_sha": "0dece5c291c5ec644f690f892638f81543aed691",
+      "observed_sha": "0dece5c291c5ec644f690f892638f81543aed691",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e9-consistent-cost-sensitive-learning",
+      "new": "e9-consistent-cost-sensitive-learning",
+      "expected_sha": "6502fd62932e91deb35e3b09449506afcf9f7e1c",
+      "observed_sha": "6502fd62932e91deb35e3b09449506afcf9f7e1c",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e10-input-prefill-matching-audit",
+      "new": "e10-input-prefill-matching-audit",
+      "expected_sha": "d8431d35cb48a1acb1bcb57d646c17ead0b60740",
+      "observed_sha": "d8431d35cb48a1acb1bcb57d646c17ead0b60740",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e11-group-mean-shrinkage",
+      "new": "e11-group-mean-shrinkage",
+      "expected_sha": "84af4c1bcc63389f9ef9224680292a0e33fb212c",
+      "observed_sha": "84af4c1bcc63389f9ef9224680292a0e33fb212c",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e12-shared-feedback-learning",
+      "new": "e12-shared-feedback-learning",
+      "expected_sha": "46e475f2c6d394a20c8292c12ff1c3194a0be9b3",
+      "observed_sha": "46e475f2c6d394a20c8292c12ff1c3194a0be9b3",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e13-partial-combination-feedback",
+      "new": "e13-partial-combination-feedback",
+      "expected_sha": "0114a7f744eb39aff24e7e2eb2dbb82af66cdd82",
+      "observed_sha": "0114a7f744eb39aff24e7e2eb2dbb82af66cdd82",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e14-controlled-mechanism-diagnostics",
+      "new": "e14-controlled-mechanism-diagnostics",
+      "expected_sha": "9f84007bf4d5ebf516f20a8e0fc74b5e721c4526",
+      "observed_sha": "9f84007bf4d5ebf516f20a8e0fc74b5e721c4526",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e15-feedback-structure-interaction",
+      "new": "e15-feedback-structure-interaction",
+      "expected_sha": "39ba966be8fce97867b23ecd4f0ae1a5f502e862",
+      "observed_sha": "39ba966be8fce97867b23ecd4f0ae1a5f502e862",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e16-signal-replication-representation",
+      "new": "e16-signal-replication-representation",
+      "expected_sha": "1f012ae7b9af54adc6a68fcf4417fab81a269982",
+      "observed_sha": "1f012ae7b9af54adc6a68fcf4417fab81a269982",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e17-supervision-distortion-audit",
+      "new": "e17-supervision-distortion-audit",
+      "expected_sha": "94a8579f9c8dc16d1f6afb943cee6678c5a9792a",
+      "observed_sha": "94a8579f9c8dc16d1f6afb943cee6678c5a9792a",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e18-1-statistics-and-mechanisms",
+      "new": "e18-1-statistics-and-mechanisms",
+      "expected_sha": "341a8a3c48ee95b7a38c1a5713ac659fccba8f6c",
+      "observed_sha": "341a8a3c48ee95b7a38c1a5713ac659fccba8f6c",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e18-mechanism-and-confirmation-preparation",
+      "new": "e18-mechanism-and-confirmation-preparation",
+      "expected_sha": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+      "observed_sha": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e19-symmetric-tie-constraints",
+      "new": "e19-symmetric-tie-constraints",
+      "expected_sha": "07b01361d425b089e49643f1ec5282eae0ac1ec0",
+      "observed_sha": "07b01361d425b089e49643f1ec5282eae0ac1ec0",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e20-independent-confirmation-preparation",
+      "new": "e20-independent-confirmation-preparation",
+      "expected_sha": "031d32ee34911f58c535803c078584c424c8f6e3",
+      "observed_sha": "031d32ee34911f58c535803c078584c424c8f6e3",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e20-p2-independent-confirmation",
+      "new": "e20-p2-independent-confirmation",
+      "expected_sha": "21209351651a76abc782662c00ff4523703bbd8a",
+      "observed_sha": "21209351651a76abc782662c00ff4523703bbd8a",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e21-p3-external-mechanism",
+      "new": "e21-p3-external-mechanism",
+      "expected_sha": "692e481ee344d1dd7632c77633716882de599c55",
+      "observed_sha": "692e481ee344d1dd7632c77633716882de599c55",
+      "old_absent": true
+    },
+    {
+      "old": "codex/e22-mechanism-specificity",
+      "new": "e22-mechanism-specificity",
+      "expected_sha": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+      "observed_sha": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+      "old_absent": true
+    },
+    {
+      "old": "codex/fewshot-adaptation-20261107",
+      "new": "fewshot-adaptation-20261107",
+      "expected_sha": "3a5b15020f06eeeec15bc5c87a439dffb20be215",
+      "observed_sha": "3a5b15020f06eeeec15bc5c87a439dffb20be215",
+      "old_absent": true
+    },
+    {
+      "old": "codex/fewshot-protocol-fix-20261107",
+      "new": "fewshot-protocol-fix-20261107",
+      "expected_sha": "7a21e158fabe56acbe3a40a3dd0e09c139c6c493",
+      "observed_sha": "7a21e158fabe56acbe3a40a3dd0e09c139c6c493",
+      "old_absent": true
+    },
+    {
+      "old": "codex/m4-noise-aware-set-learning",
+      "new": "m4-noise-aware-set-learning",
+      "expected_sha": "19ba4fd5316bd897036622dab6b02fcfd0e036fd",
+      "observed_sha": "19ba4fd5316bd897036622dab6b02fcfd0e036fd",
+      "old_absent": true
+    }
+  ],
+  "workflow_evidence": {
+    "branch_migration": {
+      "run_id": 44316746518,
+      "url": "https://github.com/fallenplum/MAB/actions/runs/44316746518",
+      "conclusion": "success"
+    },
+    "initial_archive_verification": {
+      "run_id": 44316746685,
+      "url": "https://github.com/fallenplum/MAB/actions/runs/44316746685",
+      "conclusion": "success"
+    }
+  },
+  "frozen_archive": {
+    "original_file_versions": 1638,
+    "preserved_verbatim_in_main": 749,
+    "historical_file_versions_indexed": 889,
+    "missing_or_unaccounted_original_paths": 0,
+    "changed_original_blob_shas": 0
+  },
+  "checks": {
+    "reconstructed_paper_rows": 45,
+    "archived_result_inputs": 7,
+    "migration_mock_tests_passed": 19,
+    "full_original_training_repeated": false,
+    "new_llm_generation_calls": 0,
+    "new_confidence_intervals_or_bootstrap": false
+  },
+  "reproducibility_status": {
+    "offline_archive_and_summary_verification": "verified",
+    "private_asset_recovery": "incomplete",
+    "direct_generation_source_files_missing": 4,
+    "additional_preparation_source_missing": 1,
+    "full_end_to_end_reproduction": "not_verified"
+  },
+  "cleanup": "The one-time branch migration workflow is removed by this receipt commit; only the contents-read verification workflow remains."
+}

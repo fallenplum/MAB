@@ -12,11 +12,11 @@
 - 转为历史归档的原始文件版本：[archive_inventory.json](../reproducibility/archive_inventory.json)。
 - 更名前后名称与固定提交：[branch_migration.json](../reproducibility/branch_migration.json)。
 
-更名结果由远端分支列表与 commit SHA 逐一核验；迁移清单本身不代表执行完成。
+2026-11-18 已完成远端核验：31 项更名全部成功，旧分支名称全部消失，每个实验分支的 commit SHA 保持一致。仓库共 34 个分支，包括 main、旧 main 备份和 32 个实验分支。证据与工作流运行链接见 [整理核验记录](../reproducibility/reorganization_receipt.json)。一次性更名工作流已在核验后移除，保留的自动检查只有仓库内容读取权限。
 
 ## 名称映射
 
-| 旧名称 | 目标名称 | 保持的提交 |
+| 旧名称 | 当前名称 | 保持的提交 |
 |---|---|---|
 | `codex/a-fixed-k3-e2-e3` | `a-fixed-k3-e2-e3` | [`3750e75711a6`](https://github.com/fallenplum/MAB/commit/3750e75711a6877a2258020be3db8c52f4c7dd37) |
 | `codex/b1-reliable-paired-evaluation` | `b1-reliable-paired-evaluation` | [`a8ca3eb66013`](https://github.com/fallenplum/MAB/commit/a8ca3eb660136de0cc0793d153e3561b8315283b) |
