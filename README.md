@@ -1,40 +1,32 @@
-# MAB：固定 K=3 模型组合路由实验归档
+# E18：E18 机制分析与独立评价
 
-本仓库收录原E1（8800次真实调用）及其审计，以及已完成的E2（300组固定K=3路由回放与独立评价）。**E3–E5和完整研究尚未完成。**
+保存机制准备、执行源码和独立评价的最终结果。
 
-研究目标是在固定K=3条件下，检验有限反馈预算下的决策定向组合比较与反馈采集效率；超过单模型不作为核心算法成立的必要条件。
+## 实验记录
 
-- [E2完整汇总与科学结论](routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json)
-- [E2全部300组结果（CSV）](routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv)
-- [E2重要文件与来源索引](routing_idea2/release/e2_20261104/E2_FILE_INDEX.json)
-- [E2交付文件哈希清单](routing_idea2/release/e2_20261104/DELIVERY_MANIFEST.json)
-- [E1给老师汇报的Word文档](reports/e1/E1_流程与实验结果汇报_20261103.docx)：11页，包含流程、执行过程、结果、聚合器失败归因、GSM8K来源与泄漏边界、重要文件索引。
-- [实验源码与复核说明](routing_idea2/README.md)
-- [E1重要文件索引](routing_idea2/E1_FILE_INDEX.md)
-- [原E1汇总](routing_idea2/results/e1/e1_diagnostics.json)
-- [本次只读审计指标](routing_idea2/results/e1/audit_metrics.json)
-- [原E1交付文件哈希清单](release_manifest.json)
+| 内容 | 文件 |
+|---|---|
+| 报告 | [E18_CONFIRMATION_REPORT.md](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/E18_CONFIRMATION_REPORT.md) |
+| 结果 | [E18_POINT_RESULTS.json](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/E18_POINT_RESULTS.json) · [MAIN_TABLE.csv](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/MAIN_TABLE.csv) · [PAIRED_TABLE.csv](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/PAIRED_TABLE.csv) |
+| 代码 | [准备代码](https://github.com/fallenplum/MAB/tree/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/code) · [完成执行代码](https://github.com/fallenplum/MAB/tree/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_sources/code) |
+| 运行说明 | [REPRODUCE.md](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/REPRODUCE.md) |
+| 实验设置 | [E18_EVALUATION_PROTOCOL_v2.json](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/E18_EVALUATION_PROTOCOL_v2.json) |
+| 补充报告 | [E18_RESEARCH_CONCLUSION.md](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_confirmatory_execution/final_results/E18_RESEARCH_CONCLUSION.md) |
 
-原E1配置没有证明组合路由的成本质量收益。强单模型79.5%，校准所选固定组合69.5%；同批强三采样直接投票82.5%，原聚合器融合76.5%。GSM8K的95%来自100道官方train题。报告保留这些负结果及解释边界。
 
-原E1的PASS只代表逐题理想上界仍有机会，不是可部署收益。新增600次因果诊断已完成且单列：放宽原聚合上限后78.5%，Qwen3融合83.0%，同设置独答79.5%，直接投票82.5%。融合对投票的+0.5个百分点区间仍包含零，尚未证明异构组合路由收益。E2所需的原在线12000次聚合已完成并通过严格导回校验。
+### E18 理论与评价准备
 
-本仓库不包含权重、逐题问题与参考、逐条输出、服务器认证或私有进程状态。
+[报告](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/EXPERIMENT_SUMMARY.md) · [运行说明](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/REPRODUCE.md) · [实验设置](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/E18_EVALUATION_PROTOCOL.json) · [E17_CORE_RESULTS_TABLE.csv](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/E17_CORE_RESULTS_TABLE.csv) · [code](https://github.com/fallenplum/MAB/tree/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/code)
 
-新增对照详见 [600次完整因果诊断](routing_idea2/results/e1/causal_diagnostic_summary.json)，Word第11页给出解释。
+### E18 执行接口与评分准备
 
-E2技术门为 **E2_PASS**；预声明主诊断（none / 25条最终评分每100题 / 延迟0）的组合排序准确率为 **51.16%**，95%区间 **[49.99%, 52.28%]**。可排序问题317道（BBH 203、GSM8K 114），5个流种子先按同题平均。科学结论为 **INCONCLUSIVE**：区间跨越50%随机基线。该结果尚不足以确认该预算下共享二阶预测器可靠优于随机排序；E3将在相同预测器与主服务策略下比较决策定向、随机和不确定性采集；E4与共享权限适配的CES等比较完整策略。
+[报告](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/EXPERIMENT_SUMMARY_v2.md) · [运行说明](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/REPRODUCE_v2.md) · [实验设置](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/E18_EVALUATION_PROTOCOL_v2.json) · [PREPARATION_COMPLETE_v2.json](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/PREPARATION_COMPLETE_v2.json) · [code](https://github.com/fallenplum/MAB/tree/95c6c8a38a71866d6efdb224aec04b9a158adf17/routing_idea2/research/e18_mechanism_and_confirmation_preparation/code)
 
-E2的20800次真实预计算调用与300组逻辑回放分账；所有策略采用相同的最终组合评分预算上限与verifiable reference权限，实际消耗和成员反馈使用量另列。结论限于一套冻结生成缓存。
 
-## v2开发协议与基础实现
+## 版本
 
-下一轮保留每题选3个模型，依次检查聚合器与多生成重复、充分反馈下的提前选队，以及同选择器下的有限反馈采集。原E1已有92.5%的逐题事后Oracle；69.5%固定组合与78.5%同模型三采样融合不能代替未见训练题上的前瞻路由检验。
+- 分支：[`e18-mechanism-and-confirmation-preparation`](https://github.com/fallenplum/MAB/tree/e18-mechanism-and-confirmation-preparation)
+- 原实验提交：[`95c6c8a38a71866d6efdb224aec04b9a158adf17`](https://github.com/fallenplum/MAB/commit/95c6c8a38a71866d6efdb224aec04b9a158adf17)
+- 原首页：[README.md](https://github.com/fallenplum/MAB/blob/95c6c8a38a71866d6efdb224aec04b9a158adf17/README.md)
 
-v2将标准答案用量按题/真值版本去重，并分列成员生成、聚合、judge、确定性判分和规划开销。原E2的标签单位为组合评分条数，新口径的采集实验需要独立运行。
-
-已完成45项软件回归、真实历史单题的1gold/26评分复用审计，以及Qwen3候选聚合器8次实际服务器资格调用（7/8正确，正常结束8/8，截断0，6142token）。异构组合多生成重复和充分反馈路由进入后续科学关卡。KG-informed采集算子已有理论前史，其实际效果由同条件对照检验。
-
-- [新版实验设计](routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_DESIGN_v2.txt)
-- [新版重要文件索引](routing_idea2/results/decision_feedback_v2/FILE_INDEX_v1.json)
-- [开发状态与完成范围](routing_idea2/results/decision_feedback_v2/DEVELOPMENT_STATUS_v1.json)
+[本阶段复现说明](reproducibility/README.md) · [全部实验](https://github.com/fallenplum/MAB/blob/main/EXPERIMENTS.md)
