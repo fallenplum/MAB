@@ -1,0 +1,42 @@
+{
+  "schema": "mab_mechanism_specificity_v1",
+  "parent_commit": "692e481ee344d1dd7632c77633716882de599c55",
+  "data": "Existing train600 five frozen E19 outer folds, 480 history / 120 evaluation each",
+  "input_features": "Original fold-local MiniLM/PCA16/StandardScaler with penalized intercept, 17x20 linear head",
+  "families": ["tspo", "listnet"],
+  "conditions": {
+    "B": "All 480 training row weights equal 1, reused frozen model",
+    "C": "Zero on empirical all-action-tied rows and 1 elsewhere, reused frozen model",
+    "Uniform": "All 480 row weights equal (480-|T|)/480",
+    "Matched2026111801": "Binary matched random mask, seed 2026111801",
+    "Matched2026111802": "Binary matched random mask, seed 2026111802",
+    "Matched2026111803": "Binary matched random mask, seed 2026111803"
+  },
+  "matching": {
+    "groups": "Task and actual BBH subtask labels used only to construct matching strata",
+    "within_group": "Split history rows into two bins at that group's median nonconstant input-feature L2 norm. Norm<=median is the lower bin.",
+    "counts": "Within every stratum choose exactly as many zero weights as the number of T rows in that stratum",
+    "draw": "Ascending SHA256(seed|fold|global canonical hash), no evaluation rewards or decision metrics used",
+    "seeds": [2026111801, 2026111802, 2026111803],
+    "shared": "Each frozen mask is reused by both losses. Match exact zero-weight count, total row weight, task/subtask and input-norm-bin counts. Report T overlap and pure strata.",
+    "limitation": "Four folds have fewer non-T than T rows. A disjoint non-T-only binary deletion of equal count is infeasible. Matched controls therefore remove a mixture of T and non-T rows."
+  },
+  "normalization": "Keep denominator N=480 and all epigraph rows. No renormalization by retained weight. L2 on every coefficient.",
+  "regularization": "Exact original E19 per-fold lambda: first four folds 0.003472222222222222, fifth 0.00034722222222222224",
+  "reuse": "Use original B/C weights and predictions. Recover TSPO B/C legal dual row subgradients with 10 qualified identical-objective solver runs, verify centered scores and objective against originals. ListNet row gradients analytic from frozen weights.",
+  "new_fits": {"matched_and_uniform_controls": 40, "tspo_dual_recovery": 10},
+  "geometry": [
+    "JT, F0, total parameter and centered-parameter norms, top-score margins, strict switches",
+    "Best positive scaling of WB to WC and residual rotation",
+    "At stationary endpoints 2lambda(WC-WB)=gT(B)+gN(B)-gN(C)",
+    "Decompose evaluation score contrasts into tied-row pressure and non-T response through the same feature map",
+    "Check strong-convexity inequalities and report residuals and correlations as descriptive evidence"
+  ],
+  "primary_control_comparisons": ["C versus Uniform", "C versus the equal average of all three Matched controls"],
+  "secondary": "All individual seed controls and per-fold results reported. No best-seed or best-loss selection.",
+  "deployment": {"primary_tau": 1e-8, "sensitivity_tau": 0},
+  "evaluation": "Freeze all new weights, controls and predictions before this run's evaluation-reward reading. GSM8K and BBH 50/50, three seeds remain within question. Preserve per-task/subtask/seed corrections and damages.",
+  "statistical_scope": "Repeatedly exposed development OOF diagnostic, condition on current fitted models and masks. No confidence intervals, bootstrap, new p-value selection, fresh400 or sealed200 access.",
+  "new_llm_calls": 0,
+  "execution": "Only existing cached rewards and CPU predictor fitting"
+}
