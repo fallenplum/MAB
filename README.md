@@ -1,18 +1,25 @@
-# MAB：模型组合路由 E1 实验归档
+# E2/E3：E2/E3 任务书与代码
 
-本次交付覆盖已完成的原E1（8800次真实模型调用）及问题审计，**不代表E2-E5或完整研究已完成**。
+保存固定 K=3 的 E2/E3 任务书和运行代码。
 
-- [给老师汇报的Word文档](reports/e1/E1_流程与实验结果汇报_20261103.docx)：11页，包含流程、执行过程、结果、聚合器失败归因、GSM8K来源与泄漏边界、重要文件索引。
-- [实验源码与复核说明](routing_idea2/README.md)
-- [E1重要文件索引](routing_idea2/E1_FILE_INDEX.md)
-- [原E1汇总](routing_idea2/results/e1/e1_diagnostics.json)
-- [本次只读审计指标](routing_idea2/results/e1/audit_metrics.json)
-- [交付文件哈希清单](release_manifest.json)
+内容为 E2/E3 任务书与代码。E2 完成结果见 e3-locked-mechanism-review-20261104 分支，E3 决策采集结果见 decision-acquisition-e3-20261107 分支。
 
-现有配置没有证明组合路由的成本质量收益。强单模型79.5%，校准所选固定组合69.5%；同批强三采样直接投票82.5%，原聚合器融合76.5%。GSM8K的95%来自100道官方train题。报告保留这些负结果及解释边界。
+[查看完成结果](https://github.com/fallenplum/MAB/tree/e3-locked-mechanism-review-20261104)
 
-原E1的PASS只代表逐题理想上界仍有机会，不是可部署收益。新增600次因果诊断已完成且单列：放宽原聚合上限后78.5%，Qwen3融合83.0%，同设置独答79.5%，直接投票82.5%。融合对投票的+0.5个百分点区间仍包含零，尚未证明异构组合路由收益。原在线12000次聚合暂缓。
+## 实验记录
 
-本仓库不包含权重、逐题问题与参考、逐条输出、服务器认证或私有进程状态。
+| 内容 | 文件 |
+|---|---|
+| 报告 | [CODEX_TASK_A_E2_E3.md](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/CODEX_TASK_A_E2_E3.md) |
+| 代码 | [evaluate_e2.py](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/scripts/evaluate_e2.py) · [evaluate_e3.py](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/scripts/evaluate_e3.py) · [budget_router](https://github.com/fallenplum/MAB/tree/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/src/budget_router) |
+| 运行说明 | [README.md](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/README.md) |
+| 实验设置 | [E0_LOCK.json](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/routing_idea2/protocol/E0_LOCK.json) |
 
-新增对照详见 [600次完整因果诊断](routing_idea2/results/e1/causal_diagnostic_summary.json)，Word第11页给出解释。
+
+## 版本
+
+- 分支：[`a-fixed-k3-e2-e3`](https://github.com/fallenplum/MAB/tree/a-fixed-k3-e2-e3)
+- 原实验提交：[`3750e75711a6877a2258020be3db8c52f4c7dd37`](https://github.com/fallenplum/MAB/commit/3750e75711a6877a2258020be3db8c52f4c7dd37)
+- 原首页：[README.md](https://github.com/fallenplum/MAB/blob/3750e75711a6877a2258020be3db8c52f4c7dd37/README.md)
+
+[本阶段复现说明](reproducibility/README.md) · [全部实验](https://github.com/fallenplum/MAB/blob/main/EXPERIMENTS.md)
