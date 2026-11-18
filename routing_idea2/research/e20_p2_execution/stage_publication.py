@@ -40,7 +40,8 @@ SOURCE_ALLOWLIST = {
     "P2_FIVE_SHARD_HANDOFF.md", "record_five_shard_activation.py",
     "prepare_member_shards.py", "launch_registered_member.py", "stop_registered_workers.py",
     "qualify_member_parallel.py", "P2_MEMBER_PARALLEL_HANDOFF.md",
-    "record_runtime_fill_activation.py",
+    "record_runtime_fill_activation.py", "P2_FINAL_RESULTS.md",
+    "summarize_final_diagnostics.py", "audit_final_execution.py",
 }
 JSON_ALLOWLIST = {
     "P2_PRESELECTION_PROTOCOL.json", "P2_INPUT_SELECTION_FROZEN.json",
@@ -60,8 +61,26 @@ JSON_ALLOWLIST = {
     "P2_FIVE_SHARD_TOOLING_QUALIFICATION.json", "P2_FIVE_SHARD_ACTIVATION.json",
     "P2_FIVE_SHARD_THROUGHPUT.json",
     "P2_MEMBER_PARALLEL_QUALIFICATION.json", "P2_RUNTIME_FILL_ACTIVATION.json",
+    "P2_POINT_RESULTS.json", "P2_FINAL_DIAGNOSTICS.json", "P2_FINAL_EXECUTION_LEDGER.json",
 }
 NEW_JSON_FIELDS = {
+    "P2_FINAL_EXECUTION_LEDGER.json": {
+        "schema", "status", "scope_canonical_sha256", "stages",
+        "all_required_successful", "closed_exporter_coverage_complete", "exporter_closure",
+        "journal_failure_events", "unresolved_failure_events", "partial_journals",
+        "unregistered_dispatcher_directories", "unregistered_dispatcher_classifications",
+        "unresolved_unregistered_dispatcher_directories",
+        "extra_export_index_keys", "duplicate_paid_success_keys",
+        "successful_keys_without_original_paid_journal_evidence", "unique_paid_successful_attempts",
+        "successful_call_tokens", "failure_closure_pending", "failed_or_unknown_native_attempts_audited",
+        "all_attempt_total_tokens", "model_loading_planning_transfer_cpu_and_gpu_overhead",
+        "native_output_payloads_read", "gold_values_read", "new_llm_calls", "audit_boundary",
+    },
+    "P2_FINAL_DIAGNOSTICS.json": {
+        "schema", "requested_questions", "scope_sha256", "prediction_sha256",
+        "by_task", "by_source_frame", "policy_summaries", "action_probability_summary",
+        "mean_total_variation", "mean_question_centered_score_l2_change", "new_llm_calls",
+    },
     "P2_NATIVE_COLLECTOR_SOFTWARE_QUALIFICATION.json": {
         "schema", "status", "checks", "collector_sha256", "synthetic_fixture_only",
         "real_native_archives_modified", "new_llm_calls", "reference_values_read",
@@ -169,6 +188,18 @@ NEW_JSON_FIELDS = {
         "deterministic_scores_computed", "local_publication_new_llm_calls",
         "failure_closure_pending", "all_attempt_total_tokens", "claims_scope",
     },
+    "P2_POINT_RESULTS.json": {
+        "schema", "primary", "raw_exact_sensitivity", "primary_task_weights",
+        "requested_questions", "valid_questions", "excluded_questions",
+        "expected_corrected_generation_events", "expected_damaged_generation_events",
+        "expected_net_corrections", "strict_both_unique_questions", "strict_changed_questions",
+        "strict_valid_questions", "strict_corrected_events", "strict_damaged_events",
+        "centered_score_changed_questions_gt_1e_minus7", "bbh_subtasks",
+        "bbh_subtask_macro_difference_pp", "by_generation_seed",
+        "deterministic_missing_outcome_bounds_pp", "missing_bound_scope",
+        "new_llm_calls", "new_model_fits", "confidence_intervals_computed", "bootstrap_repetitions",
+        "scope_sha256", "prediction_sha256", "final_model_sha256", "reference_and_scoring_costs",
+    },
 }
 EXPECTED_REDACTIONS = {"P2_NATIVE_COLLECTOR_SOFTWARE_QUALIFICATION.json": {"private_test_artifacts"}}
 ARTIFACT_ROLES = {
@@ -212,6 +243,8 @@ ARTIFACT_ROLES = {
     "P2_MEMBER_PARALLEL_HANDOFF.md": "MEMBER_CONTINUATION_INTERFACE_HANDOFF",
     "record_runtime_fill_activation.py": "LOCAL_DEIDENTIFIED_ACTIVATION_RECORDER",
     "P2_RUNTIME_FILL_ACTIVATION.json": "ACTUAL_FOUR_MEMBER_SIX_AGGREGATION_FIRST_SUCCESS_SNAPSHOT",
+    "P2_POINT_RESULTS.json": "FINAL_FROZEN_POLICY_PAIRED_EVALUATION_SUMMARY",
+    "P2_FINAL_RESULTS.md": "FINAL_FROZEN_POLICY_EVALUATION_REPORT",
 }
 
 
@@ -254,6 +287,10 @@ def publication_bytes(path,source):
     if path.name in NEW_JSON_FIELDS:
         value=json.loads(source.decode("utf-8-sig"))
         permitted=NEW_JSON_FIELDS[path.name]
+        if path.name == "P2_POINT_RESULTS.json" and (
+                set(value) != permitted
+                or value.get("schema") != "e20_p2_frozen_probability_evaluation_v1"):
+            raise ValueError("Final result fields differ from the frozen projection/scoring output")
         redactions=sorted(set(value)-permitted)
         if set(redactions) != EXPECTED_REDACTIONS.get(path.name,set()):
             raise ValueError("New qualification fields require publication review " + path.name)
@@ -283,7 +320,9 @@ def stage(parent_commit=DEFAULT_PARENT):
         data,redactions=publication_bytes(path,source)
         captured[path.name]=(data,digest(source),redactions)
         signatures[path.name]=(after.st_size,after.st_mtime_ns)
-    snapshot_name=next(name for name in ("P2_RUNTIME_FILL_ACTIVATION.json","P2_FIVE_SHARD_ACTIVATION.json","P2_THREE_SHARD_ACTIVATION.json","P2_ACTIVATION_STATUS.json") if name in captured)
+    final_results_present = "P2_POINT_RESULTS.json" in captured
+    publication_stage = "FROZEN_POLICY_EVALUATION_COMPLETE" if final_results_present else "PRODUCTION_EXECUTION_STARTED"
+    snapshot_name=next(name for name in ("P2_POINT_RESULTS.json","P2_RUNTIME_FILL_ACTIVATION.json","P2_FIVE_SHARD_ACTIVATION.json","P2_THREE_SHARD_ACTIVATION.json","P2_ACTIVATION_STATUS.json") if name in captured)
     status=json.loads(captured[snapshot_name][0].decode("utf-8-sig"))
     forbidden = set()
     with np.load(STUDY / "private/P2_PREDICTIONS_FROZEN.npz", allow_pickle=False) as archive:
@@ -323,7 +362,7 @@ def stage(parent_commit=DEFAULT_PARENT):
     index = dict(schema="p2_activation_public_file_index_v1",
                  branch="codex/e20-p2-independent-confirmation",
                  parent_commit=parent_commit,
-                 stage="PRODUCTION_EXECUTION_STARTED", files=files,
+                 stage=publication_stage, files=files,
                  private_identity_or_text_matches=0, private_arrays_or_weights_uploaded=0,
                  activation_snapshot_sha256=digest(captured["P2_ACTIVATION_STATUS.json"][0]),
                  current_runtime_snapshot=snapshot_name,
@@ -336,7 +375,7 @@ def stage(parent_commit=DEFAULT_PARENT):
     write_atomic(public/"FILE_INDEX.json",data)
     print(json.dumps({"status":"STAGED", "files":len(files)+1,
                       "bytes":sum(row["bytes"] for row in files)+len(data),
-                      "source_status":status.get("status"), "private_matches":0,
+                      "source_status":publication_stage if final_results_present else status.get("status"), "private_matches":0,
                       "unselected_pending_sources":pending,
                       "redacted_fields":sum(len(row["removed_private_fields"]) for row in files)}, ensure_ascii=False))
 

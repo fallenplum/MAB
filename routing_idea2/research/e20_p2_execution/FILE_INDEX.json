@@ -1,9 +1,19 @@
 {
   "schema": "p2_activation_public_file_index_v1",
   "branch": "codex/e20-p2-independent-confirmation",
-  "parent_commit": "f8661bba7cba6e9a93d6bafcaef15c77404e8140",
-  "stage": "PRODUCTION_EXECUTION_STARTED",
+  "parent_commit": "0efad221b0cecded2dcfc0cef0b7357b7e26798f",
+  "stage": "FROZEN_POLICY_EVALUATION_COMPLETE",
   "files": [
+    {
+      "package_path": "audit_final_execution.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/audit_final_execution.py",
+      "bytes": 18705,
+      "sha256": "d0140c37b344c07f25558d8925f1d2432c2e764101ba7e56d63446d71cfd8afc",
+      "git_sha1": "925d19802f75cb6b5014d545a6e3cbbd20c07794",
+      "source_sha256": "d0140c37b344c07f25558d8925f1d2432c2e764101ba7e56d63446d71cfd8afc",
+      "removed_private_fields": [],
+      "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
     {
       "package_path": "blind_evaluation.py",
       "publication_path": "routing_idea2/research/e20_p2_execution/blind_evaluation.py",
@@ -225,6 +235,36 @@
       "artifact_role": "DEPLOYED_AND_EXERCISED_REGISTERED_EXPORT"
     },
     {
+      "package_path": "P2_FINAL_DIAGNOSTICS.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FINAL_DIAGNOSTICS.json",
+      "bytes": 8148,
+      "sha256": "37e681353aefb2dd057c9d0f3a9578d6f6c1766226051919fe79fd2ddedb594c",
+      "git_sha1": "91ff04d1b2b34a34006d6637db31072c9401373f",
+      "source_sha256": "37e681353aefb2dd057c9d0f3a9578d6f6c1766226051919fe79fd2ddedb594c",
+      "removed_private_fields": [],
+      "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "P2_FINAL_EXECUTION_LEDGER.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FINAL_EXECUTION_LEDGER.json",
+      "bytes": 5236,
+      "sha256": "48099d39f00c438fefb0a55887faf6ebe166166b55b9c1aa1328567c890e65ff",
+      "git_sha1": "640f7d993e8c03710f0ef1d2347fe2e53f5825f0",
+      "source_sha256": "48099d39f00c438fefb0a55887faf6ebe166166b55b9c1aa1328567c890e65ff",
+      "removed_private_fields": [],
+      "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "P2_FINAL_RESULTS.md",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_FINAL_RESULTS.md",
+      "bytes": 4772,
+      "sha256": "f349de3e297a55bbc159a97204da43b9d7c52a7bde5ee007301d6cc07a23c539",
+      "git_sha1": "87b31f438f7353a15b875f6fab1d8e44e8f03931",
+      "source_sha256": "f349de3e297a55bbc159a97204da43b9d7c52a7bde5ee007301d6cc07a23c539",
+      "removed_private_fields": [],
+      "artifact_role": "FINAL_FROZEN_POLICY_EVALUATION_REPORT"
+    },
+    {
       "package_path": "P2_FIRST_NATIVE_EXPORT_QUALIFICATION.json",
       "publication_path": "routing_idea2/research/e20_p2_execution/P2_FIRST_NATIVE_EXPORT_QUALIFICATION.json",
       "bytes": 378,
@@ -395,6 +435,16 @@
       "source_sha256": "ea8e9e5bff0041f387556652a4f89310d9f6858ff162b144724be51803dc38e4",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
+    },
+    {
+      "package_path": "P2_POINT_RESULTS.json",
+      "publication_path": "routing_idea2/research/e20_p2_execution/P2_POINT_RESULTS.json",
+      "bytes": 9381,
+      "sha256": "54aa84a760e70e5189bf2ed7ee0ba92056365497b409c6d146540ab8e2cf2758",
+      "git_sha1": "9234fa9227e9e73b5a4c68404babc98863dbbb80",
+      "source_sha256": "54aa84a760e70e5189bf2ed7ee0ba92056365497b409c6d146540ab8e2cf2758",
+      "removed_private_fields": [],
+      "artifact_role": "FINAL_FROZEN_POLICY_PAIRED_EVALUATION_SUMMARY"
     },
     {
       "package_path": "P2_PREPARATION_SUMMARY.md",
@@ -819,10 +869,10 @@
     {
       "package_path": "stage_publication.py",
       "publication_path": "routing_idea2/research/e20_p2_execution/stage_publication.py",
-      "bytes": 22269,
-      "sha256": "cf6929f02698ea0fb3d215e7b499b777461a988e402183d6430cffdd53c0fc4d",
-      "git_sha1": "cbbc727e7b097db49fac3f35dbb58279ec0bcf9a",
-      "source_sha256": "cf6929f02698ea0fb3d215e7b499b777461a988e402183d6430cffdd53c0fc4d",
+      "bytes": 25180,
+      "sha256": "daed5e1fb87e0f6ae8e59219151f3c999c5f103bfcdecd6a63940ffcd9f416f4",
+      "git_sha1": "1d6f8cad1bcd51c12128e93b8dac6e387db2aaf7",
+      "source_sha256": "daed5e1fb87e0f6ae8e59219151f3c999c5f103bfcdecd6a63940ffcd9f416f4",
       "removed_private_fields": [],
       "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
     },
@@ -835,6 +885,16 @@
       "source_sha256": "e275362ebac43bc564bd3f8f28b82392e80655f50fae1f356aa1d3f062935bf0",
       "removed_private_fields": [],
       "artifact_role": "QUALIFIED_EXPLICIT_OWNED_WORKER_GRACEFUL_STOP"
+    },
+    {
+      "package_path": "summarize_final_diagnostics.py",
+      "publication_path": "routing_idea2/research/e20_p2_execution/summarize_final_diagnostics.py",
+      "bytes": 4835,
+      "sha256": "6453952ce32c00286afe4e59df6a7fca88515acc0f9e7a906e38b1b5525eedc7",
+      "git_sha1": "b581f8d6049366ea7ce865819029b7dfb0e5246e",
+      "source_sha256": "6453952ce32c00286afe4e59df6a7fca88515acc0f9e7a906e38b1b5525eedc7",
+      "removed_private_fields": [],
+      "artifact_role": "READY_SOURCE_OR_RECORDED_SNAPSHOT"
     },
     {
       "package_path": "switch_aggregation_to_three_shards.py",
@@ -850,10 +910,10 @@
   "private_identity_or_text_matches": 0,
   "private_arrays_or_weights_uploaded": 0,
   "activation_snapshot_sha256": "a95f06691a7e47ac77a56a7ed53ec0fbd33bc78a607443222f586f74ff9a17b5",
-  "current_runtime_snapshot": "P2_RUNTIME_FILL_ACTIVATION.json",
-  "current_runtime_snapshot_sha256": "477124aabb1df633b5a7939d965ca6cbfb8e371ea1a655f3e68e783aa9d31ecd",
+  "current_runtime_snapshot": "P2_POINT_RESULTS.json",
+  "current_runtime_snapshot_sha256": "54aa84a760e70e5189bf2ed7ee0ba92056365497b409c6d146540ab8e2cf2758",
   "staging_not_a_deployment_event": true,
   "unselected_pending_sources": [],
   "new_json_private_path_matches": 0,
-  "staged_utc": "2026-11-17T09:55:35.115214+00:00"
+  "staged_utc": "2026-11-18T03:52:11.018400+00:00"
 }

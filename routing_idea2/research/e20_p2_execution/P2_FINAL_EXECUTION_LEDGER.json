@@ -1,0 +1,144 @@
+{
+  "schema": "p2_final_metadata_execution_audit_v1",
+  "status": "COMPLETE_SUCCESS_AND_NATIVE_COST_CLOSED",
+  "scope_canonical_sha256": "b355581aaaab1a581e76dab35107a897948da7b4086a1d9e2a33be4a3e1cd1b9",
+  "stages": {
+    "member_generation": {
+      "expected_keys": 41289,
+      "unique_successful_keys": 41289,
+      "missing_success_keys": 0,
+      "extra_success_keys": 0,
+      "owner_directories": 41289,
+      "missing_owner_directories": 0,
+      "extra_owner_directories": 0,
+      "other_stage_entries": 0,
+      "extra_owner_fence_status_counts": {},
+      "closed_exported_keys": 41289,
+      "last_success": {
+        "unix": 1794943595.9815474,
+        "utc": "2026-11-17T19:26:35.981547+00:00",
+        "asia_shanghai": "2026-11-18T03:26:35.981547+08:00"
+      },
+      "successful_prompt_tokens": 6943791,
+      "successful_completion_tokens": 8978043
+    },
+    "aggregation": {
+      "expected_keys": 106536,
+      "unique_successful_keys": 106536,
+      "missing_success_keys": 0,
+      "extra_success_keys": 0,
+      "owner_directories": 106536,
+      "missing_owner_directories": 0,
+      "extra_owner_directories": 0,
+      "other_stage_entries": 0,
+      "extra_owner_fence_status_counts": {},
+      "closed_exported_keys": 106536,
+      "last_success": {
+        "unix": 1794967233.5301938,
+        "utc": "2026-11-18T02:00:33.530194+00:00",
+        "asia_shanghai": "2026-11-18T10:00:33.530194+08:00"
+      },
+      "successful_prompt_tokens": 91748924,
+      "successful_completion_tokens": 8426957
+    }
+  },
+  "all_required_successful": true,
+  "closed_exporter_coverage_complete": true,
+  "exporter_closure": {
+    "status": "EXISTING_CLOSED_EXPORT_INDEX_REUSED",
+    "verified_closed_batches": 10,
+    "legacy_closed_batches_without_v3_sidecar": 3,
+    "issues": 0,
+    "legacy_original_sidecars_verified": 3,
+    "archive_payloads_opened": 0,
+    "archive_hashes_recomputed": 0,
+    "trust_scope": "Existing successful exporter closure and immutable native-owner contract"
+  },
+  "journal_failure_events": [
+    {
+      "worker_id": "aggregation-v2",
+      "stage": "aggregation",
+      "error_type": "AttributeError",
+      "at": {
+        "unix": 1794842980.348543,
+        "utc": "2026-11-16T15:29:40.348543+00:00",
+        "asia_shanghai": "2026-11-16T23:29:40.348543+08:00"
+      },
+      "category": "TOKENIZER_TUPLE_ENCODE",
+      "original_log_preowner_stack_verified": true,
+      "bound_adapter_job_before_owner_and_store_run": true,
+      "no_native_invocation_proven": true,
+      "owner_fence_now": {
+        "status": "SUCCESS_COMMITTED",
+        "identity_valid": true
+      }
+    }
+  ],
+  "unresolved_failure_events": 0,
+  "partial_journals": 0,
+  "unregistered_dispatcher_directories": 2,
+  "unregistered_dispatcher_classifications": [
+    {
+      "dispatcher_manifest_sha256": "28d45cb9cfed19e7d308e624468099662e69ebcd3a7335ebf470db4a3426f4aa",
+      "category": "PRE_OWNER_EXECUTION_BUDGET_REJECTION",
+      "no_native_invocation_proven": true,
+      "member_index": 0,
+      "checks": {
+        "exact_two_event_startup_sequence": true,
+        "approved_task_identity": true,
+        "zero_completed_zero_backend_summary": true,
+        "no_native_cost_fields": true,
+        "exact_budget_rejection": true,
+        "bound_source_gate_before_owner_and_backend": true
+      },
+      "event_counts": {
+        "TASK_ENTER": 1,
+        "STOP_REQUIRES_RECONCILIATION": 1
+      },
+      "error_type": "PermissionError",
+      "at": {
+        "unix": 1794842011.4119916,
+        "utc": "2026-11-16T15:13:31.411992+00:00",
+        "asia_shanghai": "2026-11-16T23:13:31.411992+08:00"
+      }
+    },
+    {
+      "dispatcher_manifest_sha256": "f519cb85f3446692b1d1389817e2aa834e88efd87e81f52cff858b7391a9baff",
+      "category": "PRE_OWNER_EXECUTION_BUDGET_REJECTION",
+      "no_native_invocation_proven": true,
+      "member_index": 2,
+      "checks": {
+        "exact_two_event_startup_sequence": true,
+        "approved_task_identity": true,
+        "zero_completed_zero_backend_summary": true,
+        "no_native_cost_fields": true,
+        "exact_budget_rejection": true,
+        "bound_source_gate_before_owner_and_backend": true
+      },
+      "event_counts": {
+        "TASK_ENTER": 1,
+        "STOP_REQUIRES_RECONCILIATION": 1
+      },
+      "error_type": "PermissionError",
+      "at": {
+        "unix": 1794842016.1775782,
+        "utc": "2026-11-16T15:13:36.177578+00:00",
+        "asia_shanghai": "2026-11-16T23:13:36.177578+08:00"
+      }
+    }
+  ],
+  "unresolved_unregistered_dispatcher_directories": 0,
+  "extra_export_index_keys": 0,
+  "duplicate_paid_success_keys": 0,
+  "successful_keys_without_original_paid_journal_evidence": 0,
+  "unique_paid_successful_attempts": 147825,
+  "successful_call_tokens": 116097715,
+  "failure_closure_pending": false,
+  "failed_or_unknown_native_attempts_audited": true,
+  "all_attempt_total_tokens": 116097715,
+  "model_loading_planning_transfer_cpu_and_gpu_overhead": "Separate runtime overhead, excluded from native Token counts",
+  "native_output_payloads_read": 0,
+  "gold_values_read": 0,
+  "new_llm_calls": 0,
+  "audit_boundary": "Exact approved scope owner directories, registered journals and existing successful export closure"
+}
