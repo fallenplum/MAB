@@ -1,8 +1,0 @@
-{
-  "completed_candidates": 44,
-  "last": "delta_mlp__full_meta__a100",
-  "last_oof_accuracy": 0.8372222222222222,
-  "validation_used_for_selection": false,
-  "llm_calls": 0,
-  "status": "COMPLETE"
-}

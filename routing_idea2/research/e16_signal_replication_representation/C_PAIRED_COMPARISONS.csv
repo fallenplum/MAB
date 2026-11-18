@@ -1,5 +1,0 @@
-﻿comparison,difference_pp,corrected_events,damaged_events,net_correct_events,independent_questions,generation_direction
-MiniLM64-MiniLM16,0.5555555555555556,69,59,10,600,"[-1, 5, 6]"
-FusionMatched64-MiniLM64,-0.7777777777777778,43,57,-14,600,"[-2, -5, -7]"
-FusionMatched64-QwenMatched64,-1.0555555555555556,42,61,-19,600,"[-10, 1, -10]"
-FusionFull64-FusionMatched64,0.2777777777777778,20,15,5,600,"[1, 2, 2]"

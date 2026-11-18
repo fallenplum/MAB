@@ -1,0 +1,20 @@
+# Local verification/runtime products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Private inputs, generated answers, fitted weights, and local credentials
+**/private/
+**/runtime/
+local_assets/
+local_runs/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

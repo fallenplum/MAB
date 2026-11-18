@@ -1,9 +1,0 @@
-{
-  "schema": "e1_independent_replay_public_summary_v1",
-  "exact_full_dictionary_match": true,
-  "original_e1_result_sha256": "8331fb9a384ef537cd97ec52356708eb43352fa2073a2523768de574832ce1e7",
-  "independent_review_sha256": "8331fb9a384ef537cd97ec52356708eb43352fa2073a2523768de574832ce1e7",
-  "successful_calls": 8800,
-  "unknown_cost_rows": 0,
-  "final_stage_complete": false
-}

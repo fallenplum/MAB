@@ -1,9 +1,0 @@
-{
-  "status": "RESOLVED_AND_REPLAY_VERIFIED",
-  "frozen_sha256": "238f0c58035f5d435ac56caf87f5cd07f662b6cb5fe5b9bd343e42ff010ce5f1",
-  "restored_sha256": "238f0c58035f5d435ac56caf87f5cd07f662b6cb5fe5b9bd343e42ff010ce5f1",
-  "original_numerical_artifacts_preserved": true,
-  "source_cleanup_archived_privately": true,
-  "all_27_main_cells_reproduced_exactly": true,
-  "supplemental_active_vs_total_denominator_error": "corrected, regression qualified, both supplements fully rerun"
-}

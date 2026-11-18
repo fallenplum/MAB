@@ -1,0 +1,9 @@
+# Frozen sources include recorded CRLF/mixed line endings. Preserve their bytes.
+* text=auto eol=lf
+/routing_idea2/** -text
+/AGENTS.md -text
+*.png binary
+*.docx binary
+*.pdf binary
+*.npz binary
+*.gz binary

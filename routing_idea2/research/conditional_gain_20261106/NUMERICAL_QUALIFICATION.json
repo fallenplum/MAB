@@ -1,9 +1,0 @@
-{
-  "source_frozen_model_sha256": "d671230dde611846ce37122dc33c5237d90d8ebfe657d695905e9f831f36f9cd",
-  "max_abs_vs_original_structured_prediction": 2.3872518939427323e-07,
-  "validation_argmax_changes": 0,
-  "basis_rank": 15,
-  "linear_delta_reanchoring_invariance_max_abs": 9.679756995950584e-16,
-  "not_bitwise_claim": true,
-  "new_llm_calls": 0
-}

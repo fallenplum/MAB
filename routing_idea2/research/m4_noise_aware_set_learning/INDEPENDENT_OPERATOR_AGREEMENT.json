@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "training_source_sha256": "53e7465ab8be3f2ab0aa0c66c8609316bba825a38e2392ed4e3fa6eb8bfdef3a",
-  "mathematical_source_sha256": "c1fe7094ecc1de3cece6d5283ece708ce87f591943c12d0b831fb9e29238df62",
-  "ns_value_error": 0.0,
-  "ns_gradient_error": 1.1102230246251565e-16,
-  "davidson_value_error": 0.0,
-  "davidson_gradient_error": 6.938893903907228e-18
-}

@@ -1,95 +1,11 @@
-# 当前研究分支：条件增益可学习性诊断
+# 原系统源码与冻结论文实验
 
-实验1—4已完成现有数据分析、44配置CPU训练与理论证明；训练OOF选择的主候选在val200为86.17%，子任务固定87.00%，差值CI跨0，尚无可重复开发增益。fresh400未评分，有限反馈未运行；新LLM调用0。
+从仓库根目录的 [README](../README.md) 开始阅读；论文结果见 [paper/RESULTS.md](../paper/RESULTS.md)。
 
-- [本轮实验总结](research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md)
-- [结构与特征消融](research/conditional_gain_20261106/02_second_order_vs_direct20.md)
-- [条件增益路由](research/conditional_gain_20261106/04_conditional_gain_router.md)
-- [理论命题与完整证明](research/conditional_gain_20261106/05_theory_and_proofs.md)
-- [阶段完成边界](research/conditional_gain_20261106/STAGE_STATUS.json)
+- `research/e17_*` 到 `research/e22_*`：当前机制论文主线，保留完整冻结代码、协议、报告、结果与执行账本。
+- `src/`、`scripts/`、`configs/`、`protocol/`、`data/cache_audit/` 和 `tests/`：原系统共享实现及验证代码；保留这些文件不代表每个旧实验都是当前论文贡献。
+- 其他五项早期来源文件：供后续阶段导入或核对协议/源码哈希，详见 [复现说明](../docs/REPRODUCIBILITY.md)。早期完整实验请查看 [分支索引](../docs/BRANCHES.md)。
 
-以下保留此前main已归档的历史记录。
+本目录原始文件保持冻结字节，包括历史路径和行尾。不要在此批量替换盘符、分支名或重新格式化源码；新适配应单独版本化并记录差异。`code/` 目录是归档布局，不能假定与原执行资产根相同。
 
----
-
-## V2 Step 1与Step 2完整统计补充（2026-11-06）
-
-本次单独补齐Step1开发诊断200题的完整跨生成稳定性统计，避免与上次Step2 train/validation跨种子诊断混淆。保留全部9个源→目标种子对（6跨seed+3对角）、20组合、2任务及27个BBH子任务、支持数和描述性配对区间。
-
-Step2独立Top-3验证总准确率86.33%，GSM8K92.00%、BBH80.67%；完整总体/逐seed/27子任务结果，以及对Selector、全局固定、任务固定、子任务固定路由的总体/逐seed95%配对题簇区间均已发布。它是事后探索性开发对照，尚无稳定增益；fresh400未评价。
-
-- [Step1完整统计与跨种子表](release/v2_step1_step2_statistics_20261106_v1/step1/README_zh.md)
-- [Step2独立Top-3任务结果与配对区间表](release/v2_step1_step2_statistics_20261106_v1/step2/README_zh.md)
-- [补充文件索引和完整性边界](release/v2_step1_step2_statistics_20261106_v1/FILE_INDEX_zh.md)
-
-以上为已有统计的核验导出，没有新增模型调用、训练或答案评分。实验保持用户要求的暂停状态。
-
----
-
-# v2当前状态：2026-11-06科学诊断与安全暂停
-
-充分反馈选择器在验证200题上为85.67%，训练选出的BBH子任务固定路由为87.00%；差值−1.33pp，95%题簇CI [−3.67,+1.00]pp，未显示稳定收益。原正式科学推进门位于fresh400，尚未评价；训练完成与技术校验通过不能代替科学假设成立。
-
-按用户要求已在在途结果成功提交后暂停剩余生成。9,600次训练/验证成员调用与5,330次fresh成员调用全部成本闭合，PENDING/UNKNOWN/失败均0；fresh聚合0次，Stage3未启动。两项CPU诊断新增LLM、评分、拟合均0，封存200题未用于本轮开发评价。
-
-- [本轮完整报告：验证、原因诊断与最小成本](release/decision_feedback_v2_diagnostic_20261106_v1/REPORT_zh.md)
-- [本轮重要文件索引](release/decision_feedback_v2_diagnostic_20261106_v1/FILE_INDEX_zh.md)
-- [暂停与成本摘要](release/decision_feedback_v2_diagnostic_20261106_v1/PAUSE_AND_COST_PUBLIC_v1.json)
-- [交付哈希清单](release/decision_feedback_v2_diagnostic_20261106_v1/DELIVERY_MANIFEST_v1.json)
-
-这是研究诊断检查点，完整研究尚未完成。以下保留历史E1/E2及早期v2状态，后续进度以本段和本轮报告为准。
-
----
-
-# 有限评测预算下的模型组合路由：E1与E2归档
-
-原E1已完成8800次真实调用；本目录保存固定源代码、配置、原汇总结果及后验问题审计。E2已完成原定300组固定K=3回放与独立评价；E3–E5仍未完成。
-
-原E1配置尚未证明组合路由的实际收益。强单模型79.5%，校准选出的固定组合69.5%，强三采样再聚合76.5%；同批三采样直接投票82.5%，相对单次的提升区间仍包含零。GSM8K的95%来自100道官方train题，不是官方完整测试集结果。
-
-原结果中的PASS仅检验不可部署的逐题理想上界机会，不是学习成功、成本收益或全项目完成。新增600次聚合器诊断已全部完成、独立于原E1：Qwen2.5放宽输出上限后78.5%，Qwen3融合83.0%，Qwen3同设置独答79.5%，原直接投票82.5%。融合对投票的差值仅0.5个百分点，配对区间[-2,+3]个百分点。候选仍为同一强模型三采样，不能据此证明异构组合路由收益。原在线12000次聚合已按用户明确续跑范围完成、严格导回并用于E2；E0、模型、聚合器和原科学源码保持冻结。
-
-## E2完成范围与结论
-
-固定N=6、K=3、20个组合，运行5策略 × 5个流种子 × 4档最终评分预算 × 3档反馈延迟，共300组；每组600题。真实预计算覆盖200道校准题和600道在线题，共4800次成员调用与16000次聚合调用。300组回放共用一套冻结生成缓存。
-
-技术完整性门为E2_PASS；主诊断 none / label_rate25 / delay0 的组合排序准确率51.16%，95%置信区间[49.99%, 52.28%]，支持317道可排序题（BBH203、GSM8K114）。区间跨越随机基线0.5，科学结论INCONCLUSIVE。该结论只针对本次共享二阶回归与反馈设定，不能据此宣布整个组合路由方向无效。
-
-核心目标是固定K=3下的反馈采集效率。E2提供预测/探索基线与可学习性诊断；E3用于相同预测器与主服务策略下的采集规则消融；E4的CES等属于共享权限适配的完整策略对照。单模型对照保留为诊断，超越单模型不作为核心算法的必要门槛。
-
-- [完整汇总](release/e2_20261104/E2_AGGREGATED_RESULTS.json)
-- [300组明细CSV](release/e2_20261104/E2_AGGREGATED_RESULTS.csv)
-- [重要文件与来源索引](release/e2_20261104/E2_FILE_INDEX.json)
-- [本次交付哈希清单](release/e2_20261104/DELIVERY_MANIFEST.json)
-
-最终组合评分是预算标签单位。verifiable reference到达后，本题已生成成员评分的权限对所有E2方法开放；Top-K与共享组合回归实际消费的训练目标不同。固定组合主对照仅使用共同付费预热；4000标签全校准最佳固定组合另列为额外信息参考。成本单位为冻结工程资源单位，并非美元。
-
-## 复核
-
-重要文件见 [E1_FILE_INDEX.md](E1_FILE_INDEX.md)。需恢复本地私有题目、参考、原始输出和固定权重，才能重放完整E1/E2；仅凭汇总包无法独立复评分。
-
-在恢复数据且核对哈希后，从本目录运行：
-    python scripts/evaluate_real_e1.py --root <实验根目录> --output <全新的审查输出.json>
-
-所有原配置和源码按冻结字节保留。配置中原本机模型路径属于原协议身份，迁移时应采用显式物理路径适配，不应静默改锁或把新配置冒充旧协议。
-
-数据、权重、逐题输出、服务器连接与认证、PID、私有运行状态不随本归档上传。data/cache_audit/仅包含公开数据审计的Python工具源代码，不含题目数据。
-
-## Word报告构建
-
-artifacts/audit/build_e1_teacher_report_v1.py 从本地完整证据构建报告；另需python-docx 1.2.0及lxml 6.0.2。发布的Word已用Microsoft Word实际渲染并逐页检查，不依赖读者重新构建。
-
-## v2开发协议
-
-新的三步顺序已记录为开发协议，生成重复暂设3组。训练角色为旧online600，选择器验证角色为旧cal200，新400题开发留出尚待按排除名单抽取。PCA与标准化仅用训练600拟合，原封存200保留到方案确定后的最终评价。
-
-计费接口区分题级gold揭示、实际输出执行和评分观测，生成种子或组合变化可复用同题gold。公开基准的gold揭示是受控信息用量，真实新标注采购调用另计。当前SQLite接口承担权限、核算和去重，实时硬预算预约与外部执行领取在正式采集循环接入验证。
-
-已通过12项账本回归和33项采集算子回归。候选Qwen3聚合器已在匹配Linux/A6000环境完成8次真实资格调用，成绩7/8，无输出截断。初次启动遇到配置默认字段比较问题，在模型加载前被拒绝；标准化ModelSpec检查与零调用输入预检已修正该问题。资格真值采用流式字节扫描及8题白名单投影，审计记录封存题语义解析/评分均为0。
-
-参数IG和KG-informed一步决策价值已实现，批量候选共享后验准备并记录规划CPU/wall。机制归因比较共享选择器、特征、更新和主服务，CES等完整策略另列。
-
-- [设计说明](protocol/decision_feedback_v2/EXPERIMENT_DESIGN_v2.txt)
-- [机器协议](protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json)
-- [重要文件索引](results/decision_feedback_v2/FILE_INDEX_v1.json)
-- [技术资格摘要](results/decision_feedback_v2/s1_qualification/QUALIFICATION_SUMMARY_v1.json)
+共享 `requirements-lock.txt` 记录的是历史 Windows 推理环境，不能代替所有后续阶段的数值与特征环境。请先阅读 [环境及资产要求](../docs/REPRODUCIBILITY.md)，不要直接运行旧调度器或覆盖冻结输出。

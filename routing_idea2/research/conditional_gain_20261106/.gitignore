@@ -1,5 +1,0 @@
-__pycache__/
-*.npz
-*.pkl
-*.sqlite*
-*.pending

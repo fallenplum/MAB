@@ -1,0 +1,5341 @@
+{
+  "schema_version": 1,
+  "source_commit": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+  "policy": "These paths are excluded only from the curated main working tree; all original blobs remain reachable from source_commit and the experimental branch heads.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+      "mode": "100644",
+      "size": 4216
+    },
+    {
+      "path": "release_manifest.json",
+      "sha": "f615d272381c910a9aeb9f7b6bfc220fc353abaf",
+      "mode": "100644",
+      "size": 24229
+    },
+    {
+      "path": "reports/e1/E1_流程与实验结果汇报_20261103.docx",
+      "sha": "ec8103fae85341455f8f102daeb55e6aab712cf5",
+      "mode": "100644",
+      "size": 52911
+    },
+    {
+      "path": "reports/e1/REPORT_BUILD.json",
+      "sha": "67da4e1c8f3ac0a21e56f175ba9346a85455bc62",
+      "mode": "100644",
+      "size": 1070
+    },
+    {
+      "path": "reports/e1/REPORT_QA.json",
+      "sha": "5dc27cef991ec4f839fb18178e7c63ca4a34ede2",
+      "mode": "100644",
+      "size": 789
+    },
+    {
+      "path": "reports/e1/VERIFICATION.json",
+      "sha": "5594e81ef4c871846bbda15bcb70637838b436b3",
+      "mode": "100644",
+      "size": 1787
+    },
+    {
+      "path": "routing_idea2/E1_FILE_INDEX.md",
+      "sha": "45ba17dbfd9a196b1bb9127c564a3809be40800b",
+      "mode": "100644",
+      "size": 2578
+    },
+    {
+      "path": "routing_idea2/README.md",
+      "sha": "fa70f9ad4fa4b26f8fe75aae83ff1a8718db4386",
+      "mode": "100644",
+      "size": 8657
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/audit_e1_failure_modes_v2.py",
+      "sha": "8f483057935e1256667acd1cb58a0278c6e8c40a",
+      "mode": "100644",
+      "size": 12000
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/audit_e1_input_content_v1.py",
+      "sha": "255bec22e818538fd15c816295cd3c1b4c1329ab",
+      "mode": "100644",
+      "size": 6070
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/audit_e1_option_text_v1.py",
+      "sha": "95b2d9d70fb8749126ad7bf9d4626d476d931aa1",
+      "mode": "100644",
+      "size": 2787
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/audit_isolated_e1_causal_outputs_v1.py",
+      "sha": "0d714f0230281cc541f0ae5051c5d38a29bae974",
+      "mode": "100644",
+      "size": 10447
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/build_e1_teacher_report_v1.py",
+      "sha": "29e934880866031529919b952630421423c2a348",
+      "mode": "100644",
+      "size": 30211
+    },
+    {
+      "path": "routing_idea2/artifacts/audit/compare_causal_fusion_to_vote_v1.py",
+      "sha": "d2193de5198072cc9ba3961d5892725f10cdaaf4",
+      "mode": "100644",
+      "size": 3558
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/README.md",
+      "sha": "6ef027b0e3813d0a51002b8d275d99cb427c17ea",
+      "mode": "100644",
+      "size": 4902
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/audit_assets.py",
+      "sha": "8282721db9cfa98596348bb9853f7280c7cde7b6",
+      "mode": "100644",
+      "size": 18744
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/common.py",
+      "sha": "c50666d9c301b0037454293cbb70fc2cfc23e962",
+      "mode": "100644",
+      "size": 7631
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/diagnostic_signal.py",
+      "sha": "93b5bfd8af35089315e956073ec7c411c9db001f",
+      "mode": "100644",
+      "size": 29048
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/evaluate_frozen.py",
+      "sha": "e5619138bf230064d4f7a8a9e87af5bf819dce5e",
+      "mode": "100644",
+      "size": 33676
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/finalize_report.py",
+      "sha": "80525d9c56557996ac3aa403a3e27f3f863a6e89",
+      "mode": "100644",
+      "size": 22852
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/math_consistency.py",
+      "sha": "1f2c3a869749b6082b8e619df32061b79aa914ba",
+      "mode": "100644",
+      "size": 15931
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/protocol_amendment_01.json",
+      "sha": "1254bd41f55b9af2e66ffbc1ba88e9cd4c3116f5",
+      "mode": "100644",
+      "size": 578
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/protocol_frozen.json",
+      "sha": "306d2435dee809c53151ca20a7fc8baf6b1b6c2f",
+      "mode": "100644",
+      "size": 7636
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/qualify_interfaces.py",
+      "sha": "50c86c59eb6336188c27d9e4ba7466877573962c",
+      "mode": "100644",
+      "size": 1314
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/run_nested_cv.py",
+      "sha": "d1b4fa2ca930fea4b764120e8ba71bcda03b056b",
+      "mode": "100644",
+      "size": 17388
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/seal_delivery.py",
+      "sha": "240730dc3eb7a852b46676bfb83f2443d687ae07",
+      "mode": "100644",
+      "size": 5534
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/tests/test_e9_leakage_and_ties.py",
+      "sha": "8c95c12039b873dd0224d4b8e5a912ba7560227f",
+      "mode": "100644",
+      "size": 2290
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/tests/test_e9_math_properties.py",
+      "sha": "ce13fa38aae0fae7e6fb2088db3cccde61db2c91",
+      "mode": "100644",
+      "size": 1448
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/tests/test_e9_mean_models.py",
+      "sha": "1e334431e16455a87b7264eaa7e698cd69e86e46",
+      "mode": "100644",
+      "size": 5449
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/tests/test_e9_repeatability.py",
+      "sha": "14b195288904c0aeeb9c7075202b6a05288b1785",
+      "mode": "100644",
+      "size": 1032
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/train_hsmr.py",
+      "sha": "68dfda4f12cfd8f23567eca5535d93c70042f8e3",
+      "mode": "100644",
+      "size": 7461
+    },
+    {
+      "path": "routing_idea2/experiments/e9_bayes_gate/train_psmr.py",
+      "sha": "a6355dfc5b05723e2672aa03048f9f6f40e083f6",
+      "mode": "100644",
+      "size": 5919
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/DELIVERY_MANIFEST_v1.json",
+      "sha": "f9b0d226d5f939a11f1cd099ec7a0deeff2ced75",
+      "mode": "100644",
+      "size": 4817
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/FILE_INDEX_zh.md",
+      "sha": "810127126533db0d11d217a62b93f1a9f4605e43",
+      "mode": "100644",
+      "size": 2336
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/PAUSE_AND_COST_PUBLIC_v1.json",
+      "sha": "64c267f1e469f257cb8a207e6ff7fd93580ee5ed",
+      "mode": "100644",
+      "size": 5562
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/REPORT_zh.md",
+      "sha": "5beb44532f8f11c42b8961eeda38610b6883826e",
+      "mode": "100644",
+      "size": 5948
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/VALIDATION_AND_COST_DECISION_v1.json",
+      "sha": "024d664e77368a79a84483e4fc821ba46af42d5f",
+      "mode": "100644",
+      "size": 42435
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/seed_stability/INTERPRETATION_zh.md",
+      "sha": "ef6001788f046c8c1c2a51aa6b08ecbed74a3ea3",
+      "mode": "100644",
+      "size": 5082
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/seed_stability/PUBLIC_AGGREGATE_SEED_STABILITY_v1.json.gz",
+      "sha": "67de1622398d9d93c6375fa736eb6e41d9f4cc10",
+      "mode": "100644",
+      "size": 57706
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/seed_stability/PUBLIC_ARITHMETIC_VERIFICATION_v1.json",
+      "sha": "f2ec107ad49937e153885f4b44789e36c0d3a6f6",
+      "mode": "100644",
+      "size": 4005
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_DIAGNOSTIC_BRIEF_zh.md",
+      "sha": "70eedcb7527f5888aa8dbd40e911b085be6879c7",
+      "mode": "100644",
+      "size": 3212
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_DIAGNOSTIC_SANITIZATION_RECEIPT_v1.json",
+      "sha": "da1bf54274dba6087effa071e53a2417d62c5fc5",
+      "mode": "100644",
+      "size": 1218
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_FILE_INDEX_zh.md",
+      "sha": "9c5436ad65ec4e572168975712fc7cc46c928c52",
+      "mode": "100644",
+      "size": 1441
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_SELECTOR_DIAGNOSTIC_v1.json.gz",
+      "sha": "c4003b29c4b165273015e86dde9368a3b54c66e5",
+      "mode": "100644",
+      "size": 14152
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/diagnostics/export_public_diagnostic_v1.py",
+      "sha": "e631ae8aa007290e23bf835f59649b3327fa883f",
+      "mode": "100644",
+      "size": 13124
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/diagnostics/run_frozen_selector_diagnostic_v2.py",
+      "sha": "d328baedc9d3b9818a70ac177ef7cd4cb97dcd59",
+      "mode": "100644",
+      "size": 19698
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/diagnostics/run_independent_top3_v1.py",
+      "sha": "ac7b20ab6562f5218995924dd79246c7a8715173",
+      "mode": "100644",
+      "size": 17523
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/diagnostics/run_seed_stability_diagnostics_v1.py",
+      "sha": "b74ba4110aa2abd435e69bc196603647ff441d57",
+      "mode": "100644",
+      "size": 23139
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/scripts/v2/full_feedback/prepare_inputs.py",
+      "sha": "fbb35c8a539a0102fa122a4ad41b40d641e2de2b",
+      "mode": "100644",
+      "size": 15754
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/src/budget_router/features.py",
+      "sha": "ae1cb03fdbf7ae6d5bf5b744af4f3cfea5230c27",
+      "mode": "100644",
+      "size": 5229
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/src/budget_router/learner.py",
+      "sha": "dc8a1ed5868ee78e9785bcb1b28880639ee9ebca",
+      "mode": "100644",
+      "size": 8109
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/src/budget_router/ranking_evaluation.py",
+      "sha": "aad00ea8f6dbbe9e2efb19e7a19e4678dd68770d",
+      "mode": "100644",
+      "size": 14835
+    },
+    {
+      "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot/src/budget_router_v2/full_feedback.py",
+      "sha": "ef8c49e1d53f18256cd6635b173202541c686d9b",
+      "mode": "100644",
+      "size": 30879
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/DELIVERY_MANIFEST.json",
+      "sha": "e1e020fa89d2e403bc5ad0a276b374602da99d77",
+      "mode": "100644",
+      "size": 3008
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv",
+      "sha": "63d2f2d65e54bcea5761d987c1c9f79aa7c60279",
+      "mode": "100644",
+      "size": 116024
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json",
+      "sha": "07e533aa0c6f1006054a8e2985ab435bb49e3064",
+      "mode": "100644",
+      "size": 714413
+    },
+    {
+      "path": "routing_idea2/release/e2_20261104/E2_FILE_INDEX.json",
+      "sha": "a1fd5636462dc1f156da6cf3734127f1bf700b57",
+      "mode": "100644",
+      "size": 207831
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/DELIVERY_MANIFEST_v1.json",
+      "sha": "9e410b8f4a9881c52d8374abb52556c7682cd09e",
+      "mode": "100644",
+      "size": 2020
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/EXPORT_COMPLETENESS_AND_INTEGRITY_v1.json",
+      "sha": "49718667e90bdbb9ea54424aa1a8bbf90b8613dc",
+      "mode": "100644",
+      "size": 2098
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/FILE_INDEX_zh.md",
+      "sha": "5e7a69857381e8f55b311bd1da045f6061cc3e89",
+      "mode": "100644",
+      "size": 1444
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/README_zh.md",
+      "sha": "8f507ae48921700de930efc6acaaf3f5552f1e49",
+      "mode": "100644",
+      "size": 1816
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_COMPLETE_SCIENTIFIC_STATISTICS_v1.json",
+      "sha": "519fd51eab79adb0c822c54ea0fd3293feb2c659",
+      "mode": "100644",
+      "size": 562874
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_CROSS_SEED_TRANSFER_v1.json",
+      "sha": "5515fe256d53f942142b3f32b29e932be0021d1c",
+      "mode": "100644",
+      "size": 22178
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/README_zh.md",
+      "sha": "e46d16119b364aeef064441b6fc1df276f5291f9",
+      "mode": "100644",
+      "size": 2662
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_ACCURACY_BY_TASK_v1.json",
+      "sha": "690882e9f91498df4981755df0b1ea4b73ade043",
+      "mode": "100644",
+      "size": 22628
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_PAIRED_CI_v1.json",
+      "sha": "69138cd3e66023dba5dac0ed26e7d006d9f20d9a",
+      "mode": "100644",
+      "size": 10750
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_VALIDATION_v1.json",
+      "sha": "833f89b51dc4c24eeeeb29062a16c896c6dfe534",
+      "mode": "100644",
+      "size": 33710
+    },
+    {
+      "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_TOP3_FREEZE_AND_LINEAGE_PUBLIC_v1.json",
+      "sha": "91b12c95dea657927ab8e15e70e6182e1ab41c46",
+      "mode": "100644",
+      "size": 3899
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/01_PUBLIC_BASELINES_AND_ASSUMPTIONS.md",
+      "sha": "e25321454400c5174ebe50ea88d7222d54d8aada",
+      "mode": "100644",
+      "size": 12488
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/02_PAIRED_DESIGN_AND_INFERENCE.md",
+      "sha": "5d0839db291b13f6bab7749f304763f2085d7ff2",
+      "mode": "100644",
+      "size": 3202
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/03_REAL_FIXED_POOL_RESULTS.md",
+      "sha": "7a9749031acd69a3bd4470b6017dc341f453da17",
+      "mode": "100644",
+      "size": 3751
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/04_EXPERIMENT_MATRIX.csv",
+      "sha": "ae819bfc876fc58b83459f66f1db52c91d56930b",
+      "mode": "100644",
+      "size": 13382
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/04_POPULATION_RELIABILITY_AND_POWER.md",
+      "sha": "7dfaff532a4693f33588a348d2d7da3c6be000b1",
+      "mode": "100644",
+      "size": 3506
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/05_ABLATIONS_COST_AND_RESEARCH_DECISION.md",
+      "sha": "52704063164c8f661ace81f80973263431340037",
+      "mode": "100644",
+      "size": 3981
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/ACTIVE_DENOMINATOR_REGRESSION.json",
+      "sha": "599067f8cf2886e486b879527625b50a10080fc7",
+      "mode": "100644",
+      "size": 285
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/ACTIVE_TESTING_QUADRATIC_NATIVE_SUMMARY.csv",
+      "sha": "42fbc4a9f55c5e0dda9bdc7ef58a18596a49aab7",
+      "mode": "100644",
+      "size": 9701
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/ASI_ALPHAFOLD_NATIVE_SUMMARY.csv",
+      "sha": "005ff45d570c960ab393c0815f9c243d8797a7b3",
+      "mode": "100644",
+      "size": 2468
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_COMPLETE_RESULTS.json",
+      "sha": "11458ce65b0ed4e1974920d6780a4394169ab7eb",
+      "mode": "100644",
+      "size": 4496
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_DELIVERY_AUDIT.json",
+      "sha": "53438e24a61527c7a5706c1d9e412114170d9e15",
+      "mode": "100644",
+      "size": 1847
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_PROTOCOL.json",
+      "sha": "933c1f7999e63d5424710b7c10d5e7e3bbeda1e7",
+      "mode": "100644",
+      "size": 4662
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/DESIGN_SUMMARY.json",
+      "sha": "eadf7396f740b760a76ffb10827e85039f8703d4",
+      "mode": "100644",
+      "size": 40801
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/EQUAL_RMSE_COST_DIAGNOSTIC.json",
+      "sha": "47243d033ebc37e6eb1139f5878f41b3d5a28106",
+      "mode": "100644",
+      "size": 2077
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/EXPERIMENT_SUMMARY.md",
+      "sha": "9698782969c8bda1bbe55e5e8f6d66e322b62e59",
+      "mode": "100644",
+      "size": 5340
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/HISTORICAL_METHOD_TUNING.json",
+      "sha": "e4773fa455c0c2131ec0dbbb83ebaa9c3af4b94d",
+      "mode": "100644",
+      "size": 19630
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/MAIN_REPLAY_INTEGRITY_AUDIT.json",
+      "sha": "8c5f5bbbaac10b9f7910976423df25d5d624882b",
+      "mode": "100644",
+      "size": 787
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/METHOD_IMPLEMENTATION_CORRECTIONS.md",
+      "sha": "fa2e9a8a62fcaf641e9ba861dd052e8cf843fdd9",
+      "mode": "100644",
+      "size": 2009
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/NATIVE_REFERENCE_RESULTS.json",
+      "sha": "ed51744cb11aa2cdaf339e507b10a6bbfb83ee21",
+      "mode": "100644",
+      "size": 3738
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/NUMERICAL_QUALIFICATION.json",
+      "sha": "6cd71cac8665c3a3fe69604fb149f211317e977e",
+      "mode": "100644",
+      "size": 10516
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "dc6e4f06c5d16e76bc520e299d68d0a265cd2266",
+      "mode": "100644",
+      "size": 10450
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHODS_QUALIFICATION.json",
+      "sha": "18bba88bc1cf336a4c350117dd4a44664e7dde08",
+      "mode": "100644",
+      "size": 461
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHODS_REPRODUCE.md",
+      "sha": "95d4f2a3946d68b8028818ca7c89c511d87febd4",
+      "mode": "100644",
+      "size": 3672
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHOD_RESULTS.json",
+      "sha": "614d155296247f93c4d159866a51a2e433c2bfc6",
+      "mode": "100644",
+      "size": 13850
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/REAL_FIXED_POOL_RESULTS.json",
+      "sha": "49e55bfbc78b65cd349c59e69f8e7cae89cab96a",
+      "mode": "100644",
+      "size": 192725
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/REPLAY_PERMISSION_AUDIT.json",
+      "sha": "02487fc41a0c1acbfd03af440a13588b4f80f3d2",
+      "mode": "100644",
+      "size": 426
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/REPRODUCE.md",
+      "sha": "e17c0b848a52c9a0306a6f56e8250d5f0081b544",
+      "mode": "100644",
+      "size": 3401
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/SOURCE_AND_REPRODUCTION_CORRECTIONS.json",
+      "sha": "837aa1763815a06f8f903a3602eb4c764e85acc2",
+      "mode": "100644",
+      "size": 490
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/SOURCE_BYTE_EQUIVALENCE.json",
+      "sha": "03fe18c554c486c83decf293a1ce5b8aa53347b9",
+      "mode": "100644",
+      "size": 12984
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/SUPPLEMENTARY_FINITE_POOL_RESULTS.json",
+      "sha": "6ba70385d79dd05324413d107caeb58a41274969",
+      "mode": "100644",
+      "size": 6764
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/UPSTREAM_SOURCE_MANIFEST.json",
+      "sha": "147a896ba6581503d48c3762be8986b24fe5eb26",
+      "mode": "100644",
+      "size": 10982
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/ASSET_FREEZE_PUBLIC.json",
+      "sha": "41048b49f4da8d7b62330490421d2cd941a0d807",
+      "mode": "100644",
+      "size": 6573
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/ASSET_REPLAY_AUDIT.json",
+      "sha": "edcd59b038856785b27e6a4bd332a45f69c096c5",
+      "mode": "100644",
+      "size": 933
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/AUXILIARY_DIAGNOSTICS.json",
+      "sha": "1cbf60bcc7b11de30835cf5e419c1da7178d62e8",
+      "mode": "100644",
+      "size": 3296
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/DATA_ROUTER_AND_AUXILIARIES.md",
+      "sha": "17b7637bfc325991b94997d775b652ecc22b76d3",
+      "mode": "100644",
+      "size": 8027
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/FINAL_DELIVERY_REVIEW.json",
+      "sha": "2cc5e75522a2353fa42a702dfce40ef094dd3e44",
+      "mode": "100644",
+      "size": 4756
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/ROOT_PIPELINE_REVIEW.json",
+      "sha": "6932725d5ed33d1213c4cf596ea9528735a7bed6",
+      "mode": "100644",
+      "size": 19257
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/SYNTHETIC_REVIEW.json",
+      "sha": "fa148689e25971e4781971f27e8f9f0692896c6c",
+      "mode": "100644",
+      "size": 216932
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/diagnose_auxiliaries.py",
+      "sha": "fbe1b964efb01e36d020cdc887b78264fd63a056",
+      "mode": "100644",
+      "size": 3371
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/freeze_assets.py",
+      "sha": "c5ed59bb5bca8a5906c5bce8d626b0a2039e95e4",
+      "mode": "100644",
+      "size": 19538
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/assets/verify_frozen_assets.py",
+      "sha": "193d84e3a22d9efafa3727154fb00dd5aff3efed",
+      "mode": "100644",
+      "size": 5007
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/INFERENCE_AND_ALLOCATION_PROOFS.md",
+      "sha": "41d5abd86d5caf5c5c569ebe152d40b8add594b3",
+      "mode": "100644",
+      "size": 6538
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/INFERENCE_EXECUTION_MANIFEST.json",
+      "sha": "3eb253ad643233e9c50d602fe5cd25034a0d9042",
+      "mode": "100644",
+      "size": 2160
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/INFERENCE_QUALIFICATION.json",
+      "sha": "2dece9588736a174443aa62a68dc673bbce278fa",
+      "mode": "100644",
+      "size": 20630
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_COMPLETE_RESULTS.json",
+      "sha": "6ba190bb9a2080df753297dcf063755024fba42b",
+      "mode": "100644",
+      "size": 1372401
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_INTERPRETATION.md",
+      "sha": "e84810dae650ac78acba4f0ac6ce32285d397db8",
+      "mode": "100644",
+      "size": 5669
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_PROTOCOL.json",
+      "sha": "209857a8e647197b99a480e6de4560e7c8bbb5fe",
+      "mode": "100644",
+      "size": 4909
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_RELIABILITY.md",
+      "sha": "7fefff4a4def76b0fcab92b99ab796d44905c878",
+      "mode": "100644",
+      "size": 40761
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/b1_inference.py",
+      "sha": "2354410a55cfc79e2b99bde7f4caa8369e61b0f4",
+      "mode": "100644",
+      "size": 15950
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/qualify_inference.py",
+      "sha": "40b9bc0066eb46cf691e222f7e62ae41edf2cab9",
+      "mode": "100644",
+      "size": 8400
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/run_synthetic.py",
+      "sha": "a02d1e55ad27381cd88a91ebbdb25c1690acdc8a",
+      "mode": "100644",
+      "size": 22096
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/upstream/LTT_LICENSE",
+      "sha": "2d4c1f0b40cdf0eedea4765675e2bbf1c2107391",
+      "mode": "100644",
+      "size": 1081
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/upstream/ltt_bounds.py",
+      "sha": "5e99eb98859e7190a6b29f9fac865fd3e4d51280",
+      "mode": "100644",
+      "size": 2327
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/audit_and_report.py",
+      "sha": "b675aa3fa9737f21593933da9de153572f69df42",
+      "mode": "100644",
+      "size": 16895
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/b1_design.py",
+      "sha": "2147f6810836c873c3e05125d02fec461b367993",
+      "mode": "100644",
+      "size": 4786
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/finalize_b1.py",
+      "sha": "9bc81c926c887b4615b9cc088561c4b1e9254a85",
+      "mode": "100644",
+      "size": 18378
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/reproduce_guarded.py",
+      "sha": "23189a537af29de58ca0cf385e2e6338275fd934",
+      "mode": "100644",
+      "size": 1877
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/run_b1.py",
+      "sha": "2f8d278dea123e296795e1037c3e4c52d8146e31",
+      "mode": "100644",
+      "size": 20179
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/main/run_supplements.py",
+      "sha": "18184a30f423bdb51a597c91105a9fa621af41d5",
+      "mode": "100644",
+      "size": 4500
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/assemble_method_results.py",
+      "sha": "5ddc58868f8a68606efa6d10bb0e896f17709219",
+      "mode": "100644",
+      "size": 2446
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/download_reference_data.py",
+      "sha": "951355682be77a47a0c6ed15be05cfef1ec121fa",
+      "mode": "100644",
+      "size": 1430
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/fetch_public_sources.py",
+      "sha": "0800c99c4f44ad74c3799402e1fed43a8e57ef37",
+      "mode": "100644",
+      "size": 3264
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/finite_pool_supplements.py",
+      "sha": "d1fef5864e076212865baf0d991cec085eabeadb",
+      "mode": "100644",
+      "size": 9718
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/public_methods.py",
+      "sha": "1bf76e53a8315662237f8bb88ba3cdb1bcaad0d5",
+      "mode": "100644",
+      "size": 7719
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/qualify_active_denominator.py",
+      "sha": "44a39b2fa2d9f2a67efe4521d9a91eb8659ce3e4",
+      "mode": "100644",
+      "size": 1498
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/qualify_public_methods.py",
+      "sha": "ed37278ede64ff0312bfd78edb056db2d16418d5",
+      "mode": "100644",
+      "size": 2552
+    },
+    {
+      "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods/run_native_examples.py",
+      "sha": "02a47ae950418a503737c2891d7bcdd00a3d79dd",
+      "mode": "100644",
+      "size": 11250
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/01_NATIVE_REPRODUCIBILITY_AUDIT.md",
+      "sha": "34fddd1ccc4de8f6aeab791b5d92c6b0e9b71312",
+      "mode": "100644",
+      "size": 10326
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md",
+      "sha": "e922b68172aff98096e813369ab0a6b429922faf",
+      "mode": "100644",
+      "size": 9179
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md",
+      "sha": "ab85dd814920090b459c7d4867bd9d76d7b32ff1",
+      "mode": "100644",
+      "size": 9801
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/04_MIGRATION_RESULTS_AND_COST.md",
+      "sha": "795630ed2994119219d9ead13076007417b96cc1",
+      "mode": "100644",
+      "size": 8462
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md",
+      "sha": "7dc08b2d61b2c68acf1d486b9d31e9f25761c0ca",
+      "mode": "100644",
+      "size": 3832
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_CAPABILITY_AGGREGATE_RECHECK.json",
+      "sha": "563788466fa7ec78fc94e7e92581c67d20385128",
+      "mode": "100644",
+      "size": 22114
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_COMPLETE_RESULTS.json",
+      "sha": "118b8f4b1e50c48304313492b7e58a5fbe9273cb",
+      "mode": "100644",
+      "size": 3402
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_DATA_AUDIT_VERIFICATION.json",
+      "sha": "2205f8d4326d12d3e19fe4747e7ba38c1f7f5f2d",
+      "mode": "100644",
+      "size": 572
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_DELIVERY_AUDIT.json",
+      "sha": "4f3d4a0d4613c6cbabf15455959908f2ed38b5ac",
+      "mode": "100644",
+      "size": 1345
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_FINAL_REVIEW.json",
+      "sha": "f30ed89cf8e1b34bc7b16d17d52f732b84d592ad",
+      "mode": "100644",
+      "size": 13513
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_PROTOCOL.json",
+      "sha": "e5df24dbba108de8aaa241f479a2ed0388f165c2",
+      "mode": "100644",
+      "size": 7810
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/CES_PUBLIC_ASSET_AUDIT.json",
+      "sha": "2005572af39f380ddf7f3d64cd10a2e0b1b81898",
+      "mode": "100644",
+      "size": 13227
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/E7_FREEZE_RECEIPT.json",
+      "sha": "b3ff1a926720b45d18df534d5414037e13eb0bc3",
+      "mode": "100644",
+      "size": 1052
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/MIGRATION_RESULTS.json",
+      "sha": "ea8c6e558fb008514a2b86978b66d4f86a3108e3",
+      "mode": "100644",
+      "size": 137282
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/NATIVE_AUDIT.json",
+      "sha": "b2444f8166b78b6c21463aaaf4c283239082cfd7",
+      "mode": "100644",
+      "size": 22047
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/NATIVE_OPERATOR_QUALIFICATION.json",
+      "sha": "cfaac1328c4b61685f3617a0b87dc7c7e53f23fb",
+      "mode": "100644",
+      "size": 4236
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "acf27246dedca364adaa0b112daec0b2cfae5595",
+      "mode": "100644",
+      "size": 8393
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/REPRODUCE.md",
+      "sha": "1e8fc9ab13d40b3af82095bb6d0d6a18dd4ac3b5",
+      "mode": "100644",
+      "size": 5320
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/CES_ADAPTER_OPERATOR_CHECKS.json",
+      "sha": "5706b049b5cc10ee66fe5b263bd87e1427646856",
+      "mode": "100644",
+      "size": 5313
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/CES_MIGRATION_OPERATOR_ACCESS_AUDIT.json",
+      "sha": "52626320883273536a0b162542a8b9e911ea39c3",
+      "mode": "100644",
+      "size": 16504
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/CES_PROFILE_SOURCE_AUDIT.json",
+      "sha": "6282dd265c2a10565487cc251746b0bdbecdc45c",
+      "mode": "100644",
+      "size": 1487
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/audit_ces_operators.py",
+      "sha": "3cb4ec6608b60eaf38e2132251634345337d9535",
+      "mode": "100644",
+      "size": 9108
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/audit_migration.py",
+      "sha": "59dcc07bb7ce69ec384c46990a4c5dc35ba65d14",
+      "mode": "100644",
+      "size": 13355
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/adapter/audit_profile_source.py",
+      "sha": "bbd4ac2bebe8f84a34f629371a406dd061db3684",
+      "mode": "100644",
+      "size": 2891
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/ces_common.py",
+      "sha": "74e29c2e1fa9e49a4694cac4a4e492fc505b4724",
+      "mode": "100644",
+      "size": 6535
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/audit_public_assets.py",
+      "sha": "ff4e16a9fc4d4ec781aa1bc4d9e82922d0ca9f7c",
+      "mode": "100644",
+      "size": 4652
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/inspect_benchmark_inputs.py",
+      "sha": "52344b5f953b9d5b48b0e7f0931e24bfbe844dc5",
+      "mode": "100644",
+      "size": 3375
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/make_data_report.py",
+      "sha": "b5f03660c7b37d2a67123b47035364cf17d78aa1",
+      "mode": "100644",
+      "size": 13428
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/recompute_profiles.py",
+      "sha": "dfcd8a5b7bf86b550674615ef1d7cd999746d2f3",
+      "mode": "100644",
+      "size": 4280
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/record_source_inventory.py",
+      "sha": "dd8ef59ac988397597ff4aa7f647f882324517d1",
+      "mode": "100644",
+      "size": 2986
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/data/verify_data_audit.py",
+      "sha": "2495e813e0dbfa8dd0abd4f4165f4ded0a466b41",
+      "mode": "100644",
+      "size": 2590
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/evaluate_migration.py",
+      "sha": "48bee10947f1c1ab3a6f3f29b9075f4a0a6bc645",
+      "mode": "100644",
+      "size": 10252
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/finalize_baseline.py",
+      "sha": "65e1f3db365a1a69d5029814fa2bcf72aa943111",
+      "mode": "100644",
+      "size": 12463
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/freeze_ces.py",
+      "sha": "6e418573af3785aa616335551709349957b17aaf",
+      "mode": "100644",
+      "size": 6134
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/native/audit_native_ces.py",
+      "sha": "afb8a7fa6dc1aeb30d60f91edb01c464f088f404",
+      "mode": "100644",
+      "size": 6864
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/native/make_native_report.py",
+      "sha": "46c31f787cf2a6cf9a7f3d053e463b85eadbabe1",
+      "mode": "100644",
+      "size": 18512
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/review/final_review.py",
+      "sha": "31790a865683f45dd910565279783be3befcfff1",
+      "mode": "100644",
+      "size": 19046
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/run_migration.py",
+      "sha": "b34da4e9534b368158badbfd53796c37e9cadc42",
+      "mode": "100644",
+      "size": 11091
+    },
+    {
+      "path": "routing_idea2/research/ces_traceable_baseline/verify_delivery.py",
+      "sha": "b279ca8dc60d0080cc129befe72f7ee6724dca01",
+      "mode": "100644",
+      "size": 5903
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/.gitattributes",
+      "sha": "41f06b4bbdacc2265a3a0ac2d9010a55644d5f61",
+      "mode": "100644",
+      "size": 56
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/.gitignore",
+      "sha": "3e8ffa8356da0be0a83f0bde090581f7fd3df731",
+      "mode": "100644",
+      "size": 50
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/01_stability_and_oracle_analysis.md",
+      "sha": "1d70dc374bf0e96fd6fc898b42c1382c0a05b890",
+      "mode": "100644",
+      "size": 2139
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/02_second_order_vs_direct20.md",
+      "sha": "33af2a9ba21724d0f45d70e0359377061da7ca34",
+      "mode": "100644",
+      "size": 2028
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/03_feature_ablation.md",
+      "sha": "913c920f83462a14f9ae5409191147b654bbe18d",
+      "mode": "100644",
+      "size": 1934
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/04_conditional_gain_router.md",
+      "sha": "ae2d19caf4fdac771c18855910dcecbdfb31747d",
+      "mode": "100644",
+      "size": 43766
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/05_theory_and_proofs.md",
+      "sha": "c2868540f6fd66d533d10fd374b841aed593aee9",
+      "mode": "100644",
+      "size": 11659
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/06_fresh400_evaluation.md",
+      "sha": "ce05d4ee513be3a89106d91a72453e596c322d6d",
+      "mode": "100644",
+      "size": 1485
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/07_feedback_acquisition.md",
+      "sha": "f72f53013e56775eddc831bbe7a9313508d9b383",
+      "mode": "100644",
+      "size": 916
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/ASSET_AND_CODE_READING_INDEX.json",
+      "sha": "ed78b44e1eb387f99cb39bf8a0c5d9980578a97b",
+      "mode": "100644",
+      "size": 162396
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/CPU_COMPLETE_RESULTS.json",
+      "sha": "bd2d84f1f0112cd5a002d84442d69e1720679def",
+      "mode": "100644",
+      "size": 1569435
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json",
+      "sha": "2c09b8367679e1742382156fd9720031b5bd8704",
+      "mode": "100644",
+      "size": 2137
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/CPU_SEARCH_PROGRESS.json",
+      "sha": "54569ea39ca3552f73ac683f5e963413479213ee",
+      "mode": "100644",
+      "size": 200
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/DELIVERY_MANIFEST.json",
+      "sha": "8a5e5ece9159d7383d451c39b3747ef95c894515",
+      "mode": "100644",
+      "size": 5803
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/ERROR_SOURCE_ANALYSIS.md",
+      "sha": "328a9b766cb623b6c540aff938353b1414b5f90b",
+      "mode": "100644",
+      "size": 1442
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md",
+      "sha": "492115b6b7532ca9ca0bc8b2ddf268cb04d91549",
+      "mode": "100644",
+      "size": 3785
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/FINAL_VALIDATION_CHECKS.json",
+      "sha": "d319d11fd9ad37836b6f8abc4b0460cceaea5f39",
+      "mode": "100644",
+      "size": 930
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/FRESH_POLICY_FREEZE_INPUT_ONLY.json",
+      "sha": "70b6c7e5557a701acf4065363f262723b10b5389",
+      "mode": "100644",
+      "size": 1178
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/METRIC_AND_REPLAY_AUDIT.json",
+      "sha": "f97039daefc2b02b61a50f5a7c6a9331beacf17a",
+      "mode": "100644",
+      "size": 352
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/MODULE_PROVENANCE_AND_OPTIMIZATION.json",
+      "sha": "bbe193efe7212ceaa57ddc97ab1841ef1354d37a",
+      "mode": "100644",
+      "size": 29367
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/NUMERICAL_QUALIFICATION.json",
+      "sha": "5949ad87564415fde89383ee9a1862cb8afd40d7",
+      "mode": "100644",
+      "size": 351
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/REUSED_CROSS_SEED_RANK_AND_TRANSFER.json",
+      "sha": "f636b79cfcb35290b255c0bb31c353a3bc571297",
+      "mode": "100644",
+      "size": 279375
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/ROUTER_AND_INFERENCE_COST.json",
+      "sha": "1632d9b473abbe97d0a622b1921d239795fa51b8",
+      "mode": "100644",
+      "size": 3921
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/STABILITY_AND_VARIANCE.json",
+      "sha": "bfed63633d035631ca6cb2a37136a16bf42053a7",
+      "mode": "100644",
+      "size": 18543
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/STAGE_STATUS.json",
+      "sha": "3b739a933195840f2c8a4d759d577369e1ce75e6",
+      "mode": "100644",
+      "size": 445
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/STRATIFIED_VARIANCE_ANALYSIS.json",
+      "sha": "d5f34199a353eb7a9caf418b13a923253d3bfb79",
+      "mode": "100644",
+      "size": 19596
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/THEORY_NUMERICAL_CHECKS.json",
+      "sha": "639d97b996c1043076788959dff97c6a366a6518",
+      "mode": "100644",
+      "size": 1484
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/TRAIN_ONLY_MAIN_SELECTION_FROZEN.json",
+      "sha": "a2043fe74c5bf82fce17c353ae0398e823ff8561",
+      "mode": "100644",
+      "size": 14524
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/TRAIN_ONLY_STRUCTURE_FEATURE_SELECTION.json",
+      "sha": "3c988589cbd4d93344848a8b69f74d00d872e451",
+      "mode": "100644",
+      "size": 600
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/UNCERTAINTY_CALIBRATION.json",
+      "sha": "2c25031ca7d2f9fe86d5d122a30fb6a4a76e7dcf",
+      "mode": "100644",
+      "size": 776
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/audit_and_freeze.py",
+      "sha": "b51be44c7a5dea997750aec8a6818f3ea1b0a986",
+      "mode": "100644",
+      "size": 7730
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/common.py",
+      "sha": "db103b9feafbeba35d67e8a0647f232ec7019f34",
+      "mode": "100644",
+      "size": 10741
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/final_checks.py",
+      "sha": "ff09164832d809a88fa6aedd944f2a270dd862eb",
+      "mode": "100644",
+      "size": 6110
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/prepare_and_stability.py",
+      "sha": "582c7b63082cdfd755c54fb634c42df54b8fa435",
+      "mode": "100644",
+      "size": 9257
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/run_cpu_ablation.py",
+      "sha": "be8116af8ddaa08e0c61de5a9fc6fbb0757b8fe5",
+      "mode": "100644",
+      "size": 16128
+    },
+    {
+      "path": "routing_idea2/research/conditional_gain_20261106/code/theory_and_finalize.py",
+      "sha": "566af910fb628cb0a51cbf2df95627ca8d4440d7",
+      "mode": "100644",
+      "size": 19337
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/01_FEEDBACK_RESPONSE.md",
+      "sha": "9ef1981a883cbca3398b61ae70509762ce45dafa",
+      "mode": "100644",
+      "size": 18030
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/02_ACQUISITION_BASELINES.md",
+      "sha": "73c6d0996fcbc1a4c7b23163ebf4fd50c9aedf6f",
+      "mode": "100644",
+      "size": 22066
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/03_CROSS_PREDICTOR_RESULTS.md",
+      "sha": "866527e189c911292752c91bb568d178c756b571",
+      "mode": "100644",
+      "size": 4897
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/04_MECHANISM_ABLATIONS.md",
+      "sha": "6ff83ec9f8d6271ebc09b6ce487221ae07fce4b3",
+      "mode": "100644",
+      "size": 4464
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/05_COST_AND_REUSE.md",
+      "sha": "7e37e65686ee95f5b218c75344ee66e726d74867",
+      "mode": "100644",
+      "size": 4702
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/06_STATISTICAL_ANALYSIS.md",
+      "sha": "393884787b36355eba21c1bdcbf871d868d37ec1",
+      "mode": "100644",
+      "size": 2897
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/07_RESEARCH_CONCLUSION.md",
+      "sha": "3e2567dffb9759c9e8297c08b2ef7bea7e7157e4",
+      "mode": "100644",
+      "size": 2892
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/E3_COMPLETE_RESULTS.json",
+      "sha": "cf92105f81b31d54b075c5b349ee8f2a8f3da873",
+      "mode": "100644",
+      "size": 8874521
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/E3_COMPLETE_RESULTS.json.gz",
+      "sha": "e211c3acd5cc6503db8136813acbead2625ad5eb",
+      "mode": "100644",
+      "size": 625112
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/E3_COMPLETION.json",
+      "sha": "803a83bfefc93844236dc7d5efe047c2b78640de",
+      "mode": "100644",
+      "size": 333
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/E3_PROTOCOL.md",
+      "sha": "8ce40955aefab75fb72261bc7637840ada34e94a",
+      "mode": "100644",
+      "size": 8963
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/E3_RUN_CONFIG.json",
+      "sha": "06eed403542102fa573ec4e91b2f3bb6c10a7fb7",
+      "mode": "100644",
+      "size": 5282
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_A_STATISTICS.json.gz",
+      "sha": "eac8e560a5bc22936c600f3b9e4f10f885118acd",
+      "mode": "100644",
+      "size": 318000
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_B1_STATISTICS.json.gz",
+      "sha": "72326a510888455584a4431f2477756b68d66723",
+      "mode": "100644",
+      "size": 1548494
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_B2_STATISTICS.json.gz",
+      "sha": "ac5b54c2cf392ef28113ca9df31082f8cdb9cdb5",
+      "mode": "100644",
+      "size": 1189180
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_D_STATISTICS.json.gz",
+      "sha": "f0062c9c017f8b4c1a24f5ee76139334980d3bad",
+      "mode": "100644",
+      "size": 667489
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_J_STATISTICS.json.gz",
+      "sha": "3dce6d167ab0c02aef06385c3576f35030dbaf30",
+      "mode": "100644",
+      "size": 1595506
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/FULL_SENSITIVITY_STATISTICS.json.gz",
+      "sha": "278fd85c7e65316004f12d6dcf2ad2d6c8c293af",
+      "mode": "100644",
+      "size": 590193
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/KG_PRECISION_AUDIT.json",
+      "sha": "bf67b0648d50089cbc4fb371db6a1a6232577366",
+      "mode": "100644",
+      "size": 10315
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/MECHANISM_AUDIT_B1.json",
+      "sha": "af0f550b8b6909f2b34b5032770adecbfaa93278",
+      "mode": "100644",
+      "size": 49533
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/MECHANISM_AUDIT_B2.json",
+      "sha": "c06d045c869c03fa8652f42ad6194b380ef6351d",
+      "mode": "100644",
+      "size": 53099
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/MECHANISM_AUDIT_J.json",
+      "sha": "32d5ab14d08da9164b40a8a0503c84313c1f0829",
+      "mode": "100644",
+      "size": 54823
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/PRIMARY_STATISTICS.json",
+      "sha": "e1cd0d4f7193cbc19ea7e22a5e3d89d1801cdb9e",
+      "mode": "100644",
+      "size": 307402
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/PUBLICATION_MANIFEST.json",
+      "sha": "9abf7309d3979b1958e65625cbf4d11d3a5626e7",
+      "mode": "100644",
+      "size": 9990
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/QUALIFICATION.json",
+      "sha": "45e580a3b7b043d3a687d951d018a294df1b5750",
+      "mode": "100644",
+      "size": 2579
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/README.md",
+      "sha": "f8b5ef01b7e9cae20f3932abc31719de3540b68e",
+      "mode": "100644",
+      "size": 3204
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/REUSE_ACCOUNTING.json",
+      "sha": "f651fd116cb90e6b35961363d580f86e5b0fdd6d",
+      "mode": "100644",
+      "size": 6457
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/RUNTIME_ENVIRONMENT.json",
+      "sha": "1e605bb7516389e16f3e335be6ca6fa26a6ce63c",
+      "mode": "100644",
+      "size": 522
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/TECHNICAL_QA_SUMMARY.json",
+      "sha": "74195727340a1c252085dc1b47f534c6589f1bb2",
+      "mode": "100644",
+      "size": 3810
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/acquisition.py",
+      "sha": "38a8ac537bde2b587c9a07187a2e9dabc194d040",
+      "mode": "100644",
+      "size": 6642
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/assets.py",
+      "sha": "1cf2079bc10d2e5fa36e01cb1498669b383e29b7",
+      "mode": "100644",
+      "size": 20554
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/audit_e3.py",
+      "sha": "f4d7f7be71dc38a7b6c08c12c686d828828607a8",
+      "mode": "100644",
+      "size": 15672
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/audit_kg_precision.py",
+      "sha": "11bc40c831a90e3d8d17d21eda2037a8bd6e0be6",
+      "mode": "100644",
+      "size": 13861
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/build_e3_delivery.py",
+      "sha": "05cbf7f6dcc83a83d376b8f76bba8c1391447a4f",
+      "mode": "100644",
+      "size": 28755
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/e3_statistics.py",
+      "sha": "c62cbea8b06f74af7b8eb98996a4820098ab0f37",
+      "mode": "100644",
+      "size": 27807
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/execute_all.py",
+      "sha": "b5d722b085c6a7a00e25a5f4e5897dc01226abf3",
+      "mode": "100644",
+      "size": 1725
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/feedback_quality_curves.png",
+      "sha": "fab423b0c9bfb9874f090dc859663734179d226e",
+      "mode": "100644",
+      "size": 430260
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/mechanism_diagnostics.py",
+      "sha": "63c85dbcd848003eadefb7e6a72542e0f8fa7372",
+      "mode": "100644",
+      "size": 18795
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/predictors.py",
+      "sha": "8458851241c6410a99090feb558e6a8596c9464b",
+      "mode": "100644",
+      "size": 23310
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/primary_statistics.py",
+      "sha": "4d28b190a031399832ec9451851c5fe0122d7a00",
+      "mode": "100644",
+      "size": 23866
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/quality_complete_token_curves.png",
+      "sha": "b6b3445630325fecd7b66e9cf3d197d3c50367a1",
+      "mode": "100644",
+      "size": 433333
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/replay_mechanism_audit.py",
+      "sha": "a17cf9046a32bd1909c550c89d0fffe9d63f1890",
+      "mode": "100644",
+      "size": 23299
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/run_e3.py",
+      "sha": "38ba16113872e538eef826b4414de4315012fc1d",
+      "mode": "100644",
+      "size": 22627
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/summarize_e3.py",
+      "sha": "efbfa9e30409313ffe1fa79fa8f21ab65a4a09cb",
+      "mode": "100644",
+      "size": 22270
+    },
+    {
+      "path": "routing_idea2/research/decision_acquisition_e3/verify_e3_delivery.py",
+      "sha": "ddebcc6eb927544c5c73e98c19f788d63fcf78e6",
+      "mode": "100644",
+      "size": 7437
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/COST.json",
+      "sha": "b358d3d35986aa2dd72b54d31b276cd799075f74",
+      "mode": "100644",
+      "size": 14472
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/CPU_EMBEDDING_REPLAY.json",
+      "sha": "d303f99b6e86b9d6eb780fd89e624ddb11304f22",
+      "mode": "100644",
+      "size": 1492
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_CONTENT_CONTROLS.json",
+      "sha": "74f162fbcc23ccd334d0c7b1357a4ee9f2034bbb",
+      "mode": "100644",
+      "size": 2668
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_DELIVERY_AUDIT.json",
+      "sha": "99d0886642d8c873571317106ca64a886173d765",
+      "mode": "100644",
+      "size": 5715
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_HEAD_INDEPENDENT_SYNTHETIC_QUALIFICATION.json",
+      "sha": "5457d8c4a170b28aba652f4c72bb68440ab9d5b6",
+      "mode": "100644",
+      "size": 2207
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_LITERATURE_AND_HYPOTHESES.md",
+      "sha": "5d435847d27a88d57e5bc06ca83aa264f57a3c34",
+      "mode": "100644",
+      "size": 7367
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_MAIN_RESULTS.json",
+      "sha": "80f54e21aff2327449e5ae63824a66c1f28f28a5",
+      "mode": "100644",
+      "size": 13181201
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_PRIMARY_STATISTICS.json",
+      "sha": "ad67b0bf6bbd5e8a850b3537d709ad3cc306d931",
+      "mode": "100644",
+      "size": 989
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_PROTOCOL.json",
+      "sha": "bffd70a3920f1b1f212ca3251b74af937ac84425",
+      "mode": "100644",
+      "size": 7203
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_PROTOCOL_FREEZE_RECEIPT.json",
+      "sha": "7b4a08e4f4d515435eb6a8cd5be3304fcbbddc65",
+      "mode": "100644",
+      "size": 1835
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_SCORING_REPRODUCTION_VERIFIED.json",
+      "sha": "b2f2efb9402e1f091921b31afb4d95aae9e912f7",
+      "mode": "100644",
+      "size": 831
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E9_REVIEW_TIMELINE_CLARIFICATION.json",
+      "sha": "25677edc23cebb7bac9f7f12f8278c8d537f4efb",
+      "mode": "100644",
+      "size": 13698
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/E9_REVIEW_TIMELINE_CLARIFICATION.md",
+      "sha": "f0c1e31935cf1630216ab394fb690da1eca25847",
+      "mode": "100644",
+      "size": 6153
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/EVALUATION_ADAPTER_SOURCE_FREEZE.json",
+      "sha": "1b4b1525305df0154d1add9a25b75f3d938cb95e",
+      "mode": "100644",
+      "size": 790
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/EXPERIMENT_SUMMARY.md",
+      "sha": "04b3ccec1d4925d1d221ac2095365e20417091c7",
+      "mode": "100644",
+      "size": 19416
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/FROZEN_POLICY_MATCHING_DECOMPOSITION.json",
+      "sha": "72a1c0c78a0b4461a80e3ead4f5d83bc5926c8e4",
+      "mode": "100644",
+      "size": 8237679
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INDEPENDENT_COST_RECONCILIATION.json",
+      "sha": "48cf90dce1a8665de322d1694a5adccfa3f10482",
+      "mode": "100644",
+      "size": 1962
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INDEPENDENT_FINAL_EXPERIMENT_AUDIT.json",
+      "sha": "46559f4d4a3e504af55d6575184addf1670d5e1d",
+      "mode": "100644",
+      "size": 19176
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INDEPENDENT_P1_RECOMPUTATION.json",
+      "sha": "7bde0a3ea03b99a9314cf6a8cad9a7f9fadb1ded",
+      "mode": "100644",
+      "size": 3576
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INDEPENDENT_PREFILL_RECEIPT_AUDIT.json",
+      "sha": "9f23c8d73477cc7538033e07b01c9c0f85d3f571",
+      "mode": "100644",
+      "size": 1898
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INFERENCE_CPU_PROFILE.json",
+      "sha": "65e06496a13327d94f4fc7eae5978c5ebc481068",
+      "mode": "100644",
+      "size": 964
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INPUT_ASSET_CHAIN_AUDIT.json",
+      "sha": "d0aeaf3467e8cf3106d02cb10d4a7dee626592d8",
+      "mode": "100644",
+      "size": 10093
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INPUT_AUDIT_FREEZE_RECEIPT.json",
+      "sha": "130518d20bb4dce66431c9c53ccc6f38b9286485",
+      "mode": "100644",
+      "size": 1003
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INPUT_COVERAGE_AUDIT.json",
+      "sha": "68b5926d0728cb41909d596d7d2803cffb5d1681",
+      "mode": "100644",
+      "size": 76465
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INPUT_COVERAGE_AUDIT.md",
+      "sha": "ba1e9c7626c3ed5fc98ead769397a5ec38fe828e",
+      "mode": "100644",
+      "size": 6456
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/INPUT_COVERAGE_AUDIT_COMPLETION.json",
+      "sha": "2685472bd1a94f4eff3af6ab5b5319ccdb40ee97",
+      "mode": "100644",
+      "size": 79430
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/LITERATURE_TIMELINE_SUPPLEMENTAL_VERIFICATION.json",
+      "sha": "8ab03f5d87652a877d28d08a034d7d9229ff7fa0",
+      "mode": "100644",
+      "size": 16317
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/MATCHING_DEFINITION_AND_QUALIFICATION.md",
+      "sha": "d31280edcb52cf2ed4dc4f8e6a8c15c8f330d1fe",
+      "mode": "100644",
+      "size": 4811
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/MATCHING_MATHEMATICAL_QUALIFICATION.json",
+      "sha": "f8a386d10888f21a1e3463a027da46053852b881",
+      "mode": "100644",
+      "size": 3064
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/MECHANISM_AND_STOP_DECISION.md",
+      "sha": "682c161e74bcb4f8ffdcce2d9f862a9d3744848d",
+      "mode": "100644",
+      "size": 10039
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/PREFILL_FEATURE_QUALIFICATION.json",
+      "sha": "0f9d0054702ad0bad9d41f41e48bdd8b6f1faac0",
+      "mode": "100644",
+      "size": 2160
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "877794a6e137c272048b20f2bce3f95b8a1db7ce",
+      "mode": "100644",
+      "size": 7607
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/README.md",
+      "sha": "395c0bee4d63124fa3df28d645735b43788818ef",
+      "mode": "100644",
+      "size": 3188
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/REPRODUCE.md",
+      "sha": "2966d9ee996a901ca0ef2fbf7b25262f35f5e05b",
+      "mode": "100644",
+      "size": 4783
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/build_e10_cost.py",
+      "sha": "07fd1c9fd9a874775a3d3958c72f9db0efc702b8",
+      "mode": "100644",
+      "size": 7791
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_evaluate.py",
+      "sha": "58c269125a7f0efe6285dd1f957f1b8a56e93070",
+      "mode": "100644",
+      "size": 9865
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_evaluate_adapter.py",
+      "sha": "db638418f29b58ea6d51c5b18e5fbce324108d41",
+      "mode": "100644",
+      "size": 875
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_matching.py",
+      "sha": "49f656b0e2291df0f7fbc7195b95507fb12dfd4d",
+      "mode": "100644",
+      "size": 10265
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_prefill.py",
+      "sha": "7708e7a9e5f395df0f271553b759456509d9b1c1",
+      "mode": "100644",
+      "size": 16515
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_profile_inference.py",
+      "sha": "d4aee47b61eb7c3bc77460554f4f214194e58b85",
+      "mode": "100644",
+      "size": 3043
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_reproduce.py",
+      "sha": "687ea70442d2d84819a8e2a8fb879c05ba406837",
+      "mode": "100644",
+      "size": 4950
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/e10_train.py",
+      "sha": "1d9c17ea01f6faef4a34d9390180da8c23b8848a",
+      "mode": "100644",
+      "size": 9183
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/qualify_e10_head_independent.py",
+      "sha": "4cc16c952ffbb9c1768833a5d164efd1d6f2aa1e",
+      "mode": "100644",
+      "size": 5869
+    },
+    {
+      "path": "routing_idea2/research/e10_input_prefill_matching_audit/code/qualify_e10_matching.py",
+      "sha": "efabece8e880fbcba6ed394886d2ce96dce6af04",
+      "mode": "100644",
+      "size": 7409
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/COST.json",
+      "sha": "b43c91dc089b0db2e05b97a0d1a0c8fded79f587",
+      "mode": "100644",
+      "size": 2417
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/E11_PROTOCOL.json",
+      "sha": "115bb87c936c4e1f29c3d000b291990f08f8e4a4",
+      "mode": "100644",
+      "size": 4835
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/E11_RESULTS.json",
+      "sha": "622243da8e2d2d96bd4d2e9574a2b75ae4ef8eea",
+      "mode": "100644",
+      "size": 90810
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/EXPERIMENT_SUMMARY.md",
+      "sha": "109a8e50d52273e3c9cbe1efd33c90adb4e1d548",
+      "mode": "100644",
+      "size": 10412
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/LITERATURE_AND_MECHANISM.md",
+      "sha": "2550568c8637e39f055d8828e8d02ed7d7680c5e",
+      "mode": "100644",
+      "size": 3855
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "23e6b2b19d94666dcbfd4174e4328661427bc975",
+      "mode": "100644",
+      "size": 1356
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/REPRODUCE.md",
+      "sha": "c7b953ae37e48b52a4f0722668f112348f7b7994",
+      "mode": "100644",
+      "size": 3457
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/RESEARCH_DECISION_UPDATE.md",
+      "sha": "bd6378a7be30e91726f94ff7fdd8fbe139adc14b",
+      "mode": "100644",
+      "size": 3968
+    },
+    {
+      "path": "routing_idea2/research/e11_group_mean_shrinkage/code/e11_group_mean.py",
+      "sha": "e8eb1fe090b16e18f8a373eb9ce49807f75a9bf3",
+      "mode": "100644",
+      "size": 18124
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/COST.json",
+      "sha": "242e56cb68b8f0094b4d963fe664e31d0925a403",
+      "mode": "100644",
+      "size": 94662
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/E12_PROTOCOL.json",
+      "sha": "b403e40be41c858adca8f1c6ada9a95328e8da58",
+      "mode": "100644",
+      "size": 7864
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/E12_RESULTS.json",
+      "sha": "621920aecd1d828b6dc6e05acaa189787764c23b",
+      "mode": "100644",
+      "size": 360099
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/EXPERIMENT_SUMMARY.md",
+      "sha": "bcce2b838b05ca8b61f1e8bfb8554d2033b6a089",
+      "mode": "100644",
+      "size": 14608
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/LITERATURE_AND_POSITIONING.md",
+      "sha": "518d594024689232d7c6e6e74f64c5e3905bf11b",
+      "mode": "100644",
+      "size": 9834
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "a9f5690995830f93254d3dcaaab5c10eb553932e",
+      "mode": "100644",
+      "size": 1708
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/REPRODUCE.md",
+      "sha": "879510c8a25136edf69004e8655ddc89f1083b09",
+      "mode": "100644",
+      "size": 5564
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/code/e12_shared_feedback.py",
+      "sha": "a76d64ea2e008059e0c23736f3e6b52bef51659c",
+      "mode": "100644",
+      "size": 25484
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/code/plot_e12.py",
+      "sha": "cadf164e7ea8e478aaf511c42e9504bb8f95ac1f",
+      "mode": "100644",
+      "size": 4031
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/figures/overall_budget_curve.png",
+      "sha": "5809c7867cd3b21c49571f56e564379f06b727a3",
+      "mode": "100644",
+      "size": 204471
+    },
+    {
+      "path": "routing_idea2/research/e12_shared_feedback_learning/figures/task_budget_curves.png",
+      "sha": "1a48386dbe6acc0adcc71b71153bf54a589ca3d6",
+      "mode": "100644",
+      "size": 285183
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/COST.json",
+      "sha": "5f38c2ce0eebe1f8a1850af88ad147546a6876e9",
+      "mode": "100644",
+      "size": 388882
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/E13_PRIMARY_STATISTICS.json",
+      "sha": "6331be96fa604a2fdf840c11f8610a03908941bb",
+      "mode": "100644",
+      "size": 4328
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/E13_RESULTS.json",
+      "sha": "4010e4f794dd90103e2f5789c4d714bbb83237f8",
+      "mode": "100644",
+      "size": 3752059
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/E13_SUMMARY.csv",
+      "sha": "85c9c6762e1f611770a4b2fb32d5db23c79608a5",
+      "mode": "100644",
+      "size": 35820
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/EXPERIMENT_SUMMARY.md",
+      "sha": "8820bd8026773349373290130e90e23526212f3f",
+      "mode": "100644",
+      "size": 13408
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/FEEDBACK_AND_SERVICE_COSTS.csv",
+      "sha": "cf09e2a77c5920927dc9e5985809c47a62886ef9",
+      "mode": "100644",
+      "size": 25113
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/FEEDBACK_COSTS.csv",
+      "sha": "4e8507fba22e3fe855e81bc7fde2ff32fa6ddb54",
+      "mode": "100644",
+      "size": 186135
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/LITERATURE_AND_BASELINE_MAPPING.md",
+      "sha": "49a97f0331993d8c7bc39fbb051d094bf72cd6f7",
+      "mode": "100644",
+      "size": 5776
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/MECHANISM_DIAGNOSTICS.json",
+      "sha": "d7ad0ad8d8e4838ce79275dec5c117285aceb30a",
+      "mode": "100644",
+      "size": 7473
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "86c725441b5c4674f73be33aa8e596cc43d885d0",
+      "mode": "100644",
+      "size": 5706
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/QUALIFICATION.json",
+      "sha": "f5c65169a3e75e516f73ab255ea938e3efe9929b",
+      "mode": "100644",
+      "size": 216
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/README.md",
+      "sha": "22f44dd72c4b1064149dde318a9a8e90eb510508",
+      "mode": "100644",
+      "size": 848
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/REPRODUCE.md",
+      "sha": "3d2f3be693e799618a8aeeb5343cfec1a5e0e3b8",
+      "mode": "100644",
+      "size": 8625
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/build_costs.py",
+      "sha": "f0eea025f54c7d0730651abe5cfb80e104b56b5d",
+      "mode": "100644",
+      "size": 22219
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/common.py",
+      "sha": "c7941287d004d16aa2bf218712edb47db7bbe4a2",
+      "mode": "100644",
+      "size": 8777
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/evaluate_e13.py",
+      "sha": "515f179005a770d507f8df390672a10efeb3d606",
+      "mode": "100644",
+      "size": 31183
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/feedback_environment.py",
+      "sha": "08e8c54191bd663972a91866bc06cdcceb1afd42",
+      "mode": "100644",
+      "size": 17522
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/finalize_e13.py",
+      "sha": "7b24a05e66e5282ea2fdde145322eb10709a9bc7",
+      "mode": "100644",
+      "size": 22507
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/learners.py",
+      "sha": "665752de51f1289b354bf6428ee2f2b84c1fd276",
+      "mode": "100644",
+      "size": 14956
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/run_e13.py",
+      "sha": "0e3e78bb0d56eb5a6fbd58fa22b5dabbe8f1ab41",
+      "mode": "100644",
+      "size": 19748
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/saverouter_adapter.py",
+      "sha": "d05eca3215f8358ba28a401ff6b8d173a5060b0e",
+      "mode": "100644",
+      "size": 10625
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/seal_e13.py",
+      "sha": "21db5c5345e0fadcfa5b6b2838606e34c59a698e",
+      "mode": "100644",
+      "size": 6855
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/tests/test_evaluate_e13.py",
+      "sha": "8bc3349367b4f78385127050676978a04f1be2a4",
+      "mode": "100644",
+      "size": 3097
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/tests/test_feedback_environment.py",
+      "sha": "0a65aea5853f52cf4b4aa9f91db46c21486322ab",
+      "mode": "100644",
+      "size": 6590
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/tests/test_learners.py",
+      "sha": "3e85345837dc4d1af830db40e9cfe2ff8fce2e1a",
+      "mode": "100644",
+      "size": 6707
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/code/tests/test_saverouter_adapter.py",
+      "sha": "f9fc73bd8710098988f7f9c3c98f8cef30a3f404",
+      "mode": "100644",
+      "size": 3609
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/quality_feedback_tokens.png",
+      "sha": "c45087db23c3f9720d4f970efeb0a596226c4cca",
+      "mode": "100644",
+      "size": 255836
+    },
+    {
+      "path": "routing_idea2/research/e13_partial_combination_feedback/quality_gold.png",
+      "sha": "332401581a6517bc93646020f0bea18c066b9950",
+      "mode": "100644",
+      "size": 256562
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/01_GROUP_RECOGNITION.md",
+      "sha": "30cd063774130e3c26b24d618ba50d0d7c4a638d",
+      "mode": "100644",
+      "size": 1807
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/02_CAPABILITY_ESTIMATION.md",
+      "sha": "0fdb6e305fc90f92e83f01c5f5e221bf4a21b6e4",
+      "mode": "100644",
+      "size": 2119
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/03_TOKEN_MATCHED_FEEDBACK.md",
+      "sha": "1a7436449331c8d303569a8645a8154ffd66ac9e",
+      "mode": "100644",
+      "size": 2309
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/04_RESEARCH_DECISION.md",
+      "sha": "61d07dbf1f11550c2868c87d1e74121000ac0f00",
+      "mode": "100644",
+      "size": 4194
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/A_FOLD_RESULTS.csv",
+      "sha": "e3cf2968771ef2a6e9c2839f42227c8a6e60487a",
+      "mode": "100644",
+      "size": 114143
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/A_GROUP_CLASSIFICATION.csv",
+      "sha": "e928df91b0dfac9c8d642861dadccc3e4b6039cf",
+      "mode": "100644",
+      "size": 4561
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/A_SEED_RESULTS.csv",
+      "sha": "d1ce4f32a223ca3c1fe0089ad4821763928ae39f",
+      "mode": "100644",
+      "size": 67131
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/A_SUBTASK_SUMMARY.csv",
+      "sha": "9c6ccef8bf52a72f1d67933e65915e6ffe432405",
+      "mode": "100644",
+      "size": 152900
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/A_SUMMARY.csv",
+      "sha": "c986f9dfeb3d90357fc4f2a77c724185e6984706",
+      "mode": "100644",
+      "size": 23855
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/B_SUPPORT_CELL_SUMMARY.csv",
+      "sha": "341952cd39e8e769b994a5ef60e853bc162f30d8",
+      "mode": "100644",
+      "size": 55460
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/B_SUPPORT_QUERY_SUMMARY.csv",
+      "sha": "5874e79ec65fb7846165a9e0356226c03277c630",
+      "mode": "100644",
+      "size": 44788
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/C_SEED_RESULTS.csv",
+      "sha": "8d2bd7fae012c0d2c033574f6f8cfa094d9de3b7",
+      "mode": "100644",
+      "size": 45915
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/C_SUBTASK_AND_FOLD.csv",
+      "sha": "3223c9afb3399fb5e3e5be5f609931b74e63f261",
+      "mode": "100644",
+      "size": 105861
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/C_SUMMARY.csv",
+      "sha": "8198303d3be65af503aa8a84622e08e6e2ffaa59",
+      "mode": "100644",
+      "size": 18655
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/C_TOKEN_MATCHES.csv",
+      "sha": "9ed1bf05047014e0b539773af574b7fe8c2eaaf3",
+      "mode": "100644",
+      "size": 175128
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/E14_COMPLETE_RESULTS.json",
+      "sha": "f0b3af7d7d5d70b742775357c8bd622eec7cafb4",
+      "mode": "100644",
+      "size": 551867
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/E14_PROTOCOL.json",
+      "sha": "0bd1b177ba0482099d7190331b1ee4a38bec1c34",
+      "mode": "100644",
+      "size": 4608
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/EXPERIMENT_SUMMARY.md",
+      "sha": "9f8b0101ae063fe90523a5fa25b8be3b2121146c",
+      "mode": "100644",
+      "size": 2778
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "eb342573e121207683c9d38ee33d5f842b4c574f",
+      "mode": "100644",
+      "size": 4937
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/QUALIFICATION.json",
+      "sha": "afd1c875389025f14c808d13aa2b4cdd6972cf10",
+      "mode": "100644",
+      "size": 18866
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/README.md",
+      "sha": "c596726cc82c077376476c2785da9dfd9fcd3e3f",
+      "mode": "100644",
+      "size": 449
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/REPRODUCE.md",
+      "sha": "6e8f8ee13b0b49eb13b5c9f4136f0eae628bea29",
+      "mode": "100644",
+      "size": 1618
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/capability_diagnostic.py",
+      "sha": "61ba4f41941613303e127a83ce4e7e2c9e0188ef",
+      "mode": "100644",
+      "size": 13500
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/evaluate_e14.py",
+      "sha": "42565e7e601735178f731e541e37e1ceaa633324",
+      "mode": "100644",
+      "size": 13989
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/finalize_e14.py",
+      "sha": "eb222e25239b7ec8aa8923931c8b83b754437ef3",
+      "mode": "100644",
+      "size": 14113
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/run_e14.py",
+      "sha": "448f291cd1630fad5aa4485768dcaa3de29fa38d",
+      "mode": "100644",
+      "size": 16923
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/tests/test_capability_diagnostic.py",
+      "sha": "00c86234c5e234494bb0734821b8e86c675adcb8",
+      "mode": "100644",
+      "size": 5070
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/tests/test_interventions.py",
+      "sha": "74d6ba4a1b71d090be86a14ab652b0363e8384d5",
+      "mode": "100644",
+      "size": 1572
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/tests/test_token_matching.py",
+      "sha": "f6161260c5eb518f8d8e6ba02e94ec173085a0e0",
+      "mode": "100644",
+      "size": 6957
+    },
+    {
+      "path": "routing_idea2/research/e14_mechanism_diagnostics/code/token_matching.py",
+      "sha": "0d2c6aa60bdcb6fc783e5e74b8a633580c5bb85b",
+      "mode": "100644",
+      "size": 13699
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/01_LOCKED_DESIGN_AND_COST.md",
+      "sha": "d3d3148557a4e598803c489aa690c93fe8cb7f3c",
+      "mode": "100644",
+      "size": 1878
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/02_INTERACTION_RESULTS.md",
+      "sha": "dab4af73a48f3a8da32403458815578b46250294",
+      "mode": "100644",
+      "size": 1717
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/03_CAPABILITY_AND_COVERAGE.md",
+      "sha": "c32e3d7c898cc9e332eb570a6935086ce8002273",
+      "mode": "100644",
+      "size": 3382
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/04_RESEARCH_DECISION.md",
+      "sha": "8b0a5cc73b51d3a009dc10b8ff99180e09f3298b",
+      "mode": "100644",
+      "size": 3285
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/CAPABILITY_ERROR_SUMMARY.csv",
+      "sha": "d5c450714fd0cfd48f1e5de1c2cee90dd03eff27",
+      "mode": "100644",
+      "size": 24877
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/CAPABILITY_QUALITY_LINK.csv",
+      "sha": "ba09a164026e052389350829ffbd724d91267bdf",
+      "mode": "100644",
+      "size": 16097
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/COMPUTE_AND_SCOPE_COST.json",
+      "sha": "a819a7cb98a4219eeff0e32bae3bd8b492680b97",
+      "mode": "100644",
+      "size": 2220
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/COST_SUMMARY.csv",
+      "sha": "b99daefb99f8f3b02e0ed05c298bdc4723115787",
+      "mode": "100644",
+      "size": 14677
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/COVERAGE_DECOMPOSITION.csv",
+      "sha": "9de14ca65890ca1fe81d8caba487ff86c57ee625",
+      "mode": "100644",
+      "size": 2722
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/DIRECTION_RESULTS.csv",
+      "sha": "eb4941fc77f1b562f10d79e5f6f4791b860bd88c",
+      "mode": "100644",
+      "size": 240622
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/E15_COMPLETE_RESULTS.json",
+      "sha": "f93b3ce7b58a279ded1a4447296a3895fcf0b79d",
+      "mode": "100644",
+      "size": 306765
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/E15_PROTOCOL.json",
+      "sha": "f78d90ff396efcc31f5374522751fdf68fe8586c",
+      "mode": "100644",
+      "size": 4818
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/E15_PROTOCOL_PRE_EVALUATOR_REPAIR.json",
+      "sha": "4bda461e8b4904cf5eb51f0a84338a48d24f4f8d",
+      "mode": "100644",
+      "size": 4672
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/EVALUATOR_REPAIR.json",
+      "sha": "89373034b884445e87b2b8e7422612f94fea506e",
+      "mode": "100644",
+      "size": 827
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/EXECUTION_COSTS.csv",
+      "sha": "ddc30c0902c362febf19c8ff0fdac592bc9c4eb2",
+      "mode": "100644",
+      "size": 345027
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/EXPERIMENT_SUMMARY.md",
+      "sha": "a47821826d1d5c2f6827a4ce281ab0e5cf419e8c",
+      "mode": "100644",
+      "size": 2328
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/PAIRED_COMPARISONS.csv",
+      "sha": "12a7c51e76c3737d837946ce997691bfaef62d3a",
+      "mode": "100644",
+      "size": 9233
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/PREFLIGHT_REPAIR_AND_COST.json",
+      "sha": "fe87c74b47354b406df04d1ec63342d6e6af8767",
+      "mode": "100644",
+      "size": 726
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "85afa8d91be600603b52d6cf76d3557217c30dad",
+      "mode": "100644",
+      "size": 4945
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/QUALIFICATION.json",
+      "sha": "56907999d9070667cbd4577b7c2f8244397550fc",
+      "mode": "100644",
+      "size": 42
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/QUALITY_MATRIX.csv",
+      "sha": "d4a35277f4b0bbfa76c7fd17406a85189243def9",
+      "mode": "100644",
+      "size": 16332
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/README.md",
+      "sha": "d63c4d733afa175d6c94bf54d6eaf963d4371bc0",
+      "mode": "100644",
+      "size": 338
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/REPRODUCE.md",
+      "sha": "0a35102e9415a293cdb49bae1c934e621c808f98",
+      "mode": "100644",
+      "size": 1677
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/SUPPORT_AND_COVERAGE.csv",
+      "sha": "3667734202c2af7c95ed73e09ae0815d759e712e",
+      "mode": "100644",
+      "size": 6831
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/e15_common.py",
+      "sha": "57b581aa062270f6b4baf4b78a696b8f639458eb",
+      "mode": "100644",
+      "size": 3068
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/evaluate_e15.py",
+      "sha": "6b62f795280ccd0743cee93d94af1fe66af8a2bb",
+      "mode": "100644",
+      "size": 16683
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/finalize_e15.py",
+      "sha": "0cd76a4f76930d9934b687ec1eda10ef381246e3",
+      "mode": "100644",
+      "size": 12878
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/run_e15.py",
+      "sha": "d68ef674b6f7224316aada6ecbfe32865618e380",
+      "mode": "100644",
+      "size": 17802
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/tests/test_e15_design.py",
+      "sha": "38a4b9b4e942fd9ee4ef34681ab37df1eb743775",
+      "mode": "100644",
+      "size": 1053
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/tests/test_trajectory.py",
+      "sha": "6ca7ade239ce8acb7a60fb77151bc84f0c883a18",
+      "mode": "100644",
+      "size": 7487
+    },
+    {
+      "path": "routing_idea2/research/e15_feedback_structure_interaction/code/trajectory.py",
+      "sha": "439f748b0856faba7814ca75e38f577d2bec4b5d",
+      "mode": "100644",
+      "size": 25236
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/01_VARIANCE_AND_STABILITY.md",
+      "sha": "80a193093a108dfb00fd62deaafc9c7c864657a5",
+      "mode": "100644",
+      "size": 2576
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/02_QUESTIONS_VS_REPEATS.md",
+      "sha": "7f1a6c284fc33f48827afdf552bd631cb7612556",
+      "mode": "100644",
+      "size": 1901
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/03_REPRESENTATION_ABLATION.md",
+      "sha": "03a9dacca6b884e7885796b8a773f21215db4a0c",
+      "mode": "100644",
+      "size": 2260
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/04_RESEARCH_DECISION.md",
+      "sha": "2a441ac60b780e0a124ee9f6c9d27c6b5e481e3b",
+      "mode": "100644",
+      "size": 3362
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/A_CROSS_SEED_DIRECTION.csv",
+      "sha": "532ef2570cb8a4acbb3b7ee9d88f06897c46acce",
+      "mode": "100644",
+      "size": 1432
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/A_VARIANCE_COMPLETE.json",
+      "sha": "0a4505ee9591e3904d74beda2074cf978c6f9a24",
+      "mode": "100644",
+      "size": 2715363
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/A_VARIANCE_SUMMARY.csv",
+      "sha": "170115b3968420965c6c851e908265ec486ced85",
+      "mode": "100644",
+      "size": 1647
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_COST_SUMMARY.csv",
+      "sha": "877fc5bad5836e23c873689926b7fdea198c22e3",
+      "mode": "100644",
+      "size": 1082
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_EXECUTION_COSTS.csv",
+      "sha": "b9820e8933b91d662d1eef88b0da72d882e7d9a3",
+      "mode": "100644",
+      "size": 24360
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_PAIRED_COMPARISONS.csv",
+      "sha": "cdde9c079618921a15907adf1289bc340775e48c",
+      "mode": "100644",
+      "size": 612
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_QUALITY.csv",
+      "sha": "45aca1d8e67d0471e3ca0b1741588119089a9601",
+      "mode": "100644",
+      "size": 856
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_SAME_GOLD_SUPPLEMENT.json",
+      "sha": "7081bc010f95bc42351b8ed44bfdfd8678d1a3c0",
+      "mode": "100644",
+      "size": 368
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/B_SEED_RESULTS.csv",
+      "sha": "36128bc4abc31c4ec248b05c53f6f3ad96d1885a",
+      "mode": "100644",
+      "size": 610
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/COMPUTE_AND_HISTORY_COST.json",
+      "sha": "c405e1891aba9db2fd35446d318f89106ad326f3",
+      "mode": "100644",
+      "size": 785
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_COMMON_HISTORY_COST.csv",
+      "sha": "840dee54fdeeb037f523533bae3e994c39a2ecc0",
+      "mode": "100644",
+      "size": 603
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_MODEL_SELECTION.json",
+      "sha": "f64e745e4de77099cadc2a2f63108a00c99b7bf7",
+      "mode": "100644",
+      "size": 12572
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_PAIRED_COMPARISONS.csv",
+      "sha": "b6f61a8e7fbaa4a0aaf42c295b9775280afcc8eb",
+      "mode": "100644",
+      "size": 416
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_QUALITY.csv",
+      "sha": "624105fe158815bd4bdf3f291ffb813f47d0f5e7",
+      "mode": "100644",
+      "size": 644
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_SEED_FOLD_SUBTASK.csv",
+      "sha": "0d7392e5acd5ed2d50fbc4e5511199400538ceed",
+      "mode": "100644",
+      "size": 9847
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/C_VALUE_ERRORS.csv",
+      "sha": "e88cc6fa254021f8e4126203af23a11746da6a89",
+      "mode": "100644",
+      "size": 1904
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/E16_COMPLETE_RESULTS.json",
+      "sha": "0b584cf2d07cd1443af5dab23b36c36812466dc6",
+      "mode": "100644",
+      "size": 25915
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/E16_PROTOCOL.json",
+      "sha": "ca86b9273c2dcf9f21a9f220b4eb54aa65371c92",
+      "mode": "100644",
+      "size": 4184
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/EXPERIMENT_SUMMARY.md",
+      "sha": "dffacecc1e7925b58bd9e0bfb34d5470fbd35e25",
+      "mode": "100644",
+      "size": 1597
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "015c005482263faad2c6eec8d019d2f82fbaddbd",
+      "mode": "100644",
+      "size": 5551
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/QUALIFICATION.json",
+      "sha": "431a6a36d0921fac580f74f840cda2ca2ff78e87",
+      "mode": "100644",
+      "size": 1151
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/README.md",
+      "sha": "7203e5a691b3eb23e7614b91d517f7caad6aea2e",
+      "mode": "100644",
+      "size": 398
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/REPRODUCE.md",
+      "sha": "ca607c33df13d44a2cc69bf20b4926a36e173333",
+      "mode": "100644",
+      "size": 1335
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/e16_common.py",
+      "sha": "8bf27410af0f8c7d633d1e16ca102f800a98a565",
+      "mode": "100644",
+      "size": 2935
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/evaluate_e16.py",
+      "sha": "22d811cbf264faae3503b3e22e5cb471818b66ef",
+      "mode": "100644",
+      "size": 10137
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/finalize_e16.py",
+      "sha": "c7825eea46f9d2b21c0c5fcab4bd840227e207ce",
+      "mode": "100644",
+      "size": 11345
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/learning.py",
+      "sha": "5a244552b73bc9c3f45505b5a047c0539be6fd90",
+      "mode": "100644",
+      "size": 2844
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/run_e16.py",
+      "sha": "2e5188e2edddbfa37a0fae4458d831ca8cfc124c",
+      "mode": "100644",
+      "size": 16236
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/tests/test_learning.py",
+      "sha": "a01d7b17e499c5464d5d41fde0c9e7202c3984d3",
+      "mode": "100644",
+      "size": 1414
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/tests/test_variance.py",
+      "sha": "b63321a7518ea98fdf4f10f81135bc1b8be441f6",
+      "mode": "100644",
+      "size": 7072
+    },
+    {
+      "path": "routing_idea2/research/e16_signal_replication_representation/code/variance_decomposition.py",
+      "sha": "cbfb2c5243609ba4161943464ad24cd98b952b3a",
+      "mode": "100644",
+      "size": 9548
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/01_DATA_QUALITY_AND_STABILITY.md",
+      "sha": "9cff05d4cc86fec53a517466e419f545ee81a531",
+      "mode": "100644",
+      "size": 9463
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/02_EFFECTIVE_SAMPLE_SIZE.md",
+      "sha": "acd2ac6b0305e2d193db153fd0a2fda5f08a8bff",
+      "mode": "100644",
+      "size": 8240
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/03_RIDGE_POSTERIOR_AUDIT.md",
+      "sha": "cebd553a709461e16b0481412e2602739225930c",
+      "mode": "100644",
+      "size": 9215
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/04_NOISE_MODEL_ABLATION.md",
+      "sha": "39b41b20ac22ab865795c474c96333ec08d98332",
+      "mode": "100644",
+      "size": 12543
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/05_BINARY_REWARD_MODELS.md",
+      "sha": "7deac68339c47bbaef83daf9fd8213569ab3bcc2",
+      "mode": "100644",
+      "size": 9813
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/06_SUBTASK_METADATA_AUDIT.md",
+      "sha": "bba7f894ca367b1837dc40d3c8cf4d58e5a95627",
+      "mode": "100644",
+      "size": 4302
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/07_FEEDBACK_DECISION_CALIBRATION.md",
+      "sha": "d3ff7f57fa0c2f35a31f7ecf1f06b4e58c83e6ae",
+      "mode": "100644",
+      "size": 17514
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/08_E4_RESEARCH_CONCLUSION.md",
+      "sha": "e9807e77a3eacc451c8e82933a921aad40340760",
+      "mode": "100644",
+      "size": 7195
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/BINARY_COMPARISON_RESULTS.json",
+      "sha": "6eb3f40bfa9f0453461e6dd067d97a61a7a63df4",
+      "mode": "100644",
+      "size": 434822
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/BINARY_NUMERICAL_QUALIFICATION.json",
+      "sha": "67a08445547a1a56239f889ff87c847f8ee85c46",
+      "mode": "100644",
+      "size": 1362
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/BINARY_ONLINE_RESULTS.json",
+      "sha": "89897dbb9a000b50782bd350a4d83e3fd1ee5d85",
+      "mode": "100644",
+      "size": 1761288
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/BINARY_OPTIMIZATION_ACCURACY.json",
+      "sha": "b2fec7db85932c286b63e30af2881ee321e3f32a",
+      "mode": "100644",
+      "size": 8500
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/CALIBRATION_AND_INTERVALS.json",
+      "sha": "100b8a2720a96a0bae206d2f0a7f0bdd94c92a7a",
+      "mode": "100644",
+      "size": 1198283
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/CONTROLLED_COST_LEDGER.json",
+      "sha": "2bc87e31d59add99e7eb2a06b766b020fef65b19",
+      "mode": "100644",
+      "size": 1891907
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/C_GATE.json",
+      "sha": "64e715624cb8e8742fa9046a45446a77d491ba9c",
+      "mode": "100644",
+      "size": 4779
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/DECISION_LIVE_RESULTS.json",
+      "sha": "87095e19f879f7c02772e0a0fe4b485f33a35636",
+      "mode": "100644",
+      "size": 565171
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/DECISION_OPERATOR_QUALIFICATION.json",
+      "sha": "65d4c527654e5cf5695d648f0dcb5f9ef26df5c4",
+      "mode": "100644",
+      "size": 1205
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/DECISION_PROXY_CALIBRATION.json",
+      "sha": "f04e1d7bcde5ad654139e61a61d4d68e21c28953",
+      "mode": "100644",
+      "size": 36360
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/DECISION_QUALITY_COST_CURVES.json",
+      "sha": "c9deb51a356dcc4e05e3ad73db029c8a0614affc",
+      "mode": "100644",
+      "size": 1554578
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/DELIVERY_INDEPENDENT_AUDIT.json",
+      "sha": "29a81ae8dbaf2dadfb3c58e1ba4a529133eefe3d",
+      "mode": "100644",
+      "size": 1235422
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/D_GATE_AND_FREEZE.json",
+      "sha": "6ff2b8f19e272853cf1d122dd9f0365516fbaf49",
+      "mode": "100644",
+      "size": 982
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/D_PROXY_AUDIT_COSTS.json",
+      "sha": "b3edc989221213ca04c6998d124fe24bf24abc0b",
+      "mode": "100644",
+      "size": 16286
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/D_STAGE_STATISTICAL_REVIEW.md",
+      "sha": "c2a3ab68e873616b9e7243dd3ba42ec9ee7f05c7",
+      "mode": "100644",
+      "size": 5635
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/E4_COMPLETE_RESULTS.json",
+      "sha": "d68cd223f741e7bcea7556965299c310271458a1",
+      "mode": "100644",
+      "size": 4715
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/E4_EXPERIMENT_CONFIG.json",
+      "sha": "f56419642e02c9accd16fa41813af50f36b4d4ba",
+      "mode": "100644",
+      "size": 2614
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/E4_PROTOCOL_AMENDMENTS.json",
+      "sha": "611e38f431981f5227d902199c34eadb89114fb6",
+      "mode": "100644",
+      "size": 2505
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/FULL_SERVICE_COST_ACCOUNTS.json",
+      "sha": "df944db71ad1111bcb5248fc084d4e78feca694e",
+      "mode": "100644",
+      "size": 2940174
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/GAUSSIAN_QUALIFICATION.json",
+      "sha": "a96047a221c041da45efd9c4fb089f2f1c576738",
+      "mode": "100644",
+      "size": 5094
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/LEARNING_CURVE_RESULTS.json",
+      "sha": "1ae3dad9e9e266f20d8d1e1374aa59d132fd4d39",
+      "mode": "100644",
+      "size": 382502
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/LEARNING_INDEPENDENT_QUALIFICATION.json",
+      "sha": "b7cb097eb8063e4fd8978cc6c818d0a43a8bc46a",
+      "mode": "100644",
+      "size": 8284
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/METADATA_QUALIFICATION.json",
+      "sha": "44fab5977e9cd59798b66437321687359afffdc8",
+      "mode": "100644",
+      "size": 787
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/METADATA_SENSITIVITY_RESULTS.json",
+      "sha": "0df5908e95fe998c9a9c2f7a7b462ada73933f25",
+      "mode": "100644",
+      "size": 1125743
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/ORACLE_PROOF.md",
+      "sha": "927ac33331d1f8ce478fd574b72ad28d68c56953",
+      "mode": "100644",
+      "size": 3270
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/POSTERIOR_AUDIT_RESULTS.json",
+      "sha": "a76a25cce719e9c45b034b58f91cc33147a7a703",
+      "mode": "100644",
+      "size": 685871
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "976fc2a49bcdf2e534d0f6c9d510d97bfd3c487e",
+      "mode": "100644",
+      "size": 13025
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/RAW_AUDIT_NOTES.md",
+      "sha": "0d47f32f3d0c85e0d83d4ddc2b593c78101d863f",
+      "mode": "100644",
+      "size": 2512
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/RAW_AUDIT_PUBLIC.json",
+      "sha": "5a401f3382aec1b8fa5bf0eabe55edd3e372a4a1",
+      "mode": "100644",
+      "size": 46666
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/REPRODUCE.md",
+      "sha": "133c6cbc9ed245b3dbdb7c1a44aa7fba07798a65",
+      "mode": "100644",
+      "size": 5265
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/SPLIT_PERMISSION_MANIFEST.json",
+      "sha": "ae78f653b07aaaf82c95620680153e190a1e6415",
+      "mode": "100644",
+      "size": 3002
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/STABILITY_AND_ORACLE.json",
+      "sha": "f286d247f0f116d98330f4327a86a090ac1ca748",
+      "mode": "100644",
+      "size": 1021298
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/aggregate_e4.py",
+      "sha": "85944ae25410c7ae173726175cf943870c3cfc0b",
+      "mode": "100644",
+      "size": 11344
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/audit_binary_optimization.py",
+      "sha": "7dab02a281ecb8fcae059d8628d073ebc9ffdd80",
+      "mode": "100644",
+      "size": 16945
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/audit_calibration.py",
+      "sha": "a39c34ec0fca2a3e1b1449f9ad7efa937a4a00ec",
+      "mode": "100644",
+      "size": 8503
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_binary.py",
+      "sha": "e0ff57cfa1181c5fdbb1f53cba2ec3f251d4d4a8",
+      "mode": "100644",
+      "size": 8735
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_common.py",
+      "sha": "76670d97fa4eeeb9ebabfe2c36519b7fc16102f8",
+      "mode": "100644",
+      "size": 3997
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_decision.py",
+      "sha": "18c18c8f0402cb5da5029823b536411d132c91fb",
+      "mode": "100644",
+      "size": 26483
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_gaussian.py",
+      "sha": "f6dfe12712dc1446de1f9f477f81c8a7baca21b9",
+      "mode": "100644",
+      "size": 19707
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_metadata.py",
+      "sha": "9a4f5a467d384c5d2ca0ce6bc5f4205023ae1c5d",
+      "mode": "100644",
+      "size": 11491
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/e4_metrics.py",
+      "sha": "6d2d835910f73ef28df471fbdb7579e60b43014e",
+      "mode": "100644",
+      "size": 18218
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/finalize_e4.py",
+      "sha": "89c0810a0334ee4adef7ee0faff26c0bae5daba9",
+      "mode": "100644",
+      "size": 6302
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/raw_audit.py",
+      "sha": "160832db594ca66cf92734bfcbb1e4413e69cb20",
+      "mode": "100644",
+      "size": 33313
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_binary.py",
+      "sha": "a87d5cbe98a0c041b5ffd55701fb2af31e65bf5d",
+      "mode": "100644",
+      "size": 6299
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_binary_online.py",
+      "sha": "ea73f63828ce4bd69ce66e7271dedadf42f7b5d7",
+      "mode": "100644",
+      "size": 17996
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_decision_audit.py",
+      "sha": "8e2474c03b62e6172aa8fc689cef60ea6c9df261",
+      "mode": "100644",
+      "size": 10638
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_learning.py",
+      "sha": "7f689266dbaf825bad348dfd8d609a04498f11aa",
+      "mode": "100644",
+      "size": 5085
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_metadata_sensitivity.py",
+      "sha": "2c78b12c9110a3576c859bed02ee69c7728822d1",
+      "mode": "100644",
+      "size": 652
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/run_posterior_audit.py",
+      "sha": "ab516e1ad0d8bbfa0121bc51e6a70be6ea04a42a",
+      "mode": "100644",
+      "size": 6443
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/stability_analysis.py",
+      "sha": "961becc761cdb611d4d77f2c6bcce5d4cd0d8c58",
+      "mode": "100644",
+      "size": 17289
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/summarize_binary_online.py",
+      "sha": "87d6e8b44c9ff12089030be281e738e234cd6ecc",
+      "mode": "100644",
+      "size": 33394
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/summarize_decision.py",
+      "sha": "cb43b0e7db6685db9b914c2d8c488a2f2c0ad410",
+      "mode": "100644",
+      "size": 9752
+    },
+    {
+      "path": "routing_idea2/research/e4_statistical_model_audit/verify_e4_delivery.py",
+      "sha": "0cafd21ff9363a4b58ce40473abca1b9099d969e",
+      "mode": "100644",
+      "size": 34124
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/01_THEORY_IMPLEMENTATION_CHECKS.md",
+      "sha": "234ad609bdbfd5957b8b304fa5649b143d376613",
+      "mode": "100644",
+      "size": 5344
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/02_CENTERED_ERROR_DIAGNOSTICS.md",
+      "sha": "1cb286b6a7c18d549acc25b39a488ac1db006905",
+      "mode": "100644",
+      "size": 7332
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/03_SWITCH_RANKING_AND_MATCHED_CONTROLS.md",
+      "sha": "ed467484b3693cb10a96c787329e4ceea568a874",
+      "mode": "100644",
+      "size": 12457
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/04_CERTIFICATION_VALIDITY_AND_POWER.md",
+      "sha": "4f58f589850f72f03e82668f7ab8f64c7f7545a7",
+      "mode": "100644",
+      "size": 8809
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/05_TWO_RESOURCE_ALLOCATION.md",
+      "sha": "c5a0dbd081763259a3cd493025b828c7c361cfe6",
+      "mode": "100644",
+      "size": 11411
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/ACTUAL_CENTERING_RESULTS.json",
+      "sha": "95d8ffea15f4009bf347bfafb7973353e25d40b6",
+      "mode": "100644",
+      "size": 4784
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/ALLOCATION_SELECTION_NUMERICAL_SENSITIVITY.json",
+      "sha": "8cb5614d0c6638d42f493a9802cee9d5b29234de",
+      "mode": "100644",
+      "size": 125219
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/ALLOCATION_SYNTHETIC_RESULTS.json",
+      "sha": "0aafbef939225ec5c5c1021fa9cccdd68037cb19",
+      "mode": "100644",
+      "size": 1579244
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/CENTERED_DIAGNOSTICS_RESULTS.json",
+      "sha": "d1d7074128d74a8a28f585e6bd2331fb59e1bc84",
+      "mode": "100644",
+      "size": 472122
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/CERTIFICATION_DEVELOPMENT_POWER.json",
+      "sha": "8b0316405bf395ae0ec4e8b3936ac3af838b6b1d",
+      "mode": "100644",
+      "size": 271935
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/CERTIFICATION_SYNTHETIC_RESULTS.json",
+      "sha": "e4ca2522b6b68ba7a199d7c696913cbf12cf1195",
+      "mode": "100644",
+      "size": 1493540
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/COST_AND_REUSE_RESULTS.json",
+      "sha": "ea868f9ab10e85773c5f7f9802f840aee11317e9",
+      "mode": "100644",
+      "size": 19571
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/E5_COMPLETE_RESULTS.json",
+      "sha": "ad7c7c3e69220750e2ff400bd3bf59b3025d6998",
+      "mode": "100644",
+      "size": 6741
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/E5_EXPERIMENT_CONFIG.json",
+      "sha": "c44075f14948e9711facb5c4ad7131997ac5d045",
+      "mode": "100644",
+      "size": 3329
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/E5_INDEPENDENT_AUDIT.json",
+      "sha": "afedad5d833842adb79789e43d65ff22838a3dc8",
+      "mode": "100644",
+      "size": 80726
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/E5_PROTOCOL_AMENDMENTS.json",
+      "sha": "95bca08b3474e85b68c676a06e5d43a5bc8c2060",
+      "mode": "100644",
+      "size": 1808
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/EXPERIMENT_SUMMARY.md",
+      "sha": "7a76a7dff65463465425a2a56820f2364065c46e",
+      "mode": "100644",
+      "size": 7706
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/METADATA_PERMISSION_CONTROLS.json",
+      "sha": "f3cf3e9e8c024abe0e86592175056d121c324206",
+      "mode": "100644",
+      "size": 112355
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "41f720b509ffc7ceef15a4bca3741dd55c5d6356",
+      "mode": "100644",
+      "size": 9918
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/REAL_ALLOCATION_GATE.json",
+      "sha": "de642bb763294bec8a3a453313d2c5b93682436e",
+      "mode": "100644",
+      "size": 1517
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/REFERENCE_AND_INPUTS.json",
+      "sha": "8deab709aeab72f1d953b533e490fd935a228a34",
+      "mode": "100644",
+      "size": 5317
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/REPRODUCE.md",
+      "sha": "53b8191b83efca229831092748ff1d2c0c113b67",
+      "mode": "100644",
+      "size": 5614
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/SWITCH_ABLATION_COMPARISONS.json",
+      "sha": "135529c39dc8cc6ec4d1b90b90414ddc4c01f682",
+      "mode": "100644",
+      "size": 2001
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/SWITCH_RANKING_RESULTS.json",
+      "sha": "68f77b8c0c61c4aee07dc216a4d66607fc0fd43e",
+      "mode": "100644",
+      "size": 1295449
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/THEORY_IMPLEMENTATION_RESULTS.json",
+      "sha": "d3f349aec3869ca80ee36394d151c3f3b0c764fe",
+      "mode": "100644",
+      "size": 1402927
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/allocation.py",
+      "sha": "e763379f53e0906ccee18f286b6f75786a54c5d5",
+      "mode": "100644",
+      "size": 10087
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/audit_allocation_selection.py",
+      "sha": "81d4ad96cabf1fec9243def6babedd33a8b7d6c6",
+      "mode": "100644",
+      "size": 6332
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/audit_switch_ablation.py",
+      "sha": "ccfe1d4fb0f8135610c2516be94ab150117ec224",
+      "mode": "100644",
+      "size": 5985
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/centered_diagnostics.py",
+      "sha": "800f5dec34f93596e7b1f657fc18482c8d39638f",
+      "mode": "100644",
+      "size": 24484
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/certification.py",
+      "sha": "3aefc627ac699e2624b8cfcd39ff6d90fba47b48",
+      "mode": "100644",
+      "size": 8386
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/cost_and_parameters.py",
+      "sha": "ee373c8db2b375e7d597380cf40b2aed5b145d37",
+      "mode": "100644",
+      "size": 6381
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/e5_common.py",
+      "sha": "11b26c487ea3ec2938016c97db1a9f402ad8accc",
+      "mode": "100644",
+      "size": 2782
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/finalize_e5.py",
+      "sha": "7211dd6aa842f53d74644a8c501329e19dcd7fed",
+      "mode": "100644",
+      "size": 5914
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/gate_models.py",
+      "sha": "fd1babb2fee86adab7a08624ae55b777ad41106e",
+      "mode": "100644",
+      "size": 26302
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/make_cert_allocation_reports.py",
+      "sha": "34787a18d3389fd5102187b7e090207340530a54",
+      "mode": "100644",
+      "size": 23591
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/record_provenance.py",
+      "sha": "9a4eb0b9246bacc8a64020b83df32ee92ec6adf4",
+      "mode": "100644",
+      "size": 3090
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_allocation_synthetic.py",
+      "sha": "b2d98a3c36fab48c8ab15c274fceca3594d884b4",
+      "mode": "100644",
+      "size": 19458
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_base.py",
+      "sha": "585439acdcc6ecf1c0493819e0e6908e4b7d6d6c",
+      "mode": "100644",
+      "size": 2998
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_certification_power.py",
+      "sha": "a432158013f6a87b80bc44c2bc62105f1a56de92",
+      "mode": "100644",
+      "size": 10695
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_certification_synthetic.py",
+      "sha": "cfbb965cf2f99a351a95bb8ec2c4a9e4461587cf",
+      "mode": "100644",
+      "size": 7694
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_gates.py",
+      "sha": "6847a48b2c62307ad53ac1cec8730354bb3d701a",
+      "mode": "100644",
+      "size": 3789
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/run_metadata_controls.py",
+      "sha": "801757ec8ec8684f987dee6fb3e10dc934dbd2c1",
+      "mode": "100644",
+      "size": 3019
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/summarize_metadata.py",
+      "sha": "4a69a72e6a7b661506d8b4c629b11589f5b0f203",
+      "mode": "100644",
+      "size": 2472
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/summarize_switching.py",
+      "sha": "fa2a34af3c69ad2f5fce4ba45b301eb6dc7ee905",
+      "mode": "100644",
+      "size": 32199
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/theory_checks.py",
+      "sha": "fcab82a787b01b06904d352fb467600532d48bbc",
+      "mode": "100644",
+      "size": 21145
+    },
+    {
+      "path": "routing_idea2/research/e5_paired_gain_validation/verify_e5_delivery.py",
+      "sha": "ec9a65c734250104aac8de814abf75f7fa55b34b",
+      "mode": "100644",
+      "size": 65538
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/04_PRIMARY_STATISTICAL_ANALYSIS.md",
+      "sha": "19c72e57105c3969eb74c55b41fb2658b3026eed",
+      "mode": "100644",
+      "size": 1373
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_COMPLETE_RESULTS.json",
+      "sha": "19451d570d53c0dc916347bf42947a99f97b1f8f",
+      "mode": "100644",
+      "size": 6697
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_COST_AND_POOL_DIAGNOSTICS.json",
+      "sha": "f450a55c37e00a89e90f66dd7b8de444c78b259f",
+      "mode": "100644",
+      "size": 31307
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_DELIVERY_AUDIT.json",
+      "sha": "ad61a5be34c85cdea55a2c1c17e789d35196484b",
+      "mode": "100644",
+      "size": 1352
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_FINAL_REVIEW.json",
+      "sha": "9fe7bf57cd2fd7e8d41046e36767be6b73bff4da",
+      "mode": "100644",
+      "size": 6530
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_IMPLEMENTATION_DECISIONS.json",
+      "sha": "31d92bda4b2124c3d67da08ec0071c250bce9cda",
+      "mode": "100644",
+      "size": 2455
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_PRIMARY_STATISTICS.json",
+      "sha": "e1b01b95e0d48203a07220839133d2ef69b2734c",
+      "mode": "100644",
+      "size": 2698
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_PROVENANCE_AND_COST.json",
+      "sha": "3b3925661a5606ff6d3458a3009a4c703889b8ed",
+      "mode": "100644",
+      "size": 2845
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_RUN_CONFIG.json",
+      "sha": "667716e8bbf79c017b001be66bf086bb9eb3bc3b",
+      "mode": "100644",
+      "size": 4376
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/EXPERIMENT_SUMMARY.md",
+      "sha": "c97a5274761e4ef36fff9b5a743dade1e7fb7e39",
+      "mode": "100644",
+      "size": 4172
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "78c5594bbed7c805de71c582e14bcc76b07fc733",
+      "mode": "100644",
+      "size": 9842
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/RELATED_WORK_MAPPING.md",
+      "sha": "c933bb8b98e405ff308d23aaaf78d47397f0181a",
+      "mode": "100644",
+      "size": 4730
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/REPRODUCE.md",
+      "sha": "0e9bf4fee4884a916a1d7b60dcb97ee306bde350",
+      "mode": "100644",
+      "size": 4984
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/THEORY_AND_NUMERICAL_CHECKS.json",
+      "sha": "8f37fee667bcf03a4e4ce51568859ea1cda56eb5",
+      "mode": "100644",
+      "size": 2888
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/THEORY_AND_NUMERICAL_CHECKS.md",
+      "sha": "2f8a08d1a28046ed9322966fd8d871a6c8db54d3",
+      "mode": "100644",
+      "size": 12151
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/a/01_SWITCH_INFORMATION_AND_SUPERVISION.md",
+      "sha": "6a8189691310c4ed924418e02cf6dae9b5748302",
+      "mode": "100644",
+      "size": 6384
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/a/A_RESULTS.json",
+      "sha": "371454c254fc34d5c695e32f85521c398e516b05",
+      "mode": "100644",
+      "size": 150180
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/a/A_SUPPORT_AND_COST_DIAGNOSTICS.json",
+      "sha": "c4b2f7a61d0ba7103865a417fee1375ddbb1722e",
+      "mode": "100644",
+      "size": 16527
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/a/run_e6_a.py",
+      "sha": "309ac742bdab2e04d6f15f98db6606bed6096ca7",
+      "mode": "100644",
+      "size": 23861
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/a/summarize_e6_a.py",
+      "sha": "da7f1d4ef5eebc63c8083de4cb14a941a4a6e152",
+      "mode": "100644",
+      "size": 13227
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/E6_B_AUDIT.json",
+      "sha": "94159d80c3207af1727d18bfb22e8df67aa4034d",
+      "mode": "100644",
+      "size": 504
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/E6_B_RESULTS.json",
+      "sha": "dee2807f39372b3cfe6d6294bf338d808d06e053",
+      "mode": "100644",
+      "size": 1460789
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/E6_B_SYNTHETIC_ALLOCATION.md",
+      "sha": "977a10a7e853ccc42313fccd23487e8b0dea0c0b",
+      "mode": "100644",
+      "size": 9468
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/SOLVER_ACTIVE_SET_REPAIR.json",
+      "sha": "26a78ca00cc320ba80407b7f266979acf3825c69",
+      "mode": "100644",
+      "size": 1410
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/audit_and_report_b.py",
+      "sha": "e25439e0d33c3daecc43b2beb55fbb9327099283",
+      "mode": "100644",
+      "size": 15905
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/audit_solver_active_set_repair.py",
+      "sha": "6675a35f874fea9eaa57f0d88a2fc9f0fc4f41e3",
+      "mode": "100644",
+      "size": 6062
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/contrast_design.py",
+      "sha": "18daf371021ab7eeb84f793790571214db053465",
+      "mode": "100644",
+      "size": 7970
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/b/run_contrast_synthetic.py",
+      "sha": "68e689b1ae335f226c9b20ac7e77797ba3bab4bd",
+      "mode": "100644",
+      "size": 22853
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/c/03_REAL_CACHE_POLICY_IDENTIFICATION.md",
+      "sha": "e5d4aa35f9313b8657a019fc8db2a34dc71f4efd",
+      "mode": "100644",
+      "size": 6670
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/c/E6_C_RESULTS.json",
+      "sha": "06e0104d56fecaa5e06e9e3a16a80fdd82be8759",
+      "mode": "100644",
+      "size": 208842
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/c/finite_pool_sampling.py",
+      "sha": "b71277311fd9377cc491da52c8760decf22d3e1c",
+      "mode": "100644",
+      "size": 5658
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/c/run_real_pool.py",
+      "sha": "b448cad74a0244d5c73c5f9b8945cab3b62cf96c",
+      "mode": "100644",
+      "size": 17739
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/c/summarize_real_pool.py",
+      "sha": "c9011f953bc069052cb120fcdf7a7e3c1866a509",
+      "mode": "100644",
+      "size": 8283
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/finalize_e6.py",
+      "sha": "52311508c907c44eeca18c0e3d40f3936ee8be74",
+      "mode": "100644",
+      "size": 19241
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/prepare_e6.py",
+      "sha": "f08317c42fcaf991ed3a3268ac662b98b2e536bc",
+      "mode": "100644",
+      "size": 6282
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/INDEPENDENT_A_STATISTICS_AUDIT.json",
+      "sha": "78f24072b4d545c463eaf0a3ccaf966fb5f12b7f",
+      "mode": "100644",
+      "size": 556
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/INDEPENDENT_OPERATOR_AUDIT.json",
+      "sha": "18e7be6b5799d5a099445e884535fd0500559191",
+      "mode": "100644",
+      "size": 1201
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/INDEPENDENT_REAL_POOL_AUDIT.json",
+      "sha": "780e9595e14b1c337de57a156c4aedf10878e977",
+      "mode": "100644",
+      "size": 2876
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/INDEPENDENT_SOLVER_AUDIT.json",
+      "sha": "88fd77479cd9be2f4093bc6f9f5aadbd42b10b76",
+      "mode": "100644",
+      "size": 8183
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/audit_A_bootstrap.py",
+      "sha": "9c95710adefcedd114e9f9db46ff6ac937b4083e",
+      "mode": "100644",
+      "size": 3110
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/audit_design_solver.py",
+      "sha": "b18b5a333fe8f51e40425da0c94574535335e276",
+      "mode": "100644",
+      "size": 3730
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/audit_e6_operators.py",
+      "sha": "6d8b3c16862ac0f216380a8a240d1bc916d536fd",
+      "mode": "100644",
+      "size": 7381
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/audit_real_pool.py",
+      "sha": "6105a049dbad46bec5e6078bff9a91d6e6a855d4",
+      "mode": "100644",
+      "size": 8447
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/check_e6_theory.py",
+      "sha": "8cc71ec4996e056eab08dc88d68abd01fddb14aa",
+      "mode": "100644",
+      "size": 10328
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/theory/final_delivery_review.py",
+      "sha": "5f825677fa931b24dd624129d665b06edfe4d01d",
+      "mode": "100644",
+      "size": 17122
+    },
+    {
+      "path": "routing_idea2/research/e6_contrast_directed_feedback/verify_e6_delivery.py",
+      "sha": "650298c286fd691ac266f09f367391360c7e2832",
+      "mode": "100644",
+      "size": 7273
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/01_CANDIDATE_OPPORTUNITY.md",
+      "sha": "534f4b0fc6c60b5ad032760d448ce075db0c0e0d",
+      "mode": "100644",
+      "size": 4639
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/02_INPUT_SIGNAL_AND_LEARNING_CURVES.md",
+      "sha": "7888298a81aa5e758c13fa6f6e359e391799001f",
+      "mode": "100644",
+      "size": 5604
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/03_ACTIVE_FEEDBACK_LEARNING.md",
+      "sha": "f2bbe4282e767c1d8b64aa2f7bd00097a0282e76",
+      "mode": "100644",
+      "size": 20726
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/04_COST_AND_STATISTICS.md",
+      "sha": "cc2cce03872b7d26bdad9bae7a43b4c41873895a",
+      "mode": "100644",
+      "size": 4037
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/05_E7_RESEARCH_DECISION.md",
+      "sha": "de3505372c2ad72e9b8364d00259d1298e297efa",
+      "mode": "100644",
+      "size": 4502
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_COMPLETE_RESULTS.json",
+      "sha": "e0fbb989b939d7b2834fe781e5f6478a69053364",
+      "mode": "100644",
+      "size": 7569
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_COST_SUMMARY.json",
+      "sha": "08b2a8a7cfc7bbc09eb45ed13df850b184c13975",
+      "mode": "100644",
+      "size": 1337
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_DELIVERY_AUDIT.json",
+      "sha": "e759bdc3de47907d359d8f0c15ae4a15685482b2",
+      "mode": "100644",
+      "size": 1718
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_FINAL_REVIEW.json",
+      "sha": "cd7c51eb48b36ae664cd239c546de0d6c3f691c7",
+      "mode": "100644",
+      "size": 7263
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_PRIMARY_STATISTICS.json",
+      "sha": "d28334e6ce87962a57f54ad71cfeb6a3455cc08f",
+      "mode": "100644",
+      "size": 2599
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_PROTOCOL.json",
+      "sha": "f9a92f84ec0281a627d4472c4d3289f0cb5f5638",
+      "mode": "100644",
+      "size": 6132
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "80ffcd667ed9096da79206b2070d0dc0acc81134",
+      "mode": "100644",
+      "size": 10491
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/RELATED_WORK_MAPPING.md",
+      "sha": "dc6c7de6baab13806052ec4004856db59c58be93",
+      "mode": "100644",
+      "size": 3724
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/REPRODUCE.md",
+      "sha": "409e891ebe12c06deaf3972a4c847c24310e94a5",
+      "mode": "100644",
+      "size": 6056
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/E7_A_INDEPENDENT_AUDIT.json",
+      "sha": "b5e9c54a2f4c0c90c1036eaf8d7ba39bbff0e34d",
+      "mode": "100644",
+      "size": 1310
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/E7_A_QUALIFICATION.json",
+      "sha": "3b6533999e5ad2db4dd9f3856a444e39e8d590d1",
+      "mode": "100644",
+      "size": 592
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/E7_A_RESULTS.json",
+      "sha": "b4655c30fc376ed955be1d98d7005f74a2645d0e",
+      "mode": "100644",
+      "size": 277048
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/audit_opportunity.py",
+      "sha": "acb5e65fad8dad15eb33808bb7c26d11749d1a7a",
+      "mode": "100644",
+      "size": 5469
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/qualify_opportunity.py",
+      "sha": "4774a0d97e3e086fe78506ed28823a6f7663b287",
+      "mode": "100644",
+      "size": 2931
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a/run_opportunity.py",
+      "sha": "1fa8af6af3fb1747c92cfa68af5d3a63f22ddafb",
+      "mode": "100644",
+      "size": 22466
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/E7_B_INDEPENDENT_AUDIT.json",
+      "sha": "0aeef6c499c8b69ce9bbc06b0f081a8a72dd0f3f",
+      "mode": "100644",
+      "size": 835
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/E7_B_MODEL_QUALIFICATION.json",
+      "sha": "12480fbe732b85b422455c846eb5b9b0a9a4f6dc",
+      "mode": "100644",
+      "size": 2351
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/E7_B_RESULTS.json",
+      "sha": "a602ec8d8e9500fc65ff7e4e4e1e6a8717aeea14",
+      "mode": "100644",
+      "size": 486859
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/E7_B_SOFTWARE_CONTROLS.json",
+      "sha": "ddd936e176b358d7b7921cc845ccddcfd0b77cd2",
+      "mode": "100644",
+      "size": 5182
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/audit_learning_curves.py",
+      "sha": "ad989726d20e9c78c8585a4ae23126bdb4433457",
+      "mode": "100644",
+      "size": 9108
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/e7_models.py",
+      "sha": "6bdda42ca6646f779aacc19880c81bbf3bd40ec2",
+      "mode": "100644",
+      "size": 12569
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/run_learning_curves.py",
+      "sha": "bf4442dee62d58c196002b8c012eeae558d7ce0f",
+      "mode": "100644",
+      "size": 10678
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b/summarize_learning_curves.py",
+      "sha": "b16b7729132fb950b8ab2bfef411e3392dd705d0",
+      "mode": "100644",
+      "size": 17944
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/E7_C_QUALIFICATION.json",
+      "sha": "24692a10652f21a830b35b2bfa1bb346fb56aca1",
+      "mode": "100644",
+      "size": 573
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/E7_C_REPORT_AUDIT.json",
+      "sha": "5904aa280792c8813c1db1f921b16246df2249ed",
+      "mode": "100644",
+      "size": 810
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/E7_C_RESULTS.json",
+      "sha": "f5b9167759d80d380ceeaf73e3adc72caaa5def1",
+      "mode": "100644",
+      "size": 114816
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/active_feedback.py",
+      "sha": "a8873a998fa5305428090f2763f8ada74c75014a",
+      "mode": "100644",
+      "size": 11709
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/evaluate_feedback.py",
+      "sha": "2c0ca571ac2ee1e51dde605149b99f7895d69e2e",
+      "mode": "100644",
+      "size": 11415
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c/make_report.py",
+      "sha": "fabb922b9c9bf0ef1336440da892b80b5f8c530f",
+      "mode": "100644",
+      "size": 17414
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/e7_common.py",
+      "sha": "a9536cff62c2bd75e6ac0e1a99dde67b0d82184f",
+      "mode": "100644",
+      "size": 2443
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/finalize_e7.py",
+      "sha": "af45de235226c441163bc92a1fbe31e6fe1425c8",
+      "mode": "100644",
+      "size": 14210
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/prepare_e7.py",
+      "sha": "440e2ac7112334f1006d5d8fa4bd0fa686f44386",
+      "mode": "100644",
+      "size": 8435
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/ACTIVE_FEEDBACK_OPERATOR_ACCESS_AUDIT.json",
+      "sha": "9ebdff24c032035f7e9f26073eb4ba298f7532b7",
+      "mode": "100644",
+      "size": 23224
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/ACTIVE_FEEDBACK_STATISTICS_AUDIT.json",
+      "sha": "d3bb30d3db210d43f59b3e0facef540ca2e24ff5",
+      "mode": "100644",
+      "size": 666
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/ACTUAL_MODEL_OPERATOR_AUDIT.json",
+      "sha": "ccd6083e3be46036f5f98bd815188c75bba450e1",
+      "mode": "100644",
+      "size": 1946
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/CANDIDATE_OPPORTUNITY_AUDIT.json",
+      "sha": "36b219d341de9cab2f18e019d031f969f17eb77d",
+      "mode": "100644",
+      "size": 678
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/WORKING_POSTERIOR_OPERATOR_CHECKS.json",
+      "sha": "af3ed3f3f3e2ac213d320b374aa545c6bd5c37ad",
+      "mode": "100644",
+      "size": 880
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/audit_active_learning.py",
+      "sha": "76155b67c186276ec4227537ed4de0f254541b63",
+      "mode": "100644",
+      "size": 11457
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/audit_active_statistics.py",
+      "sha": "fcfc8fcd2fb34fb3a094d0769aba54828cec3471",
+      "mode": "100644",
+      "size": 9370
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/audit_candidate_opportunity.py",
+      "sha": "21bee6046ce241bfd70142cdd42a3a97004c4383",
+      "mode": "100644",
+      "size": 6920
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/audit_models.py",
+      "sha": "fe2730b947c41beff7ade2b92d9f4e37d8eb26a7",
+      "mode": "100644",
+      "size": 4506
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/check_working_posterior.py",
+      "sha": "2b284c55859915774199fd51cbc2af08bea36ac7",
+      "mode": "100644",
+      "size": 4970
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/theory/final_review.py",
+      "sha": "fb9e64655293eb4a7522dfde5c4bed14c0a19793",
+      "mode": "100644",
+      "size": 13299
+    },
+    {
+      "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/verify_e7_delivery.py",
+      "sha": "79295d03b9e4350f57a6add86991318eb90718a7",
+      "mode": "100644",
+      "size": 7102
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/01_LITERATURE_AND_METHOD_MAPPING.md",
+      "sha": "688a6029f72cbfe1ab1f950e7f0de39d239e7151",
+      "mode": "100644",
+      "size": 13152
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/02_MATHEMATICAL_AND_SOFTWARE_CHECKS.md",
+      "sha": "8e9c0be7f47e1862f8887d258c260b2b9a90662c",
+      "mode": "100644",
+      "size": 9521
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/03_TRAINING_OBJECTIVES_AND_IMPLEMENTATION.md",
+      "sha": "e217d65775495956f6ef8d02ea57407d9ff24a4e",
+      "mode": "100644",
+      "size": 6237
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/04_MAIN_COMPARISONS.md",
+      "sha": "d1312e2562c28928307c071a36d6922d12a57511",
+      "mode": "100644",
+      "size": 4889
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/05_NOISE_AND_RANKING_DIAGNOSTICS.md",
+      "sha": "4e2335e8a78a6193e85167b49ce24dbd7db2958d",
+      "mode": "100644",
+      "size": 6710
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/06_STATISTICAL_COST_AND_RESEARCH_DECISION.md",
+      "sha": "ba8dec38a9e50de1b006b5527f6e0266352f6c9a",
+      "mode": "100644",
+      "size": 5283
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_AUTHOR_SPO_OPERATOR_CHECK.json",
+      "sha": "cc04a666e3668a325e63154c3b8d9058a22f72fb",
+      "mode": "100644",
+      "size": 1191
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_BIBLIOGRAPHY_IDENTITY_CHECK.json",
+      "sha": "edc7b35fbea8e02d0bc713fa430f5387655989ab",
+      "mode": "100644",
+      "size": 9018
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_COMPLETE_RESULTS.json",
+      "sha": "7ea3b4d6f4b7fcb210fd8fd341ee169b6c7bbaa1",
+      "mode": "100644",
+      "size": 870174
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_DELIVERY_AUDIT.json",
+      "sha": "7ff19040ac6d16a48dc3ebc28fd7a62e86ddc661",
+      "mode": "100644",
+      "size": 1150
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_EXECUTION_AMENDMENT_01.json",
+      "sha": "c1bd3622554c0db04bee0ff0aaeb17e54fb94b2b",
+      "mode": "100644",
+      "size": 2331
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_FINAL_DELIVERY_REVIEW.json",
+      "sha": "6d84ed4d2959eedb281e1070d99c698e43a497e0",
+      "mode": "100644",
+      "size": 5824
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_LITERATURE_SOURCE_MANIFEST.json",
+      "sha": "21e39c285e899104d606211c95201ca5d6143654",
+      "mode": "100644",
+      "size": 30374
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_NOISE_DIAGNOSTICS.json",
+      "sha": "6a2b411d0818ec17c9902947633483278629b137",
+      "mode": "100644",
+      "size": 12534
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_PRIMARY_STATISTICS.json",
+      "sha": "0b3498cada4127aa43eec1c99453c6b075331f5a",
+      "mode": "100644",
+      "size": 40991
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_PROTOCOL.json",
+      "sha": "1df466527bcc7a23de61f687017194eee18a6a6e",
+      "mode": "100644",
+      "size": 6919
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_SHRINKAGE_DIAGNOSTIC.json",
+      "sha": "f6e8f7fb7f05fabf354ec8be0ed0b31fc6d410de",
+      "mode": "100644",
+      "size": 33040
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_TRAINING_AND_RESTORATION_AUDIT.json",
+      "sha": "5625b8f77bb018e50081d6719317080e1d2f3d8d",
+      "mode": "100644",
+      "size": 172703
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_MATRIX.csv",
+      "sha": "99dc64dfffc5989d065b94b94620aba611d7927d",
+      "mode": "100644",
+      "size": 5619
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_SUMMARY.md",
+      "sha": "50f3b81e0883e2b19f7e8236328455374083c9ce",
+      "mode": "100644",
+      "size": 3023
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/PDF_EXTRACTION_MANIFEST.json",
+      "sha": "7714a03dc3d95bfa32f341a2990cb100e1ae691b",
+      "mode": "100644",
+      "size": 1558
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "f0940dc2c72b22f4c315f5699d2294c6986dffe9",
+      "mode": "100644",
+      "size": 8281
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/REPRODUCE.md",
+      "sha": "fcb47c90bc61678f7e6b0c214ef464d5ded3efac",
+      "mode": "100644",
+      "size": 5363
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/FINAL_SCIENTIFIC_AUDIT.json",
+      "sha": "5bbb4044a06e665a6a2073a17c27bbc9e4f97f78",
+      "mode": "100644",
+      "size": 6535
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/INDEPENDENT_METRIC_REVIEW.json",
+      "sha": "2186645fc7f5890346c72269113e8681367332d5",
+      "mode": "100644",
+      "size": 2510
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/diagnose_shrinkage.py",
+      "sha": "3e46651c02d3ea1b362b9059393eae6c502c3fe0",
+      "mode": "100644",
+      "size": 3751
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/e8_metrics.py",
+      "sha": "d6a4e7e05536c8cfb7b42be80582906eed75a910",
+      "mode": "100644",
+      "size": 7191
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/reproduce_guarded.py",
+      "sha": "d7e01d52ef61883ffcb0dc5567a6d7c4af5121fd",
+      "mode": "100644",
+      "size": 3675
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation/run_e8_evaluation.py",
+      "sha": "57460fa88af4432f12ca59d54da19fa7c7371648",
+      "mode": "100644",
+      "size": 20193
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/literature/check_spo_author_operator.py",
+      "sha": "f286ec57a9d117c621a70b5a76670b1188cbfc29",
+      "mode": "100644",
+      "size": 4389
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/literature/extract_literature.py",
+      "sha": "5144116d85672911600f265c5fb8657621f2aafb",
+      "mode": "100644",
+      "size": 1351
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/literature/fetch_e8_literature.py",
+      "sha": "52c0081971873447c6a971d59ec4c851e51e36b4",
+      "mode": "100644",
+      "size": 6124
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/literature/verify_bibliography.py",
+      "sha": "f3b36b907e4fd087fd77bfc6618d3325805645c0",
+      "mode": "100644",
+      "size": 2154
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/orchestration/build_reports.py",
+      "sha": "e2d06fa0c24a51638d10a206f64ff8d9e03d85de",
+      "mode": "100644",
+      "size": 27606
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/orchestration/freeze_protocol.py",
+      "sha": "a70a797ffa5beca350be645c70ef0a2cb37e2fc4",
+      "mode": "100644",
+      "size": 7557
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/orchestration/freeze_recovery_amendment.py",
+      "sha": "b4b75b6b6c3ece2da9e425e13bf85c6573e3e704",
+      "mode": "100644",
+      "size": 3643
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/ACTUAL_OPERATOR_REVIEW.json",
+      "sha": "890ccc19e41eaa2ad2f444b888c39c9cc8ac5194",
+      "mode": "100644",
+      "size": 9346
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/AUTHOR_SPO_OPERATOR_CHECK.json",
+      "sha": "cc04a666e3668a325e63154c3b8d9058a22f72fb",
+      "mode": "100644",
+      "size": 1191
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/CLARABEL_INDEPENDENT_REVIEW.json",
+      "sha": "a734f399467a867a3884ef8ff5c05c499e701e4d",
+      "mode": "100644",
+      "size": 9975
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/CLARABEL_RECOVERY_QUALIFICATION.json",
+      "sha": "4cfb546a96408a6dd89eab3d72913b7f7f743359",
+      "mode": "100644",
+      "size": 7437
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/E8_QUALIFICATION.json",
+      "sha": "f2b0d03490ca325e4b9abc2873cbaf670b6000be",
+      "mode": "100644",
+      "size": 11558
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/PCA_RIDGE_GEOMETRY_DIAGNOSTIC.json",
+      "sha": "f680bc82daeda7d5598d938e6519e1f4c36941bc",
+      "mode": "100644",
+      "size": 7491
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/PRIMARY_BACKEND_STABILITY_REVIEW.json",
+      "sha": "3f59c62414551c70d29d3ad0a4f09ac142f18b9b",
+      "mode": "100644",
+      "size": 10044
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/e8_assets.py",
+      "sha": "15734084e3659b62b343aec160afd7b5bcd0a8dc",
+      "mode": "100644",
+      "size": 3740
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/qualify_e8.py",
+      "sha": "3c7ab5aa8e74eef74663b7634bb792d90446fd66",
+      "mode": "100644",
+      "size": 17203
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification/review_training_operators.py",
+      "sha": "2f94b278b93936b2f0f76df17e28527b167fa57b",
+      "mode": "100644",
+      "size": 12310
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/TRAINING_COST_SUMMARY.json",
+      "sha": "583ab78918e4ec9e864884ddfca3cf00b97aecc0",
+      "mode": "100644",
+      "size": 18777
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/e8_recovery_v1.py",
+      "sha": "11671379384aa3cb7bf2a7c2a1a07c0854e631e5",
+      "mode": "100644",
+      "size": 9837
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/e8_training_v1.py",
+      "sha": "395af85109ae1c612227f54ea7f62bf9d254b9cb",
+      "mode": "100644",
+      "size": 23375
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/run_e8_recovery_v1.py",
+      "sha": "30ca1e5108a60cd1134eff71f4baba99f3d96c0f",
+      "mode": "100644",
+      "size": 11006
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/run_e8_training_v1.py",
+      "sha": "c5d5bf8efc1c6e03bbbdb642be063f2cf62fa7cf",
+      "mode": "100644",
+      "size": 11990
+    },
+    {
+      "path": "routing_idea2/research/e8_decision_focused_combination_learning/training/summarize_frozen_training.py",
+      "sha": "67ceb681eb1343e79d52fd7da3dae94cb4a9dcd6",
+      "mode": "100644",
+      "size": 6792
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/01_SELECTION_DISTRIBUTION_AND_TIE_AUDIT.md",
+      "sha": "af77224f20b758df277a898f57448fc548929ed3",
+      "mode": "100644",
+      "size": 7395
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/02_STABLE_NONZERO_GAPS.md",
+      "sha": "0cbac9289fd530136899ab0ad04965c28d0573bd",
+      "mode": "100644",
+      "size": 3390
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/03_CONTENT_AND_INDEPENDENT_CONFIRMATION_PLAN.md",
+      "sha": "ce69839bcd266ee328e27252322663ac39c1ad2c",
+      "mode": "100644",
+      "size": 11144
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/CONTENT_ANALYSIS_AMENDMENT.json",
+      "sha": "e84e51e86e37f26245f2ef56f8ed6f97b7d8b1ce",
+      "mode": "100644",
+      "size": 1232
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/EXPERIMENT_SUMMARY.md",
+      "sha": "ef8fda9f1674a37a2ccef1a4192dc08f52cc7f06",
+      "mode": "100644",
+      "size": 4925
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_ALL20_SELECTION_COUNTS.csv",
+      "sha": "44d1475aa243712e732a54da0c987eacee51f8e0",
+      "mode": "100644",
+      "size": 1817
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_AUDIT_SCOPE.md",
+      "sha": "46628fff8b5b238d5d7685bf0bea336de725bc45",
+      "mode": "100644",
+      "size": 1894
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_AUDIT_VERIFICATION.json",
+      "sha": "b23f7badaf45f885633a7d86bbdec4bf19ebda29",
+      "mode": "100644",
+      "size": 2980
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_CONCENTRATION_DECOMPOSITION.json",
+      "sha": "3af8d3f2f40fc954886229e5d4ff042d1bdc5388",
+      "mode": "100644",
+      "size": 839
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_CONTENT_AND_POWER_RESULTS.json",
+      "sha": "06edb80273d8d9a2686a9202c319f2c054e1ccb3",
+      "mode": "100644",
+      "size": 120844
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_DELIVERY_AUDIT.json",
+      "sha": "16bbf5aacb9172473784a16900f35704b9b91fb4",
+      "mode": "100644",
+      "size": 762
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_DISTRIBUTION_AND_TIE_RESULTS.json",
+      "sha": "071e5d5df83b031e4ca378dc94e8e216e7c60297",
+      "mode": "100644",
+      "size": 208825
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_INDEPENDENT_CONFIRMATION_DRAFT.json",
+      "sha": "3c569c7d60bf1f5567e3d44258354933eade0d3e",
+      "mode": "100644",
+      "size": 1592
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_MECHANISM_COMPLETE_RESULTS.json",
+      "sha": "5788ff4d96c591068cb3e4499fd671d1a3ca5a18",
+      "mode": "100644",
+      "size": 883633
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_REPRODUCTION_VERIFIED.json",
+      "sha": "7d730001d85bec3e0c9eea676a88b87ff3e3432c",
+      "mode": "100644",
+      "size": 402
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_STABLE_GAP_PREDECLARED.json",
+      "sha": "06057c914f066429d66362beea713bea922f0f59",
+      "mode": "100644",
+      "size": 2401
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_STABLE_GAP_RESULTS.json",
+      "sha": "b7262c9dfed71a49f7ac002ae5053d51736bdef8",
+      "mode": "100644",
+      "size": 496971
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "cea03dc6bcf3266b34ac6fce99484026abc8649d",
+      "mode": "100644",
+      "size": 4750
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/REPRODUCE.md",
+      "sha": "aa7e93e72982165e2ca75867117343b96d767659",
+      "mode": "100644",
+      "size": 3076
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/SCIENTIFIC_FINAL_REVIEW.json",
+      "sha": "9cb2a67d9859d75e7c0d671ec713e5df133fead7",
+      "mode": "100644",
+      "size": 12421
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/SCIENTIFIC_FINAL_REVIEW.md",
+      "sha": "47d4baf53ecc69e3b45b74d95c792c0c76f7c77d",
+      "mode": "100644",
+      "size": 2212
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/code/build_content_report.py",
+      "sha": "a288f2919a6ad5aeed9f99ced72456f19cdcfdda",
+      "mode": "100644",
+      "size": 13267
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/code/run_content_and_power.py",
+      "sha": "6a2f3f2498eff11033e6004465f46d4c8e9a6480",
+      "mode": "100644",
+      "size": 16700
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/code/run_stable_gap_audit.py",
+      "sha": "6c00a39e5a152de90e8cea409518759d0f0fece4",
+      "mode": "100644",
+      "size": 19904
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/code/write_distribution_report.py",
+      "sha": "86bbc31730cb2dc97bba3b943128b63710755359",
+      "mode": "100644",
+      "size": 10305
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/orchestration/assemble_m4_audit.py",
+      "sha": "1fea5d3b30f9a551a42b53291f4165b3229f228e",
+      "mode": "100644",
+      "size": 9526
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/orchestration/initialize_audit.py",
+      "sha": "027fd0a5a2c69e7ec1da6ddc4ce054aec0efe4a5",
+      "mode": "100644",
+      "size": 1692
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/orchestration/reproduce_m4_audit.py",
+      "sha": "f8145b0e6b6838d482096b8270750207c901d909",
+      "mode": "100644",
+      "size": 2896
+    },
+    {
+      "path": "routing_idea2/research/e8_m4_mechanism_audit/orchestration/verify_m4_audit.py",
+      "sha": "9745e56d8eb7aa2035ebdf6a9fb8d7f28b2f8d30",
+      "mode": "100644",
+      "size": 5350
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/COMPARISONS.csv",
+      "sha": "083617d935df54bea1267bf74a38589869b5628a",
+      "mode": "100644",
+      "size": 7522
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/CONTENT_CONTROLS.csv",
+      "sha": "a00ea76d9f394d59cefbb1704c46e55b24192957",
+      "mode": "100644",
+      "size": 5154
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/COST.json",
+      "sha": "587021f3a6c77a3692a843dfbd33fa985bc443d3",
+      "mode": "100644",
+      "size": 10777
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/COST_AND_EXECUTION.md",
+      "sha": "c3eb79b6138da57f6d13df8a903dfcd35218628d",
+      "mode": "100644",
+      "size": 7079
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/CSCE_QUALIFICATION.json",
+      "sha": "6758030ec32a4c1bd86ab29525abe5440fe52e50",
+      "mode": "100644",
+      "size": 4097
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_ARCHIVE_VERIFICATION.json",
+      "sha": "5be004c38cd9e6a612b66f1db62d3e6cfd6c397f",
+      "mode": "100644",
+      "size": 402
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_ASSET_A_REUSE_QUALIFICATION.json",
+      "sha": "523246c3c493e893c5adfc1f212f43ef1a5fdca9",
+      "mode": "100644",
+      "size": 54445
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_ASSET_A_REUSE_QUALIFICATION.md",
+      "sha": "2e7e214e1a6fced93ddc21b96c9352d5029afea9",
+      "mode": "100644",
+      "size": 2243
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_COMPLETE_RESULTS.json",
+      "sha": "99aac731f737720db42dcde156cae169528d5f2c",
+      "mode": "100644",
+      "size": 466278
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_CONTENT_CONTROLS.json",
+      "sha": "857c30bd4261438daa044cab43a47dd591e301f5",
+      "mode": "100644",
+      "size": 9293
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_DELIVERY_AUDIT.json",
+      "sha": "b8f32a4760253be103ea22471bda256f51a7f3f5",
+      "mode": "100644",
+      "size": 1161
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_EVALUATION_SOURCE_REVIEW.json",
+      "sha": "32c01613296dc4ad579e3e626ae5b0c8932ff7bf",
+      "mode": "100644",
+      "size": 2338
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_FEATURE_ALIGNMENT_AUDIT.json",
+      "sha": "5bafbd59f0ac20023bbbe7d757f8e4cad038eac0",
+      "mode": "100644",
+      "size": 120016
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_FINAL_SCIENTIFIC_REVIEW.json",
+      "sha": "bea0f4489ec90eeca7ea3b4ff50974e59889fc4b",
+      "mode": "100644",
+      "size": 77801
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_FINAL_SCIENTIFIC_REVIEW.md",
+      "sha": "bc923a7b03b95e95395e751b00c85d5119b1e351",
+      "mode": "100644",
+      "size": 2830
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_FROZEN_HEAD_EXECUTION_AUDIT.json",
+      "sha": "0e0a6241b36ae6c55fc054245ae0b1ff683ff82b",
+      "mode": "100644",
+      "size": 88786
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_HEADS_QUALIFICATION.json",
+      "sha": "67a37211838223b1898c287a9e1b726d0da663ec",
+      "mode": "100644",
+      "size": 24771
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_INDEPENDENT_CODE_REVIEW.json",
+      "sha": "ebcd1feb5f687e7a75616d48fdbf76dcce978036",
+      "mode": "100644",
+      "size": 2748
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_MAIN_RESULTS.json",
+      "sha": "ea735d8c26039d4f270b79d1b9da57ee11659677",
+      "mode": "100644",
+      "size": 425152
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_ORCHESTRATOR_REVIEW.json",
+      "sha": "8d8f263ad16cff87678c3230dbd94e702d78995f",
+      "mode": "100644",
+      "size": 2387
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_PRIMARY_STATISTICS.json",
+      "sha": "7327ef2411a8f61867190bcb2dee809b47032e2d",
+      "mode": "100644",
+      "size": 1945
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_PROTOCOL.json",
+      "sha": "eb9c04fadf2794f142c67b6218633f8f06527313",
+      "mode": "100644",
+      "size": 3924
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_SCORING_REPRODUCTION_VERIFIED.json",
+      "sha": "f5696b816ea62af7891f9265a2cf99aec9929477",
+      "mode": "100644",
+      "size": 532
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_TEACHER_ARTIFACT_AUDIT.json",
+      "sha": "b86bd7477e572c7a2af40cc97f73ea172cd121ad",
+      "mode": "100644",
+      "size": 26215
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/EXPERIMENT_SUMMARY.md",
+      "sha": "b02bd99acb4050cc7c7a08dd11815886d8b8a8cd",
+      "mode": "100644",
+      "size": 14502
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/GRID.csv",
+      "sha": "db3ddd927e9cbd630dfca8d16e8e3b9d8cf225d6",
+      "mode": "100644",
+      "size": 7351
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/LITERATURE_AND_TARGET.md",
+      "sha": "e03a8b91ff855e96966c888a6f552fefea69f853",
+      "mode": "100644",
+      "size": 16841
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/MAIN_SUMMARY.csv",
+      "sha": "2df84987bfc1b75de1119f5d8826cfc77d9215d2",
+      "mode": "100644",
+      "size": 7940
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/MECHANISM_AND_STOP_DECISION.md",
+      "sha": "271d87d44bcbf0386f246113f17c951ad370c3dc",
+      "mode": "100644",
+      "size": 5614
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "67519e072778262d095357cecd4166343f5f5590",
+      "mode": "100644",
+      "size": 7423
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/README.md",
+      "sha": "ee799a2d239d633031334e7b7bccd27e1d52b476",
+      "mode": "100644",
+      "size": 4291
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/REPRODUCE.md",
+      "sha": "af847877eb9fb6feeb326bb25bfe50b0c74828b6",
+      "mode": "100644",
+      "size": 4594
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/TEACHER_SOFTWARE_QUALIFICATION.json",
+      "sha": "17166f888200cafcdaebfb6f6808a652b8d7e08d",
+      "mode": "100644",
+      "size": 571
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/build_cost_and_tables.py",
+      "sha": "7895104b41814077a9a6894a4c43deec3ed9a545",
+      "mode": "100644",
+      "size": 35713
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/csce_operators.py",
+      "sha": "66e7b6a98cca51395d25521a91a1e45114405f71",
+      "mode": "100644",
+      "size": 5705
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_common.py",
+      "sha": "b368d5c3ad5e5bdbcd814c78c338dda0ead2b29a",
+      "mode": "100644",
+      "size": 5589
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_evaluate.py",
+      "sha": "689f4c2338049adc973e68a1f4d19e96bd5d6c39",
+      "mode": "100644",
+      "size": 16860
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_heads.py",
+      "sha": "f10d84211db4434099577fd1341dc0f0d7beba44",
+      "mode": "100644",
+      "size": 10378
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_reproduce.py",
+      "sha": "825433f8c3866cbbd23455ccf66fb48e615a8e1a",
+      "mode": "100644",
+      "size": 4628
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_teachers.py",
+      "sha": "d7c2cf34f897ee292635b5b71462fa5036235928",
+      "mode": "100644",
+      "size": 8697
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/e9_train.py",
+      "sha": "8a95d7993867dafadd1d9b1a98dcd86fa029581f",
+      "mode": "100644",
+      "size": 9826
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/qualify_csce.py",
+      "sha": "47fddf5bdb08357dda6d92064832dae1144ce065",
+      "mode": "100644",
+      "size": 13391
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code/qualify_e9_heads.py",
+      "sha": "ee721cc4d840457cc7630ccc27fe428530ccd743",
+      "mode": "100644",
+      "size": 14926
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/assemble_delivery.py",
+      "sha": "ad2fbec4d89870f5b16d1bccfc64873ac5420b7f",
+      "mode": "100644",
+      "size": 2679
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/build_all_teachers.py",
+      "sha": "024ace81e217e08e5ba47db0a2ff9f27c2c8b691",
+      "mode": "100644",
+      "size": 1290
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/freeze_and_evaluate.py",
+      "sha": "bbfd1a9cde6d8aaf5dc6debf1b312ed6f3b792a7",
+      "mode": "100644",
+      "size": 820
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/freeze_heads.py",
+      "sha": "b892f8505fbfb95e551642a02f1a3049e93e9da6",
+      "mode": "100644",
+      "size": 1425
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/initialize_e9.py",
+      "sha": "7f68da259a5de0565bc48dc6d7766d2c4a1725a2",
+      "mode": "100644",
+      "size": 5491
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/qualify_and_start_teachers.py",
+      "sha": "b22d37e14feab4ee16e25b5046497df168643e81",
+      "mode": "100644",
+      "size": 2258
+    },
+    {
+      "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/orchestration/train_remaining_folds.py",
+      "sha": "6e01ee4f83dd5c33774a5472b33a7111aeb479a4",
+      "mode": "100644",
+      "size": 1491
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/01_episode_construction.md",
+      "sha": "edfa96d31465fa81213217cafd2a7a90ea678da5",
+      "mode": "100644",
+      "size": 852
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/02_fewshot_adaptation_baselines.md",
+      "sha": "25e52c06dbc931b8fc84cadb7ab08b890d058deb",
+      "mode": "100644",
+      "size": 1685
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/CPU_EXPERIMENT_PROTOCOL.json",
+      "sha": "3f8e6d103bd0d4da371ad9b0bf5c2c2688f484c7",
+      "mode": "100644",
+      "size": 1426
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/DELIVERY_MANIFEST_PUBLIC.json",
+      "sha": "389b7b2e349d30ff4576b2c3ec8f6d5dd643c2c3",
+      "mode": "100644",
+      "size": 1299
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_RESULTS_COMPACT.json",
+      "sha": "6736894bb0f619bde57660576d4cac78ee191650",
+      "mode": "100644",
+      "size": 390209
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_SUMMARY.md",
+      "sha": "346f69721388d585c4ee22db5c6791c4a4c9b599",
+      "mode": "100644",
+      "size": 1400
+    },
+    {
+      "path": "routing_idea2/research/fewshot_adaptation_20261107/fewshot_adaptation.py",
+      "sha": "cf2a31645e02dd21e6ab3d9e99d40e4eb91af7f7",
+      "mode": "100644",
+      "size": 12504
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/COMPLETE_COMPARISON.md",
+      "sha": "92cfd14de7f2d2312c00901d089da8e030067c67",
+      "mode": "100644",
+      "size": 87184
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/COMPLETION.json",
+      "sha": "3f8cb8b14174474f156df955c7b00c1502ced9b4",
+      "mode": "100644",
+      "size": 176
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/CORRECTION_AUDIT.md",
+      "sha": "aa27e9ade9cfc8c1563b9d2cf0fa8348612abf0e",
+      "mode": "100644",
+      "size": 6772
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/COSTS.json.gz",
+      "sha": "a4c24a2029e1572bfc8708bed438439203307e18",
+      "mode": "100644",
+      "size": 155219
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/COST_ACCOUNTING.md",
+      "sha": "b6c24327d155c2e2ea3893a36cfa210a8ada6226",
+      "mode": "100644",
+      "size": 4867
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/DELIVERY_VERIFICATION.json",
+      "sha": "cee50e8ddda4e3751a3d54fd85781c55964046f9",
+      "mode": "100644",
+      "size": 3187
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_RESULTS.json.gz",
+      "sha": "b59a97a49f925310c4584ddeaea58b8c79a5cb4c",
+      "mode": "100644",
+      "size": 768667
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_SUMMARY.md",
+      "sha": "f1bf3f61e5b7e3fbb7bd70fc3a5796a19bdea2d9",
+      "mode": "100644",
+      "size": 6151
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/FROZEN_CANDIDATE.json",
+      "sha": "8030094f682befc30066384140f6f9fcc235564d",
+      "mode": "100644",
+      "size": 5551
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/PROTOCOL.md",
+      "sha": "3a5fa0a4769eb777d572002d7d08be05e43b6814",
+      "mode": "100644",
+      "size": 8903
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/PUBLICATION_MANIFEST.json",
+      "sha": "481b951273eb0b955f1484c908f62ff5912775ba",
+      "mode": "100644",
+      "size": 2865
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/QUALIFICATION.json",
+      "sha": "d64655de507ef1fcc6a69f71605c324302eb4274",
+      "mode": "100644",
+      "size": 1952
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/REPLAY_QUALIFICATION.json",
+      "sha": "6380583bec096d5ca0c5f564fcff2e5ca9817664",
+      "mode": "100644",
+      "size": 291
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/SCIENTIFIC_GATE.json",
+      "sha": "0af7a942f5c21278909ef2bbf01259b6e3ee508f",
+      "mode": "100644",
+      "size": 7084
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/TASK_AND_SEED_DIAGNOSTICS.md",
+      "sha": "e3a082b0daea623cb08b4a19d17f38da687f52b1",
+      "mode": "100644",
+      "size": 8890
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/TASK_RESULTS.json.gz",
+      "sha": "90030e84f9ae7a934dc30e13c75e79a4513c7c21",
+      "mode": "100644",
+      "size": 351511
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/build_reports.py",
+      "sha": "777d781f5db754586731c9a61ad246125020151d",
+      "mode": "100644",
+      "size": 24289
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/models.py",
+      "sha": "8f5c785f6c2d0960c63a4b1fff03e6ad68156b86",
+      "mode": "100644",
+      "size": 7890
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/run_corrected.py",
+      "sha": "2e85b269b43f4ccf6c1638224759c078bba6a6ec",
+      "mode": "100644",
+      "size": 17379
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/stats.py",
+      "sha": "6d08d0ff525fe4c7bfa59dc9e50c27cd55bec4f2",
+      "mode": "100644",
+      "size": 11770
+    },
+    {
+      "path": "routing_idea2/research/fewshot_protocol_fix_20261107/verify_delivery.py",
+      "sha": "fecbd0c074ce4276dff676d702659ab8321f051d",
+      "mode": "100644",
+      "size": 2881
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/01_THEORY_AND_LITERATURE_AUDIT.md",
+      "sha": "b174cf8fdd10f02016930dceff96df4582b51c77",
+      "mode": "100644",
+      "size": 15468
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/03_SET_LOSS_TRAINING_RESULTS.md",
+      "sha": "64ecd68cb17d15bdb224a0a4aceb411b16d2de7c",
+      "mode": "100644",
+      "size": 6901
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/ACTUAL_TRAINING_OPERATOR_REVIEW.json",
+      "sha": "e3323c612c9c4b48243ef34e9d21cc7360b5147e",
+      "mode": "100644",
+      "size": 2321
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/ARCHIVE_VERIFICATION.json",
+      "sha": "77ce36eec723f53376ead52d3f8f866e8cc5b48c",
+      "mode": "100644",
+      "size": 353
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/CORRELATED_SAMPLER_CHECK.json",
+      "sha": "52dd2599774f32ca63bdece46bfc3f100bc9ded2",
+      "mode": "100644",
+      "size": 702
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/EXPERIMENT_SUMMARY.md",
+      "sha": "54ba4e64f59b9dd345423f6d08ef4abb58742fa3",
+      "mode": "100644",
+      "size": 5407
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FINAL_SCIENTIFIC_REVIEW.json",
+      "sha": "7bd55ff443edf0a10df98e3e1a9c19d227b2613e",
+      "mode": "100644",
+      "size": 26886
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FINAL_SCIENTIFIC_REVIEW.md",
+      "sha": "bfa96d46b8fe3c0cae1fe14ed618fab0d4982fdf",
+      "mode": "100644",
+      "size": 1237
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FOLD0_JOINT_NOISE_SUMMARY.json",
+      "sha": "87e294292412f7a3d26d045abcb814ba8baa590f",
+      "mode": "100644",
+      "size": 16407
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FOLD1_JOINT_NOISE_SUMMARY.json",
+      "sha": "5ae1fe69c82fb256a8f66a02d9a8210b1d75b4e2",
+      "mode": "100644",
+      "size": 16351
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FOLD2_JOINT_NOISE_SUMMARY.json",
+      "sha": "be9466cb5b6e119ac86e873624de7f9bec47f70f",
+      "mode": "100644",
+      "size": 16365
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FOLD3_JOINT_NOISE_SUMMARY.json",
+      "sha": "8dfc17028092bb6bae3ddc76cbc07a6cbb97138e",
+      "mode": "100644",
+      "size": 16371
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/FOLD4_JOINT_NOISE_SUMMARY.json",
+      "sha": "98e1c9f798ed5d10f4bb5fcf3648e1abba08b9c5",
+      "mode": "100644",
+      "size": 16471
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/INDEPENDENT_OPERATOR_AGREEMENT.json",
+      "sha": "559c82248febadc9e460b5151372d6f28d391941",
+      "mode": "100644",
+      "size": 383
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_COMPLETE_RESULTS.json",
+      "sha": "500ab24d7fcc9debdb7e63ba158fc71d89d0df4c",
+      "mode": "100644",
+      "size": 6623
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_DIAGNOSTIC.md",
+      "sha": "353146db8bb9aa825ac7c0401f918b3eb1f37898",
+      "mode": "100644",
+      "size": 4805
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_PROTOCOL.json",
+      "sha": "1648247c0cb241c2a5e54c129a69927d86d5a315",
+      "mode": "100644",
+      "size": 2041
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_SOFTWARE_QUALIFICATION.json",
+      "sha": "27a11c76a97333692d1692ba23ee521ffbf9adbc",
+      "mode": "100644",
+      "size": 692
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_REPLICATE_PROVENANCE_AUDIT.json",
+      "sha": "7a937ece3bd9ea4f8c4cddb4c9a69bab2742020a",
+      "mode": "100644",
+      "size": 1366
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_TRAINING_INTERFACE_REVIEW.json",
+      "sha": "690b2143ad770d0d37d7cd6c89e6ffdb41b546f5",
+      "mode": "100644",
+      "size": 4925
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/LITERATURE_SOURCE_MANIFEST.json",
+      "sha": "d18d77c52f8149acd4dba8faff288acb2e96ce75",
+      "mode": "100644",
+      "size": 7408
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/MATHEMATICAL_SOFTWARE_CHECKS.json",
+      "sha": "d53fe68d36c2bb1c8854c2e1c97299d69df50395",
+      "mode": "100644",
+      "size": 8097
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_DELIVERY_AUDIT.json",
+      "sha": "2656cb01e005b5b47e8231a59e3324bf8d235e42",
+      "mode": "100644",
+      "size": 878
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_PRIMARY_STATISTICS.json",
+      "sha": "d691db66997722554a9ae310a6e7f2a8dd6ce313",
+      "mode": "100644",
+      "size": 1453
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SCORING_REPRODUCTION_VERIFIED.json",
+      "sha": "85cbaa4d232f01e48a7e139b5915966c523146ee",
+      "mode": "100644",
+      "size": 728
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_COMPLETE_RESULTS.json",
+      "sha": "f8808dd200288ff9ef58ad8112e3c89b21124c32",
+      "mode": "100644",
+      "size": 78782
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_SCOPE_CLARIFICATION_01.json",
+      "sha": "e29eecb521fce0a7a0fb36c4785c7b1a696d7dbb",
+      "mode": "100644",
+      "size": 959
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_TRAINING_RESULTS.json",
+      "sha": "f47ece2665ccb1a2be357225b31c37ffb9efa713",
+      "mode": "100644",
+      "size": 58287
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/POSTERIOR_INTERPRETATION_LIMITS.md",
+      "sha": "3104be5fe9d0ed50404312e7fb8332db1a79177d",
+      "mode": "100644",
+      "size": 1860
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/PUBLIC_DELIVERY_MANIFEST.json",
+      "sha": "85077e5640fe9d640ffe8cfc7e8bfe1228704b49",
+      "mode": "100644",
+      "size": 7906
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/REPRODUCE.md",
+      "sha": "6faad6011f017e05245f27e76dc656a24cefd80d",
+      "mode": "100644",
+      "size": 3379
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/TRAINING_OPERATOR_QUALIFICATION.json",
+      "sha": "b00434e8de24dc0d07a3d51743d98a9a266fa19f",
+      "mode": "100644",
+      "size": 1744
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/TRAINING_SUMMARY.csv",
+      "sha": "8dc43b88021688c2df267e9a7ec69e2acefecd3b",
+      "mode": "100644",
+      "size": 571
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/audit_training_interfaces.py",
+      "sha": "d0fd3e048d1f540fc251ba4de047be9b83b96125",
+      "mode": "100644",
+      "size": 6010
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/check_correlated_sampler.py",
+      "sha": "15ee95affc252f6f82460cdc0e953e3085e7ea21",
+      "mode": "100644",
+      "size": 2992
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/evaluate_ns.py",
+      "sha": "5f90e21503e16584e98eef13f7721352193423f8",
+      "mode": "100644",
+      "size": 12593
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/fetch_literature.py",
+      "sha": "7960f27224d16fcc4172cff23d89c37cb506ec13",
+      "mode": "100644",
+      "size": 6537
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/joint_noise_model.py",
+      "sha": "bf9bd8f90113b7f1cd80a1111fd1a16be2a62b3d",
+      "mode": "100644",
+      "size": 10691
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/ns_training.py",
+      "sha": "93688d3f3d4c615cbca8872335bcd4a95be13cba",
+      "mode": "100644",
+      "size": 19676
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/qualify_set_losses.py",
+      "sha": "6e1a9bc0102466069569ce77421537fc1d9a5394",
+      "mode": "100644",
+      "size": 11039
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/review_operator_agreement.py",
+      "sha": "51ad9184b56867c45e4cc4770653b150af8d3e68",
+      "mode": "100644",
+      "size": 1913
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/review_training_operators.py",
+      "sha": "e899eba211caefc2133dd2a5d6fa31d7efd8d7bc",
+      "mode": "100644",
+      "size": 5319
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/run_joint_noise.py",
+      "sha": "66ce8bdafe56883706735ae2d658ed61860b3e21",
+      "mode": "100644",
+      "size": 18053
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/set_spo_operators.py",
+      "sha": "76880512d17249c7cafa7fe27b6dc54b00121252",
+      "mode": "100644",
+      "size": 4607
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/summarize_joint_noise.py",
+      "sha": "ba49fa2399f75c885c8123decf496ba03890c051",
+      "mode": "100644",
+      "size": 13012
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/verify_scoring_replay.py",
+      "sha": "50216b88b1ced2b625091cd11b8e33653216e468",
+      "mode": "100644",
+      "size": 1113
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/code/write_training_report.py",
+      "sha": "619118752f9a306f0f3ed8a8a0bc76fcf739b4b6",
+      "mode": "100644",
+      "size": 9228
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/orchestration/assemble_study.py",
+      "sha": "63d4df0923f5e33c3044374eb5f0b6ee4ad3e22f",
+      "mode": "100644",
+      "size": 8551
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/orchestration/freeze_core.py",
+      "sha": "454508874f0781f2c61e061db3671e63ef676385",
+      "mode": "100644",
+      "size": 2928
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/orchestration/initialize_study.py",
+      "sha": "d34f7135e844a060eea757f3f297001a13f5a92f",
+      "mode": "100644",
+      "size": 3963
+    },
+    {
+      "path": "routing_idea2/research/m4_noise_aware_set_learning/orchestration/reproduce_study.py",
+      "sha": "ca5cd0f9036ab868021b98dff8daaafa583c4aa4",
+      "mode": "100644",
+      "size": 4942
+    },
+    {
+      "path": "routing_idea2/results/decision_feedback_v2/DELIVERY_MANIFEST_v1.json",
+      "sha": "08fc33f9e48689593e2df713036b58a67bf46470",
+      "mode": "100644",
+      "size": 5254
+    },
+    {
+      "path": "routing_idea2/results/decision_feedback_v2/DEVELOPMENT_STATUS_v1.json",
+      "sha": "45a933eb84516953ebafb5231452931891f55161",
+      "mode": "100644",
+      "size": 1742
+    },
+    {
+      "path": "routing_idea2/results/decision_feedback_v2/FILE_INDEX_v1.json",
+      "sha": "acbd940595dd1197c0e2d7d701c42e99e77b17db",
+      "mode": "100644",
+      "size": 4656
+    },
+    {
+      "path": "routing_idea2/results/decision_feedback_v2/IMPLEMENTATION_VERIFICATION_v1.json",
+      "sha": "10b9f4231800765f6cf04ae31e899f25d5439d5a",
+      "mode": "100644",
+      "size": 1027
+    },
+    {
+      "path": "routing_idea2/results/decision_feedback_v2/s1_qualification/QUALIFICATION_SUMMARY_v1.json",
+      "sha": "3dc074354a1444bbaba062d02ae21fa4fc4b7dec",
+      "mode": "100644",
+      "size": 1394
+    },
+    {
+      "path": "routing_idea2/results/e1/all_fixed_teams.csv",
+      "sha": "4380af97e5fb28c569b77bc0e6c1f49e02e74994",
+      "mode": "100644",
+      "size": 1982
+    },
+    {
+      "path": "routing_idea2/results/e1/audit_metrics.json",
+      "sha": "1ec532008beccc9baa1e99b32a549db7f70cdb62",
+      "mode": "100644",
+      "size": 10371
+    },
+    {
+      "path": "routing_idea2/results/e1/causal_diagnostic_summary.json",
+      "sha": "e8b24096d873b789c7e742b24dd210c8dd193f45",
+      "mode": "100644",
+      "size": 7522
+    },
+    {
+      "path": "routing_idea2/results/e1/e1_diagnostics.json",
+      "sha": "179ed6658a27b77754b75420825606566bf6dbfc",
+      "mode": "100644",
+      "size": 15095
+    },
+    {
+      "path": "routing_idea2/results/e1/independent_review_summary.json",
+      "sha": "1c7d90fcc4b1208eca3aa0c85e444c3a0022f48d",
+      "mode": "100644",
+      "size": 391
+    },
+    {
+      "path": "routing_idea2/results/e1/input_reconstruction.json",
+      "sha": "cc1e1fb5f6b00a34324a31c1fb707426ca0b0fa8",
+      "mode": "100644",
+      "size": 1969
+    },
+    {
+      "path": "routing_idea2/results/e1/option_text_diagnostic.json",
+      "sha": "b92c027087e024b4c0a83731a1c4c4053d468e5a",
+      "mode": "100644",
+      "size": 1251
+    },
+    {
+      "path": "routing_idea2/results/e1/physical_call_summary.json",
+      "sha": "d5cc9350b93a2fc82f9458c2d96350d01c4ffd7d",
+      "mode": "100644",
+      "size": 4822
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/.gitignore",
+      "sha": "8499f94c147d775a69988fa7a8e889a45ca21d3f",
+      "mode": "100644",
+      "size": 22
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/00_asset_manifest.json",
+      "sha": "96e3edf8da1be6d58c24ded8efa546e5dc4ce0e4",
+      "mode": "100644",
+      "size": 68379
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/00_historical_replay.json",
+      "sha": "6bbc96e328fc11207ce710bc7bbf803ed48cd8b1",
+      "mode": "100644",
+      "size": 1600
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/00_protocol_audit.md",
+      "sha": "01910843d65f6f241dd47e317f88dc7ce6469c92",
+      "mode": "100644",
+      "size": 3147
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/01_math_audit.md",
+      "sha": "cad6728c00acea326e55671b1f3d1b2fc49d7ae2",
+      "mode": "100644",
+      "size": 8544
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/01_math_qualification.json",
+      "sha": "773adff4bedcd2b474b65a1f4ea10006ecfd9dd4",
+      "mode": "100644",
+      "size": 4664
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/01_software_qualification.json",
+      "sha": "4dcc8c7bdd0b5bd4c67aeac075143dbd83258eb7",
+      "mode": "100644",
+      "size": 888
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/02_signal_diagnostics.json",
+      "sha": "aeb9194c5343c24a2e412df2687e9cc0aea56ed4",
+      "mode": "100644",
+      "size": 2203815
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/02_signal_report.md",
+      "sha": "27f6fa9da1e858ce3d6e2ba3a7e2774cdb8d91b7",
+      "mode": "100644",
+      "size": 5975
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/03_cost_ledger.json",
+      "sha": "4bf714ad8a2d04a4477cff0f7d458303e6b5d179",
+      "mode": "100644",
+      "size": 42734
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/03_hyperparameter_grid.csv",
+      "sha": "c0b9411d1d51ec82f1c68259b5dc1dc1daec47a3",
+      "mode": "100644",
+      "size": 3873
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/03_main_results.csv",
+      "sha": "a8037ecaa9261a36e95438dfc0bc7c688e5adc09",
+      "mode": "100644",
+      "size": 4197
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/03_main_results.json",
+      "sha": "0c44f8303d286d826de1eae65af1b3392898a09a",
+      "mode": "100644",
+      "size": 115249
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/03_question_cluster_ci.json",
+      "sha": "ec5682e669471c9dba2127aa32d9fb120533e830",
+      "mode": "100644",
+      "size": 28522
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/04_ablation_and_negative_controls.csv",
+      "sha": "a69f9e9da9dd4fedd53d56695588a03f5d1206e2",
+      "mode": "100644",
+      "size": 160507
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/05_figure_quality_and_gain.png",
+      "sha": "fa7dafcafa33578efb1b8c388e2e625ec70e6a03",
+      "mode": "100644",
+      "size": 124942
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/05_figure_tie_and_discordance.png",
+      "sha": "cbe82f9b1b2576a298552e36f19159747be6759e",
+      "mode": "100644",
+      "size": 198802
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/06_gate_decision.json",
+      "sha": "7c0287a8449d660c20c5221f21980bebabf77e31",
+      "mode": "100644",
+      "size": 2878
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/07_scientific_report_zh.md",
+      "sha": "0e1da5d53e5a34c1574950c2698243db1c4076b5",
+      "mode": "100644",
+      "size": 11228
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/DELIVERY_MANIFEST.json",
+      "sha": "b7febdc80e4b0daca371e10341bd62236ecc9de6",
+      "mode": "100644",
+      "size": 8140
+    },
+    {
+      "path": "routing_idea2/results/e9_bayes_gate/literature/SOURCES_READ.json",
+      "sha": "114b382675e3bab960aa36de294ee4ee04f06af3",
+      "mode": "100644",
+      "size": 1783
+    }
+  ]
+}
