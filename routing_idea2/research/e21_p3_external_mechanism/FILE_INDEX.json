@@ -1,0 +1,63 @@
+{
+  "schema": "mab_p3_release_index_v1",
+  "branch": "codex/e21-p3-external-mechanism",
+  "parent_commit": "21209351651a76abc782662c00ff4523703bbd8a",
+  "validation": {
+    "protocol_hash_matches_both_results": true,
+    "internal_original_questions": 600,
+    "external_original_questions": 548,
+    "predictions_frozen_before_evaluation": true,
+    "new_inference_calls": 0,
+    "private_records_in_release": 0
+  },
+  "files": [
+    {
+      "name": "P3_PROTOCOL.json",
+      "bytes": 4141,
+      "sha256": "b972d03c1ad1d400ffa7c6a418bfd9689b638eb192e3be345ba4885b9527d1f7",
+      "git_sha1": "2062afb568b136b564c5b142e8c52dcd713de986"
+    },
+    {
+      "name": "P3_INTERNAL_LISTNET_RESULTS.json",
+      "bytes": 118600,
+      "sha256": "ee01a82450c7c1a6951b007effc856b28a2329a13b610c22b322a242b50396d0",
+      "git_sha1": "55bc16de905f9b4abd13a3afd4b7e33fc424729d"
+    },
+    {
+      "name": "P3_EXTERNAL_DARS_RESULTS.json",
+      "bytes": 80913,
+      "sha256": "d8dd54fd2f83732acb9f222a5028623d191d535f0b7c8272629f1fb1392cd778",
+      "git_sha1": "16c7dffcde34ba7ad3037f5cf05e027c6fcd3d89"
+    },
+    {
+      "name": "P3_RESULTS.md",
+      "bytes": 5862,
+      "sha256": "ae8d3acfc6f2abd27c41a71da5b6aa608ed29413af3c939da73dca87427e5770",
+      "git_sha1": "91ace332ec1cdf0779ca381a0f9b66007a990996"
+    },
+    {
+      "name": "REPRODUCE.md",
+      "bytes": 1865,
+      "sha256": "f9381fa99cbb61e5c22a73837113efc30ae8a6e5f576b02d69fd87ffe6efb6ab",
+      "git_sha1": "dd3b96bcd4736f13494cf67f7fa93c8566d7f76e"
+    },
+    {
+      "name": "endpoints.py",
+      "bytes": 10436,
+      "sha256": "72d4c2da04bc595c266f29a1f3ae23da14f52a528073f6e93727aa78c8a0d4ad",
+      "git_sha1": "be65d43a6e8e1932626fe2a7f146fa46660cbfb7"
+    },
+    {
+      "name": "run_internal.py",
+      "bytes": 12912,
+      "sha256": "245e8c73640d56b8881ed82901b047ec9f2c39d6f83a9e04062f6fd4fbe4566e",
+      "git_sha1": "b4665d1d1c802ba6927f9088901e537ee161d521"
+    },
+    {
+      "name": "run_external.py",
+      "bytes": 21239,
+      "sha256": "f24afc08ac6821030aba76af0709d0fca03ac79c006b97d370b5df64602b7e93",
+      "git_sha1": "1302930b6afc5912b868c5016be428e3f35b2b87"
+    }
+  ]
+}

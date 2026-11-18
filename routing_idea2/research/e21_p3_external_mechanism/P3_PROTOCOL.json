@@ -1,0 +1,46 @@
+{
+  "schema": "mab_e21_p3_external_mechanism_v1",
+  "source_p2_commit": "21209351651a76abc782662c00ff4523703bbd8a",
+  "mentor_plan": "ACL_Ensemble_Routing_Research_Plan (2).pdf, pp. 10, 13",
+  "research_question": "Does the same fully tied-row symmetric pressure change strict routing decisions beyond the original SPO+ ensemble implementation?",
+  "endpoint_beta": {"B": 1, "C": 0},
+  "gamma": 0,
+  "training_normalization": "Keep every training question in the n denominator. Change the fully tied row term only. Apply L2 to all entries including intercept.",
+  "primary_tau": 1e-8,
+  "raw_exact_tau": 0.0,
+  "main_quality": "C minus B in expected deterministic cached accuracy, with exact uniform deployment over the frozen maximum set",
+  "primary_mechanism": "Number of held-out original questions with two strict argmax actions and different physical identities",
+  "utility_reporting": "Report signs and point differences, task counts, corrections and damages and source limits. No confidence intervals, CI-only bootstrap or decisions tuned to results.",
+  "internal_listnet": {
+    "role": "Cross-loss control in the original model pool on E19 development OOF, not an independent new test",
+    "training_and_evaluation": "Frozen E19 train600 five-fold OOF, original three-repeat binary aggregate-reward means, MiniLM/PCA16/StandardScaler, 17x20 head, original per-fold lambda",
+    "objective": "Top-one ListNet: KL(softmax(mean rewards)||softmax(q)); subtract target entropy only. Uniform full-tie KL alone is turned off in C. Both temperatures 1.",
+    "point_weight": "GSM8K 0.5, BBH 0.5, retain BBH subtask and all seed breakdown",
+    "main_head_fits": 10,
+    "first_fold_reverse_qualification_fits": 2
+  },
+  "external": {
+    "role": "External six single-model actions; supports mechanism transfer only, not ensemble aggregation or general service gains",
+    "artifact": "AIGNLAI/DARS",
+    "revision": "d7bdd3638d263986f32ee928a19e0e2868e69bab",
+    "tasks": {"gpqa": [200, 248], "math-500": [200, 300]},
+    "split": "Use official DARS original-question groups with no question or rewrite crossing splits. Binary correctness only, no DROP F1.",
+    "training_observations": "Same first rewrite (prompt_variant_id=0); first three ordered decode_id values for all models, one fixed request configuration. L=1 and L=5 retain the same rewrite and nested first observations.",
+    "predictor_input": "Original question text only, frozen MiniLM-L6 max_length 256, train-fit PCA16 and StandardScaler, intercept, no task/reward metadata. One head per task.",
+    "action_order": [
+      "deepseek/deepseek-chat-v3.1", "google/gemini-2.5-flash-lite", "google/gemma-3-12b-it",
+      "meta-llama/llama-3.3-70b-instruct", "mistralai/mistral-small-3.2-24b-instruct", "qwen/qwen3-32b"
+    ],
+    "lambda": 0.003472222222222222,
+    "primary_cells": ["tspo_L3", "listnet_L3"],
+    "feedback_boundary_cells": ["tspo_L1", "tspo_L5"],
+    "first_task_reverse_checks": "For both main cells, reverse train label columns and map scores and policies back before evaluating.",
+    "evaluation": "Original query, observation_type=decoding_variation, prompt_variant_id=-1. Primary temperature 0.7. Separately report 0.2 and 1.0 as different fixed configurations, never iid replicates of the primary. All test scores withheld until both tasks' scores and policies are frozen.",
+    "task_aggregation": "Per-task original-question accuracy and equal-task macro. Per-temperature coverage and support counts.",
+    "baseline": "Train-only global fixed model, chosen by L3 mean reward with uniform tie deployment, for context only."
+  },
+  "endpoint_source_sha256": "72d4c2da04bc595c266f29a1f3ae23da14f52a528073f6e93727aa78c8a0d4ad",
+  "source_e19_weighted_sha256": "019c505c4a5ab2f90e532eda2842546c444c6480a182504f56c935f3527dd4da",
+  "source_internal_runner_sha256": "245e8c73640d56b8881ed82901b047ec9f2c39d6f83a9e04062f6fd4fbe4566e",
+  "preserved": "No use of P2 results for fitting or external selection; no fresh400 or sealed200 access, new LLM/API inference, model-pool changes in original domain, loss/hyperparameter search or automatic P4."
+}

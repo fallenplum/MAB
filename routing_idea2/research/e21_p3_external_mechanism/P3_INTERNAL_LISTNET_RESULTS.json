@@ -1,0 +1,3591 @@
+{
+  "schema": "p3_original_domain_listnet_result_v1",
+  "status": "COMPLETE_ORIGINAL_DOMAIN_DEVELOPMENT_CONTRAST",
+  "family": "listnet",
+  "pre_evaluation_freeze_sha256": "92c731f2d50d0526b1cbbbd3e0e69b6478087550a8af80de94422138fc44b787",
+  "protocol_sha256": "b972d03c1ad1d400ffa7c6a418bfd9689b638eb192e3be345ba4885b9527d1f7",
+  "e19_protocol_sha256": "d9715da6b15fe5d35d34c4ec876cfd613284373b2a1d792674248c3b9348269c",
+  "runner_sha256": "245e8c73640d56b8881ed82901b047ec9f2c39d6f83a9e04062f6fd4fbe4566e",
+  "endpoint_source_sha256": "72d4c2da04bc595c266f29a1f3ae23da14f52a528073f6e93727aa78c8a0d4ad",
+  "input_asset_sha256": "57e39747ec2756bcd79ab00885b3c08ad4f91fdb3ec900cbed15146420cd17c3",
+  "reward_asset_sha256": "a01230f2bed3e7f9d05713bf9e3e4f1cf44987b41c460f91e1d83bc1c29f191e",
+  "analysis_scope": "E19 original six members, original train600 OOF, alternate loss only",
+  "original_questions": 600,
+  "generation_events_per_policy": 1800,
+  "task_weights": {
+    "gsm8k": 0.5,
+    "bbh": 0.5
+  },
+  "primary": {
+    "questions": 600,
+    "B_task_macro_accuracy": 0.8594444444444445,
+    "C_task_macro_accuracy": 0.8566666666666667,
+    "C_minus_B_pp": -0.27777777777777773,
+    "expected_corrections": 16.0,
+    "expected_damages": 21.0,
+    "expected_net_corrections": -5.0,
+    "expected_counts_are_fractional_coupling_expectations": true,
+    "strict_both_unique_questions": 600,
+    "strict_changed_questions": 135,
+    "strict_integer_corrections": 16,
+    "strict_integer_damages": 21,
+    "strict_integer_net_corrections": -5,
+    "by_task": {
+      "gsm8k": {
+        "questions": 300,
+        "B_accuracy": 0.9322222222222222,
+        "C_accuracy": 0.9355555555555556,
+        "gain_pp": 0.33333333333333337
+      },
+      "bbh": {
+        "questions": 300,
+        "B_accuracy": 0.7866666666666666,
+        "C_accuracy": 0.7777777777777778,
+        "gain_pp": -0.8888888888888888
+      }
+    },
+    "by_generation_seed": {
+      "42": {
+        "B_accuracy": 0.85,
+        "C_accuracy": 0.8533333333333333,
+        "gain_pp": 0.33333333333333337
+      },
+      "137": {
+        "B_accuracy": 0.8633333333333333,
+        "C_accuracy": 0.855,
+        "gain_pp": -0.8333333333333334
+      },
+      "2024": {
+        "B_accuracy": 0.865,
+        "C_accuracy": 0.8616666666666666,
+        "gain_pp": -0.3333333333333333
+      }
+    },
+    "bbh_subtasks": {
+      "boolean_expressions": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "causal_judgement": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -3.0303030303030303
+      },
+      "date_understanding": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -12.121212121212121
+      },
+      "disambiguation_qa": {
+        "questions": 11,
+        "B_accuracy": 0.5757575757575758,
+        "C_accuracy": 0.5757575757575758,
+        "gain_pp": 0.0
+      },
+      "dyck_languages": {
+        "questions": 11,
+        "B_accuracy": 0.2727272727272727,
+        "C_accuracy": 0.2727272727272727,
+        "gain_pp": 0.0
+      },
+      "formal_fallacies": {
+        "questions": 11,
+        "B_accuracy": 0.7272727272727273,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 0.0
+      },
+      "geometric_shapes": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": -6.0606060606060606
+      },
+      "hyperbaton": {
+        "questions": 12,
+        "B_accuracy": 0.9166666666666666,
+        "C_accuracy": 0.9444444444444444,
+        "gain_pp": 2.7777777777777777
+      },
+      "logical_deduction_five_objects": {
+        "questions": 11,
+        "B_accuracy": 1.0,
+        "C_accuracy": 1.0,
+        "gain_pp": 0.0
+      },
+      "logical_deduction_seven_objects": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.7878787878787878,
+        "gain_pp": 0.0
+      },
+      "logical_deduction_three_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "movie_recommendation": {
+        "questions": 11,
+        "B_accuracy": 0.45454545454545453,
+        "C_accuracy": 0.45454545454545453,
+        "gain_pp": 0.0
+      },
+      "multistep_arithmetic_two": {
+        "questions": 11,
+        "B_accuracy": 1.0,
+        "C_accuracy": 1.0,
+        "gain_pp": 0.0
+      },
+      "navigate": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "object_counting": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 3.0303030303030303
+      },
+      "penguins_in_a_table": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "reasoning_about_colored_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "ruin_names": {
+        "questions": 11,
+        "B_accuracy": 0.5454545454545454,
+        "C_accuracy": 0.5151515151515151,
+        "gain_pp": -3.0303030303030303
+      },
+      "salient_translation_error_detection": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -3.0303030303030303
+      },
+      "snarks": {
+        "questions": 12,
+        "B_accuracy": 0.7222222222222222,
+        "C_accuracy": 0.7222222222222222,
+        "gain_pp": 0.0
+      },
+      "sports_understanding": {
+        "questions": 11,
+        "B_accuracy": 0.7272727272727273,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 0.0
+      },
+      "temporal_sequences": {
+        "questions": 11,
+        "B_accuracy": 0.9090909090909091,
+        "C_accuracy": 0.9090909090909091,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_five_objects": {
+        "questions": 11,
+        "B_accuracy": 0.8787878787878788,
+        "C_accuracy": 0.8787878787878788,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_seven_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_three_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9090909090909091,
+        "C_accuracy": 0.8787878787878788,
+        "gain_pp": -3.0303030303030303
+      },
+      "web_of_lies": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "word_sorting": {
+        "questions": 12,
+        "B_accuracy": 0.4722222222222222,
+        "C_accuracy": 0.4722222222222222,
+        "gain_pp": 0.0
+      }
+    },
+    "B_numerical_tied_questions": 0,
+    "C_numerical_tied_questions": 0,
+    "B_bbh_subtask_macro_accuracy": 0.7875046763935653,
+    "C_bbh_subtask_macro_accuracy": 0.7784324728769173,
+    "centered_score_changed_questions_gt_1e_minus7": 600,
+    "mean_total_variation": 0.225,
+    "B_median_margin": 0.007212747206630787,
+    "C_median_margin": 0.01270359547928278,
+    "coupling_net_identity_max_error": 0.0
+  },
+  "raw_exact": {
+    "questions": 600,
+    "B_task_macro_accuracy": 0.8594444444444445,
+    "C_task_macro_accuracy": 0.8566666666666667,
+    "C_minus_B_pp": -0.27777777777777773,
+    "expected_corrections": 16.0,
+    "expected_damages": 21.0,
+    "expected_net_corrections": -5.0,
+    "expected_counts_are_fractional_coupling_expectations": true,
+    "strict_both_unique_questions": 600,
+    "strict_changed_questions": 135,
+    "strict_integer_corrections": 16,
+    "strict_integer_damages": 21,
+    "strict_integer_net_corrections": -5,
+    "by_task": {
+      "gsm8k": {
+        "questions": 300,
+        "B_accuracy": 0.9322222222222222,
+        "C_accuracy": 0.9355555555555556,
+        "gain_pp": 0.33333333333333337
+      },
+      "bbh": {
+        "questions": 300,
+        "B_accuracy": 0.7866666666666666,
+        "C_accuracy": 0.7777777777777778,
+        "gain_pp": -0.8888888888888888
+      }
+    },
+    "by_generation_seed": {
+      "42": {
+        "B_accuracy": 0.85,
+        "C_accuracy": 0.8533333333333333,
+        "gain_pp": 0.33333333333333337
+      },
+      "137": {
+        "B_accuracy": 0.8633333333333333,
+        "C_accuracy": 0.855,
+        "gain_pp": -0.8333333333333334
+      },
+      "2024": {
+        "B_accuracy": 0.865,
+        "C_accuracy": 0.8616666666666666,
+        "gain_pp": -0.3333333333333333
+      }
+    },
+    "bbh_subtasks": {
+      "boolean_expressions": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "causal_judgement": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -3.0303030303030303
+      },
+      "date_understanding": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -12.121212121212121
+      },
+      "disambiguation_qa": {
+        "questions": 11,
+        "B_accuracy": 0.5757575757575758,
+        "C_accuracy": 0.5757575757575758,
+        "gain_pp": 0.0
+      },
+      "dyck_languages": {
+        "questions": 11,
+        "B_accuracy": 0.2727272727272727,
+        "C_accuracy": 0.2727272727272727,
+        "gain_pp": 0.0
+      },
+      "formal_fallacies": {
+        "questions": 11,
+        "B_accuracy": 0.7272727272727273,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 0.0
+      },
+      "geometric_shapes": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": -6.0606060606060606
+      },
+      "hyperbaton": {
+        "questions": 12,
+        "B_accuracy": 0.9166666666666666,
+        "C_accuracy": 0.9444444444444444,
+        "gain_pp": 2.7777777777777777
+      },
+      "logical_deduction_five_objects": {
+        "questions": 11,
+        "B_accuracy": 1.0,
+        "C_accuracy": 1.0,
+        "gain_pp": 0.0
+      },
+      "logical_deduction_seven_objects": {
+        "questions": 11,
+        "B_accuracy": 0.7878787878787878,
+        "C_accuracy": 0.7878787878787878,
+        "gain_pp": 0.0
+      },
+      "logical_deduction_three_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "movie_recommendation": {
+        "questions": 11,
+        "B_accuracy": 0.45454545454545453,
+        "C_accuracy": 0.45454545454545453,
+        "gain_pp": 0.0
+      },
+      "multistep_arithmetic_two": {
+        "questions": 11,
+        "B_accuracy": 1.0,
+        "C_accuracy": 1.0,
+        "gain_pp": 0.0
+      },
+      "navigate": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "object_counting": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 3.0303030303030303
+      },
+      "penguins_in_a_table": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "reasoning_about_colored_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "ruin_names": {
+        "questions": 11,
+        "B_accuracy": 0.5454545454545454,
+        "C_accuracy": 0.5151515151515151,
+        "gain_pp": -3.0303030303030303
+      },
+      "salient_translation_error_detection": {
+        "questions": 11,
+        "B_accuracy": 0.696969696969697,
+        "C_accuracy": 0.6666666666666666,
+        "gain_pp": -3.0303030303030303
+      },
+      "snarks": {
+        "questions": 12,
+        "B_accuracy": 0.7222222222222222,
+        "C_accuracy": 0.7222222222222222,
+        "gain_pp": 0.0
+      },
+      "sports_understanding": {
+        "questions": 11,
+        "B_accuracy": 0.7272727272727273,
+        "C_accuracy": 0.7272727272727273,
+        "gain_pp": 0.0
+      },
+      "temporal_sequences": {
+        "questions": 11,
+        "B_accuracy": 0.9090909090909091,
+        "C_accuracy": 0.9090909090909091,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_five_objects": {
+        "questions": 11,
+        "B_accuracy": 0.8787878787878788,
+        "C_accuracy": 0.8787878787878788,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_seven_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9696969696969697,
+        "C_accuracy": 0.9696969696969697,
+        "gain_pp": 0.0
+      },
+      "tracking_shuffled_objects_three_objects": {
+        "questions": 11,
+        "B_accuracy": 0.9090909090909091,
+        "C_accuracy": 0.8787878787878788,
+        "gain_pp": -3.0303030303030303
+      },
+      "web_of_lies": {
+        "questions": 11,
+        "B_accuracy": 0.9393939393939394,
+        "C_accuracy": 0.9393939393939394,
+        "gain_pp": 0.0
+      },
+      "word_sorting": {
+        "questions": 12,
+        "B_accuracy": 0.4722222222222222,
+        "C_accuracy": 0.4722222222222222,
+        "gain_pp": 0.0
+      }
+    },
+    "B_numerical_tied_questions": 0,
+    "C_numerical_tied_questions": 0,
+    "B_bbh_subtask_macro_accuracy": 0.7875046763935653,
+    "C_bbh_subtask_macro_accuracy": 0.7784324728769173,
+    "centered_score_changed_questions_gt_1e_minus7": 600,
+    "mean_total_variation": 0.225,
+    "B_median_margin": 0.007212747206630787,
+    "C_median_margin": 0.01270359547928278,
+    "coupling_net_identity_max_error": 0.0
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "primary": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8694444444444445,
+        "C_task_macro_accuracy": 0.8666666666666667,
+        "C_minus_B_pp": -0.27777777777777773,
+        "expected_corrections": 3.0,
+        "expected_damages": 4.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 27,
+        "strict_integer_corrections": 3,
+        "strict_integer_damages": 4,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9388888888888889,
+            "C_accuracy": 0.95,
+            "gain_pp": 1.1111111111111112
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.8,
+            "C_accuracy": 0.7833333333333333,
+            "gain_pp": -1.6666666666666667
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.875,
+            "C_accuracy": 0.8666666666666667,
+            "gain_pp": -0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.875,
+            "C_accuracy": 0.875,
+            "gain_pp": 0.0
+          },
+          "2024": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.8583333333333334,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 3,
+            "B_accuracy": 0.2222222222222222,
+            "C_accuracy": 0.2222222222222222,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "salient_translation_error_detection": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.802469135802469,
+        "C_bbh_subtask_macro_accuracy": 0.7839506172839505,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.225,
+        "B_median_margin": 0.008088642100014705,
+        "C_median_margin": 0.013549810462564957,
+        "coupling_net_identity_max_error": 0.0
+      },
+      "raw_exact": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8694444444444445,
+        "C_task_macro_accuracy": 0.8666666666666667,
+        "C_minus_B_pp": -0.27777777777777773,
+        "expected_corrections": 3.0,
+        "expected_damages": 4.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 27,
+        "strict_integer_corrections": 3,
+        "strict_integer_damages": 4,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9388888888888889,
+            "C_accuracy": 0.95,
+            "gain_pp": 1.1111111111111112
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.8,
+            "C_accuracy": 0.7833333333333333,
+            "gain_pp": -1.6666666666666667
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.875,
+            "C_accuracy": 0.8666666666666667,
+            "gain_pp": -0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.875,
+            "C_accuracy": 0.875,
+            "gain_pp": 0.0
+          },
+          "2024": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.8583333333333334,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 3,
+            "B_accuracy": 0.2222222222222222,
+            "C_accuracy": 0.2222222222222222,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "salient_translation_error_detection": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.802469135802469,
+        "C_bbh_subtask_macro_accuracy": 0.7839506172839505,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.225,
+        "B_median_margin": 0.008088642100014705,
+        "C_median_margin": 0.013549810462564957,
+        "coupling_net_identity_max_error": 0.0
+      }
+    },
+    {
+      "fold": 1,
+      "primary": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.85,
+        "C_task_macro_accuracy": 0.85,
+        "C_minus_B_pp": 0.0,
+        "expected_corrections": 2.0,
+        "expected_damages": 2.0,
+        "expected_net_corrections": 0.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 22,
+        "strict_integer_corrections": 2,
+        "strict_integer_damages": 2,
+        "strict_integer_net_corrections": 0,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9388888888888889,
+            "C_accuracy": 0.95,
+            "gain_pp": 1.1111111111111112
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7611111111111111,
+            "C_accuracy": 0.75,
+            "gain_pp": -1.1111111111111112
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8500000000000001,
+            "C_accuracy": 0.8416666666666667,
+            "gain_pp": -0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.8416666666666666,
+            "gain_pp": 0.0
+          },
+          "2024": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.8666666666666667,
+            "gain_pp": 0.8333333333333334
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": -16.666666666666664
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -16.666666666666664
+          },
+          "disambiguation_qa": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7613168724279836,
+        "C_bbh_subtask_macro_accuracy": 0.748971193415638,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.18333333333333332,
+        "B_median_margin": 0.008328247633956648,
+        "C_median_margin": 0.015123150588609677,
+        "coupling_net_identity_max_error": 0.0
+      },
+      "raw_exact": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.85,
+        "C_task_macro_accuracy": 0.85,
+        "C_minus_B_pp": 0.0,
+        "expected_corrections": 2.0,
+        "expected_damages": 2.0,
+        "expected_net_corrections": 0.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 22,
+        "strict_integer_corrections": 2,
+        "strict_integer_damages": 2,
+        "strict_integer_net_corrections": 0,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9388888888888889,
+            "C_accuracy": 0.95,
+            "gain_pp": 1.1111111111111112
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7611111111111111,
+            "C_accuracy": 0.75,
+            "gain_pp": -1.1111111111111112
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8500000000000001,
+            "C_accuracy": 0.8416666666666667,
+            "gain_pp": -0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.8416666666666666,
+            "gain_pp": 0.0
+          },
+          "2024": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.8666666666666667,
+            "gain_pp": 0.8333333333333334
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": -16.666666666666664
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -16.666666666666664
+          },
+          "disambiguation_qa": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7613168724279836,
+        "C_bbh_subtask_macro_accuracy": 0.748971193415638,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.18333333333333332,
+        "B_median_margin": 0.008328247633956648,
+        "C_median_margin": 0.015123150588609677,
+        "coupling_net_identity_max_error": 0.0
+      }
+    },
+    {
+      "fold": 2,
+      "primary": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8305555555555556,
+        "C_task_macro_accuracy": 0.825,
+        "C_minus_B_pp": -0.5555555555555556,
+        "expected_corrections": 4.0,
+        "expected_damages": 6.0,
+        "expected_net_corrections": -2.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 30,
+        "strict_integer_corrections": 4,
+        "strict_integer_damages": 6,
+        "strict_integer_net_corrections": -2,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.8944444444444445,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": -0.5555555555555556
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7666666666666667,
+            "C_accuracy": 0.7611111111111111,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8083333333333333,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 2.5
+          },
+          "137": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.825,
+            "gain_pp": -1.6666666666666667
+          },
+          "2024": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.8166666666666667,
+            "gain_pp": -2.5
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.3333333333333333,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": -33.33333333333333
+          },
+          "hyperbaton": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 1.0,
+            "gain_pp": 11.11111111111111
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 16.666666666666664
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7530864197530865,
+        "C_bbh_subtask_macro_accuracy": 0.7448559670781895,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.25,
+        "B_median_margin": 0.006942564419528466,
+        "C_median_margin": 0.011743517387161305,
+        "coupling_net_identity_max_error": 0.0
+      },
+      "raw_exact": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8305555555555556,
+        "C_task_macro_accuracy": 0.825,
+        "C_minus_B_pp": -0.5555555555555556,
+        "expected_corrections": 4.0,
+        "expected_damages": 6.0,
+        "expected_net_corrections": -2.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 30,
+        "strict_integer_corrections": 4,
+        "strict_integer_damages": 6,
+        "strict_integer_net_corrections": -2,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.8944444444444445,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": -0.5555555555555556
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7666666666666667,
+            "C_accuracy": 0.7611111111111111,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8083333333333333,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 2.5
+          },
+          "137": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.825,
+            "gain_pp": -1.6666666666666667
+          },
+          "2024": {
+            "B_accuracy": 0.8416666666666667,
+            "C_accuracy": 0.8166666666666667,
+            "gain_pp": -2.5
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.3333333333333333,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": -33.33333333333333
+          },
+          "hyperbaton": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 1.0,
+            "gain_pp": 11.11111111111111
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 16.666666666666664
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 3,
+            "B_accuracy": 0.5555555555555556,
+            "C_accuracy": 0.5555555555555556,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7530864197530865,
+        "C_bbh_subtask_macro_accuracy": 0.7448559670781895,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.25,
+        "B_median_margin": 0.006942564419528466,
+        "C_median_margin": 0.011743517387161305,
+        "coupling_net_identity_max_error": 0.0
+      }
+    },
+    {
+      "fold": 3,
+      "primary": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.9027777777777778,
+        "C_task_macro_accuracy": 0.8999999999999999,
+        "C_minus_B_pp": -0.2777777777777778,
+        "expected_corrections": 1.0,
+        "expected_damages": 2.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 26,
+        "strict_integer_corrections": 1,
+        "strict_integer_damages": 2,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9722222222222222,
+            "C_accuracy": 0.9722222222222222,
+            "gain_pp": 0.0
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8277777777777777,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8916666666666666,
+            "C_accuracy": 0.8999999999999999,
+            "gain_pp": 0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.9,
+            "C_accuracy": 0.8833333333333333,
+            "gain_pp": -1.6666666666666667
+          },
+          "2024": {
+            "B_accuracy": 0.9166666666666667,
+            "C_accuracy": 0.9166666666666667,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.8271604938271606,
+        "C_bbh_subtask_macro_accuracy": 0.8209876543209877,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.21666666666666667,
+        "B_median_margin": 0.006175230046321348,
+        "C_median_margin": 0.01093441611765631,
+        "coupling_net_identity_max_error": 0.0
+      },
+      "raw_exact": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.9027777777777778,
+        "C_task_macro_accuracy": 0.8999999999999999,
+        "C_minus_B_pp": -0.2777777777777778,
+        "expected_corrections": 1.0,
+        "expected_damages": 2.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 26,
+        "strict_integer_corrections": 1,
+        "strict_integer_damages": 2,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9722222222222222,
+            "C_accuracy": 0.9722222222222222,
+            "gain_pp": 0.0
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8277777777777777,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.8916666666666666,
+            "C_accuracy": 0.8999999999999999,
+            "gain_pp": 0.8333333333333334
+          },
+          "137": {
+            "B_accuracy": 0.9,
+            "C_accuracy": 0.8833333333333333,
+            "gain_pp": -1.6666666666666667
+          },
+          "2024": {
+            "B_accuracy": 0.9166666666666667,
+            "C_accuracy": 0.9166666666666667,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "geometric_shapes": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.5,
+            "gain_pp": -16.666666666666664
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.8271604938271606,
+        "C_bbh_subtask_macro_accuracy": 0.8209876543209877,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.21666666666666667,
+        "B_median_margin": 0.006175230046321348,
+        "C_median_margin": 0.01093441611765631,
+        "coupling_net_identity_max_error": 0.0
+      }
+    },
+    {
+      "fold": 4,
+      "primary": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8444444444444444,
+        "C_task_macro_accuracy": 0.8416666666666667,
+        "C_minus_B_pp": -0.2777777777777778,
+        "expected_corrections": 6.0,
+        "expected_damages": 7.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 30,
+        "strict_integer_corrections": 6,
+        "strict_integer_damages": 7,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9166666666666666,
+            "C_accuracy": 0.9166666666666666,
+            "gain_pp": 0.0
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7722222222222223,
+            "C_accuracy": 0.7666666666666667,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.825,
+            "C_accuracy": 0.825,
+            "gain_pp": 0.0
+          },
+          "137": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.85,
+            "gain_pp": -0.8333333333333334
+          },
+          "2024": {
+            "B_accuracy": 0.8500000000000001,
+            "C_accuracy": 0.8500000000000001,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 3,
+            "B_accuracy": 0.7777777777777778,
+            "C_accuracy": 1.0,
+            "gain_pp": 22.22222222222222
+          },
+          "geometric_shapes": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": 16.666666666666664
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 3,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7777777777777778,
+        "C_bbh_subtask_macro_accuracy": 0.7674897119341564,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.25,
+        "B_median_margin": 0.006823436763282849,
+        "C_median_margin": 0.013610746187757386,
+        "coupling_net_identity_max_error": 0.0
+      },
+      "raw_exact": {
+        "questions": 120,
+        "B_task_macro_accuracy": 0.8444444444444444,
+        "C_task_macro_accuracy": 0.8416666666666667,
+        "C_minus_B_pp": -0.2777777777777778,
+        "expected_corrections": 6.0,
+        "expected_damages": 7.0,
+        "expected_net_corrections": -1.0,
+        "expected_counts_are_fractional_coupling_expectations": true,
+        "strict_both_unique_questions": 120,
+        "strict_changed_questions": 30,
+        "strict_integer_corrections": 6,
+        "strict_integer_damages": 7,
+        "strict_integer_net_corrections": -1,
+        "by_task": {
+          "gsm8k": {
+            "questions": 60,
+            "B_accuracy": 0.9166666666666666,
+            "C_accuracy": 0.9166666666666666,
+            "gain_pp": 0.0
+          },
+          "bbh": {
+            "questions": 60,
+            "B_accuracy": 0.7722222222222223,
+            "C_accuracy": 0.7666666666666667,
+            "gain_pp": -0.5555555555555556
+          }
+        },
+        "by_generation_seed": {
+          "42": {
+            "B_accuracy": 0.825,
+            "C_accuracy": 0.825,
+            "gain_pp": 0.0
+          },
+          "137": {
+            "B_accuracy": 0.8583333333333334,
+            "C_accuracy": 0.85,
+            "gain_pp": -0.8333333333333334
+          },
+          "2024": {
+            "B_accuracy": 0.8500000000000001,
+            "C_accuracy": 0.8500000000000001,
+            "gain_pp": 0.0
+          }
+        },
+        "bbh_subtasks": {
+          "boolean_expressions": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "causal_judgement": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "date_understanding": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "disambiguation_qa": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "dyck_languages": {
+            "questions": 2,
+            "B_accuracy": 0.5,
+            "C_accuracy": 0.5,
+            "gain_pp": 0.0
+          },
+          "formal_fallacies": {
+            "questions": 3,
+            "B_accuracy": 0.7777777777777778,
+            "C_accuracy": 1.0,
+            "gain_pp": 22.22222222222222
+          },
+          "geometric_shapes": {
+            "questions": 3,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "hyperbaton": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_five_objects": {
+            "questions": 3,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "logical_deduction_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "movie_recommendation": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.16666666666666666,
+            "gain_pp": 0.0
+          },
+          "multistep_arithmetic_two": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "navigate": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "object_counting": {
+            "questions": 2,
+            "B_accuracy": 0.16666666666666666,
+            "C_accuracy": 0.3333333333333333,
+            "gain_pp": 16.666666666666664
+          },
+          "penguins_in_a_table": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "reasoning_about_colored_objects": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "ruin_names": {
+            "questions": 3,
+            "B_accuracy": 0.0,
+            "C_accuracy": 0.0,
+            "gain_pp": 0.0
+          },
+          "salient_translation_error_detection": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": -33.33333333333333
+          },
+          "snarks": {
+            "questions": 2,
+            "B_accuracy": 0.8333333333333334,
+            "C_accuracy": 0.8333333333333334,
+            "gain_pp": 0.0
+          },
+          "sports_understanding": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "temporal_sequences": {
+            "questions": 3,
+            "B_accuracy": 0.8888888888888888,
+            "C_accuracy": 0.8888888888888888,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_five_objects": {
+            "questions": 2,
+            "B_accuracy": 0.6666666666666666,
+            "C_accuracy": 0.6666666666666666,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_seven_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "tracking_shuffled_objects_three_objects": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "web_of_lies": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          },
+          "word_sorting": {
+            "questions": 2,
+            "B_accuracy": 1.0,
+            "C_accuracy": 1.0,
+            "gain_pp": 0.0
+          }
+        },
+        "B_numerical_tied_questions": 0,
+        "C_numerical_tied_questions": 0,
+        "B_bbh_subtask_macro_accuracy": 0.7777777777777778,
+        "C_bbh_subtask_macro_accuracy": 0.7674897119341564,
+        "centered_score_changed_questions_gt_1e_minus7": 120,
+        "mean_total_variation": 0.25,
+        "B_median_margin": 0.006823436763282849,
+        "C_median_margin": 0.013610746187757386,
+        "coupling_net_identity_max_error": 0.0
+      }
+    }
+  ],
+  "frozen_fit_summary": [
+    {
+      "fold": 0,
+      "regularization": 0.003472222222222222,
+      "fully_tied_history_questions": 244,
+      "model_fits": 4,
+      "cpu_seconds": 0.0625,
+      "wall_seconds": 0.125,
+      "fold_input_packet_sha256": "02018feb47f4be4918048d65e4b0d8873bccdff3e14944febab4b052e71e1f75",
+      "predictions_sha256": "ab744b8c5dcd8616ea10a11a443d88cde4f6cbb609a0abb086714aeca7e8a49b",
+      "qualification": {
+        "status": "PASS",
+        "checks": {
+          "lower_bound": true,
+          "upper_bound": true,
+          "contraction_direction": true,
+          "decomposition": true,
+          "B_mapped_centered": true,
+          "B_mapped_probabilities": true,
+          "B_mapped_objective": true,
+          "C_mapped_centered": true,
+          "C_mapped_probabilities": true,
+          "C_mapped_objective": true
+        },
+        "family": "listnet",
+        "denominator": 480,
+        "regularization": 0.003472222222222222,
+        "F0_B_minus_F0_C": 0.00012641808293270204,
+        "JT_C_minus_JT_B": 0.00036590271583602135,
+        "fit_count": 4,
+        "B": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.010156562721666927,
+          "data_loss": 0.01007945266035185,
+          "regularization_penalty": 7.711006131507628e-05,
+          "F0": 0.00996961913726727,
+          "J_T": 0.0001869435843996616,
+          "F1": 0.010156562721666929,
+          "identity_F1_minus_F0_minus_JT": -2.5478751053409354e-18,
+          "all_action_tied_questions": 244,
+          "non_all_tied_questions": 236,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 480.0,
+          "iterations": 6,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 1.1578075829890913e-10,
+          "gradient_inf": 2.0464316005663896e-18,
+          "strong_convexity_objective_gap_bound": 1.3635367287301928e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 1.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.01354620000347495
+        },
+        "C": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.00984320105433457,
+          "data_loss": 0.00965895568469368,
+          "regularization_penalty": 0.0001842453696408893,
+          "F0": 0.009843201054334567,
+          "J_T": 0.000552846300235683,
+          "F1": 0.01039604735457025,
+          "identity_F1_minus_F0_minus_JT": -2.168404344971009e-19,
+          "all_action_tied_questions": 244,
+          "non_all_tied_questions": 236,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 236.0,
+          "iterations": 12,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 4.5804024298207093e-10,
+          "gradient_inf": 1.6154612370034016e-17,
+          "strong_convexity_objective_gap_bound": 7.60226078092541e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 0.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.014640900073572993
+        },
+        "reverse": {
+          "B": {
+            "centered_score_max_error": 1.472346550235315e-16,
+            "probability_max_error": 0.0,
+            "objective_error": 1.0408340855860843e-17,
+            "fit": {
+              "status": "Solved",
+              "solver": "L-BFGS-B + qualified Newton refinement",
+              "objective": 0.010156562721666916,
+              "data_loss": 0.01007945266035184,
+              "regularization_penalty": 7.711006131507629e-05,
+              "F0": 0.009969619137267271,
+              "J_T": 0.00018694358439964772,
+              "F1": 0.010156562721666916,
+              "identity_F1_minus_F0_minus_JT": -2.5478751053409354e-18,
+              "all_action_tied_questions": 244,
+              "non_all_tied_questions": 236,
+              "original_question_denominator": 480,
+              "effective_question_weight_sum": 480.0,
+              "iterations": 6,
+              "solver_settings": {
+                "gtol": 1e-12,
+                "ftol": 1e-15,
+                "maxiter": 2000,
+                "maxls": 50,
+                "maxcor": 20
+              },
+              "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+              "lbfgs_gradient_inf": 1.1578075779746563e-10,
+              "gradient_inf": 2.134523027080837e-18,
+              "strong_convexity_objective_gap_bound": 1.5890013094443517e-32,
+              "newton_refinements": 1,
+              "coefficient_dimension": 340,
+              "feature_dimension": 17,
+              "action_dimension": 20,
+              "regularization": 0.003472222222222222,
+              "strong_convexity_modulus": 0.006944444444444444,
+              "beta": 1.0,
+              "gamma": 0.0,
+              "numeric_to_physical_permutation": [
+                19,
+                18,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0
+              ],
+              "coefficients_returned_in_physical_action_order": true,
+              "normalization": "1/N original questions retained for both beta branches",
+              "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+              "penalized_constant_feature": true,
+              "cpu_seconds": 0.015625,
+              "wall_seconds": 0.013140999944880605
+            }
+          },
+          "C": {
+            "centered_score_max_error": 1.8101839471817986e-16,
+            "probability_max_error": 0.0,
+            "objective_error": 1.734723475976807e-18,
+            "fit": {
+              "status": "Solved",
+              "solver": "L-BFGS-B + qualified Newton refinement",
+              "objective": 0.009843201054334567,
+              "data_loss": 0.009658955684693679,
+              "regularization_penalty": 0.0001842453696408893,
+              "F0": 0.009843201054334571,
+              "J_T": 0.0005528463002356783,
+              "F1": 0.010396047354570248,
+              "identity_F1_minus_F0_minus_JT": -7.589415207398531e-19,
+              "all_action_tied_questions": 244,
+              "non_all_tied_questions": 236,
+              "original_question_denominator": 480,
+              "effective_question_weight_sum": 236.0,
+              "iterations": 12,
+              "solver_settings": {
+                "gtol": 1e-12,
+                "ftol": 1e-15,
+                "maxiter": 2000,
+                "maxls": 50,
+                "maxcor": 20
+              },
+              "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+              "lbfgs_gradient_inf": 4.5804024357838213e-10,
+              "gradient_inf": 1.634434775021898e-17,
+              "strong_convexity_objective_gap_bound": 7.690361893159967e-32,
+              "newton_refinements": 1,
+              "coefficient_dimension": 340,
+              "feature_dimension": 17,
+              "action_dimension": 20,
+              "regularization": 0.003472222222222222,
+              "strong_convexity_modulus": 0.006944444444444444,
+              "beta": 0.0,
+              "gamma": 0.0,
+              "numeric_to_physical_permutation": [
+                19,
+                18,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0
+              ],
+              "coefficients_returned_in_physical_action_order": true,
+              "normalization": "1/N original questions retained for both beta branches",
+              "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+              "penalized_constant_feature": true,
+              "cpu_seconds": 0.015625,
+              "wall_seconds": 0.014824699959717691
+            }
+          }
+        },
+        "qualification_tolerance": 1e-07,
+        "deployment_tau": 1e-08
+      }
+    },
+    {
+      "fold": 1,
+      "regularization": 0.003472222222222222,
+      "fully_tied_history_questions": 240,
+      "model_fits": 2,
+      "cpu_seconds": 0.015625,
+      "wall_seconds": 0.09399999992456287,
+      "fold_input_packet_sha256": "6f461ad09a9a0d4038dd2643c3f2be549afe354c75c642f1adc05e6f05e28b15",
+      "predictions_sha256": "c4a33eb38fa2db507e176e93cec8357fc9327f98dcfbdc6511acac9f877f8048",
+      "qualification": {
+        "status": "PASS",
+        "checks": {
+          "lower_bound": true,
+          "upper_bound": true,
+          "contraction_direction": true,
+          "decomposition": true
+        },
+        "family": "listnet",
+        "denominator": 480,
+        "regularization": 0.003472222222222222,
+        "F0_B_minus_F0_C": 0.00012020465660293224,
+        "JT_C_minus_JT_B": 0.0003485537286856817,
+        "fit_count": 2,
+        "B": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.009767157936411402,
+          "data_loss": 0.00968364393979062,
+          "regularization_penalty": 8.351399662078084e-05,
+          "F0": 0.009577556765787833,
+          "J_T": 0.00018960117062354528,
+          "F1": 0.009767157936411402,
+          "identity_F1_minus_F0_minus_JT": 2.3120611328253382e-17,
+          "all_action_tied_questions": 240,
+          "non_all_tied_questions": 240,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 480.0,
+          "iterations": 6,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 5.141846749268965e-11,
+          "gradient_inf": 5.141846749268965e-11,
+          "strong_convexity_objective_gap_bound": 1.3631850983788926e-18,
+          "newton_refinements": 0,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 1.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.0,
+          "wall_seconds": 0.004421600024215877
+        },
+        "C": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.0094573521091849,
+          "data_loss": 0.009269452369167907,
+          "regularization_penalty": 0.00018789974001699253,
+          "F0": 0.009457352109184901,
+          "J_T": 0.000538154899309227,
+          "F1": 0.009995507008494137,
+          "identity_F1_minus_F0_minus_JT": 8.456776945386935e-18,
+          "all_action_tied_questions": 240,
+          "non_all_tied_questions": 240,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 240.0,
+          "iterations": 12,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 2.707446055273243e-10,
+          "gradient_inf": 7.352245982167327e-18,
+          "strong_convexity_objective_gap_bound": 2.387626893316028e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 0.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.015424599987454712
+        },
+        "reverse": {},
+        "qualification_tolerance": 1e-07,
+        "deployment_tau": 1e-08
+      }
+    },
+    {
+      "fold": 2,
+      "regularization": 0.003472222222222222,
+      "fully_tied_history_questions": 245,
+      "model_fits": 2,
+      "cpu_seconds": 0.03125,
+      "wall_seconds": 0.0940000000409782,
+      "fold_input_packet_sha256": "c0cb11cf116464bae40cea24be2cc292e96f70264ffd8281ac793853f39f9c57",
+      "predictions_sha256": "ede76268aa9ffecdea979daa7dd64aa9c684f618a1c378b5f2f5a58580273574",
+      "qualification": {
+        "status": "PASS",
+        "checks": {
+          "lower_bound": true,
+          "upper_bound": true,
+          "contraction_direction": true,
+          "decomposition": true
+        },
+        "family": "listnet",
+        "denominator": 480,
+        "regularization": 0.003472222222222222,
+        "F0_B_minus_F0_C": 0.00011303117721467477,
+        "JT_C_minus_JT_B": 0.00032607904294790956,
+        "fit_count": 2,
+        "B": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.010120574499805085,
+          "data_loss": 0.010032567489692123,
+          "regularization_penalty": 8.80070101129626e-05,
+          "F0": 0.009932509755794378,
+          "J_T": 0.00018806474401069918,
+          "F1": 0.010120574499805083,
+          "identity_F1_minus_F0_minus_JT": 6.2341624917916505e-18,
+          "all_action_tied_questions": 245,
+          "non_all_tied_questions": 235,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 480.0,
+          "iterations": 6,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 2.0544776039373332e-10,
+          "gradient_inf": 2.2581898373799647e-18,
+          "strong_convexity_objective_gap_bound": 1.798114649166168e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 1.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.011368000064976513
+        },
+        "C": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.009819478578579703,
+          "data_loss": 0.009630377515859195,
+          "regularization_penalty": 0.00018910106272050794,
+          "F0": 0.009819478578579703,
+          "J_T": 0.0005141437869586087,
+          "F1": 0.010333622365538307,
+          "identity_F1_minus_F0_minus_JT": -4.662069341687669e-18,
+          "all_action_tied_questions": 245,
+          "non_all_tied_questions": 235,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 235.0,
+          "iterations": 12,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 3.749017199385519e-10,
+          "gradient_inf": 1.2969768488357847e-17,
+          "strong_convexity_objective_gap_bound": 7.791988721975505e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 0.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.013443500036373734
+        },
+        "reverse": {},
+        "qualification_tolerance": 1e-07,
+        "deployment_tau": 1e-08
+      }
+    },
+    {
+      "fold": 3,
+      "regularization": 0.003472222222222222,
+      "fully_tied_history_questions": 241,
+      "model_fits": 2,
+      "cpu_seconds": 0.046875,
+      "wall_seconds": 0.0940000000409782,
+      "fold_input_packet_sha256": "fe1c9f2219f936daa5031e53d24c2469b0fc48ae51790de56ac2a821f724fb41",
+      "predictions_sha256": "165ea22b833af4f35fda43fd86f7f441ae743926cf41183a297572ef168f0197",
+      "qualification": {
+        "status": "PASS",
+        "checks": {
+          "lower_bound": true,
+          "upper_bound": true,
+          "contraction_direction": true,
+          "decomposition": true
+        },
+        "family": "listnet",
+        "denominator": 480,
+        "regularization": 0.003472222222222222,
+        "F0_B_minus_F0_C": 0.00011441746799036034,
+        "JT_C_minus_JT_B": 0.00033284909886145133,
+        "fit_count": 2,
+        "B": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.010306484906925917,
+          "data_loss": 0.010225983541945767,
+          "regularization_penalty": 8.050136498015112e-05,
+          "F0": 0.010125772190172896,
+          "J_T": 0.00018071271675302407,
+          "F1": 0.010306484906925917,
+          "identity_F1_minus_F0_minus_JT": -3.0086610286472748e-18,
+          "all_action_tied_questions": 241,
+          "non_all_tied_questions": 239,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 480.0,
+          "iterations": 6,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 2.3490353520845553e-10,
+          "gradient_inf": 3.3610267347050637e-18,
+          "strong_convexity_objective_gap_bound": 1.6743769390999002e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 1.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.013007799978367984
+        },
+        "C": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.010011354722182536,
+          "data_loss": 0.009830783338770412,
+          "regularization_penalty": 0.00018057138341212353,
+          "F0": 0.010011354722182536,
+          "J_T": 0.0005135618156144754,
+          "F1": 0.010524916537797005,
+          "identity_F1_minus_F0_minus_JT": -6.179952383167375e-18,
+          "all_action_tied_questions": 241,
+          "non_all_tied_questions": 239,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 239.0,
+          "iterations": 11,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 2.893284789268896e-10,
+          "gradient_inf": 2.4665599424045226e-18,
+          "strong_convexity_objective_gap_bound": 1.4010073677922928e-32,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.003472222222222222,
+          "strong_convexity_modulus": 0.006944444444444444,
+          "beta": 0.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.017108600004576147
+        },
+        "reverse": {},
+        "qualification_tolerance": 1e-07,
+        "deployment_tau": 1e-08
+      }
+    },
+    {
+      "fold": 4,
+      "regularization": 0.00034722222222222224,
+      "fully_tied_history_questions": 254,
+      "model_fits": 2,
+      "cpu_seconds": 0.046875,
+      "wall_seconds": 0.0779999999795109,
+      "fold_input_packet_sha256": "c018dc2b07f69a3f596bf3cbc40fbffdf7cd9808e0afacbbcf8ce10584338bd4",
+      "predictions_sha256": "663f2d8a8e47aad34020dc4539105bbe0215d3ae521d60bb46ad536627a66c1a",
+      "qualification": {
+        "status": "PASS",
+        "checks": {
+          "lower_bound": true,
+          "upper_bound": true,
+          "contraction_direction": true,
+          "decomposition": true
+        },
+        "family": "listnet",
+        "denominator": 480,
+        "regularization": 0.00034722222222222224,
+        "F0_B_minus_F0_C": 0.00018815469080587371,
+        "JT_C_minus_JT_B": 0.0006598532351470019,
+        "fit_count": 2,
+        "B": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.009680595827676414,
+          "data_loss": 0.009670609192039138,
+          "regularization_penalty": 9.986635637275608e-06,
+          "F0": 0.00945858458131114,
+          "J_T": 0.00022201124636526774,
+          "F1": 0.009680595827676414,
+          "identity_F1_minus_F0_minus_JT": 5.312590645178972e-18,
+          "all_action_tied_questions": 254,
+          "non_all_tied_questions": 226,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 480.0,
+          "iterations": 6,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 1.590581710633266e-10,
+          "gradient_inf": 3.2246544301971214e-18,
+          "strong_convexity_objective_gap_bound": 3.0200863118936052e-31,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.00034722222222222224,
+          "strong_convexity_modulus": 0.0006944444444444445,
+          "beta": 1.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.012835699948482215
+        },
+        "C": {
+          "status": "Solved",
+          "solver": "L-BFGS-B + qualified Newton refinement",
+          "objective": 0.009270429890505267,
+          "data_loss": 0.00924239248405313,
+          "regularization_penalty": 2.8037406452138188e-05,
+          "F0": 0.009270429890505267,
+          "J_T": 0.0008818644815122696,
+          "F1": 0.010152294372017544,
+          "identity_F1_minus_F0_minus_JT": 7.914675859144182e-18,
+          "all_action_tied_questions": 254,
+          "non_all_tied_questions": 226,
+          "original_question_denominator": 480,
+          "effective_question_weight_sum": 226.0,
+          "iterations": 14,
+          "solver_settings": {
+            "gtol": 1e-12,
+            "ftol": 1e-15,
+            "maxiter": 2000,
+            "maxls": 50,
+            "maxcor": 20
+          },
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "lbfgs_gradient_inf": 6.352441724872388e-10,
+          "gradient_inf": 2.10758737935815e-17,
+          "strong_convexity_objective_gap_bound": 1.1923511040113486e-30,
+          "newton_refinements": 1,
+          "coefficient_dimension": 340,
+          "feature_dimension": 17,
+          "action_dimension": 20,
+          "regularization": 0.00034722222222222224,
+          "strong_convexity_modulus": 0.0006944444444444445,
+          "beta": 0.0,
+          "gamma": 0.0,
+          "numeric_to_physical_permutation": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "coefficients_returned_in_physical_action_order": true,
+          "normalization": "1/N original questions retained for both beta branches",
+          "target": "unit-temperature softmax of empirical mean; target entropy subtracted from CE",
+          "penalized_constant_feature": true,
+          "cpu_seconds": 0.015625,
+          "wall_seconds": 0.01647859998047352
+        },
+        "reverse": {},
+        "qualification_tolerance": 1e-07,
+        "deployment_tau": 1e-08
+      }
+    }
+  ],
+  "fit_stage_wall_seconds": 1.077999999979511,
+  "fit_stage_cpu_seconds": 0.265625,
+  "evaluation_wall_seconds": 0.015999999945051968,
+  "evaluation_cpu_seconds": 0.03125,
+  "main_fits": 10,
+  "reverse_qualification_fits": 2,
+  "new_llm_calls": 0,
+  "new_encoder_forwards": 0,
+  "fresh400_reward_reads": 0,
+  "sealed200_reward_reads": 0,
+  "confidence_intervals_computed": false,
+  "bootstrap_repetitions": 0
+}
