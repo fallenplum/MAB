@@ -63,8 +63,11 @@ def verify() -> dict:
 
     # Validate relative file links in new entry-point documentation only.
     # Frozen reports retain original external paths and historical identities.
-    docs = [ROOT / 'README.md', ROOT / 'routing_idea2/README.md']
+    docs = [ROOT / 'README.md', ROOT / 'routing_idea2/README.md',
+            ROOT / 'EXPERIMENTS.md', ROOT / 'reproducibility/README.md']
     docs += list((ROOT / 'docs').glob('*.md')) + list((ROOT / 'paper').glob('*.md'))
+    navigation_docs = [ROOT / 'EXPERIMENTS.md'] + list((ROOT / 'experiments').rglob('*.md'))
+    docs += list((ROOT / 'experiments').rglob('*.md'))
     relative_links = 0
     for file in docs:
         text = file.read_text(encoding='utf-8')
@@ -76,6 +79,53 @@ def verify() -> dict:
             if not linked.is_relative_to(ROOT) or not linked.exists():
                 raise ValueError(f'Broken relative link in {file.relative_to(ROOT)}: {target}')
             relative_links += 1
+
+    index = json.loads((ROOT / 'reproducibility/experiment_index.json').read_text(encoding='utf-8'))
+    if index['schema_version'] != 1 or index['repository'] != 'fallenplum/MAB':
+        raise ValueError('Unexpected experiment index schema/repository')
+    experiments = index['experiments']
+    branches = {x['branch'] for x in experiments}
+    if len(branches) != len(experiments):
+        raise ValueError('Duplicate experiment branches')
+    source_targets, source_commits = set(), set()
+    for entry in experiments:
+        commit = entry['source_commit']
+        if not re.fullmatch(r'[0-9a-f]{40}', commit):
+            raise ValueError(f'Invalid experiment source commit: {commit}')
+        source_commits.add(commit)
+        if not checked_path(entry['directory'] + '/README.md').is_file():
+            raise ValueError(f'Missing experiment page: {entry["directory"]}')
+        paths = set()
+        for source in entry['source_files']:
+            path = PurePosixPath(source['path'])
+            if path.is_absolute() or '..' in path.parts or source['path'] in paths:
+                raise ValueError(f'Invalid or duplicate experiment source path: {source["path"]}')
+            paths.add(source['path'])
+            if source['type'] not in ('blob', 'tree') or not re.fullmatch(r'[0-9a-f]{40}', source['sha']):
+                raise ValueError(f'Invalid experiment source object: {source["path"]}')
+            source_targets.add((source['type'], commit, source['path']))
+    github_links = 0
+    for file in navigation_docs:
+        for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', file.read_text(encoding='utf-8')):
+            url = urlsplit(target)
+            if url.netloc != 'github.com' or not url.path.startswith('/fallenplum/MAB/'):
+                continue
+            rest = unquote(url.path[len('/fallenplum/MAB/'):])
+            if rest.startswith('commit/') and rest[7:] in source_commits:
+                pass
+            elif rest.startswith('tree/') and rest[5:] in branches:
+                pass
+            else:
+                parts = rest.split('/', 2)
+                if len(parts) != 3 or parts[0] not in ('blob', 'tree'):
+                    raise ValueError(f'Unknown experiment link: {target}')
+                kind, ref, path = parts
+                if ref == 'main':
+                    if not checked_path(path).exists():
+                        raise ValueError(f'Missing main link: {target}')
+                elif (kind, ref, path) not in source_targets:
+                    raise ValueError(f'Experiment link missing from source index: {target}')
+            github_links += 1
 
     from migrate_branch_names import load_manifest, MigrationError
     migration_entries = []
@@ -107,6 +157,8 @@ def verify() -> dict:
         'python_sources_parsed_without_execution': len(python_paths),
         'json_files_parsed': len(json_paths),
         'relative_entry_links_verified': relative_links,
+        'experiment_records_indexed': len(experiments),
+        'experiment_source_links_verified': github_links,
         'branch_name_mappings_validated_offline': len(migration_entries),
         'missing_direct_generation_sources': missing_sources,
         'full_training_or_generation_reproduced': False,

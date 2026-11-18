@@ -1,0 +1,3900 @@
+{
+  "schema_version": 1,
+  "repository": "fallenplum/MAB",
+  "experiments": [
+    {
+      "branch": "archive/main-before-paper-20261118",
+      "title": "E1 与旧 main 备份",
+      "stage": "E1",
+      "purpose": "保存 E1 原始汇报、E2 结果和 V2 生成与预测诊断。",
+      "source_commit": "bf1db55079fb38b3fd91311f4f3731e405db714a",
+      "source_tree": "b2ed91635b45011661d55381da9e294d7d07ec5c",
+      "report_path": "reports/e1/E1_流程与实验结果汇报_20261103.docx",
+      "results_paths": [
+        "routing_idea2/results/e1/e1_diagnostics.json",
+        "routing_idea2/results/e1/audit_metrics.json",
+        "routing_idea2/results/e1/causal_diagnostic_summary.json"
+      ],
+      "code_paths": [
+        "routing_idea2/scripts",
+        "routing_idea2/src/budget_router",
+        "routing_idea2/artifacts/audit"
+      ],
+      "reproduction_path": "routing_idea2/README.md",
+      "protocol_path": "routing_idea2/protocol/E0_LOCK.json",
+      "additional_reports": [
+        "routing_idea2/E1_FILE_INDEX.md"
+      ],
+      "records": [
+        {
+          "stage": "V2 诊断",
+          "title": "V2 生成缓存与预测器诊断",
+          "report_path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/REPORT_zh.md",
+          "results_paths": [
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/VALIDATION_AND_COST_DECISION_v1.json",
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_SELECTOR_DIAGNOSTIC_v1.json.gz",
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/seed_stability/PUBLIC_AGGREGATE_SEED_STABILITY_v1.json.gz"
+          ],
+          "code_paths": [
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot"
+          ],
+          "reproduction_path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/FILE_INDEX_zh.md",
+          "protocol_path": "routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json",
+          "purpose": "保存充分反馈训练与验证、生成缓存和暂停时的诊断。",
+          "branch": "archive/main-before-paper-20261118",
+          "source_commit": "bf1db55079fb38b3fd91311f4f3731e405db714a",
+          "source_tree": "b2ed91635b45011661d55381da9e294d7d07ec5c"
+        },
+        {
+          "stage": "V2 step1",
+          "title": "组合评分与跨生成分析",
+          "report_path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/README_zh.md",
+          "results_paths": [
+            "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_COMPLETE_SCIENTIFIC_STATISTICS_v1.json",
+            "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_CROSS_SEED_TRANSFER_v1.json"
+          ],
+          "code_paths": [
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot"
+          ],
+          "reproduction_path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/FILE_INDEX_zh.md",
+          "protocol_path": "routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json",
+          "purpose": "保存聚合器冻结后 200 道开发诊断题的跨生成比较。",
+          "branch": "archive/main-before-paper-20261118",
+          "source_commit": "bf1db55079fb38b3fd91311f4f3731e405db714a",
+          "source_tree": "b2ed91635b45011661d55381da9e294d7d07ec5c"
+        },
+        {
+          "stage": "V2 step2",
+          "title": "独立 Top3 选择与评价",
+          "report_path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/README_zh.md",
+          "results_paths": [
+            "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_VALIDATION_v1.json",
+            "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_ACCURACY_BY_TASK_v1.json",
+            "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_TOP3_FREEZE_AND_LINEAGE_PUBLIC_v1.json"
+          ],
+          "code_paths": [
+            "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot"
+          ],
+          "reproduction_path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/FILE_INDEX_zh.md",
+          "protocol_path": "routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json",
+          "purpose": "保存训练后补充的独立 Top3 选择方法及其开发验证。",
+          "branch": "archive/main-before-paper-20261118",
+          "source_commit": "bf1db55079fb38b3fd91311f4f3731e405db714a",
+          "source_tree": "b2ed91635b45011661d55381da9e294d7d07ec5c"
+        }
+      ],
+      "source_tree_sha": "b2ed91635b45011661d55381da9e294d7d07ec5c",
+      "directory": "experiments/e01-initial-experiments",
+      "source_files": [
+        {
+          "path": "reports/e1/E1_流程与实验结果汇报_20261103.docx",
+          "sha": "ec8103fae85341455f8f102daeb55e6aab712cf5",
+          "mode": "100644",
+          "size": 52911,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/README.md",
+          "sha": "ee019c16a83b1ad1ea19a5abbdf4e27d4592c1ec",
+          "mode": "100644",
+          "size": 7815,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/protocol/E0_LOCK.json",
+          "sha": "42801a2762cfd93efbb67ece7b0714f51d1a2a4c",
+          "mode": "100644",
+          "size": 9509,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e1/e1_diagnostics.json",
+          "sha": "179ed6658a27b77754b75420825606566bf6dbfc",
+          "mode": "100644",
+          "size": 15095,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e1/audit_metrics.json",
+          "sha": "1ec532008beccc9baa1e99b32a549db7f70cdb62",
+          "mode": "100644",
+          "size": 10371,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e1/causal_diagnostic_summary.json",
+          "sha": "e8b24096d873b789c7e742b24dd210c8dd193f45",
+          "mode": "100644",
+          "size": 7522,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/scripts",
+          "sha": "fb40f7cb3927c2e457652ab96b4ceac454f0d098",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/src/budget_router",
+          "sha": "c4b5f203891cec515f408bb8c530e7d64a888901",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/artifacts/audit",
+          "sha": "8c58478db3a24481efed66bd325f8b46c1da2d08",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/E1_FILE_INDEX.md",
+          "sha": "45ba17dbfd9a196b1bb9127c564a3809be40800b",
+          "mode": "100644",
+          "size": 2578,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/REPORT_zh.md",
+          "sha": "5beb44532f8f11c42b8961eeda38610b6883826e",
+          "mode": "100644",
+          "size": 5948,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/VALIDATION_AND_COST_DECISION_v1.json",
+          "sha": "024d664e77368a79a84483e4fc821ba46af42d5f",
+          "mode": "100644",
+          "size": 42435,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/selector/PUBLIC_SELECTOR_DIAGNOSTIC_v1.json.gz",
+          "sha": "c4003b29c4b165273015e86dde9368a3b54c66e5",
+          "mode": "100644",
+          "size": 14152,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/seed_stability/PUBLIC_AGGREGATE_SEED_STABILITY_v1.json.gz",
+          "sha": "67de1622398d9d93c6375fa736eb6e41d9f4cc10",
+          "mode": "100644",
+          "size": 57706,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/source_snapshot",
+          "sha": "054943467774a55b351977efec22712c5a2f6c91",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/release/decision_feedback_v2_diagnostic_20261106_v1/FILE_INDEX_zh.md",
+          "sha": "810127126533db0d11d217a62b93f1a9f4605e43",
+          "mode": "100644",
+          "size": 2336,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/protocol/decision_feedback_v2/EXPERIMENT_PROTOCOL_v2.json",
+          "sha": "9797ec5f5b45badc17b5247d4938763f6886a7b6",
+          "mode": "100644",
+          "size": 11176,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/README_zh.md",
+          "sha": "8f507ae48921700de930efc6acaaf3f5552f1e49",
+          "mode": "100644",
+          "size": 1816,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_COMPLETE_SCIENTIFIC_STATISTICS_v1.json",
+          "sha": "519fd51eab79adb0c822c54ea0fd3293feb2c659",
+          "mode": "100644",
+          "size": 562874,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step1/STEP1_CROSS_SEED_TRANSFER_v1.json",
+          "sha": "5515fe256d53f942142b3f32b29e932be0021d1c",
+          "mode": "100644",
+          "size": 22178,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/FILE_INDEX_zh.md",
+          "sha": "5e7a69857381e8f55b311bd1da045f6061cc3e89",
+          "mode": "100644",
+          "size": 1444,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/README_zh.md",
+          "sha": "e46d16119b364aeef064441b6fc1df276f5291f9",
+          "mode": "100644",
+          "size": 2662,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_VALIDATION_v1.json",
+          "sha": "833f89b51dc4c24eeeeb29062a16c896c6dfe534",
+          "mode": "100644",
+          "size": 33710,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_INDEPENDENT_TOP3_ACCURACY_BY_TASK_v1.json",
+          "sha": "690882e9f91498df4981755df0b1ea4b73ade043",
+          "mode": "100644",
+          "size": 22628,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/v2_step1_step2_statistics_20261106_v1/step2/STEP2_TOP3_FREEZE_AND_LINEAGE_PUBLIC_v1.json",
+          "sha": "91b12c95dea657927ab8e15e70e6182e1ab41c46",
+          "mode": "100644",
+          "size": 3899,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 181
+    },
+    {
+      "branch": "a-fixed-k3-e2-e3",
+      "title": "E2/E3 任务书与代码",
+      "stage": "E2/E3",
+      "purpose": "保存固定 K=3 的 E2/E3 任务书和运行代码。",
+      "source_commit": "3750e75711a6877a2258020be3db8c52f4c7dd37",
+      "source_tree": "a028a6bc8e25647e7a0f8ee4ce3186fc1a1dae2b",
+      "report_path": "routing_idea2/CODEX_TASK_A_E2_E3.md",
+      "results_paths": [],
+      "code_paths": [
+        "routing_idea2/scripts/evaluate_e2.py",
+        "routing_idea2/scripts/evaluate_e3.py",
+        "routing_idea2/src/budget_router"
+      ],
+      "reproduction_path": "routing_idea2/README.md",
+      "protocol_path": "routing_idea2/protocol/E0_LOCK.json",
+      "status_note": "内容为 E2/E3 任务书与代码。E2 完成结果见 e3-locked-mechanism-review-20261104 分支，E3 决策采集结果见 decision-acquisition-e3-20261107 分支。",
+      "related_results_branch": "e3-locked-mechanism-review-20261104",
+      "source_tree_sha": "a028a6bc8e25647e7a0f8ee4ce3186fc1a1dae2b",
+      "directory": "experiments/a-fixed-k3-e2-e3",
+      "source_files": [
+        {
+          "path": "routing_idea2/CODEX_TASK_A_E2_E3.md",
+          "sha": "255d5dcd7bd511792d0aeff6d92fc2d2b2da6149",
+          "mode": "100644",
+          "size": 13215,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/README.md",
+          "sha": "34e7dfa740ddc14bb6dfacf71d3989fa90ab2114",
+          "mode": "100644",
+          "size": 2076,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/protocol/E0_LOCK.json",
+          "sha": "42801a2762cfd93efbb67ece7b0714f51d1a2a4c",
+          "mode": "100644",
+          "size": 9509,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/scripts/evaluate_e2.py",
+          "sha": "87e0fadf0baa745e49747bce260c1e7f2081d64f",
+          "mode": "100644",
+          "size": 8948,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/scripts/evaluate_e3.py",
+          "sha": "543edfc571c89a958284ef160df87ddde92a9b6a",
+          "mode": "100644",
+          "size": 17564,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/src/budget_router",
+          "sha": "c4b5f203891cec515f408bb8c530e7d64a888901",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "ca40505d73823c3309285ad187bd7130a87a5033",
+          "mode": "100644",
+          "size": 1558,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 129
+    },
+    {
+      "branch": "e3-locked-mechanism-review-20261104",
+      "title": "E2 完成结果与 E3 任务书",
+      "stage": "E2",
+      "purpose": "保存 E2 全部回放结果和后续 E3 固定协议任务书。",
+      "source_commit": "1fe57f540970ead0eac70b20cf1a29571fd30390",
+      "source_tree": "870f5506586e12e27cdb402247d72e1f5950fb8c",
+      "report_path": "README.md",
+      "results_paths": [
+        "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json",
+        "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv",
+        "routing_idea2/release/e2_20261104/E2_FILE_INDEX.json"
+      ],
+      "code_paths": [
+        "routing_idea2/scripts/evaluate_e2.py",
+        "routing_idea2/scripts/evaluate_e3.py"
+      ],
+      "reproduction_path": "routing_idea2/README.md",
+      "protocol_path": "routing_idea2/protocol/E0_LOCK.json",
+      "records": [
+        {
+          "stage": "E3 准备",
+          "title": "E3 固定协议任务书",
+          "report_path": "routing_idea2/CODEX_TASK_E3_LOCKED.md",
+          "results_paths": [],
+          "code_paths": [
+            "routing_idea2/scripts/evaluate_e3.py"
+          ],
+          "reproduction_path": "routing_idea2/README.md",
+          "protocol_path": "routing_idea2/CODEX_TASK_E3_LOCKED.md",
+          "status_note": "完成的决策采集实验见 decision-acquisition-e3-20261107。",
+          "purpose": "保存 E3 固定协议任务书；完成的决策采集结果在后续 E3 分支。",
+          "branch": "e3-locked-mechanism-review-20261104",
+          "source_commit": "1fe57f540970ead0eac70b20cf1a29571fd30390",
+          "source_tree": "870f5506586e12e27cdb402247d72e1f5950fb8c"
+        }
+      ],
+      "source_tree_sha": "870f5506586e12e27cdb402247d72e1f5950fb8c",
+      "directory": "experiments/e3-locked-mechanism-review-20261104",
+      "source_files": [
+        {
+          "path": "README.md",
+          "sha": "08f00132fdb68b78acfac17af947b0cdf450b50a",
+          "mode": "100644",
+          "size": 3006,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/README.md",
+          "sha": "f2cf9f6c61d9c8c1075caceafc38b184cc666a71",
+          "mode": "100644",
+          "size": 3836,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/protocol/E0_LOCK.json",
+          "sha": "42801a2762cfd93efbb67ece7b0714f51d1a2a4c",
+          "mode": "100644",
+          "size": 9509,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.json",
+          "sha": "07e533aa0c6f1006054a8e2985ab435bb49e3064",
+          "mode": "100644",
+          "size": 714413,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/e2_20261104/E2_AGGREGATED_RESULTS.csv",
+          "sha": "63d2f2d65e54bcea5761d987c1c9f79aa7c60279",
+          "mode": "100644",
+          "size": 116024,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/release/e2_20261104/E2_FILE_INDEX.json",
+          "sha": "a1fd5636462dc1f156da6cf3734127f1bf700b57",
+          "mode": "100644",
+          "size": 207831,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/scripts/evaluate_e2.py",
+          "sha": "87e0fadf0baa745e49747bce260c1e7f2081d64f",
+          "mode": "100644",
+          "size": 8948,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/scripts/evaluate_e3.py",
+          "sha": "543edfc571c89a958284ef160df87ddde92a9b6a",
+          "mode": "100644",
+          "size": 17564,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/CODEX_TASK_E3_LOCKED.md",
+          "sha": "cd7867b1fc1ea76211d252560d9f2d5dc6d83e56",
+          "mode": "100644",
+          "size": 8207,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 133
+    },
+    {
+      "branch": "decision-acquisition-e3-20261107",
+      "title": "决策导向反馈采集",
+      "stage": "E3",
+      "purpose": "在相同预测器与预算下比较决策导向、随机和信息增益采集。",
+      "source_commit": "45ff7ad04fa7f017ebafe27f4c3d73ffe5451cf6",
+      "source_tree": "040da95a7ce5bf06559506bcab6ec15b02c47336",
+      "report_path": "routing_idea2/research/decision_acquisition_e3/07_RESEARCH_CONCLUSION.md",
+      "results_paths": [
+        "routing_idea2/research/decision_acquisition_e3/E3_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/decision_acquisition_e3/run_e3.py",
+        "routing_idea2/research/decision_acquisition_e3/acquisition.py",
+        "routing_idea2/research/decision_acquisition_e3/predictors.py"
+      ],
+      "reproduction_path": "routing_idea2/research/decision_acquisition_e3/README.md",
+      "protocol_path": "routing_idea2/research/decision_acquisition_e3/E3_PROTOCOL.md",
+      "additional_reports": [
+        "routing_idea2/research/decision_acquisition_e3/01_FEEDBACK_RESPONSE.md",
+        "routing_idea2/research/decision_acquisition_e3/02_ACQUISITION_BASELINES.md",
+        "routing_idea2/research/decision_acquisition_e3/03_CROSS_PREDICTOR_RESULTS.md",
+        "routing_idea2/research/decision_acquisition_e3/04_MECHANISM_ABLATIONS.md",
+        "routing_idea2/research/decision_acquisition_e3/05_COST_AND_REUSE.md",
+        "routing_idea2/research/decision_acquisition_e3/06_STATISTICAL_ANALYSIS.md"
+      ],
+      "source_tree_sha": "040da95a7ce5bf06559506bcab6ec15b02c47336",
+      "directory": "experiments/decision-acquisition-e3-20261107",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/07_RESEARCH_CONCLUSION.md",
+          "sha": "3e2567dffb9759c9e8297c08b2ef7bea7e7157e4",
+          "mode": "100644",
+          "size": 2892,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/README.md",
+          "sha": "f8b5ef01b7e9cae20f3932abc31719de3540b68e",
+          "mode": "100644",
+          "size": 3204,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/E3_PROTOCOL.md",
+          "sha": "8ce40955aefab75fb72261bc7637840ada34e94a",
+          "mode": "100644",
+          "size": 8963,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/E3_COMPLETE_RESULTS.json",
+          "sha": "cf92105f81b31d54b075c5b349ee8f2a8f3da873",
+          "mode": "100644",
+          "size": 8874521,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/run_e3.py",
+          "sha": "38ba16113872e538eef826b4414de4315012fc1d",
+          "mode": "100644",
+          "size": 22627,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/acquisition.py",
+          "sha": "38a8ac537bde2b587c9a07187a2e9dabc194d040",
+          "mode": "100644",
+          "size": 6642,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/predictors.py",
+          "sha": "8458851241c6410a99090feb558e6a8596c9464b",
+          "mode": "100644",
+          "size": 23310,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/01_FEEDBACK_RESPONSE.md",
+          "sha": "9ef1981a883cbca3398b61ae70509762ce45dafa",
+          "mode": "100644",
+          "size": 18030,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/02_ACQUISITION_BASELINES.md",
+          "sha": "73c6d0996fcbc1a4c7b23163ebf4fd50c9aedf6f",
+          "mode": "100644",
+          "size": 22066,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/03_CROSS_PREDICTOR_RESULTS.md",
+          "sha": "866527e189c911292752c91bb568d178c756b571",
+          "mode": "100644",
+          "size": 4897,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/04_MECHANISM_ABLATIONS.md",
+          "sha": "6ff83ec9f8d6271ebc09b6ce487221ae07fce4b3",
+          "mode": "100644",
+          "size": 4464,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/05_COST_AND_REUSE.md",
+          "sha": "7e37e65686ee95f5b218c75344ee66e726d74867",
+          "mode": "100644",
+          "size": 4702,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/decision_acquisition_e3/06_STATISTICAL_ANALYSIS.md",
+          "sha": "393884787b36355eba21c1bdcbf871d868d37ec1",
+          "mode": "100644",
+          "size": 2897,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 290
+    },
+    {
+      "branch": "e4-statistical-model-audit-20261107",
+      "title": "统计模型与评分检查",
+      "stage": "E4",
+      "purpose": "检查评分映射、模型假设与反馈代理是否符合服务目标。",
+      "source_commit": "b5fa3317c77b1256037d734c93a001ecb19bfa28",
+      "source_tree": "9c122ca0df1824b7a4a618b23a2df27b5f2dd65b",
+      "report_path": "routing_idea2/research/e4_statistical_model_audit/08_E4_RESEARCH_CONCLUSION.md",
+      "results_paths": [
+        "routing_idea2/research/e4_statistical_model_audit/E4_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e4_statistical_model_audit/BINARY_COMPARISON_RESULTS.json",
+        "routing_idea2/research/e4_statistical_model_audit/POSTERIOR_AUDIT_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e4_statistical_model_audit/run_learning.py",
+        "routing_idea2/research/e4_statistical_model_audit/run_binary.py",
+        "routing_idea2/research/e4_statistical_model_audit/run_decision_audit.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e4_statistical_model_audit/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e4_statistical_model_audit/E4_EXPERIMENT_CONFIG.json",
+      "additional_reports": [
+        "routing_idea2/research/e4_statistical_model_audit/01_DATA_QUALITY_AND_STABILITY.md",
+        "routing_idea2/research/e4_statistical_model_audit/02_EFFECTIVE_SAMPLE_SIZE.md",
+        "routing_idea2/research/e4_statistical_model_audit/03_RIDGE_POSTERIOR_AUDIT.md",
+        "routing_idea2/research/e4_statistical_model_audit/04_NOISE_MODEL_ABLATION.md",
+        "routing_idea2/research/e4_statistical_model_audit/05_BINARY_REWARD_MODELS.md",
+        "routing_idea2/research/e4_statistical_model_audit/06_SUBTASK_METADATA_AUDIT.md",
+        "routing_idea2/research/e4_statistical_model_audit/07_FEEDBACK_DECISION_CALIBRATION.md"
+      ],
+      "source_tree_sha": "9c122ca0df1824b7a4a618b23a2df27b5f2dd65b",
+      "directory": "experiments/e4-statistical-model-audit-20261107",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/08_E4_RESEARCH_CONCLUSION.md",
+          "sha": "e9807e77a3eacc451c8e82933a921aad40340760",
+          "mode": "100644",
+          "size": 7195,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/REPRODUCE.md",
+          "sha": "133c6cbc9ed245b3dbdb7c1a44aa7fba07798a65",
+          "mode": "100644",
+          "size": 5265,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/E4_EXPERIMENT_CONFIG.json",
+          "sha": "f56419642e02c9accd16fa41813af50f36b4d4ba",
+          "mode": "100644",
+          "size": 2614,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/E4_COMPLETE_RESULTS.json",
+          "sha": "d68cd223f741e7bcea7556965299c310271458a1",
+          "mode": "100644",
+          "size": 4715,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/BINARY_COMPARISON_RESULTS.json",
+          "sha": "6eb3f40bfa9f0453461e6dd067d97a61a7a63df4",
+          "mode": "100644",
+          "size": 434822,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/POSTERIOR_AUDIT_RESULTS.json",
+          "sha": "a76a25cce719e9c45b034b58f91cc33147a7a703",
+          "mode": "100644",
+          "size": 685871,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/run_learning.py",
+          "sha": "7f689266dbaf825bad348dfd8d609a04498f11aa",
+          "mode": "100644",
+          "size": 5085,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/run_binary.py",
+          "sha": "a87d5cbe98a0c041b5ffd55701fb2af31e65bf5d",
+          "mode": "100644",
+          "size": 6299,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/run_decision_audit.py",
+          "sha": "8e2474c03b62e6172aa8fc689cef60ea6c9df261",
+          "mode": "100644",
+          "size": 10638,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/01_DATA_QUALITY_AND_STABILITY.md",
+          "sha": "9cff05d4cc86fec53a517466e419f545ee81a531",
+          "mode": "100644",
+          "size": 9463,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/02_EFFECTIVE_SAMPLE_SIZE.md",
+          "sha": "acd2ac6b0305e2d193db153fd0a2fda5f08a8bff",
+          "mode": "100644",
+          "size": 8240,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/03_RIDGE_POSTERIOR_AUDIT.md",
+          "sha": "cebd553a709461e16b0481412e2602739225930c",
+          "mode": "100644",
+          "size": 9215,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/04_NOISE_MODEL_ABLATION.md",
+          "sha": "39b41b20ac22ab865795c474c96333ec08d98332",
+          "mode": "100644",
+          "size": 12543,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/05_BINARY_REWARD_MODELS.md",
+          "sha": "7deac68339c47bbaef83daf9fd8213569ab3bcc2",
+          "mode": "100644",
+          "size": 9813,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/06_SUBTASK_METADATA_AUDIT.md",
+          "sha": "bba7f894ca367b1837dc40d3c8cf4d58e5a95627",
+          "mode": "100644",
+          "size": 4302,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e4_statistical_model_audit/07_FEEDBACK_DECISION_CALIBRATION.md",
+          "sha": "d3ff7f57fa0c2f35a31f7ecf1f06b4e58c83e6ae",
+          "mode": "100644",
+          "size": 17514,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 351
+    },
+    {
+      "branch": "e5-paired-gain-validation",
+      "title": "配对收益与预算方法验证",
+      "stage": "E5",
+      "purpose": "核对旧稿中的理论构造、预测误差和预算配置方法。",
+      "source_commit": "7e06c632787f1de093732aed0250c8a30d3035b7",
+      "source_tree": "3fd847801e04de4f4b050c8df8c6cfc53487a17a",
+      "report_path": "routing_idea2/research/e5_paired_gain_validation/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e5_paired_gain_validation/E5_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e5_paired_gain_validation/CENTERED_DIAGNOSTICS_RESULTS.json",
+        "routing_idea2/research/e5_paired_gain_validation/SWITCH_RANKING_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e5_paired_gain_validation/run_base.py",
+        "routing_idea2/research/e5_paired_gain_validation/run_gates.py",
+        "routing_idea2/research/e5_paired_gain_validation/run_allocation_synthetic.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e5_paired_gain_validation/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e5_paired_gain_validation/E5_EXPERIMENT_CONFIG.json",
+      "additional_reports": [
+        "routing_idea2/research/e5_paired_gain_validation/01_THEORY_IMPLEMENTATION_CHECKS.md",
+        "routing_idea2/research/e5_paired_gain_validation/02_CENTERED_ERROR_DIAGNOSTICS.md",
+        "routing_idea2/research/e5_paired_gain_validation/03_SWITCH_RANKING_AND_MATCHED_CONTROLS.md",
+        "routing_idea2/research/e5_paired_gain_validation/04_CERTIFICATION_VALIDITY_AND_POWER.md",
+        "routing_idea2/research/e5_paired_gain_validation/05_TWO_RESOURCE_ALLOCATION.md"
+      ],
+      "source_tree_sha": "3fd847801e04de4f4b050c8df8c6cfc53487a17a",
+      "directory": "experiments/e5-paired-gain-validation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/EXPERIMENT_SUMMARY.md",
+          "sha": "7a76a7dff65463465425a2a56820f2364065c46e",
+          "mode": "100644",
+          "size": 7706,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/REPRODUCE.md",
+          "sha": "53b8191b83efca229831092748ff1d2c0c113b67",
+          "mode": "100644",
+          "size": 5614,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/E5_EXPERIMENT_CONFIG.json",
+          "sha": "c44075f14948e9711facb5c4ad7131997ac5d045",
+          "mode": "100644",
+          "size": 3329,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/E5_COMPLETE_RESULTS.json",
+          "sha": "ad7c7c3e69220750e2ff400bd3bf59b3025d6998",
+          "mode": "100644",
+          "size": 6741,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/CENTERED_DIAGNOSTICS_RESULTS.json",
+          "sha": "d1d7074128d74a8a28f585e6bd2331fb59e1bc84",
+          "mode": "100644",
+          "size": 472122,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/SWITCH_RANKING_RESULTS.json",
+          "sha": "68f77b8c0c61c4aee07dc216a4d66607fc0fd43e",
+          "mode": "100644",
+          "size": 1295449,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/run_base.py",
+          "sha": "585439acdcc6ecf1c0493819e0e6908e4b7d6d6c",
+          "mode": "100644",
+          "size": 2998,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/run_gates.py",
+          "sha": "6847a48b2c62307ad53ac1cec8730354bb3d701a",
+          "mode": "100644",
+          "size": 3789,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/run_allocation_synthetic.py",
+          "sha": "b2d98a3c36fab48c8ab15c274fceca3594d884b4",
+          "mode": "100644",
+          "size": 19458,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/01_THEORY_IMPLEMENTATION_CHECKS.md",
+          "sha": "234ad609bdbfd5957b8b304fa5649b143d376613",
+          "mode": "100644",
+          "size": 5344,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/02_CENTERED_ERROR_DIAGNOSTICS.md",
+          "sha": "1cb286b6a7c18d549acc25b39a488ac1db006905",
+          "mode": "100644",
+          "size": 7332,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/03_SWITCH_RANKING_AND_MATCHED_CONTROLS.md",
+          "sha": "ed467484b3693cb10a96c787329e4ceea568a874",
+          "mode": "100644",
+          "size": 12457,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/04_CERTIFICATION_VALIDITY_AND_POWER.md",
+          "sha": "4f58f589850f72f03e82668f7ab8f64c7f7545a7",
+          "mode": "100644",
+          "size": 8809,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e5_paired_gain_validation/05_TWO_RESOURCE_ALLOCATION.md",
+          "sha": "c5a0dbd081763259a3cd493025b828c7c361cfe6",
+          "mode": "100644",
+          "size": 11411,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 397
+    },
+    {
+      "branch": "e6-contrast-directed-feedback",
+      "title": "组合差值导向反馈",
+      "stage": "E6",
+      "purpose": "比较差值监督、切换信息与反馈分配方法。",
+      "source_commit": "0c34a38bede9fcf46359316058759b27fa9f5fea",
+      "source_tree": "c557eb6a0aa01a338b95ba013c64a144bef62966",
+      "report_path": "routing_idea2/research/e6_contrast_directed_feedback/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e6_contrast_directed_feedback/E6_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e6_contrast_directed_feedback/b/E6_B_RESULTS.json",
+        "routing_idea2/research/e6_contrast_directed_feedback/c/E6_C_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e6_contrast_directed_feedback/a",
+        "routing_idea2/research/e6_contrast_directed_feedback/b",
+        "routing_idea2/research/e6_contrast_directed_feedback/c"
+      ],
+      "reproduction_path": "routing_idea2/research/e6_contrast_directed_feedback/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e6_contrast_directed_feedback/E6_RUN_CONFIG.json",
+      "additional_reports": [
+        "routing_idea2/research/e6_contrast_directed_feedback/04_PRIMARY_STATISTICAL_ANALYSIS.md"
+      ],
+      "source_tree_sha": "c557eb6a0aa01a338b95ba013c64a144bef62966",
+      "directory": "experiments/e6-contrast-directed-feedback",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/EXPERIMENT_SUMMARY.md",
+          "sha": "c97a5274761e4ef36fff9b5a743dade1e7fb7e39",
+          "mode": "100644",
+          "size": 4172,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/REPRODUCE.md",
+          "sha": "0e9bf4fee4884a916a1d7b60dcb97ee306bde350",
+          "mode": "100644",
+          "size": 4984,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_RUN_CONFIG.json",
+          "sha": "667716e8bbf79c017b001be66bf086bb9eb3bc3b",
+          "mode": "100644",
+          "size": 4376,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/E6_COMPLETE_RESULTS.json",
+          "sha": "19451d570d53c0dc916347bf42947a99f97b1f8f",
+          "mode": "100644",
+          "size": 6697,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/b/E6_B_RESULTS.json",
+          "sha": "dee2807f39372b3cfe6d6294bf338d808d06e053",
+          "mode": "100644",
+          "size": 1460789,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/c/E6_C_RESULTS.json",
+          "sha": "06e0104d56fecaa5e06e9e3a16a80fdd82be8759",
+          "mode": "100644",
+          "size": 208842,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/a",
+          "sha": "de0fc8279852f580504bcfe00c4a0375043a7925",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/b",
+          "sha": "9c5096676a11c6eaa358dc73f38ac919dad99563",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/c",
+          "sha": "b24dc485de689a7ae42447b8fa4eee69a6e58871",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e6_contrast_directed_feedback/04_PRIMARY_STATISTICAL_ANALYSIS.md",
+          "sha": "19c72e57105c3969eb74c55b41fb2658b3026eed",
+          "mode": "100644",
+          "size": 1373,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 443
+    },
+    {
+      "branch": "e7-opportunity-and-feedback-learning",
+      "title": "候选覆盖与反馈学习",
+      "stage": "E7",
+      "purpose": "检查候选覆盖、问题表征和主动采集的作用。",
+      "source_commit": "a7bc3d9a72160b3e6134cae76a1a13f47b8b992b",
+      "source_tree": "f8e524ea7e3042be61e4390192872f120f714b14",
+      "report_path": "routing_idea2/research/e7_opportunity_and_feedback_learning/05_E7_RESEARCH_DECISION.md",
+      "results_paths": [
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/a",
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/b",
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/c"
+      ],
+      "reproduction_path": "routing_idea2/research/e7_opportunity_and_feedback_learning/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/01_CANDIDATE_OPPORTUNITY.md",
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/02_INPUT_SIGNAL_AND_LEARNING_CURVES.md",
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/03_ACTIVE_FEEDBACK_LEARNING.md",
+        "routing_idea2/research/e7_opportunity_and_feedback_learning/04_COST_AND_STATISTICS.md"
+      ],
+      "source_tree_sha": "f8e524ea7e3042be61e4390192872f120f714b14",
+      "directory": "experiments/e7-opportunity-and-feedback-learning",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/05_E7_RESEARCH_DECISION.md",
+          "sha": "de3505372c2ad72e9b8364d00259d1298e297efa",
+          "mode": "100644",
+          "size": 4502,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/REPRODUCE.md",
+          "sha": "409e891ebe12c06deaf3972a4c847c24310e94a5",
+          "mode": "100644",
+          "size": 6056,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_PROTOCOL.json",
+          "sha": "f9a92f84ec0281a627d4472c4d3289f0cb5f5638",
+          "mode": "100644",
+          "size": 6132,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/E7_COMPLETE_RESULTS.json",
+          "sha": "e0fbb989b939d7b2834fe781e5f6478a69053364",
+          "mode": "100644",
+          "size": 7569,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/a",
+          "sha": "3505d01bf4ade3039020e644cea38fafed246261",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/b",
+          "sha": "d5eebf33470de652be74f26c9a7ab2803218d737",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/c",
+          "sha": "ab81d53f8b45fa7d45255764621e08d58522bc7f",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/01_CANDIDATE_OPPORTUNITY.md",
+          "sha": "534f4b0fc6c60b5ad032760d448ce075db0c0e0d",
+          "mode": "100644",
+          "size": 4639,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/02_INPUT_SIGNAL_AND_LEARNING_CURVES.md",
+          "sha": "7888298a81aa5e758c13fa6f6e359e391799001f",
+          "mode": "100644",
+          "size": 5604,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/03_ACTIVE_FEEDBACK_LEARNING.md",
+          "sha": "f2bbe4282e767c1d8b64aa2f7bd00097a0282e76",
+          "mode": "100644",
+          "size": 20726,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e7_opportunity_and_feedback_learning/04_COST_AND_STATISTICS.md",
+          "sha": "cc2cce03872b7d26bdad9bae7a43b4c41873895a",
+          "mode": "100644",
+          "size": 4037,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 492
+    },
+    {
+      "branch": "e8-decision-focused-combination-learning",
+      "title": "面向组合选择的训练",
+      "stage": "E8",
+      "purpose": "比较 Ridge、加权回归和 SPO+ 等训练目标。",
+      "source_commit": "45767047d556e6cd9cac0e8905cf6dd81d5e3d4f",
+      "source_tree": "1f148ff84e8e7c89a9af4466c5bd0ab838d618a0",
+      "report_path": "routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e8_decision_focused_combination_learning/E8_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e8_decision_focused_combination_learning/training",
+        "routing_idea2/research/e8_decision_focused_combination_learning/evaluation",
+        "routing_idea2/research/e8_decision_focused_combination_learning/qualification"
+      ],
+      "reproduction_path": "routing_idea2/research/e8_decision_focused_combination_learning/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e8_decision_focused_combination_learning/01_LITERATURE_AND_METHOD_MAPPING.md",
+        "routing_idea2/research/e8_decision_focused_combination_learning/02_MATHEMATICAL_AND_SOFTWARE_CHECKS.md",
+        "routing_idea2/research/e8_decision_focused_combination_learning/03_TRAINING_OBJECTIVES_AND_IMPLEMENTATION.md",
+        "routing_idea2/research/e8_decision_focused_combination_learning/04_MAIN_COMPARISONS.md",
+        "routing_idea2/research/e8_decision_focused_combination_learning/05_NOISE_AND_RANKING_DIAGNOSTICS.md",
+        "routing_idea2/research/e8_decision_focused_combination_learning/06_STATISTICAL_COST_AND_RESEARCH_DECISION.md"
+      ],
+      "source_tree_sha": "1f148ff84e8e7c89a9af4466c5bd0ab838d618a0",
+      "directory": "experiments/e8-decision-focused-combination-learning",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_SUMMARY.md",
+          "sha": "50f3b81e0883e2b19f7e8236328455374083c9ce",
+          "mode": "100644",
+          "size": 3023,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/REPRODUCE.md",
+          "sha": "fcb47c90bc61678f7e6b0c214ef464d5ded3efac",
+          "mode": "100644",
+          "size": 5363,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_PROTOCOL.json",
+          "sha": "1df466527bcc7a23de61f687017194eee18a6a6e",
+          "mode": "100644",
+          "size": 6919,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/E8_COMPLETE_RESULTS.json",
+          "sha": "7ea3b4d6f4b7fcb210fd8fd341ee169b6c7bbaa1",
+          "mode": "100644",
+          "size": 870174,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/training",
+          "sha": "57b6a6da3cdcfb78304f3d8091867a12b0c59f6b",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/evaluation",
+          "sha": "c9bffb1fc74a36c8e021516fafaac35abf0333a6",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/qualification",
+          "sha": "1551d4ec98ed5382de08c82e08600e17709c60bb",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/01_LITERATURE_AND_METHOD_MAPPING.md",
+          "sha": "688a6029f72cbfe1ab1f950e7f0de39d239e7151",
+          "mode": "100644",
+          "size": 13152,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/02_MATHEMATICAL_AND_SOFTWARE_CHECKS.md",
+          "sha": "8e9c0be7f47e1862f8887d258c260b2b9a90662c",
+          "mode": "100644",
+          "size": 9521,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/03_TRAINING_OBJECTIVES_AND_IMPLEMENTATION.md",
+          "sha": "e217d65775495956f6ef8d02ea57407d9ff24a4e",
+          "mode": "100644",
+          "size": 6237,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/04_MAIN_COMPARISONS.md",
+          "sha": "d1312e2562c28928307c071a36d6922d12a57511",
+          "mode": "100644",
+          "size": 4889,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/05_NOISE_AND_RANKING_DIAGNOSTICS.md",
+          "sha": "4e2335e8a78a6193e85167b49ce24dbd7db2958d",
+          "mode": "100644",
+          "size": 6710,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_decision_focused_combination_learning/06_STATISTICAL_COST_AND_RESEARCH_DECISION.md",
+          "sha": "ba8dec38a9e50de1b006b5527f6e0266352f6c9a",
+          "mode": "100644",
+          "size": 5283,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 650
+    },
+    {
+      "branch": "e8-m4-mechanism-audit",
+      "title": "M4 组合选择与并列规则检查",
+      "stage": "E8 M4 检查",
+      "purpose": "检查组合集中、并列冠军规则及题目内容的作用。",
+      "source_commit": "0dece5c291c5ec644f690f892638f81543aed691",
+      "source_tree": "3459777a7c28090679ba655d6c83d52351b6b040",
+      "report_path": "routing_idea2/research/e8_m4_mechanism_audit/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e8_m4_mechanism_audit/M4_MECHANISM_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e8_m4_mechanism_audit/M4_DISTRIBUTION_AND_TIE_RESULTS.json",
+        "routing_idea2/research/e8_m4_mechanism_audit/M4_STABLE_GAP_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e8_m4_mechanism_audit/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e8_m4_mechanism_audit/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e8_m4_mechanism_audit/M4_MECHANISM_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e8_m4_mechanism_audit/01_SELECTION_DISTRIBUTION_AND_TIE_AUDIT.md",
+        "routing_idea2/research/e8_m4_mechanism_audit/02_STABLE_NONZERO_GAPS.md",
+        "routing_idea2/research/e8_m4_mechanism_audit/03_CONTENT_AND_INDEPENDENT_CONFIRMATION_PLAN.md"
+      ],
+      "source_tree_sha": "3459777a7c28090679ba655d6c83d52351b6b040",
+      "directory": "experiments/e8-m4-mechanism-audit",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/EXPERIMENT_SUMMARY.md",
+          "sha": "ef8fda9f1674a37a2ccef1a4192dc08f52cc7f06",
+          "mode": "100644",
+          "size": 4925,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/REPRODUCE.md",
+          "sha": "aa7e93e72982165e2ca75867117343b96d767659",
+          "mode": "100644",
+          "size": 3076,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_MECHANISM_PROTOCOL.json",
+          "sha": "a9e808692ce8a18ab0f830db2d28b2000c37970a",
+          "mode": "100644",
+          "size": 3463,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_MECHANISM_COMPLETE_RESULTS.json",
+          "sha": "5788ff4d96c591068cb3e4499fd671d1a3ca5a18",
+          "mode": "100644",
+          "size": 883633,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_DISTRIBUTION_AND_TIE_RESULTS.json",
+          "sha": "071e5d5df83b031e4ca378dc94e8e216e7c60297",
+          "mode": "100644",
+          "size": 208825,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/M4_STABLE_GAP_RESULTS.json",
+          "sha": "b7262c9dfed71a49f7ac002ae5053d51736bdef8",
+          "mode": "100644",
+          "size": 496971,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/code",
+          "sha": "abfb4621f7aaeddb4c1ea65e55092de163fd1689",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/01_SELECTION_DISTRIBUTION_AND_TIE_AUDIT.md",
+          "sha": "af77224f20b758df277a898f57448fc548929ed3",
+          "mode": "100644",
+          "size": 7395,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/02_STABLE_NONZERO_GAPS.md",
+          "sha": "0cbac9289fd530136899ab0ad04965c28d0573bd",
+          "mode": "100644",
+          "size": 3390,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e8_m4_mechanism_audit/03_CONTENT_AND_INDEPENDENT_CONFIRMATION_PLAN.md",
+          "sha": "ce69839bcd266ee328e27252322663ac39c1ad2c",
+          "mode": "100644",
+          "size": 11144,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 681
+    },
+    {
+      "branch": "e9-consistent-cost-sensitive-learning",
+      "title": "标签估计与代价敏感学习",
+      "stage": "E9",
+      "purpose": "在相同输入与模型容量下比较标签估计和损失函数。",
+      "source_commit": "6502fd62932e91deb35e3b09449506afcf9f7e1c",
+      "source_tree": "9d8e0d94fe0e4e71acacf87db494bdad5078ac69",
+      "report_path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_MAIN_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e9_consistent_cost_sensitive_learning/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "9d8e0d94fe0e4e71acacf87db494bdad5078ac69",
+      "directory": "experiments/e9-consistent-cost-sensitive-learning",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/EXPERIMENT_SUMMARY.md",
+          "sha": "b02bd99acb4050cc7c7a08dd11815886d8b8a8cd",
+          "mode": "100644",
+          "size": 14502,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/REPRODUCE.md",
+          "sha": "af847877eb9fb6feeb326bb25bfe50b0c74828b6",
+          "mode": "100644",
+          "size": 4594,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_PROTOCOL.json",
+          "sha": "eb9c04fadf2794f142c67b6218633f8f06527313",
+          "mode": "100644",
+          "size": 3924,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_COMPLETE_RESULTS.json",
+          "sha": "99aac731f737720db42dcde156cae169528d5f2c",
+          "mode": "100644",
+          "size": 466278,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_MAIN_RESULTS.json",
+          "sha": "ea735d8c26039d4f270b79d1b9da57ee11659677",
+          "mode": "100644",
+          "size": 425152,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e9_consistent_cost_sensitive_learning/code",
+          "sha": "93d542731ae5d134cd48ec492922956acd92c737",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 783
+    },
+    {
+      "branch": "experiment/e9-bayes-gate",
+      "title": "奖励预测与默认回退",
+      "stage": "E9 Bayes 对照",
+      "purpose": "比较独立奖励预测、层级收缩和默认策略回退规则。",
+      "source_commit": "fd68c774642bf3612fbfea09957fdb6fd555a05c",
+      "source_tree": "c8b9d5826424f47427a366619e645238cea186b2",
+      "report_path": "routing_idea2/results/e9_bayes_gate/07_scientific_report_zh.md",
+      "results_paths": [
+        "routing_idea2/results/e9_bayes_gate/03_main_results.json",
+        "routing_idea2/results/e9_bayes_gate/03_main_results.csv",
+        "routing_idea2/results/e9_bayes_gate/02_signal_diagnostics.json"
+      ],
+      "code_paths": [
+        "routing_idea2/experiments/e9_bayes_gate"
+      ],
+      "reproduction_path": "routing_idea2/experiments/e9_bayes_gate/README.md",
+      "protocol_path": "routing_idea2/experiments/e9_bayes_gate/protocol_frozen.json",
+      "additional_reports": [
+        "routing_idea2/results/e9_bayes_gate/01_math_audit.md",
+        "routing_idea2/results/e9_bayes_gate/02_signal_report.md"
+      ],
+      "source_tree_sha": "c8b9d5826424f47427a366619e645238cea186b2",
+      "directory": "experiments/experiment--e9-bayes-gate",
+      "source_files": [
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/07_scientific_report_zh.md",
+          "sha": "0e1da5d53e5a34c1574950c2698243db1c4076b5",
+          "mode": "100644",
+          "size": 11228,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/experiments/e9_bayes_gate/README.md",
+          "sha": "6ef027b0e3813d0a51002b8d275d99cb427c17ea",
+          "mode": "100644",
+          "size": 4902,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/experiments/e9_bayes_gate/protocol_frozen.json",
+          "sha": "306d2435dee809c53151ca20a7fc8baf6b1b6c2f",
+          "mode": "100644",
+          "size": 7636,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/03_main_results.json",
+          "sha": "0c44f8303d286d826de1eae65af1b3392898a09a",
+          "mode": "100644",
+          "size": 115249,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/03_main_results.csv",
+          "sha": "a8037ecaa9261a36e95438dfc0bc7c688e5adc09",
+          "mode": "100644",
+          "size": 4197,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/02_signal_diagnostics.json",
+          "sha": "aeb9194c5343c24a2e412df2687e9cc0aea56ed4",
+          "mode": "100644",
+          "size": 2203815,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/experiments/e9_bayes_gate",
+          "sha": "42e2c27bfabad2ef34f3492b2e09fb9d713fb230",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/01_math_audit.md",
+          "sha": "cad6728c00acea326e55671b1f3d1b2fc49d7ae2",
+          "mode": "100644",
+          "size": 8544,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/results/e9_bayes_gate/02_signal_report.md",
+          "sha": "27f6fa9da1e858ce3d6e2ba3a7e2774cdb8d91b7",
+          "mode": "100644",
+          "size": 5975,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 887
+    },
+    {
+      "branch": "e10-input-prefill-matching-audit",
+      "title": "问题输入覆盖与表示检查",
+      "stage": "E10",
+      "purpose": "检查问题截断、完整输入表示及组内匹配对照。",
+      "source_commit": "d8431d35cb48a1acb1bcb57d646c17ead0b60740",
+      "source_tree": "59eb857c7f803eca2153f1e700e62d3a47ac7f1f",
+      "report_path": "routing_idea2/research/e10_input_prefill_matching_audit/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e10_input_prefill_matching_audit/E10_MAIN_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e10_input_prefill_matching_audit/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e10_input_prefill_matching_audit/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "59eb857c7f803eca2153f1e700e62d3a47ac7f1f",
+      "directory": "experiments/e10-input-prefill-matching-audit",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e10_input_prefill_matching_audit/EXPERIMENT_SUMMARY.md",
+          "sha": "04b3ccec1d4925d1d221ac2095365e20417091c7",
+          "mode": "100644",
+          "size": 19416,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e10_input_prefill_matching_audit/REPRODUCE.md",
+          "sha": "2966d9ee996a901ca0ef2fbf7b25262f35f5e05b",
+          "mode": "100644",
+          "size": 4783,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_PROTOCOL.json",
+          "sha": "bffd70a3920f1b1f212ca3251b74af937ac84425",
+          "mode": "100644",
+          "size": 7203,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e10_input_prefill_matching_audit/E10_MAIN_RESULTS.json",
+          "sha": "80f54e21aff2327449e5ae63824a66c1f28f28a5",
+          "mode": "100644",
+          "size": 13181201,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e10_input_prefill_matching_audit/code",
+          "sha": "112afda6daec83d3f79d41985490f3f7060968a9",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 827
+    },
+    {
+      "branch": "e11-group-mean-shrinkage",
+      "title": "分组均值与收缩估计",
+      "stage": "E11",
+      "purpose": "比较逐题标签、训练组均值和固定混合监督。",
+      "source_commit": "84af4c1bcc63389f9ef9224680292a0e33fb212c",
+      "source_tree": "59e578a5057928a3dfef759b2d0666a11deae209",
+      "report_path": "routing_idea2/research/e11_group_mean_shrinkage/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e11_group_mean_shrinkage/E11_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e11_group_mean_shrinkage/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e11_group_mean_shrinkage/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e11_group_mean_shrinkage/E11_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "59e578a5057928a3dfef759b2d0666a11deae209",
+      "directory": "experiments/e11-group-mean-shrinkage",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e11_group_mean_shrinkage/EXPERIMENT_SUMMARY.md",
+          "sha": "109a8e50d52273e3c9cbe1efd33c90adb4e1d548",
+          "mode": "100644",
+          "size": 10412,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e11_group_mean_shrinkage/REPRODUCE.md",
+          "sha": "c7b953ae37e48b52a4f0722668f112348f7b7994",
+          "mode": "100644",
+          "size": 3457,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e11_group_mean_shrinkage/E11_PROTOCOL.json",
+          "sha": "115bb87c936c4e1f29c3d000b291990f08f8e4a4",
+          "mode": "100644",
+          "size": 4835,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e11_group_mean_shrinkage/E11_RESULTS.json",
+          "sha": "622243da8e2d2d96bd4d2e9574a2b75ae4ef8eea",
+          "mode": "100644",
+          "size": 90810,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e11_group_mean_shrinkage/code",
+          "sha": "c2524a768476fb63da1d172225b26573ed9b4e10",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 836
+    },
+    {
+      "branch": "e12-shared-feedback-learning",
+      "title": "少量已评分问题下的共享学习",
+      "stage": "E12",
+      "purpose": "比较有限已评分问题下组能力和逐题监督的作用。",
+      "source_commit": "46e475f2c6d394a20c8292c12ff1c3194a0be9b3",
+      "source_tree": "a59eaae387e38a29f38310a87d6d4e5a4a85c9c8",
+      "report_path": "routing_idea2/research/e12_shared_feedback_learning/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e12_shared_feedback_learning/E12_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e12_shared_feedback_learning/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e12_shared_feedback_learning/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e12_shared_feedback_learning/E12_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "a59eaae387e38a29f38310a87d6d4e5a4a85c9c8",
+      "directory": "experiments/e12-shared-feedback-learning",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e12_shared_feedback_learning/EXPERIMENT_SUMMARY.md",
+          "sha": "bcce2b838b05ca8b61f1e8bfb8554d2033b6a089",
+          "mode": "100644",
+          "size": 14608,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e12_shared_feedback_learning/REPRODUCE.md",
+          "sha": "879510c8a25136edf69004e8655ddc89f1083b09",
+          "mode": "100644",
+          "size": 5564,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e12_shared_feedback_learning/E12_PROTOCOL.json",
+          "sha": "b403e40be41c858adca8f1c6ada9a95328e8da58",
+          "mode": "100644",
+          "size": 7864,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e12_shared_feedback_learning/E12_RESULTS.json",
+          "sha": "621920aecd1d828b6dc6e05acaa189787764c23b",
+          "mode": "100644",
+          "size": 360099,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e12_shared_feedback_learning/code",
+          "sha": "7cefc116444ca01a8ab3702d485b42a5ad1d4927",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 847
+    },
+    {
+      "branch": "e13-partial-combination-feedback",
+      "title": "部分组合反馈",
+      "stage": "E13",
+      "purpose": "在相同已知组合评分下比较 Group、RawCentered 和固定掩码对照。",
+      "source_commit": "0114a7f744eb39aff24e7e2eb2dbb82af66cdd82",
+      "source_tree": "db56a15f6eb2e50673f1ba2c980c8b832fd5d430",
+      "report_path": "routing_idea2/research/e13_partial_combination_feedback/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e13_partial_combination_feedback/E13_RESULTS.json",
+        "routing_idea2/research/e13_partial_combination_feedback/E13_SUMMARY.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e13_partial_combination_feedback/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e13_partial_combination_feedback/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e13_partial_combination_feedback/E13_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "db56a15f6eb2e50673f1ba2c980c8b832fd5d430",
+      "directory": "experiments/e13-partial-combination-feedback",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/EXPERIMENT_SUMMARY.md",
+          "sha": "8820bd8026773349373290130e90e23526212f3f",
+          "mode": "100644",
+          "size": 13408,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/REPRODUCE.md",
+          "sha": "3d2f3be693e799618a8aeeb5343cfec1a5e0e3b8",
+          "mode": "100644",
+          "size": 8625,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/E13_PROTOCOL.json",
+          "sha": "659f5824ca73e936031af2bfca116845908e3ea9",
+          "mode": "100644",
+          "size": 14340,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/E13_RESULTS.json",
+          "sha": "4010e4f794dd90103e2f5789c4d714bbb83237f8",
+          "mode": "100644",
+          "size": 3752059,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/E13_SUMMARY.csv",
+          "sha": "85c9c6762e1f611770a4b2fb32d5db23c79608a5",
+          "mode": "100644",
+          "size": 35820,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e13_partial_combination_feedback/code",
+          "sha": "a8dbe9846e50f8e44849cc6f1752627ed1d3cbd9",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 916
+    },
+    {
+      "branch": "e14-controlled-mechanism-diagnostics",
+      "title": "组识别与反馈效果分析",
+      "stage": "E14",
+      "purpose": "检查组识别、能力估计以及相同实际 Token 下的反馈差异。",
+      "source_commit": "9f84007bf4d5ebf516f20a8e0fc74b5e721c4526",
+      "source_tree": "f9662be0563636f7dfe6a4d651094a11027cf16e",
+      "report_path": "routing_idea2/research/e14_mechanism_diagnostics/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e14_mechanism_diagnostics/E14_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e14_mechanism_diagnostics/A_FOLD_RESULTS.csv",
+        "routing_idea2/research/e14_mechanism_diagnostics/C_SEED_RESULTS.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e14_mechanism_diagnostics/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e14_mechanism_diagnostics/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e14_mechanism_diagnostics/E14_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e14_mechanism_diagnostics/01_GROUP_RECOGNITION.md",
+        "routing_idea2/research/e14_mechanism_diagnostics/02_CAPABILITY_ESTIMATION.md",
+        "routing_idea2/research/e14_mechanism_diagnostics/03_TOKEN_MATCHED_FEEDBACK.md",
+        "routing_idea2/research/e14_mechanism_diagnostics/04_RESEARCH_DECISION.md"
+      ],
+      "source_tree_sha": "f9662be0563636f7dfe6a4d651094a11027cf16e",
+      "directory": "experiments/e14-controlled-mechanism-diagnostics",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/EXPERIMENT_SUMMARY.md",
+          "sha": "9f8b0101ae063fe90523a5fa25b8be3b2121146c",
+          "mode": "100644",
+          "size": 2778,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/REPRODUCE.md",
+          "sha": "6e8f8ee13b0b49eb13b5c9f4136f0eae628bea29",
+          "mode": "100644",
+          "size": 1618,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/E14_PROTOCOL.json",
+          "sha": "0bd1b177ba0482099d7190331b1ee4a38bec1c34",
+          "mode": "100644",
+          "size": 4608,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/E14_COMPLETE_RESULTS.json",
+          "sha": "f0b3af7d7d5d70b742775357c8bd622eec7cafb4",
+          "mode": "100644",
+          "size": 551867,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/A_FOLD_RESULTS.csv",
+          "sha": "e3cf2968771ef2a6e9c2839f42227c8a6e60487a",
+          "mode": "100644",
+          "size": 114143,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/C_SEED_RESULTS.csv",
+          "sha": "8d2bd7fae012c0d2c033574f6f8cfa094d9de3b7",
+          "mode": "100644",
+          "size": 45915,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/code",
+          "sha": "1af15bb24f6cd9b538516a62f3c01e541f35fd4f",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/01_GROUP_RECOGNITION.md",
+          "sha": "30cd063774130e3c26b24d618ba50d0d7c4a638d",
+          "mode": "100644",
+          "size": 1807,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/02_CAPABILITY_ESTIMATION.md",
+          "sha": "0fdb6e305fc90f92e83f01c5f5e221bf4a21b6e4",
+          "mode": "100644",
+          "size": 2119,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/03_TOKEN_MATCHED_FEEDBACK.md",
+          "sha": "1a7436449331c8d303569a8645a8154ffd66ac9e",
+          "mode": "100644",
+          "size": 2309,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e14_mechanism_diagnostics/04_RESEARCH_DECISION.md",
+          "sha": "61d07dbf1f11550c2868c87d1e74121000ac0f00",
+          "mode": "100644",
+          "size": 4194,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 947
+    },
+    {
+      "branch": "e15-feedback-structure-interaction",
+      "title": "反馈组合与学习器比较",
+      "stage": "E15",
+      "purpose": "在固定 Token 下比较主反馈、邻居配对和随机配对。",
+      "source_commit": "39ba966be8fce97867b23ecd4f0ae1a5f502e862",
+      "source_tree": "801a85bd4feecfdbdcd676a9ee0ce02930a52e4d",
+      "report_path": "routing_idea2/research/e15_feedback_structure_interaction/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e15_feedback_structure_interaction/E15_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e15_feedback_structure_interaction/DIRECTION_RESULTS.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e15_feedback_structure_interaction/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e15_feedback_structure_interaction/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e15_feedback_structure_interaction/E15_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e15_feedback_structure_interaction/01_LOCKED_DESIGN_AND_COST.md",
+        "routing_idea2/research/e15_feedback_structure_interaction/02_INTERACTION_RESULTS.md",
+        "routing_idea2/research/e15_feedback_structure_interaction/03_CAPABILITY_AND_COVERAGE.md",
+        "routing_idea2/research/e15_feedback_structure_interaction/04_RESEARCH_DECISION.md"
+      ],
+      "source_tree_sha": "801a85bd4feecfdbdcd676a9ee0ce02930a52e4d",
+      "directory": "experiments/e15-feedback-structure-interaction",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/EXPERIMENT_SUMMARY.md",
+          "sha": "a47821826d1d5c2f6827a4ce281ab0e5cf419e8c",
+          "mode": "100644",
+          "size": 2328,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/REPRODUCE.md",
+          "sha": "0a35102e9415a293cdb49bae1c934e621c808f98",
+          "mode": "100644",
+          "size": 1677,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/E15_PROTOCOL.json",
+          "sha": "f78d90ff396efcc31f5374522751fdf68fe8586c",
+          "mode": "100644",
+          "size": 4818,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/E15_COMPLETE_RESULTS.json",
+          "sha": "f93b3ce7b58a279ded1a4447296a3895fcf0b79d",
+          "mode": "100644",
+          "size": 306765,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/DIRECTION_RESULTS.csv",
+          "sha": "eb4941fc77f1b562f10d79e5f6f4791b860bd88c",
+          "mode": "100644",
+          "size": 240622,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/code",
+          "sha": "ff3cdb09915db02b5c962c55fdde6c7884649481",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/01_LOCKED_DESIGN_AND_COST.md",
+          "sha": "d3d3148557a4e598803c489aa690c93fe8cb7f3c",
+          "mode": "100644",
+          "size": 1878,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/02_INTERACTION_RESULTS.md",
+          "sha": "dab4af73a48f3a8da32403458815578b46250294",
+          "mode": "100644",
+          "size": 1717,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/03_CAPABILITY_AND_COVERAGE.md",
+          "sha": "c32e3d7c898cc9e332eb570a6935086ce8002273",
+          "mode": "100644",
+          "size": 3382,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e15_feedback_structure_interaction/04_RESEARCH_DECISION.md",
+          "sha": "8b0a5cc73b51d3a009dc10b8ff99180e09f3298b",
+          "mode": "100644",
+          "size": 3285,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 978
+    },
+    {
+      "branch": "e16-signal-replication-representation",
+      "title": "不同题、重复生成与表示比较",
+      "stage": "E16",
+      "purpose": "比较独立题数、生成重复和输入表示对路由学习的影响。",
+      "source_commit": "1f012ae7b9af54adc6a68fcf4417fab81a269982",
+      "source_tree": "71ab67bdc3fb0a919c51b3a8c496c235aeecc3f2",
+      "report_path": "routing_idea2/research/e16_signal_replication_representation/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e16_signal_replication_representation/E16_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e16_signal_replication_representation/B_SEED_RESULTS.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e16_signal_replication_representation/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e16_signal_replication_representation/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e16_signal_replication_representation/E16_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e16_signal_replication_representation/01_VARIANCE_AND_STABILITY.md",
+        "routing_idea2/research/e16_signal_replication_representation/02_QUESTIONS_VS_REPEATS.md",
+        "routing_idea2/research/e16_signal_replication_representation/03_REPRESENTATION_ABLATION.md",
+        "routing_idea2/research/e16_signal_replication_representation/04_RESEARCH_DECISION.md"
+      ],
+      "source_tree_sha": "71ab67bdc3fb0a919c51b3a8c496c235aeecc3f2",
+      "directory": "experiments/e16-signal-replication-representation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/EXPERIMENT_SUMMARY.md",
+          "sha": "dffacecc1e7925b58bd9e0bfb34d5470fbd35e25",
+          "mode": "100644",
+          "size": 1597,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/REPRODUCE.md",
+          "sha": "ca607c33df13d44a2cc69bf20b4926a36e173333",
+          "mode": "100644",
+          "size": 1335,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/E16_PROTOCOL.json",
+          "sha": "ca86b9273c2dcf9f21a9f220b4eb54aa65371c92",
+          "mode": "100644",
+          "size": 4184,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/E16_COMPLETE_RESULTS.json",
+          "sha": "0b584cf2d07cd1443af5dab23b36c36812466dc6",
+          "mode": "100644",
+          "size": 25915,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/B_SEED_RESULTS.csv",
+          "sha": "36128bc4abc31c4ec248b05c53f6f3ad96d1885a",
+          "mode": "100644",
+          "size": 610,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/code",
+          "sha": "af09f7ddcdd2faa30b609cfaa751ffb9d90a93a8",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/01_VARIANCE_AND_STABILITY.md",
+          "sha": "80a193093a108dfb00fd62deaafc9c7c864657a5",
+          "mode": "100644",
+          "size": 2576,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/02_QUESTIONS_VS_REPEATS.md",
+          "sha": "7f1a6c284fc33f48827afdf552bd631cb7612556",
+          "mode": "100644",
+          "size": 1901,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/03_REPRESENTATION_ABLATION.md",
+          "sha": "03a9dacca6b884e7885796b8a773f21215db4a0c",
+          "mode": "100644",
+          "size": 2260,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e16_signal_replication_representation/04_RESEARCH_DECISION.md",
+          "sha": "2a441ac60b780e0a124ee9f6c9d27c6b5e481e3b",
+          "mode": "100644",
+          "size": 3362,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1013
+    },
+    {
+      "branch": "e17-supervision-distortion-audit",
+      "title": "并列监督与编号影响",
+      "stage": "E17",
+      "purpose": "通过重编号和训练顺序对照检查监督对选队的影响。",
+      "source_commit": "94a8579f9c8dc16d1f6afb943cee6678c5a9792a",
+      "source_tree": "8deacd518a9e7f6618d9d43335bd91cd90cb82ee",
+      "report_path": "routing_idea2/research/e17_supervision_distortion_audit/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e17_supervision_distortion_audit/E17_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e17_supervision_distortion_audit/LOSS_ORDER_RESULTS.json",
+        "routing_idea2/research/e17_supervision_distortion_audit/PERMUTATION_SUMMARIES.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e17_supervision_distortion_audit/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e17_supervision_distortion_audit/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e17_supervision_distortion_audit/E17_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e17_supervision_distortion_audit/01_LITERATURE_AND_TARGET.md",
+        "routing_idea2/research/e17_supervision_distortion_audit/02_RANDOM_RENUMBERING.md",
+        "routing_idea2/research/e17_supervision_distortion_audit/03_SAME_DRAWS_OPERATOR_ORDER.md",
+        "routing_idea2/research/e17_supervision_distortion_audit/04_INDEPENDENT_CONFIRMATION_PLAN.md",
+        "routing_idea2/research/e17_supervision_distortion_audit/05_MECHANISM_AND_RESEARCH_DECISION.md"
+      ],
+      "source_tree_sha": "8deacd518a9e7f6618d9d43335bd91cd90cb82ee",
+      "directory": "experiments/e17-supervision-distortion-audit",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/EXPERIMENT_SUMMARY.md",
+          "sha": "e56c33ffe31c32f6a0ac5dab47c20d4a8ccc2d8f",
+          "mode": "100644",
+          "size": 3854,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/REPRODUCE.md",
+          "sha": "98f17d0899164e6d73ad51a6e4c698fe1d2d07d5",
+          "mode": "100644",
+          "size": 2207,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/E17_PROTOCOL.json",
+          "sha": "e48a811b53e26dc9af5f608d10c63bfc526bd592",
+          "mode": "100644",
+          "size": 4808,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/E17_COMPLETE_RESULTS.json",
+          "sha": "c115674edf1ae62f42b9015718e7f76180ed2c89",
+          "mode": "100644",
+          "size": 8460,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/LOSS_ORDER_RESULTS.json",
+          "sha": "242071f92c9f8505e7ce507517de70cc203a04aa",
+          "mode": "100644",
+          "size": 304136,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/PERMUTATION_SUMMARIES.json",
+          "sha": "efe75d3e830f817a4cd8efd0120412dd68f06bcf",
+          "mode": "100644",
+          "size": 641263,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/code",
+          "sha": "05f5f90aa69a3e46840a9d805bdedaf8854cce12",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/01_LITERATURE_AND_TARGET.md",
+          "sha": "cef4ec07260609bf3fb3c1052fd43d1e05b34e17",
+          "mode": "100644",
+          "size": 5348,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/02_RANDOM_RENUMBERING.md",
+          "sha": "7d55c16c7077cac39404d2138cef0cd7c597ef57",
+          "mode": "100644",
+          "size": 5603,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/03_SAME_DRAWS_OPERATOR_ORDER.md",
+          "sha": "29279fd1e8291f2482242ada8f50e0364de44c3d",
+          "mode": "100644",
+          "size": 4386,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/04_INDEPENDENT_CONFIRMATION_PLAN.md",
+          "sha": "fc10d593324012df36da0404503ab94c908dcd70",
+          "mode": "100644",
+          "size": 3812,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e17_supervision_distortion_audit/05_MECHANISM_AND_RESEARCH_DECISION.md",
+          "sha": "68ab2f7ec82d6ff961fb37a60f78f4f1dd1e45f9",
+          "mode": "100644",
+          "size": 3536,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1063
+    },
+    {
+      "branch": "e18-mechanism-and-confirmation-preparation",
+      "title": "E18 机制分析与独立评价",
+      "stage": "E18",
+      "purpose": "保存机制准备、执行源码和独立评价的最终结果。",
+      "source_commit": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+      "source_tree": "92601636938fb7cccd73992eccf7aad368e32503",
+      "report_path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_CONFIRMATION_REPORT.md",
+      "results_paths": [
+        "routing_idea2/research/e18_confirmatory_execution/final_results/E18_POINT_RESULTS.json",
+        "routing_idea2/research/e18_confirmatory_execution/final_results/MAIN_TABLE.csv",
+        "routing_idea2/research/e18_confirmatory_execution/final_results/PAIRED_TABLE.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code",
+        "routing_idea2/research/e18_confirmatory_execution/final_sources/code"
+      ],
+      "reproduction_path": "routing_idea2/research/e18_confirmatory_execution/final_results/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/E18_EVALUATION_PROTOCOL_v2.json",
+      "additional_reports": [
+        "routing_idea2/research/e18_confirmatory_execution/final_results/E18_RESEARCH_CONCLUSION.md"
+      ],
+      "records": [
+        {
+          "stage": "E18 准备",
+          "title": "E18 理论与评价准备",
+          "report_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/EXPERIMENT_SUMMARY.md",
+          "results_paths": [
+            "routing_idea2/research/e18_mechanism_and_confirmation_preparation/E17_CORE_RESULTS_TABLE.csv"
+          ],
+          "code_paths": [
+            "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code"
+          ],
+          "reproduction_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/REPRODUCE.md",
+          "protocol_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/E18_EVALUATION_PROTOCOL.json",
+          "purpose": "保存机制说明、输入准备和首次独立评价协议。",
+          "branch": "e18-mechanism-and-confirmation-preparation",
+          "source_commit": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+          "source_tree": "92601636938fb7cccd73992eccf7aad368e32503"
+        },
+        {
+          "stage": "E18 准备 v2",
+          "title": "E18 执行接口与评分准备",
+          "report_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/EXPERIMENT_SUMMARY_v2.md",
+          "results_paths": [
+            "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/PREPARATION_COMPLETE_v2.json"
+          ],
+          "code_paths": [
+            "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code"
+          ],
+          "reproduction_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/REPRODUCE_v2.md",
+          "protocol_path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/E18_EVALUATION_PROTOCOL_v2.json",
+          "purpose": "保存修订后的执行接口、评分准备和评价协议。",
+          "branch": "e18-mechanism-and-confirmation-preparation",
+          "source_commit": "95c6c8a38a71866d6efdb224aec04b9a158adf17",
+          "source_tree": "92601636938fb7cccd73992eccf7aad368e32503"
+        }
+      ],
+      "code_labels": {
+        "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code": "准备代码",
+        "routing_idea2/research/e18_confirmatory_execution/final_sources/code": "完成执行代码"
+      },
+      "source_tree_sha": "92601636938fb7cccd73992eccf7aad368e32503",
+      "directory": "experiments/e18-mechanism-and-confirmation-preparation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_CONFIRMATION_REPORT.md",
+          "sha": "2fa272a95d530e48d594fecc0f40f25339839a1e",
+          "mode": "100644",
+          "size": 9555,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/REPRODUCE.md",
+          "sha": "7c7c510841b3ed8c8a61d3dcf62067763ce6c28f",
+          "mode": "100644",
+          "size": 2799,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/E18_EVALUATION_PROTOCOL_v2.json",
+          "sha": "a3898e86063bfa2fa2eb4fe44c9a3bf3760f7366",
+          "mode": "100644",
+          "size": 9266,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_POINT_RESULTS.json",
+          "sha": "adfb41f23e27625098f846d92abe49ff455b8bfb",
+          "mode": "100644",
+          "size": 28264,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/MAIN_TABLE.csv",
+          "sha": "69d02876b580030ad1c80b10fad28e301490a99d",
+          "mode": "100644",
+          "size": 717,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/PAIRED_TABLE.csv",
+          "sha": "ae8d5b37f4e54dc67d795bb8b12e9c13191a1605",
+          "mode": "100644",
+          "size": 745,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code",
+          "sha": "0217714f4932fa123a9218a096c15a34b68b0205",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_sources/code",
+          "sha": "7e9b8993bdd2a069773a327a26182852df1c2b02",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/e18_confirmatory_execution/final_results/E18_RESEARCH_CONCLUSION.md",
+          "sha": "87f5c08858340175ea6501e6092505e9cbba51ae",
+          "mode": "100644",
+          "size": 2824,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/EXPERIMENT_SUMMARY.md",
+          "sha": "846d0c1fd7d25003f9447dc71bead902dab2fe9e",
+          "mode": "100644",
+          "size": 2416,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/E17_CORE_RESULTS_TABLE.csv",
+          "sha": "75658fdc61081e45632fba15ba852832fd048b9f",
+          "mode": "100644",
+          "size": 507,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/REPRODUCE.md",
+          "sha": "8f8c9fee0b0c8f3885a5fdc541456e21db3eaa01",
+          "mode": "100644",
+          "size": 3312,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/E18_EVALUATION_PROTOCOL.json",
+          "sha": "a32736333109501af58fb48abbca64a9a2ef2796",
+          "mode": "100644",
+          "size": 22505,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/EXPERIMENT_SUMMARY_v2.md",
+          "sha": "f4af745da8b598da3bc39bf9e42338f4233afa79",
+          "mode": "100644",
+          "size": 2175,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/PREPARATION_COMPLETE_v2.json",
+          "sha": "e9ea6cd60ff325c36c1b2714f2823ddd95a6947a",
+          "mode": "100644",
+          "size": 2742,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/v2/REPRODUCE_v2.md",
+          "sha": "795796a39876c31449dff5c1b568f3506c62e2a4",
+          "mode": "100644",
+          "size": 2771,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1401
+    },
+    {
+      "branch": "e18-1-statistics-and-mechanisms",
+      "title": "独立评价后的统计与机制分析",
+      "stage": "E18.1",
+      "purpose": "分析 E18 已完成评价的任务、种子和机制差异。",
+      "source_commit": "341a8a3c48ee95b7a38c1a5713ac659fccba8f6c",
+      "source_tree": "521b2aa984fb190c506bd6db0522450f4636ffe7",
+      "report_path": "routing_idea2/research/e18_1_statistics_and_mechanisms/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/E18_1_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/analyze_e18_1.py",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/accounting_global_fixed_audit.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e18_1_statistics_and_mechanisms/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e18_1_statistics_and_mechanisms/E18_1_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/01_STATISTICAL_REPORT.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/02_TASK_HETEROGENEITY.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/03_SELECTION_AND_QUALITY.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/04_TSPO_GLOBAL_FIXED.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/05_ACCOUNTING_AND_GLOBAL_FIXED.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/06_JOINT_EVIDENCE.md",
+        "routing_idea2/research/e18_1_statistics_and_mechanisms/07_RESULTS_AND_DISCUSSION.md"
+      ],
+      "source_tree_sha": "521b2aa984fb190c506bd6db0522450f4636ffe7",
+      "directory": "experiments/e18-1-statistics-and-mechanisms",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/EXPERIMENT_SUMMARY.md",
+          "sha": "acc83a047a566ccc681dc6bd29d6477582355b2e",
+          "mode": "100644",
+          "size": 1837,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/REPRODUCE.md",
+          "sha": "8f1d7da895b2131aed3fc55ee30d4b2d49fc794e",
+          "mode": "100644",
+          "size": 5509,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/E18_1_PROTOCOL.json",
+          "sha": "f8db70958323a33fa9c673d7cce8fc7ac4d4cb70",
+          "mode": "100644",
+          "size": 2685,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/E18_1_COMPLETE_RESULTS.json",
+          "sha": "72ae6e6cda7a905c17c0c7df2447526244bc16ec",
+          "mode": "100644",
+          "size": 96349,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/analyze_e18_1.py",
+          "sha": "6834ca8788e1a4dbaf55a73d71123833af76dbcf",
+          "mode": "100644",
+          "size": 18817,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/accounting_global_fixed_audit.py",
+          "sha": "4a7bf35c6390fe6571159c2e2a0ef988ae1f219d",
+          "mode": "100644",
+          "size": 13249,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/01_STATISTICAL_REPORT.md",
+          "sha": "5ee134e6d5285dce328407a8d4ab5b757124c3d6",
+          "mode": "100644",
+          "size": 3388,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/02_TASK_HETEROGENEITY.md",
+          "sha": "4d9dd3007ae35db7e776562c52a181dbe1e1554d",
+          "mode": "100644",
+          "size": 4924,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/03_SELECTION_AND_QUALITY.md",
+          "sha": "16d3e65db90aa49ed3967098eb86c5a9b6226803",
+          "mode": "100644",
+          "size": 2276,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/04_TSPO_GLOBAL_FIXED.md",
+          "sha": "039d2a9942bf3233fbc13082bb940b1799b28d4b",
+          "mode": "100644",
+          "size": 4021,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/05_ACCOUNTING_AND_GLOBAL_FIXED.md",
+          "sha": "f31044a047466fce931513d81686c812ed1dc72d",
+          "mode": "100644",
+          "size": 9034,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/06_JOINT_EVIDENCE.md",
+          "sha": "2c91e9e89978dd129c8c7f9990bb2a0108746038",
+          "mode": "100644",
+          "size": 8702,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e18_1_statistics_and_mechanisms/07_RESULTS_AND_DISCUSSION.md",
+          "sha": "e3aa6ebf0ee7991bd1885cb019e54239c8f886f3",
+          "mode": "100644",
+          "size": 14103,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1439
+    },
+    {
+      "branch": "e19-symmetric-tie-constraints",
+      "title": "全并列行的对称训练约束",
+      "stage": "E19",
+      "purpose": "保持共享模型与正则，比较保留或关闭全并列行约束。",
+      "source_commit": "07b01361d425b089e49643f1ec5282eae0ac1ec0",
+      "source_tree": "de90fc2cbc9964956da7e9924dd7d69c94eb2c60",
+      "report_path": "routing_idea2/research/e19_symmetric_tie_constraint/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e19_symmetric_tie_constraint/E19_COMPLETE_RESULTS.json",
+        "routing_idea2/research/e19_symmetric_tie_constraint/P1_POINT_RESULTS.json",
+        "routing_idea2/research/e19_symmetric_tie_constraint/FIVE_FOLD_RESULTS.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e19_symmetric_tie_constraint/run_e19.py",
+        "routing_idea2/research/e19_symmetric_tie_constraint/weighted_objectives.py",
+        "routing_idea2/research/e19_symmetric_tie_constraint/theory_checks.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e19_symmetric_tie_constraint/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e19_symmetric_tie_constraint/E19_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e19_symmetric_tie_constraint/01_THEORY_AND_PREDICTIONS.md",
+        "routing_idea2/research/e19_symmetric_tie_constraint/02_P0_QUALIFICATION_REPORT.md",
+        "routing_idea2/research/e19_symmetric_tie_constraint/03_P1_FIVE_FOLD_RESULTS.md",
+        "routing_idea2/research/e19_symmetric_tie_constraint/04_BOOTSTRAP_AND_UTILITY.md"
+      ],
+      "source_tree_sha": "de90fc2cbc9964956da7e9924dd7d69c94eb2c60",
+      "directory": "experiments/e19-symmetric-tie-constraints",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/EXPERIMENT_SUMMARY.md",
+          "sha": "71f056703503e7fb48a21a282569c8d955d4f386",
+          "mode": "100644",
+          "size": 3020,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/REPRODUCE.md",
+          "sha": "938226f385e5a82e0cc0781f2dd0d9cb41ccdc0c",
+          "mode": "100644",
+          "size": 7553,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/E19_PROTOCOL.json",
+          "sha": "b14e5e41aa8a55613bf597bb84948b7ff9e83497",
+          "mode": "100644",
+          "size": 6515,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/E19_COMPLETE_RESULTS.json",
+          "sha": "0437e11dd0c645b69d2b94889dfde377fd2511d6",
+          "mode": "100644",
+          "size": 28153,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/P1_POINT_RESULTS.json",
+          "sha": "d6b6bb2d20ec95712d5c3656ad1aeeaa80019dc8",
+          "mode": "100644",
+          "size": 6782,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/FIVE_FOLD_RESULTS.csv",
+          "sha": "746ae9363f497c27f456b2d5a37414ccba1fcd8a",
+          "mode": "100644",
+          "size": 1787,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/run_e19.py",
+          "sha": "88dbef81ab930234fda268c46ee3cc3af23c7320",
+          "mode": "100644",
+          "size": 25100,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/weighted_objectives.py",
+          "sha": "958a1a1a53244d745bdf10c928bab23c063a4323",
+          "mode": "100644",
+          "size": 10420,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/theory_checks.py",
+          "sha": "adfd7f66803db64090661f4e5d824dbeb055aa5f",
+          "mode": "100644",
+          "size": 14040,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/01_THEORY_AND_PREDICTIONS.md",
+          "sha": "78cf9658dea7851ff17862d544e296b36ae81a37",
+          "mode": "100644",
+          "size": 16598,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/02_P0_QUALIFICATION_REPORT.md",
+          "sha": "ae143032fb400e3569ba32da067c4d9b3fdc9f46",
+          "mode": "100644",
+          "size": 5210,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/03_P1_FIVE_FOLD_RESULTS.md",
+          "sha": "3d78078d633ff462c61386ec853d10a6631dc4e8",
+          "mode": "100644",
+          "size": 4633,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e19_symmetric_tie_constraint/04_BOOTSTRAP_AND_UTILITY.md",
+          "sha": "2c8cf7786e4730586a249d72d2113ace4693e93a",
+          "mode": "100644",
+          "size": 3914,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1485
+    },
+    {
+      "branch": "e20-independent-confirmation-preparation",
+      "title": "最终模型与独立评价准备",
+      "stage": "E20 准备",
+      "purpose": "冻结 train600 的 B/C 最终模型、输入预测和后续评价方案。",
+      "source_commit": "031d32ee34911f58c535803c078584c424c8f6e3",
+      "source_tree": "5b4a347bab857fb7ab4e014ddfbf446b4ee6007a",
+      "report_path": "routing_idea2/research/e20_independent_confirmation_preparation/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e20_independent_confirmation_preparation/E20_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e20_independent_confirmation_preparation/fit_final_models.py",
+        "routing_idea2/research/e20_independent_confirmation_preparation/predict_final_inputs.py",
+        "routing_idea2/research/e20_independent_confirmation_preparation/audit_data_and_budget.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e20_independent_confirmation_preparation/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e20_independent_confirmation_preparation/E20_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e20_independent_confirmation_preparation/01_FINAL_MODEL_FREEZE.md",
+        "routing_idea2/research/e20_independent_confirmation_preparation/02_DATA_PERMISSIONS.md",
+        "routing_idea2/research/e20_independent_confirmation_preparation/03_POWER_ANALYSIS.md",
+        "routing_idea2/research/e20_independent_confirmation_preparation/04_EXECUTION_BUDGET.md",
+        "routing_idea2/research/e20_independent_confirmation_preparation/05_P2_FROZEN_PROTOCOL.md",
+        "routing_idea2/research/e20_independent_confirmation_preparation/06_READINESS_REVIEW.md"
+      ],
+      "source_tree_sha": "5b4a347bab857fb7ab4e014ddfbf446b4ee6007a",
+      "directory": "experiments/e20-independent-confirmation-preparation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/EXPERIMENT_SUMMARY.md",
+          "sha": "e33eab4860887a894bf1e3ceb264d20e3cdb96c5",
+          "mode": "100644",
+          "size": 2381,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/REPRODUCE.md",
+          "sha": "dd0446a67ee5af085dba4faf2ee8a641cac12cb3",
+          "mode": "100644",
+          "size": 4060,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/E20_PROTOCOL.json",
+          "sha": "d4673a042d63de82f0c3a5265394fb23e8bf805d",
+          "mode": "100644",
+          "size": 6360,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/E20_COMPLETE_RESULTS.json",
+          "sha": "4c7d89b025848a7bab068d585a92c0b58d66e5c3",
+          "mode": "100644",
+          "size": 163097,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/fit_final_models.py",
+          "sha": "02df339a140610a9f5c5299b3d7d27ffdf64839b",
+          "mode": "100644",
+          "size": 15418,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/predict_final_inputs.py",
+          "sha": "616192fe9afba6ee9d0524a1ee47c19240101f88",
+          "mode": "100644",
+          "size": 5931,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/audit_data_and_budget.py",
+          "sha": "53248958eecfae58d92d1fa6b31ff45ae1bf5335",
+          "mode": "100644",
+          "size": 31218,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/01_FINAL_MODEL_FREEZE.md",
+          "sha": "9845c8c049fc6f863dbdf436624700f3cbce02a6",
+          "mode": "100644",
+          "size": 3300,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/02_DATA_PERMISSIONS.md",
+          "sha": "f22818c772524e0f096910599594468b30274f2f",
+          "mode": "100644",
+          "size": 5232,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/03_POWER_ANALYSIS.md",
+          "sha": "e81810912c89726b5c1835165ec725354eeb7bfe",
+          "mode": "100644",
+          "size": 5704,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/04_EXECUTION_BUDGET.md",
+          "sha": "190c99b25eb3af5d01cd54d195ad893f65aa3d93",
+          "mode": "100644",
+          "size": 5970,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/05_P2_FROZEN_PROTOCOL.md",
+          "sha": "9340f9eb2610a88ad89ff2c277fa1c68b5b80b49",
+          "mode": "100644",
+          "size": 5794,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_independent_confirmation_preparation/06_READINESS_REVIEW.md",
+          "sha": "4ce03869173daadcf7a6dad849e13fb3218b868c",
+          "mode": "100644",
+          "size": 3162,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1522
+    },
+    {
+      "branch": "e20-p2-independent-confirmation",
+      "title": "原系统独立新题评价",
+      "stage": "E20/P2",
+      "purpose": "在原系统的 2400 道新题上评价冻结 B/C 策略。",
+      "source_commit": "21209351651a76abc782662c00ff4523703bbd8a",
+      "source_tree": "532f84d3026bcbe7a513c9ee811f37844b198a94",
+      "report_path": "routing_idea2/research/e20_p2_execution/P2_FINAL_RESULTS.md",
+      "results_paths": [
+        "routing_idea2/research/e20_p2_execution/P2_POINT_RESULTS.json",
+        "routing_idea2/research/e20_p2_execution/P2_FINAL_DIAGNOSTICS.json",
+        "routing_idea2/research/e20_p2_execution/P2_FINAL_EXECUTION_LEDGER.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e20_p2_execution/blind_evaluation.py",
+        "routing_idea2/research/e20_p2_execution/score_paid_outputs.py",
+        "routing_idea2/research/e20_p2_execution/p2_execution_adapter.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e20_p2_execution/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e20_p2_execution/P2_PRESELECTION_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "532f84d3026bcbe7a513c9ee811f37844b198a94",
+      "directory": "experiments/e20-p2-independent-confirmation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e20_p2_execution/P2_FINAL_RESULTS.md",
+          "sha": "87b31f438f7353a15b875f6fab1d8e44e8f03931",
+          "mode": "100644",
+          "size": 4772,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/REPRODUCE.md",
+          "sha": "9093c763bd8521eb6c5439459295c4827cc8ce72",
+          "mode": "100644",
+          "size": 6947,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/P2_PRESELECTION_PROTOCOL.json",
+          "sha": "1b099ba8dc3ac6a7bffa18911282a89d68647b01",
+          "mode": "100644",
+          "size": 3840,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/P2_POINT_RESULTS.json",
+          "sha": "9234fa9227e9e73b5a4c68404babc98863dbbb80",
+          "mode": "100644",
+          "size": 9381,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/P2_FINAL_DIAGNOSTICS.json",
+          "sha": "91ff04d1b2b34a34006d6637db31072c9401373f",
+          "mode": "100644",
+          "size": 8148,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/P2_FINAL_EXECUTION_LEDGER.json",
+          "sha": "640f7d993e8c03710f0ef1d2347fe2e53f5825f0",
+          "mode": "100644",
+          "size": 5236,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/blind_evaluation.py",
+          "sha": "7b7d83d8d272b8c1f24cb2e659b5ff4680fd0616",
+          "mode": "100644",
+          "size": 18493,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/score_paid_outputs.py",
+          "sha": "0edd09b3c51d64e828f1bb1c821b71d5d177bac9",
+          "mode": "100644",
+          "size": 18252,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e20_p2_execution/p2_execution_adapter.py",
+          "sha": "a01d60cd53c2c3a7f33882f46ed8a5a5c4ce6a8d",
+          "mode": "100644",
+          "size": 33377,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1613
+    },
+    {
+      "branch": "e21-p3-external-mechanism",
+      "title": "跨损失与外部模型池检查",
+      "stage": "E21/P3",
+      "purpose": "用 ListNet 和外部 DARS 缓存检查机制与质量差异。",
+      "source_commit": "692e481ee344d1dd7632c77633716882de599c55",
+      "source_tree": "794509e3ac5ebb9d70b2f3706654fffe623ced33",
+      "report_path": "routing_idea2/research/e21_p3_external_mechanism/P3_RESULTS.md",
+      "results_paths": [
+        "routing_idea2/research/e21_p3_external_mechanism/P3_INTERNAL_LISTNET_RESULTS.json",
+        "routing_idea2/research/e21_p3_external_mechanism/P3_EXTERNAL_DARS_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e21_p3_external_mechanism/run_internal.py",
+        "routing_idea2/research/e21_p3_external_mechanism/run_external.py",
+        "routing_idea2/research/e21_p3_external_mechanism/endpoints.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e21_p3_external_mechanism/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e21_p3_external_mechanism/P3_PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "794509e3ac5ebb9d70b2f3706654fffe623ced33",
+      "directory": "experiments/e21-p3-external-mechanism",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/P3_RESULTS.md",
+          "sha": "91ace332ec1cdf0779ca381a0f9b66007a990996",
+          "mode": "100644",
+          "size": 5862,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/REPRODUCE.md",
+          "sha": "dd3b96bcd4736f13494cf67f7fa93c8566d7f76e",
+          "mode": "100644",
+          "size": 1865,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/P3_PROTOCOL.json",
+          "sha": "2062afb568b136b564c5b142e8c52dcd713de986",
+          "mode": "100644",
+          "size": 4141,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/P3_INTERNAL_LISTNET_RESULTS.json",
+          "sha": "55bc16de905f9b4abd13a3afd4b7e33fc424729d",
+          "mode": "100644",
+          "size": 118600,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/P3_EXTERNAL_DARS_RESULTS.json",
+          "sha": "16c7dffcde34ba7ad3037f5cf05e027c6fcd3d89",
+          "mode": "100644",
+          "size": 80913,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/run_internal.py",
+          "sha": "b4665d1d1c802ba6927f9088901e537ee161d521",
+          "mode": "100644",
+          "size": 12912,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/run_external.py",
+          "sha": "1302930b6afc5912b868c5016be428e3f35b2b87",
+          "mode": "100644",
+          "size": 21239,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e21_p3_external_mechanism/endpoints.py",
+          "sha": "be65d43a6e8e1932626fe2a7f146fa46660cbfb7",
+          "mode": "100644",
+          "size": 10436,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1622
+    },
+    {
+      "branch": "e22-mechanism-specificity",
+      "title": "匹配控制与参数变化分析",
+      "stage": "E22",
+      "purpose": "比较全并列行干预、相同总权重和匹配删除控制。",
+      "source_commit": "8f490a06ebe1153be2fcbeb42ad3944d63075b7d",
+      "source_tree": "b770071f6af8c3ad9934f9d090e4c6579fcc7773",
+      "report_path": "routing_idea2/research/e22_mechanism_specificity/AUDIT_REPORT.md",
+      "results_paths": [
+        "routing_idea2/research/e22_mechanism_specificity/RESULTS.json",
+        "routing_idea2/research/e22_mechanism_specificity/SUMMARY.json",
+        "routing_idea2/research/e22_mechanism_specificity/controls.csv"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e22_mechanism_specificity/run_audit.py",
+        "routing_idea2/research/e22_mechanism_specificity/row_weighted.py",
+        "routing_idea2/research/e22_mechanism_specificity/geometry.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e22_mechanism_specificity/README.md",
+      "protocol_path": "routing_idea2/research/e22_mechanism_specificity/PROTOCOL.json",
+      "additional_reports": [],
+      "source_tree_sha": "b770071f6af8c3ad9934f9d090e4c6579fcc7773",
+      "directory": "experiments/e22-mechanism-specificity",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/AUDIT_REPORT.md",
+          "sha": "63b875cf8ba8e267bcdb61ce547937418dfedeb3",
+          "mode": "100644",
+          "size": 5386,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/README.md",
+          "sha": "16c085b62b27ca9d45eb546082cfabbd56e33e17",
+          "mode": "100644",
+          "size": 2070,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/PROTOCOL.json",
+          "sha": "190007b4ccb603d78648080f2fc7fa9bcc8ab560",
+          "mode": "100644",
+          "size": 3600,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/RESULTS.json",
+          "sha": "2e76694bb240fed99b94d9b8390d946dbb9d1cdd",
+          "mode": "100644",
+          "size": 348860,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/SUMMARY.json",
+          "sha": "e2f60817db0fc87a597dba947d46fc0635a038ff",
+          "mode": "100644",
+          "size": 30300,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/controls.csv",
+          "sha": "6669ddca85c3523128b598b76f38e306987acef8",
+          "mode": "100644",
+          "size": 939,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/run_audit.py",
+          "sha": "b2a7b0a34bcdaaa0862a9a8a6632c5df2cf025e1",
+          "mode": "100644",
+          "size": 13936,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/row_weighted.py",
+          "sha": "2e16c0ccad5ba2bcd8bdd25485914794e8cc9ef1",
+          "mode": "100644",
+          "size": 10912,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e22_mechanism_specificity/geometry.py",
+          "sha": "85de0bea759f57abbd3fd6d1c26eee13ff94df7a",
+          "mode": "100644",
+          "size": 12710,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1638
+    },
+    {
+      "branch": "e23-deployment-prior-and-references",
+      "title": "部署规则与对照方法",
+      "stage": "E23",
+      "purpose": "在原 P2 题池上比较训练先验部署、固定组合和训练行控制。",
+      "source_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+      "source_tree": "7be8e2006961bf2fdd8ed1917b0f039fb7bbc8e9",
+      "report_path": "routing_idea2/research/e23_deployment_prior_and_references/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json",
+        "routing_idea2/research/e23_deployment_prior_and_references/RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py",
+        "routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py",
+        "routing_idea2/research/e23_deployment_prior_and_references/supplement_adapter.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e23_deployment_prior_and_references/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e23_deployment_prior_and_references/PROTOCOL.json",
+      "additional_reports": [],
+      "records": [
+        {
+          "stage": "E23 准备",
+          "title": "E23 策略冻结与缺口记录",
+          "report_path": "routing_idea2/research/e23_deployment_prior_and_references/PROTOCOL.json",
+          "results_paths": [
+            "routing_idea2/research/e23_deployment_prior_and_references/RESULTS.json"
+          ],
+          "code_paths": [
+            "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py",
+            "routing_idea2/research/e23_deployment_prior_and_references/cache_budget.py"
+          ],
+          "reproduction_path": "routing_idea2/research/e23_deployment_prior_and_references/REPRODUCE.md",
+          "protocol_path": "routing_idea2/research/e23_deployment_prior_and_references/PROTOCOL.json",
+          "status_note": "RESULTS.json 保留补齐前的状态和拟合日志；完整参照结果见 RESULTS_FINAL.json。",
+          "purpose": "保存十二份策略冻结后的缺口记录和四个新增控制头日志。",
+          "branch": "e23-deployment-prior-and-references",
+          "source_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+          "source_tree": "7be8e2006961bf2fdd8ed1917b0f039fb7bbc8e9"
+        }
+      ],
+      "source_tree_sha": "7be8e2006961bf2fdd8ed1917b0f039fb7bbc8e9",
+      "directory": "experiments/e23-deployment-prior-and-references",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/EXPERIMENT_SUMMARY.md",
+          "sha": "9ab4b9162d5f418eb6c95b51d60444da830c6adc",
+          "mode": "100644",
+          "size": 9147,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/REPRODUCE.md",
+          "sha": "11e01374fe62316875f001ba2237e1d676981eaa",
+          "mode": "100644",
+          "size": 6668,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/PROTOCOL.json",
+          "sha": "2708722b69ebccb9f00ea4f4a4ed4013deae1bc2",
+          "mode": "100644",
+          "size": 3063,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json",
+          "sha": "607702b27bea96968b1a5eec2b05ab2623d8bd05",
+          "mode": "100644",
+          "size": 56742,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS.json",
+          "sha": "0894d7250ccb4ebe3b344b1f626db39652e8b4e7",
+          "mode": "100644",
+          "size": 35391,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py",
+          "sha": "af9bc90471610d84eab237c69b662a8a1c438ed3",
+          "mode": "100644",
+          "size": 16179,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py",
+          "sha": "82df2c9db75b57b4912b32d0f4707f537ab82290",
+          "mode": "100644",
+          "size": 28564,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/supplement_adapter.py",
+          "sha": "e2ef08016c77f8177a3ab590d04da5b591a09790",
+          "mode": "100644",
+          "size": 13038,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/e23_deployment_prior_and_references/cache_budget.py",
+          "sha": "86eda4862e73249f1080be643bc0ce5b3a41419f",
+          "mode": "100644",
+          "size": 7091,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 1672
+    },
+    {
+      "branch": "b1-reliable-paired-evaluation",
+      "title": "低成本配对评价",
+      "stage": "B1",
+      "purpose": "比较有限答案与 Token 预算下的配对评价方法。",
+      "source_commit": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+      "source_tree": "bc9cb7f4cb24424bdcb985b12b0dd779bdd09fde",
+      "report_path": "routing_idea2/research/b1_reliable_paired_evaluation/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/b1_reliable_paired_evaluation/B1_COMPLETE_RESULTS.json",
+        "routing_idea2/research/b1_reliable_paired_evaluation/REAL_FIXED_POOL_RESULTS.json",
+        "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHOD_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/b1_reliable_paired_evaluation/main",
+        "routing_idea2/research/b1_reliable_paired_evaluation/inference",
+        "routing_idea2/research/b1_reliable_paired_evaluation/methods"
+      ],
+      "reproduction_path": "routing_idea2/research/b1_reliable_paired_evaluation/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/b1_reliable_paired_evaluation/01_PUBLIC_BASELINES_AND_ASSUMPTIONS.md",
+        "routing_idea2/research/b1_reliable_paired_evaluation/02_PAIRED_DESIGN_AND_INFERENCE.md",
+        "routing_idea2/research/b1_reliable_paired_evaluation/03_REAL_FIXED_POOL_RESULTS.md",
+        "routing_idea2/research/b1_reliable_paired_evaluation/04_POPULATION_RELIABILITY_AND_POWER.md",
+        "routing_idea2/research/b1_reliable_paired_evaluation/05_ABLATIONS_COST_AND_RESEARCH_DECISION.md"
+      ],
+      "records": [
+        {
+          "stage": "B1 公开方法",
+          "title": "公开评价方法的原例子与适配",
+          "report_path": "routing_idea2/research/b1_reliable_paired_evaluation/01_PUBLIC_BASELINES_AND_ASSUMPTIONS.md",
+          "results_paths": [
+            "routing_idea2/research/b1_reliable_paired_evaluation/NATIVE_REFERENCE_RESULTS.json",
+            "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHOD_RESULTS.json"
+          ],
+          "code_paths": [
+            "routing_idea2/research/b1_reliable_paired_evaluation/methods"
+          ],
+          "reproduction_path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHODS_REPRODUCE.md",
+          "protocol_path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_PROTOCOL.json",
+          "purpose": "保存公开评价方法的原例子复现与本项目适配。",
+          "branch": "b1-reliable-paired-evaluation",
+          "source_commit": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+          "source_tree": "bc9cb7f4cb24424bdcb985b12b0dd779bdd09fde"
+        },
+        {
+          "stage": "B1 合成验证",
+          "title": "评价可靠性与检出能力",
+          "report_path": "routing_idea2/research/b1_reliable_paired_evaluation/04_POPULATION_RELIABILITY_AND_POWER.md",
+          "results_paths": [
+            "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_COMPLETE_RESULTS.json"
+          ],
+          "code_paths": [
+            "routing_idea2/research/b1_reliable_paired_evaluation/inference"
+          ],
+          "reproduction_path": "routing_idea2/research/b1_reliable_paired_evaluation/REPRODUCE.md",
+          "protocol_path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_PROTOCOL.json",
+          "purpose": "保存已知真值下的评价可靠性和检出能力检查。",
+          "branch": "b1-reliable-paired-evaluation",
+          "source_commit": "a8ca3eb660136de0cc0793d153e3561b8315283b",
+          "source_tree": "bc9cb7f4cb24424bdcb985b12b0dd779bdd09fde"
+        }
+      ],
+      "source_tree_sha": "bc9cb7f4cb24424bdcb985b12b0dd779bdd09fde",
+      "directory": "experiments/b1-reliable-paired-evaluation",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/EXPERIMENT_SUMMARY.md",
+          "sha": "9698782969c8bda1bbe55e5e8f6d66e322b62e59",
+          "mode": "100644",
+          "size": 5340,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/REPRODUCE.md",
+          "sha": "e17c0b848a52c9a0306a6f56e8250d5f0081b544",
+          "mode": "100644",
+          "size": 3401,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_PROTOCOL.json",
+          "sha": "933c1f7999e63d5424710b7c10d5e7e3bbeda1e7",
+          "mode": "100644",
+          "size": 4662,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/B1_COMPLETE_RESULTS.json",
+          "sha": "11458ce65b0ed4e1974920d6780a4394169ab7eb",
+          "mode": "100644",
+          "size": 4496,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/REAL_FIXED_POOL_RESULTS.json",
+          "sha": "49e55bfbc78b65cd349c59e69f8e7cae89cab96a",
+          "mode": "100644",
+          "size": 192725,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHOD_RESULTS.json",
+          "sha": "614d155296247f93c4d159866a51a2e433c2bfc6",
+          "mode": "100644",
+          "size": 13850,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/main",
+          "sha": "42688bed283307b61495675885309f86ab3ba262",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference",
+          "sha": "79153c09904d9a6cfbd5a65a6ecbf86a540a19aa",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/methods",
+          "sha": "d6d92cf5c2b5c8677bb971438e2eb6525e372e4b",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/01_PUBLIC_BASELINES_AND_ASSUMPTIONS.md",
+          "sha": "e25321454400c5174ebe50ea88d7222d54d8aada",
+          "mode": "100644",
+          "size": 12488,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/02_PAIRED_DESIGN_AND_INFERENCE.md",
+          "sha": "5d0839db291b13f6bab7749f304763f2085d7ff2",
+          "mode": "100644",
+          "size": 3202,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/03_REAL_FIXED_POOL_RESULTS.md",
+          "sha": "7a9749031acd69a3bd4470b6017dc341f453da17",
+          "mode": "100644",
+          "size": 3751,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/04_POPULATION_RELIABILITY_AND_POWER.md",
+          "sha": "7dfaff532a4693f33588a348d2d7da3c6be000b1",
+          "mode": "100644",
+          "size": 3506,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/05_ABLATIONS_COST_AND_RESEARCH_DECISION.md",
+          "sha": "52704063164c8f661ace81f80973263431340037",
+          "mode": "100644",
+          "size": 3981,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/NATIVE_REFERENCE_RESULTS.json",
+          "sha": "ed51744cb11aa2cdaf339e507b10a6bbfb83ee21",
+          "mode": "100644",
+          "size": 3738,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/PUBLIC_METHODS_REPRODUCE.md",
+          "sha": "95d4f2a3946d68b8028818ca7c89c511d87febd4",
+          "mode": "100644",
+          "size": 3672,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_COMPLETE_RESULTS.json",
+          "sha": "6ba190bb9a2080df753297dcf063755024fba42b",
+          "mode": "100644",
+          "size": 1372401,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_PROTOCOL.json",
+          "sha": "209857a8e647197b99a480e6de4560e7c8bbb5fe",
+          "mode": "100644",
+          "size": 4909,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 598
+    },
+    {
+      "branch": "ces-traceable-baseline-20261112",
+      "title": "CES 原实现与迁移对照",
+      "stage": "CES 对照",
+      "purpose": "检查公开 CES 实现，并在本项目模型池中作对应比较。",
+      "source_commit": "a701eabf0720b834d584c3f47ccd8e82fdcb4440",
+      "source_tree": "4f456f1274fd1c6cff8262c8b74bd0f3a927bfbc",
+      "report_path": "routing_idea2/research/ces_traceable_baseline/05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md",
+      "results_paths": [
+        "routing_idea2/research/ces_traceable_baseline/CES_COMPLETE_RESULTS.json",
+        "routing_idea2/research/ces_traceable_baseline/MIGRATION_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/ces_traceable_baseline/run_migration.py",
+        "routing_idea2/research/ces_traceable_baseline/evaluate_migration.py",
+        "routing_idea2/research/ces_traceable_baseline/freeze_ces.py"
+      ],
+      "reproduction_path": "routing_idea2/research/ces_traceable_baseline/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/ces_traceable_baseline/CES_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/ces_traceable_baseline/01_NATIVE_REPRODUCIBILITY_AUDIT.md",
+        "routing_idea2/research/ces_traceable_baseline/02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md",
+        "routing_idea2/research/ces_traceable_baseline/03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md",
+        "routing_idea2/research/ces_traceable_baseline/04_MIGRATION_RESULTS_AND_COST.md"
+      ],
+      "source_tree_sha": "4f456f1274fd1c6cff8262c8b74bd0f3a927bfbc",
+      "directory": "experiments/ces-traceable-baseline-20261112",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/05_EVIDENCE_CHAIN_AND_NEXT_STEPS.md",
+          "sha": "7dc08b2d61b2c68acf1d486b9d31e9f25761c0ca",
+          "mode": "100644",
+          "size": 3832,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/REPRODUCE.md",
+          "sha": "1e8fc9ab13d40b3af82095bb6d0d6a18dd4ac3b5",
+          "mode": "100644",
+          "size": 5320,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/CES_PROTOCOL.json",
+          "sha": "e5df24dbba108de8aaa241f479a2ed0388f165c2",
+          "mode": "100644",
+          "size": 7810,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/CES_COMPLETE_RESULTS.json",
+          "sha": "118b8f4b1e50c48304313492b7e58a5fbe9273cb",
+          "mode": "100644",
+          "size": 3402,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/MIGRATION_RESULTS.json",
+          "sha": "ea8c6e558fb008514a2b86978b66d4f86a3108e3",
+          "mode": "100644",
+          "size": 137282,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/run_migration.py",
+          "sha": "b34da4e9534b368158badbfd53796c37e9cadc42",
+          "mode": "100644",
+          "size": 11091,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/evaluate_migration.py",
+          "sha": "48bee10947f1c1ab3a6f3f29b9075f4a0a6bc645",
+          "mode": "100644",
+          "size": 10252,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/freeze_ces.py",
+          "sha": "6e418573af3785aa616335551709349957b17aaf",
+          "mode": "100644",
+          "size": 6134,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/01_NATIVE_REPRODUCIBILITY_AUDIT.md",
+          "sha": "34fddd1ccc4de8f6aeab791b5d92c6b0e9b71312",
+          "mode": "100644",
+          "size": 10326,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/02_DATA_FEEDBACK_AND_COST_PERMISSIONS.md",
+          "sha": "e922b68172aff98096e813369ab0a6b429922faf",
+          "mode": "100644",
+          "size": 9179,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/03_ADAPTATION_CONTRACT_AND_OPERATOR_AUDIT.md",
+          "sha": "ab85dd814920090b459c7d4867bd9d76d7b32ff1",
+          "mode": "100644",
+          "size": 9801,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/ces_traceable_baseline/04_MIGRATION_RESULTS_AND_COST.md",
+          "sha": "795630ed2994119219d9ead13076007417b96cc1",
+          "mode": "100644",
+          "size": 8462,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 531
+    },
+    {
+      "branch": "conditional-gain-20261106",
+      "title": "条件增益与预测器比较",
+      "stage": "条件增益",
+      "purpose": "比较二阶预测、直接组合预测和相对默认组合的增益。",
+      "source_commit": "8e8093c3e1f3748edd1417564a7665f025b53e78",
+      "source_tree": "44259556b753bdd02e64ce6c6119eaf553c2bd7f",
+      "report_path": "routing_idea2/research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/conditional_gain_20261106/CPU_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/conditional_gain_20261106/code"
+      ],
+      "reproduction_path": "routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json",
+      "protocol_path": "routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/conditional_gain_20261106/01_stability_and_oracle_analysis.md",
+        "routing_idea2/research/conditional_gain_20261106/02_second_order_vs_direct20.md",
+        "routing_idea2/research/conditional_gain_20261106/03_feature_ablation.md",
+        "routing_idea2/research/conditional_gain_20261106/04_conditional_gain_router.md",
+        "routing_idea2/research/conditional_gain_20261106/05_theory_and_proofs.md",
+        "routing_idea2/research/conditional_gain_20261106/06_fresh400_evaluation.md",
+        "routing_idea2/research/conditional_gain_20261106/07_feedback_acquisition.md"
+      ],
+      "source_tree_sha": "44259556b753bdd02e64ce6c6119eaf553c2bd7f",
+      "directory": "experiments/conditional-gain-20261106",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/EXPERIMENT_SUMMARY.md",
+          "sha": "492115b6b7532ca9ca0bc8b2ddf268cb04d91549",
+          "mode": "100644",
+          "size": 3785,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/CPU_EXPERIMENT_PROTOCOL.json",
+          "sha": "2c09b8367679e1742382156fd9720031b5bd8704",
+          "mode": "100644",
+          "size": 2137,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/CPU_COMPLETE_RESULTS.json",
+          "sha": "bd2d84f1f0112cd5a002d84442d69e1720679def",
+          "mode": "100644",
+          "size": 1569435,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/code",
+          "sha": "444218fbd82560322b217f0249274237f8d599b3",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/01_stability_and_oracle_analysis.md",
+          "sha": "1d70dc374bf0e96fd6fc898b42c1382c0a05b890",
+          "mode": "100644",
+          "size": 2139,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/02_second_order_vs_direct20.md",
+          "sha": "33af2a9ba21724d0f45d70e0359377061da7ca34",
+          "mode": "100644",
+          "size": 2028,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/03_feature_ablation.md",
+          "sha": "913c920f83462a14f9ae5409191147b654bbe18d",
+          "mode": "100644",
+          "size": 1934,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/04_conditional_gain_router.md",
+          "sha": "ae2d19caf4fdac771c18855910dcecbdfb31747d",
+          "mode": "100644",
+          "size": 43766,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/05_theory_and_proofs.md",
+          "sha": "c2868540f6fd66d533d10fd374b841aed593aee9",
+          "mode": "100644",
+          "size": 11659,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/06_fresh400_evaluation.md",
+          "sha": "ce05d4ee513be3a89106d91a72453e596c322d6d",
+          "mode": "100644",
+          "size": 1485,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/conditional_gain_20261106/07_feedback_acquisition.md",
+          "sha": "f72f53013e56775eddc831bbe7a9313508d9b383",
+          "mode": "100644",
+          "size": 916,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 217
+    },
+    {
+      "branch": "fewshot-adaptation-20261107",
+      "title": "少量反馈下的任务适应",
+      "stage": "少样本适应",
+      "purpose": "比较少量 Support 反馈后的路由更新方法。",
+      "source_commit": "3a5b15020f06eeeec15bc5c87a439dffb20be215",
+      "source_tree": "5cf295b6fe551de9987d6c5e5d1ec6019decb503",
+      "report_path": "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_RESULTS_COMPACT.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/fewshot_adaptation_20261107/fewshot_adaptation.py"
+      ],
+      "reproduction_path": "routing_idea2/research/fewshot_adaptation_20261107/CPU_EXPERIMENT_PROTOCOL.json",
+      "protocol_path": "routing_idea2/research/fewshot_adaptation_20261107/CPU_EXPERIMENT_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/fewshot_adaptation_20261107/01_episode_construction.md",
+        "routing_idea2/research/fewshot_adaptation_20261107/02_fewshot_adaptation_baselines.md"
+      ],
+      "source_tree_sha": "5cf295b6fe551de9987d6c5e5d1ec6019decb503",
+      "directory": "experiments/fewshot-adaptation-20261107",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_SUMMARY.md",
+          "sha": "346f69721388d585c4ee22db5c6791c4a4c9b599",
+          "mode": "100644",
+          "size": 1400,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/CPU_EXPERIMENT_PROTOCOL.json",
+          "sha": "3f8e6d103bd0d4da371ad9b0bf5c2c2688f484c7",
+          "mode": "100644",
+          "size": 1426,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/EXPERIMENT_RESULTS_COMPACT.json",
+          "sha": "6736894bb0f619bde57660576d4cac78ee191650",
+          "mode": "100644",
+          "size": 390209,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/fewshot_adaptation.py",
+          "sha": "cf2a31645e02dd21e6ab3d9e99d40e4eb91af7f7",
+          "mode": "100644",
+          "size": 12504,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/01_episode_construction.md",
+          "sha": "edfa96d31465fa81213217cafd2a7a90ea678da5",
+          "mode": "100644",
+          "size": 852,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_adaptation_20261107/02_fewshot_adaptation_baselines.md",
+          "sha": "25e52c06dbc931b8fc84cadb7ab08b890d058deb",
+          "mode": "100644",
+          "size": 1685,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 224
+    },
+    {
+      "branch": "fewshot-protocol-fix-20261107",
+      "title": "少样本适应协议修正",
+      "stage": "少样本协议修正",
+      "purpose": "修正训练和评价边界后，重新比较少量反馈的作用。",
+      "source_commit": "7a21e158fabe56acbe3a40a3dd0e09c139c6c493",
+      "source_tree": "210d5c92c176db3be38e3e6a3835b6de54efdd7e",
+      "report_path": "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_RESULTS.json.gz",
+        "routing_idea2/research/fewshot_protocol_fix_20261107/TASK_RESULTS.json.gz",
+        "routing_idea2/research/fewshot_protocol_fix_20261107/COSTS.json.gz"
+      ],
+      "code_paths": [
+        "routing_idea2/research/fewshot_protocol_fix_20261107/run_corrected.py",
+        "routing_idea2/research/fewshot_protocol_fix_20261107/models.py",
+        "routing_idea2/research/fewshot_protocol_fix_20261107/stats.py"
+      ],
+      "reproduction_path": "routing_idea2/research/fewshot_protocol_fix_20261107/PROTOCOL.md",
+      "protocol_path": "routing_idea2/research/fewshot_protocol_fix_20261107/PROTOCOL.md",
+      "additional_reports": [],
+      "source_tree_sha": "210d5c92c176db3be38e3e6a3835b6de54efdd7e",
+      "directory": "experiments/fewshot-protocol-fix-20261107",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_SUMMARY.md",
+          "sha": "f1bf3f61e5b7e3fbb7bd70fc3a5796a19bdea2d9",
+          "mode": "100644",
+          "size": 6151,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/PROTOCOL.md",
+          "sha": "3a5fa0a4769eb777d572002d7d08be05e43b6814",
+          "mode": "100644",
+          "size": 8903,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/EXPERIMENT_RESULTS.json.gz",
+          "sha": "b59a97a49f925310c4584ddeaea58b8c79a5cb4c",
+          "mode": "100644",
+          "size": 768667,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/TASK_RESULTS.json.gz",
+          "sha": "90030e84f9ae7a934dc30e13c75e79a4513c7c21",
+          "mode": "100644",
+          "size": 351511,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/COSTS.json.gz",
+          "sha": "a4c24a2029e1572bfc8708bed438439203307e18",
+          "mode": "100644",
+          "size": 155219,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/run_corrected.py",
+          "sha": "2e85b269b43f4ccf6c1638224759c078bba6a6ec",
+          "mode": "100644",
+          "size": 17379,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/models.py",
+          "sha": "8f5c785f6c2d0960c63a4b1fff03e6ad68156b86",
+          "mode": "100644",
+          "size": 7890,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/fewshot_protocol_fix_20261107/stats.py",
+          "sha": "6d08d0ff525fe4c7bfa59dc9e50c27cd55bec4f2",
+          "mode": "100644",
+          "size": 11770,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 245
+    },
+    {
+      "branch": "m4-noise-aware-set-learning",
+      "title": "奖励噪声与集合学习",
+      "stage": "M4 噪声分析",
+      "purpose": "估计奖励噪声，并检查集合式 SPO+ 的训练结果。",
+      "source_commit": "19ba4fd5316bd897036622dab6b02fcfd0e036fd",
+      "source_tree": "457a9625f4299e48116be317082ff9d7d8156f82",
+      "report_path": "routing_idea2/research/m4_noise_aware_set_learning/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_COMPLETE_RESULTS.json",
+        "routing_idea2/research/m4_noise_aware_set_learning/NS_TRAINING_RESULTS.json",
+        "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_COMPLETE_RESULTS.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/m4_noise_aware_set_learning/code"
+      ],
+      "reproduction_path": "routing_idea2/research/m4_noise_aware_set_learning/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/m4_noise_aware_set_learning/01_THEORY_AND_LITERATURE_AUDIT.md",
+        "routing_idea2/research/m4_noise_aware_set_learning/03_SET_LOSS_TRAINING_RESULTS.md"
+      ],
+      "records": [
+        {
+          "stage": "联合噪声分析",
+          "title": "组合奖励联合噪声分析",
+          "report_path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_DIAGNOSTIC.md",
+          "results_paths": [
+            "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_COMPLETE_RESULTS.json"
+          ],
+          "code_paths": [
+            "routing_idea2/research/m4_noise_aware_set_learning/code"
+          ],
+          "reproduction_path": "routing_idea2/research/m4_noise_aware_set_learning/REPRODUCE.md",
+          "protocol_path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_PROTOCOL.json",
+          "purpose": "保存组合奖励联合噪声估计和跨折诊断。",
+          "branch": "m4-noise-aware-set-learning",
+          "source_commit": "19ba4fd5316bd897036622dab6b02fcfd0e036fd",
+          "source_tree": "457a9625f4299e48116be317082ff9d7d8156f82"
+        }
+      ],
+      "source_tree_sha": "457a9625f4299e48116be317082ff9d7d8156f82",
+      "directory": "experiments/m4-noise-aware-set-learning",
+      "source_files": [
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/EXPERIMENT_SUMMARY.md",
+          "sha": "54ba4e64f59b9dd345423f6d08ef4abb58742fa3",
+          "mode": "100644",
+          "size": 5407,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/REPRODUCE.md",
+          "sha": "6faad6011f017e05245f27e76dc656a24cefd80d",
+          "mode": "100644",
+          "size": 3379,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_PROTOCOL.json",
+          "sha": "9cac9919cfcb5a789eeac5509b7a68a237927114",
+          "mode": "100644",
+          "size": 2664,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_SPO_COMPLETE_RESULTS.json",
+          "sha": "f8808dd200288ff9ef58ad8112e3c89b21124c32",
+          "mode": "100644",
+          "size": 78782,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/NS_TRAINING_RESULTS.json",
+          "sha": "f47ece2665ccb1a2be357225b31c37ffb9efa713",
+          "mode": "100644",
+          "size": 58287,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_COMPLETE_RESULTS.json",
+          "sha": "500ab24d7fcc9debdb7e63ba158fc71d89d0df4c",
+          "mode": "100644",
+          "size": 6623,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/code",
+          "sha": "c2898b45f59bc9692af22a566bf5e3facc4c547a",
+          "mode": "040000",
+          "type": "tree"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/01_THEORY_AND_LITERATURE_AUDIT.md",
+          "sha": "b174cf8fdd10f02016930dceff96df4582b51c77",
+          "mode": "100644",
+          "size": 15468,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/03_SET_LOSS_TRAINING_RESULTS.md",
+          "sha": "64ecd68cb17d15bdb224a0a4aceb411b16d2de7c",
+          "mode": "100644",
+          "size": 6901,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_DIAGNOSTIC.md",
+          "sha": "353146db8bb9aa825ac7c0401f918b3eb1f37898",
+          "mode": "100644",
+          "size": 4805,
+          "type": "blob"
+        },
+        {
+          "path": "routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_PROTOCOL.json",
+          "sha": "1648247c0cb241c2a5e54c129a69927d86d5a315",
+          "mode": "100644",
+          "size": 2041,
+          "type": "blob"
+        },
+        {
+          "path": "README.md",
+          "sha": "3303e66e8ed304fd75d693babbb47c076d4b97b0",
+          "mode": "100644",
+          "size": 4216,
+          "type": "blob"
+        }
+      ],
+      "source_blob_count": 733
+    }
+  ]
+}

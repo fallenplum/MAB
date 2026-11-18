@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "repository": "fallenplum/MAB",
+  "observed_at_utc": "2026-11-18 15:59:10 UTC",
+  "timezone": "Asia/Shanghai",
+  "source_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+  "source_tree": "7be8e2006961bf2fdd8ed1917b0f039fb7bbc8e9",
+  "main_before": "9acf114c59fa6324f65dcce7d7d7a9500e109426",
+  "merge_commit": "622eb0b80f99b4cc8d2278897586a60df79a87d8",
+  "merge_tree": "dc2459d2144a4fbb19857bebad31c685e17c2750",
+  "merge_parents": [
+    "9acf114c59fa6324f65dcce7d7d7a9500e109426",
+    "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2"
+  ],
+  "recent_readme_edit_preserved": "9acf114c59fa6324f65dcce7d7d7a9500e109426",
+  "new_experiment_files": {
+    "count": 34,
+    "indexed_entries": 33,
+    "index_file_included": true,
+    "all_sizes_and_sha256_and_git_blob_hashes_match": true
+  },
+  "archive": {
+    "source_files": 1672,
+    "original_files_kept_in_main": 783,
+    "historical_versions_indexed": 889,
+    "remote_files_at_merge": 807,
+    "remote_tree_matches_local": true
+  },
+  "paper_tables": {
+    "archived_inputs": 8,
+    "rows": 222,
+    "previous_rows": 45,
+    "added_rows": 177,
+    "previous_csv_header_and_rows_unchanged": true
+  },
+  "branch_rename": {
+    "old": "codex/e23-deployment-prior-and-references",
+    "new": "e23-deployment-prior-and-references",
+    "expected_sha": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+    "observed_sha": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+    "old_absent": true,
+    "other_non_main_branch_heads_unchanged": true,
+    "remaining_codex_branch_names": 0,
+    "branches_after": 35
+  },
+  "workflow_evidence": {
+    "archive_verification": {
+      "run_id": 44341510524,
+      "url": "https://github.com/fallenplum/MAB/actions/runs/44341510524",
+      "conclusion": "success"
+    },
+    "e23_branch_rename": {
+      "run_id": 44341510600,
+      "url": "https://github.com/fallenplum/MAB/actions/runs/44341510600",
+      "conclusion": "success"
+    }
+  },
+  "integration_checks": {
+    "migration_mock_tests_passed": 22,
+    "new_original_files_hashed": 34,
+    "new_experiments_run_during_repository_update": 0
+  },
+  "reproduction": {
+    "e23_asset_entries_added": 20,
+    "added_assets_with_recorded_file_sha256": 11,
+    "direct_runtime_sources_still_missing": 4,
+    "full_training_and_generation_rerun": false
+  },
+  "cleanup": "This receipt commit removes the completed E23 rename workflow; the archive verification workflow remains."
+}
