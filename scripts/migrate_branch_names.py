@@ -96,8 +96,11 @@ def parse_manifest(value: object) -> tuple[Entry, ...]:
         raise MigrationError("REPOSITORY_NOT_ALLOWED")
     if value.get("operation") != "remove_codex_prefix_preserve_commit":
         raise MigrationError("OPERATION_NOT_ALLOWED")
+    expected_count = value.get("expected_count", EXPECTED_COUNT)
+    if type(expected_count) is not int or not 1 <= expected_count <= 100:
+        raise MigrationError("INVALID_EXPECTED_COUNT")
     rows = value.get("branches")
-    if not isinstance(rows, list) or len(rows) != EXPECTED_COUNT:
+    if not isinstance(rows, list) or len(rows) != expected_count:
         raise MigrationError("INVALID_BRANCH_COUNT")
     entries = []
     for row in rows:
@@ -376,7 +379,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
         mode = parser.add_mutually_exclusive_group()
         mode.add_argument("--apply", action="store_true", dest="apply",
-                          help="execute the reviewed 31-branch migration")
+                          help="execute the branch renames in the selected manifest")
         mode.add_argument("--dry-run", action="store_false", dest="apply",
                           help="read and validate only (default)")
         parser.set_defaults(apply=False)

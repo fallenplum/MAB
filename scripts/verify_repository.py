@@ -77,17 +77,19 @@ def verify() -> dict:
                 raise ValueError(f'Broken relative link in {file.relative_to(ROOT)}: {target}')
             relative_links += 1
 
-    migration = json.loads((ROOT / 'reproducibility/branch_migration.json').read_text(encoding='utf-8'))
+    from migrate_branch_names import load_manifest, MigrationError
+    migration_entries = []
+    try:
+        for path in sorted((ROOT / 'reproducibility').glob('branch_migration*.json')):
+            migration_entries.extend(load_manifest(path))
+    except MigrationError as error:
+        raise ValueError(f'Invalid branch migration manifest: {error.code}') from None
     old_names, new_names = set(), set()
-    for item in migration['branches']:
-        if not item['old'].startswith('codex/') or item['new'] != item['old'][6:] or \
-                not item['new'] or item['new'] == 'main' or \
-                not re.fullmatch('[0-9a-f]{40}', item['sha']):
-            raise ValueError('Invalid branch migration record')
-        if item['old'] in old_names or item['new'] in new_names:
+    for item in migration_entries:
+        if item.old in old_names or item.new in new_names:
             raise ValueError('Duplicate branch migration record')
-        old_names.add(item['old'])
-        new_names.add(item['new'])
+        old_names.add(item.old)
+        new_names.add(item.new)
 
     from build_paper_tables import main as check_tables
     if check_tables(['--check']) != 0:
@@ -105,7 +107,7 @@ def verify() -> dict:
         'python_sources_parsed_without_execution': len(python_paths),
         'json_files_parsed': len(json_paths),
         'relative_entry_links_verified': relative_links,
-        'branch_name_mappings_validated_offline': len(migration['branches']),
+        'branch_name_mappings_validated_offline': len(migration_entries),
         'missing_direct_generation_sources': missing_sources,
         'full_training_or_generation_reproduced': False,
         'private_asset_status': 'Not supplied or verified by this offline check; see docs/REPRODUCIBILITY.md',

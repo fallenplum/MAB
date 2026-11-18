@@ -1,6 +1,6 @@
 # 复现范围、依赖与私有工件
 
-本文件针对论文主线 E17–E22，审查基准为提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`。主线保留冻结源码、协议、脱敏结果和来源记录；较早实验的完整记录保存在历史研究分支。
+本文件针对论文主线 E17–E23。E17–E22 的审查基准为提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`；E23 补充审查基准为提交 `3958f9ceaac5b0b1de88bbd47d89ddd940833ff2`，具体见第 9 节。主线保留冻结源码、协议、脱敏结果和来源记录；较早实验的完整记录保存在历史研究分支。
 
 **公开结果核验、恢复私有缓存后重算、重新训练以及重新生成语言模型答案，是四种不同的复现工作。当前仓库可以提供公开证据核验入口；单独克隆仓库还不具备完整重新生成全部实验的条件。** 私有逐题数组、模型权重和原生输出未随 Git 提交，审查时还发现原执行链所需的四份冻结源码未出现在 E22 快照中。缺口及已记录的 SHA-256 列在 [private_artifacts.json](../reproducibility/private_artifacts.json)。
 
@@ -37,6 +37,7 @@ python scripts/check_private_artifacts.py --asset-root /path/to/restored/assets 
 | E20 / P2 | `routing_idea2/research/e20_p2_execution/P2_POINT_RESULTS.json`、`P2_FINAL_DIAGNOSTICS.json`、执行账本 |
 | E21 / P3 | `routing_idea2/research/e21_p3_external_mechanism/P3_INTERNAL_LISTNET_RESULTS.json`、`P3_EXTERNAL_DARS_RESULTS.json` |
 | E22 | `routing_idea2/research/e22_mechanism_specificity/RESULTS.json`、`SUMMARY.json`、`controls.csv`、`geometry.csv` |
+| E23 | `routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json`；准备阶段 `RESULTS.json`、`PROTOCOL.json` 与 `FILE_INDEX.json` 分别保留 |
 
 这些文件能够支持数字、结论和来源的交叉核对。只有脱敏汇总时，无法从零验证原始答案的判分，也无法恢复每题的训练或选队过程。
 
@@ -177,4 +178,58 @@ P3 外部实验使用 [DARS 固定 revision](https://huggingface.co/datasets/AIG
 可以报告：“论文主线的冻结源代码、协议、脱敏结果及公开核验入口已归档；私有工件的恢复路径、格式、已记录哈希和缺失源码已清单化。”
 
 在私有资产和缺失源码尚未恢复、完整链条尚未实际验证前，不应报告：“单独克隆仓库即可从零重现全部模型调用与论文结果。” 验证公开汇总与重新得到原始科学结果应分别记录。
+
+## 9. E23 部署规则与同题池参照补充
+
+E23 使用原 P2 的 2,400 道题、原 B/C 模型和原评分器。它在 P2 结果已曝光后增加参照策略，属于补充分析。E23 没有增加独立新题，也没有把 P2 改成新的未使用测试集。此次仓库维护只核对公开文件、代码依赖和已记录哈希，没有重新运行 E23。
+
+### 两份结果文件各自保留
+
+[RESULTS.json](../routing_idea2/research/e23_deployment_prior_and_references/RESULTS.json) 是补齐调用前的准备结果：四个控制头已拟合，十二份策略已冻结；原 B/C、训练先验及 raw-exact 六份策略已有完整评分，GlobalFixed、Ridge、Uniform 和三个 Matched 尚有缺失调用。
+
+[RESULTS_FINAL.json](../routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json) 是补齐后的最终结果：复用原 106,536 条聚合评分，新增 1,770 次成员生成及 4,263 次聚合，十二份策略均覆盖完整 2,400 题。两份结果的策略 SHA、原评分 SHA、四项原配对比较和部署差值分解一致。最终文件中的 `new_llm_calls=6033` 是该补齐阶段的总数；`new_llm_calls_during_finalization=0` 表示最后的评分汇总入口没有调用语言模型。两处字段记录的阶段不同。
+
+**最终性能表使用 `RESULTS_FINAL.json`。四个新增控制头的求解日志、原缓存缺口和拟合耗时仍从准备阶段 `RESULTS.json` 读取。** 不用最终文件覆盖准备文件，也不把准备协议中“尚未进行新物理调用”的说明当作完成阶段的状态。
+
+[FILE_INDEX.json](../routing_idea2/research/e23_deployment_prior_and_references/FILE_INDEX.json) 列出 33 份其他文件，加上索引自身共 34 份。此次逐项核对的文件长度、SHA-256 与 Git blob SHA-1 均匹配。索引中的原分支名称和 E22 parent commit 保留为原记录。
+
+### 数值设置与依赖
+
+E23 新拟合的是四个全 train600 TSPO 控制头，不是 E22 五折 OOF 模型。它导入 E22 的 `row_weighted.fit` 与 `run_audit.controls`，使用 `final600` 盐值、三个已定种子、原任务/子任务与特征范数分组。四个头使用 `lambda=0.003472222222222222`、600 行及 `1/600` 分母，包含截距的全部系数受 L2 惩罚，行权重不重新归一化。保存的日志记录 Clarabel 0.11.1、三个主容差均为 `1e-10`、最多 1,000 次迭代和单线程。
+
+B/C 从 E20 原模型恢复，并要求逐头 Fortran-order 矩阵乘所得分数与原冻结分数完全一致。Ridge 从 E17 `FULL600_MODELS.npz` 的第 0 个头恢复，使用该文件自己的 PCA/scaler，原 alpha 为 `333.3333333333333`。E23 没有重新选择这些正则参数，也没有提供各方法相同调参机会后的最优性能比较。
+
+数值运行仍需原 Python 3.11、NumPy、SciPy、scikit-learn 和 Clarabel 环境。E23 没有新增一份完整包版本锁；不能仅从这个阶段的短依赖说明恢复全部数值与推理环境。物理生成沿用原 P2 的模型、tokenizer、NF4 加载、生成参数和服务器运行记录。
+
+### 新增私有文件清单
+
+[private_artifacts.json](../reproducibility/private_artifacts.json) 追加了 20 项 E23 恢复条目；原 25 项资产的路径、身份和哈希保持不变。主要分为以下几组：
+
+| 用途 | 原文件或目录 | 哈希来源 |
+|---|---|---|
+| 冻结参照策略 | E17 `private/confirmation_input_only/FULL600_MODELS.npz`、P2 `private/P2_PREDICTIONS_FROZEN.npz` | `analyze_references.py` 固定 SHA |
+| 复用原 P2 评分 | P2 `private/final_evaluation_v1/PAID_SUPPORT_SCORES.jsonl`，原效用数组和评分/答案账户记录 | `RESULTS.json`、`RESULTS_FINAL.json` 和原 P2 收据 |
+| 固定策略与区域 | 原 E23 `--root` 下 `private/POLICIES_FROZEN.npz`、`REGIONS_FROZEN.npz`、`FREEZE.json`、`MISSING_KEYS.json` | 公开策略 SHA 和私有 `FREEZE.json` |
+| 补齐执行身份 | 原远端根下 `inputs/EXECUTION_SCOPE.json`、`inputs/AUTHORIZATION.json`、`EXECUTION_PLAN.json` | `RESULTS_FINAL.json` 与 `EXECUTION_AUTHORIZATION.json` |
+| 原生输出 | 原远端 `exports/OUTPUTS_FROZEN.json` 及两份 `*_NATIVE_RECEIPTS.jsonl` | 公开冻结收据 SHA；逐个 JSONL 的 SHA 和长度在该私有收据中 |
+| 复用新增评分 | 原 `--output-root` 下 `SUPPLEMENT_PAID_SUPPORT_SCORES.jsonl`、`FINAL_POLICY_UTILITIES_PRIVATE.npz` | 公开新增评分 SHA；效用数组需原私有目录收据 |
+| 核对实际执行 | 原 P2 registry、成功记录和任务状态，E23 原计划、分片/迁移收据、journal、导出证据 | 原记录中的路径和哈希引用 |
+
+原 E23 分析根与评分输出根由参数指定，公开文件没有给出统一的资产根内位置。清单对此使用 `asset_relative_path: null` 并记录相对于运行根的文件名，不能把它们当作已经恢复的文件。JSON 文件的原始字节 SHA 与规范化 JSON 摘要也分别记录，不能互换。公开 `EXECUTION_AUTHORIZATION.json` 是摘要，不是私有 `AUTHORIZATION.json` 的替代文件。
+
+私有资产检查脚本仍只自动核对已知具体路径的单文件 SHA。调用者路径、目录、模式条目及没有公开单文件 SHA 的项目仍需按原收据核对，不能把出现同名目录当作恢复成功。
+
+### 原执行路径仍需恢复
+
+`analyze_references.py` 与 `package_execution.py` 直接固定资产根为 `E:\语言模型组合路由`，不读取 `MAB_ASSET_ROOT`。打包程序另外要求原代码工作区中的 `.e20_p2_cpu_runtime/OUTPUTS_FROZEN.json`。服务器配置固定读取 `/data2/chendong/e20_p2_execution`，并要求 E23 写根等于 `/data2/chendong/e23_reference_completion`；启动程序固定使用 `/data1/data2/chendong/routing/envs/inference_311_matched_v2/bin/python`。这些都是原执行路径，不能把参数占位符理解为任意机器可直接运行。
+
+E23 的 `supplement_adapter.py`、`supplement_worker.py` 分别校验原 P2 adapter、member worker 和 aggregation worker 的源码 SHA。这三份主线文件的字节均与所需 SHA 一致。其后仍调用原 P2 执行和评分接口，因此第 6 节列出的四份缺失源码仍是缺口，E23 没有补回它们。
+
+此外，最终入口通过 P2 `score_paid_outputs.load_frozen_apis()` 读取 E18 reference、projection 和 scoring 模块；Git 把这些源码保存在 E18 preparation 的 `code/` 中，原入口却要求阶段根目录平铺。`collect_native_exports.load_auditor()` 要求 `e18_confirmatory_execution/audit_closed_native_archives.py`，原件保存在该阶段 `final_sources/code/e18_confirmatory_execution/` 下。需要按冻结源版本恢复原布局，不能删除哈希检查或用近似代码替代。
+
+### 可核对与可重算的范围
+
+公开结果足以核对最终表格、任务/seed/子任务分解、成本和已记录的来源哈希；无法只凭公开 JSON 检查原生答案的判分。恢复冻结策略及原、新逐动作评分后，可以按原规则重算效用和纠错破坏；只有 `FINAL_POLICY_UTILITIES_PRIVATE.npz` 时，能检查策略准确率，不能恢复全部动作耦合下的纠错破坏计数。
+
+[原 REPRODUCE.md](../routing_idea2/research/e23_deployment_prior_and_references/REPRODUCE.md) 记录了实际阶段顺序。`analyze_references.py --phase freeze` 会拟合四个控制头并新建私有工件；`--phase analyze` 读取原 P2 逐动作评分；`finalize_results.py` 会验证原生输出、再次解码 840 道原 P2 题的已授权参考答案，并调用原评分器评分 4,263 个新增聚合输出。**`finalize_results.py` 不是只读取公开汇总的表格整理程序。** 当前维护没有执行这些入口，也不读取 sealed200 答案。
 

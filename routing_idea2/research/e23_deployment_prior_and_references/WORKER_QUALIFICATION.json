@@ -1,0 +1,35 @@
+{
+  "schema": "e23_supplement_worker_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "member_generation_complete": true,
+    "member_generation_one_backend": true,
+    "member_generation_exact_two_calls": true,
+    "member_generation_resume_no_backend_calls": true,
+    "member_generation_native_journal_pairing": true,
+    "aggregation_complete": true,
+    "aggregation_one_backend": true,
+    "aggregation_exact_two_calls": true,
+    "aggregation_wait_then_resume": true,
+    "aggregation_one_tokenizer": true,
+    "aggregation_validated_dependency_cached": true,
+    "aggregation_late_member_waited": true,
+    "aggregation_resume_no_backend_calls": true,
+    "aggregation_native_journal_pairing": true,
+    "stop_commits_current_call": true,
+    "cached_or_unapproved_key_rejected_before_backend": true,
+    "partial_journal_refused": true,
+    "member_generation_original_source_retained": true,
+    "aggregation_original_source_retained": true
+  },
+  "checks_passed": 19,
+  "software_test_only": true,
+  "worker_sha256": "6ddbb8c4e795554630c7c5ce8760296344bbd38343954c529adc1e36b3f118e2",
+  "original_worker_sha256": {
+    "member_generation": "58839460471e33536cd2b00274ede029b98355d355df2919b8bf3790f16b6c81",
+    "aggregation": "9b85c1bb42864c8d5845b2d60cab0b6caf59f820564f12b84168d28fa2610a70"
+  },
+  "original_sources_modified": 0,
+  "new_llm_calls": 0,
+  "gold_values_read": 0
+}

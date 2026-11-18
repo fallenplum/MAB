@@ -1,0 +1,32 @@
+{
+  "schema": "e23_member_move_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "stop_signals_only_exact_original_pid_once": true,
+    "repeated_stop_reuses_request_and_verifies_safe_exit": true,
+    "active_old_actor_blocks_resume": true,
+    "wrong_gpu_blocks_resume": true,
+    "unapproved_shard_blocks_migration": true,
+    "failure_summary_blocks_resume": true,
+    "resume_launches_once_with_same_manifest_and_new_gpu": true,
+    "resume_receipt_top_level_control_visible_to_monitor": true,
+    "same_journal_restores_exact_success_without_duplicate_call": true,
+    "safe_checkpoint_preserves_original_pid_and_success_digest": true,
+    "duplicate_resume_rejected": true,
+    "stop_after_resume_rejected": true,
+    "parent_scope_approval_manifest_tasks_unchanged": true,
+    "dispatch_validation_still_accepts_same_journal_continuation": true,
+    "three_gpu_admission_observations": true,
+    "insufficient_memory_blocks_admission": true
+  },
+  "checks_passed": 16,
+  "source_sha256": {
+    "move_member_dispatch_v2.py": "5912f3a5c98906c8e8ba21a896abbbe6bfb7f099a36a824dad4d6ce56639d725",
+    "qualify_member_move_v2.py": "609fde866b6e9527159b76374c378ca5cc64214e41ea1abcdf1ec2c4eaa715c8"
+  },
+  "physical_llm_calls": 0,
+  "gold_reads": 0,
+  "production_processes_signaled": 0,
+  "production_processes_started": 0,
+  "synthetic_only": true
+}

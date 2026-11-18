@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "fallenplum/MAB",
+  "recorded_on": "2026-11-18",
+  "operation": "remove_codex_prefix_preserve_commit",
+  "expected_count": 1,
+  "main_before": "9acf114c59fa6324f65dcce7d7d7a9500e109426",
+  "paper_source_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+  "branches": [
+    {
+      "old": "codex/e23-deployment-prior-and-references",
+      "new": "e23-deployment-prior-and-references",
+      "sha": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2"
+    }
+  ]
+}

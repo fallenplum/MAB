@@ -402,6 +402,295 @@
       "format": "Original audited Python mapping helper plus per-model mapping JSON; does not replace the model fingerprints",
       "expected_sha256": "4ea0b3f213e4abe70a388e5f3d86cfe92b86eabb1db4f550ea0c57758febb845",
       "evidence": "routing_idea2/research/e20_p2_execution/p2_execution_adapter.py: MAPPING_HELPER_SHA/mapped_backend_factory"
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_e17_full600_ridge",
+      "asset_relative_path": "research/e17_supervision_distortion_audit/private/confirmation_input_only/FULL600_MODELS.npz",
+      "required_for": [
+        "E23_reference_policy_freeze"
+      ],
+      "format": "NPZ; weights shape (3,17,20); E23 restores head 0 together with this checkpoint's own pca_mean, pca_components, scaler_mean and scaler_scale. Frozen mean-target Ridge alpha=333.3333333333333.",
+      "expected_sha256": "aabca0b20967f8711d6a700dea301e490afb71de56b73c6d9a65f9db5fb0f360",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py: RIDGE/RIDGE_SHA/freeze; E17 CONFIRMATION_INPUT_ONLY_CONFIG_FROZEN.json"
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_predictions",
+      "asset_relative_path": "research/e20_p2_execution/private/P2_PREDICTIONS_FROZEN.npz",
+      "required_for": [
+        "E23_reference_policy_freeze"
+      ],
+      "format": "NPZ; original scores, probabilities, raw_exact_probabilities, question_ids, task_labels and subtask_labels for two policies x 2400 questions x 20 actions.",
+      "expected_sha256": "b790643119b6d85b370d34b6547e89e1316c26b26ad0d4a005e047babc521c75",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py: PREDICTION_SHA/freeze",
+      "identity_note": "Adds a recorded single-file hash within the existing p2_probabilities_and_execution inventory group; does not replace its original identity."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_paid_support_scores",
+      "asset_relative_path": "research/e20_p2_execution/private/final_evaluation_v1/PAID_SUPPORT_SCORES.jsonl",
+      "required_for": [
+        "E23_prepared_cache_projection",
+        "E23_final_score_merge"
+      ],
+      "format": "JSONL; exactly 106536 original P2 unique aggregate keys, binary scores and original scorer version. This file contains private per-output outcomes.",
+      "expected_sha256": "cbdd17cd66431619911d06483a0d07beaf15ee4e45dc517224f7687280ca241f",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS.json: existing_scores_sha256; RESULTS_FINAL.json: original_scores_sha256; finalize_results.py: merge_scores"
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_runtime_scope",
+      "asset_relative_path": "research/e20_p2_execution/private/runtime_launch_v2/inputs/EXECUTION_SCOPE_RUNTIME.json",
+      "required_for": [
+        "E23_prepared_cache_projection",
+        "E23_final_scope_check"
+      ],
+      "format": "JSON; original P2 input identities, 41289 required member keys, 106536 required aggregate keys and frozen bindings.",
+      "expected_sha256": "835dc9fa321ff3b20c95d5a9410ce18e79084e01453e66a94b6e3501e9ca0d06",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py: analyze; finalize_results.py: check_scope; E20 P2 collect_native_exports.py: SCOPE_FILE_SHA",
+      "expected_canonical_sha256": "b355581aaaab1a581e76dab35107a897948da7b4086a1d9e2a33be4a3e1cd1b9",
+      "hash_note": "expected_sha256 is the raw-file byte hash. expected_canonical_sha256 is the canonical JSON identity used by the original adapter; they are not interchangeable."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_reference_locators",
+      "asset_relative_path": "research/e20_p2_execution/private/P2_REFERENCE_LOCATORS_FROZEN.json",
+      "required_for": [
+        "E23_native_output_rescoring"
+      ],
+      "format": "JSON; original P2 reference_version, source paths and digests, approved question row locators and exclusions. Recover only the original authorized P2 source records.",
+      "expected_sha256": "b24b870647fcd70c0b9479375e2eed2317e76f3dc963a21c830f231e9ae18060",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py: score_new; E20 P2 score_paid_outputs.py: REFERENCE_PLAN_SHA",
+      "companion_requirement": "Restore the source files and their recorded hashes identified by this original private plan; this audit does not open protected answer payloads."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_runtime_approval",
+      "asset_relative_path": "research/e20_p2_execution/private/runtime_launch_v2/inputs/AUTHORIZATION_v2.json",
+      "required_for": [
+        "E23_native_output_rescoring"
+      ],
+      "format": "Original P2 approval; score_new checks both read_reference and score_outputs operations against the original parent scope.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py: score_new",
+      "hash_location": "Original P2 freeze/approval receipts; no standalone SHA was newly inferred here."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_p2_final_evaluation_support",
+      "asset_relative_path": "research/e20_p2_execution/private/final_evaluation_v1/",
+      "required_for": [
+        "E23_prepared_cache_projection",
+        "E23_final_result_checks"
+      ],
+      "format": "Original P2 utility arrays and accounting receipts; valid_mask must be all true and original B/C utilities must agree with E23 projection within the fixed 1e-12 tolerance.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py: analyze; finalize_results.py: score_new/run",
+      "required_known_names": [
+        "P2_POLICY_UTILITIES_PRIVATE.npz",
+        "P2_POINT_RESULTS.json",
+        "REFERENCE_AND_SCORING_COSTS.json"
+      ],
+      "hash_location": "Recover original P2 freeze and scoring receipts. Directory existence alone is not verification."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_parent_cpu_cache_receipt",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_input_bundle_recreation"
+      ],
+      "format": "Original P2 OUTPUTS_FROZEN.json receipt required by E23 package_execution.py to bind cache_evidence_sha256.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/package_execution.py: package",
+      "source_relative_location": "CODE.parents[1] / .e20_p2_cpu_runtime / OUTPUTS_FROZEN.json",
+      "location_note": "This is relative to the original code workspace, not to the private asset root. It is not supplied by the E23 Git snapshot.",
+      "hash_location": "The original private E23 ORIGIN.json and scope bindings retain its raw-file SHA."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_parent_native_registry_and_owners",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_supplement_execution_recovery"
+      ],
+      "format": "Original P2 manifest registry, common references, member SUCCESS_COMMITTED fences, LAST_TASK_RECEIPT.json and records.jsonl; 7800 existing member dependencies are reused by the supplementary aggregation union.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/configure_execution.py: load_parent/cached_dependencies",
+      "original_recorded_root": "/data2/chendong/e20_p2_execution",
+      "required_known_names": [
+        "control/manifest_registry_v3.jsonl"
+      ],
+      "location_note": "The registry points to the original owned output root and exact hash-bound files. Recover the complete referenced state, not an empty directory or regenerated registry."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_frozen_policies",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_cached_projection",
+        "E23_native_output_rescoring",
+        "E23_original_policy_identity"
+      ],
+      "format": "NPZ; names, probabilities (12,2400,20), question_ids, task_labels, subtask_labels, train-action integer success counts, four control_names and control_weights.",
+      "expected_sha256": "b4fd1caa549e79c14e58a23bc7532ab753ae07f091800b8863c837094fdcbd5e",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json: policy_sha256; analyze_references.py: freeze; finalize_results.py: frozen_policies",
+      "relative_to_run_root": "private/POLICIES_FROZEN.npz",
+      "location_note": "The original analysis run root is caller-provided by --root; no fixed asset-relative directory is asserted."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_region_freeze_and_missing_keys",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_cached_projection",
+        "E23_final_scope_check",
+        "E23_input_bundle_recreation"
+      ],
+      "format": "REGIONS_FROZEN.npz contains boolean b_unique and strict_switched arrays of length 2400. FREEZE.json binds source, policy and region hashes, matching and four fit logs. MISSING_KEYS.json contains the deduplicated missing union.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py: freeze/analyze; finalize_results.py: frozen_policies/check_scope",
+      "relative_to_run_root": "private/",
+      "required_known_names": [
+        "REGIONS_FROZEN.npz",
+        "FREEZE.json",
+        "MISSING_KEYS.json"
+      ],
+      "hash_location": "REGIONS_FROZEN.npz hash is recorded in original private FREEZE.json; other file bindings are retained in original execution inputs and scope."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_execution_scope",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_output_rescoring",
+        "E23_supplement_execution_recovery"
+      ],
+      "format": "JSON; 840 original P2 input identities, twelve frozen policy probability rows, exact 1770 member and 4263 aggregate execution keys, parent/policy/protocol/cache bindings.",
+      "expected_sha256": "c171444e7d1e598fc98e890340888d29a82a559c0f4949fbc887f6bd37d1926d",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json: scope_sha256/scope_canonical_sha256; configure_execution.py: prepare",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/inputs/EXECUTION_SCOPE.json",
+      "relative_to_remote_root": "inputs/EXECUTION_SCOPE.json",
+      "expected_canonical_sha256": "ba74a753ba14f5e6df5d7473e8bda3aa6463fb1ba1ce399756369684c68c6595",
+      "hash_note": "Raw-file SHA and canonical JSON digest are separate identities."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_execution_approval",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_output_rescoring",
+        "E23_supplement_execution_recovery"
+      ],
+      "format": "JSON; original E23 hash-bound approval, exact call limits and owned output root; this is distinct from the public EXECUTION_AUTHORIZATION.json summary.",
+      "expected_sha256": "7ab6fa9da121d9f78a7c20d3c4897eea831121865402002c2c42c2113e283481",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json: approval_sha256; configure_execution.py: prepare",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/inputs/AUTHORIZATION.json",
+      "relative_to_remote_root": "inputs/AUTHORIZATION.json"
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_execution_plan",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_export_reverification",
+        "E23_supplement_execution_recovery"
+      ],
+      "format": "JSON; original manifest refs, runtime and source bindings; keep original plan and separately recorded dispatch changes.",
+      "expected_sha256": "863d6a69de67456abc906f218b39292e1baae6a696267a3f3d1d7677b39fb19c",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/EXECUTION_AUTHORIZATION.json: execution_plan_sha256; configure_execution.py: prepare",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/EXECUTION_PLAN.json",
+      "relative_to_remote_root": "EXECUTION_PLAN.json",
+      "companion_requirement": "Restore hash-bound inputs, MEMBER_DEPENDENCIES.json, original manifests and code layout named by this plan."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_outputs_frozen",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_output_rescoring",
+        "E23_native_export_reverification"
+      ],
+      "format": "JSON; schema e23_supplement_outputs_frozen_v1; ALL_REQUIRED_SUPPLEMENT_OUTPUTS_FROZEN; exact count, byte length and hash of each native receipt export.",
+      "expected_sha256": "8b09d5d9f9d17634ba1a81146bd12be8144991ddfd1c67e2397c973a433482bd",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json: outputs_frozen_sha256; execution_monitor.py: export_final; finalize_results.py: check_export",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/exports/OUTPUTS_FROZEN.json",
+      "relative_to_remote_root": "exports/OUTPUTS_FROZEN.json"
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_member_native_receipts",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_output_rescoring",
+        "E23_native_export_reverification"
+      ],
+      "format": "JSONL; exactly 1770 complete original p2_execution_task_receipt_v1 records with E23 cohort, native text, task and attempt identity, model identity, actual token use and original output hashes.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/execution_monitor.py: FILES/export_final; finalize_results.py: check_export/verify_receipts",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/exports/MEMBER_NATIVE_RECEIPTS.jsonl",
+      "relative_to_remote_root": "exports/MEMBER_NATIVE_RECEIPTS.jsonl",
+      "hash_location": "Original exports/OUTPUTS_FROZEN.json: records.member_generation.sha256 and bytes; these private export hashes are not stated in public RESULTS_FINAL.json."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_aggregate_native_receipts",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_output_rescoring",
+        "E23_native_export_reverification"
+      ],
+      "format": "JSONL; exactly 4263 complete original p2_execution_task_receipt_v1 records with E23 cohort, native text, task and attempt identity, model identity, actual token use and original output hashes.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/execution_monitor.py: FILES/export_final; finalize_results.py: check_export/verify_receipts",
+      "original_recorded_path": "/data2/chendong/e23_reference_completion/exports/AGGREGATION_NATIVE_RECEIPTS.jsonl",
+      "relative_to_remote_root": "exports/AGGREGATION_NATIVE_RECEIPTS.jsonl",
+      "hash_location": "Original exports/OUTPUTS_FROZEN.json: records.aggregation.sha256 and bytes; these private export hashes are not stated in public RESULTS_FINAL.json."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_supplement_paid_support_scores",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_cached_final_projection"
+      ],
+      "format": "JSONL; 4263 new verified aggregate scores with original safe_exact_v2_0_terminal_final_heading_fix scorer; merges with 106536 old records without filling unexecuted actions.",
+      "expected_sha256": "fbaf3f33c40aee7694d92b330fb97dd08e6d4bf244742cffde4b40cf2ed2f83b",
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json: new_scores_sha256; finalize_results.py: score_new/merge_scores",
+      "relative_to_scoring_output_root": "SUPPLEMENT_PAID_SUPPORT_SCORES.jsonl",
+      "location_note": "The original --output-root is caller-provided. Reusing the frozen score file differs from running finalize_results.py, which performs scoring again."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_final_private_utilities",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_cached_final_projection"
+      ],
+      "format": "NPZ; names, utilities (12,3,2400), task_labels and subtask_labels. The saved utility packet supports accuracy checks; paired correction/damage counts additionally require probabilities and the old/new per-action score files.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py: run/summarize",
+      "relative_to_scoring_output_root": "FINAL_POLICY_UTILITIES_PRIVATE.npz",
+      "hash_location": "Restore original private scoring-directory receipts; public RESULTS_FINAL.json does not state this file's raw SHA."
+    },
+    {
+      "availability": "not_in_public_git_or_not_materialized",
+      "id": "e23_dispatch_and_owner_evidence",
+      "asset_relative_path": null,
+      "required_for": [
+        "E23_native_export_reverification",
+        "E23_supplement_execution_recovery"
+      ],
+      "format": "Original dispatch, safe-stop and GPU-move receipts, frozen task manifests, native ownership fences and success journals. These support the completed execution accounting and are not replaced by public synthetic qualification reports.",
+      "expected_sha256": null,
+      "evidence": "routing_idea2/research/e23_deployment_prior_and_references/prepare_member_dispatch_v2.py; move_member_dispatch_v2.py; execution_monitor_v2.py",
+      "original_recorded_root": "/data2/chendong/e23_reference_completion",
+      "required_known_names": [
+        "control/member4_dispatch_v2/DISPATCH_V2.json",
+        "exports/DISPATCH_V2_EXPORT_EVIDENCE.json"
+      ],
+      "hash_location": "Original DISPATCH_V2, execution-plan references, start/resume receipts and export evidence; exact paths of per-worker journals are taken from those receipts."
     }
   ],
   "external_dars": {
@@ -481,5 +770,78 @@
     "routing_idea2/research/e18_1_statistics_and_mechanisms/analyze_e18_1.py",
     "routing_idea2/research/e19_symmetric_tie_constraint/analyze_e19.py"
   ],
-  "source_recovery_audit": "reproducibility/source_recovery_audit.json"
+  "source_recovery_audit": "reproducibility/source_recovery_audit.json",
+  "audit_addenda": [
+    {
+      "stage": "E23",
+      "source_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+      "source_directory": "routing_idea2/research/e23_deployment_prior_and_references",
+      "public_index_entries_verified": 33,
+      "public_files_including_index": 34,
+      "scope": "Static source and public-receipt review only; existing E17-E22 artifact identities remain unchanged. No private outcomes, generation, training or rescoring were executed.",
+      "prepared_results": "RESULTS.json",
+      "completed_results": "RESULTS_FINAL.json",
+      "private_artifact_ids_added": [
+        "e23_e17_full600_ridge",
+        "e23_p2_predictions",
+        "e23_p2_paid_support_scores",
+        "e23_p2_runtime_scope",
+        "e23_p2_reference_locators",
+        "e23_p2_runtime_approval",
+        "e23_p2_final_evaluation_support",
+        "e23_parent_cpu_cache_receipt",
+        "e23_parent_native_registry_and_owners",
+        "e23_frozen_policies",
+        "e23_region_freeze_and_missing_keys",
+        "e23_execution_scope",
+        "e23_execution_approval",
+        "e23_execution_plan",
+        "e23_outputs_frozen",
+        "e23_member_native_receipts",
+        "e23_aggregate_native_receipts",
+        "e23_supplement_paid_support_scores",
+        "e23_final_private_utilities",
+        "e23_dispatch_and_owner_evidence"
+      ],
+      "unchanged_missing_source_paths": [
+        "routing_idea2/src/budget_router_v2/scoring.py",
+        "routing_idea2/scripts/v2/stage1_review_common.py",
+        "routing_idea2/scripts/v2/typed_aggregation_execution.py",
+        "routing_idea2/scripts/v2/typed_operator_contract.py"
+      ],
+      "missing_source_note": "None of the four originally missing runtime sources is supplied among the E23 additions; E23 still delegates to the original P2 execution/scoring chain."
+    }
+  ],
+  "e23_environment_and_paths": {
+    "numerical": "Python 3.11; the four new TSPO control heads use E22 row_weighted.fit, SciPy, NumPy and Clarabel 0.11.1. The E23 addition does not include a new complete pip lock; preserve the restored numerical environment and original arrays.",
+    "solver_settings": {
+      "tol_gap_abs": 1e-10,
+      "tol_gap_rel": 1e-10,
+      "tol_feas": 1e-10,
+      "max_iter": 1000,
+      "max_threads": 1,
+      "verbose": false
+    },
+    "regularization": 0.003472222222222222,
+    "normalization": "600 original training rows and 1/600 denominator; all coefficients including intercept penalized; masks never renormalized.",
+    "prediction": "B/C exact reconstruction uses the original feature transform and per-head Fortran-order weights; Ridge uses its own preprocessing and contiguous head0 weights.",
+    "asset_root": "E:\\语言模型组合路由",
+    "asset_root_environment_override": false,
+    "remote_parent_root": "/data2/chendong/e20_p2_execution",
+    "remote_supplement_root": "/data2/chendong/e23_reference_completion",
+    "inference_python": "/data1/data2/chendong/routing/envs/inference_311_matched_v2/bin/python",
+    "inference_contract": "Original P2 model/tokenizer snapshots, physical path mapping, NF4 loading, generation/scorer identity and original runtime receipts are required; E23 public files do not constitute a separate full environment lock.",
+    "layout_dependencies": [
+      {
+        "expected": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/e18_reference_adapter.py",
+        "archived": "routing_idea2/research/e18_mechanism_and_confirmation_preparation/code/e18_reference_adapter.py",
+        "required_sha256": "8848aa235d98e11005a33ff969274dc0309d02228297f4242f207663e57178ea"
+      },
+      {
+        "expected": "routing_idea2/research/e18_confirmatory_execution/audit_closed_native_archives.py",
+        "archived": "routing_idea2/research/e18_confirmatory_execution/final_sources/code/e18_confirmatory_execution/audit_closed_native_archives.py"
+      }
+    ],
+    "path_note": "The preserved source paths are historical; explicit isolated layout restoration is required. Do not rewrite frozen sources or receipts to make hashes pass."
+  }
 }

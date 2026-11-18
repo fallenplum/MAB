@@ -2,21 +2,21 @@
 
 ## 当前主线与历史记录
 
-MAB 起初研究有限评测预算下的模型组合路由，随后依次检查聚合协议、预测器、主动反馈、表征、监督平滑和损失结构。当前 E17–E22 聚焦经验并列监督通过共享参数影响路由决策的机制，以及这种变化的质量边界。
+MAB 起初研究有限评测预算下的模型组合路由，随后依次检查聚合协议、预测器、主动反馈、表征、监督平滑和损失结构。当前 E17–E23 聚焦经验并列监督怎样通过共享参数影响路由决策，以及训练约束和部署规则怎样共同影响答案质量。
 
-本页说明各阶段为何保留、哪些结论已经被后续结果补充。历史成功、失败和停止决定均保留其当时的数据与协议身份。早期报告中的“下一步”“尚未完成”只描述写作当时的状态，不能据此判断当前仓库。
+本页记录研究方向怎样随证据改变。历史成功、失败和停止决定均保留其当时的数据与协议身份，早期报告中的进度描述按各自写作时间解读。
 
-以下仓库链接全部固定到提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`，不依赖实验分支名称。后续分支重命名不改变这些来源链接。当前论文允许使用的主张见 [主张与证据](../paper/CLAIMS_AND_EVIDENCE.md)。
+E1–E22 的来源链接固定到提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`，E23 固定到 `3958f9ceaac5b0b1de88bbd47d89ddd940833ff2`。固定提交链接随分支更名保持有效。当前论文结论见 [主张与证据](../paper/CLAIMS_AND_EVIDENCE.md)。
 
 ## 三份项目来源材料
 
-以下为项目提供的历史来源材料，原件不因这次仓库整理新增到仓库中。本节仅记录其题名、日期、角色和内容边界，不提供不存在的仓库附件链接。
+以下三份原件保留在项目来源中。本节记录其题名、日期、研究内容及与当前论文的关系。
 
 | 材料 | 日期与身份 | 研究内容 | 与当前论文的关系 |
 |---|---|---|---|
 | 《有限评测预算下的语言模型组合路由》 | 文内日期 2026-10-26；研究方案 | 冻结模型池，按问题选集合，决策相关反馈采集与完整成本约束 | 提供最初问题定义及协议动机；文中的拟议实验不能当作已完成结果 |
 | 《图结构演化下的多小模型协同推理》 | 文内日期 2026-10-26；另一研究方案 | 固定节点与消息协议，研究图变化后的边信用陈旧、复检及恢复 | 动作空间和执行依赖不同；没有并入当前集合路由的已完成贡献 |
-| *From Hindsight Oracles to Reliable Ensemble Routing* | 项目英文 PDF；文件生成于 2026-11-08；29 页旧稿 | 输入问题路由的 oracle 差距、配对切换认证与双预算理论 | 记录早期结果和拟议理论，不代表 E17–E22；其历史数值与后来新题结果分开保留 |
+| *From Hindsight Oracles to Reliable Ensemble Routing* | 项目英文 PDF；文件生成于 2026-11-08；29 页旧稿 | 输入问题路由的 oracle 差距、配对切换认证与双预算理论 | 记录早期结果和拟议理论，为 E17–E23 提供历史背景；数值按原开发队列保留 |
 
 英文旧稿对应文件 SHA-256 为 `b2c9c7f9bf09a3183f4907eb7daedd3a7537dc9f6460f62ccfc246e525bb9e99`，与 [E5 摘要登记](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e5_paired_gain_validation/EXPERIMENT_SUMMARY.md)一致。旧稿主要实验使用 600 训练题与 200 开发题；当时提出的认证和预算采集程序尚未验证。E5 后续对其中若干理论与诊断进行了对应实验，因此“旧稿未做”不能延伸为“仓库从未做”。
 
@@ -39,7 +39,7 @@ MAB 起初研究有限评测预算下的模型组合路由，随后依次检查�
 
 | 阶段 | 主要问题与完成范围 | 历史定位 | 固定来源 |
 |---|---|---|---|
-| E8 | Ridge、竞争加权回归、SPO+ 等决策目标与排序诊断 | SPO+ 出现正向开发点值，但主要误差改善集中于零差值，尚未形成可推广质量贡献 | [E8 摘要](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_SUMMARY.md) · [完整结果](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_decision_focused_combination_learning/E8_COMPLETE_RESULTS.json) |
+| E8 | Ridge、竞争加权回归、SPO+ 等决策目标与排序诊断 | SPO+ 在开发集出现准确率提升，但主要误差改善集中于零差值，尚未形成可推广质量贡献 | [E8 摘要](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_decision_focused_combination_learning/EXPERIMENT_SUMMARY.md) · [完整结果](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_decision_focused_combination_learning/E8_COMPLETE_RESULTS.json) |
 | E8 M4 审计 | 组合集中、冠军规则、题目内容与稳定非零差值 | 原 M4 在 467/600 题选组合 0；只更换训练冠军并列规则便有 594/600 题动作改变，成为 E17 的直接动机 | [M4 审计摘要](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_m4_mechanism_audit/EXPERIMENT_SUMMARY.md) · [科学复核](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e8_m4_mechanism_audit/SCIENTIFIC_FINAL_REVIEW.md) |
 | E9 | 经验标签/后验均值与 MSE/CSCE 的受控比较 | 当前冻结 MiniLM 线性头下未得到一致质量优势；标签估计、损失和真实服务分别评估 | [E9 摘要](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e9_consistent_cost_sensitive_learning/EXPERIMENT_SUMMARY.md) · [完整结果](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e9_consistent_cost_sensitive_learning/E9_COMPLETE_RESULTS.json) |
 | E10 | MiniLM 输入覆盖、Qwen3 完整题目 prefill 表征及组内匹配 | R_full 86.3333% 对 A 85.2778% 有正点差，但内容控制更强；此处“完整输入”指问题文本覆盖，不是读取候选答案后路由 | [E10 摘要](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e10_input_prefill_matching_audit/EXPERIMENT_SUMMARY.md) · [覆盖审计](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/research/e10_input_prefill_matching_audit/INPUT_COVERAGE_AUDIT.md) |
@@ -52,16 +52,19 @@ MAB 起初研究有限评测预算下的模型组合路由，随后依次检查�
 
 早期记录还包含 [e9_bayes_gate 报告](https://github.com/fallenplum/MAB/blob/8f490a06ebe1153be2fcbeb42ad3944d63075b7d/routing_idea2/results/e9_bayes_gate/07_scientific_report_zh.md)。它与 `research/e9_consistent_cost_sensitive_learning` 是不同路径的历史工件，不能仅凭同名 E9 合并结果。
 
-## E17–E22 形成当前机制主线
+## E17–E23 形成当前机制主线
 
 1. **E17：分开监督方向、运算顺序与真实服务。** 重编号干预表明任意经验冠军规则可塑造真实组合选择；均匀冠军与 Ridge 的稳定性提供控制。
-2. **E18：保留独立质量负结果。** 2,998 道可评分新题上 TSPO_uniform 对 SPO_coordinate 的点差接近零，未因机制现象存在就宣称质量受益。
+2. **E18：独立评价冠军方向干预。** 2,998 道可评分新题上 TSPO_uniform 对 SPO_coordinate 的准确率差为 +0.011749 个百分点，纠错 377、破坏 376。
 3. **E19：从“偏向哪个动作”转到“对称项是否仍施加约束”。** 在固定共享预测器和正则下只改变全并列行权重；出现 150 道严格换队，理论构造给出跨输入传播可能性。
 4. **E20 / P2：独立确认完整冻结策略。** 2,400 道新题上 C−B 为 +1.326 个百分点；raw-exact 敏感性为 +0.639，主要收益来自 BBH。
 5. **E21 / P3：跨损失和外部池限定。** ListNet 及 DARS 缓存上的单模型选择仍有严格动作变化，但质量差没有统一方向。外部固定基线是按任务选择，不是跨任务单一模型。
-6. **E22：匹配控制与参数几何。** 总权重控制不能解释所有变化，但一般行降权也会改变排序；定向关闭全并列行的特殊质量优势证据不足。
+6. **E22：匹配控制与参数几何。** 参数变化超出统一正比例缩放，一般行降权也会改变严格排序。C 对匹配控制平均的准确率差，TSPO+ 为 +0.352、ListNet 为 −0.019 个百分点，跨损失方向不同。
+7. **E23：部署规则与同一评测集的对照方法。** B 在原近并列支持内采用训练先验，准确率从 85.35458% 提高到 86.50000%，使原 C−B 的 +1.32598 缩至 +0.18056 个百分点。C 为 86.68056%，比三个匹配控制的等权混合高 0.52315 个百分点；Ridge 为 86.87500%。原严格换队区仍贡献 +0.26389 个百分点，近并列区在改进 B 部署后贡献 −0.08333。该结果将训练约束和部署选择分别纳入论文解释。[E23 摘要](https://github.com/fallenplum/MAB/blob/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2/routing_idea2/research/e23_deployment_prior_and_references/EXPERIMENT_SUMMARY.md) · [最终结果](https://github.com/fallenplum/MAB/blob/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2/routing_idea2/research/e23_deployment_prior_and_references/RESULTS_FINAL.json)
 
-各阶段准确来源、数据角色和不得外推的范围见 [主张与证据](../paper/CLAIMS_AND_EVIDENCE.md)。这些阶段不是同一个方法在同一测试集上的连续调参成绩，不能只摘取最终正数拼成总体增益。
+E23 沿用已曝光的 P2 原 2,400 题，属于补充比较。四个新控制头用全部 600 道训练题拟合，沿用 E22 的匹配规则和三个既定种子，使用 `final600` 盐值；E22 的控制保持五折 OOF 身份。十二份策略在补齐调用前冻结，随后新增成员生成 1,770 次、聚合 4,263 次，共 6,033 次调用、4,486,492 tokens。[协议](https://github.com/fallenplum/MAB/blob/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2/routing_idea2/research/e23_deployment_prior_and_references/PROTOCOL.json)与 [analyze_references.py](https://github.com/fallenplum/MAB/blob/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2/routing_idea2/research/e23_deployment_prior_and_references/analyze_references.py)记录策略定义和冻结顺序；`RESULTS.json` 保留准备阶段，`RESULTS_FINAL.json` 记录完整比较和成本，[finalize_results.py](https://github.com/fallenplum/MAB/blob/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2/routing_idea2/research/e23_deployment_prior_and_references/finalize_results.py)实现最终核验、评分与汇总。
+
+各阶段的数据、干预和比较对象分别记录于 [主张与证据](../paper/CLAIMS_AND_EVIDENCE.md)。E18 的冠军方向比较、P2 的原独立评价、P3 的外部单模型选择、E22 的五折控制和 E23 的补充比较保留各自身份。
 
 ## 保留与报告原则
 
@@ -69,4 +72,4 @@ MAB 起初研究有限评测预算下的模型组合路由，随后依次检查�
 
 新汇总不报告或重算置信区间，不为其运行 bootstrap。历史文件中已存在的统计分析保留原字节，不将过去的停止门槛自动当作未来科研行动的门槛。负结果、工程失败、数据缺陷、原题数和执行成本与正结果共同保存。
 
-公开归档不新增原题、标准答案、逐题私有矩阵、拟合权重、原生输出缓存、认证信息或执行进程状态。公开源码及汇总不等于已经开放这些资产；复现说明须明确每一步实际依赖。
+公开归档提供源码、协议和脱敏汇总；原题、标准答案、逐题矩阵、拟合权重及原生输出缓存保留在私有工件中，各步骤所需资产列在复现说明。

@@ -2,7 +2,7 @@
 
 从仓库根目录的 [README](../README.md) 开始阅读；论文结果见 [paper/RESULTS.md](../paper/RESULTS.md)。
 
-- `research/e17_*` 到 `research/e22_*`：当前机制论文主线，保留完整冻结代码、协议、报告、结果与执行账本。
+- `research/e17_*` 到 `research/e23_*`：当前论文主线，保存各阶段代码、协议、报告、结果与执行账本。E23 增加部署并列规则和同题池参照比较。
 - `src/`、`scripts/`、`configs/`、`protocol/`、`data/cache_audit/` 和 `tests/`：原系统共享实现及验证代码；保留这些文件不代表每个旧实验都是当前论文贡献。
 - 其他五项早期来源文件：供后续阶段导入或核对协议/源码哈希，详见 [复现说明](../docs/REPRODUCIBILITY.md)。早期完整实验请查看 [分支索引](../docs/BRANCHES.md)。
 

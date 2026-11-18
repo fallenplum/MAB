@@ -108,6 +108,34 @@ class MigrationRiskTests(unittest.TestCase):
         self.assertEqual(caught.exception.code, code)
         return caught.exception
 
+    def test_single_reviewed_branch_can_be_renamed(self):
+        value = manifest()
+        value["expected_count"] = 1
+        value["branches"] = value["branches"][:1]
+        entries = migration.parse_manifest(value)
+        api = FakeAPI(entries)
+        result = migration.migrate(entries, api, apply=True, emit=lambda record: None,
+                                   sleep=lambda delay: None)
+        self.assertEqual(result["renamed"], 1)
+        self.assertEqual(result["status"], "verified")
+        self.assertEqual(api.branches["main"].sha, "f" * 40)
+        self.assertEqual(api.branches[entries[0].new].sha, entries[0].sha)
+
+    def test_explicit_count_must_be_valid_and_match_entries(self):
+        for count in (0, -1, True, "1", 101):
+            with self.subTest(count=count):
+                value = manifest()
+                value["expected_count"] = count
+                self.assert_code("INVALID_EXPECTED_COUNT", migration.parse_manifest, value)
+        value = manifest()
+        value["expected_count"] = 1
+        self.assert_code("INVALID_BRANCH_COUNT", migration.parse_manifest, value)
+
+    def test_single_entry_without_explicit_count_keeps_original_guard(self):
+        value = manifest()
+        value["branches"] = value["branches"][:1]
+        self.assert_code("INVALID_BRANCH_COUNT", migration.parse_manifest, value)
+
     def test_default_dry_run_with_token_makes_no_posts(self):
         api = FakeAPI(self.entries)
         with tempfile.TemporaryDirectory() as temp:

@@ -1,0 +1,36 @@
+name: Rename the E23 research branch
+
+# One-time rename. Remove after the branch name and commit are verified.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/rename-e23-branch.yml
+      - reproducibility/branch_migration_e23.json
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: mab-reviewed-e23-branch-rename
+  cancel-in-progress: false
+
+jobs:
+  rename-e23:
+    if: github.repository == 'fallenplum/MAB' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check the archive and reviewed rename script
+        run: |
+          python3 scripts/verify_repository.py
+          python3 -m unittest discover -s tests -p test_migrate_branch_names.py
+      - name: Apply the reviewed E23 rename
+        run: python3 scripts/migrate_branch_names.py --manifest reproducibility/branch_migration_e23.json --apply
+        env:
+          GH_TOKEN: ${{ github.token }}

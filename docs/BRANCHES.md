@@ -1,6 +1,6 @@
 # 分支与归档索引
 
-`main` 保存当前论文主线 E17–E22、完整冻结协议与脱敏结果，以及必要的共享框架和早期来源依赖。
+`main` 保存当前论文主线 E17–E23 的代码、协议、结果，以及所需的共享框架和早期来源文件。
 
 其他研究方向、早期实验和阶段性探索保存在各自实验分支。分支更名只去掉 `codex/`，不移动对应提交，不改写任何历史实验文件。旧字符串可能仍存在于冻结报告或来源记录中，这是原始证据的一部分。
 
@@ -12,7 +12,11 @@
 - 转为历史归档的原始文件版本：[archive_inventory.json](../reproducibility/archive_inventory.json)。
 - 更名前后名称与固定提交：[branch_migration.json](../reproducibility/branch_migration.json)。
 
-2026-11-18 已完成远端核验：31 项更名全部成功，旧分支名称全部消失，每个实验分支的 commit SHA 保持一致。仓库共 34 个分支，包括 main、旧 main 备份和 32 个实验分支。证据与工作流运行链接见 [整理核验记录](../reproducibility/reorganization_receipt.json)。一次性更名工作流已在核验后移除，保留的自动检查只有仓库内容读取权限。
+2026-11-18 首次整理完成 31 项更名，每个实验分支的 commit SHA 保持一致。当时仓库共 34 个分支，包括 main、旧 main 备份和 32 个实验分支。执行记录见 [首次整理记录](../reproducibility/reorganization_receipt.json)。
+
+随后新增 E23，源提交为 [`3958f9ceaac5`](https://github.com/fallenplum/MAB/commit/3958f9ceaac5b0b1de88bbd47d89ddd940833ff2)。本轮将其加入 main，并按 [E23 更名清单](../reproducibility/branch_migration_e23.json)去掉分支名中的 `codex/`。
+
+后续实验从 main 建立分支，名称沿用 `e24-topic` 形式。
 
 ## 名称映射
 
