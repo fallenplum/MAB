@@ -1,0 +1,20 @@
+{
+  "schema": "e24_closed_scoring_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "missing_local_reference_authorization_rejected": true,
+    "all_four_native_tries_and_exact_measured_tokens_verified": true,
+    "no_reference_decoded_by_native_gate": true,
+    "inconsistent_per_stage_token_cost_rejected": true,
+    "pinned_binary_scorer_and_single_reference_account": true,
+    "sealed_overlap_rejected": true,
+    "wrong_same_seed_member_provenance_rejected": true,
+    "altered_gzip_export_rejected_before_reference_access": true
+  },
+  "frozen_scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+  "synthetic_references_decoded": 1,
+  "real_reference_values_decoded": 0,
+  "sealed_answer_values_decoded": 0,
+  "new_llm_calls": 0,
+  "scoring_source_sha256": "3af07c1546a7ab45140fe124df13a4bf500dcf2f885079631e98aa1693af4cc0"
+}

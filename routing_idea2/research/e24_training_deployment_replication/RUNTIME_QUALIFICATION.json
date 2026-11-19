@@ -1,0 +1,48 @@
+{
+  "schema": "e24_native_runtime_software_qualification_v1",
+  "status": "PASS",
+  "checks": {
+    "plan_scope_exact": true,
+    "plan_two_stages_derived_from_locked_scope": true,
+    "plan_idempotent": true,
+    "exact_exclusive_full_stage_key_union": true,
+    "aggregation_keeps_question_seed_together": true,
+    "synthetic_cannot_enter_production": true,
+    "answer_access_refused": true,
+    "altered_scope_refused": true,
+    "native_scope_authorization_uses_object_memo": true,
+    "scientific_adapter_frozen_blind_inputs": true,
+    "missing_receipt_throttling_keeps_committed_dependencies": true,
+    "bounded_poll_after_late_member_commit": true,
+    "underfilled_scope_refused": true,
+    "actual_local_input_only_bundle_identity": true
+  },
+  "checks_passed": 14,
+  "actual_local_bundle": {
+    "canonical_scope_sha256": "899a772fd45eac49e6434a1a658d78484b6311853f80c4fa563a0047348841f3",
+    "questions": 1196,
+    "execution_limits": {
+      "member_generation": 20661,
+      "aggregation": 53661
+    },
+    "cached_member_dependencies": 0,
+    "operator_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e"
+  },
+  "source_sha256": {
+    "prepare_execution.py": "dab302abe1e327888bd2e3c99946fc1266038d12f521f93f550da60d9933d14b",
+    "supplement_adapter.py": "3785ab327c281863c6d2ef55e0088fd3c7c01f65f110f8b393cb2f83260f5b2c",
+    "supplement_worker.py": "61479f8e3b02332f77d2584cfad548188448a165f85da7977161d3a95f52a448",
+    "qualify_runtime.py": "34106ba9cdda33d5a1ab5c9ce145653d4e4c91c145c780bc68e2b3520f76c0e7"
+  },
+  "model_construction_calls": 0,
+  "new_llm_calls": 0,
+  "gold_reads": 0,
+  "ssh_operations": 0,
+  "generated_plan_monitor_integration": {
+    "status": "PASS",
+    "manifest_count": 22,
+    "approved_keys": 74322,
+    "artificial_runtime_template": true,
+    "monitor_source_sha256": "94dee7d4ea90103c0626536624c424e722b2a3ba5579a7f3e3ec61319889ea47"
+  }
+}

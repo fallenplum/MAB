@@ -1,0 +1,15 @@
+{
+  "schema": "e24_reference_locator_qualification_v1",
+  "status": "INPUT_LOCATORS_ONLY_ANSWERS_NOT_READ",
+  "locator_plan_sha256": "9ed27bb75a6be34a6888c343cae5172f860c101c63f77fed2412e75e14e657dc",
+  "input_sha256": "16c65d5f97c4bca3f3db66b3ac47944632034d84c699d9f6486bcee31bd5b435",
+  "protocol_sha256": "6c30f10b6ac417e04b33170d8088230dc07d3c4893b65f2a51283ab216dca8f1",
+  "scorer_version": "safe_exact_v2_0_terminal_final_heading_fix",
+  "reference_sources": 27,
+  "positions_verified": 1196,
+  "sealed_exclusions": 200,
+  "answer_values_decoded": 0,
+  "sealed_answer_values_decoded": 0,
+  "new_llm_calls": 0,
+  "source_sha256": "c5a8aabd3036e718fadf1e80704c1f49bc2c2df9da076bbe30df7eca7594f5d0"
+}
