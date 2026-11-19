@@ -1,0 +1,79 @@
+{
+  "schema": "mab_e24_training_deployment_replication_v1",
+  "parent_commit": "3958f9ceaac5b0b1de88bbd47d89ddd940833ff2",
+  "model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "prediction_operator_sha256": "56bbb2cc43206acbed8575fa6996e0040ad0118a32071b2469ad3a68ccea71bf",
+  "train_success_count_source_sha256": "4987a035169d910a492b26463ae6a199d9a87bb2690cfe35f4ae31e121f2e4e1",
+  "heads": {"B": {"beta": 1, "gamma": 0}, "C": {"beta": 0, "gamma": 0}},
+  "conditions": ["B_U", "B_P", "C_U", "C_P"],
+  "deployment": {
+    "tau": 1e-8,
+    "U": "Uniform over scores at least max score minus tau for the corresponding head",
+    "P": "Restrict the same support to actions attaining its largest original train600 integer success count over three seeds. Use uniform probabilities over residual exact count ties."
+  },
+  "cohort": {
+    "source_audit_sha256": "a8980f78af52ae5724be33c05e1756f28bd34a596d8d1dce1abdcaf5b63e06d8",
+    "source": "Official GSM8K train and BBH test, pinned to the source frames used by P2",
+    "selection_seed": 20261119024,
+    "selection": "Within each stratum sort lexicographically by SHA256 of UTF-8 seed|stratum|canonical_question_sha256. Take the first fixed quota. All quotas and identities precede encoder forward passes, scores, policy support and new rewards.",
+    "questions": 1196,
+    "excluded_bbh_subtask": "penguins_in_a_table",
+    "stratum_counts": {
+      "gsm8k": 598,
+      "bbh/boolean_expressions": 23,
+      "bbh/causal_judgement": 23,
+      "bbh/date_understanding": 23,
+      "bbh/disambiguation_qa": 23,
+      "bbh/dyck_languages": 23,
+      "bbh/formal_fallacies": 23,
+      "bbh/geometric_shapes": 23,
+      "bbh/hyperbaton": 23,
+      "bbh/logical_deduction_five_objects": 23,
+      "bbh/logical_deduction_seven_objects": 23,
+      "bbh/logical_deduction_three_objects": 23,
+      "bbh/movie_recommendation": 23,
+      "bbh/multistep_arithmetic_two": 23,
+      "bbh/navigate": 23,
+      "bbh/object_counting": 23,
+      "bbh/reasoning_about_colored_objects": 23,
+      "bbh/ruin_names": 23,
+      "bbh/salient_translation_error_detection": 23,
+      "bbh/snarks": 23,
+      "bbh/sports_understanding": 23,
+      "bbh/temporal_sequences": 23,
+      "bbh/tracking_shuffled_objects_five_objects": 23,
+      "bbh/tracking_shuffled_objects_seven_objects": 23,
+      "bbh/tracking_shuffled_objects_three_objects": 23,
+      "bbh/web_of_lies": 23,
+      "bbh/word_sorting": 23
+    }
+  },
+  "evaluation": {
+    "generation_seeds": [42, 137, 2024],
+    "aggregation_seed": 42,
+    "aggregation_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+    "unit": "Original question with three paired generation records averaged within question",
+    "primary_weights": "GSM8K 0.5, each of 26 common BBH strata 0.5/26",
+    "primary_estimand": "(C_U-B_U)-(C_P-B_P) in percentage points",
+    "primary_test": "One two-sided stratified paired mean test using Satterthwaite t and alpha=0.05",
+    "planning_effect_pp": 1.0,
+    "planning_goal_power": 0.8,
+    "point_reporting": "Report four accuracies, primary I, both training gaps, both within-head deployment effects and their task and seed breakdown. Compare to the same 26-stratum weighting on historical E23 and retain original historical weighting separately.",
+    "primary_evaluable_condition": "All frozen required outputs have a definitive binary score on the same 1196 questions. A missing or unscorable row blocks the primary projection and triggers a separate data-quality ledger, with no replacement after score access.",
+    "confidence_intervals": false,
+    "bootstrap_repetitions": 0
+  },
+  "diagnostics": {
+    "score_tolerance_grid": [0, 1e-12, 1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2],
+    "score_tolerance_use": "Input-only unique-winner counts. No alternative-tau outcome comparisons or generation expansion.",
+    "regions": "Pre-score B-U singleton versus B-U multiple actions, with a supplementary both-singleton different-winner subset. Region contributions use full fixed stratum denominators. Members of this strict-switch subset have identical U and P choices for both heads."
+  },
+  "cost": {
+    "aggregation_support": "For each question and generation seed evaluate the deduplicated B_U and C_U support union. Both P supports are subsets.",
+    "member_support": "Deduplicate each required combination to its distinct member-model calls within original question and generation seed.",
+    "reuse": "Credit verified caches only for identical original question identity, model, prompt, seed and scientific operator, with evidence of actual successful execution.",
+    "token_caps_per_call": {"member": 6144, "aggregation": 8192},
+    "token_accounting": "Record input and output tokens, gold accounts, scorer calls, duplicate or failed native attempts and actual wall time separately."
+  },
+  "scope": "Freeze the independent input cohort, four policies and exact required call counts from zero for review before a separate physical inference start. Preserve sealed200 via prior identity exclusions and one-way fingerprints."
+}

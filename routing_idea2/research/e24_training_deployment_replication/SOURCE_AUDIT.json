@@ -1,0 +1,133 @@
+{
+  "schema": "mab_e24_input_only_candidate_capacity_v1",
+  "status": "SOURCE_AUDITED_UNSELECTED_UNADMITTED",
+  "official_frame": {
+    "gsm8k_train": 7473,
+    "gsm8k_test": 1319,
+    "bbh_test_source_rows": 6511,
+    "bbh_subtasks": 27
+  },
+  "registered_cohorts": {
+    "qualification": 8,
+    "e1_selection_calibration": 100,
+    "e1_diagnostic_evaluation": 200,
+    "online_calibration": 200,
+    "online_stream": 600,
+    "sealed_test": 200,
+    "fresh_dev400": 400
+  },
+  "e18_scope_questions": 3000,
+  "e18_fresh400_inclusion": 400,
+  "p2_scope_questions": 2400,
+  "e23_subset_of_p2_questions": 840,
+  "historical_exclusion_union": 6708,
+  "historic_registry_modules": 26,
+  "historic_registry_identity_containers": 50,
+  "historic_registry_outside_ids": 0,
+  "historic_registry_outside_canonical": 0,
+  "external_p3_original_questions_by_split": {
+    "gpqa": {
+      "train": 200,
+      "test": 248
+    },
+    "math-500": {
+      "train": 200,
+      "test": 300
+    }
+  },
+  "external_p3_exact_exclusions": 0,
+  "sample_selection_uses_scores_or_predictions": false,
+  "relative_dedup_rules": {
+    "schema": "e18_input_duplicate_rules_v1",
+    "seed": 20261116018,
+    "exact": "SHA256 of Unicode NFKC text with whitespace collapsed; no task/source prefix",
+    "token_equivalence": "Ordered casefolded word/number/operator tokens match exactly; only punctuation/case formatting varies",
+    "critical_slots": "Ordered numeric literals, quoted strings, capitalized word tokens, and math/logical operators must match",
+    "near_candidate_filter": "same task and BBH subtask plus identical critical-slot signature",
+    "character_tfidf_cosine_minimum": 0.985,
+    "character_sequence_ratio_minimum": 0.985,
+    "word_token_jaccard_minimum": 0.95,
+    "near_edges": "Review candidates only; no union-find/transitive merging of pairwise similar texts",
+    "protected_comparison": "Private HMAC slot gate, ordered-token equivalence, hashed character3-5gram count cosine>=.985, ordered-trigram ratio>=.985, word-token hash Jaccard>=.95",
+    "selection": "Exclude all high-similarity review endpoints from text-ready proposals; do not count duplicate token-equivalence groups multiple times",
+    "limitations": "High-threshold syntactic screening does not certify absence of semantic paraphrases. Sealed near-duplicate screening requires external precomputed signatures or separately authorized inputs."
+  },
+  "within_source_official_exact_duplicate_groups": 4,
+  "format_equivalent_groups": 0,
+  "high_similarity_edges": 52,
+  "protected_signature_exclusion_edges": 2,
+  "protected_rows_skipped_by_source": {
+    "gsm8k": 100,
+    "bbh": 100
+  },
+  "registered_id_or_text_intersections_remaining": 0,
+  "candidate_counts": {
+    "bbh": 3087,
+    "gsm8k": 4219
+  },
+  "bbh_subtask_counts": {
+    "boolean_expressions": 125,
+    "causal_judgement": 23,
+    "date_understanding": 125,
+    "disambiguation_qa": 122,
+    "dyck_languages": 125,
+    "formal_fallacies": 125,
+    "geometric_shapes": 126,
+    "hyperbaton": 125,
+    "logical_deduction_five_objects": 126,
+    "logical_deduction_seven_objects": 124,
+    "logical_deduction_three_objects": 125,
+    "movie_recommendation": 125,
+    "multistep_arithmetic_two": 125,
+    "navigate": 125,
+    "object_counting": 125,
+    "penguins_in_a_table": 0,
+    "reasoning_about_colored_objects": 126,
+    "ruin_names": 127,
+    "salient_translation_error_detection": 126,
+    "snarks": 55,
+    "sports_understanding": 124,
+    "temporal_sequences": 127,
+    "tracking_shuffled_objects_five_objects": 126,
+    "tracking_shuffled_objects_seven_objects": 127,
+    "tracking_shuffled_objects_three_objects": 126,
+    "web_of_lies": 126,
+    "word_sorting": 126
+  },
+  "candidate_counts_by_source_frame": {
+    "bbh_official_full_source_frame_expansion": 2957,
+    "bbh_old_llmrouterbench_common_subpool": 130,
+    "gsm8k_official_train_original_primary_frame": 4219
+  },
+  "maximum_task_balanced_questions": 6174,
+  "maximum_task_balanced_common_subtask_equal_count_questions": 1196,
+  "verified_official_curated_files": 28,
+  "previous_bbh_eligible_index_minus_p2_identically_reconstructed": true,
+  "evidence_sha256": {
+    "registered_identity_registry": "a9a7b88d77fbf366b0cdea014e2d2f16df2106d2762224932fe5a86bff44178d",
+    "e18_identity_scope": "cae646111612ceb26196d73ed4469165e77b163a332f4db81deeb6f66551f73e",
+    "p2_identity_scope": "6dce6da5f78604b8bcddde969598e1e923ff9dd75383b57d49f69d80a0fbf2db",
+    "e23_identity_scope": "c171444e7d1e598fc98e890340888d29a82a559c0f4949fbc887f6bd37d1926d",
+    "previous_bbh_eligibility_index": "5264a45f87480b0ed7a477db86d237af948b971d149b4e0f5e6c1ef9dafe6dbf",
+    "official_source_manifest": "72ee4443fc71625bfbd40e322c36533a59cd0fe775ef91906dd8437a59cb6813"
+  },
+  "private_unselected_input_rows_sha256": "8163278aa105d12b19c52190319661ad924ecd5a7eb6155eef42ca27f6a0180f",
+  "private_unselected_input_schema": [
+    "canonical_question_sha256",
+    "question",
+    "question_id",
+    "source_file",
+    "source_frame",
+    "source_index",
+    "source_revision",
+    "source_split",
+    "subtask",
+    "task"
+  ],
+  "protected_input_values_decoded_this_audit": 0,
+  "gold_or_reward_values_decoded_this_audit": 0,
+  "new_llm_calls": 0,
+  "new_encoder_questions": 0,
+  "admitted_evaluation_questions": 0,
+  "wall_seconds": 48.69790310005192
+}

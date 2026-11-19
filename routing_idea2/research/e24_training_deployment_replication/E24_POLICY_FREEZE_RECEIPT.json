@@ -1,0 +1,37 @@
+{
+  "schema": "e24_frozen_policies_v1",
+  "status": "INPUT_ONLY_POLICIES_FROZEN",
+  "protocol_sha256": "6c30f10b6ac417e04b33170d8088230dc07d3c4893b65f2a51283ab216dca8f1",
+  "input_sha256": "0b0b959297e51f29280c3ed410bdfef7072da34d238659d5c21a114c7a787fcc",
+  "input_admission_sha256": "0857ab29fa77a6f7fb25a8d564f73e30dc751f34ab9ce6bb33338374141e89d4",
+  "prediction_sha256": "9595ee1ddf9e30e85a0c95e51af2155e6b3de4cbd36265114341f32f9c324cef",
+  "model_sha256": "b8b786eeb0aaac6f869136f5353186c13f78aba0a716ebf0bcad145532d01f92",
+  "prediction_operator_sha256": "56bbb2cc43206acbed8575fa6996e0040ad0118a32071b2469ad3a68ccea71bf",
+  "historical_prior_source_sha256": "4987a035169d910a492b26463ae6a199d9a87bb2690cfe35f4ae31e121f2e4e1",
+  "generation_seeds": [
+    42,
+    137,
+    2024
+  ],
+  "aggregation_fingerprint": "9ef6c02bc9fb7f21f9ef5a2f0d39edfee80e7162c8d6edec82ee32c8cecb440e",
+  "questions": 1196,
+  "names": [
+    "B_U",
+    "B_P",
+    "C_U",
+    "C_P"
+  ],
+  "unique_questions": {
+    "B": 163,
+    "C": 1196
+  },
+  "priors_change_probability_questions": {
+    "B": 1033,
+    "C": 0
+  },
+  "strict_switch_questions": 145,
+  "answer_values_decoded": 0,
+  "reward_values_decoded": 0,
+  "new_head_fits": 0,
+  "new_llm_calls": 0
+}
