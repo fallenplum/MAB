@@ -1,0 +1,42 @@
+{
+  "stage": "E27",
+  "parent_commit": "f8277bc24908f578aa1db3d8778fd955359b2a51",
+  "data": "Existing train600 five-fold development replay. Every original question is held out exactly once. All evaluations share its 20 combinations and 3 cached generations.",
+  "seed_order": [42, 137, 2024],
+  "task_weights": {"gsm8k": 0.5, "bbh": 0.5},
+  "bbh_weighting": "per question for primary metrics; subtask results separate",
+  "history_questions": 480,
+  "evaluation_questions": 120,
+  "folds": 5,
+  "sky": {
+    "neighbors": 48,
+    "operator": "Reuse E26 neighbor_scores on frozen MiniLM embeddings and historical integer success counts",
+    "first": "first exact maximum in physical action order",
+    "U": "uniform over exact maxima",
+    "P": "maximum fold-history success count restricted to exact maxima; uniform on remaining ties"
+  },
+  "fixed": "Action with maximum fold-history success count; first frozen physical action if tied",
+  "ridge": {
+    "features": "Original E8 PCA16(full), StandardScaler, penalized constant; fitted within every training split",
+    "inner_protocol": "Original E8 three-way splits stratified by task/subtask with seed 20261113 + outer fold; compare row arrays with saved M0_tuned logs",
+    "raw_alpha_grid": [10.0, 100.0, 1000.0],
+    "training": "Original SVD ridge weights with raw_alpha/3 for the mean of 3 generations",
+    "tuning": "Pooled inner 50/50 task-weighted cached accuracy, larger alpha within 1e-12, then train on H480",
+    "deployment": "first exact maximum in physical action order"
+  },
+  "neural": {
+    "family": "One-hidden-layer width-16 tanh ListNet, an adaptation to 20 physical actions",
+    "paper": "https://www.microsoft.com/en-us/research/publication/learning-to-rank-from-pairwise-approach-to-listwise-approach/",
+    "features": "same fold-fit PCA16, StandardScaler and constant as Ridge",
+    "supervision": "temperature-1 top-one distribution, KL equivalently CE minus the label entropy",
+    "paired_intervention": "beta=1 standard all-row objective; beta=0 zero weight only on all-action ties, preserving the original question denominator",
+    "optimizer": "L-BFGS-B; fixed settings in neural.py; paired initialization; train-only objective",
+    "regularization": 0.0001,
+    "optimizer_seeds": [1701, 1702, 1703],
+    "deployment": "same uniform near-argmax rule tau=1e-8 for both variants"
+  },
+  "pair_orientation": "candidate minus comparator",
+  "changes": "Maximal same-action coupling for expected corrections and damages, with independent draws conditional on differing remaining actions.",
+  "gate": "Save all fold policies and numerical receipts before scoring. Evaluate the full cached matrix in a separate phase without refitting.",
+  "new_llm_calls_cap": 0
+}
