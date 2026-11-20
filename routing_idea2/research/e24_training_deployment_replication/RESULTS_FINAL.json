@@ -1,0 +1,604 @@
+{
+  "schema": "e24_four_policy_replication_results_v1",
+  "protocol_sha256": "6c30f10b6ac417e04b33170d8088230dc07d3c4893b65f2a51283ab216dca8f1",
+  "prediction_sha256": "9595ee1ddf9e30e85a0c95e51af2155e6b3de4cbd36265114341f32f9c324cef",
+  "closed_scoring_receipt_sha256": "9459347fd0a291511f12827ea729bf56310ca44f192cdda01a23500f28e7b393",
+  "questions": 1196,
+  "recorded_generation_events_per_policy": 3588,
+  "primary_stratum_weights": {
+    "bbh/boolean_expressions": 0.019230769230769232,
+    "bbh/causal_judgement": 0.019230769230769232,
+    "bbh/date_understanding": 0.019230769230769232,
+    "bbh/disambiguation_qa": 0.019230769230769232,
+    "bbh/dyck_languages": 0.019230769230769232,
+    "bbh/formal_fallacies": 0.019230769230769232,
+    "bbh/geometric_shapes": 0.019230769230769232,
+    "bbh/hyperbaton": 0.019230769230769232,
+    "bbh/logical_deduction_five_objects": 0.019230769230769232,
+    "bbh/logical_deduction_seven_objects": 0.019230769230769232,
+    "bbh/logical_deduction_three_objects": 0.019230769230769232,
+    "bbh/movie_recommendation": 0.019230769230769232,
+    "bbh/multistep_arithmetic_two": 0.019230769230769232,
+    "bbh/navigate": 0.019230769230769232,
+    "bbh/object_counting": 0.019230769230769232,
+    "bbh/reasoning_about_colored_objects": 0.019230769230769232,
+    "bbh/ruin_names": 0.019230769230769232,
+    "bbh/salient_translation_error_detection": 0.019230769230769232,
+    "bbh/snarks": 0.019230769230769232,
+    "bbh/sports_understanding": 0.019230769230769232,
+    "bbh/temporal_sequences": 0.019230769230769232,
+    "bbh/tracking_shuffled_objects_five_objects": 0.019230769230769232,
+    "bbh/tracking_shuffled_objects_seven_objects": 0.019230769230769232,
+    "bbh/tracking_shuffled_objects_three_objects": 0.019230769230769232,
+    "bbh/web_of_lies": 0.019230769230769232,
+    "bbh/word_sorting": 0.019230769230769232,
+    "gsm8k": 0.5
+  },
+  "accuracies": {
+    "B_U": {
+      "primary": 86.46468620893172,
+      "question_weighted_within_task": 86.46468620893174,
+      "by_task": {
+        "gsm8k": 94.74719653747786,
+        "bbh": 78.1821758803856
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 97.52770673486786,
+        "bbh/causal_judgement": 64.36487638533674,
+        "bbh/date_understanding": 82.52344416027279,
+        "bbh/disambiguation_qa": 64.53537936913897,
+        "bbh/dyck_languages": 27.365728900255753,
+        "bbh/formal_fallacies": 82.6086956521739,
+        "bbh/geometric_shapes": 63.597612958226755,
+        "bbh/hyperbaton": 92.7536231884058,
+        "bbh/logical_deduction_five_objects": 91.90110826939473,
+        "bbh/logical_deduction_seven_objects": 83.88746803069054,
+        "bbh/logical_deduction_three_objects": 98.20971867007673,
+        "bbh/movie_recommendation": 54.30520034100598,
+        "bbh/multistep_arithmetic_two": 94.97016197783461,
+        "bbh/navigate": 85.08098891730606,
+        "bbh/object_counting": 79.36913895993179,
+        "bbh/reasoning_about_colored_objects": 98.9769820971867,
+        "bbh/ruin_names": 66.66666666666666,
+        "bbh/salient_translation_error_detection": 58.73827791986359,
+        "bbh/snarks": 77.83461210571184,
+        "bbh/sports_understanding": 72.1227621483376,
+        "bbh/temporal_sequences": 90.36658141517478,
+        "bbh/tracking_shuffled_objects_five_objects": 94.20289855072464,
+        "bbh/tracking_shuffled_objects_seven_objects": 73.57203751065643,
+        "bbh/tracking_shuffled_objects_three_objects": 94.97016197783461,
+        "bbh/web_of_lies": 90.11082693947144,
+        "bbh/word_sorting": 52.17391304347825,
+        "gsm8k": 94.74719653747786
+      },
+      "by_seed": {
+        "42": 86.59748180208537,
+        "137": 86.03187094235687,
+        "2024": 86.76470588235294
+      }
+    },
+    "B_P": {
+      "primary": 87.62541806020067,
+      "question_weighted_within_task": 87.62541806020067,
+      "by_task": {
+        "gsm8k": 95.37346711259754,
+        "bbh": 79.8773690078038
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 97.10144927536231,
+        "bbh/causal_judgement": 66.66666666666666,
+        "bbh/date_understanding": 88.40579710144928,
+        "bbh/disambiguation_qa": 65.21739130434783,
+        "bbh/dyck_languages": 33.33333333333333,
+        "bbh/formal_fallacies": 82.6086956521739,
+        "bbh/geometric_shapes": 69.56521739130434,
+        "bbh/hyperbaton": 92.7536231884058,
+        "bbh/logical_deduction_five_objects": 91.30434782608695,
+        "bbh/logical_deduction_seven_objects": 89.85507246376811,
+        "bbh/logical_deduction_three_objects": 100.0,
+        "bbh/movie_recommendation": 53.62318840579711,
+        "bbh/multistep_arithmetic_two": 98.55072463768117,
+        "bbh/navigate": 86.95652173913044,
+        "bbh/object_counting": 75.36231884057972,
+        "bbh/reasoning_about_colored_objects": 100.0,
+        "bbh/ruin_names": 66.66666666666666,
+        "bbh/salient_translation_error_detection": 60.86956521739131,
+        "bbh/snarks": 78.26086956521739,
+        "bbh/sports_understanding": 66.66666666666666,
+        "bbh/temporal_sequences": 97.10144927536231,
+        "bbh/tracking_shuffled_objects_five_objects": 98.55072463768117,
+        "bbh/tracking_shuffled_objects_seven_objects": 79.71014492753623,
+        "bbh/tracking_shuffled_objects_three_objects": 98.55072463768117,
+        "bbh/web_of_lies": 94.20289855072464,
+        "bbh/word_sorting": 44.927536231884055,
+        "gsm8k": 95.37346711259754
+      },
+      "by_seed": {
+        "42": 87.37458193979933,
+        "137": 87.79264214046822,
+        "2024": 87.70903010033445
+      }
+    },
+    "C_U": {
+      "primary": 87.65328874024527,
+      "question_weighted_within_task": 87.65328874024526,
+      "by_task": {
+        "gsm8k": 95.31772575250837,
+        "bbh": 79.98885172798215
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 97.10144927536231,
+        "bbh/causal_judgement": 59.42028985507246,
+        "bbh/date_understanding": 89.85507246376811,
+        "bbh/disambiguation_qa": 56.52173913043478,
+        "bbh/dyck_languages": 40.57971014492754,
+        "bbh/formal_fallacies": 91.30434782608695,
+        "bbh/geometric_shapes": 68.11594202898551,
+        "bbh/hyperbaton": 89.85507246376811,
+        "bbh/logical_deduction_five_objects": 95.65217391304348,
+        "bbh/logical_deduction_seven_objects": 84.05797101449275,
+        "bbh/logical_deduction_three_objects": 98.55072463768117,
+        "bbh/movie_recommendation": 56.52173913043478,
+        "bbh/multistep_arithmetic_two": 97.10144927536231,
+        "bbh/navigate": 91.30434782608695,
+        "bbh/object_counting": 79.71014492753623,
+        "bbh/reasoning_about_colored_objects": 97.10144927536231,
+        "bbh/ruin_names": 66.66666666666666,
+        "bbh/salient_translation_error_detection": 60.86956521739131,
+        "bbh/snarks": 75.36231884057972,
+        "bbh/sports_understanding": 76.81159420289855,
+        "bbh/temporal_sequences": 95.65217391304348,
+        "bbh/tracking_shuffled_objects_five_objects": 98.55072463768117,
+        "bbh/tracking_shuffled_objects_seven_objects": 78.26086956521739,
+        "bbh/tracking_shuffled_objects_three_objects": 97.10144927536231,
+        "bbh/web_of_lies": 94.20289855072464,
+        "bbh/word_sorting": 43.47826086956522,
+        "gsm8k": 95.31772575250837
+      },
+      "by_seed": {
+        "42": 88.2943143812709,
+        "137": 86.53846153846152,
+        "2024": 88.12709030100334
+      }
+    },
+    "C_P": {
+      "primary": 87.65328874024527,
+      "question_weighted_within_task": 87.65328874024526,
+      "by_task": {
+        "gsm8k": 95.31772575250837,
+        "bbh": 79.98885172798215
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 97.10144927536231,
+        "bbh/causal_judgement": 59.42028985507246,
+        "bbh/date_understanding": 89.85507246376811,
+        "bbh/disambiguation_qa": 56.52173913043478,
+        "bbh/dyck_languages": 40.57971014492754,
+        "bbh/formal_fallacies": 91.30434782608695,
+        "bbh/geometric_shapes": 68.11594202898551,
+        "bbh/hyperbaton": 89.85507246376811,
+        "bbh/logical_deduction_five_objects": 95.65217391304348,
+        "bbh/logical_deduction_seven_objects": 84.05797101449275,
+        "bbh/logical_deduction_three_objects": 98.55072463768117,
+        "bbh/movie_recommendation": 56.52173913043478,
+        "bbh/multistep_arithmetic_two": 97.10144927536231,
+        "bbh/navigate": 91.30434782608695,
+        "bbh/object_counting": 79.71014492753623,
+        "bbh/reasoning_about_colored_objects": 97.10144927536231,
+        "bbh/ruin_names": 66.66666666666666,
+        "bbh/salient_translation_error_detection": 60.86956521739131,
+        "bbh/snarks": 75.36231884057972,
+        "bbh/sports_understanding": 76.81159420289855,
+        "bbh/temporal_sequences": 95.65217391304348,
+        "bbh/tracking_shuffled_objects_five_objects": 98.55072463768117,
+        "bbh/tracking_shuffled_objects_seven_objects": 78.26086956521739,
+        "bbh/tracking_shuffled_objects_three_objects": 97.10144927536231,
+        "bbh/web_of_lies": 94.20289855072464,
+        "bbh/word_sorting": 43.47826086956522,
+        "gsm8k": 95.31772575250837
+      },
+      "by_seed": {
+        "42": 88.2943143812709,
+        "137": 86.53846153846152,
+        "2024": 88.12709030100334
+      }
+    }
+  },
+  "interaction_pp": {
+    "primary": 1.160731851268935,
+    "question_weighted_within_task": 1.1607318512689346,
+    "by_task": {
+      "gsm8k": 0.6262705751196795,
+      "bbh": 1.69519312741819
+    },
+    "by_stratum": {
+      "bbh/boolean_expressions": -0.4262574595055416,
+      "bbh/causal_judgement": 2.3017902813299216,
+      "bbh/date_understanding": 5.882352941176469,
+      "bbh/disambiguation_qa": 0.6820119352088643,
+      "bbh/dyck_languages": 5.967604433077578,
+      "bbh/formal_fallacies": -2.413528314402514e-16,
+      "bbh/geometric_shapes": 5.967604433077578,
+      "bbh/hyperbaton": -8.045094381341714e-16,
+      "bbh/logical_deduction_five_objects": -0.5967604433077585,
+      "bbh/logical_deduction_seven_objects": 5.967604433077578,
+      "bbh/logical_deduction_three_objects": 1.7902813299232736,
+      "bbh/movie_recommendation": -0.682011935208867,
+      "bbh/multistep_arithmetic_two": 3.580562659846546,
+      "bbh/navigate": 1.875532821824381,
+      "bbh/object_counting": -4.0068201193520885,
+      "bbh/reasoning_about_colored_objects": 1.0230179028132989,
+      "bbh/ruin_names": 0.0,
+      "bbh/salient_translation_error_detection": 2.1312872975277055,
+      "bbh/snarks": 0.4262574595055413,
+      "bbh/sports_understanding": -5.456095481670933,
+      "bbh/temporal_sequences": 6.734867860187552,
+      "bbh/tracking_shuffled_objects_five_objects": 4.347826086956521,
+      "bbh/tracking_shuffled_objects_seven_objects": 6.138107416879793,
+      "bbh/tracking_shuffled_objects_three_objects": 3.580562659846546,
+      "bbh/web_of_lies": 4.092071611253196,
+      "bbh/word_sorting": -7.246376811594203,
+      "gsm8k": 0.6262705751196795
+    },
+    "by_seed": {
+      "42": 0.7771001377139476,
+      "137": 1.7607711981113514,
+      "2024": 0.9443242179815067
+    }
+  },
+  "primary_test": {
+    "difference_pp": 1.160731851268935,
+    "alpha": 0.05,
+    "method": "Two-sided stratified paired mean with Satterthwaite t",
+    "status": "COMPUTED",
+    "p_value": 8.863968911154078e-05,
+    "degrees_of_freedom": 462.39419350835306
+  },
+  "comparisons_pp": {
+    "C_U_minus_B_U": {
+      "primary": 1.188602531313528,
+      "question_weighted_within_task": 1.1886025313135282,
+      "by_task": {
+        "gsm8k": 0.5705292150304936,
+        "bbh": 1.8066758475965627
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": -0.4262574595055416,
+        "bbh/causal_judgement": -4.9445865302642815,
+        "bbh/date_understanding": 7.331628303495309,
+        "bbh/disambiguation_qa": -8.013640238704179,
+        "bbh/dyck_languages": 13.213981244671782,
+        "bbh/formal_fallacies": 8.695652173913045,
+        "bbh/geometric_shapes": 4.518329070758736,
+        "bbh/hyperbaton": -2.8985507246376825,
+        "bbh/logical_deduction_five_objects": 3.751065643648764,
+        "bbh/logical_deduction_seven_objects": 0.17050298380221546,
+        "bbh/logical_deduction_three_objects": 0.34100596760443297,
+        "bbh/movie_recommendation": 2.216538789428813,
+        "bbh/multistep_arithmetic_two": 2.1312872975277055,
+        "bbh/navigate": 6.223358908780904,
+        "bbh/object_counting": 0.3410059676044322,
+        "bbh/reasoning_about_colored_objects": -1.8755328218243823,
+        "bbh/ruin_names": 0.0,
+        "bbh/salient_translation_error_detection": 2.131287297527705,
+        "bbh/snarks": -2.4722932651321408,
+        "bbh/sports_understanding": 4.688832054560951,
+        "bbh/temporal_sequences": 5.285592497868711,
+        "bbh/tracking_shuffled_objects_five_objects": 4.347826086956521,
+        "bbh/tracking_shuffled_objects_seven_objects": 4.688832054560952,
+        "bbh/tracking_shuffled_objects_three_objects": 2.131287297527705,
+        "bbh/web_of_lies": 4.092071611253197,
+        "bbh/word_sorting": -8.695652173913045,
+        "gsm8k": 0.5705292150304936
+      },
+      "by_seed": {
+        "42": 1.6968325791855199,
+        "137": 0.506590596104662,
+        "2024": 1.362384418650403
+      },
+      "corrected_events": 184.41176470588235,
+      "damaged_events": 141.76470588235296,
+      "net_corrected_events": 42.64705882352939,
+      "regions": {
+        "B_unique": {
+          "questions": 163,
+          "contribution_pp": 0.5574136008918618,
+          "corrected_events": 55.0,
+          "damaged_events": 35.0
+        },
+        "B_near_tied": {
+          "questions": 1033,
+          "contribution_pp": 0.6311889304216662,
+          "corrected_events": 129.41176470588235,
+          "damaged_events": 106.76470588235296
+        },
+        "both_strict_switch": {
+          "questions": 145,
+          "contribution_pp": 0.5574136008918618,
+          "corrected_events": 55.0,
+          "damaged_events": 35.0
+        }
+      }
+    },
+    "C_P_minus_B_P": {
+      "primary": 0.027870680044593088,
+      "question_weighted_within_task": 0.027870680044593088,
+      "by_task": {
+        "gsm8k": -0.055741360089186176,
+        "bbh": 0.11148272017837235
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 0.0,
+        "bbh/causal_judgement": -7.246376811594203,
+        "bbh/date_understanding": 1.4492753623188406,
+        "bbh/disambiguation_qa": -8.695652173913043,
+        "bbh/dyck_languages": 7.246376811594203,
+        "bbh/formal_fallacies": 8.695652173913043,
+        "bbh/geometric_shapes": -1.4492753623188406,
+        "bbh/hyperbaton": -2.898550724637681,
+        "bbh/logical_deduction_five_objects": 4.3478260869565215,
+        "bbh/logical_deduction_seven_objects": -5.797101449275362,
+        "bbh/logical_deduction_three_objects": -1.4492753623188406,
+        "bbh/movie_recommendation": 2.898550724637681,
+        "bbh/multistep_arithmetic_two": -1.4492753623188406,
+        "bbh/navigate": 4.3478260869565215,
+        "bbh/object_counting": 4.3478260869565215,
+        "bbh/reasoning_about_colored_objects": -2.898550724637681,
+        "bbh/ruin_names": 0.0,
+        "bbh/salient_translation_error_detection": 0.0,
+        "bbh/snarks": -2.898550724637681,
+        "bbh/sports_understanding": 10.144927536231885,
+        "bbh/temporal_sequences": -1.4492753623188406,
+        "bbh/tracking_shuffled_objects_five_objects": 0.0,
+        "bbh/tracking_shuffled_objects_seven_objects": -1.4492753623188406,
+        "bbh/tracking_shuffled_objects_three_objects": -1.4492753623188406,
+        "bbh/web_of_lies": 0.0,
+        "bbh/word_sorting": -1.4492753623188406,
+        "gsm8k": -0.055741360089186176
+      },
+      "by_seed": {
+        "42": 0.9197324414715718,
+        "137": -1.2541806020066892,
+        "2024": 0.4180602006688963
+      },
+      "corrected_events": 143.0,
+      "damaged_events": 142.0,
+      "net_corrected_events": 1.0,
+      "regions": {
+        "B_unique": {
+          "questions": 163,
+          "contribution_pp": 0.5574136008918618,
+          "corrected_events": 55.0,
+          "damaged_events": 35.0
+        },
+        "B_near_tied": {
+          "questions": 1033,
+          "contribution_pp": -0.5295429208472687,
+          "corrected_events": 88.0,
+          "damaged_events": 107.0
+        },
+        "both_strict_switch": {
+          "questions": 145,
+          "contribution_pp": 0.5574136008918618,
+          "corrected_events": 55.0,
+          "damaged_events": 35.0
+        }
+      }
+    },
+    "B_P_minus_B_U": {
+      "primary": 1.160731851268935,
+      "question_weighted_within_task": 1.1607318512689346,
+      "by_task": {
+        "gsm8k": 0.6262705751196795,
+        "bbh": 1.69519312741819
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": -0.4262574595055416,
+        "bbh/causal_judgement": 2.3017902813299216,
+        "bbh/date_understanding": 5.882352941176469,
+        "bbh/disambiguation_qa": 0.6820119352088645,
+        "bbh/dyck_languages": 5.967604433077578,
+        "bbh/formal_fallacies": -2.413528314402514e-16,
+        "bbh/geometric_shapes": 5.967604433077578,
+        "bbh/hyperbaton": -8.045094381341714e-16,
+        "bbh/logical_deduction_five_objects": -0.5967604433077585,
+        "bbh/logical_deduction_seven_objects": 5.967604433077578,
+        "bbh/logical_deduction_three_objects": 1.7902813299232736,
+        "bbh/movie_recommendation": -0.682011935208867,
+        "bbh/multistep_arithmetic_two": 3.580562659846546,
+        "bbh/navigate": 1.875532821824381,
+        "bbh/object_counting": -4.0068201193520885,
+        "bbh/reasoning_about_colored_objects": 1.0230179028132989,
+        "bbh/ruin_names": 0.0,
+        "bbh/salient_translation_error_detection": 2.1312872975277055,
+        "bbh/snarks": 0.4262574595055413,
+        "bbh/sports_understanding": -5.456095481670933,
+        "bbh/temporal_sequences": 6.734867860187552,
+        "bbh/tracking_shuffled_objects_five_objects": 4.347826086956521,
+        "bbh/tracking_shuffled_objects_seven_objects": 6.138107416879793,
+        "bbh/tracking_shuffled_objects_three_objects": 3.580562659846546,
+        "bbh/web_of_lies": 4.092071611253196,
+        "bbh/word_sorting": -7.246376811594203,
+        "gsm8k": 0.6262705751196795
+      },
+      "by_seed": {
+        "42": 0.7771001377139477,
+        "137": 1.7607711981113514,
+        "2024": 0.9443242179815067
+      },
+      "corrected_events": 128.23529411764707,
+      "damaged_events": 86.58823529411765,
+      "net_corrected_events": 41.64705882352939,
+      "regions": {
+        "B_unique": {
+          "questions": 163,
+          "contribution_pp": 0.0,
+          "corrected_events": 0.0,
+          "damaged_events": 0.0
+        },
+        "B_near_tied": {
+          "questions": 1033,
+          "contribution_pp": 1.160731851268935,
+          "corrected_events": 128.23529411764704,
+          "damaged_events": 86.58823529411764
+        },
+        "both_strict_switch": {
+          "questions": 145,
+          "contribution_pp": 0.0,
+          "corrected_events": 0.0,
+          "damaged_events": 0.0
+        }
+      }
+    },
+    "C_P_minus_C_U": {
+      "primary": 0.0,
+      "question_weighted_within_task": 0.0,
+      "by_task": {
+        "gsm8k": 0.0,
+        "bbh": 0.0
+      },
+      "by_stratum": {
+        "bbh/boolean_expressions": 0.0,
+        "bbh/causal_judgement": 0.0,
+        "bbh/date_understanding": 0.0,
+        "bbh/disambiguation_qa": 0.0,
+        "bbh/dyck_languages": 0.0,
+        "bbh/formal_fallacies": 0.0,
+        "bbh/geometric_shapes": 0.0,
+        "bbh/hyperbaton": 0.0,
+        "bbh/logical_deduction_five_objects": 0.0,
+        "bbh/logical_deduction_seven_objects": 0.0,
+        "bbh/logical_deduction_three_objects": 0.0,
+        "bbh/movie_recommendation": 0.0,
+        "bbh/multistep_arithmetic_two": 0.0,
+        "bbh/navigate": 0.0,
+        "bbh/object_counting": 0.0,
+        "bbh/reasoning_about_colored_objects": 0.0,
+        "bbh/ruin_names": 0.0,
+        "bbh/salient_translation_error_detection": 0.0,
+        "bbh/snarks": 0.0,
+        "bbh/sports_understanding": 0.0,
+        "bbh/temporal_sequences": 0.0,
+        "bbh/tracking_shuffled_objects_five_objects": 0.0,
+        "bbh/tracking_shuffled_objects_seven_objects": 0.0,
+        "bbh/tracking_shuffled_objects_three_objects": 0.0,
+        "bbh/web_of_lies": 0.0,
+        "bbh/word_sorting": 0.0,
+        "gsm8k": 0.0
+      },
+      "by_seed": {
+        "42": 0.0,
+        "137": 0.0,
+        "2024": 0.0
+      },
+      "corrected_events": 0.0,
+      "damaged_events": 0.0,
+      "net_corrected_events": 0.0,
+      "regions": {
+        "B_unique": {
+          "questions": 163,
+          "contribution_pp": 0.0,
+          "corrected_events": 0.0,
+          "damaged_events": 0.0
+        },
+        "B_near_tied": {
+          "questions": 1033,
+          "contribution_pp": 0.0,
+          "corrected_events": 0.0,
+          "damaged_events": 0.0
+        },
+        "both_strict_switch": {
+          "questions": 145,
+          "contribution_pp": 0.0,
+          "corrected_events": 0.0,
+          "damaged_events": 0.0
+        }
+      }
+    }
+  },
+  "interaction_region_contributions_pp": {
+    "B_unique": 0.0,
+    "B_near_tied": 1.160731851268935,
+    "both_strict_switch": 0.0
+  },
+  "input_side": {
+    "strict_changed_questions": 145,
+    "B_unique": 163,
+    "C_unique": 1196,
+    "thresholds": [
+      {
+        "tau": 0,
+        "both_unique": 1196,
+        "strict_changed": 816
+      },
+      {
+        "tau": 1e-12,
+        "both_unique": 576,
+        "strict_changed": 388
+      },
+      {
+        "tau": 1e-10,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 1e-09,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 1e-08,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 1e-07,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 1e-06,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 1e-05,
+        "both_unique": 163,
+        "strict_changed": 145
+      },
+      {
+        "tau": 0.0001,
+        "both_unique": 160,
+        "strict_changed": 142
+      },
+      {
+        "tau": 0.001,
+        "both_unique": 136,
+        "strict_changed": 119
+      },
+      {
+        "tau": 0.01,
+        "both_unique": 34,
+        "strict_changed": 23
+      }
+    ],
+    "strict_change_margin_quantiles": {
+      "B": [
+        7.474019085528145e-05,
+        0.0010254935433190056,
+        0.006731970814503722,
+        0.01887226772184211,
+        0.06294465719023143
+      ],
+      "C": [
+        2.104625536154814e-05,
+        0.0014438686021827352,
+        0.015084105025954517,
+        0.07293138202450913,
+        0.15058977042502875
+      ]
+    }
+  },
+  "confidence_intervals_computed": false,
+  "bootstrap_repetitions": 0
+}

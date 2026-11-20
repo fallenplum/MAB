@@ -1,0 +1,45 @@
+{
+  "schema": "e24_public_execution_accounting_v1",
+  "status": "COMPLETE",
+  "distinct_questions": 1196,
+  "generations_per_question": 3,
+  "native_paid_calls": 74322,
+  "by_stage": {
+    "member_generation": {
+      "calls": 20661,
+      "prompt_tokens": 3432843,
+      "completion_tokens": 4455483,
+      "call_wall_seconds_sum": 268708.64315909403,
+      "total_tokens": 7888326
+    },
+    "aggregation": {
+      "calls": 53661,
+      "prompt_tokens": 46007810,
+      "completion_tokens": 4131766,
+      "call_wall_seconds_sum": 260582.1404546306,
+      "total_tokens": 50139576
+    }
+  },
+  "actual_tokens": {
+    "prompt_tokens": 49440653,
+    "completion_tokens": 8587249,
+    "total_tokens": 58027902
+  },
+  "new_reference_accounts": 1196,
+  "valid_score_rows": 53661,
+  "unscorable_reference_questions": 0,
+  "scoring_cpu_seconds": 4.5,
+  "sealed_references_read": 0,
+  "unknown_or_failed_native_attempts": 0,
+  "new_model_calls_during_scoring": 0,
+  "native_export_shards": {
+    "member_generation": 11,
+    "aggregation": 27
+  },
+  "tail_manifests_split_into_disjoint_slots": 5,
+  "additional_support_calls_for_P_rules": 0,
+  "execution_plan_sha256": "c6ee8de42f5b72f3cff8c6591b267eb0098b6e5bf743efb4486af5f2766bc208",
+  "native_outputs_frozen_sha256": "ba4924105922ef8724d5525ee31a074248139c614e0d77ea93e150a73c4fcedd",
+  "closed_scoring_receipt_sha256": "9459347fd0a291511f12827ea729bf56310ca44f192cdda01a23500f28e7b393",
+  "releases_per_question_artifacts": false
+}

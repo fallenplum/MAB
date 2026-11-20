@@ -1,0 +1,40 @@
+{
+  "schema": "e24_public_file_index_v1",
+  "files": [
+    {
+      "path": "RESULTS_FINAL.json",
+      "sha256": "c28b33ecac964965635fc0d0b844a6b6c5a5e71639b43eea6a4f651aae73c9ef",
+      "description": "四条件准确率、交互检验、分组与排序诊断"
+    },
+    {
+      "path": "EXPERIMENT_SUMMARY.md",
+      "sha256": "612afa78329d713742fd38636eb13fe279685603d7d77fe19e5a47f6fddd1b29",
+      "description": "独立复验结论"
+    },
+    {
+      "path": "EXECUTION_CLOSURE.json",
+      "sha256": "09f40c61895dfcca4c69d64ac3049ae7a562b5a343d888fd08912fdf5077985c",
+      "description": "脱敏原生执行与确定性评分账本"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "ff098b5cef520f293616bdf27e5241318425bbb2d6e540321e5090a280a294c2",
+      "description": "准备、执行闭合及正式评价复现"
+    },
+    {
+      "path": "runtime/parallel_tail_worker.py",
+      "sha256": "97279bc57414b3c61c67cef5ed30e14ea08279c6f7221f5554bbb7fd9944b7b3",
+      "description": "固定原清单下的互斥尾部工作进程"
+    },
+    {
+      "path": "runtime/parallel_tail_monitor.py",
+      "sha256": "6fbdc10d242ff27aeb78ee87b4df19a6fa62821ccd6c59a9a9d9e68212035ca0",
+      "description": "原生回执和并行子进程闭合导出"
+    },
+    {
+      "path": "runtime/parallel_tail_dispatch.py",
+      "sha256": "b0421236bf97f2c7d048fa0714554600d26e0845b89d6280f6bd47d2e31ef4c7",
+      "description": "余量检查、暂停及只分配未完成键"
+    }
+  ]
+}
