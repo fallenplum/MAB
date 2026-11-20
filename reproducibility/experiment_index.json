@@ -3895,6 +3895,98 @@
         }
       ],
       "source_blob_count": 733
+    },
+    {
+      "branch": "codex/e24-training-deployment-replication",
+      "title": "训练与部署交互的独立复验",
+      "stage": "E24",
+      "purpose": "在独立新题上比较冻结训练头与冻结近并列部署。",
+      "source_commit": "d48fef3cb1e77e876d4410be4933c5eb6cdb5738",
+      "source_tree": "b1e22624c73c7a7dd5c0e466ee4b5a74a09e635e",
+      "source_tree_sha": "b1e22624c73c7a7dd5c0e466ee4b5a74a09e635e",
+      "directory": "experiments/e24-training-deployment-replication",
+      "report_path": "routing_idea2/research/e24_training_deployment_replication/EXPERIMENT_SUMMARY.md",
+      "results_paths": [
+        "routing_idea2/research/e24_training_deployment_replication/RESULTS_FINAL.json",
+        "routing_idea2/research/e24_training_deployment_replication/EXECUTION_CLOSURE.json"
+      ],
+      "code_paths": [
+        "routing_idea2/research/e24_training_deployment_replication/replication.py",
+        "routing_idea2/research/e24_training_deployment_replication/score_closed_execution.py",
+        "routing_idea2/research/e24_training_deployment_replication/runtime/parallel_tail_monitor.py"
+      ],
+      "reproduction_path": "routing_idea2/research/e24_training_deployment_replication/REPRODUCE.md",
+      "protocol_path": "routing_idea2/research/e24_training_deployment_replication/E24_PROTOCOL.json",
+      "additional_reports": [
+        "routing_idea2/research/e24_training_deployment_replication/SOURCE_AUDIT.json"
+      ],
+      "records": [],
+      "source_files": [
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/E24_PROTOCOL.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "343b7a77090a3f6342018104b802ffda14001a13",
+          "size": 5128
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/EXECUTION_CLOSURE.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "0b916fdc93b1ea35619ff8e580a9f79e29a5f2ac",
+          "size": 1481
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/EXPERIMENT_SUMMARY.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fdad5ba9021d207f6568951fc05e2ccfbddd37e6",
+          "size": 2216
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/REPRODUCE.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "484ab1de8f1a8009f16973ccca1542803ba8bcbb",
+          "size": 5265
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/RESULTS_FINAL.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "24fcd99b86527a3eed57293275435f48cc7b2adf",
+          "size": 23556
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/SOURCE_AUDIT.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "63156672bd343d83539edce29a92a043cb425864",
+          "size": 5476
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/replication.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b88f85c8bd9abb6fdede9ed13f796f8fea3cfe5e",
+          "size": 16080
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/runtime/parallel_tail_monitor.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "985248c4405c3f96d80c695fc85f98956ab23c29",
+          "size": 11473
+        },
+        {
+          "path": "routing_idea2/research/e24_training_deployment_replication/score_closed_execution.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f85f6acc4f8bbfbc37f45ebc5efdb35e063e08c0",
+          "size": 22215
+        }
+      ],
+      "source_blob_count": 1713
     }
   ]
 }

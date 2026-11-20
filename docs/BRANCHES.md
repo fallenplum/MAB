@@ -1,8 +1,10 @@
 # 实验分支
 
-`main` 保存 E17–E23 论文主线的代码、协议和结果。[全部实验](../EXPERIMENTS.md)提供 E1–E23、V2 分析及补充实验的报告、结果、代码和运行说明。
+`main` 保存 E17–E24 论文主线的代码、协议和结果。[全部实验](../EXPERIMENTS.md)提供 E1–E24、V2 分析及补充实验的报告、结果、代码和运行说明。
 
 33 个实验分支均有本阶段首页，以及 `reproducibility/README.md`、`docs/REPRODUCIBILITY.md`、`EXPERIMENTS.md`、`experiments/README.md` 和 `docs/BRANCHES.md`。在这些入口切换分支，可查看对应阶段的记录。
+
+E24 的独立复验保留在 [`codex/e24-training-deployment-replication`](https://github.com/fallenplum/MAB/tree/codex/e24-training-deployment-replication)，固定结果为 [`d48fef3cb1e7`](https://github.com/fallenplum/MAB/commit/d48fef3cb1e77e876d4410be4933c5eb6cdb5738)。主线通过 [E24 论文结果](../paper/E24.md) 与实验记录相连。
 
 ## 实验版本
 

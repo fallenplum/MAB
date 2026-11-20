@@ -1,8 +1,8 @@
 # 全部实验
 
-**本目录包括 E1–E23 和补充实验，共 33 个实验分支及 1 个旧 main 备份。** 实验名称链接到详细目录，报告和结果链接到各阶段的原始提交。
+**本目录包括 E1–E24 和补充实验，共 34 个实验分支及 1 个旧 main 备份。** 实验名称链接到详细目录，报告和结果链接到各阶段的原始提交。
 
-当前论文主线是 E17–E23。早期实验及其他研究方向保存在对应分支中。
+当前论文主线是 E17–E24。早期实验及其他研究方向保存在对应分支中。
 
 ## E1–E16
 
@@ -69,5 +69,11 @@
 | 公开评价方法的原例子与适配 | [B1](experiments/b1-reliable-paired-evaluation/README.md) | [报告](https://github.com/fallenplum/MAB/blob/a8ca3eb660136de0cc0793d153e3561b8315283b/routing_idea2/research/b1_reliable_paired_evaluation/01_PUBLIC_BASELINES_AND_ASSUMPTIONS.md) · [结果](https://github.com/fallenplum/MAB/blob/a8ca3eb660136de0cc0793d153e3561b8315283b/routing_idea2/research/b1_reliable_paired_evaluation/NATIVE_REFERENCE_RESULTS.json) |
 | 评价可靠性与检出能力 | [B1](experiments/b1-reliable-paired-evaluation/README.md) | [报告](https://github.com/fallenplum/MAB/blob/a8ca3eb660136de0cc0793d153e3561b8315283b/routing_idea2/research/b1_reliable_paired_evaluation/04_POPULATION_RELIABILITY_AND_POWER.md) · [结果](https://github.com/fallenplum/MAB/blob/a8ca3eb660136de0cc0793d153e3561b8315283b/routing_idea2/research/b1_reliable_paired_evaluation/inference/SYNTHETIC_COMPLETE_RESULTS.json) |
 | 组合奖励联合噪声分析 | [M4 噪声分析](experiments/m4-noise-aware-set-learning/README.md) | [报告](https://github.com/fallenplum/MAB/blob/19ba4fd5316bd897036622dab6b02fcfd0e036fd/routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_DIAGNOSTIC.md) · [结果](https://github.com/fallenplum/MAB/blob/19ba4fd5316bd897036622dab6b02fcfd0e036fd/routing_idea2/research/m4_noise_aware_set_learning/JOINT_NOISE_COMPLETE_RESULTS.json) |
+
+## E24 独立复验
+
+| 阶段 | 实验 | 报告与结果 | 运行说明 | 分支 |
+|---|---|---|---|---|
+| E24 | [训练与部署交互的独立复验](experiments/e24-training-deployment-replication/README.md) | [报告](https://github.com/fallenplum/MAB/blob/d48fef3cb1e77e876d4410be4933c5eb6cdb5738/routing_idea2/research/e24_training_deployment_replication/EXPERIMENT_SUMMARY.md) · [结果](https://github.com/fallenplum/MAB/blob/d48fef3cb1e77e876d4410be4933c5eb6cdb5738/routing_idea2/research/e24_training_deployment_replication/RESULTS_FINAL.json) | [冻结提交的复现说明](https://github.com/fallenplum/MAB/blob/d48fef3cb1e77e876d4410be4933c5eb6cdb5738/routing_idea2/research/e24_training_deployment_replication/REPRODUCE.md) | [`codex/e24-training-deployment-replication`](https://github.com/fallenplum/MAB/tree/codex/e24-training-deployment-replication) |
 
 [分支列表](https://github.com/fallenplum/MAB/blob/main/docs/BRANCHES.md) · [论文复现说明](https://github.com/fallenplum/MAB/blob/main/docs/REPRODUCIBILITY.md)

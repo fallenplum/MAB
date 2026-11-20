@@ -1,10 +1,14 @@
 # 复现说明与所需文件
 
-本文件针对论文主线 E17–E23。E17–E22 的审查基准为提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`；E23 补充审查基准为提交 `3958f9ceaac5b0b1de88bbd47d89ddd940833ff2`，具体见第 9 节。主线保留冻结源码、协议、脱敏结果和来源记录；较早实验的完整记录保存在历史研究分支。
+本文件针对论文主线 E17–E24。E17–E22 的审查基准为提交 `8f490a06ebe1153be2fcbeb42ad3944d63075b7d`；E23 补充审查基准为提交 `3958f9ceaac5b0b1de88bbd47d89ddd940833ff2`，具体见第 9 节。主线保留冻结源码、协议、脱敏结果和来源记录；较早实验的完整记录保存在历史研究分支。
 
-**克隆仓库后，可以核对公开文件和论文表格。恢复缓存后重算、重新训练、重新生成语言模型回答，还需要相应的私有数据、权重、原生输出和运行环境。** 私有文件的恢复路径按原执行工作区登记；原执行程序另需四份尚待找回的冻结源码。所需文件、缺失项及已记录的 SHA-256 见 [private_artifacts.json](../reproducibility/private_artifacts.json)。
+**克隆仓库后，可以核对公开文件和论文表格。恢复缓存后重算、重新训练、重新生成语言模型回答，还需要相应的私有数据、权重、原生输出和运行环境。** 私有文件的恢复路径按原执行工作区登记；原 E18/P2 归档依赖四份独立的冻结源码，E24 材料补齐记录了本地恢复和字节核验。所需文件、缺失项及已记录的 SHA-256 见 [private_artifacts.json](../reproducibility/private_artifacts.json)。
 
 本次整理没有重新训练路由器、调用语言模型、访问封存答案、重新评分或计算新的置信区间与 bootstrap。
+
+## E24 独立复算
+
+从 [E24 材料入口](../routing_idea2/paper_materials/e24_acl_v1/README.md) 使用分层充分统计量复算四格准确率、交互、自由度和双侧 p 值。该步骤只依赖科学计算库。生成链需要原模型、数据和运行时。E24 历史执行说明固定在 [d48fef3](https://github.com/fallenplum/MAB/blob/d48fef3cb1e77e876d4410be4933c5eb6cdb5738/routing_idea2/research/e24_training_deployment_replication/REPRODUCE.md)。
 
 ## 1. 从仓库即可进行的检查
 
@@ -232,4 +236,3 @@ E23 的 `supplement_adapter.py`、`supplement_worker.py` 分别校验原 P2 adap
 公开结果用于核对最终表格、任务/seed/子任务分解、成本和已记录的来源哈希。策略准确率可以从 `FINAL_POLICY_UTILITIES_PRIVATE.npz` 复算；动作耦合下的纠错破坏计数还需要冻结策略及原、新逐动作评分。原生答案的判分复算另外需要输出、参考答案定位和原评分器。
 
 [原 REPRODUCE.md](../routing_idea2/research/e23_deployment_prior_and_references/REPRODUCE.md) 记录了实际阶段顺序。`analyze_references.py --phase freeze` 会拟合四个控制头并新建私有工件；`--phase analyze` 读取原 P2 逐动作评分；`finalize_results.py` 会验证原生输出、再次解码 840 道原 P2 题的已授权参考答案，并调用原评分器评分 4,263 个新增聚合输出。**该入口用于原生输出核验和逐输出评分；公开表格重建使用 `scripts/build_paper_tables.py`。** 本次维护完成的是公开文件核对，sealed200 答案继续封存。
-
