@@ -1,4 +1,0 @@
-﻿method,inference,original_questions,identity_accuracy_percent,mean_accuracy_across100_percent,min_accuracy_percent,max_accuracy_percent,accuracy_variance_pp_squared,physical_choice_consistency_percent
-Ridge,semantic_exact,600,85.27777777777777,85.27777777777777,85.27777777777777,85.27777777777777,0.0,100.0
-SPO_coordinate,semantic_exact,600,85.94444444444444,85.81666666666665,82.88888888888889,87.3888888888889,0.9328703703703706,6.135
-TSPO_uniform,semantic_exact,600,85.5,85.5,85.5,85.5,0.0,100.0

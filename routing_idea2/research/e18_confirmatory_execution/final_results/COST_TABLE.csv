@@ -1,7 +1,0 @@
-﻿accounting,policy,stage,calls,member_calls,aggregation_calls,prompt_tokens,completion_tokens,total_tokens
-known_physical_union,joint_evaluation,member_generation,47286,47286,0,7999752,11245367,19245119
-known_physical_union,joint_evaluation,aggregation,30921,0,30921,26918884,2367739,29286623
-selected_policy_logical_service,Ridge,members_and_aggregation,36000,27000,9000,12146577,7097415,19243992
-selected_policy_logical_service,SPO_coordinate,members_and_aggregation,36000,27000,9000,12082034,5991131,18073165
-selected_policy_logical_service,TSPO_uniform,members_and_aggregation,36000,27000,9000,12108015,7005746,19113761
-selected_policy_logical_service,GlobalFixed,members_and_aggregation,36000,27000,9000,13836185,9290377,23126562

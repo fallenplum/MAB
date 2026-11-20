@@ -1,8 +1,0 @@
-{
-  "status": "PLANNING_SENSITIVITY_ONLY",
-  "observed_development_magnitude_pp": 0.44444444444444453,
-  "observed_magnitude_is_not_a_true_future_effect": true,
-  "power_at_3000_for_observed_magnitude": 0.2520745472121947,
-  "original_frame_max_balanced_n": 830,
-  "original_frame_upper_n_power_1pp": 0.3322187207681911
-}

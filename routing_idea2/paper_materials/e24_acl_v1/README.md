@@ -1,18 +1,17 @@
-# E24 离线汇总复算
+# E24 离线复算
 
-本目录从 E24 冻结评分导出的 27 层充分统计量，独立重建四种策略准确率、训练×部署交互、Satterthwaite 自由度和双侧 p 值。每层保留题级交互的一阶和二阶矩、四策略效用和及样本数。三个生成重复先在题内聚合。GSM8K 占一半，保留的 26 个 BBH 子任务各占 0.5/26。
-
-## 运行
-
-Python 3.11 和本目录的科学计算依赖可在准备环境后断网运行：
+使用 Python 3.11。从仓库根目录执行：
 
 ```bash
+cd routing_idea2/paper_materials/e24_acl_v1
 python -m pip install -r requirements-offline.txt
 python -B scripts/recompute_e24.py --sufficient data/e24_stratum_sufficient_statistics.csv
 ```
 
-预期汇总为 B–U 86.464686%，B–P 87.625418%，C–U 与 C–P 均 87.653289%，交互 +1.160731851 pp，双侧 p = 0.0000886396891，自由度 462.394193508。
+环境准备好后即可断网复算。CSV 是 27 层充分统计量，三个生成 seed 先在每题内汇总。预期输出：
 
-[论文结果说明](../../../paper/E24.md) · [历史执行记录](../../../experiments/e24-training-deployment-replication/README.md)
+| 题数 | B–U | B–P | C–U 与 C–P | 交互 | 双侧 p |
+|---:|---:|---:|---:|---:|---:|
+| 1,196 | 86.464686% | 87.625418% | 87.653289% | +1.160731851 pp | 0.0000886396891 |
 
-此入口提供汇总数值复算。实验分支保存原协议、代码和执行记录。本地材料另含匿名题次用于逐题复核。完整生成验证需要私有输入、缓存、权重、模型运行环境及历史科学源码。
+本入口复算已闭合的汇总结果。用原缓存重放逐题结果或重新生成答案，需要对应的私有资产、冻结模型和运行环境。[E24 原实验运行说明](https://github.com/fallenplum/MAB/blob/d48fef3cb1e77e876d4410be4933c5eb6cdb5738/routing_idea2/research/e24_training_deployment_replication/REPRODUCE.md) · [论文主线](../../../paper/README.md)

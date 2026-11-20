@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "tests": 25,
-  "solver_version": "0.11.1",
-  "all_source_syntax_valid": true,
-  "cpu_s": 0.203125,
-  "wall_s": 1.4147989000193775
-}

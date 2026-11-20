@@ -1,6 +1,0 @@
-{
-  "status": "PASS",
-  "checks": 4,
-  "synthetic_only": true,
-  "purpose": "cluster axes, paired columns, unequal task sizes and degeneracy"
-}

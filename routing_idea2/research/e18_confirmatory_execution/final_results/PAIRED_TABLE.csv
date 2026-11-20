@@ -1,7 +1,0 @@
-﻿comparison,questions,generation_events,gain_pp,changed_actions,corrected_generation_events,damaged_generation_events,net_corrected_generation_events,improved_questions,worsened_questions,unchanged_questions
-TSPO_uniform minus SPO_coordinate,2998,8994,0.011748998664895538,2778,377,376,1,251,247,2500
-TSPO_uniform minus Ridge,2998,8994,-0.2558374128467489,2117,269,292,-23,183,198,2617
-SPO_coordinate minus Ridge,2998,8994,-0.2675864115116444,2784,377,401,-24,250,267,2481
-TSPO_uniform minus GlobalFixed,2998,8994,-0.4555703901498176,2720,344,385,-41,215,260,2523
-SPO_coordinate minus GlobalFixed,2998,8994,-0.46731938881471313,2971,374,416,-42,252,286,2460
-Ridge minus GlobalFixed,2998,8994,-0.19973297730306872,2796,376,394,-18,241,264,2493
