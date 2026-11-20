@@ -1,0 +1,24 @@
+{
+  "stage": "E26",
+  "method": "SkyLLM accuracy estimator, fixed-K=3 transfer with nonbinding budgets",
+  "paper": "https://aclanthology.org/2025.findings-acl.1073.pdf",
+  "source_sections": ["3.2", "3.3", "4", "5.1"],
+  "comparison": "Full neighbor reward mean versus zeroing only full-tie neighbor contributions, with fixed neighbors and denominator",
+  "seed_order": [42, 137, 2024],
+  "neighbors_fraction": 0.1,
+  "exact_score_unit": "integer successes / (3 * neighbors)",
+  "inference": "Deterministic first exact maximum in the frozen MAB physical action order, for the nonbinding-budget q-max case",
+  "distance_ties": "Stable original training index order; native Faiss tie identity unspecified",
+  "counterfactual_deployment_only": ["uniform exact maxima", "train600 success priority among exact maxima, uniform among prior ties"],
+  "numeric_diagnostic_tolerance": 1e-8,
+  "datasets": {
+    "OOF": "Existing E19 folds, five H480/E120 splits, k=48, 50/50 GSM8K and BBH inner question weights",
+    "E24": "Train600/k=60 and existing E24 1196 input-only questions, frozen E24 strata and weights"
+  },
+  "gate": "Stop on exact zero effect bound for the same-deployment intervention. Added decoders are sensitivity only, including when their bound is positive. Further scoring requires a reproducible effect of the supported original procedure and a material score-impact bound.",
+  "maximum_new_llm_calls": 0,
+  "allowed_reward_reads": ["train600 historical rewards only"],
+  "evaluation_reward_reads": 0,
+  "uncertainty": "Deterministic bounded-outcome effect bounds only",
+  "e25_check": "Restore frozen E24 U/P for E25 linear and MLP. Apply TV after cancellation to the difference-in-differences coefficient."
+}
