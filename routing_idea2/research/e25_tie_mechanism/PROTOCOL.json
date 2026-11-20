@@ -1,0 +1,36 @@
+{
+  "schema": "e25_tie_mechanism_exploratory_v1",
+  "source": "E24 frozen d48fef3cb1e77e876d4410be4933c5eb6cdb5738",
+  "train": "The original 600 rows, 306 empirically all-tied, 294 other rows, and original 1/600 normalization",
+  "linear": {
+    "beta_order": [1, 0],
+    "gamma": 0,
+    "lambda0": 0.003472222222222222,
+    "lambda_factors": [0.49, 1.0, 2.0408163265306123],
+    "middle_cell": "reuse original B/C, fit four new heads"
+  },
+  "mlp": {
+    "architecture": "frozen PCA16 features, 16-unit tanh hidden layer, 20 outputs, 612 parameters",
+    "beta_order": [1, 0],
+    "gamma": 0,
+    "lambda": 0.003472222222222222,
+    "seeds": [1701, 1702, 1703],
+    "primary_descriptive_seed": 1701,
+    "optimization": "full-batch float64 Adam, 2400 fixed cosine-schedule steps .01 to .001, lowest penalized training objective, then output head convex epigraph refinement with hidden features fixed",
+    "training_selection": "training objective only; all seeds reported"
+  },
+  "deployment": {
+    "tau": 1e-8,
+    "U": "uniform on the maximum-within-tau set",
+    "P": "uniform on the highest frozen train600 integer success count within the same set",
+    "input_diagnostic_tolerances": [0, 1e-12, 1e-10, 1e-8, 1e-6, 0.0001]
+  },
+  "evaluation": {
+    "role": "exploratory diagnostics on the already observed frozen E24 cohort",
+    "questions": 1196,
+    "seeds": [42, 137, 2024],
+    "weights": "GSM8K .5, each of 26 BBH subtasks .5/26",
+    "uncertainty": "stratified question-paired standard error for fully identified contrasts and descriptive min/max across the three recorded seeds; no confidence interval or bootstrap",
+    "missing_rewards": "use exact closed-score support; report exact binary-completion bounds for full-cohort contrasts and actual full-support coverage; do not impute or evaluate new LLM calls"
+  }
+}

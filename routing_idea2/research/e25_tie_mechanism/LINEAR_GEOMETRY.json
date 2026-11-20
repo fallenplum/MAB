@@ -1,0 +1,223 @@
+{
+  "schema": "e25_linear_geometry_v1",
+  "tau": 1e-08,
+  "questions": 1196,
+  "max_design_row_norm": 7.161036508719662,
+  "input_scores_sha256": "2f8293e523e4606c82f75ca618622e6a1bb4b8e4b500c8a5680d402623825710",
+  "original_fit_report_sha256": "dbf97c7c21044588c56f7cb0cf0e6ef9a4075e99da01312d66bcfe082f2688f7",
+  "own_source_sha256": "e9709473dfbd25fb6cf8948e2e2c997afe2bbeeba75f8ef332d52dee2136638e",
+  "geometry_source_sha256": "11fef5ac1e1db7894f10d6e9e86ff22e953f13f09edc12910d681c4f7c466273",
+  "source_inputs_sha256": "0b0b959297e51f29280c3ed410bdfef7072da34d238659d5c21a114c7a787fcc",
+  "rows": [
+    {
+      "lambda_factor": 0.49,
+      "strict_switch_questions": 144,
+      "heads": {
+        "B": {
+          "unique_winners": 163,
+          "top_two_margin": {
+            "min": 0.0,
+            "p10": 4.920543139608213e-15,
+            "median": 3.5430859635088296e-14,
+            "p90": 0.0031394323078131124,
+            "max": 0.08637506270112684
+          },
+          "all_action_pair_distance": {
+            "min": 7.444257522435592e-14,
+            "p10": 2.273849822123508e-13,
+            "median": 1.0088694847997418e-12,
+            "p90": 0.08324346882058198,
+            "max": 0.13020546371672367
+          },
+          "near_tied_clusters": [
+            {
+              "actions": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                11,
+                12,
+                13,
+                15,
+                16,
+                18,
+                19
+              ],
+              "questions": 1033,
+              "maximum_coefficient_pair_distance": 3.128639974546549e-12,
+              "observed_maximum_score_spread_all_inputs": 1.301301427725221e-11,
+              "score_spread_bound_on_observed_input_norm_ball": 2.240430508036759e-11,
+              "all_inputs_in_bound_have_spread_below_tau": true
+            }
+          ]
+        },
+        "C": {
+          "unique_winners": 1196,
+          "top_two_margin": {
+            "min": 6.951201296109821e-06,
+            "p10": 0.0010455752196264663,
+            "median": 0.008330646843082191,
+            "p90": 0.040339370579879394,
+            "max": 0.1502877908295418
+          },
+          "all_action_pair_distance": {
+            "min": 0.03522136586922907,
+            "p10": 0.05412860380581058,
+            "median": 0.09254578831638538,
+            "p90": 0.1452185733562802,
+            "max": 0.2360605660123869
+          },
+          "near_tied_clusters": []
+        }
+      }
+    },
+    {
+      "lambda_factor": 1.0,
+      "strict_switch_questions": 145,
+      "heads": {
+        "B": {
+          "unique_winners": 163,
+          "top_two_margin": {
+            "min": 3.5214886562329184e-15,
+            "p10": 1.2854647901683336e-13,
+            "median": 9.467196991630455e-13,
+            "p90": 0.0031394323747096185,
+            "max": 0.08637506288255292
+          },
+          "all_action_pair_distance": {
+            "min": 2.0052926375001157e-12,
+            "p10": 6.0851992475441544e-12,
+            "median": 2.7344009389853154e-11,
+            "p90": 0.0832434688690833,
+            "max": 0.13020546369427263
+          },
+          "near_tied_clusters": [
+            {
+              "actions": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                11,
+                12,
+                13,
+                15,
+                16,
+                18,
+                19
+              ],
+              "questions": 1033,
+              "maximum_coefficient_pair_distance": 8.414126552077967e-11,
+              "observed_maximum_score_spread_all_inputs": 3.500175739523659e-10,
+              "score_spread_bound_on_observed_input_norm_ball": 6.025386742841781e-10,
+              "all_inputs_in_bound_have_spread_below_tau": true
+            }
+          ]
+        },
+        "C": {
+          "unique_winners": 1196,
+          "top_two_margin": {
+            "min": 5.530928798846979e-07,
+            "p10": 0.0009209209699510487,
+            "median": 0.008197658698131438,
+            "p90": 0.04062296427489652,
+            "max": 0.15058977042502875
+          },
+          "all_action_pair_distance": {
+            "min": 0.035038248017322346,
+            "p10": 0.05409269323226183,
+            "median": 0.09274536014285742,
+            "p90": 0.14470299873130815,
+            "max": 0.23607731473289253
+          },
+          "near_tied_clusters": []
+        }
+      }
+    },
+    {
+      "lambda_factor": 2.0408163265306123,
+      "strict_switch_questions": 149,
+      "heads": {
+        "B": {
+          "unique_winners": 169,
+          "top_two_margin": {
+            "min": 2.220446049250313e-16,
+            "p10": 2.5121831698227126e-14,
+            "median": 1.8407454380198196e-13,
+            "p90": 0.003012196453585746,
+            "max": 0.08767625066972082
+          },
+          "all_action_pair_distance": {
+            "min": 3.913229496015255e-13,
+            "p10": 1.2010989987910572e-12,
+            "median": 5.311092192728261e-12,
+            "p90": 0.08321544781276588,
+            "max": 0.12945430417356787
+          },
+          "near_tied_clusters": [
+            {
+              "actions": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                11,
+                12,
+                13,
+                15,
+                16,
+                18,
+                19
+              ],
+              "questions": 1027,
+              "maximum_coefficient_pair_distance": 1.6254673079408655e-11,
+              "observed_maximum_score_spread_all_inputs": 6.77271537463664e-11,
+              "score_spread_bound_on_observed_input_norm_ball": 1.1640030735894803e-10,
+              "all_inputs_in_bound_have_spread_below_tau": true
+            }
+          ]
+        },
+        "C": {
+          "unique_winners": 1196,
+          "top_two_margin": {
+            "min": 4.454229882794314e-06,
+            "p10": 0.0009953635248163353,
+            "median": 0.00845992532614348,
+            "p90": 0.039902154587807,
+            "max": 0.15053204987241614
+          },
+          "all_action_pair_distance": {
+            "min": 0.03481446032489229,
+            "p10": 0.05326712839899137,
+            "median": 0.09279776817919688,
+            "p90": 0.14360460268946068,
+            "max": 0.232511389490256
+          },
+          "near_tied_clusters": []
+        }
+      }
+    }
+  ],
+  "evaluation_rewards_read": 0,
+  "llm_calls": 0,
+  "bound": "For each action pair, |phi(x)^T(w_i-w_j)| <= ||phi(x)||_2 ||w_i-w_j||_2."
+}

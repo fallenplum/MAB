@@ -1,0 +1,81 @@
+{
+  "schema": "e25_aggregate_file_index_v1",
+  "frozen_parent": "d48fef3cb1e77e876d4410be4933c5eb6cdb5738",
+  "files": [
+    {
+      "file": "PROTOCOL.json",
+      "bytes": 1836,
+      "sha256": "1ccee0ff2763a0e9f87a30d5cd2cccfb4dc93a1829e009cfe9b5cde5d2e9af65"
+    },
+    {
+      "file": "linear.py",
+      "bytes": 9061,
+      "sha256": "c069734bc5c940cb141c9e105143fe97442c2f81af14ccb20532298630ab5486"
+    },
+    {
+      "file": "mlp.py",
+      "bytes": 14227,
+      "sha256": "2ce1a0f6b532d423e58a7dbf243dc57b34146a3d41fc7e80e58b12df7773a9a8"
+    },
+    {
+      "file": "geometry.py",
+      "bytes": 11652,
+      "sha256": "11fef5ac1e1db7894f10d6e9e86ff22e953f13f09edc12910d681c4f7c466273"
+    },
+    {
+      "file": "linear_geometry.py",
+      "bytes": 4615,
+      "sha256": "e9709473dfbd25fb6cf8948e2e2c997afe2bbeeba75f8ef332d52dee2136638e"
+    },
+    {
+      "file": "evaluate.py",
+      "bytes": 13449,
+      "sha256": "fa594f60ae6b389f39cdce09515555d009c14e0d4336694889d88388c0a4ef84"
+    },
+    {
+      "file": "LINEAR_FIT_REPORT.json",
+      "bytes": 13747,
+      "sha256": "dbf97c7c21044588c56f7cb0cf0e6ef9a4075e99da01312d66bcfe082f2688f7"
+    },
+    {
+      "file": "MLP_FIT_AUDIT.json",
+      "bytes": 27410,
+      "sha256": "befbecc7e7c267144a5cfe01883b80bdc1d8ac33982fa574e0bd1503c0ded648"
+    },
+    {
+      "file": "GEOMETRY.json",
+      "bytes": 18445,
+      "sha256": "26601c149029e5fffd16d6477387f927a44706d8678699c3a8435d4f77eafb3e"
+    },
+    {
+      "file": "LINEAR_GEOMETRY.json",
+      "bytes": 7159,
+      "sha256": "8bbc059c4b45d9db16e3fea583ce0e2344639d90e6e04d6d3c38ed9b12b4f3ee"
+    },
+    {
+      "file": "E25_RESULTS.json",
+      "bytes": 149944,
+      "sha256": "24ae8f01191ac7395a28b2b2fe93d1f163c101d5c82ba92a1f975d7ab36f6a41"
+    },
+    {
+      "file": "VALIDATION.json",
+      "bytes": 347,
+      "sha256": "e719df5a2e9309036a3066d60ea225e5b795798aa918576252682933709cd9f4"
+    },
+    {
+      "file": "EXPERIMENT_SUMMARY.md",
+      "bytes": 7083,
+      "sha256": "b3b8fe715fe3ca5ebeebc8cc7c06fc161dc2aaf54b21edcd4c2aefdc72dd9f33"
+    },
+    {
+      "file": "ACL_DIAGNOSTIC_NOTE.md",
+      "bytes": 3156,
+      "sha256": "ba14d00c68317106601c1ea7f47b38b3afe992093707d2d6121e430addc6d4f1"
+    },
+    {
+      "file": "REPRODUCE.md",
+      "bytes": 2515,
+      "sha256": "2355bc03c82f50cecf97567ad171bc82cd7f8fa7411b9694194a62066798344a"
+    }
+  ]
+}
